@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data' / 'ai-analyses.json'
 API = 'https://openrouter.ai/api/v1/chat/completions'
-MODELS = ['nvidia/nemotron-3-ultra-550b-a55b:free', 'google/gemma-4-31b-it:free', 'nvidia/nemotron-3.5-super-vl:free']
+MODELS = ['nvidia/nemotron-3-ultra-550b-a55b:free', 'nvidia/nemotron-3.5-super-vl:free']
 FIELDS = [
     ('assets', 'Toplam varlıklar'), ('currentAssets', 'Dönen varlıklar'), ('noncurrentAssets', 'Duran varlıklar'),
     ('cash', 'Nakit ve benzerleri'), ('loans', 'Krediler'), ('deposits', 'Mevduat'),
@@ -85,9 +85,9 @@ def prompt(row, meta):
     return '\n'.join(RULES + ['', '--- VERİ ---'] + lines)
 
 
-def usable(answer):
+def usable(answer, finish):
     """Reject short or cut-off replies."""
-    return len(answer) > 900 and answer.rstrip()[-1:] in '.!)' and 'Sırada' in answer
+    return finish == 'stop' and len(answer) > 900 and 'Sırada' in answer
 
 
 def ask(key, model, text):
@@ -97,7 +97,8 @@ def ask(key, model, text):
         reply = json.load(response)
     if reply.get('usage', {}).get('cost'):
         raise SystemExit('Ücretli yanıt döndü; durduruldu.')
-    return (reply['choices'][0]['message'].get('content') or '').strip(), reply.get('model') or model
+    choice = reply['choices'][0]
+    return (choice['message'].get('content') or '').strip(), reply.get('model') or model, choice.get('finish_reason')
 
 
 def main():
@@ -118,10 +119,10 @@ def main():
     for row in todo:
         if made >= args.limit:
             break
-        text, answer, used = prompt(row, data['meta']), '', None
+        text, answer, used, finish = prompt(row, data['meta']), '', None, None
         for model in MODELS:
             try:
-                answer, used = ask(key, model, text)
+                answer, used, finish = ask(key, model, text)
             except urllib.error.HTTPError as error:
                 detail = error.read().decode('utf-8', 'replace')[:160]
                 print(f"{row['c']} · {model} · HTTP {error.code} {detail}", flush=True)
@@ -132,9 +133,10 @@ def main():
             except OSError as error:
                 print(f"{row['c']} · {model} · {error}", flush=True)
                 continue
-            if usable(answer):
+            if usable(answer, finish):
                 break
-        if not usable(answer):
+            print(f"{row['c']} · {model} · reddedildi (bitiş: {finish}, {len(answer)} karakter)", flush=True)
+        if not usable(answer, finish):
             print(f"{row['c']} · kullanılabilir yanıt yok, atlandı", flush=True)
             continue
         # The period tags were only there to keep the model on the right column.
