@@ -1,0 +1,47 @@
+name: Günlük analiz ve site yayını
+
+# Runs on GitHub's servers with the free OpenRouter quota. The key comes from
+# the repository secret OPENROUTER_API_KEY and never appears in the code.
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analyses
+  cancel-in-progress: false
+
+jobs:
+  analyses:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Analizleri üret
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          if [ -z "$OPENROUTER_API_KEY" ]; then
+            echo "::warning::OPENROUTER_API_KEY tanımlı değil; yeni analiz üretilmedi."
+          else
+            python research/ai-analyses.py --limit 48
+          fi
+      - name: Yeni analizleri kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ai-analyses.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Update pre-generated analyses"
+            git push origin HEAD:main
+          fi
+      - name: Siteyi yayınla
+        run: bash research/publish-site.sh
