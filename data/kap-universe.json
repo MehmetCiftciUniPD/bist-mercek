@@ -1,0 +1,6083 @@
+{
+  "date": "2026-11-10",
+  "source": "https://kap.org.tr/tr/Pazarlar",
+  "companies": [
+    {
+      "name": "A1 CAPİTAL YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1303-a1-capital-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "A1CAP"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "A1 YENİLENEBİLİR ENERJİ ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5376-a1-yenilenebilir-enerji-uretim-a-s",
+      "codes": [
+        "A1YEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AĞAOĞLU AVRASYA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6216-agaoglu-avrasya-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AAGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ACISELSAN ACIPAYAM SELÜLOZ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1626-aciselsan-acipayam-seluloz-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ACSEL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ADEL KALEMCİLİK TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/832-adel-kalemcilik-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "ADEL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ADESE GAYRİMENKUL YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1560-adese-gayrimenkul-yatirim-a-s",
+      "codes": [
+        "ADESE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ADRA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5867-adra-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ADGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ANADOLU EFES BİRACILIK VE MALT SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/858-anadolu-efes-biracilik-ve-malt-sanayii-a-s",
+      "codes": [
+        "AEFES"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AFYON ÇİMENTO SANAYİ T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/833-afyon-cimento-sanayi-t-a-s",
+      "codes": [
+        "AFYON"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AGESA HAYAT VE EMEKLİLİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2370-agesa-hayat-ve-emeklilik-a-s",
+      "codes": [
+        "AGESA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AG ANADOLU GRUBU HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1131-ag-anadolu-grubu-holding-a-s",
+      "codes": [
+        "AGHOL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AGROTECH YÜKSEK TEKNOLOJİ VE YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5899-agrotech-yuksek-teknoloji-ve-yatirim-a-s",
+      "codes": [
+        "AGROT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ATAKULE GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/868-atakule-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AGYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "AHLATCI DOĞAL GAZ DAĞITIM ENERJİ VE YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3064-ahlatci-dogal-gaz-dagitim-enerji-ve-yatirim-a-s",
+      "codes": [
+        "AHGAZ"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AHES GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6014-ahes-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AHSGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AKBANK T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2413-akbank-t-a-s",
+      "codes": [
+        "AKBNK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKÇANSA ÇİMENTO SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/838-akcansa-cimento-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "AKCNS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKENERJİ ELEKTRİK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/834-akenerji-elektrik-uretim-a-s",
+      "codes": [
+        "AKENR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AKFEN GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1545-akfen-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AKFGY"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKFEN İNŞAAT TURİZM VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6036-akfen-insaat-turizm-ve-ticaret-a-s",
+      "codes": [
+        "AKFIS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AKFEN YENİLENEBİLİR ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5792-akfen-yenilenebilir-enerji-a-s",
+      "codes": [
+        "AKFYE"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKSİGORTA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/841-aksigorta-a-s",
+      "codes": [
+        "AKGRT"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKHAN UN FABRİKASI VE TARIM ÜRÜNLERİ GIDA SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6188-akhan-un-fabrikasi-ve-tarim-urunleri-gida-sanayi-ticaret-a-s",
+      "codes": [
+        "AKHAN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AKMERKEZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1399-akmerkez-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AKMGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AKSA AKRİLİK KİMYA SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/840-aksa-akrilik-kimya-sanayii-a-s",
+      "codes": [
+        "AKSA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKSA ENERJİ ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1505-aksa-enerji-uretim-a-s",
+      "codes": [
+        "AKSEN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKİŞ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1698-akis-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AKSGY"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AKSU ENERJİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/842-aksu-enerji-ve-ticaret-a-s",
+      "codes": [
+        "AKSUE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AKDENİZ YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1623-akdeniz-yatirim-holding-a-s",
+      "codes": [
+        "AKYHO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ALARKO HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/846-alarko-holding-a-s",
+      "codes": [
+        "ALARK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ALBARAKA TÜRK KATILIM BANKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2414-albaraka-turk-katilim-bankasi-a-s",
+      "codes": [
+        "ALBRK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ALBAYRAK HAZIR BETON SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6256-albayrak-hazir-beton-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ALBTN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALARKO CARRIER SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/844-alarko-carrier-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ALCAR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALCATEL LUCENT TELETAŞ TELEKOMÜNİKASYON A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/847-alcatel-lucent-teletas-telekomunikasyon-a-s",
+      "codes": [
+        "ALCTL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALFA SOLAR ENERJİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5675-alfa-solar-enerji-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ALFAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALARKO GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/845-alarko-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ALGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALKİM KAĞIT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/850-alkim-kagit-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ALKA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALKİM ALKALİ KİMYA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/849-alkim-alkali-kimya-a-s",
+      "codes": [
+        "ALKIM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALTINKILIÇ GIDA VE SÜT SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5966-altinkilic-gida-ve-sut-sanayi-ticaret-a-s",
+      "codes": [
+        "ALKLC"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ALTINAY SAVUNMA TEKNOLOJİLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5955-altinay-savunma-teknolojileri-a-s",
+      "codes": [
+        "ALTNY"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ALVES KABLO SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5935-alves-kablo-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ALVES"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "ANEL ELEKTRİK PROJE TAAHHÜT VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1475-anel-elektrik-proje-taahhut-ve-ticaret-a-s",
+      "codes": [
+        "ANELE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ANATOLİA TANI VE BİYOTEKNOLOJİ ÜRÜNLERİ ARAŞTIRMA GELİŞTİRME SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5424-anatolia-tani-ve-biyoteknoloji-urunleri-arastirma-gelistirme-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ANGEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ANADOLU HAYAT EMEKLİLİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/860-anadolu-hayat-emeklilik-a-s",
+      "codes": [
+        "ANHYT"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ANADOLU ANONİM TÜRK SİGORTA ŞİRKETİ",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/856-anadolu-anonim-turk-sigorta-sirketi",
+      "codes": [
+        "ANSGR"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "DOĞU ARAS ENERJİ YATIRIMLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5457-dogu-aras-enerji-yatirimlari-a-s",
+      "codes": [
+        "ARASE"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ARÇELİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/863-arcelik-a-s",
+      "codes": [
+        "ARCLK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ARD GRUP BİLİŞİM TEKNOLOJİLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4967-ard-grup-bilisim-teknolojileri-a-s",
+      "codes": [
+        "ARDYZ"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ARENA BİLGİSAYAR SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/864-arena-bilgisayar-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ARENA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ARF BİO YENİLENEBİLİR ENERJİ ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6170-arf-bio-yenilenebilir-enerji-uretim-a-s",
+      "codes": [
+        "ARFYE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ARMADA GIDA TİCARET SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6049-armada-gida-ticaret-sanayi-a-s",
+      "codes": [
+        "ARMGD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ARSAN HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/865-arsan-holding-a-s",
+      "codes": [
+        "ARSAN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ARTEMİS HALI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5936-artemis-hali-a-s",
+      "codes": [
+        "ARTMS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ARZUM ELEKTRİKLİ EV ALETLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2087-arzum-elektrikli-ev-aletleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ARZUM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ASELSAN ELEKTRONİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/866-aselsan-elektronik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ASELS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ASCE GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4687-asce-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ASGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ASTOR ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4680-astor-enerji-a-s",
+      "codes": [
+        "ASTOR"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ANADOLU ISUZU OTOMOTİV SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/861-anadolu-isuzu-otomotiv-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ASUZU"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ATA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/867-ata-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ATAGY"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ATAKEY PATATES GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5841-atakey-patates-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ATAKP"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ATP YAZILIM VE TEKNOLOJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5348-atp-yazilim-ve-teknoloji-a-s",
+      "codes": [
+        "ATATP"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ATA TURİZM İŞLETMECİLİK TAŞIMACILIK MADENCİLİK KUYUMCULUK SANAYİ VE DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6194-ata-turizm-isletmecilik-tasimacilik-madencilik-kuyumculuk-sanayi-ve-dis-ticaret-a-s",
+      "codes": [
+        "ATATR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AKIN TEKSTİL A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/839-akin-tekstil-a-s",
+      "codes": [
+        "ATEKS"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "ATLAS MENKUL KIYMETLER YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/870-atlas-menkul-kiymetler-yatirim-ortakligi-a-s",
+      "codes": [
+        "ATLAS"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ATLANTİS YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/869-atlantis-yatirim-holding-a-s",
+      "codes": [
+        "ATSYH"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "AVRASYA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/871-avrasya-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AVGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AVRUPA YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1691-avrupa-yatirim-holding-a-s",
+      "codes": [
+        "AVHOL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "A.V.O.D. KURUTULMUŞ GIDA VE TARIM ÜRÜNLERİ SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1564-a-v-o-d-kurutulmus-gida-ve-tarim-urunleri-sanayi-ticaret-a-s",
+      "codes": [
+        "AVOD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AVRUPAKENT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5912-avrupakent-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "AVPGY"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AVRASYA PETROL VE TURİSTİK TESİSLER YATIRIMLAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1454-avrasya-petrol-ve-turistik-tesisler-yatirimlar-a-s",
+      "codes": [
+        "AVTUR"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ALTIN YUNUS ÇEŞME TURİSTİK TESİSLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/855-altin-yunus-cesme-turistik-tesisler-a-s",
+      "codes": [
+        "AYCES"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AYDEM YENİLENEBİLİR ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5317-aydem-yenilenebilir-enerji-a-s",
+      "codes": [
+        "AYDEM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AYEN ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/872-ayen-enerji-a-s",
+      "codes": [
+        "AYEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "AYGAZ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/873-aygaz-a-s",
+      "codes": [
+        "AYGAZ"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "AZTEK TEKNOLOJİ ÜRÜNLERİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5649-aztek-teknoloji-urunleri-ticaret-a-s",
+      "codes": [
+        "AZTEK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BAGFAŞ BANDIRMA GÜBRE FABRİKALARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/874-bagfas-bandirma-gubre-fabrikalari-a-s",
+      "codes": [
+        "BAGFS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BAHADIR KİMYA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6005-bahadir-kimya-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BAHKM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BAK AMBALAJ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/875-bak-ambalaj-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BAKAB"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BALSU GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5614-balsu-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BALSU"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BANVİT BANDIRMA VİTAMİNLİ YEM SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/876-banvit-bandirma-vitaminli-yem-sanayi-a-s",
+      "codes": [
+        "BANVT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BAREM AMBALAJ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5567-barem-ambalaj-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BARMA"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "BAŞKENT DOĞALGAZ DAĞITIM GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2840-baskent-dogalgaz-dagitim-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "BASGZ"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BAYRAK EBT TABAN SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5054-bayrak-ebt-taban-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BAYRK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BATI EGE GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5906-bati-ege-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "BEGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BERA HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1693-bera-holding-a-s",
+      "codes": [
+        "BERA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BESLER GIDA VE KİMYA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1002-besler-gida-ve-kimya-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BESLR"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BEST BRANDS GRUP ENERJİ YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6190-best-brands-grup-enerji-yatirim-a-s",
+      "codes": [
+        "BESTE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BETA ENERJİ VE TEKNOLOJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5345-beta-enerji-ve-teknoloji-a-s",
+      "codes": [
+        "BETAE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BEYAZ FİLO OTO KİRALAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1518-beyaz-filo-oto-kiralama-a-s",
+      "codes": [
+        "BEYAZ"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BOSCH FREN SİSTEMLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/888-bosch-fren-sistemleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BFREN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİEN YAPI ÜRÜNLERİ SANAYİ TURİZM VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2952-bien-yapi-urunleri-sanayi-turizm-ve-ticaret-a-s",
+      "codes": [
+        "BIENY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BÜYÜK ŞEFLER GIDA TURİZM TEKSTİL DANIŞMANLIK ORGANİZASYON EĞİTİM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5819-buyuk-sefler-gida-turizm-tekstil-danismanlik-organizasyon-egitim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BIGCH"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİRLEŞİM GRUP ENERJİ YATIRIMLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6059-birlesim-grup-enerji-yatirimlari-a-s",
+      "codes": [
+        "BIGEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİG MEDYA TEKNOLOJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/918-big-medya-teknoloji-a-s",
+      "codes": [
+        "BIGTK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİM BİRLEŞİK MAĞAZALAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1406-bim-birlesik-magazalar-a-s",
+      "codes": [
+        "BIMAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BİN ULAŞIM VE AKILLI ŞEHİR TEKNOLOJİLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6026-bin-ulasim-ve-akilli-sehir-teknolojileri-a-s",
+      "codes": [
+        "BINBN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "1000 YATIRIMLAR HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5900-1000-yatirimlar-holding-a-s",
+      "codes": [
+        "BINHO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BİOTREND ÇEVRE VE ENERJİ YATIRIMLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5289-biotrend-cevre-ve-enerji-yatirimlari-a-s",
+      "codes": [
+        "BIOEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİZİM TOPTAN SATIŞ MAĞAZALARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1536-bizim-toptan-satis-magazalari-a-s",
+      "codes": [
+        "BIZIM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/881-besiktas-futbol-yatirimlari-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BJKAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BAKIRCI GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6279-bakirci-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "BKRGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİLİCİ YATIRIM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1544-bilici-yatirim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BLCYT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BLUME METAL KİMYA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1032-blume-metal-kimya-a-s",
+      "codes": [
+        "BLUME"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BMS ÇELİK HASIR SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5007-bms-celik-hasir-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BMSCH"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BMS BİRLEŞİK METAL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5590-bms-birlesik-metal-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BMSTL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BANTAŞ BANDIRMA AMBALAJ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2468-bantas-bandirma-ambalaj-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BNTAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BOĞAZİÇİ BETON SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5320-bogazici-beton-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BOBET"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BORLEASE OTOMOTİV A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5878-borlease-otomotiv-a-s",
+      "codes": [
+        "BORLS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BOR ŞEKER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5929-bor-seker-a-s",
+      "codes": [
+        "BORSK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BOSSA TİCARET VE SANAYİ İŞLETMELERİ T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/889-bossa-ticaret-ve-sanayi-isletmeleri-t-a-s",
+      "codes": [
+        "BOSSA"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "BRİSA BRİDGESTONE SABANCI LASTİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/891-brisa-bridgestone-sabanci-lastik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BRISA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİRKO BİRLEŞİK KOYUNLULULAR MENSUCAT TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1493-birko-birlesik-koyunlulular-mensucat-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "BRKO"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "BERKOSAN YALITIM VE TECRİT MADDELERİ ÜRETİM VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1537-berkosan-yalitim-ve-tecrit-maddeleri-uretim-ve-ticaret-a-s",
+      "codes": [
+        "BRKSN"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "BİRİKİM VARLIK YÖNETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4623-birikim-varlik-yonetim-a-s",
+      "codes": [
+        "BRKVY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİRLEŞİM MÜHENDİSLİK ISITMA SOĞUTMA HAVALANDIRMA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5391-birlesim-muhendislik-isitma-sogutma-havalandirma-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BRLSM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BİRLİK MENSUCAT TİCARET VE SANAYİ İŞLETMESİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/882-birlik-mensucat-ticaret-ve-sanayi-isletmesi-a-s",
+      "codes": [
+        "BRMEN"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "BORUSAN BİRLEŞİK BORU FABRİKALARI SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/886-borusan-birlesik-boru-fabrikalari-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BRSAN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BORUSAN YATIRIM VE PAZARLAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/887-borusan-yatirim-ve-pazarlama-a-s",
+      "codes": [
+        "BRYAT"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BATIÇİM ÇİMENTO SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/878-baticim-cimento-sanayi-a-s",
+      "codes": [
+        "BSOKE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BATIÇİM BATI ANADOLU SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/877-baticim-bati-anadolu-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BTCIM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BURSA ÇİMENTO FABRİKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/895-bursa-cimento-fabrikasi-a-s",
+      "codes": [
+        "BUCIM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "BULLS GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5458-bulls-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "BULGS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BURÇELİK BURSA ÇELİK DÖKÜM SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/894-burcelik-bursa-celik-dokum-sanayii-a-s",
+      "codes": [
+        "BURCE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BURÇELİK VANA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1388-burcelik-vana-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BURVA"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "BÜLBÜLOĞLU VİNÇ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5769-bulbuloglu-vinc-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "BVSAN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "BAYDÖNER RESTORANLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5853-baydoner-restoranlari-a-s",
+      "codes": [
+        "BYDNR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇAN2 TERMİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5284-can2-termik-a-s",
+      "codes": [
+        "CANTE"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "CASA EMTİA PETROL KİMYEVİ VE TÜREVLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1679-casa-emtia-petrol-kimyevi-ve-turevleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "CASA"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "ÇATES ELEKTRİK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5905-cates-elektrik-uretim-a-s",
+      "codes": [
+        "CATES"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "COCA-COLA İÇECEK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1424-coca-cola-icecek-a-s",
+      "codes": [
+        "CCOLA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ÇELİK HALAT VE TEL SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/904-celik-halat-ve-tel-sanayii-a-s",
+      "codes": [
+        "CELHA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇEMAŞ DÖKÜM SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1510-cemas-dokum-sanayi-a-s",
+      "codes": [
+        "CEMAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇEMTAŞ ÇELİK MAKİNA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/905-cemtas-celik-makina-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "CEMTS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "CEM ZEYTİN A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6019-cem-zeytin-a-s",
+      "codes": [
+        "CEMZY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "CEO EVENT MEDYA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4856-ceo-event-medya-a-s",
+      "codes": [
+        "CEOEM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇAĞDAŞ CAM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6045-cagdas-cam-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "CGCAM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇİMSA ÇİMENTO SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/908-cimsa-cimento-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "CIMSA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ÇİTLEKÇİ MAĞAZACILIK GIDA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6275-citlekci-magazacilik-gida-a-s",
+      "codes": [
+        "CITAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇELEBİ HAVA SERVİSİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/903-celebi-hava-servisi-a-s",
+      "codes": [
+        "CLEBI"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇİMBETON HAZIRBETON VE PREFABRİK YAPI ELEMANLARI SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/906-cimbeton-hazirbeton-ve-prefabrik-yapi-elemanlari-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "CMBTN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "CONSUS ENERJİ İŞLETMECİLİĞİ VE HİZMETLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5582-consus-enerji-isletmeciligi-ve-hizmetleri-a-s",
+      "codes": [
+        "CONSE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "COSMOS YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/893-cosmos-yatirim-holding-a-s",
+      "codes": [
+        "COSMO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "CREDITWEST FAKTORİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1097-creditwest-faktoring-a-s",
+      "codes": [
+        "CRDFA"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "CARREFOURSA CARREFOUR SABANCI TİCARET MERKEZİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1440-carrefoursa-carrefour-sabanci-ticaret-merkezi-a-s",
+      "codes": [
+        "CRFSA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÇUHADAROĞLU METAL SANAYİ VE PAZARLAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2592-cuhadaroglu-metal-sanayi-ve-pazarlama-a-s",
+      "codes": [
+        "CUSAN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "CVK MADEN İŞLETMELERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5807-cvk-maden-isletmeleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "CVKMD"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "CW ENERJİ MÜHENDİSLİK TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5033-cw-enerji-muhendislik-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "CWENE"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "DAGİ GİYİM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1546-dagi-giyim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DAGI"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DAP GAYRİMENKUL GELİŞTİRME A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5532-dap-gayrimenkul-gelistirme-a-s",
+      "codes": [
+        "DAPGM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DARDANEL ÖNENTAŞ GIDA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/910-dardanel-onentas-gida-sanayi-a-s",
+      "codes": [
+        "DARDL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DCT TRADİNG DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5997-dct-trading-dis-ticaret-a-s",
+      "codes": [
+        "DCTTR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DENGE YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1678-denge-yatirim-holding-a-s",
+      "codes": [
+        "DENGE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DERLÜKS YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4864-derluks-yatirim-holding-a-s",
+      "codes": [
+        "DERHL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DERİMOD KONFEKSİYON AYAKKABI DERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/915-derimod-konfeksiyon-ayakkabi-deri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DERIM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DESA DERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1389-desa-deri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DESA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DESPEC BİLGİSAYAR PAZARLAMA VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1529-despec-bilgisayar-pazarlama-ve-ticaret-a-s",
+      "codes": [
+        "DESPC"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DEVA HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/916-deva-holding-a-s",
+      "codes": [
+        "DEVA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "DATAGATE BİLGİSAYAR MALZEMELERİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1416-datagate-bilgisayar-malzemeleri-ticaret-a-s",
+      "codes": [
+        "DGATE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DOĞUŞ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/960-dogus-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "DGGYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "DOĞANLAR MOBİLYA GRUBU İMALAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/999-doganlar-mobilya-grubu-imalat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DGNMO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DİRİTEKS DİRİLİŞ TEKSTİL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1580-diriteks-dirilis-tekstil-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DIRIT"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "DİTAŞ BDY YEDEK PARÇA İMALAT VE TEKNİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/917-ditas-bdy-yedek-parca-imalat-ve-teknik-a-s",
+      "codes": [
+        "DITAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DMR UNLU MAMULLER ÜRETİM GIDA TOPTAN PERAKENDE İHRACAT A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5870-dmr-unlu-mamuller-uretim-gida-toptan-perakende-ihracat-a-s",
+      "codes": [
+        "DMRGD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DEMİSAŞ DÖKÜM EMAYE MAMÜLLERİ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/911-demisas-dokum-emaye-mamulleri-sanayi-a-s",
+      "codes": [
+        "DMSAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DİNAMİK ISI MAKİNA YALITIM MALZEMELERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5185-dinamik-isi-makina-yalitim-malzemeleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DNISI"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DOĞUŞ OTOMOTİV SERVİS VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1391-dogus-otomotiv-servis-ve-ticaret-a-s",
+      "codes": [
+        "DOAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "DO & CO AKTIENGESELLSCHAFT",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1530-do-co-aktiengesellschaft",
+      "codes": [
+        "DOCO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DOFER YAPI MALZEMELERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5879-dofer-yapi-malzemeleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DOFER"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DOF ROBOTİK SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6130-dof-robotik-sanayi-a-s",
+      "codes": [
+        "DOFRB"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DOĞUSAN BORU SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/921-dogusan-boru-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DOGUB"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "DOĞAN ŞİRKETLER GRUBU HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/919-dogan-sirketler-grubu-holding-a-s",
+      "codes": [
+        "DOHOL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "DÖKTAŞ DÖKÜMCÜLÜK TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/922-doktas-dokumculuk-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "DOKTA"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "DESTEK FİNANS FAKTORİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2191-destek-finans-faktoring-a-s",
+      "codes": [
+        "DSTKF"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DÜNYA HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1069-dunya-holding-a-s",
+      "codes": [
+        "DUNYH"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DURAN DOĞAN BASIM VE AMBALAJ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/923-duran-dogan-basim-ve-ambalaj-sanayi-a-s",
+      "codes": [
+        "DURDO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DURUKAN ŞEKERLEME SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6023-durukan-sekerleme-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DURKN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DYO BOYA FABRİKALARI SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/924-dyo-boya-fabrikalari-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "DYOBY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "DENİZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/912-deniz-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "DZGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EBEBEK MAĞAZACILIK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5861-ebebek-magazacilik-a-s",
+      "codes": [
+        "EBEBK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EİS ECZACIBAŞI İLAÇ SINAİ VE FİNANSAL YATIRIMLAR SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/939-eis-eczacibasi-ilac-sinai-ve-finansal-yatirimlar-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ECILC"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ECOGREEN ENERJİ HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6140-ecogreen-enerji-holding-a-s",
+      "codes": [
+        "ECOGR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ECZACIBAŞI YATIRIM HOLDİNG ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/926-eczacibasi-yatirim-holding-ortakligi-a-s",
+      "codes": [
+        "ECZYT"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "E-DATA TEKNOLOJİ PAZARLAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5333-e-data-teknoloji-pazarlama-a-s",
+      "codes": [
+        "EDATA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EDİP GAYRİMENKUL YATIRIM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/928-edip-gayrimenkul-yatirim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "EDIP"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EFOR YATIRIM SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5654-efor-yatirim-sanayi-ticaret-a-s",
+      "codes": [
+        "EFOR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EGE ENDÜSTRİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/930-ege-endustri-ve-ticaret-a-s",
+      "codes": [
+        "EGEEN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "EGEYAPI AVRUPA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6051-egeyapi-avrupa-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "EGEGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "NASMED ÖZEL SAĞLIK HİZMETLERİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5390-nasmed-ozel-saglik-hizmetleri-ticaret-a-s",
+      "codes": [
+        "EGEPO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EGE GÜBRE SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/931-ege-gubre-sanayii-a-s",
+      "codes": [
+        "EGGUB"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "EGE PROFİL TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/932-ege-profil-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "EGPRO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "EGE SERAMİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/933-ege-seramik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "EGSER"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EKİNCİLER DEMİR VE ÇELİK SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3089-ekinciler-demir-ve-celik-sanayi-a-s",
+      "codes": [
+        "EKDMR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1531-emlak-konut-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "EKGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "EKİM TURİZM TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2444-ekim-turizm-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "EKIM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EKİZ KİMYA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1515-ekiz-kimya-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "EKIZ"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "EKOS TEKNOLOJİ VE ELEKTRİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5898-ekos-teknoloji-ve-elektrik-a-s",
+      "codes": [
+        "EKOS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EKSUN GIDA TARIM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5796-eksun-gida-tarim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "EKSUN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ELİTE NATUREL ORGANİK GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5392-elite-naturel-organik-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ELITE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EMEK ELEKTRİK ENDÜSTRİSİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/940-emek-elektrik-endustrisi-a-s",
+      "codes": [
+        "EMKEL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EMİNİŞ AMBALAJ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/941-eminis-ambalaj-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "EMNIS"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "EMPA ELEKTRONİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4611-empa-elektronik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "EMPAE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ENDA ENERJİ HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6057-enda-enerji-holding-a-s",
+      "codes": [
+        "ENDAE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ENERYA ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2872-enerya-enerji-a-s",
+      "codes": [
+        "ENERY"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ENERJİSA ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3494-enerjisa-enerji-a-s",
+      "codes": [
+        "ENJSA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ENKA İNŞAAT VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/942-enka-insaat-ve-sanayi-a-s",
+      "codes": [
+        "ENKAI"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ENSARİ SINAİ YATIRIMLAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5560-ensari-sinai-yatirimlar-a-s",
+      "codes": [
+        "ENSRI"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "IC ENTERRA YENİLENEBİLİR ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5943-ic-enterra-yenilenebilir-enerji-a-s",
+      "codes": [
+        "ENTRA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "EGEPLAST EGE PLASTİK TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/934-egeplast-ege-plastik-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "EPLAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ERBOSAN ERCİYAS BORU SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/943-erbosan-erciyas-boru-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ERBOS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ERCİYAS ÇELİK BORU SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5516-erciyas-celik-boru-sanayi-a-s",
+      "codes": [
+        "ERCB"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EREĞLİ DEMİR VE ÇELİK FABRİKALARI T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/944-eregli-demir-ve-celik-fabrikalari-t-a-s",
+      "codes": [
+        "EREGL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ERSU MEYVE VE GIDA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/945-ersu-meyve-ve-gida-sanayi-a-s",
+      "codes": [
+        "ERSU"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ESCAR FİLO KİRALAMA HİZMETLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5327-escar-filo-kiralama-hizmetleri-a-s",
+      "codes": [
+        "ESCAR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ESCORT TEKNOLOJİ YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/946-escort-teknoloji-yatirim-a-s",
+      "codes": [
+        "ESCOM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ESENBOĞA ELEKTRİK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5190-esenboga-elektrik-uretim-a-s",
+      "codes": [
+        "ESEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ETİLER GIDA VE TİCARİ YATIRIMLAR SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1625-etiler-gida-ve-ticari-yatirimlar-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ETILR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EURO TREND YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1471-euro-trend-yatirim-ortakligi-a-s",
+      "codes": [
+        "ETYAT"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "EURO YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1508-euro-yatirim-holding-a-s",
+      "codes": [
+        "EUHOL"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "EURO KAPİTAL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1557-euro-kapital-yatirim-ortakligi-a-s",
+      "codes": [
+        "EUKYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "EUROPOWER ENERJİ VE OTOMASYON TEKNOLOJİLERİ SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5810-europower-enerji-ve-otomasyon-teknolojileri-sanayi-ticaret-a-s",
+      "codes": [
+        "EUPWR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "EUROPEN ENDÜSTRİ İNŞAAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5612-europen-endustri-insaat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "EUREN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "EURO MENKUL KIYMET YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1427-euro-menkul-kiymet-yatirim-ortakligi-a-s",
+      "codes": [
+        "EUYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "EYG GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5711-eyg-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "EYGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FADE GIDA YATIRIM SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5021-fade-gida-yatirim-sanayi-ticaret-a-s",
+      "codes": [
+        "FADE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FENERBAHÇE FUTBOL A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1383-fenerbahce-futbol-a-s",
+      "codes": [
+        "FENER"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "FLAP KONGRE TOPLANTI HİZMETLERİ OTOMOTİV VE TURİZM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1617-flap-kongre-toplanti-hizmetleri-otomotiv-ve-turizm-a-s",
+      "codes": [
+        "FLAP"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FEDERAL MOGUL İZMİT PİSTON VE PİM ÜRETİM TESİSLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/951-federal-mogul-izmit-piston-ve-pim-uretim-tesisleri-a-s",
+      "codes": [
+        "FMIZP"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FONET BİLGİ TEKNOLOJİLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4412-fonet-bilgi-teknolojileri-a-s",
+      "codes": [
+        "FONET"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FORMET METAL VE CAM SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4639-formet-metal-ve-cam-sanayi-a-s",
+      "codes": [
+        "FORMT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FORTE BİLGİ İLETİŞİM TEKNOLOJİLERİ VE SAVUNMA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5598-forte-bilgi-iletisim-teknolojileri-ve-savunma-sanayi-a-s",
+      "codes": [
+        "FORTE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FRİGO-PAK GIDA MADDELERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/957-frigo-pak-gida-maddeleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "FRIGO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FORMÜL PLASTİK VE METAL SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6179-formul-plastik-ve-metal-sanayi-a-s",
+      "codes": [
+        "FRMPL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "FORD OTOMOTİV SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/956-ford-otomotiv-sanayi-a-s",
+      "codes": [
+        "FROTO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "FUZUL GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5840-fuzul-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "FZLGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKİYE GARANTİ BANKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2422-turkiye-garanti-bankasi-a-s",
+      "codes": [
+        "GARAN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "GARANTİ FAKTORİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/959-garanti-faktoring-a-s",
+      "codes": [
+        "GARFA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GATE GROUP TEKNOLOJİ MEDYA VE SİBER GÜVENLİK HİZMETLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2437-gate-group-teknoloji-medya-ve-siber-guvenlik-hizmetleri-a-s",
+      "codes": [
+        "GATEG"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "GEDİK YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1517-gedik-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "GEDIK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GEDİZ AMBALAJ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2209-gediz-ambalaj-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "GEDZA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GEN İLAÇ VE SAĞLIK ÜRÜNLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5385-gen-ilac-ve-saglik-urunleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "GENIL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GENTAŞ KİMYA SANAYİ VE TİCARET PAZARLAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6201-gentas-kimya-sanayi-ve-ticaret-pazarlama-a-s",
+      "codes": [
+        "GENKM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GENTAŞ DEKORATİF YÜZEYLER SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/963-gentas-dekoratif-yuzeyler-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "GENTS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GERSAN ELEKTRİK TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/964-gersan-elektrik-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "GEREL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GİRİŞİM ELEKTRİK SANAYİ TAAHHÜT VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5400-girisim-elektrik-sanayi-taahhut-ve-ticaret-a-s",
+      "codes": [
+        "GESAN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GIPTA OFİS KIRTASİYE VE PROMOSYON ÜRÜNLERİ İMALAT SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5864-gipta-ofis-kirtasiye-ve-promosyon-urunleri-imalat-sanayi-a-s",
+      "codes": [
+        "GIPTA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GLOBAL MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1554-global-menkul-degerler-a-s",
+      "codes": [
+        "GLBMD"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "GELECEK VARLIK YÖNETİMİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4811-gelecek-varlik-yonetimi-a-s",
+      "codes": [
+        "GLCVY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GÜLERMAK AĞIR SANAYİ İNŞAAT VE TAAHHÜT A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3545-gulermak-agir-sanayi-insaat-ve-taahhut-a-s",
+      "codes": [
+        "GLRMK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "GÜLER YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1428-guler-yatirim-holding-a-s",
+      "codes": [
+        "GLRYH"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GLOBAL YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/967-global-yatirim-holding-a-s",
+      "codes": [
+        "GLYHO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "GİMAT MAĞAZACILIK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3697-gimat-magazacilik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "GMTAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GÖKNUR GIDA MADDELERİ ENERJİ İMALAT İTHALAT İHRACAT TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3518-goknur-gida-maddeleri-enerji-imalat-ithalat-ihracat-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "GOKNR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GOLDA GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3523-golda-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "GOLDA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GÖLTAŞ GÖLLER BÖLGESİ ÇİMENTO SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/972-goltas-goller-bolgesi-cimento-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "GOLTS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GOODYEAR LASTİKLERİ T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/970-goodyear-lastikleri-t-a-s",
+      "codes": [
+        "GOODY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GÖZDE GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1499-gozde-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "GOZDE"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "GARANTİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/961-garanti-yatirim-ortakligi-a-s",
+      "codes": [
+        "GRNYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "GÜR-SEL TURİZM TAŞIMACILIK VE SERVİS TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5553-gur-sel-turizm-tasimacilik-ve-servis-ticaret-a-s",
+      "codes": [
+        "GRSEL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "GRAINTURK HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5717-grainturk-holding-a-s",
+      "codes": [
+        "GRTHO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GSD DENİZCİLİK GAYRİMENKUL İNŞAAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1094-gsd-denizcilik-gayrimenkul-insaat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "GSDDE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GSD HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/973-gsd-holding-a-s",
+      "codes": [
+        "GSDHO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GALATASARAY SPORTİF SINAİ VE TİCARİ YATIRIMLAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/958-galatasaray-sportif-sinai-ve-ticari-yatirimlar-a-s",
+      "codes": [
+        "GSRAY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GÜBRE FABRİKALARI T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/974-gubre-fabrikalari-t-a-s",
+      "codes": [
+        "GUBRF"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "GÜNDOĞDU GIDA SÜT ÜRÜNLERİ SANAYİ VE DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6011-gundogdu-gida-sut-urunleri-sanayi-ve-dis-ticaret-a-s",
+      "codes": [
+        "GUNDG"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "GALATA WIND ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4969-galata-wind-enerji-a-s",
+      "codes": [
+        "GWIND"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "GEZİNOMİ SEYAHAT TURİZM TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5519-gezinomi-seyahat-turizm-ticaret-a-s",
+      "codes": [
+        "GZNMI"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKİYE HALK BANKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2423-turkiye-halk-bankasi-a-s",
+      "codes": [
+        "HALKB"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "HATEKS HATAY TEKSTİL İŞLETMELERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1532-hateks-hatay-tekstil-isletmeleri-a-s",
+      "codes": [
+        "HATEK"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "HAT-SAN GEMİ İNŞAA BAKIM ONARIM DENİZ NAKLİYAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5868-hat-san-gemi-insaa-bakim-onarim-deniz-nakliyat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "HATSN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HEDEF GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2003-hedef-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "HDFGS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HEDEF HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5387-hedef-holding-a-s",
+      "codes": [
+        "HEDEF"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HEKTAŞ TİCARET T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/978-hektas-ticaret-t-a-s",
+      "codes": [
+        "HEKTS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "HİDROPAR HAREKET KONTROL TEKNOLOJİLERİ MERKEZİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5625-hidropar-hareket-kontrol-teknolojileri-merkezi-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "HKTM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HALK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1701-halk-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "HLGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "HOROZ LOJİSTİK KARGO HİZMETLERİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5964-horoz-lojistik-kargo-hizmetleri-ve-ticaret-a-s",
+      "codes": [
+        "HOROZ"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HAREKET PROJE TAŞIMACILIĞI VE YÜK MÜHENDİSLİĞİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5959-hareket-proje-tasimaciligi-ve-yuk-muhendisligi-a-s",
+      "codes": [
+        "HRKET"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HİTİT BİLGİSAYAR HİZMETLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5499-hitit-bilgisayar-hizmetleri-a-s",
+      "codes": [
+        "HTTBT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HUB GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1446-hub-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "HUBVC"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "HUN YENİLENEBİLİR ENERJİ ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5520-hun-yenilenebilir-enerji-uretim-a-s",
+      "codes": [
+        "HUNER"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HÜRRİYET GAZETECİLİK VE MATBAACILIK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/979-hurriyet-gazetecilik-ve-matbaacilik-a-s",
+      "codes": [
+        "HURGZ"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ICBC TURKEY BANK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2420-icbc-turkey-bank-a-s",
+      "codes": [
+        "ICBCT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ICU GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1118-icu-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "ICUGS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İDEALİST GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1506-idealist-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "IDGYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "IŞIKLAR ENERJİ VE YAPI HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1031-isiklar-enerji-ve-yapi-holding-a-s",
+      "codes": [
+        "IEYHO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İHLAS HABER AJANSI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5420-ihlas-haber-ajansi-a-s",
+      "codes": [
+        "IHAAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İHLAS EV ALETLERİ İMALAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/981-ihlas-ev-aletleri-imalat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "IHEVA"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "İHLAS GAZETECİLİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1507-ihlas-gazetecilik-a-s",
+      "codes": [
+        "IHGZT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İHLAS HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/983-ihlas-holding-a-s",
+      "codes": [
+        "IHLAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İHLAS GAYRİMENKUL PROJE GELİŞTİRME VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1044-ihlas-gayrimenkul-proje-gelistirme-ve-ticaret-a-s",
+      "codes": [
+        "IHLGM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İHLAS YAYIN HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1526-ihlas-yayin-holding-a-s",
+      "codes": [
+        "IHYAY"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "İMAŞ MAKİNA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5592-imas-makina-sanayi-a-s",
+      "codes": [
+        "IMASM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İNDEKS BİLGİSAYAR SİSTEMLERİ MÜHENDİSLİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1390-indeks-bilgisayar-sistemleri-muhendislik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "INDES"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "İNFO YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1559-info-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "INFO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "INGRAM MİCRO BİLİŞİM SİSTEMLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1435-ingram-micro-bilisim-sistemleri-a-s",
+      "codes": [
+        "INGRM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İNTEMA İNŞAAT VE TESİSAT MALZEMELERİ YATIRIM VE PAZARLAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/985-intema-insaat-ve-tesisat-malzemeleri-yatirim-ve-pazarlama-a-s",
+      "codes": [
+        "INTEM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İNTETRA TEKNOLOJİ VE BİLİŞİM HİZMETLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6280-intetra-teknoloji-ve-bilisim-hizmetleri-a-s",
+      "codes": [
+        "INTET"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "INVEO YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/962-inveo-yatirim-holding-a-s",
+      "codes": [
+        "INVEO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "INVESTCO HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5549-investco-holding-a-s",
+      "codes": [
+        "INVES"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKİYE İŞ BANKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2425-turkiye-is-bankasi-a-s",
+      "codes": [
+        "ISATR",
+        "ISBTR",
+        "ISCTR",
+        "ISKUR"
+      ],
+      "segments": [
+        "ALT PAZAR",
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "İSKENDERUN DEMİR VE ÇELİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2528-iskenderun-demir-ve-celik-a-s",
+      "codes": [
+        "ISDMR"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "İŞ FİNANSAL KİRALAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/988-is-finansal-kiralama-a-s",
+      "codes": [
+        "ISFIN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "İŞ GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1398-is-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "ISGSY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İŞ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/987-is-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ISGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "IŞIK PLASTİK SANAYİ VE DIŞ TİCARET PAZARLAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5254-isik-plastik-sanayi-ve-dis-ticaret-pazarlama-a-s",
+      "codes": [
+        "ISKPL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İŞ YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1533-is-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "ISMEN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "İŞBİR SENTETİK DOKUMA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4135-isbir-sentetik-dokuma-sanayi-a-s",
+      "codes": [
+        "ISSEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İSVEA SERAMİK VE BANYO ÜRÜNLERİ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6235-isvea-seramik-ve-banyo-urunleri-sanayi-a-s",
+      "codes": [
+        "ISVEA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İŞ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/989-is-yatirim-ortakligi-a-s",
+      "codes": [
+        "ISYAT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İZDEMİR ENERJİ ELEKTRİK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4131-izdemir-enerji-elektrik-uretim-a-s",
+      "codes": [
+        "IZENR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İZMİR FIRÇA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2273-izmir-firca-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "IZFAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İZ YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2060-iz-yatirim-holding-a-s",
+      "codes": [
+        "IZINV"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "İZMİR DEMİR ÇELİK SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/991-izmir-demir-celik-sanayi-a-s",
+      "codes": [
+        "IZMDC"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "JANTSA JANT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1682-jantsa-jant-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "JANTS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KAPLAMİN AMBALAJ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/993-kaplamin-ambalaj-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KAPLM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KARDEMİR ÇELİK SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3200-kardemir-celik-sanayi-a-s",
+      "codes": [
+        "KARCL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KAREL ELEKTRONİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1442-karel-elektronik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KAREL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KARSAN OTOMOTİV SANAYİİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/995-karsan-otomotiv-sanayii-ve-ticaret-a-s",
+      "codes": [
+        "KARSN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KARTONSAN KARTON SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/997-kartonsan-karton-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KARTN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KATMERCİLER ARAÇ ÜSTÜ EKİPMAN SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1528-katmerciler-arac-ustu-ekipman-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KATMR"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KAYSERİ ŞEKER FABRİKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3723-kayseri-seker-fabrikasi-a-s",
+      "codes": [
+        "KAYSE"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KUZEY BORU A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5911-kuzey-boru-a-s",
+      "codes": [
+        "KBORU"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KOCAER ÇELİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3776-kocaer-celik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KCAER"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KOÇ HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1005-koc-holding-a-s",
+      "codes": [
+        "KCHOL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KERVANSARAY YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/897-kervansaray-yatirim-holding-a-s",
+      "codes": [
+        "KERVN"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "KAFEİN YAZILIM HİZMETLERİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4320-kafein-yazilim-hizmetleri-ticaret-a-s",
+      "codes": [
+        "KFEIN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KORAY GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1125-koray-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "KGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ERSAN ALIŞVERİŞ HİZMETLERİ VE GIDA SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5342-ersan-alisveris-hizmetleri-ve-gida-sanayi-ticaret-a-s",
+      "codes": [
+        "KIMMR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KİLER GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1541-kiler-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "KLGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KALEKİM KİMYEVİ MADDELER SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3979-kalekim-kimyevi-maddeler-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KLKIM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KLİMASAN KLİMA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1004-klimasan-klima-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KLMSN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KİLER HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3766-kiler-holding-a-s",
+      "codes": [
+        "KLRHO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KALESERAMİK ÇANAKKALE KALEBODUR SERAMİK SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2630-kaleseramik-canakkale-kalebodur-seramik-sanayi-a-s",
+      "codes": [
+        "KLSER"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KOLEKSİYON MOBİLYA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3651-koleksiyon-mobilya-sanayi-a-s",
+      "codes": [
+        "KLSYN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KALYON GÜNEŞ TEKNOLOJİLERİ ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6061-kalyon-gunes-teknolojileri-uretim-a-s",
+      "codes": [
+        "KLYPV"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KİMTEKS POLİÜRETAN SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5480-kimteks-poliuretan-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KMPUR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KONFRUT TARIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1006-konfrut-tarim-a-s",
+      "codes": [
+        "KNFRT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KOÇ METALURJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3409-koc-metalurji-a-s",
+      "codes": [
+        "KOCMT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KONYA KAĞIT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3308-konya-kagit-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KONKA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KONTROLMATİK TEKNOLOJİ ENERJİ VE MÜHENDİSLİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5206-kontrolmatik-teknoloji-enerji-ve-muhendislik-a-s",
+      "codes": [
+        "KONTR"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "KONYA ÇİMENTO SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1008-konya-cimento-sanayii-a-s",
+      "codes": [
+        "KONYA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KOZA POLYESTER SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5806-koza-polyester-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KOPOL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KORDSA TEKNİK TEKSTİL A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1009-kordsa-teknik-tekstil-a-s",
+      "codes": [
+        "KORDS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KOTON MAĞAZACILIK TEKSTİL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2365-koton-magazacilik-tekstil-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KOTON"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KAPEKS KİMYA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6272-kapeks-kimya-sanayi-a-s",
+      "codes": [
+        "KPEKS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/994-kardemir-karabuk-demir-celik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KRDMA",
+        "KRDMB",
+        "KRDMD"
+      ],
+      "segments": [
+        "ANA PAZAR",
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KÖRFEZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1610-korfez-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "KRGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KRON TEKNOLOJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1547-kron-teknoloji-a-s",
+      "codes": [
+        "KRONT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KOROPLAST TEMİZLİK AMBALAJ ÜRÜNLERİ SANAYİ VE DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5593-koroplast-temizlik-ambalaj-urunleri-sanayi-ve-dis-ticaret-a-s",
+      "codes": [
+        "KRPLS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KRİSTAL KOLA VE MEŞRUBAT SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1011-kristal-kola-ve-mesrubat-sanayi-ticaret-a-s",
+      "codes": [
+        "KRSTL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KARSU TEKSTİL SANAYİİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/996-karsu-tekstil-sanayii-ve-ticaret-a-s",
+      "codes": [
+        "KRTEK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KERVAN GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3456-kervan-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "KRVGD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KATILIMEVİM TASARRUF FİNANSMAN A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5763-katilimevim-tasarruf-finansman-a-s",
+      "codes": [
+        "KTLEV"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KÜTAHYA ŞEKER FABRİKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5365-kutahya-seker-fabrikasi-a-s",
+      "codes": [
+        "KTSKR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KÜTAHYA PORSELEN SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1012-kutahya-porselen-sanayi-a-s",
+      "codes": [
+        "KUTPO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KUVVA GIDA TİCARET VE SANAYİ YATIRIMLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1070-kuvva-gida-ticaret-ve-sanayi-yatirimlari-a-s",
+      "codes": [
+        "KUVVA"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "KUYAŞ YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1619-kuyas-yatirim-a-s",
+      "codes": [
+        "KUYAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KIZILBÜK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5395-kizilbuk-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "KZBGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "KUZUGRUP GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5857-kuzugrup-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "KZGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LDR TURİZM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4310-ldr-turizm-a-s",
+      "codes": [
+        "LIDER"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LİDER FAKTORİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1509-lider-faktoring-a-s",
+      "codes": [
+        "LIDFA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LİLA KAĞIT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5953-lila-kagit-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "LILAK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "LİNK BİLGİSAYAR SİSTEMLERİ YAZILIMI VE DONANIMI SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1015-link-bilgisayar-sistemleri-yazilimi-ve-donanimi-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "LINK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LOKMAN HEKİM ENGÜRÜSAĞ SAĞLIK TURİZM EĞİTİM HİZMETLERİ VE İNŞAAT TAAHHÜT A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1535-lokman-hekim-engurusag-saglik-turizm-egitim-hizmetleri-ve-insaat-taahhut-a-s",
+      "codes": [
+        "LKMNH"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LİMAK DOĞU ANADOLU ÇİMENTO SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5930-limak-dogu-anadolu-cimento-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "LMKDC"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "LOGO YAZILIM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1016-logo-yazilim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "LOGO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LORAS HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1498-loras-holding-a-s",
+      "codes": [
+        "LRSHO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LÜKS KADİFE TİCARET VE SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1017-luks-kadife-ticaret-ve-sanayii-a-s",
+      "codes": [
+        "LUKSK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LUXERA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6197-luxera-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "LXGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LYDİA HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1035-lydia-holding-a-s",
+      "codes": [
+        "LYDHO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "LYDİA YEŞİL ENERJİ KAYNAKLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1687-lydia-yesil-enerji-kaynaklari-a-s",
+      "codes": [
+        "LYDYE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MARMARİS ALTINYUNUS TURİSTİK TESİSLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1021-marmaris-altinyunus-turistik-tesisler-a-s",
+      "codes": [
+        "MAALT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MACKOLİK İNTERNET HİZMETLERİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5679-mackolik-internet-hizmetleri-ticaret-a-s",
+      "codes": [
+        "MACKO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MARGÜN ENERJİ ÜRETİM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5426-margun-enerji-uretim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MAGEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MAKİM MAKİNA TEKNOLOJİLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5562-makim-makina-teknolojileri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MAKIM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MAKİNA TAKIM ENDÜSTRİSİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1018-makina-takim-endustrisi-a-s",
+      "codes": [
+        "MAKTK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MANAS ENERJİ YÖNETİMİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5357-manas-enerji-yonetimi-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MANAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TUREKS TURUNÇ MADENCİLİK İÇ VE DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4355-tureks-turunc-madencilik-ic-ve-dis-ticaret-a-s",
+      "codes": [
+        "MARBL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MARMARA HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6135-marmara-holding-a-s",
+      "codes": [
+        "MARMR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MARTI OTEL İŞLETMELERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1022-marti-otel-isletmeleri-a-s",
+      "codes": [
+        "MARTI"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MASFEN ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6260-masfen-enerji-a-s",
+      "codes": [
+        "MASFN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "MAVİ GİYİM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3843-mavi-giyim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MAVI"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "METROPAL KURUMSAL HİZMETLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6200-metropal-kurumsal-hizmetler-a-s",
+      "codes": [
+        "MCARD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MEDİTERA TIBBİ MALZEME SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5364-meditera-tibbi-malzeme-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MEDTR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MEGA POLİETİLEN KÖPÜK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1601-mega-polietilen-kopuk-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MEGAP"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "MEGA METAL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4361-mega-metal-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MEGMT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MEKA GLOBAL MAKİNE İMALAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5875-meka-global-makine-imalat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MEKAG"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MEPET METRO PETROL VE TESİSLERİ SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1553-mepet-metro-petrol-ve-tesisleri-sanayi-ticaret-a-s",
+      "codes": [
+        "MEPET"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "MERCAN KİMYA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5325-mercan-kimya-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MERCN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MERİT TURİZM YATIRIM VE İŞLETME A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1594-merit-turizm-yatirim-ve-isletme-a-s",
+      "codes": [
+        "MERIT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MERKO GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1029-merko-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MERKO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "METGÜN ENERJİ YATIRIMLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6189-metgun-enerji-yatirimlari-a-s",
+      "codes": [
+        "METEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "METRO TİCARİ VE MALİ YATIRIMLAR HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1120-metro-ticari-ve-mali-yatirimlar-holding-a-s",
+      "codes": [
+        "METRO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MEYSU GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6175-meysu-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MEYSU"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MİGROS TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1494-migros-ticaret-a-s",
+      "codes": [
+        "MGROS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "MHR GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5877-mhr-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "MHRGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MİA TEKNOLOJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5455-mia-teknoloji-a-s",
+      "codes": [
+        "MIATK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MMC SANAYİ VE TİCARİ YATIRIMLAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1563-mmc-sanayi-ve-ticari-yatirimlar-a-s",
+      "codes": [
+        "MMCAS"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "MENDERES TEKSTİL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1027-menderes-tekstil-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MNDRS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MONDİ TURKEY OLUKLU MUKAVVA KAĞIT VE AMBALAJ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1095-mondi-turkey-oluklu-mukavva-kagit-ve-ambalaj-sanayi-a-s",
+      "codes": [
+        "MNDTR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MOBİLTEL İLETİŞİM HİZMETLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5462-mobiltel-iletisim-hizmetleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MOBTL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "MOGAN ENERJİ YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5180-mogan-enerji-yatirim-holding-a-s",
+      "codes": [
+        "MOGAN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MOPAŞ MARKETÇİLİK GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6054-mopas-marketcilik-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "MOPAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "MLP SAĞLIK HİZMETLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2118-mlp-saglik-hizmetleri-a-s",
+      "codes": [
+        "MPARK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "MARTI GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1521-marti-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "MRGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MARSHALL BOYA VE VERNİK SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1023-marshall-boya-ve-vernik-sanayii-a-s",
+      "codes": [
+        "MRSHL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MİSTRAL GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3695-mistral-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "MSGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "MATRİKS FİNANSAL TEKNOLOJİLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5280-matriks-finansal-teknolojiler-a-s",
+      "codes": [
+        "MTRKS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "METRO YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/927-metro-yatirim-ortakligi-a-s",
+      "codes": [
+        "MTRYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "MAZHAR ZORLU HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1024-mazhar-zorlu-holding-a-s",
+      "codes": [
+        "MZHLD"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "NATUREL YENİLENEBİLİR ENERJİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4904-naturel-yenilenebilir-enerji-ticaret-a-s",
+      "codes": [
+        "NATEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "NETAŞ TELEKOMÜNİKASYON A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1041-netas-telekomunikasyon-a-s",
+      "codes": [
+        "NETAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "NETCAD YAZILIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5577-netcad-yazilim-a-s",
+      "codes": [
+        "NETCD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "NET GLOBAL ENDÜSTRİYEL YATIRIMLAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6284-net-global-endustriyel-yatirimlar-a-s",
+      "codes": [
+        "NETGL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "NİĞBAŞ NİĞDE BETON SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1577-nigbas-nigde-beton-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "NIBAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "NATURELGAZ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5303-naturelgaz-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "NTGAZ"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "NET HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1039-net-holding-a-s",
+      "codes": [
+        "NTHOL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "NUROL GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1043-nurol-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "NUGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "NUH ÇİMENTO SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1042-nuh-cimento-sanayi-a-s",
+      "codes": [
+        "NUHCM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "OBA MAKARNACILIK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5934-oba-makarnacilik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "OBAMS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "OBASE BİLGİSAYAR VE DANIŞMANLIK HİZMETLERİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5596-obase-bilgisayar-ve-danismanlik-hizmetleri-ticaret-a-s",
+      "codes": [
+        "OBASE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ODAŞ ELEKTRİK ÜRETİM SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1887-odas-elektrik-uretim-sanayi-ticaret-a-s",
+      "codes": [
+        "ODAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ODİNE SOLUTİONS TEKNOLOJİ TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5941-odine-solutions-teknoloji-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "ODINE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "OFİS YEM GIDA SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5851-ofis-yem-gida-sanayi-ticaret-a-s",
+      "codes": [
+        "OFSYM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ONCOSEM ONKOLOJİK SİSTEMLER SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5624-oncosem-onkolojik-sistemler-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ONCSM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ONUR YÜKSEK TEKNOLOJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5962-onur-yuksek-teknoloji-a-s",
+      "codes": [
+        "ONRYT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ORÇAY ORTAKÖY ÇAY SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5407-orcay-ortakoy-cay-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ORCAY"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ORGE ENERJİ ELEKTRİK TAAHHÜT A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1603-orge-enerji-elektrik-taahhut-a-s",
+      "codes": [
+        "ORGE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ORZAKS İLAÇ VE KİMYA SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6234-orzaks-ilac-ve-kimya-sanayi-ticaret-a-s",
+      "codes": [
+        "ORZAX"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "OSMANLI YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1576-osmanli-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "OSMEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "OSTİM ENDÜSTRİYEL YATIRIMLAR VE İŞLETME A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1596-ostim-endustriyel-yatirimlar-ve-isletme-a-s",
+      "codes": [
+        "OSTIM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "OTOKAR OTOMOTİV VE SAVUNMA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1046-otokar-otomotiv-ve-savunma-sanayi-a-s",
+      "codes": [
+        "OTKAR"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "OTTO HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1752-otto-holding-a-s",
+      "codes": [
+        "OTTO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "OYAK ÇİMENTO FABRİKALARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1019-oyak-cimento-fabrikalari-a-s",
+      "codes": [
+        "OYAKC"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "OYAK YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1456-oyak-yatirim-ortakligi-a-s",
+      "codes": [
+        "OYAYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "OYLUM SINAİ YATIRIMLAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1598-oylum-sinai-yatirimlar-a-s",
+      "codes": [
+        "OYLUM"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "OYAK YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2486-oyak-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "OYYAT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÖZATA DENİZCİLİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6018-ozata-denizcilik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "OZATD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÖZDERİCİ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1048-ozderici-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "OZGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÖZAK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1575-ozak-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "OZKGY"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ÖZERDEN AMBALAJ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2432-ozerden-ambalaj-sanayi-a-s",
+      "codes": [
+        "OZRDN"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ÖZSU BALIK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4748-ozsu-balik-uretim-a-s",
+      "codes": [
+        "OZSUB"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÖZYAŞAR TEL VE GALVANİZLEME SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5961-ozyasar-tel-ve-galvanizleme-sanayi-a-s",
+      "codes": [
+        "OZYSR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PANORA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1753-panora-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "PAGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PASİFİK HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6161-pasifik-holding-a-s",
+      "codes": [
+        "PAHOL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "PAMEL YENİLENEBİLİR ELEKTRİK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2262-pamel-yenilenebilir-elektrik-uretim-a-s",
+      "codes": [
+        "PAMEL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PAPİLON SAVUNMA TEKNOLOJİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4989-papilon-savunma-teknoloji-ve-ticaret-a-s",
+      "codes": [
+        "PAPIL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PARSAN MAKİNA PARÇALARI SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1050-parsan-makina-parcalari-sanayii-a-s",
+      "codes": [
+        "PARSN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "PASİFİK EURASİA LOJİSTİK DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5826-pasifik-eurasia-lojistik-dis-ticaret-a-s",
+      "codes": [
+        "PASEU"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PASİFİK TEKNOLOJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5928-pasifik-teknoloji-a-s",
+      "codes": [
+        "PATEK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PC İLETİŞİM VE MEDYA HİZMETLERİ SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5299-pc-iletisim-ve-medya-hizmetleri-sanayi-ticaret-a-s",
+      "codes": [
+        "PCILT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4584-peker-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "PEKGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PENGUEN GIDA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1052-penguen-gida-sanayi-a-s",
+      "codes": [
+        "PENGD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PENTA TEKNOLOJİ ÜRÜNLERİ DAĞITIM TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3909-penta-teknoloji-urunleri-dagitim-ticaret-a-s",
+      "codes": [
+        "PENTA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PETKİM PETROKİMYA HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1053-petkim-petrokimya-holding-a-s",
+      "codes": [
+        "PETKM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "PINAR ENTEGRE ET VE UN SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1057-pinar-entegre-et-ve-un-sanayii-a-s",
+      "codes": [
+        "PETUN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PEGASUS HAVA TAŞIMACILIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1710-pegasus-hava-tasimaciligi-a-s",
+      "codes": [
+        "PGSUS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "PINAR SU VE İÇECEK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1058-pinar-su-ve-icecek-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "PINSU"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PLASTİKKART AKILLI KART İLETİŞİM SİSTEMLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1402-plastikkart-akilli-kart-iletisim-sistemleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "PKART"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PETROKENT TURİZM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1054-petrokent-turizm-a-s",
+      "codes": [
+        "PKENT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PLATFORM TURİZM TAŞIMACILIK GIDA İNŞAAT TEMİZLİK HİZMETLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3208-platform-turizm-tasimacilik-gida-insaat-temizlik-hizmetleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "PLTUR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PANELSAN ÇATI CEPHE SİSTEMLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5487-panelsan-cati-cephe-sistemleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "PNLSN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PINAR SÜT MAMÜLLERİ SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1059-pinar-sut-mamulleri-sanayii-a-s",
+      "codes": [
+        "PNSUT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "POLİSAN HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1608-polisan-holding-a-s",
+      "codes": [
+        "POLHO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "POLİTEKNİK METAL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2219-politeknik-metal-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "POLTK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PARDUS GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5417-pardus-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "PRDGS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRK PRYSMİAN KABLO VE SİSTEMLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1108-turk-prysmian-kablo-ve-sistemleri-a-s",
+      "codes": [
+        "PRKAB"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PARK ELEKTRİK ÜRETİM MADENCİLİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1049-park-elektrik-uretim-madencilik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "PRKME"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PRİZMA PRES MATBAACILIK YAYINCILIK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1599-prizma-pres-matbaacilik-yayincilik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "PRZMA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PERGAMON STATUS DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2371-pergamon-status-dis-ticaret-a-s",
+      "codes": [
+        "PSDTC"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "PASİFİK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5371-pasifik-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "PSGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "QUA GRANITE HAYAL YAPI VE ÜRÜNLERİ SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4887-qua-granite-hayal-yapi-ve-urunleri-sanayi-ticaret-a-s",
+      "codes": [
+        "QUAGR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "QUİCK SİGORTA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6264-quick-sigorta-a-s",
+      "codes": [
+        "QUICK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "RAL YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/883-ral-yatirim-holding-a-s",
+      "codes": [
+        "RALYH"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "RAY SİGORTA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1063-ray-sigorta-a-s",
+      "codes": [
+        "RAYSG"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "REEDER TEKNOLOJİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5866-reeder-teknoloji-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "REEDR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "RÖNESANS GAYRİMENKUL YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1548-ronesans-gayrimenkul-yatirim-a-s",
+      "codes": [
+        "RGYAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "RAİNBOW POLİKARBONAT SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5418-rainbow-polikarbonat-sanayi-ticaret-a-s",
+      "codes": [
+        "RNPOL"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "RODRİGO TEKSTİL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1998-rodrigo-tekstil-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "RODRG"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "RTA LABORATUVARLARI BİYOLOJİK ÜRÜNLER İLAÇ VE MAKİNE SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2258-rta-laboratuvarlari-biyolojik-urunler-ilac-ve-makine-sanayi-ticaret-a-s",
+      "codes": [
+        "RTALB"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "RUBENİS TEKSTİL SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5478-rubenis-tekstil-sanayi-ticaret-a-s",
+      "codes": [
+        "RUBNS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "RUZY MADENCİLİK VE ENERJİ YATIRIMLARI SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/853-ruzy-madencilik-ve-enerji-yatirimlari-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "RUZYE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "REYSAŞ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1514-reysas-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "RYGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "REYSAŞ TAŞIMACILIK VE LOJİSTİK TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1415-reysas-tasimacilik-ve-lojistik-ticaret-a-s",
+      "codes": [
+        "RYSAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "SAFKAR EGE SOĞUTMACILIK KLİMA SOĞUK HAVA TESİSLERİ İHRACAT İTHALAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4550-safkar-ege-sogutmacilik-klima-soguk-hava-tesisleri-ihracat-ithalat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SAFKR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "HACI ÖMER SABANCI HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/976-haci-omer-sabanci-holding-a-s",
+      "codes": [
+        "SAHOL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "SARAY MATBAACILIK KAĞITÇILIK KIRTASİYECİLİK TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1552-saray-matbaacilik-kagitcilik-kirtasiyecilik-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "SAMAT"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "SAN-EL MÜHENDİSLİK ELEKTRİK TAAHHÜT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2068-san-el-muhendislik-elektrik-taahhut-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SANEL"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "SANİFOAM ENDÜSTRİ VE TÜKETİM ÜRÜNLERİ SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1578-sanifoam-endustri-ve-tuketim-urunleri-sanayi-ticaret-a-s",
+      "codes": [
+        "SANFM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SANKO PAZARLAMA İTHALAT İHRACAT A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1066-sanko-pazarlama-ithalat-ihracat-a-s",
+      "codes": [
+        "SANKO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ŞA-RA ENERJİ İNŞAAT TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6246-sa-ra-enerji-insaat-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "SARAE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SARKUYSAN ELEKTROLİTİK BAKIR SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1067-sarkuysan-elektrolitik-bakir-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SARKY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SASA POLYESTER SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1068-sasa-polyester-sanayi-a-s",
+      "codes": [
+        "SASA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "SAY YENİLENEBİLİR ENERJİ EKİPMANLARI SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1983-say-yenilenebilir-enerji-ekipmanlari-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SAYAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SDT UZAY VE SAVUNMA TEKNOLOJİLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5686-sdt-uzay-ve-savunma-teknolojileri-a-s",
+      "codes": [
+        "SDTTR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SEĞMEN KARDEŞLER GIDA ÜRETİM VE AMBALAJ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5976-segmen-kardesler-gida-uretim-ve-ambalaj-sanayi-a-s",
+      "codes": [
+        "SEGMN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ŞEKER GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5071-seker-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "SEGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ŞEKER FİNANSAL KİRALAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1392-seker-finansal-kiralama-a-s",
+      "codes": [
+        "SEKFK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SEKURO PLASTİK AMBALAJ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2050-sekuro-plastik-ambalaj-sanayi-a-s",
+      "codes": [
+        "SEKUR"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "SELÇUK ECZA DEPOSU TİCARET VE SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1420-selcuk-ecza-deposu-ticaret-ve-sanayi-a-s",
+      "codes": [
+        "SELEC"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SELVA GIDA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5362-selva-gida-sanayi-a-s",
+      "codes": [
+        "SELVA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SERANİT GRANİT SERAMİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6058-seranit-granit-seramik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SERNT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SEYİTLER KİMYA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2500-seyitler-kimya-sanayi-a-s",
+      "codes": [
+        "SEYKM"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "SİLVERLİNE ENDÜSTRİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1436-silverline-endustri-ve-ticaret-a-s",
+      "codes": [
+        "SILVR"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKİYE ŞİŞE VE CAM FABRİKALARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1087-turkiye-sise-ve-cam-fabrikalari-a-s",
+      "codes": [
+        "SISE"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ŞEKERBANK T.A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2418-sekerbank-t-a-s",
+      "codes": [
+        "SKBNK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SÖKTAŞ TEKSTİL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1073-soktas-tekstil-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SKTAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SKYALP FİNANSAL TEKNOLOJİLER VE DANIŞMANLIK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1602-skyalp-finansal-teknolojiler-ve-danismanlik-a-s",
+      "codes": [
+        "SKYLP"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ŞEKER YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1351-seker-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "SKYMD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SMARTİKS YAZILIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4872-smartiks-yazilim-a-s",
+      "codes": [
+        "SMART"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SMART GÜNEŞ ENERJİSİ TEKNOLOJİLERİ ARAŞTIRMA GELİŞTİRME ÜRETİM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5557-smart-gunes-enerjisi-teknolojileri-arastirma-gelistirme-uretim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SMRTG"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SÜMER VARLIK YÖNETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3660-sumer-varlik-yonetim-a-s",
+      "codes": [
+        "SMRVA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SİNPAŞ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1459-sinpas-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "SNGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "SANİCA ISI SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5691-sanica-isi-sanayi-a-s",
+      "codes": [
+        "SNICA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SOHO GİYİM VE ENERJİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6233-soho-giyim-ve-enerji-a-s",
+      "codes": [
+        "SOHOE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SÖKE DEĞİRMENCİLİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4099-soke-degirmencilik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SOKE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ŞOK MARKETLER TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3913-sok-marketler-ticaret-a-s",
+      "codes": [
+        "SOKM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "SÖNMEZ FİLAMENT SENTETİK İPLİK VE ELYAF SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1074-sonmez-filament-sentetik-iplik-ve-elyaf-sanayi-a-s",
+      "codes": [
+        "SONME"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "SERVET GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1705-servet-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "SRVGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SAAT VE SAAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4184-saat-ve-saat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SSAAT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SUN TEKSTİL SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5587-sun-tekstil-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "SUNTK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SUR TATİL EVLERİ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5910-sur-tatil-evleri-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "SURGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SUWEN TEKSTİL SANAYİ PAZARLAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5332-suwen-tekstil-sanayi-pazarlama-a-s",
+      "codes": [
+        "SUWEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "SAVUR GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6198-savur-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "SVGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TAB GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4065-tab-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "TABGD"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TARKİM BİTKİ KORUMA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5023-tarkim-bitki-koruma-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "TARKM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TATLIPINAR ENERJİ ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5850-tatlipinar-enerji-uretim-a-s",
+      "codes": [
+        "TATEN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TAT GIDA SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1091-tat-gida-sanayi-a-s",
+      "codes": [
+        "TATGD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TAV HAVALİMANLARI HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1452-tav-havalimanlari-holding-a-s",
+      "codes": [
+        "TAVHL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRK TUBORG BİRA VE MALT SANAYİİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1088-turk-tuborg-bira-ve-malt-sanayii-a-s",
+      "codes": [
+        "TBORG"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TURKCELL İLETİŞİM HİZMETLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1103-turkcell-iletisim-hizmetleri-a-s",
+      "codes": [
+        "TCELL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "KIRAÇ GALVANİZ TELEKOMİNİKASYON METAL MAKİNE İNŞAAT ELEKTRİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6010-kirac-galvaniz-telekominikasyon-metal-makine-insaat-elektrik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "TCKRC"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TREND GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4580-trend-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "TDGYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "TERA YATIRIM TEKNOLOJİ HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/968-tera-yatirim-teknoloji-holding-a-s",
+      "codes": [
+        "TEHOL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TEK-ART İNŞAAT TİCARET TURİZM SANAYİ VE YATIRIMLAR A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1092-tek-art-insaat-ticaret-turizm-sanayi-ve-yatirimlar-a-s",
+      "codes": [
+        "TEKTU"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TERA YATIRIM MENKUL DEĞERLER A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2464-tera-yatirim-menkul-degerler-a-s",
+      "codes": [
+        "TERA"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "EUROPAP TEZOL KAĞIT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4838-europap-tezol-kagit-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "TEZOL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TGS DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1613-tgs-dis-ticaret-a-s",
+      "codes": [
+        "TGSAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRK HAVA YOLLARI A.O.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1107-turk-hava-yollari-a-o",
+      "codes": [
+        "THYAO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TEKFEN HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1470-tekfen-holding-a-s",
+      "codes": [
+        "TKFEN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TEKNİKA PLAST TEKNİK KALIP PLASTİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6274-teknika-plast-teknik-kalip-plastik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "TKNKA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TEKNOSA İÇ VE DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1607-teknosa-ic-ve-dis-ticaret-a-s",
+      "codes": [
+        "TKNSA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TRABZON LİMAN İŞLETMECİLİĞİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4570-trabzon-liman-isletmeciligi-a-s",
+      "codes": [
+        "TLMAN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TEMAPOL POLİMER PLASTİK VE İNŞAAT SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2075-temapol-polimer-plastik-ve-insaat-sanayi-ticaret-a-s",
+      "codes": [
+        "TMPOL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1694-tumosan-motor-ve-traktor-sanayi-a-s",
+      "codes": [
+        "TMSN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TAPDİ OKSİJEN ÖZEL SAĞLIK VE EĞİTİM HİZMETLERİ SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5261-tapdi-oksijen-ozel-saglik-ve-egitim-hizmetleri-sanayi-ticaret-a-s",
+      "codes": [
+        "TNZTP"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TOFAŞ TÜRK OTOMOBİL FABRİKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1096-tofas-turk-otomobil-fabrikasi-a-s",
+      "codes": [
+        "TOASO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRK ALTIN İŞLETMELERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1500-turk-altin-isletmeleri-a-s",
+      "codes": [
+        "TRALT"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TURCAS HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1102-turcas-holding-a-s",
+      "codes": [
+        "TRCAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TR DOĞAL ENERJİ KAYNAKLARI ARAŞTIRMA VE ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/986-tr-dogal-enerji-kaynaklari-arastirma-ve-uretim-a-s",
+      "codes": [
+        "TRENJ"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TORUNLAR GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1524-torunlar-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "TRGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TERA FİNANSAL YATIRIMLAR HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1089-tera-finansal-yatirimlar-holding-a-s",
+      "codes": [
+        "TRHOL"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "TURK İLAÇ VE SERUM SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5263-turk-ilac-ve-serum-sanayi-a-s",
+      "codes": [
+        "TRILC"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "TR ANADOLU METAL MADENCİLİK İŞLETMELERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1010-tr-anadolu-metal-madencilik-isletmeleri-a-s",
+      "codes": [
+        "TRMET"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TSKB GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1502-tskb-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "TSGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKİYE SINAİ KALKINMA BANKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2427-turkiye-sinai-kalkinma-bankasi-a-s",
+      "codes": [
+        "TSKB"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TRABZONSPOR SPORTİF YATIRIM VE FUTBOL İŞLETMECİLİĞİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1400-trabzonspor-sportif-yatirim-ve-futbol-isletmeciligi-ticaret-a-s",
+      "codes": [
+        "TSPOR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1473-turk-telekomunikasyon-a-s",
+      "codes": [
+        "TTKOM"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRK TRAKTÖR VE ZİRAAT MAKİNELERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1393-turk-traktor-ve-ziraat-makineleri-a-s",
+      "codes": [
+        "TTRAK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TUĞÇELİK ALÜMİNYUM VE METAL MAMÜLLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2264-tugcelik-aluminyum-ve-metal-mamulleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "TUCLK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TUKAŞ GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1101-tukas-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "TUKAS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TÜPRAŞ-TÜRKİYE PETROL RAFİNERİLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1105-tupras-turkiye-petrol-rafinerileri-a-s",
+      "codes": [
+        "TUPRS"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TUREKS TURİZM TAŞIMACILIK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/3986-tureks-turizm-tasimacilik-a-s",
+      "codes": [
+        "TUREX"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKER PROJE GAYRİMENKUL VE YATIRIM GELİŞTİRME A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1996-turker-proje-gayrimenkul-ve-yatirim-gelistirme-a-s",
+      "codes": [
+        "TURGG"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKİYE SİGORTA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/975-turkiye-sigorta-a-s",
+      "codes": [
+        "TURSG"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ÜÇAY MÜHENDİSLİK ENERJİ VE İKLİMLENDİRME TEKNOLOJİLERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6182-ucay-muhendislik-enerji-ve-iklimlendirme-teknolojileri-a-s",
+      "codes": [
+        "UCAYM"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "UFUK YATIRIM YÖNETİM VE GAYRİMENKUL A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1444-ufuk-yatirim-yonetim-ve-gayrimenkul-a-s",
+      "codes": [
+        "UFUK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ULAŞLAR TURİZM ENERJİ TARIM GIDA VE İNŞAAT YATIRIMLARI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1677-ulaslar-turizm-enerji-tarim-gida-ve-insaat-yatirimlari-a-s",
+      "codes": [
+        "ULAS"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "ÜLKER BİSKÜVİ SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/859-ulker-biskuvi-sanayi-a-s",
+      "codes": [
+        "ULKER"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ULUSAL FAKTORİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2149-ulusal-faktoring-a-s",
+      "codes": [
+        "ULUFA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ULUSOY ELEKTRİK İMALAT TAAHHÜT VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2374-ulusoy-elektrik-imalat-taahhut-ve-ticaret-a-s",
+      "codes": [
+        "ULUSE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2375-ulusoy-un-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "ULUUN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ÜNLÜ YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2474-unlu-yatirim-holding-a-s",
+      "codes": [
+        "UNLU"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "UŞAK SERAMİK SANAYİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1111-usak-seramik-sanayi-a-s",
+      "codes": [
+        "USAK"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "US YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1403-us-yatirim-holding-a-s",
+      "codes": [
+        "USHOL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2428-turkiye-vakiflar-bankasi-t-a-o",
+      "codes": [
+        "VAKBN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "VAKIF FAKTORİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2556-vakif-faktoring-a-s",
+      "codes": [
+        "VAKFA"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "VAKIF FİNANSAL KİRALAMA A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1115-vakif-finansal-kiralama-a-s",
+      "codes": [
+        "VAKFN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "VAKKO TEKSTİL VE HAZIR GİYİM SANAYİ İŞLETMELERİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1119-vakko-tekstil-ve-hazir-giyim-sanayi-isletmeleri-a-s",
+      "codes": [
+        "VAKKO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "VANET GIDA SANAYİ İÇ VE DIŞ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1558-vanet-gida-sanayi-ic-ve-dis-ticaret-a-s",
+      "codes": [
+        "VANGD"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "VBT YAZILIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5369-vbt-yazilim-a-s",
+      "codes": [
+        "VBTYZ"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "VERUSATURK GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2048-verusaturk-girisim-sermayesi-yatirim-ortakligi-a-s",
+      "codes": [
+        "VERTU"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "VERUSA HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2059-verusa-holding-a-s",
+      "codes": [
+        "VERUS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "VESTEL BEYAZ EŞYA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1419-vestel-beyaz-esya-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "VESBE"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "VESTEL ELEKTRONİK SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1122-vestel-elektronik-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "VESTL"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "TÜRKER VANGÖLÜ ENERJİ YATIRIM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6273-turker-vangolu-enerji-yatirim-a-s",
+      "codes": [
+        "VEYAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "VAKIF MENKUL KIYMET YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1117-vakif-menkul-kiymet-yatirim-ortakligi-a-s",
+      "codes": [
+        "VKFYO"
+      ],
+      "segments": [
+        "ALT PAZAR"
+      ]
+    },
+    {
+      "name": "VAKIF GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1116-vakif-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "VKGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "VİKİNG KAĞIT VE SELÜLOZ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1123-viking-kagit-ve-seluloz-a-s",
+      "codes": [
+        "VKING"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "VERA KONSEPT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5885-vera-konsept-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "VRGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "VİŞNE MADENCİLİK ÜRETİM SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6060-visne-madencilik-uretim-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "VSNMD"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YAPRAK SÜT VE BESİ ÇİFTLİKLERİ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2920-yaprak-sut-ve-besi-ciftlikleri-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "YAPRK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YATAŞ YATAK VE YORGAN SANAYİ TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1129-yatas-yatak-ve-yorgan-sanayi-ticaret-a-s",
+      "codes": [
+        "YATAS"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YAYLA ENERJİ ÜRETİM TURİZM VE İNŞAAT TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2061-yayla-enerji-uretim-turizm-ve-insaat-ticaret-a-s",
+      "codes": [
+        "YAYLA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YEO TEKNOLOJİ ENERJİ VE ENDÜSTRİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2900-yeo-teknoloji-enerji-ve-endustri-a-s",
+      "codes": [
+        "YEOTK"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YEŞİL YATIRIM HOLDİNG A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1386-yesil-yatirim-holding-a-s",
+      "codes": [
+        "YESIL"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YENİ GİMAT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2012-yeni-gimat-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "YGGYO"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/5965-yigit-aku-malzemeleri-nakliyat-turizm-insaat-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "YIGIT"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YAPI VE KREDİ BANKASI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2429-yapi-ve-kredi-bankasi-a-s",
+      "codes": [
+        "YKBNK"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "YÜKSELEN ÇELİK A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4873-yukselen-celik-a-s",
+      "codes": [
+        "YKSLN"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YÜNSA YÜNLÜ SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1132-yunsa-yunlu-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "YUNSA"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "YEŞİL YAPI ENDÜSTRİSİ A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/885-yesil-yapi-endustrisi-a-s",
+      "codes": [
+        "YYAPI"
+      ],
+      "segments": [
+        "YAKIN İZLEME PAZARI"
+      ]
+    },
+    {
+      "name": "YAYLA AGRO GIDA SANAYİ VE TİCARET A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/2759-yayla-agro-gida-sanayi-ve-ticaret-a-s",
+      "codes": [
+        "YYLGD"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ZEDUR ENERJİ ELEKTRİK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1539-zedur-enerji-elektrik-uretim-a-s",
+      "codes": [
+        "ZEDUR"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ZERAY GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6166-zeray-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ZERGY"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "Z GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/6178-z-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ZGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    },
+    {
+      "name": "ZORLU ENERJİ ELEKTRİK ÜRETİM A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1133-zorlu-enerji-elektrik-uretim-a-s",
+      "codes": [
+        "ZOREN"
+      ],
+      "segments": [
+        "YILDIZ PAZAR"
+      ]
+    },
+    {
+      "name": "ZİRAAT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
+      "kapProfile": "https://kap.org.tr/tr/sirket-bilgileri/ozet/4337-ziraat-gayrimenkul-yatirim-ortakligi-a-s",
+      "codes": [
+        "ZRGYO"
+      ],
+      "segments": [
+        "ANA PAZAR"
+      ]
+    }
+  ]
+}
