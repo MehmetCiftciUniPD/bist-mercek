@@ -2,6 +2,21 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-10 · Claude Code · public static site
+
+- **Public site:** https://mehmetciftciunipd.github.io/bist-mercek/ is served by
+  GitHub Pages from the `gh-pages` branch. It is a separate static page
+  (`site/page.html`), not the Mercek Next.js app, and needs no server or key.
+- **Rebuild and publish:** `bash research/publish-site.sh` (runs
+  `research/site.py`, then force-pushes `site/dist` to `gh-pages`).
+- **AI analyses:** `research/ai-analyses.py` pre-generates Turkish analyses with
+  a free OpenRouter model into `data/ai-analyses.json`; the site shows them as
+  stored text. The key is read from `OPENROUTER_API_KEY` and is not in the
+  repo. The free tier allows 50 requests a day, so coverage grows by market
+  cap, a few dozen companies per run. Replies that are short or cut off are
+  rejected. Free models misread wide tables; keep the per-period prompt layout.
+- **Not done:** `claude/history-ai-analysis` is still not merged into `main`.
+
 ## 2026-11-10 · Claude Code · branch `claude/history-ai-analysis`
 
 Not merged to `main` and not published to Sites.

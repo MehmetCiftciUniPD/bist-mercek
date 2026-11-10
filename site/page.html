@@ -1,0 +1,506 @@
+<title>Bilanço Masası</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a ledger desk. Left, the full BIST register as one dense sortable table;
+   right, the open company's file (figures, six-year charts, statement history, analysis). */
+:root {
+  --bg: #f1f4f6; --surface: #ffffff; --sunk: #e8edf1;
+  --ink: #0f1f2a; --ink2: #44566a; --muted: #6d7d8b; --line: #d5dde4;
+  --accent: #0b5c6e; --accent-ink: #ffffff; --accent-soft: #dcecef;
+  --pos: #2a78d6; --neg: #eb6834;
+  --warn-bg: #fff3d4; --warn-ink: #654500; --warn-line: #e6c56a;
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1418; --surface: #151d23; --sunk: #1c262d;
+    --ink: #e7eef2; --ink2: #b4c1cb; --muted: #8696a2; --line: #2a3740;
+    --accent: #62c3d6; --accent-ink: #052028; --accent-soft: #173039;
+    --pos: #3987e5; --neg: #d95926;
+    --warn-bg: #33270a; --warn-ink: #f2d68d; --warn-line: #6b5415;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1418; --surface: #151d23; --sunk: #1c262d;
+  --ink: #e7eef2; --ink2: #b4c1cb; --muted: #8696a2; --line: #2a3740;
+  --accent: #62c3d6; --accent-ink: #052028; --accent-soft: #173039;
+  --pos: #3987e5; --neg: #d95926;
+  --warn-bg: #33270a; --warn-ink: #f2d68d; --warn-line: #6b5415;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--body); }
+.wrap { max-width: 1560px; margin: 0 auto; padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+a { color: var(--accent); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.top { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; justify-content: space-between; }
+.brand h1 { font: 700 30px/1 var(--display); letter-spacing: -0.01em; margin: 0; }
+.brand p { margin: 6px 0 0; color: var(--ink2); max-width: 62ch; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 16px 0 0; padding: 12px 0; border-block: 1px solid var(--line); }
+.facts div { display: flex; gap: 8px; align-items: baseline; }
+.facts b { font: 500 17px var(--mono); }
+.facts span { color: var(--ink2); font-size: 13px; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 16px 0 12px; }
+.controls input[type=search], .controls select { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; min-width: 0; }
+.controls input[type=search] { flex: 1 1 220px; max-width: 340px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; font-size: 13px; }
+.chip[aria-pressed=true] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.count { color: var(--muted); font-size: 13px; margin-left: auto; }
+
+.desk { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start; }
+.register { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 0; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+.register th { position: sticky; top: 0; background: var(--sunk); text-align: right; font: 600 11.5px var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--ink2); padding: 9px 10px; white-space: nowrap; cursor: pointer; user-select: none; }
+.register th:first-child, .register td:first-child, .register th.l, .register td.l { text-align: left; }
+.register th[aria-sort] { color: var(--accent); }
+.register td { padding: 6px 9px; border-top: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.register tbody tr { cursor: pointer; }
+.register tbody tr:hover { background: var(--sunk); }
+.register tbody tr[aria-selected=true] { background: var(--accent-soft); }
+.co b { font: 600 14px var(--display); letter-spacing: .02em; }
+.co span { display: block; color: var(--muted); font-size: 12px; max-width: 22ch; overflow: hidden; text-overflow: ellipsis; }
+.sec { color: var(--ink2); max-width: 18ch; overflow: hidden; text-overflow: ellipsis; }
+.dash { color: var(--muted); }
+.flag { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-line); margin-left: 6px; vertical-align: 1px; }
+.spark { display: block; margin-left: auto; }
+.empty { padding: 28px 16px; color: var(--ink2); text-align: center; }
+
+.file { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 20px; min-width: 0; }
+.file-head { display: flex; gap: 12px; justify-content: space-between; align-items: flex-start; }
+.file-head h2 { font: 700 34px/1 var(--display); margin: 0; }
+.file-head p { margin: 6px 0 0; color: var(--ink2); }
+.back { display: none; background: var(--sunk); border: 1px solid var(--line); border-radius: 6px; padding: 7px 12px; cursor: pointer; }
+.quote { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 14px 0 0; padding: 10px 0; border-block: 1px solid var(--line); }
+.quote div { display: flex; flex-direction: column; }
+.quote span { font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.quote b { font: 500 16px var(--mono); }
+.file h3 { font: 600 17px var(--display); letter-spacing: .01em; margin: 24px 0 8px; }
+.note { color: var(--ink2); font-size: 13px; margin: 6px 0 0; max-width: 75ch; }
+.warn { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-line); border-radius: 6px; padding: 10px 12px; margin-top: 14px; font-size: 13px; }
+.warn b { display: block; margin-bottom: 2px; }
+.charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.chart { position: relative; min-width: 0; }
+.chart h4 { font: 500 13px var(--body); color: var(--ink2); margin: 0 0 2px; }
+.chart svg { display: block; width: 100%; height: auto; }
+.chart text { font: 10.5px var(--mono); fill: var(--muted); }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .zero { stroke: var(--muted); stroke-width: 1; }
+.chart .hit { fill: transparent; }
+.chart .hit:hover + .bar, .chart .bar.on { opacity: .75; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 12px var(--mono); padding: 4px 7px; border-radius: 4px; white-space: nowrap; transform: translate(-50%, -100%); z-index: 2; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+.ledger th, .ledger td { padding: 6px 10px; text-align: right; white-space: nowrap; border-top: 1px solid var(--line); }
+.ledger thead th { border-top: 0; background: var(--sunk); font: 600 11.5px var(--body); color: var(--ink2); }
+.ledger th:first-child, .ledger td:first-child { text-align: left; position: sticky; left: 0; background: var(--surface); font-weight: 400; }
+.ledger thead th:first-child { background: var(--sunk); }
+.ledger tr.derived td { color: var(--ink2); font-style: italic; }
+.ledger tr.sep td { border-top: 2px solid var(--line); }
+.neg { color: var(--neg); }
+.snap { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 18px; }
+.snap div span { display: block; font-size: 12px; color: var(--muted); }
+.snap div b { font: 500 15px var(--mono); }
+.snap div small { color: var(--ink2); font: 12px var(--mono); }
+.ai { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--sunk); }
+.ai-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.primary { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 6px; padding: 9px 16px; font-weight: 600; cursor: pointer; }
+.primary[disabled] { opacity: .6; cursor: progress; }
+.ai-out { margin-top: 12px; max-width: 72ch; }
+.ai-out h4 { font: 600 15px var(--display); margin: 14px 0 4px; }
+.ai-out p { margin: 6px 0; }
+.ai-out ul { margin: 6px 0; padding-left: 20px; }
+.ai-foot { color: var(--muted); font-size: 12px; margin-top: 10px; }
+.foot { color: var(--muted); font-size: 12.5px; margin-top: 22px; max-width: 90ch; }
+
+@media (min-width: 1180px) {
+  .desk { grid-template-columns: minmax(0, 11fr) minmax(0, 10fr); }
+  .file { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; }
+  .register { max-height: calc(100vh - 24px); overflow-y: auto; }
+}
+@media (max-width: 1179px) {
+  .file { display: none; }
+  body.open .file { display: block; position: fixed; inset: 0; z-index: 20; border: 0; border-radius: 0; overflow-y: auto;
+    padding-top: calc(16px + env(safe-area-inset-top, 0px)); padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  body.open { overflow: hidden; }
+  .back { display: block; }
+}
+@media (min-width: 1180px) and (max-width: 1699px) { .hide-m { display: none; } }
+@media (max-width: 760px) { .hide-s { display: none; } .brand h1 { font-size: 26px; } .file-head h2 { font-size: 28px; } }
+@media (prefers-reduced-motion: no-preference) { .register tbody tr, .chip { transition: background .12s; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Bilanço Masası</h1>
+      <p>Borsa İstanbul şirketlerinin 2020'den bugüne bilançoları, gelir tabloları ve nakit akışları tek masada. Bir şirkete dokunun, dosyası açılsın.</p>
+    </div>
+  </header>
+  <div class="facts" id="facts"></div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Kod veya şirket adı ara" aria-label="Şirket ara">
+    <select id="sector" aria-label="Sektör"></select>
+    <div class="chips" id="chips" role="group" aria-label="Tarama"></div>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="desk">
+    <div class="register" id="register"><div class="empty">Kayıtlar yükleniyor…</div></div>
+    <aside class="file" id="file" aria-live="polite"><p class="note">Dosyasını açmak için soldan bir şirket seçin.</p></aside>
+  </div>
+  <p class="foot" id="foot"></p>
+</div>
+
+<script>
+(() => {
+'use strict';
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const nf = d => new Intl.NumberFormat('tr-TR', { maximumFractionDigits: d, minimumFractionDigits: 0 });
+const N0 = nf(0), N1 = nf(1), N2 = nf(2);
+const has = v => typeof v === 'number' && Number.isFinite(v);
+const DASH = '<span class="dash">—</span>';
+// Amounts are million TL in the data.
+const money = v => {
+  if (!has(v)) return null;
+  const a = Math.abs(v);
+  if (a >= 1e6) return N2.format(v / 1e6) + ' trn';
+  if (a >= 1e3) return N1.format(v / 1e3) + ' mlr';
+  return N1.format(v) + ' mn';
+};
+const cell = (v, f = money) => has(v) ? `<span class="num${v < 0 ? ' neg' : ''}">${f(v)}</span>` : DASH;
+const ratio = v => has(v) ? `<span class="num">${N1.format(v)}</span>` : DASH;
+const pct = v => '%' + N1.format(v);
+const YEARS = ['2020/12', '2021/12', '2022/12', '2023/12', '2024/12', '2025/12'];
+const periodLabel = p => p.endsWith('/12') ? p.slice(0, 4) : `${p} · ${p.split('/')[1]}A`;
+
+let DATA = null, ANALYSES = {}, rows = [], selected = null, aiAbort = null;
+const LIVE = typeof window.claude?.use === 'function';
+const state = { q: '', sector: '', screen: 'all', sort: 'mc', dir: -1 };
+
+const SCREENS = [
+  ['all', 'Tümü', () => true],
+  ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
+  ['netcash', 'Net nakitte', r => r.d.netCash === true],
+  ['equity', 'Özkaynak oranı %50+', r => has(r.d.eqRatio) && r.d.eqRatio >= 50],
+  ['loss', '2025 zararda', r => has(r.d.ni25) && r.d.ni25 < 0],
+  ['warn', 'Veri uyarısı var', r => !!r.h?.w],
+  ['ai', 'Analizi hazır', r => !!ANALYSES[r.c]],
+];
+const COLS = [
+  ['c', 'Şirket', 'l', r => r.c],
+  ['s', 'Sektör', 'l hide-s hide-m', r => r.s || ''],
+  ['mc', 'Piyasa değeri', '', r => r.mc],
+  ['pe', 'F/K', 'hide-s', r => r.pe],
+  ['pb', 'PD/DD', 'hide-s', r => r.pb],
+  ['rev', '2025 hasılat', 'hide-s', r => r.d.rev25],
+  ['ni', '2025 net kâr', '', r => r.d.ni25],
+  ['spark', 'Net kâr 2020–25', '', null],
+  ['last', 'Son dönem', 'hide-s hide-m', r => r.d.last || ''],
+];
+
+function at(r, field, period) {
+  const i = r.h ? r.h.p.indexOf(period) : -1;
+  const v = i < 0 ? null : r.h.v[field]?.[i];
+  return has(v) ? v : null;
+}
+function derive(r) {
+  const d = { rev25: at(r, 'revenue', '2025/12'), ni25: at(r, 'netIncome', '2025/12'), last: r.h ? r.h.p[r.h.p.length - 1] : null };
+  const lastFive = YEARS.slice(1).map(y => at(r, 'netIncome', y));
+  d.streak = lastFive.every(v => has(v) && v > 0);
+  if (r.h && r.h.g === 'XI_29') {
+    const [cash, sd, ld] = ['cash', 'shortDebt', 'longDebt'].map(f => at(r, f, d.last));
+    if (has(cash) && has(sd) && has(ld)) d.netCash = cash - sd - ld > 0;
+  }
+  const eq = at(r, 'equity', d.last), as = at(r, 'assets', d.last);
+  if (has(eq) && has(as) && as > 0) d.eqRatio = eq / as * 100;
+  return d;
+}
+
+function spark(r) {
+  const vals = YEARS.map(y => at(r, 'netIncome', y));
+  const present = vals.filter(has);
+  if (!present.length) return DASH;
+  const W = 78, H = 24, bw = 10, gap = 3;
+  const max = Math.max(0, ...present), min = Math.min(0, ...present), span = (max - min) || 1;
+  const y0 = H * max / span;
+  const bars = vals.map((v, i) => {
+    if (!has(v)) return '';
+    const h = Math.max(1.5, Math.abs(v) / span * H);
+    return `<rect x="${i * (bw + gap)}" y="${v >= 0 ? y0 - h : y0}" width="${bw}" height="${h}" rx="1.5" fill="var(${v >= 0 ? '--pos' : '--neg'})"></rect>`;
+  }).join('');
+  const label = vals.map((v, i) => `${YEARS[i].slice(0, 4)}: ${has(v) ? money(v) + ' TL' : 'veri yok'}`).join(', ');
+  return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Net kâr ${esc(label)}"><title>${esc(label)}</title>${bars}</svg>`;
+}
+
+function visible() {
+  const q = state.q.trim().toLocaleLowerCase('tr-TR');
+  const screen = SCREENS.find(s => s[0] === state.screen)[2];
+  const get = COLS.find(c => c[0] === state.sort)[3];
+  const list = rows.filter(r => (!state.sector || r.s === state.sector) && screen(r) &&
+    (!q || r.key.includes(q)));
+  list.sort((a, b) => {
+    const x = get(a), y = get(b);
+    const ex = x === null || x === undefined || x === '', ey = y === null || y === undefined || y === '';
+    if (ex || ey) return ex === ey ? 0 : ex ? 1 : -1;   // empty values always last
+    return (typeof x === 'string' ? x.localeCompare(y, 'tr') : x - y) * state.dir;
+  });
+  return list;
+}
+
+function renderRegister() {
+  const list = visible();
+  $('count').textContent = `${N0.format(list.length)} şirket`;
+  const head = COLS.map(([k, label, cls, get]) =>
+    `<th class="${cls}" data-k="${k}"${get ? ' tabindex="0"' : ''}${state.sort === k ? ` aria-sort="${state.dir < 0 ? 'descending' : 'ascending'}"` : ''}>${label}${state.sort === k ? (state.dir < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('');
+  const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
+    <td class="co"><b>${esc(r.c)}</b>${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
+    <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
+    <td>${cell(r.mc)}</td><td class="hide-s">${ratio(r.pe)}</td><td class="hide-s">${ratio(r.pb)}</td>
+    <td class="hide-s">${cell(r.d.rev25)}</td><td>${cell(r.d.ni25)}</td>
+    <td>${spark(r)}</td><td class="num hide-s hide-m">${r.d.last ? esc(r.d.last) : DASH}</td></tr>`).join('');
+  $('register').innerHTML = list.length
+    ? `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`
+    : '<div class="empty">Bu aramaya uyan şirket yok. Filtreleri gevşetin.</div>';
+}
+
+const FIELDS = [
+  ['assets', 'Toplam varlıklar'], ['currentAssets', 'Dönen varlıklar'], ['noncurrentAssets', 'Duran varlıklar'], ['cash', 'Nakit ve benzerleri'],
+  ['loans', 'Krediler'], ['deposits', 'Mevduat'],
+  ['currentLiabilities', 'Kısa vadeli yükümlülükler'], ['noncurrentLiabilities', 'Uzun vadeli yükümlülükler'],
+  ['shortDebt', 'Kısa vadeli finansal borç'], ['longDebt', 'Uzun vadeli finansal borç'],
+  ['equity', 'Özkaynaklar'], ['parentEquity', 'Ana ortaklığa ait özkaynaklar'],
+  ['revenue', 'Hasılat'], ['grossProfit', 'Brüt kâr'], ['netInterest', 'Net faiz geliri'], ['netFees', 'Net ücret ve komisyon'],
+  ['operating', 'Esas faaliyet kârı'], ['pretax', 'Vergi öncesi kâr'], ['netIncome', 'Net kâr (ana ortaklık)'], ['groupNetIncome', 'Net kâr (toplam)'],
+  ['depreciation', 'Amortisman'], ['ocf', 'İşletme nakit akışı'], ['capex', 'Yatırım harcaması'], ['fcf', 'Serbest nakit akışı'],
+];
+const FIRST_INCOME = 'revenue';
+
+function derivedRows(h) {
+  const col = f => h.p.map((_, i) => has(h.v[f]?.[i]) ? h.v[f][i] : null);
+  const cash = col('cash'), sd = col('shortDebt'), ld = col('longDebt'), ni = col('netIncome'), rev = col('revenue'), eq = col('equity'), as = col('assets');
+  const all = (...xs) => xs.every(has);
+  const out = [
+    ['Net borç', h.p.map((_, i) => all(cash[i], sd[i], ld[i]) ? sd[i] + ld[i] - cash[i] : null), money],
+    ['Net kâr marjı', h.p.map((_, i) => all(ni[i], rev[i]) && rev[i] > 0 ? ni[i] / rev[i] * 100 : null), pct],
+    ['Özkaynak / varlık', h.p.map((_, i) => all(eq[i], as[i]) && as[i] > 0 ? eq[i] / as[i] * 100 : null), pct],
+    ['Özkaynak kârlılığı (yıl sonu)', h.p.map((p, i) => p.endsWith('/12') && all(ni[i], eq[i]) && eq[i] > 0 ? ni[i] / eq[i] * 100 : null), pct],
+  ];
+  return out.filter(r => r[1].some(has));
+}
+
+function barChart(title, labels, values, unitNote) {
+  const W = 300, H = 170, L = 64, R = 6, T = 10, B = 22;
+  const present = values.filter(has);
+  if (!present.length) return '';
+  const max = Math.max(0, ...present), min = Math.min(0, ...present), span = (max - min) || 1;
+  const y = v => T + (max - v) / span * (H - T - B);
+  const slot = (W - L - R) / labels.length, bw = Math.min(24, slot - 8);
+  const ticks = [max, min < 0 ? min : max / 2, 0].filter((v, i, a) => a.indexOf(v) === i);
+  const grid = ticks.map(v => `<line class="${v === 0 ? 'zero' : 'grid'}" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"></line><text x="${L - 6}" y="${y(v) + 3.5}" text-anchor="end">${v === 0 ? '0' : esc(money(v))}</text>`).join('');
+  const bars = values.map((v, i) => {
+    const cx = L + slot * i + slot / 2;
+    const lab = `<text x="${cx}" y="${H - 6}" text-anchor="middle">${esc(labels[i])}</text>`;
+    if (!has(v)) return lab + `<text x="${cx}" y="${y(0) - 5}" text-anchor="middle">—</text>`;
+    const top = Math.min(y(v), y(0)), h = Math.max(1.5, Math.abs(y(v) - y(0)));
+    const r = Math.min(4, h, bw / 2), x = cx - bw / 2;
+    // Rounded data end only; the baseline end stays square.
+    const d = v >= 0
+      ? `M${x},${top + h}V${top + r}a${r},${r} 0 0 1 ${r},${-r}h${bw - 2 * r}a${r},${r} 0 0 1 ${r},${r}V${top + h}Z`
+      : `M${x},${top}V${top + h - r}a${r},${r} 0 0 0 ${r},${r}h${bw - 2 * r}a${r},${r} 0 0 0 ${r},${-r}V${top}Z`;
+    return `${lab}<rect class="hit" x="${cx - slot / 2}" y="${T}" width="${slot}" height="${H - T - B}" data-tip="${esc(labels[i] + ': ' + money(v) + ' TL')}" data-x="${cx / W}" data-y="${top / H}"></rect><path class="bar" d="${d}" fill="var(${v >= 0 ? '--pos' : '--neg'})" pointer-events="none"></path>`;
+  }).join('');
+  return `<div class="chart"><h4>${esc(title)}${unitNote ? ' · ' + esc(unitNote) : ''}</h4><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(title)} yıllık sütun grafiği">${grid}${bars}</svg></div>`;
+}
+
+function renderFile(r) {
+  const el = $('file');
+  if (aiAbort) { aiAbort.abort(); aiAbort = null; }
+  const h = r.h, m = DATA.meta;
+  const quote = [['Fiyat', has(r.px) ? N2.format(r.px) + ' TL' : null], ['Piyasa değeri', has(r.mc) ? money(r.mc) + ' TL' : null], ['F/K', has(r.pe) ? N1.format(r.pe) : null], ['PD/DD', has(r.pb) ? N1.format(r.pb) : null], ['Yılbaşından beri', has(r.ytd) ? pct(r.ytd) : null]]
+    .map(([k, v]) => `<div><span>${k}</span><b>${v ?? '—'}</b></div>`).join('');
+  let html = `<div class="file-head"><div><h2>${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
+    <div class="quote">${quote}</div><p class="note">Fiyat ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
+  if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
+
+  if (h) {
+    const fin = h.g !== 'XI_29';
+    const yearsHere = YEARS.filter(y => h.p.includes(y));
+    const labs = yearsHere.map(y => y.slice(0, 4));
+    const series = f => yearsHere.map(y => at(r, f, y));
+    html += `<h3>Altı yılın görünümü</h3><div class="charts">${barChart(fin ? 'Toplam varlıklar' : 'Hasılat', labs, series(fin ? 'assets' : 'revenue'))}${barChart('Net kâr (ana ortaklık)', labs, series('netIncome'))}${barChart('Özkaynaklar', labs, series('equity'))}</div>
+      <p class="note">Yıl sonu tutarları, TL. Her grafiğin ekseni ayrıdır. Tutarlar yayımlandığı yılın parasıyladır; 2023'ten itibaren enflasyon muhasebesi (TMS 29) uygulandığı için yıllar arası artışın bir kısmı fiyat etkisidir.</p>`;
+
+    const stored = ANALYSES[r.c];
+    html += `<h3>Yapay zekâ analizi</h3><div class="ai">${LIVE ? `<div class="ai-bar"><button class="primary" id="aiBtn" type="button">${stored ? 'Claude ile yeniden analiz et' : 'Bu şirketi analiz et'}</button><span class="note" style="margin:0">Yalnızca bu dosyadaki rakamlar kullanılır.</span></div>` : ''}<div class="ai-out" id="aiOut"${stored ? '' : ' hidden'}></div>${stored || LIVE ? '' : '<p class="note" style="margin:0">Bu şirket için hazır analiz henüz yok. Analizler piyasa değeri sırasıyla ekleniyor.</p>'}<div class="ai-foot">${stored ? `Hazır analiz · ${esc(stored.model.replace(':free', ''))} · ${new Date(stored.generatedAt).toLocaleDateString('tr-TR')} · ` : ''}Yapay zekâ üretimidir, hata içerebilir. Rakamları aşağıdaki tabloyla karşılaştırın. Yatırım tavsiyesi değildir.</div></div>`;
+
+    const headCols = h.p.map(p => `<th>${esc(periodLabel(p))}</th>`).join('');
+    let seenIncome = false;
+    const body = FIELDS.filter(([f]) => h.v[f]?.some(has)).map(([f, label]) => {
+      const sep = !seenIncome && FIELDS.findIndex(x => x[0] === f) >= FIELDS.findIndex(x => x[0] === FIRST_INCOME);
+      if (sep) seenIncome = true;
+      return `<tr${sep ? ' class="sep"' : ''}><td>${label}</td>${h.p.map((_, i) => `<td>${cell(h.v[f][i], v => N1.format(v))}</td>`).join('')}</tr>`;
+    }).join('');
+    const derived = derivedRows(h).map(([label, vals, f], i) => `<tr class="derived${i ? '' : ' sep'}"><td>${label}</td>${vals.map(v => `<td>${cell(v, f === money ? (x => N1.format(x)) : f)}</td>`).join('')}</tr>`).join('');
+    html += `<h3>Mali tablo geçmişi</h3><div class="scroll"><table class="ledger"><thead><tr><th>Milyon TL</th>${headCols}</tr></thead><tbody>${body}${derived}</tbody></table></div>
+      <p class="note">${esc(h.basis)}. Ara dönem (6A, 9A) gelir ve nakit akışı kalemleri yılbaşından itibaren kümülatiftir. Eğik satırlar bu sayfada hesaplanmıştır. Kaynak: <a href="${esc(h.src)}" target="_blank" rel="noreferrer">İş Yatırım şirket kartı ↗</a></p>`;
+  } else {
+    html += `<h3>Mali tablo geçmişi</h3><p class="note">Bu şirket için geçmiş mali tablo bulunamadı. Kaynakta tablo yok ya da bilanço toplamı tutmuyor.</p>`;
+  }
+
+  if (r.snap) {
+    const names = Object.fromEntries(FIELDS);
+    const items = Object.entries(r.snap.v).map(([k, v]) => `<div><span>${names[k] || k}</span><b class="${v < 0 ? 'neg' : ''}">${money(v)}</b>${has(r.snap.prev[k]) ? `<br><small>2025 sonu: ${money(r.snap.prev[k])}</small>` : ''}</div>`).join('');
+    html += `<h3>2026/9 resmî özet</h3><div class="snap">${items}</div><p class="note">${esc(r.snap.prov)}${r.snap.basis ? ' · ' + esc(r.snap.basis) : ''} · TL. ${r.snap.src ? `<a href="${esc(r.snap.src)}" target="_blank" rel="noreferrer">Kaynağı aç ↗</a>` : ''}</p>`;
+  } else {
+    html += `<h3>2026/9 resmî özet</h3><p class="note">Bu şirketin 2026 dokuz aylık tablosu KAP özetinde henüz yok.</p>`;
+  }
+  el.innerHTML = html;
+  if (ANALYSES[r.c] && $('aiOut')) renderMd($('aiOut'), ANALYSES[r.c].text);
+  el.scrollTop = 0;
+}
+
+// --- Claude analysis -------------------------------------------------------
+function buildPrompt(r) {
+  const h = r.h, L = [];
+  L.push(`Şirket: ${r.c} · ${r.n}`, `Sektör: ${r.s || 'eksik'}`);
+  L.push(`Piyasa (${DATA.meta.priceDate}): fiyat ${has(r.px) ? r.px + ' TL' : 'eksik'}, piyasa değeri ${has(r.mc) ? N0.format(r.mc) + ' mn TL' : 'eksik'}, F/K ${has(r.pe) ? r.pe : 'eksik'}, PD/DD ${has(r.pb) ? r.pb : 'eksik'}`);
+  L.push('', `Mali tablo geçmişi (milyon TL; ${h.basis}; şablon: ${h.g === 'XI_29' ? 'sanayi/ticaret' : 'finansal kuruluş'})`, `Dönemler: ${h.p.map(periodLabel).join(' | ')}`);
+  for (const [f, label] of FIELDS) if (h.v[f]?.some(has)) L.push(`${label}: ${h.v[f].map(v => has(v) ? N1.format(v) : 'eksik').join(' | ')}`);
+  for (const [label, vals, f] of derivedRows(h)) L.push(`${label} [hesaplanan]: ${vals.map(v => has(v) ? (f === money ? N1.format(v) : pct(v)) : 'eksik').join(' | ')}`);
+  if (h.w) L.push('', 'Veri uyarıları:', ...h.w.map(w => '- ' + w));
+  if (r.snap) L.push('', `2026/9 resmî özet (${r.snap.prov}, ${r.snap.basis || 'kapsam belirtilmemiş'}): ${Object.entries(r.snap.v).map(([k, v]) => `${k}=${N1.format(v)}`).join(', ')}`);
+  return [
+    'Titiz bir hisse senedi araştırma asistanısın. Türkçe yaz.',
+    'YALNIZCA aşağıdaki sayıları kullan; dışarıdan rakam veya haber ekleme. "eksik" kalemleri eksik olarak an, tahmin etme.',
+    'Tutarlar her dönemin kendi raporundaki nominal tutarlardır. 2023 ve sonrası TMS 29 (enflasyon muhasebesi) ile hazırlanmıştır; öncesiyle doğrudan kıyaslanamaz. Büyüme yorumunda bunu açıkça söyle.',
+    'Ara dönem (6A, 9A) gelir ve nakit akışı kümülatiftir; tam yılla büyüme olarak kıyaslama.',
+    'Veri uyarısı varsa ilgili rakamı yorumlarken çekince olarak belirt.',
+    'Biçim: "## Başlık" satırları ve "- " ile maddeler. Başlıklar: Özet, Büyüme, Kârlılık, Borç ve likidite, Nakit üretimi, Riskler, Sırada neye bakmalı. 250-400 kelime. Tablo kullanma.',
+    'Al, sat, tut önerisi ve hedef fiyat verme.',
+    '', '--- VERİ ---', ...L,
+  ].join('\n');
+}
+function renderMd(el, text) {
+  el.textContent = '';
+  let ul = null;
+  const inline = (parent, s) => s.split(/(\*\*[^*]+\*\*)/).forEach(part => {
+    if (/^\*\*[^*]+\*\*$/.test(part)) { const b = document.createElement('strong'); b.textContent = part.slice(2, -2); parent.append(b); }
+    else if (part) parent.append(part);
+  });
+  for (const raw of text.split('\n')) {
+    const line = raw.trim();
+    if (!line) { ul = null; continue; }
+    const head = line.match(/^#{1,4}\s+(.*)$/), item = line.match(/^[-*•]\s+(.*)$/);
+    if (head) { ul = null; const e = document.createElement('h4'); inline(e, head[1]); el.append(e); }
+    else if (item) { if (!ul) { ul = document.createElement('ul'); el.append(ul); } const li = document.createElement('li'); inline(li, item[1]); ul.append(li); }
+    else { ul = null; const p = document.createElement('p'); inline(p, line); el.append(p); }
+  }
+}
+async function analyze(r) {
+  const btn = $('aiBtn'), out = $('aiOut');
+  if (!btn || btn.disabled) return;
+  btn.disabled = true; out.hidden = false; out.textContent = 'Claude dosyayı okuyor…';
+  const done = label => { if ($('aiBtn') === btn) { btn.disabled = false; btn.textContent = label; } };
+  try {
+    const sample = await window.claude?.use?.('sample');
+    if (!sample) { out.textContent = 'Bu görünümde Claude analizi kullanılamıyor. Sayfayı claude.ai hesabınızla açıp yeniden deneyin.'; return done('Bu şirketi analiz et'); }
+    aiAbort = new AbortController();
+    const res = await sample(buildPrompt(r), { signal: aiAbort.signal, onText: ({ text }) => { if (selected === r && text) renderMd(out, text); } });
+    if (selected !== r) return;
+    renderMd(out, res.text || '');
+    if (res.truncated) { const p = document.createElement('p'); p.className = 'note'; p.textContent = 'Yanıt uzunluk sınırında kesildi.'; out.append(p); }
+    done('Yeniden analiz et');
+  } catch (e) {
+    if (e?.name === 'AbortError' || selected !== r) return;
+    out.textContent = e?.code === 'not_granted' ? 'Analiz için izin verilmedi. İzin verirseniz düğmeye yeniden basabilirsiniz.'
+      : e?.code === 'rate_limited' ? 'Kısa sürede çok istek gönderildi. Bir dakika sonra yeniden deneyin.'
+      : 'Analiz üretilemedi. Biraz sonra yeniden deneyin.';
+    done('Bu şirketi analiz et');
+  }
+}
+
+// --- Selection, routing, events -------------------------------------------
+function select(r, fromHash) {
+  selected = r;
+  renderFile(r);
+  document.body.classList.add('open');
+  document.querySelectorAll('#register tr[aria-selected]').forEach(tr => tr.setAttribute('aria-selected', tr.dataset.c === r.c));
+  if (!fromHash && location.hash.slice(1) !== r.c) history.replaceState(null, '', '#' + r.c);
+}
+function closeFile() { document.body.classList.remove('open'); }
+function fromHash() {
+  const r = rows.find(x => x.c === location.hash.slice(1).toUpperCase());
+  if (r) select(r, true);
+}
+
+$('register').addEventListener('click', e => {
+  const th = e.target.closest('th[data-k]'), tr = e.target.closest('tr[data-c]');
+  if (th && COLS.find(c => c[0] === th.dataset.k)[3]) {
+    if (state.sort === th.dataset.k) state.dir *= -1; else { state.sort = th.dataset.k; state.dir = ['c', 's'].includes(state.sort) ? 1 : -1; }
+    renderRegister();
+  } else if (tr) select(rows.find(r => r.c === tr.dataset.c));
+});
+$('register').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { const t = e.target.closest('tr[data-c], th[data-k]'); if (t) { e.preventDefault(); t.click(); } } });
+$('file').addEventListener('click', e => {
+  if (e.target.id === 'back') closeFile();
+  if (e.target.id === 'aiBtn' && selected) analyze(selected);
+});
+let tip = null;
+$('file').addEventListener('pointermove', e => {
+  const hit = e.target.closest?.('.hit');
+  if (tip && (!hit || tip.owner !== hit)) { tip.remove(); tip = null; }
+  if (hit && !tip) {
+    const box = hit.closest('.chart'), svg = box.querySelector('svg');
+    tip = document.createElement('div'); tip.className = 'tip'; tip.owner = hit; tip.textContent = hit.dataset.tip;
+    tip.style.left = (svg.offsetLeft + svg.clientWidth * hit.dataset.x) + 'px';
+    tip.style.top = (svg.offsetTop + svg.clientHeight * hit.dataset.y - 6) + 'px';
+    box.append(tip);
+  }
+});
+$('file').addEventListener('pointerleave', () => { if (tip) { tip.remove(); tip = null; } });
+$('q').addEventListener('input', e => { state.q = e.target.value; renderRegister(); });
+$('sector').addEventListener('change', e => { state.sector = e.target.value; renderRegister(); });
+$('chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  state.screen = b.dataset.k;
+  document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c === b));
+  renderRegister();
+});
+window.addEventListener('hashchange', fromHash);
+window.addEventListener('keydown', e => { if (e.key === 'Escape') closeFile(); });
+
+const getAnalyses = fetch('analyses.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
+Promise.all([fetch('data.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }), getAnalyses]).then(([data, analyses]) => {
+  ANALYSES = analyses || {};
+  DATA = data;
+  rows = data.companies;
+  for (const r of rows) { r.d = derive(r); r.key = `${r.c} ${r.alt?.join(' ') || ''} ${r.n} ${r.sn || ''}`.toLocaleLowerCase('tr-TR'); }
+  const withHist = rows.filter(r => r.h).length, five = rows.filter(r => r.h && r.h.p.filter(p => p.endsWith('/12')).length >= 5).length, snap = rows.filter(r => r.snap).length;
+  $('facts').innerHTML = [[rows.length, 'ihraççı'], [withHist, 'şirkette geçmiş tablo'], [five, 'şirkette 5+ yıl sonu'], [snap, 'şirkette 2026/9 özeti'], [rows.filter(r => r.h?.w).length, 'veri uyarısı'], [Object.keys(ANALYSES).length, 'hazır analiz']]
+    .map(([n, t]) => `<div><b>${N0.format(n)}</b><span>${t}</span></div>`).join('');
+  const sectors = [...new Set(rows.map(r => r.s).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'tr'));
+  $('sector').innerHTML = '<option value="">Tüm sektörler</option>' + sectors.map(s => `<option>${esc(s)}</option>`).join('');
+  $('chips').innerHTML = SCREENS.map(([k, label]) => `<button class="chip" type="button" data-k="${k}" aria-pressed="${k === state.screen}">${label}</button>`).join('');
+  const m = data.meta;
+  $('foot').textContent = `Kaynaklar: ihraççı listesi KAP (${m.universeDate}); 2026/9 özetleri KAP; geçmiş tablolar ve fiyatlar İş Yatırım (toplama ${new Date(m.collectedAt).toLocaleDateString('tr-TR')}). KAP ile İş Yatırım ayrıştığında şirket "uyarı" ile işaretlenir. Eksik veri boş bırakılır, tahmin edilmez. Bu sayfa bilgi amaçlıdır; yatırım tavsiyesi değildir.`;
+  renderRegister();
+  if (location.hash.length > 1) fromHash();
+  if (!selected) {   // open the largest company so the desk is never empty on wide screens
+    const first = visible()[0];
+    if (first) { selected = first; renderFile(first); renderRegister(); }
+  }
+}).catch(() => { $('register').innerHTML = '<div class="empty">Veri dosyası yüklenemedi. Sayfayı yenileyin.</div>'; });
+})();
+</script>
