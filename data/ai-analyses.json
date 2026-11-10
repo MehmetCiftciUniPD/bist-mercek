@@ -1,0 +1,77 @@
+{
+ "ASELS": {
+  "text": "## Özet\nASELSAN, 2025 yıl sonu hasılat 224 324,1 mn TL, net kâr 37 232,4 mn TL ile güçlü büyüme yakaladı. 2026 yılı ilk 9 ay hasılat 151 486,1 mn TL, net kâr 26 470,6 mn TL gerçekleşti. 2023’ten itibari TMS 29 (enflasyon muhasebesi) uygulanıyor; 2022 ve öncesi nominal rakamlarla doğrudan kıyaslanamaz. Piyasa değeri 1,54 trilyon TL, F/K 31,7, PD/DD 4,6 seviyelerinde.\n\n## Büyüme\nHasılat 2020 16 104,5 mn TL’den 2025 224 324,1 mn TL’ye çıktı; 2023–2025 arası TMS 29 etkili. 2022 vergi öncesi kâr -912,2 mn TL (moneter kayıp) nedeniyle net marj %1,9’a düştü; 2023 %9,9, 2024 %12,7, 2025 %16,6, 2026/9 %17,5’e yükseldi. 2026/9 kümülatif hasılat, 2025 tam yılının %67,5’ine tekabül ediyor; mevsimselik ve sipariş teslimat takvimi göz önünde bulundurulmalı.\n\n## Kârlılık\nBrüt marj 2025 %31,8, 2026/9 %31,4 seviyelerinde stabil. Esas faaliyet kâr marjı 2024 %22,7’den 2025 %27,2’ye, 2026/9 %26,0’a çıktı. Net kâr marjı 2023 %9,9’dan 2026/9 %17,5’e sürekli iyileşme gösterdi. Finansman giderleri (net borç artışı) kârlılığı baskılayan ana kalem.\n\n## Borç ve likidite\nNet nakit pozisyonu 2020 -191,2 mn TL (net nakit) idi; 2025 net borç 17 367,2 mn TL, 2026/9 55 162,9 mn TL’ye çıktı. Kısa vadeli finansal borç 2025 47 275,6 mn TL’den 2026/9 68 097,3 mn TL’ye zıpladı. Özkaynak/varlık %58,3 → %54,9 seviyesinde. Cari oran 1,45 ile yönetilebilir; ancak borçlanma hızı izlenmeli.\n\n## Nakit üretimi\nİşletme nakit akışı 2024 28 033,8 mn TL, 2025 60 793,6 mn TL, 2026/9 22 998,1 mn TL. Yatırım harcamaları 2025 -46 840,3 mn TL, 2026/9 -61 449,0 mn TL (9 ay kümülatif) ile çok yüksek. Serbest nakit akışı 2025 +12 452,4 mn TL iken 2026/9 -37 765,2 mn TL negatife döndü; yoğun yatırım döngüsü nakit üreten operasyonu kapatıyor.\n\n## Riskler\n- TMS 29 geçişi 2022 vergi öncesi zarar (-912,2 mn TL) yarattı; enflasyon hızında ani değişiklikler raporlanmış kârı volatil yapar.\n- Kısa vadeli finansal borç 2026/9 68 097,3 mn TL; yeniden finansman ve faaliyet riski taşır.\n- Yatırım harcamaları (2026/9 9 ayda -61 449,0 mn TL) serbest nakit akışını uzun süre negatif tutabilir.\n- Sipariş arka loğu ve teslimat takvimi hasılatın dönemler arası dağılımını etkiler; ara dönemler kümülatiftir.\n\n## Sırada neye bakmalı\n- 2026 yıl sonu tam raporunda serbest nakit akışı yönü ve net borç/EBITDA seviyesi.\n- Yatırım harcamalarının tamamlanma oranı ve operasyonel nakit dönüşü.\n- Kısa vadeli borçların uzun vadeye yapılandırılması ve finansman maliyeti.\n- TMS 29 etkisi netleştirildikten sonra reel büyüme ve marj trendi.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "generatedAt": "2026-11-10T22:36:17+00:00",
+  "periods": [
+   "2020/12",
+   "2021/12",
+   "2022/12",
+   "2023/12",
+   "2024/12",
+   "2025/12",
+   "2026/6",
+   "2026/9"
+  ]
+ },
+ "GARAN": {
+  "text": "## Özet\n- Garanti Bankası (GARAN) 2026 yılı ilk 9 ayda (2026/9) 5,6 trilyon TL varlık büyüklüğüne ulaşmış, kümülatif net kâr (ana ortaklık) 96,6 milyar TL gerçekleştirmiştir [2026/9 ara dönem]. Piyasa değeri 643 milyar TL, F/K 5,2 ve PD/DD 1,2 seviyelerinde işlem görmektedir. 2023 yılından itibari TMS 29 (enflasyon muhasebesi) uygulanmakta, bu nedenle 2023 ve sonrası nominal rakamlar 2022 ve öncesiyle doğrudan kıyaslanamaz.\n\n## Büyüme\n- Toplam varlıklar 2024 yıl sonu 3,0 trilyon TL'den [2024 yıl sonu] 2026/9'da 5,6 trilyon TL'ye yükselmiş, 9 ayda yaklaşık %86 nominal büyüme göstermiştir. Krediler aynı dönemde 1,78 trilyon TL'den [2024 yıl sonu] 3,25 trilyon TL'ye [2026/9 ara dönem], mevduatlar 2,15 trilyon TL'den [2024 yıl sonu] 3,65 trilyon TL'ye [2026/9 ara dönem] çıkmıştır. Yıllık bazda 2024 net kârı 91,2 milyar TL [2024 yıl sonu] iken 2025'te 109,8 milyar TL'ye [2025 yıl sonu] %20 artış kaydetmiştir; ancak 2023-2025 arası TMS 29 etkisi büyüme oranlarını nominalde abartmaktadır.\n\n## Kârlılık\n- Net faiz geliri 2024'te 126,0 milyar TL [2024 yıl sonu] iken 2025'te 204,7 milyar TL'ye [2025 yıl sonu] zıplamış, 2026/9'da kümülatif 226,0 milyar TL'ye [2026/9 ara dönem] ulaşmıştır. Net ücret komisyon geliri 2024'te 97,1 milyar TL [2024 yıl sonu] iken 2025'te 145,5 milyar TL'ye [2025 yıl sonu], 2026/9'da 141,2 milyar TL kümülatif [2026/9 ara dönem] gerçekleşmiştir. Esas faaliyet kârı 2024'te 121,9 milyar TL [2024 yıl sonu], 2025'te 151,0 milyar TL [2025 yıl sonu], 2026/9'da 134,1 milyar TL kümülatif [2026/9 ara dönem] seviyesindedir. Özkaynak/varlık oranı 2024'te %11,0 [2024 yıl sonu] iken 2025'te %9,8 [2025 yıl sonu] ve 2026/9'da %9,4 [2026/9 ara dönem] seviyelerine gerilemiştir.\n\n## Borç ve likidite\n- Mevduat teminatı büyümesi kredi büyümesinden daha hızlı olup, 2026/9'da kredi/mevduat oranı yaklaşık %89 seviyesindedir [2026/9 ara dönem]. Özkaynaklar 2024 yıl sonu 331,4 milyar TL [2024 yıl sonu] iken 2026/9'da 522,7 milyar TL'ye [2026/9 ara dönem] yükselmiş, ancak varlık büyümesi özkaynak büyümesini üstünde tutmuştur. NPL oranı, Stage 2/3 kredi detayları ve likidite poku verileri sağlanan veri setinde **eksik**.\n\n## Nakit üretimi\n- Faaliyet nakit akışları, amortisman ve kredi risk maliyetleri ayrıntılı tablo **eksik** olduğu için net işletim nakit akımı hesaplanamamıştır. Esas faaliyet kârı 2026/9'da 134,1 milyar TL kümülatif [2026/9 ara dönem] seviyesinde olup, nakit teminatı kârlılığın bir göstergesi niteliğindedir.\n\n## Riskler\n- Yüksek enflasyon ortamında TMS 29 uygulamasının nominal büyüme rakamlarını şişirdiği, reel büyümeyi maskeleyebileceği riski mevcuttur. Özkaynak/varlık oranının %9,4 seviyesine [2026/9 ara dönem] gerilemesi, büyüme hızı verildiğinde sermaye tamponu daralması riskini taşır. Faiz marjı sıkışması senaryosunda faiz geliri yoğun gelir yapısının etkileneceği riski vardır. Kredi kalitesi göstergeleri (NPL, Stage 2/3, teminat kalitesi) veri setinde **eksik** olduğu için kredi maliyeti riski ölçülemiyor.\n\n## Sırada neye bakmalı\n- 2026 yıl sonu (12 ay) raporunda: NPL oranı ve Kredi Risk Maliyeti (CoR) trendi, Özkaynak/varlık orasının seyreği (BRSA hedefleri karşısında), Net Faiz Marjı (NIM) ayrışımı (TL/FC bazlı), Temettü politikası ve ödenek ayrılması, 2027 yılı büyüme ve kârlılık rehberliği (guidance).",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "generatedAt": "2026-11-10T22:37:44+00:00",
+  "periods": [
+   "2020/12",
+   "2021/12",
+   "2022/12",
+   "2023/12",
+   "2024/12",
+   "2025/12",
+   "2026/6",
+   "2026/9"
+  ]
+ },
+ "KCHOL": {
+  "text": "## Özet\nKoç Holding, 2023 yılından itibaren TMS 29 (enflasyon muhasebesi) uyguluyor; bu dönemler 2022 ve öncesiyle nominal olarak kıyaslanamaz. 2025 yıl sonu hasılatı 2.29 trilyon TL, 2026 yıl ilk 9 ayda 2.00 trilyon TL gerçekleşti. Ana ortaklığa ait net kâr 2025'te 27.4 mrd TL, 2026/9'da 56.4 mrd TL. Net borç 2025'te 1.24 trilyon TL, 2026/9'da 1.22 trilyon TL seviyelerinde.\n\n## Büyüme\n2024-2025 arası hasılat nominal %8.4 arttı →. 2026/9 kümülatif hasılat 2.00 trilyon TL; yıllıklaştırıldığında ~2.67 trilyon TL civarında bir seviye işaret ediyor ancak mevsimsel dalgalanma olabilir. **Veri uyarısı:** 2026/9 KAP resmi özetinde hasılat 2.82 trilyon TL [2026/9 resmî özet] olarak bildirilmiş, tablo ile 800 mrd TL fark var; bu tutarsızlık yorumlama riski yaratıyor.\n\n## Kârlılık\nNet kâr marjı 2024'te %0.1, 2025'te %1.2, 2026/9'da %2.8 olarak iyileşti. Esas faaliyet kâr marjı 2024 %4.1, 2025 %5.5, 2026/9 %9.3 seviyesine çıktı. Brüt kâr marjı 2025'te %25.5 seviyesinde kaldı.\n\n## Borç ve likidite\nNet borç 2024'te 749 mrd TL → 2025'te 1.24 trilyon TL → 2026/9'da 1.22 trilyon TL. Kısa vadeli finansal borç ağırlıklı (2026/9: 846 mrd TL). Nakit ve benzerleri 453 mrd TL. Cari oran 0.93. Özkaynak/varlık %20.7 ile yapısal olarak stabil.\n\n## Nakit üretimi\n2025'te işletme nakit akışı -127 mrd TL, serbest nakit akışı -364 mrd TL olarak negatif kaldı. 2026/9'da işletme nakit akışı +137 mrd TL, serbest nakit akışı +44 mrd TL ile yıl içinde güçlü pozitif dönüş sağlandı. Yatırım harcamaları 2025'te 89 mrd TL, 2026/9'da 71 mrd TL.\n\n## Riskler\nYüksek ve kısa vadeli ağırlıklı net borç pozisyonu, faaliyet nakit akışının yıllık volatilitesi (2025 negatif, 2026/9 pozitif), TMS 29 uygulamasının getirdiği karşılaştırma zorluğu, KAP bildirimi ile tablo verisi arasındaki 800 mrd TL'lik hasılat farkı, düşük net kâr marjının kalıcılığı.\n\n## Sırada neye bakmalı\n2026 yıl sonu denetlenmiş raporunda hasılat ve nakit akışı tutarlılığı, borç yenileme maliyetleri ve vade profili, çalışma sermayesi döngüsünün normalleşmesi, TMS 29 etkilerinin temizlenmiş gerçek büyüme hızı.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "generatedAt": "2026-11-10T22:45:43+00:00",
+  "periods": [
+   "2020/12",
+   "2021/12",
+   "2022/12",
+   "2023/12",
+   "2024/12",
+   "2025/12",
+   "2026/6",
+   "2026/9"
+  ]
+ },
+ "THYAO": {
+  "text": "## Özet\n- THYAO itibarıyla 975 710.7 mn TL hasılat ve 148 403.1 mn TL net kâr (ana ortaklık) ile güçlü bir yıl kapatmış. hasılat 1 187 816.2 mn TL'ye (%21.7 artış), net kâr ise 146 952.9 mn TL'ye (%1.0 düşüş) gerçekleşmiş. hasılat 981 030.0 mn TL, net kâr 80 330.0 mn TL. Özkaynak/varlık oranı %45.6 seviyesinde. Piyasa verileri (2026-11-09): F/K 2.9, PD/DD 0.4.\n\n## Büyüme\n- **Hasılat:** 504 398.0 mn TL'den 975 710.7 mn TL'ye (%93.4), 1 187 816.2 mn TL'ye (%21.7) yükselmiş. **Uyarı:** 2023 ve sonrası TMS 29 (enflasyon muhasebesi) ile hazırlanmış; 2022 ve öncesi nominal rakamlarla doğrudan kıyaslanamaz, gerçek büyüme enflasyon etkisinden arındırılarak okunmalı.\n- **Ara dönem:** hasılat 981 030.0 mn TL, tam yıl hasılatının %82.6'sını ilk 9 ayda yakalamış. Mevsimsel etki (yaz dönemi) göz önünde bulundurularak yıl sonu tahmini yapılmalı (yapılmayacak, sadece gözlem).\n\n## Kârlılık\n- **Net kâr marjı:** %32.3 (TMS 29 geçiş kazancı/vergi etkisi içeren seviye), %15.2, %12.4. Marj normalleşmiş ve düşüş trendinde.\n- **Esas faaliyet kârı marjı:** %10.8, %9.4. esas faaliyet kârı 39 026.0 mn TL (marj %4.0), net kâr 80 330.0 mn TL (marj %8.2). Net kâr, esas faaliyetin üzerinde; finansal gelir/vergi etkileri (muhtemelen döviz farkları/ertelenmiş vergi) kârı desteklemiş. **Veri uyarısı:** Ara dönem kümülatiftir, son çeyrek mevsimi zayıf olabilir.\n\n## Borç ve likidite\n- **Net borç:** 515 646.4 mn TL'den 843 141.7 mn TL'ye (%63.5 artış). 926 550.0 mn TL.\n- **Nakit:** 125 646.2 mn TL'den 106 956.3 mn TL'ye, 85 290.0 mn TL'ye düşmüş.\n- **Kısa vadeli yükümlülükler:** 549 576.6 mn TL, nakiti %5.1 oranında karşılıyor. Cari oran 0.99, 0.97. Likidite dar, operasyonel nakit akışı kritik.\n\n## Nakit üretimi\n- **İşletme nakit akışı:** 177 463.8 mn TL, 230 997.5 mn TL (%30.2 artış). Güçlü nakit üretimi devam ediyor.\n- **Serbest nakit akışı (FCF):** 190 557.0 mn TL (yatırım harcaması -56 936.9 mn TL), 51 149.1 mn TL (yatırım harcaması -95 495.5 mn TL). Yatırım artışı (filo/tesis) FCF'i ciddi oranda emmiş. FCF 24 314.0 mn TL (yatırım -82 038.0 mn TL). Yatırım tempoya bağlı olarak FCF volatil.\n\n## Riskler\n- **Bilanço uzaması ve net borç artışı:** Net borç/Özkaynak %74.4, %81.6. Döviz kuru riski (borçlar ağırlıklı USD/EUR) bilanço gürültüsü yaratıyor.\n- **Faiz gideri yükü:** Finansal borç stoku 950 098.0 mn TL (KV 201 935.9 + UV 748 162.1). Yüksek faiz ortamında borç hizmet maliyeti kârlılığı sındırıyor.\n- **Nakit erimesi:** Nakit stoku azalarken (85 290.0 mn TL), kısa vadeli finansal borç (198 276.0 mn TL) ve ticari yükümlülükler yüksek. Yeniden finansman riski var.\n- **TMS 29 kırılımı:** 2023 öncesi ile trend analizi yanıltıcı.\n\n## Sırada neye bakmalı\n- raporunda: Yatırım harcaması tempoya (CAPEX guidance), net borç/EBITDA oranının seyrine, nakit dönüşüm döngüsüne (çalışan sermaye yönetimi).\n- Döviz kuru hareketlerinin (TL/USD, TL/EUR) bilanço üzerindeki irtifa/erime etkisine (özellikle finansal gider/gelir kalemlerine).\n- Yolcu getirisi (yield) ve yük faktörü verileri (mali tablolarda eksik, operasyonel raporlarda takip edilmeli).\n- Serbest nakit akışının pozitif kalıp kalmayacağı ve borç azaltımına yeteceği.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "generatedAt": "2026-11-10T22:43:56+00:00",
+  "periods": [
+   "2020/12",
+   "2021/12",
+   "2022/12",
+   "2023/12",
+   "2024/12",
+   "2025/12",
+   "2026/6",
+   "2026/9"
+  ]
+ },
+ "TUPRS": {
+  "text": "## Özet\n- Tüpraş döneminde 1,17 trilyon TL hasılat ve 121,3 milyar TL net kâr (ana ortaklık) üreterek güçlü bir dokuz ay tamamladı. Piyasa değeri 640,2 milyar TL, F/K 4,9 ve PD/DD 1,2 seviyelerinde [2026-11-09 piyasa verisi].\n- 2023 yılından itibari TMS 29 (enflasyon muhasebesi) uygulanıyor; 2022 ve öncesi nominal verilerle doğrudan kıyaslanamaz. Büyüme yorumlarında bu kırılma göz önünde bulundurulmalı.\n\n## Büyüme\n- Hasılat 991,2 mld TL'den 1,06 trilyon TL'ye, 1,03 trilyon TL'ye gerçekleşmiş; 2024-2025 arası nominal durağanlık izleniyor. 1,17 trilyon TL ile 2025 tam yılını aştı.\n- Net kâr 77,4 mld TL'den 24,0 mld TL'ye düşmüş, 36,7 mld TL'ye toparlanmıştı. 121,3 mld TL, 2025 tam yılının 3,3 katına karşılık geliyor (kümülatif karşılaştırma).\n\n## Kârlılık\n- Brüt kâr marjı %16,0'dan %8,4'e, %9,8'e; %15,5'e yükseldi.\n- Esas faaliyet kâr marjı %10,7'den %4,4'e, %5,0'ye; %12,3'e çıktı.\n- Net kâr marjı %2,3, %3,6, %10,3 seviyelerinde. 2024'teki düşüş finansman giderleri ve vergi etkileriyle açıklanabilir (vergi öncesi kâr/net kâr açığı geniş).\n\n## Borç ve likidite\n- Net nakit pozisyonu korundu: Net borç -71,4 mld TL, -70,8 mld TL, -204,1 mld TL (nakit fazlası).\n- Kısa vadeli finansal borç 11,9 mld TL'den 27,1 mld TL'ye, 31,8 mld TL'ye çıktıktan sonra 10,4 mld TL'ye geriledi; uzun vadeli borç 35,3 mld TL, 41,0 mld TL.\n- Özkaynak/varlık oranı %63,0, %62,5, %54,6 (varlık büyümesiyle dilüte).\n\n## Nakit üretimi\n- İşletme nakit akışı 46,2 mld TL, 61,5 mld TL, 206,3 mld TL.\n- Serbest nakit akışı 30,6 mld TL, 37,4 mld TL, 181,3 mld TL. Yatırım harcamaları 18,1 mld TL, 23,7 mld TL, 26,3 mld TL.\n\n## Riskler\n- TMS 29 geçişiyle 2023 öncesi verilerle trend analizi yanıltıcı olabilir.\n- Çekirdek rafinaj marjları (crack spread) volatil; 2024'teki kârlılık düşüşü marj baskısını gösterdi.\n- Kısa vadeli yükümlülükler 375,3 mld TL; nakit ve benzerleri 255,5 mld TL. Cari oran 1,38 seviyesinde.\n- Vergi öncesi kâr ile net kâr arasındaki fark ve dönemlerinde yüksek; etkin vergi oranı takip edilmeli.\n\n## Sırada neye bakmalı\n- 2026 yıl sonu kapanışında net kârın 2025 temelinden ne kadar gerçekleşeceği (9 ay 121,3 mld TL).\n- Rafinaj marj trendi ve brüt marjın %15,5 seviyesinin sürdürülebilirliği.\n- Yatırım harcamalarının (özellikle enerji verimliliği/yeşil hidrojен) nakit akışı üzerindeki etkisi.\n- Kısa vadeli borç stokunun 10,4 mld TL seviyesinin yıl sonu seyrisi.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "generatedAt": "2026-11-10T22:38:32+00:00",
+  "periods": [
+   "2020/12",
+   "2021/12",
+   "2022/12",
+   "2023/12",
+   "2024/12",
+   "2025/12",
+   "2026/6",
+   "2026/9"
+  ]
+ }
+}
