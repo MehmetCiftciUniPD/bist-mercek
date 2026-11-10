@@ -115,6 +115,30 @@ node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1
 
 Replace the filename with the pending migration and `DB` with your D1 binding name if different. Use `.wrangler/state`, not `.wrangler/state/v3`; Wrangler adds the versioned directories. Do not replay migrations already applied locally. This updates only the preview database; publishing applies production migrations separately.
 
+## Geçmiş sekmesi ve yapay zekâ analizi
+
+- `data/history.json` (`research/history.py` üretir) yalnızca sunucuda `lib/history.ts` üzerinden okunur. `GET /api/history?code=XXXX` tek şirketin kaydını döndürür; şirket çekmecesindeki **Geçmiş** sekmesi (`app/History.tsx`) bunu gösterir. Eksik değerler boş kalır; türetilmiş satırlar yalnızca aynı dönemde tüm girdiler varsa hesaplanır.
+- `POST /api/analysis` (`{"code":"XXXX"}`) istemi yalnızca sunucudaki verilerden kurar (`lib/analysis.ts`) ve OpenAI uyumlu bir `chat/completions` uç noktasını çağırır. İstemciden sayı veya istem metni kabul edilmez.
+
+Ortam değişkenleri (tümü sunucu tarafı; anahtar hiçbir zaman istemciye gönderilmez):
+
+| Değişken | Varsayılan | Açıklama |
+|---|---|---|
+| `AI_API_KEY` | yok (`OPENROUTER_API_KEY` yedek olarak okunur) | Sağlayıcı anahtarı. Tanımlı değilse rota 503 döner. |
+| `AI_BASE_URL` | `https://openrouter.ai/api/v1` | Örn. Kimi/Moonshot için `https://api.moonshot.ai/v1`, Groq için `https://api.groq.com/openai/v1`. |
+| `AI_MODEL` | `openrouter/free` | Sağlayıcının model kimliği. |
+
+Yerel geliştirmede proje köküne, Git tarafından yok sayılan bir `.dev.vars` dosyası koyun ve `npm run dev` sürecini yeniden başlatın (Cloudflare Vite eklentisi açılışta "Using secrets defined in .dev.vars" yazar):
+
+```sh
+# .dev.vars — commit etmeyin
+AI_API_KEY=<anahtarınız>
+# AI_BASE_URL=https://api.moonshot.ai/v1
+# AI_MODEL=<model-kimliği>
+```
+
+`.dev.vars` yalnızca `npm run dev` için doğrulanmıştır; `npm run build` dosyayı `dist/` içine kopyalamaz, `npm start` ile okunup okunmadığı denenmemiştir. Barındırılan (Sites) ortamda bu değişkenlerin Worker ortamına gizli değişken olarak tanımlanması gerekir; kod önce `cloudflare:workers` `env` bağlamasını, sonra `process.env` değerini okur.
+
 ## Diagnostic Commands
 
 - `npm run install:ci`: perform the one locked dependency install

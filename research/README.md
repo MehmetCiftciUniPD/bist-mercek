@@ -51,3 +51,14 @@ haber başlığı. Başarılı yenileme bağlantıyı ve kaynak yayın saatini s
 Kaynak hatasında son başarılı kesit korunur. Site sahibinin planlı görevi
 `refresh_news` aracını `kap` veya `market` ile çağırır ve `read_news` ile
 son kaydı kontrol eder. Haber aracı bilanço kayıtlarını değiştirmez.
+
+### Çok yıllı geçmiş
+
+`python research/history.py` — İş Yatırım şirket kartındaki TL mali tablolardan
+2020-2025 yıl sonu ile 2026/6 ve 2026/9 sütunlarını toplar (`data/history.json`).
+Sanayi (XI_29) ve finansal kuruluş (UFRS_K, UFRS) şablonları ayrı okunur; en yeni
+ve en uzun seriyi veren şablon tutulur. Bilançosu kapanmayan sütun alınmaz.
+Değerler her dönemin kendi raporundaki tutardır; yıllar TMS 29 ile ortak satın
+alma gücüne getirilmemiştir. 2026/9 sütunu KAP özetiyle %0,5'ten fazla ayrışan
+ihraççılar `warnings` alanıyla işaretlenir. Erişilemeyenler `history-gaps.json`
+içindedir. `--offline` mevcut önbelleği yeniden işler.
