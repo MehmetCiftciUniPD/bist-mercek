@@ -50,3 +50,6 @@ research/*.txt
 research/*-links.json
 research/market-tables.json
 research/financials.json
+
+# Python bytecode
+__pycache__/

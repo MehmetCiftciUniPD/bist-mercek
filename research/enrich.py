@@ -1,4 +1,5 @@
 import json,pathlib,statistics
+from bank_enrichment import enrich_banks
 R=pathlib.Path(__file__).resolve().parent
 D=json.loads((R/'financials.json').read_text());M=json.loads((R/'market-tables.json').read_text())
 PRICE='https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/Temel-Degerler-Ve-Oranlar.aspx';TARGET='https://www.sekeryatirim.com.tr/Arastirma/TavsiyeListesi';SECOND='https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/takip-listesi.aspx?hl=tr-TR'
@@ -95,8 +96,9 @@ for c,d in D.items():
  d['catalysts']+='\n\n'+d['catalystMethod']
 exec((R/'note-enrichment.py').read_text())
 base={c+':2026/9':d for c,d in D.items()}
+enrich_banks(base, {'date':'2026-11-09','source':PRICE,'companies':list(market.values())})
 macro={
-'Sonuçlar':('16 şirketin 2026/9 konsolide KAP finansalı ve 3Ç kârları işlendi. Odak: KCHOL, BIMAS, PGSUS, TCELL. Kaynak düzeltmeleri ve farklı FAVÖK tanımları şirket ekranlarında.','Nötr','https://www.kap.org.tr/tr/'),
+'Sonuçlar':('17 şirketin 2026/9 ayrıntılı finansalları ve 3Ç kârları işlendi. KAP özetleri ayrı kapsamda gösterilir. Odak: KCHOL, BIMAS, PGSUS, TCELL. Kaynak düzeltmeleri ve farklı FAVÖK tanımları şirket ekranlarında.','Nötr','https://www.kap.org.tr/tr/'),
 'Rehber':('FROTO 05.11: iç satış ve toplam satış adet aralıkları aşağı çekildi; düzeltilmiş FAVÖK marjı %6–7 korundu. MGROS rehber güncellemesi KAP’ta açıklandı; sayısal önce/sonra teyidi bekliyor.','Belirsiz','https://www.kap.org.tr/tr/Bildirim/1693371'),
 'Hacim':('09.11.2026: BIST 100 işlem hacmi 143,3 milyar TL; endeks 11.712,67, günlük +%2,00. 20 günlük hacim ortalaması bu sete alınmadı; hacim teyidi iddiası yapılmaz.','Nötr','https://www.aa.com.tr/tr/ekonomi/borsa-gunu-yukselisle-tamamladi/4117552'),
 'Banka liderliği':('09.11.2026: bankacılık endeksi +%3,80; BIST 100 +%2,00. Günlük göreli fark +1,80 yüzde puan. Liderliğin devamlılığı sonraki seanslarda izlenecek.','Olumlu','https://www.aa.com.tr/tr/ekonomi/borsa-gunu-yukselisle-tamamladi/4117552'),

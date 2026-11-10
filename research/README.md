@@ -27,3 +27,27 @@ Reproduce with Python and lxml:
 ## Persistence
 
 The baseline ships with source. D1 stores personal edits, notes and before/after audit records. Saved overrides are merged over the baseline. The app does not claim a live or unattended financial feed. Future periods require a new source-backed import or manual entries.
+
+### 2026/09 özet kapsamı
+
+- `python research/kap-summary.py` — ihraççı bazında KAP finansal özetleri.
+  `--limit-new 90` ile yalnızca bir grup yeni sayfa sorgulanabilir;
+  `--offline` mevcut önbelleği yeniden işler.
+- `python research/broker-summary.py` — KAP özetinden sonuç alınamayan
+  ihraççılar için İş Yatırım şirket kartının dönem, para birimi ve kapsamı
+  kontrol edilen mali tablosu. KAP eşleşmesi varsa KAP kaydı önceliklidir.
+- Özetlerde bilanço karşılaştırması 31.12.2025'e aittir. 9A25 gelir
+  karşılaştırması yalnızca aynı dönem sütunu mevcutsa eklenir. Özet kayıtlar
+  için FAVÖK, çeyrek tahmini veya dipnot skoru üretilmez.
+- `bank_enrichment.py` İş Bankası ve Halkbank'ın konsolide raporlarına ait
+  banka göstergeleri ile birlikte, toplam konsolide kârı ana ortaklık kârından ayırır.
+- Halk Yatırım araştırmalarına Haber ve Bildirimler ekranından ulaşılabilir.
+  Aracı kurum yorumları mali tablo satırlarıyla birleştirilmez.
+
+### Haber güncellemesi
+
+`/api/news` iki ayrı akışın kayıtlarını sunar: KAP bildirimi ve Bloomberg HT
+haber başlığı. Başarılı yenileme bağlantıyı ve kaynak yayın saatini saklar.
+Kaynak hatasında son başarılı kesit korunur. Site sahibinin planlı görevi
+`refresh_news` aracını `kap` veya `market` ile çağırır ve `read_news` ile
+son kaydı kontrol eder. Haber aracı bilanço kayıtlarını değiştirmez.

@@ -4415,7 +4415,11 @@
       "capital": 25000.0,
       "capex": null,
       "effectiveTax": 15.10223,
-      "provision": 210577.0
+      "provision": 210577.0,
+      "netFees": 87793,
+      "groupNetIncome": 60291,
+      "tradingIncome": 4356,
+      "deferredTax": 3721
     },
     "quarter": {
       "operating": 17103.0,
@@ -4427,7 +4431,11 @@
       "netInterest": 56080.0,
       "eclExpense": -20868.0,
       "capex": null,
-      "effectiveTax": 11.911628
+      "effectiveTax": 11.911628,
+      "netFees": 41431,
+      "groupNetIncome": 17105,
+      "tradingIncome": -6006,
+      "deferredTax": 3001
     },
     "quarterPrevious": {
       "operating": 21681.0,
@@ -4439,7 +4447,11 @@
       "netInterest": 41289.0,
       "eclExpense": -16504.0,
       "capex": null,
-      "effectiveTax": 16.370338
+      "effectiveTax": 16.370338,
+      "netFees": 32765,
+      "groupNetIncome": 19285,
+      "tradingIncome": 2056,
+      "deferredTax": 395
     },
     "fieldSources": {
       "operating": {
@@ -4665,6 +4677,78 @@
         "url": "https://www.sekeryatirim.com.tr/Arastirma/TavsiyeListesi",
         "kind": "Aracı kurum hedefi",
         "note": "10.11.2026 erişim; hedef revizyon tarihi belirtilmiyor."
+      },
+      "netFees": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka raporu",
+        "label": "Net ücret ve komisyon gelirleri",
+        "note": "Konsolide gelir tablosu, basılı s.10. Ertelenmiş vergi = gelir etkisi − gider etkisi.",
+        "raw": "118618",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "groupNetIncome": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka raporu",
+        "label": "Konsolide dönem net kârı",
+        "note": "Konsolide gelir tablosu, basılı s.10. Ertelenmiş vergi = gelir etkisi − gider etkisi.",
+        "raw": "59059",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "tradingIncome": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka raporu",
+        "label": "Net ticari kâr/zarar",
+        "note": "Konsolide gelir tablosu, basılı s.10. Ertelenmiş vergi = gelir etkisi − gider etkisi.",
+        "raw": "-12750",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "deferredTax": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka raporu",
+        "label": "Net ertelenmiş vergi geliri/gideri",
+        "note": "Konsolide gelir tablosu, basılı s.10. Ertelenmiş vergi = gelir etkisi − gider etkisi.",
+        "raw": "3360",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "car": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Sermaye yeterliliği",
+        "note": "Konsolide risk yönetimi ve faaliyet raporu. Önceki takip oranı raporda tek ondalık.",
+        "raw": "15.56",
+        "unit": "%",
+        "comparison": "31.12.2025"
+      },
+      "npl": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Takipteki kredi oranı",
+        "note": "Konsolide risk yönetimi ve faaliyet raporu. Önceki takip oranı raporda tek ondalık.",
+        "raw": "3.87",
+        "unit": "%",
+        "comparison": "31.12.2025"
+      },
+      "lcr": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Likidite karşılama · TP+YP",
+        "note": "Konsolide risk yönetimi ve faaliyet raporu. Önceki takip oranı raporda tek ondalık.",
+        "raw": "124.31",
+        "unit": "%",
+        "comparison": null
+      },
+      "nsfr": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Net istikrarlı fonlama",
+        "note": "Konsolide risk yönetimi ve faaliyet raporu. Önceki takip oranı raporda tek ondalık.",
+        "raw": "116.68",
+        "unit": "%",
+        "comparison": "31.12.2025"
       }
     },
     "basis": "BDDK / konsolide",
@@ -4766,7 +4850,7 @@
     "valuation": "Fiyat: 09.11.2026 kapanış. F/K, FD/FAVÖK ve PD/DD: İş Yatırım, 9/2026 son rapor dönemi. Hedef: Şeker Yatırım takip listesi, 10.11.2026 erişim; revizyon tarihi ve model varsayımları listede yok. Kurum hedefleri birbirinden farklıdır; konsensüs veya panelin kendi hedefi değildir.",
     "guidance": "Bu veri setinde son ve önceki şirket rehberi henüz eşleştirilmedi. Değişmediği varsayılmaz.",
     "oneoffNote": "Standart bir tek seferlik toplam bulunmadığından tutar üretilmedi. Vergi ve parasal pozisyon ayrı gösterilir; tekrarlanabilir kâr için işlem bazında dipnot ayrıştırması gerekli.",
-    "maturity": "Banka bilançosunda mevduat/kredi ve likidite vade uyumsuzluğu birlikte değerlendirilmelidir. Sanayi tipi kısa borç/toplam borç skoru uygulanmaz; likidite vade tablosu ayrıca incelenmeli.",
+    "maturity": "Konsolide 3Ç26 toplam likidite karşılama ortalaması %124,31, net istikrarlı fonlama oranı %116,68. Kredi/mevduat oranı ayrıca gösterilir.",
     "gaps": [
       "Tek seferlik kalemlerin işlem bazında ayrıştırılması",
       "Yıl yıl borç itfa / likidite vade takvimi",
@@ -4775,10 +4859,10 @@
     ],
     "confidence": "Finansallar: yüksek · değerleme: orta · dipnot incelemesi: kısmi",
     "researchNotes": [
-      "Ana ortaklık 9 aylık net kârı 40.437,0 mn TL; karşılaştırılabilir önceki dönem 44,127.0 mn TL.",
-      "Konsolide BDDK seti kullanıldı. Ana ortaklık kârı solo banka kârıyla karıştırılmamalı. FAVÖK/serbest nakit akışı sanayi yaklaşımı uygulanmaz. ROE, 9 aylık kârın 4/3 ile yıllıklandırılmış yaklaşık göstergesidir; düzenleyici sermaye yeterlilik oranı değildir."
+      "9A26 ana ortaklık net kârı 40.437 mn TL (9A25: 44.127); toplam konsolide kâr 59.059 mn TL. 3Ç26 ana ortaklık kârı 10.349 mn TL (3Ç25: 14.089).",
+      "Net faiz geliri %63,0, net ücret ve komisyon geliri %35,1 arttı. Beklenen kredi zararı giderindeki artış ve 12.750 mn TL net ticari zarar kâra baskı yaptı."
     ],
-    "note": "Ana ortaklık 9 aylık net kârı 40.437,0 mn TL; karşılaştırılabilir önceki dönem 44,127.0 mn TL.\n\nKonsolide BDDK seti kullanıldı. Ana ortaklık kârı solo banka kârıyla karıştırılmamalı. FAVÖK/serbest nakit akışı sanayi yaklaşımı uygulanmaz. ROE, 9 aylık kârın 4/3 ile yıllıklandırılmış yaklaşık göstergesidir; düzenleyici sermaye yeterlilik oranı değildir.",
+    "note": "9A26 ana ortaklık net kârı 40.437 mn TL (9A25: 44.127); toplam konsolide kâr 59.059 mn TL. 3Ç26 ana ortaklık kârı 10.349 mn TL (3Ç25: 14.089).\n\nNet faiz geliri %63,0, net ücret ve komisyon geliri %35,1 arttı. Beklenen kredi zararı giderindeki artış ve 12.750 mn TL net ticari zarar kâra baskı yaptı.",
     "catalysts": "Kredi karşılıkları, net faiz geliri ve iştirak katkısı izlenecek. Sermaye/aktif oranı düzenleyici sermaye yeterliliği değildir.\n\n50 nötr taban + kâr değişimi (±10) + banka/holding hariç FCF işareti (±10) + doğrulanan rehber yönü (±10) + doğrulanan >%5 FAVÖK sürprizi (+10). Eksik bileşen puan eklemez; skor kapsamlı olasılık tahmini değildir.",
     "catalystComponents": [
       {
@@ -4787,7 +4871,51 @@
       }
     ],
     "catalystScore": 40,
-    "catalystMethod": "50 nötr taban + kâr değişimi (±10) + banka/holding hariç FCF işareti (±10) + doğrulanan rehber yönü (±10) + doğrulanan >%5 FAVÖK sürprizi (+10). Eksik bileşen puan eklemez; skor kapsamlı olasılık tahmini değildir."
+    "catalystMethod": "50 nötr taban + kâr değişimi (±10) + banka/holding hariç FCF işareti (±10) + doğrulanan rehber yönü (±10) + doğrulanan >%5 FAVÖK sürprizi (+10). Eksik bileşen puan eklemez; skor kapsamlı olasılık tahmini değildir.",
+    "netFees": 118618,
+    "groupNetIncome": 59059,
+    "tradingIncome": -12750,
+    "deferredTax": 3360,
+    "bankMetrics": [
+      {
+        "key": "car",
+        "label": "Sermaye yeterliliği",
+        "value": 15.56,
+        "previous": 17.14,
+        "period": "30.09.2026",
+        "previousPeriod": "31.12.2025",
+        "source": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2"
+      },
+      {
+        "key": "npl",
+        "label": "Takipteki kredi oranı",
+        "value": 3.87,
+        "previous": 3.1,
+        "period": "30.09.2026",
+        "previousPeriod": "31.12.2025",
+        "source": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2"
+      },
+      {
+        "key": "lcr",
+        "label": "Likidite karşılama · TP+YP",
+        "value": 124.31,
+        "previous": null,
+        "period": "3Ç26 ortalaması",
+        "previousPeriod": null,
+        "source": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2"
+      },
+      {
+        "key": "nsfr",
+        "label": "Net istikrarlı fonlama",
+        "value": 116.68,
+        "previous": 117.76,
+        "period": "30.09.2026",
+        "previousPeriod": "31.12.2025",
+        "source": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2"
+      }
+    ],
+    "companySource": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1ac3458fd2bb2",
+    "provisionNote": "9A26 beklenen kredi zararı gideri 62.237 mn TL (9A25: 42.205). Banka, 2026 portföy satışları ve kayıttan düşümler olmadan takip oranının %3,87 yerine %4,19 olacağını hesaplıyor (kredi dipnotu)."
   },
   "YKBNK:2026/9": {
     "source": "https://www.kap.org.tr/tr/Bildirim/1691272",
@@ -10065,8 +10193,455 @@
       "source": "https://www.kap.org.tr/tr/Bildirim/1692808"
     }
   },
+  "HALKB:2026/9": {
+    "code": "HALKB",
+    "name": "Halkbank",
+    "sector": "Bankacılık",
+    "source": "https://kap.org.tr/tr/sirket-finansal-bilgileri/2423-turkiye-halk-bankasi-a-s",
+    "companySource": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf",
+    "attachments": [
+      "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+      "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf"
+    ],
+    "basis": "BDDK / konsolide",
+    "unit": "Milyon TL",
+    "originalUnit": "1.000.000 TL",
+    "financialDate": "2026-09-30",
+    "importedAt": "2026-11-10",
+    "verified": true,
+    "previous": {
+      "assets": 4497070,
+      "equity": 222945,
+      "loans": 2095987,
+      "deposits": 3607838,
+      "provision": 15494,
+      "expectedLoss": -68437,
+      "capital": 7185,
+      "netInterest": 64915,
+      "netFees": 43780,
+      "tradingIncome": -9134,
+      "operating": 19021,
+      "pretax": 19358,
+      "netIncome": 20204,
+      "groupNetIncome": 20721,
+      "eclExpense": -25923,
+      "tax": 1363,
+      "currentTax": -2068,
+      "deferredTax": 3431,
+      "ocf": 216854
+    },
+    "quarter": {
+      "netInterest": 52925,
+      "netFees": 21713,
+      "tradingIncome": -15747,
+      "operating": 11116,
+      "pretax": 11289,
+      "netIncome": 8212,
+      "groupNetIncome": 8401,
+      "eclExpense": -12165,
+      "tax": -2888,
+      "currentTax": -1595,
+      "deferredTax": -1293
+    },
+    "quarterPrevious": {
+      "netInterest": 23461,
+      "netFees": 16118,
+      "tradingIncome": -2617,
+      "operating": 6196,
+      "pretax": 6338,
+      "netIncome": 7546,
+      "groupNetIncome": 6913,
+      "eclExpense": -12099,
+      "tax": 575,
+      "currentTax": -816,
+      "deferredTax": 1391
+    },
+    "fieldSources": {
+      "assets": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Varlıklar toplamı",
+        "note": "Konsolide bilanço, basılı s.6–7.",
+        "raw": "5383416",
+        "unit": "Milyon TL",
+        "comparison": "31.12.2025"
+      },
+      "equity": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Özkaynaklar",
+        "note": "Konsolide bilanço, basılı s.6–7.",
+        "raw": "259290",
+        "unit": "Milyon TL",
+        "comparison": "31.12.2025"
+      },
+      "loans": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Krediler",
+        "note": "Konsolide bilanço, basılı s.6–7.",
+        "raw": "2704056",
+        "unit": "Milyon TL",
+        "comparison": "31.12.2025"
+      },
+      "deposits": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Mevduat",
+        "note": "Konsolide bilanço, basılı s.6–7.",
+        "raw": "4130089",
+        "unit": "Milyon TL",
+        "comparison": "31.12.2025"
+      },
+      "provision": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Karşılıklar",
+        "note": "Konsolide bilanço, basılı s.6–7.",
+        "raw": "21574",
+        "unit": "Milyon TL",
+        "comparison": "31.12.2025"
+      },
+      "expectedLoss": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "İtfa edilmiş maliyetli finansal varlık beklenen zarar karşılıkları",
+        "note": "Konsolide bilanço, basılı s.6–7.",
+        "raw": "-85697",
+        "unit": "Milyon TL",
+        "comparison": "31.12.2025"
+      },
+      "capital": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Ödenmiş sermaye",
+        "note": "Konsolide bilanço, basılı s.6–7.",
+        "raw": "7185",
+        "unit": "Milyon TL",
+        "comparison": "31.12.2025"
+      },
+      "netInterest": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Net faiz geliri",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "134264",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "netFees": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Net ücret ve komisyon gelirleri",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "57821",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "tradingIncome": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Net ticari kâr/zarar",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "-32081",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "operating": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Net faaliyet kârı",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "32557",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "pretax": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Vergi öncesi kâr",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "32990",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "netIncome": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Ana ortaklığa düşen net kâr",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "25941",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "groupNetIncome": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Konsolide dönem net kârı",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "27013",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "eclExpense": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Beklenen zarar karşılıkları giderleri",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "-34632",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "tax": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Net vergi etkisi",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "-5977",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "currentTax": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Cari vergi gideri",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "-4160",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "deferredTax": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide banka raporu",
+        "label": "Net ertelenmiş vergi etkisi",
+        "note": "Konsolide gelir tablosu, basılı s.10.",
+        "raw": "-1817",
+        "unit": "Milyon TL",
+        "comparison": "9A25 ve 3Ç25"
+      },
+      "ocf": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+        "kind": "Konsolide nakit akışı",
+        "note": "Basılı s.13; bankacılık faaliyetleri, 9A26 ve 9A25."
+      },
+      "car": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Sermaye yeterliliği",
+        "note": "Konsolide sermaye ve likidite dipnotları, faaliyet raporu gösterge rasyoları.",
+        "raw": "13.55",
+        "unit": "%",
+        "comparison": "31.12.2025"
+      },
+      "npl": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Takipteki kredi oranı",
+        "note": "Konsolide sermaye ve likidite dipnotları, faaliyet raporu gösterge rasyoları.",
+        "raw": "4.59",
+        "unit": "%",
+        "comparison": "31.12.2025"
+      },
+      "lcr": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Likidite karşılama · TP+YP",
+        "note": "Konsolide sermaye ve likidite dipnotları, faaliyet raporu gösterge rasyoları.",
+        "raw": "167.54",
+        "unit": "%",
+        "comparison": null
+      },
+      "nsfr": {
+        "url": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf",
+        "kind": "Konsolide banka dipnotu",
+        "label": "Net istikrarlı fonlama",
+        "note": "Konsolide sermaye ve likidite dipnotları, faaliyet raporu gösterge rasyoları.",
+        "raw": "134.0",
+        "unit": "%",
+        "comparison": "4Ç25 ortalaması"
+      },
+      "target": {
+        "url": "https://www.sekeryatirim.com.tr/Arastirma/TavsiyeListesi",
+        "kind": "Aracı kurum hedefi",
+        "note": "10.11.2026 erişim; revizyon tarihi kaynakta yok."
+      },
+      "price": {
+        "url": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/Temel-Degerler-Ve-Oranlar.aspx",
+        "kind": "İş Yatırım · 09.11.2026 kapanış"
+      },
+      "pe": {
+        "url": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/Temel-Degerler-Ve-Oranlar.aspx",
+        "kind": "İş Yatırım · 09.11.2026 kapanış"
+      },
+      "pb": {
+        "url": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/Temel-Degerler-Ve-Oranlar.aspx",
+        "kind": "İş Yatırım · 09.11.2026 kapanış"
+      },
+      "marketCap": {
+        "url": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/Temel-Degerler-Ve-Oranlar.aspx",
+        "kind": "İş Yatırım · 09.11.2026 kapanış"
+      },
+      "return": {
+        "url": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/Temel-Degerler-Ve-Oranlar.aspx",
+        "kind": "İş Yatırım · 09.11.2026 kapanış"
+      }
+    },
+    "documentHash": "b204cb9e3d6367d06a36ea59da56c84cf3679a60ff2ee0ac70ad02c2f71c31c9",
+    "documentHashSource": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026_finansallar.pdf",
+    "provenance": "Halkbank konsolide mali tabloları ve dipnotları; 2026/09 ana kalemleri KAP şirket finansal bilgileriyle eşleşiyor.",
+    "confidence": "KAP özeti ve banka mali tabloları eşleşti · konsolide",
+    "guidance": "Karşılaştırılabilir sayısal yönetim rehberi doğrulanmadı.",
+    "gaps": [
+      "Sayısal yönetim rehberinin karşılaştırılması",
+      "Hedef fiyat revizyon tarihi"
+    ],
+    "oneoffNote": "Tek seferlik kalemlerin tamamı ayrıştırılmadı. Net ertelenmiş vergi ve net ticari sonuç ayrı gösteriliyor.",
+    "maturity": "Konsolide 3Ç26 toplam likidite karşılama ortalaması %167,54; net istikrarlı fonlama oranı %134,00.",
+    "provisionNote": "9A26 beklenen kredi zararı gideri 34.632 mn TL (9A25: 25.923). Bilanço karşılığı itfa edilmiş maliyetle ölçülen finansal varlıkların beklenen zarar satırıdır.",
+    "catalysts": "Net faiz gelirindeki artış ve takipteki kredi oranı izlenecek. KAP açıklamaları Haber ve Bildirimler ekranında yer alır.",
+    "researchNotes": [
+      "9A26 ana ortaklık kârı 25.941 mn TL (9A25: 20.204); toplam konsolide kâr 27.013 mn TL. 3Ç26 ana ortaklık kârı 8.212 mn TL (3Ç25: 7.546).",
+      "Net faiz geliri %106,8, net ücret ve komisyonlar %32,1 arttı. Net ticari zarar 32.081 mn TL; takipteki kredi oranı %3,89’dan %4,59’a yükseldi."
+    ],
+    "assets": 5383416,
+    "equity": 259290,
+    "loans": 2704056,
+    "deposits": 4130089,
+    "provision": 21574,
+    "expectedLoss": -85697,
+    "capital": 7185,
+    "netInterest": 134264,
+    "netFees": 57821,
+    "tradingIncome": -32081,
+    "operating": 32557,
+    "pretax": 32990,
+    "netIncome": 25941,
+    "groupNetIncome": 27013,
+    "eclExpense": -34632,
+    "tax": -5977,
+    "currentTax": -4160,
+    "deferredTax": -1817,
+    "ocf": -18251,
+    "bankMetrics": [
+      {
+        "key": "car",
+        "label": "Sermaye yeterliliği",
+        "value": 13.55,
+        "previous": 15.56,
+        "period": "30.09.2026",
+        "previousPeriod": "31.12.2025",
+        "source": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf"
+      },
+      {
+        "key": "npl",
+        "label": "Takipteki kredi oranı",
+        "value": 4.59,
+        "previous": 3.89,
+        "period": "30.09.2026",
+        "previousPeriod": "31.12.2025",
+        "source": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf"
+      },
+      {
+        "key": "lcr",
+        "label": "Likidite karşılama · TP+YP",
+        "value": 167.54,
+        "previous": null,
+        "period": "3Ç26 ortalaması",
+        "previousPeriod": null,
+        "source": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf"
+      },
+      {
+        "key": "nsfr",
+        "label": "Net istikrarlı fonlama",
+        "value": 134.0,
+        "previous": 137.76,
+        "period": "3Ç26 ortalaması",
+        "previousPeriod": "4Ç25 ortalaması",
+        "source": "https://www.halkbank.com.tr/content/dam/corporate-website/tr/dokumanlar/yatirimci-iliskileri/finansal-tablolar-ve-bagimsiz-denetim-raporlari/2026/Turkiye_Halk_Bankasi_AS_Konsolide_Rapor_30_09_2026.pdf"
+      }
+    ],
+    "annualizedROE": 14.344873350130124,
+    "loanDeposit": 65.47209999590807,
+    "catalystComponents": [
+      {
+        "label": "9 aylık ana ortaklık kârı önceki döneme göre arttı",
+        "points": 10
+      }
+    ],
+    "catalystScore": 60,
+    "catalystMethod": "50 nötr taban + doğrulanmış yıllık kâr artışı (10 puan).",
+    "note": "9A26 ana ortaklık kârı 25.941 mn TL (9A25: 20.204); toplam konsolide kâr 27.013 mn TL. 3Ç26 ana ortaklık kârı 8.212 mn TL (3Ç25: 7.546).\n\nNet faiz geliri %106,8, net ücret ve komisyonlar %32,1 arttı. Net ticari zarar 32.081 mn TL; takipteki kredi oranı %3,89’dan %4,59’a yükseldi.",
+    "price": 42.86,
+    "marketCap": 307939.6,
+    "pe": 9.3,
+    "multiple": null,
+    "evSales": null,
+    "pb": 1.3,
+    "ratioPeriod": "9/2026",
+    "return": 4.43,
+    "weekReturn": 5.67,
+    "monthReturn": -2.32,
+    "ytdReturn": 16.53,
+    "priceDate": "2026-11-09",
+    "marketSource": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/Temel-Degerler-Ve-Oranlar.aspx",
+    "bist": 2.0,
+    "bistYtd": 4.01,
+    "benchmarkSource": "https://www.borsaistanbul.com/endeksler/bist-pay/gosterge-endeksler",
+    "sectorPeers": [
+      "AKBNK",
+      "ALBRK",
+      "ENPRA",
+      "GARAN",
+      "HALKB",
+      "ICBCT",
+      "ISATR",
+      "ISBTR",
+      "ISCTR",
+      "ISKUR",
+      "KLNMA",
+      "QNBTR",
+      "SKBNK",
+      "TSKB",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "peerStats": {
+      "return": {
+        "median": 2.445,
+        "count": 16
+      },
+      "ytdReturn": {
+        "median": 3.82,
+        "count": 15
+      },
+      "pe": {
+        "median": 5.300000000000001,
+        "count": 12
+      },
+      "pb": {
+        "median": 1.1,
+        "count": 13
+      },
+      "multiple": {
+        "median": null,
+        "count": 0
+      }
+    },
+    "sectorReturn": 2.445,
+    "target": 52.3,
+    "analystTargets": [
+      {
+        "firm": "Şeker Yatırım",
+        "target": 52.3,
+        "recommendation": "TUT",
+        "date": null,
+        "source": "https://www.sekeryatirim.com.tr/Arastirma/TavsiyeListesi"
+      }
+    ],
+    "valuation": "Fiyat ve çarpanlar İş Yatırım 09.11.2026 kesitidir. Şeker Yatırım hedefinin revizyon tarihi belirtilmiyor."
+  },
   "macro:2026/9:Sonuçlar": {
-    "note": "16 şirketin 2026/9 konsolide KAP finansalı ve 3Ç kârları işlendi. Odak: KCHOL, BIMAS, PGSUS, TCELL. Kaynak düzeltmeleri ve farklı FAVÖK tanımları şirket ekranlarında.",
+    "note": "17 şirketin 2026/9 ayrıntılı finansalları ve 3Ç kârları işlendi. KAP özetleri ayrı kapsamda gösterilir. Odak: KCHOL, BIMAS, PGSUS, TCELL. Kaynak düzeltmeleri ve farklı FAVÖK tanımları şirket ekranlarında.",
     "direction": "Nötr",
     "source": "https://www.kap.org.tr/tr/",
     "updated": "2026-11-10T08:00:00Z"
