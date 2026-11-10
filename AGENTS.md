@@ -27,6 +27,10 @@ The Next.js app is deployed privately on Sites. Published snapshots are in
   (İş Yatırım differs from KAP, mostly GYO), fill the 35 issuers without a
   2026/9 column once they report, and separate consolidated, standalone,
   banking and industrial templates before scoring.
+- Claude Code agent definitions live in `.claude/agents/`: `veri-toplayici`,
+  `donem-guncelleyici`, `kaynak-uzlastirici`, `dogrulayici`,
+  `arayuz-gelistirici`, `kod-temizleyici`, `temel-analiz-karti` and
+  `ozetleyici` (cheap reader; use it before pulling large files into context).
 - This repo is worked on by more than one coding agent. `AGENTS.md` is the
   shared source of truth (`CLAUDE.md` only points here). Record durable
   decisions and handovers in `docs/HANDOVER.md`, work on a branch, and do not
