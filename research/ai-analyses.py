@@ -91,7 +91,7 @@ def usable(answer, finish):
 
 
 def ask(key, model, text):
-    body = {'model': model, 'temperature': 0.2, 'max_tokens': 4000, 'reasoning': {'exclude': True}, 'messages': [{'role': 'user', 'content': text}]}
+    body = {'model': model, 'temperature': 0.2, 'max_tokens': 8000, 'reasoning': {'effort': 'low', 'exclude': True}, 'messages': [{'role': 'user', 'content': text}]}
     request = urllib.request.Request(API, json.dumps(body).encode(), {'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json'})
     with urllib.request.urlopen(request, timeout=120) as response:
         reply = json.load(response)
