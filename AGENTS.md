@@ -31,6 +31,10 @@ The Next.js app is deployed privately on Sites. Published snapshots are in
   `donem-guncelleyici`, `kaynak-uzlastirici`, `dogrulayici`,
   `arayuz-gelistirici`, `kod-temizleyici`, `temel-analiz-karti` and
   `ozetleyici` (cheap reader; use it before pulling large files into context).
+  Five generic analysis agents adapted from a third-party set are listed in
+  `docs/THIRD_PARTY_AGENTS.md`.
+- Never commit an API key or other secret, in any file or encoding. The
+  repository is public; keys belong in the host's server-side secret store.
 - This repo is worked on by more than one coding agent. `AGENTS.md` is the
   shared source of truth (`CLAUDE.md` only points here). Record durable
   decisions and handovers in `docs/HANDOVER.md`, work on a branch, and do not
