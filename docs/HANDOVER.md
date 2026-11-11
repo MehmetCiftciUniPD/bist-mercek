@@ -2,6 +2,21 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-11 · Claude Code · 2026/9 basis and risk flags
+
+- The scorecard now uses 2026/9 against 2025/9 (537 issuers); 54 issuers
+  without both columns fall back to 2025 against 2024. Nine-month flows are
+  multiplied by 12/9 where they meet a balance or market value. Piotroski
+  compares the two nine-month periods directly.
+- `research/history.py` also collects 2025/9. Existing values were unchanged.
+- `data/risk-flags.json` lists shares named in the 2026 fund investigation,
+  from press reports only, in three levels: `spk` (SPK decision reported),
+  `savcilik` (in both press lists of the prosecutor's request) and `tek` (one
+  list only or conflicting codes). The site's "Yüksek risk" filter covers the
+  first two levels plus Yakın İzleme Pazarı. Update the file by hand from
+  dated sources; never add a share without a source.
+- The site's list columns show 2026/9 revenue and net income.
+
 ## 2026-11-11 · Claude Code · fundamental scorecard
 
 - `research/scorecard.py` writes `data/scorecard.json`; the public site shows
