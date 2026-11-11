@@ -73,7 +73,14 @@ def main():
     (OUT / 'analyses.json').write_text(analyses.read_text() if analyses.exists() else '{}')
     (OUT / 'index.html').write_text(HEAD + (ROOT / 'site' / 'page.html').read_text() + '</body></html>')
     (OUT / '.nojekyll').write_text('')
-    print(f"{len(data['companies'])} şirket · site/dist yazıldı")
+    # One small file per issuer, fetched only when its file is opened.
+    prices = load('price-history.json')['companies'] if (DATA / 'price-history.json').exists() else {}
+    (OUT / 'prices').mkdir(exist_ok=True)
+    for old in (OUT / 'prices').glob('*.json'):
+        old.unlink()
+    for code, series in prices.items():
+        (OUT / 'prices' / f'{code}.json').write_text(json.dumps(series, separators=(',', ':')))
+    print(f"{len(data['companies'])} şirket · {len(prices)} fiyat serisi · site/dist yazıldı")
 
 
 if __name__ == '__main__':
