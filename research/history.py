@@ -39,6 +39,10 @@ INDUSTRIAL = {
     '2N': 'equity', '2O': 'parentEquity', '3C': 'revenue', '3D': 'grossProfit', '3DF': 'operating',
     '3I': 'pretax', '3L': 'groupNetIncome', '3Z': 'netIncome', '4B': 'depreciation',
     '4C': 'ocf', '4CAI': 'capex', '4CB': 'fcf',
+    # Inputs for the fundamental scorecard (research/scorecard.py).
+    '1AC': 'receivables', '1AF': 'inventories', '1BG': 'ppe',
+    '2OCD': 'restrictedReserves', '2OCE': 'priorYearsEarnings', '2OCF': 'periodEarnings',
+    '3DA': 'marketingExpense', '3DB': 'adminExpense', '4CBC': 'capitalIncrease',
 }
 INDUSTRIAL_TOTAL = '2ODB'
 # Financial templates (banks, insurers, leasing): codes differ, so match labels.
@@ -212,6 +216,9 @@ def main():
     if args.limit:
         jobs = jobs[:args.limit]
     at = datetime.now(timezone.utc).isoformat(timespec='seconds')
+    if args.offline and (DATA / 'history.json').exists():
+        # Reprocessing a cache does not change when the source was read.
+        at = json.loads((DATA / 'history.json').read_text()).get('collectedAt', at)
     companies, gaps = {}, {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {pool.submit(collect, issuer, code, args.cache, args.offline): (issuer, code) for issuer, code in jobs}

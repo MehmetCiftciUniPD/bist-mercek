@@ -2,6 +2,25 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-11 · Claude Code · fundamental scorecard
+
+- `research/scorecard.py` writes `data/scorecard.json`; the public site shows
+  it in a "Temel analiz skor kartı" tab, with an F-Skor column and two filters.
+- Templates: industrial 453, holding/GYO 113, financial 17, bank 10. Piotroski,
+  Altman Z'', Greenblatt and net debt/EBITDA are computed for industrials only.
+- Adaptations to the published methods: ratios use same-year year-end balances
+  (statements are as published per year under TMS 29); Altman's retained
+  earnings is prior-year earnings + period earnings + restricted reserves;
+  the equity-issue signal reads the cash-flow line for paid capital increases;
+  Beneish is not computed because its sales growth index is not comparable.
+- `research/history.py` now also collects receivables, inventories, PP&E,
+  reserves, prior-year and period earnings, marketing and admin expenses and
+  capital increases. Existing values were unchanged by the reprocess.
+- Verification: ASELS's F-Score inputs and Z'' were recomputed independently
+  and matched. Coefficients and thresholds come from secondary sources; the
+  research report lists what could not be checked against the original papers.
+- Not done: the Mercek Next.js app does not show the scorecard yet.
+
 ## 2026-11-10 · Claude Code · public static site
 
 - **Public site:** https://mehmetciftciunipd.github.io/bist-mercek/ is served by

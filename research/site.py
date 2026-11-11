@@ -25,6 +25,7 @@ def companies():
     sources = (('KAP tam rapor', load('research-2026-09.json')), ('KAP özeti', load('kap-summary-2026-09.json')),
                ('İş Yatırım şirket kartı', load('broker-summary-2026-09.json')))
     quotes = {q['code']: q for q in market['companies']}
+    scorecard = load('scorecard.json') if (DATA / 'scorecard.json').exists() else {'companies': {}}
     rows = []
     for issuer in uni['companies']:
         codes = issuer['codes']
@@ -47,6 +48,9 @@ def companies():
             row['h'] = {'g': h['group'], 'basis': h['basis'], 'src': h['source'], 'p': h['periods'], 'v': h['values']}
             if h.get('warnings'):
                 row['h']['w'] = h['warnings']
+        card = next((scorecard['companies'][c] for c in codes if c in scorecard['companies']), None)
+        if card:
+            row['sc'] = card
         rows.append(row)
     meta = {'priceDate': market['date'], 'priceSource': market['source'], 'historySource': hist['source'],
             'collectedAt': hist['collectedAt'], 'note': hist['note'], 'universeDate': uni['date'], 'universeSource': uni['source']}

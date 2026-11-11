@@ -62,3 +62,15 @@ Değerler her dönemin kendi raporundaki tutardır; yıllar TMS 29 ile ortak sat
 alma gücüne getirilmemiştir. 2026/9 sütunu KAP özetiyle %0,5'ten fazla ayrışan
 ihraççılar `warnings` alanıyla işaretlenir. Erişilemeyenler `history-gaps.json`
 içindedir. `--offline` mevcut önbelleği yeniden işler.
+
+### Temel analiz skor kartı
+
+`python research/scorecard.py` — `data/history.json` ve fiyat kesitinden
+`data/scorecard.json` üretir. Sanayi şirketlerinde Piotroski F-Skor, Altman Z'',
+DuPont, net borç/FAVÖK, Greenblatt sırası ve sektör medyanına göre çarpanlar;
+banka, diğer finansal kuruluş, holding ve GYO için ayrı şablonlar kullanılır.
+Tüm girdileri olmayan ölçüt boş kalır. Yıllar arası ölçütler TL tutarlarını
+değil oranları karşılaştırır; satış büyüme endeksi gerektirdiği için Beneish
+M-Skor hesaplanmaz. Yöntem ve kaynaklar:
+`reports/Temel analiz skor kartı yöntemleri.md`. `history.json` değişince
+yeniden çalıştırın.
