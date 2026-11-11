@@ -74,3 +74,11 @@ değil oranları karşılaştırır; satış büyüme endeksi gerektirdiği içi
 M-Skor hesaplanmaz. Yöntem ve kaynaklar:
 `reports/Temel analiz skor kartı yöntemleri.md`. `history.json` değişince
 yeniden çalıştırın.
+
+### Güncel fiyat
+
+`python research/prices.py` — İş Yatırım oran sayfasından tek istekle tüm
+şirketlerin kapanış fiyatı, piyasa değeri ve çarpanlarını `data/market-latest.json`
+dosyasına yazar. Tarihli `market-2026-11-09.json` Mercek uygulaması için aynen
+kalır. Sayfa eksik görünürse eski dosya korunur. GitHub iş akışı bunu her iş
+günü kapanıştan sonra çalıştırır, ardından skor kartını ve siteyi yeniler.

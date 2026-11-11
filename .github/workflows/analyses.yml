@@ -5,6 +5,8 @@ name: Günlük analiz ve site yayını
 on:
   schedule:
     - cron: '23 2 * * *'
+    # Weekdays after the Istanbul close (19:40): prices, scorecard and site only.
+    - cron: '40 16 * * 1-5'
   workflow_dispatch:
 
 permissions:
@@ -25,7 +27,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Fiyatları yenile
+        continue-on-error: true
+        run: python research/prices.py && python research/scorecard.py
       - name: Analizleri üret
+        if: github.event.schedule != '40 16 * * 1-5'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
@@ -34,13 +40,13 @@ jobs:
           else
             python research/ai-analyses.py --limit 48
           fi
-      - name: Yeni analizleri kaydet
+      - name: Değişiklikleri kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Update pre-generated analyses"
+            git commit -m "Update prices, scorecard and analyses"
             git push origin HEAD:main
           fi
       - name: Siteyi yayınla

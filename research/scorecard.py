@@ -129,7 +129,8 @@ def classify(record, sector):
 
 def main():
     history = json.loads((DATA / 'history.json').read_text())['companies']
-    market = json.loads((DATA / 'market-2026-11-09.json').read_text())
+    latest = DATA / 'market-latest.json'
+    market = json.loads((latest if latest.exists() else DATA / 'market-2026-11-09.json').read_text())
     quotes = {q['code']: q for q in market['companies']}
     cards = {}
     for code, record in history.items():

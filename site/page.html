@@ -361,7 +361,7 @@ function renderFile(r) {
   const quote = [['Fiyat', has(r.px) ? N2.format(r.px) + ' TL' : null], ['Piyasa değeri', has(r.mc) ? money(r.mc) + ' TL' : null], ['F/K', has(r.pe) ? N1.format(r.pe) : null], ['PD/DD', has(r.pb) ? N1.format(r.pb) : null], ['Yılbaşından beri', has(r.ytd) ? pct(r.ytd) : null]]
     .map(([k, v]) => `<div><span>${k}</span><b>${v ?? '—'}</b></div>`).join('');
   let html = `<div class="file-head"><div><h2>${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
-    <div class="quote">${quote}</div><p class="note">Fiyat ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
+    <div class="quote">${quote}</div><p class="note">Fiyat ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
   html += riskHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button></div>`;

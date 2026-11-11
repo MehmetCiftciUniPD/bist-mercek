@@ -21,7 +21,9 @@ def load(name):
 
 
 def companies():
-    uni, hist, market = load('kap-universe.json'), load('history.json'), load('market-2026-11-09.json')
+    # The dated snapshot belongs to the Mercek app; the public site prefers the refreshed one.
+    latest = 'market-latest.json' if (DATA / 'market-latest.json').exists() else 'market-2026-11-09.json'
+    uni, hist, market = load('kap-universe.json'), load('history.json'), load(latest)
     sources = (('KAP tam rapor', load('research-2026-09.json')), ('KAP özeti', load('kap-summary-2026-09.json')),
                ('İş Yatırım şirket kartı', load('broker-summary-2026-09.json')))
     quotes = {q['code']: q for q in market['companies']}
@@ -56,7 +58,7 @@ def companies():
         if flags:
             row['risk'] = flags
         rows.append(row)
-    meta = {'priceDate': market['date'], 'priceSource': market['source'], 'historySource': hist['source'],
+    meta = {'priceDate': market['date'], 'priceFetchedAt': market.get('fetchedAt'), 'priceSource': market['source'], 'historySource': hist['source'],
             'collectedAt': hist['collectedAt'], 'note': hist['note'],
             'risk': {k: risk.get(k) for k in ('asOf', 'topic', 'note', 'levels', 'sources')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}

@@ -2,6 +2,18 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-11 · Claude Code · daily prices
+
+- `research/prices.py` refreshes prices and multiples for all issuers in one
+  request into `data/market-latest.json`; the public site and the scorecard
+  prefer it. The dated `market-2026-11-09.json` is unchanged for Mercek.
+- The workflow now also runs on weekdays at 16:40 UTC (after the Istanbul
+  close) for prices, scorecard and site; analyses run only in the 02:23 job.
+- Not verified: whether GitHub's runners can reach the İş Yatırım page. If
+  they cannot, the step fails softly and the previous prices stay.
+- The `surucu` MCP (borsa-mcp) is connected in Claude sessions and is useful
+  for spot checks; bulk pulls through it cost assistant usage.
+
 ## 2026-11-11 · Claude Code · 2026/9 basis and risk flags
 
 - The scorecard now uses 2026/9 against 2025/9 (537 issuers); 54 issuers
