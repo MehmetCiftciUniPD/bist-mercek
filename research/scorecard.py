@@ -7,6 +7,11 @@ Method notes are in reports/Temel analiz skor kartı yöntemleri.md. Rules:
 - Issuers are scored by template. Piotroski, Altman, Greenblatt and
   net debt / EBITDA are computed for industrial issuers only. Banks, other
   financial firms, holdings and REITs get the measures that fit them.
+- The basis is 2026/9 against 2025/9 where both exist, otherwise 2025 against
+  2024. Nine-month flows are multiplied by 12/9 wherever they are set against
+  a balance or a market value (Altman's EBIT term, net debt / EBITDA,
+  Greenblatt, cash-flow yield, return on equity and assets). Piotroski compares
+  the two nine-month periods directly.
 - Year-on-year signals compare ratios, never TL levels, because each year's
   figures are in that year's own purchasing power (TMS 29). For the same
   reason ratios use year-end balances of the same report, and Beneish's
@@ -18,7 +23,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
-YEAR, PREVIOUS = '2025/12', '2024/12'
+# Preferred basis first: nine months of 2026 against the same nine months of 2025,
+# otherwise the last two year-ends.
+BASES = [('2026/9', '2025/9', 9), ('2025/12', '2024/12', 12)]
 HOLDING_SECTORS = {'Holdingler', 'GYO', 'Yatırım Ortaklıkları'}
 BANK_SECTORS = {'Bankacılık'}
 FINANCIAL_SECTORS = {'Aracı Kurumlar', 'Fin.Kiralama ve Faktoring', 'Sigorta', 'Varlık Yönetim'}
@@ -89,12 +96,12 @@ def piotroski(now, before):
     return {'score': sum(i['pass'] for i in judged), 'n': len(judged), 'items': items}
 
 
-def altman(now):
+def altman(now, k=1):
     """Z'' for non-manufacturers and emerging markets, book equity (Altman 1995/2005)."""
     liabilities = add(now.assets, -now.equity if num(now.equity) else None)
     retained = add(now.priorYearsEarnings, now.periodEarnings, now.restrictedReserves)
     x1 = ratio(add(now.currentAssets, -now.currentLiabilities if num(now.currentLiabilities) else None), now.assets)
-    x2, x3 = ratio(retained, now.assets), ratio(now.operating, now.assets)
+    x2, x3 = ratio(retained, now.assets), ratio(now.operating * k if num(now.operating) else None, now.assets)
     x4 = ratio(now.equity, liabilities)
     if not all(num(x) for x in (x1, x2, x3, x4)):
         return None
@@ -103,8 +110,8 @@ def altman(now):
             'x': [r(x1), r(x2), r(x3), r(x4)]}
 
 
-def dupont(now):
-    margin, turnover, multiplier = ratio(now.netIncome, now.revenue), ratio(now.revenue, now.assets), ratio(now.assets, now.equity)
+def dupont(now, k=1):
+    margin, turnover, multiplier = ratio(now.netIncome, now.revenue), ratio(now.revenue * k if num(now.revenue) else None, now.assets), ratio(now.assets, now.equity)
     if not all(num(x) for x in (margin, turnover, multiplier)):
         return None
     return {'margin': r(margin), 'turnover': r(turnover), 'multiplier': r(multiplier), 'roe': r(margin * turnover * multiplier)}
@@ -129,37 +136,44 @@ def main():
         quote = quotes.get(code, {})
         sector = quote.get('sector')
         template = classify(record, sector)
-        now, before = Year(record, YEAR), Year(record, PREVIOUS)
+        basis = next(((y, p, m) for y, p, m in BASES if y in record['periods'] and p in record['periods']), None)
+        if basis is None and BASES[-1][0] in record['periods']:
+            basis = (BASES[-1][0], None, 12)
         latest = Year(record, record['periods'][-1])
         card = {'t': template, 'sector': sector}
-        if not now:
-            card['reason'] = f'{YEAR} yıl sonu tablosu yok'
+        if basis is None:
+            card['reason'] = '2026/9 veya 2025 yıl sonu tablosu yok'
             cards[code] = card
             continue
-        card['year'] = YEAR
-        card['dupont'] = dupont(now)
+        year, previous, months = basis
+        k = 12 / months
+        now, before = Year(record, year), Year(record, previous) if previous else None
+        scale = lambda v: v * k if num(v) else None
+        card.update(year=year, months=months)
+        card['dupont'] = dupont(now, k)
         card['equityAssets'] = r(ratio(now.equity, now.assets))
         cap = quote.get('marketCap')
         value = {'pe': quote.get('pe'), 'pb': quote.get('pb'), 'evEbitda': quote.get('multiple')}
         if num(value['pe']) and num(value['pb']) and value['pe'] > 0 and value['pb'] > 0:
             value['graham'] = r(value['pe'] * value['pb'], 2)
         card['val'] = value
+        net_income = scale(now.netIncome)
         if template == 'bank':
-            card['bank'] = {'roe': r(ratio(now.netIncome, now.equity)), 'roa': r(ratio(now.netIncome, now.assets)),
+            card['bank'] = {'roe': r(ratio(net_income, now.equity)), 'roa': r(ratio(net_income, now.assets)),
                             'loanDeposit': r(ratio(now.loans, now.deposits)), 'loanAssets': r(ratio(now.loans, now.assets))}
         elif template == 'financial':
-            card['fin'] = {'roe': r(ratio(now.netIncome, now.equity)), 'roa': r(ratio(now.netIncome, now.assets))}
+            card['fin'] = {'roe': r(ratio(net_income, now.equity)), 'roa': r(ratio(net_income, now.assets))}
         else:
             net_debt = add(now.shortDebt, now.longDebt, -now.cash if num(now.cash) else None)
             card['netDebtEquity'] = r(ratio(net_debt, now.equity))
         if template == 'industrial':
             if before:
-                card['prev'] = PREVIOUS
+                card['prev'] = previous
                 card['f'] = piotroski(now, before)
-            card['z'] = altman(now)
-            card['grossProfitability'] = r(ratio(now.grossProfit, now.assets))
-            value['fcfYield'] = r(ratio(now.fcf, cap))
-            ebitda = add(now.operating, now.depreciation)
+            card['z'] = altman(now, k)
+            card['grossProfitability'] = r(ratio(scale(now.grossProfit), now.assets))
+            value['fcfYield'] = r(ratio(scale(now.fcf), cap))
+            ebitda = scale(add(now.operating, now.depreciation))
             net_debt = add(now.shortDebt, now.longDebt, -now.cash if num(now.cash) else None)
             card['lev'] = {'netDebt': r(net_debt, 1), 'ebitda': r(ebitda, 1),
                            'ratio': r(net_debt / ebitda, 2) if num(net_debt) and num(ebitda) and ebitda > 0 else None}
@@ -169,7 +183,8 @@ def main():
             working = add(now.currentAssets, -now.cash if num(now.cash) else None,
                           -now.currentLiabilities if num(now.currentLiabilities) else None, now.shortDebt)
             capital = add(max(working, 0) if num(working) else None, now.ppe)
-            card['magic'] = {'yield': r(ratio(now.operating, ev)), 'roc': r(ratio(now.operating, capital))}
+            ebit = scale(now.operating)
+            card['magic'] = {'yield': r(ratio(ebit, ev)), 'roc': r(ratio(ebit, capital))}
         cards[code] = card
 
     # Greenblatt rank: each measure ranked best-first, ranks summed, lowest total is best.
@@ -193,11 +208,12 @@ def main():
                 card['val'][key + 'Median'] = r(median, 2)
                 card['val'][key + 'Peers'] = len(values)
 
-    out = {'year': YEAR, 'previous': PREVIOUS, 'priceDate': market['date'],
+    out = {'bases': [list(b) for b in BASES], 'priceDate': market['date'],
            'report': 'reports/Temel analiz skor kartı yöntemleri.md', 'companies': dict(sorted(cards.items()))}
     (DATA / 'scorecard.json').write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')) + '\n')
     scored = [c for c in cards.values() if c.get('f')]
     print(f"{len(cards)} şirket · şablon: " + ', '.join(f"{t} {sum(c['t'] == t for c in cards.values())}" for t in ('industrial', 'holding', 'bank', 'financial'))
+          + ' · esas: ' + ', '.join(f"{y} {sum(c.get('year') == y for c in cards.values())}" for y, _, _ in BASES)
           + f" · F-Skor hesaplanan {len(scored)} · Altman {sum(bool(c.get('z')) for c in cards.values())} · Greenblatt {len(pool)}")
 
 

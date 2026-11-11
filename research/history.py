@@ -26,8 +26,10 @@ CARD = 'https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.as
 BATCHES = [
     ['2025/12', '2024/12', '2023/12', '2022/12'],
     ['2021/12', '2020/12', '2026/9', '2026/6'],
+    # Same-period comparison column for the 2026/9 scorecard (the endpoint wants four slots).
+    ['2025/9', '2025/9', '2025/9', '2025/9'],
 ]
-PERIODS = ['2020/12', '2021/12', '2022/12', '2023/12', '2024/12', '2025/12', '2026/6', '2026/9']
+PERIODS = ['2020/12', '2021/12', '2022/12', '2023/12', '2024/12', '2025/9', '2025/12', '2026/6', '2026/9']
 GROUPS = ['XI_29', 'UFRS_K', 'UFRS']
 BASIS = {'XI_29': 'Seri XI No:29', 'UFRS_K': 'Konsolide (finansal kuruluş)', 'UFRS': 'Konsolide olmayan (finansal kuruluş)'}
 SUMMARY_PERIOD = '2026/9'

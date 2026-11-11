@@ -1,0 +1,557 @@
+{
+ "asOf": "2026-11-11",
+ "topic": "2026 fon soruşturması (İstanbul Cumhuriyet Başsavcılığı ve SPK)",
+ "note": "Kayıtlar basın haberlerinden derlenmiştir; SPK bültenleri ve savcılık belgeleri doğrudan okunmamıştır. İncelemeler ve suç duyuruları paydaki işlemlere ilişkindir; şirketin ya da yöneticilerinin suç işlediği anlamına gelmez ve kesinleşmiş bir yargı kararı yoktur. Basındaki listeler birbirinden farklıdır.",
+ "levels": {
+  "spk": "SPK kararı (basın aktarımı)",
+  "savcilik": "Savcılık incelemesi (iki basın listesinde)",
+  "tek": "Tek listede veya çelişkili"
+ },
+ "sources": {
+  "euronews-1023": {
+   "title": "Euronews: Fon soruşturması: SPK'dan 48 kişiye suç duyurusu, 5 şirkete işlem yasağı",
+   "url": "https://tr.euronews.com/2026/10/23/fon-sorusturmasi-spkdan-48-kisiye-suc-duyurusu-5-sirkete-islem-yasagi",
+   "date": "2026-10-23"
+  },
+  "euronews-0917": {
+   "title": "Euronews: Türk piyasalarında fon skandalı: tam olarak ne oldu?",
+   "url": "https://tr.euronews.com/2026/09/17/turk-piyasalarinda-fon-skandali-tam-olarak-ne-oldu-ve-sirketler-neyle-suclaniyor",
+   "date": "2026-09-17"
+  },
+  "istiklal-1027": {
+   "title": "İstiklal: SPK'dan 51 kişi ve 3 hisse için karar",
+   "url": "https://www.istiklal.com.tr/gundem/fon-sorusturmasinda-kritik-gelisme-spkdan-51-kisi-ve-3-hisse-icin-karar-1109270h",
+   "date": "2026-10-27"
+  },
+  "yenisafak-1106": {
+   "title": "Yeni Şafak: SPK'dan üç hisse için daha suç duyurusu",
+   "url": "https://www.yenisafak.com/gundem/spkdan-uc-hisse-icin-daha-suc-duyurusu-4868106",
+   "date": "2026-11-06"
+  },
+  "habermeydan-0928": {
+   "title": "Haber Meydan: SPK'dan fon soruşturmasında 37 kişi hakkında suç duyurusu",
+   "url": "https://www.habermeydan.com/gundem/spkdan-fon-sorusturmasinda-37-kisi-hakkinda-suc-duyurusu-h225636/",
+   "date": "2026-09-28"
+  },
+  "pegahukuk": {
+   "title": "Pega Hukuk: Fon krizi hisseleri, SPK listesi",
+   "url": "https://pegahukuk.com/fon-krizi-hisseleri/",
+   "date": null
+  },
+  "paraajansi-25": {
+   "title": "Para Ajansı: Fon soruşturmasına yönelik 25 hisse senedine inceleme başlatıldı",
+   "url": "https://paraajansi.com.tr/gundem/fon-sorusturmasina-yonelik-25-hisse-senedine-inceleme-baslatildi-22230771h",
+   "date": "2026-10-15"
+  },
+  "beyazgazete-25": {
+   "title": "Beyaz Gazete: İşte inceleme altındaki 25 şirket",
+   "url": "https://beyazgazete.com/haber/2026/10/15/savcilik-manipulasyon-carkinin-rontgenini-cekti-iste-inceleme-altindaki-25-sirket-7176515.html",
+   "date": "2026-10-15"
+  },
+  "ekovitrin-31": {
+   "title": "Ekovitrin: Fon soruşturmasında 31 şirket incelemede",
+   "url": "https://www.ekovitrin.com/fon-sorusturmasinda-2-milyar-liralik-iade-31-sirket-incelemede",
+   "date": null
+  }
+ },
+ "flags": {
+  "ALKLC": [
+   {
+    "level": "spk",
+    "date": "2026-10-22",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu kararı. Kişi sayısı kaynaklarda 48 ve 56 olarak farklı geçiyor.",
+    "sources": [
+     "euronews-1023"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "ANELE": [
+   {
+    "level": "spk",
+    "date": "2026-10-22",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu kararı. Kişi sayısı kaynaklarda 48 ve 56 olarak farklı geçiyor.",
+    "sources": [
+     "euronews-1023"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "ARMGD": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 25'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "BIGEN": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "BTCIM": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "BURCE": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "BURVA": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "CELHA": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "DMRGD": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "DSTKF": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "EDATA": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "GMTAS": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "GRTHO": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "GUNDG": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "HEDEF": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "IEYHO": [
+   {
+    "level": "spk",
+    "date": null,
+    "text": "SPK işlem yasağı kararlarında bu paydaki işlemler geçiyor; savcılık iddiasına göre fiyat bir yılda 12-16 TL bandından 230 TL seviyesine çıkarıldı.",
+    "sources": [
+     "euronews-0917",
+     "pegahukuk"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "INFO": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "ISVEA": [
+   {
+    "level": "spk",
+    "date": "2026-11-06",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu ve iki yıl işlem yasağı kararı.",
+    "sources": [
+     "yenisafak-1106"
+    ]
+   }
+  ],
+  "KARCL": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (25'lik listede Kardemir Çelik olarak; 31'lik listede kod KRDMD); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "KERVN": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "KRDMD": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede; 25'lik listede Kardemir Çelik (KARCL) geçiyor); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "KTLEV": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "KUYAS": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "MANAS": [
+   {
+    "level": "spk",
+    "date": "2026-10-27",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu kararı.",
+    "sources": [
+     "istiklal-1027"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "ODINE": [
+   {
+    "level": "spk",
+    "date": "2026-10-07",
+    "text": "SPK bülteni (2026/69): bu paydaki işlemler nedeniyle 21 kişi hakkında suç duyurusu ve iki yıl işlem yasağı.",
+    "sources": [
+     "pegahukuk"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "OZATD": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "OZRDN": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 25'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "OZSUB": [
+   {
+    "level": "tek",
+    "date": null,
+    "text": "Basındaki savcılık inceleme listelerinden birinde geçiyor (yalnızca 31'lik listede); listeler birbirini tutmuyor.",
+    "sources": [
+     "paraajansi-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "PASEU": [
+   {
+    "level": "spk",
+    "date": "2026-10-27",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu kararı.",
+    "sources": [
+     "istiklal-1027"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "PEKGY": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "PRZMA": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "SELEC": [
+   {
+    "level": "spk",
+    "date": "2026-10-27",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu kararı.",
+    "sources": [
+     "istiklal-1027"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "TEHOL": [
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "TERA": [
+   {
+    "level": "spk",
+    "date": "2026-11-06",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu kararı (aynı bültende üç pay için toplam 67 kişi).",
+    "sources": [
+     "yenisafak-1106"
+    ]
+   }
+  ],
+  "TMPOL": [
+   {
+    "level": "spk",
+    "date": "2026-11-06",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle suç duyurusu ve iki yıl işlem yasağı kararı.",
+    "sources": [
+     "yenisafak-1106"
+    ]
+   }
+  ],
+  "TRHOL": [
+   {
+    "level": "spk",
+    "date": "2026-09-28",
+    "text": "SPK bülteni: bu paydaki işlemler nedeniyle 37 kişi hakkında suç duyurusu kararı.",
+    "sources": [
+     "habermeydan-0928"
+    ]
+   },
+   {
+    "level": "savcilik",
+    "date": "2026-10-15",
+    "text": "Basına göre savcılığın fon soruşturmasında SPK'dan işlem bilgisi istediği paylar arasında (hem 25'lik hem 31'lik listede).",
+    "sources": [
+     "paraajansi-25",
+     "beyazgazete-25",
+     "ekovitrin-31"
+    ]
+   }
+  ],
+  "VSNMD": [
+   {
+    "level": "spk",
+    "date": null,
+    "text": "SPK: bu paydaki işlemler nedeniyle 22 kişi hakkında suç duyurusu ve iki yıl işlem yasağı bildirildi.",
+    "sources": [
+     "pegahukuk"
+    ]
+   },
+   {
+    "level": "tek",
+    "date": null,
+    "text": "31'lik basın listesinde de geçiyor.",
+    "sources": [
+     "ekovitrin-31"
+    ]
+   }
+  ]
+ }
+}

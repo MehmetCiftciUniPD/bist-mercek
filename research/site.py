@@ -26,6 +26,7 @@ def companies():
                ('İş Yatırım şirket kartı', load('broker-summary-2026-09.json')))
     quotes = {q['code']: q for q in market['companies']}
     scorecard = load('scorecard.json') if (DATA / 'scorecard.json').exists() else {'companies': {}}
+    risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
     for issuer in uni['companies']:
         codes = issuer['codes']
@@ -51,9 +52,13 @@ def companies():
         card = next((scorecard['companies'][c] for c in codes if c in scorecard['companies']), None)
         if card:
             row['sc'] = card
+        flags = [f for c in codes for f in risk['flags'].get(c, [])]
+        if flags:
+            row['risk'] = flags
         rows.append(row)
     meta = {'priceDate': market['date'], 'priceSource': market['source'], 'historySource': hist['source'],
-            'collectedAt': hist['collectedAt'], 'note': hist['note'], 'universeDate': uni['date'], 'universeSource': uni['source']}
+            'collectedAt': hist['collectedAt'], 'note': hist['note'],
+            'risk': {k: risk.get(k) for k in ('asOf', 'topic', 'note', 'levels', 'sources')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}
 
 

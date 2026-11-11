@@ -74,6 +74,13 @@ table { border-collapse: collapse; width: 100%; }
 .co span { display: block; color: var(--muted); font-size: 12px; max-width: 22ch; overflow: hidden; text-overflow: ellipsis; }
 .sec { color: var(--ink2); max-width: 18ch; overflow: hidden; text-overflow: ellipsis; }
 .dash { color: var(--muted); }
+.flag.bad { background: var(--bad-bg); color: var(--bad); border-color: var(--bad); }
+.risk { background: var(--bad-bg); color: var(--ink); border: 1px solid var(--bad); border-radius: 6px; padding: 10px 12px; margin-top: 14px; font-size: 13px; }
+.risk.soft { background: var(--sunk); border-color: var(--line); }
+.risk b { display: block; margin-bottom: 4px; color: var(--bad); }
+.risk.soft b { color: var(--ink2); }
+.risk ul { margin: 4px 0; padding-left: 18px; }
+.risk small { color: var(--ink2); display: block; margin-top: 6px; }
 .flag { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-line); margin-left: 6px; vertical-align: 1px; }
 .spark { display: block; margin-left: auto; }
 .empty { padding: 28px 16px; color: var(--ink2); text-align: center; }
@@ -206,12 +213,15 @@ let DATA = null, ANALYSES = {}, rows = [], selected = null, aiAbort = null;
 const LIVE = typeof window.claude?.use === 'function';
 const state = { q: '', sector: '', screen: 'all', sort: 'mc', dir: -1, tab: 'file' };
 
+const WATCH = 'YAKIN İZLEME PAZARI';
+const isHigh = r => !!r.risk?.some(f => f.level !== 'tek') || !!r.seg?.includes(WATCH);
 const SCREENS = [
   ['all', 'Tümü', () => true],
   ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
   ['netcash', 'Net nakitte', r => r.d.netCash === true],
   ['equity', 'Özkaynak oranı %50+', r => has(r.d.eqRatio) && r.d.eqRatio >= 50],
-  ['loss', '2025 zararda', r => has(r.d.ni25) && r.d.ni25 < 0],
+  ['loss', '2026/9 zararda', r => has(r.d.ni) && r.d.ni < 0],
+  ['risk', 'Yüksek risk', isHigh],
   ['fhigh', 'F-Skor 7+', r => r.sc?.f?.n === 9 && r.sc.f.score >= 7],
   ['zsafe', 'Altman güvenli', r => r.sc?.z?.zone === 'safe'],
   ['warn', 'Veri uyarısı var', r => !!r.h?.w],
@@ -224,8 +234,8 @@ const COLS = [
   ['pe', 'F/K', 'hide-s hide-m', r => r.pe],
   ['pb', 'PD/DD', 'hide-s hide-m', r => r.pb],
   ['f', 'F-Skor', 'hide-s', r => r.sc?.f?.n === 9 ? r.sc.f.score : null],
-  ['rev', '2025 hasılat', 'hide-s', r => r.d.rev25],
-  ['ni', '2025 net kâr', '', r => r.d.ni25],
+  ['rev', '2026/9 hasılat', 'hide-s', r => r.d.rev],
+  ['ni', '2026/9 net kâr', '', r => r.d.ni],
   ['spark', 'Net kâr 2020–25', '', null],
   ['last', 'Son dönem', 'hide-s hide-m', r => r.d.last || ''],
 ];
@@ -236,7 +246,7 @@ function at(r, field, period) {
   return has(v) ? v : null;
 }
 function derive(r) {
-  const d = { rev25: at(r, 'revenue', '2025/12'), ni25: at(r, 'netIncome', '2025/12'), last: r.h ? r.h.p[r.h.p.length - 1] : null };
+  const d = { rev: at(r, 'revenue', '2026/9'), ni: at(r, 'netIncome', '2026/9'), last: r.h ? r.h.p[r.h.p.length - 1] : null };
   const lastFive = YEARS.slice(1).map(y => at(r, 'netIncome', y));
   d.streak = lastFive.every(v => has(v) && v > 0);
   if (r.h && r.h.g === 'XI_29') {
@@ -285,10 +295,10 @@ function renderRegister() {
   const head = COLS.map(([k, label, cls, get]) =>
     `<th class="${cls}" data-k="${k}"${get ? ' tabindex="0"' : ''}${state.sort === k ? ` aria-sort="${state.dir < 0 ? 'descending' : 'ascending'}"` : ''}>${label}${state.sort === k ? (state.dir < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('');
   const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
-    <td class="co"><b>${esc(r.c)}</b>${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
+    <td class="co"><b>${esc(r.c)}</b>${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
     <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
     <td>${cell(r.mc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
-    <td class="hide-s">${cell(r.d.rev25)}</td><td>${cell(r.d.ni25)}</td>
+    <td class="hide-s">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
     <td>${spark(r)}</td><td class="num hide-s hide-m">${r.d.last ? esc(r.d.last) : DASH}</td></tr>`).join('');
   $('register').innerHTML = list.length
     ? `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`
@@ -353,6 +363,7 @@ function renderFile(r) {
   let html = `<div class="file-head"><div><h2>${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
     <div class="quote">${quote}</div><p class="note">Fiyat ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
+  html += riskHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button></div>`;
   html = '';
 
@@ -394,6 +405,19 @@ function renderFile(r) {
   el.scrollTop = 0;
 }
 
+// --- Risk flags -------------------------------------------------------------
+function riskHtml(r) {
+  const meta = DATA.meta.risk || {}, flags = r.risk || [], watch = r.seg?.includes(WATCH);
+  if (!flags.length && !watch) return '';
+  const link = id => { const s = meta.sources?.[id]; return s ? `<a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.title.split(':')[0])} ↗</a>` : ''; };
+  const item = f => `<li>${f.date ? `<span class="num">${esc(f.date.split('-').reverse().join('.'))}</span> · ` : ''}${esc(f.text)} ${f.sources.map(link).join(' ')}</li>`;
+  const strong = flags.filter(f => f.level !== 'tek'), weak = flags.filter(f => f.level === 'tek');
+  let html = '';
+  if (strong.length || watch) html += `<div class="risk"><b>⚠ Yüksek risk işareti</b><ul>${watch ? "<li>Borsa İstanbul Yakın İzleme Pazarı'nda işlem görüyor.</li>" : ''}${strong.map(item).join('')}</ul>${strong.length ? `<small>${esc(meta.note || '')}</small>` : ''}</div>`;
+  if (weak.length) html += `<div class="risk soft"><b>İzleme notu</b><ul>${weak.map(item).join('')}</ul>${strong.length ? '' : `<small>${esc(meta.note || '')}</small>`}</div>`;
+  return html;
+}
+
 // --- Fundamental scorecard --------------------------------------------------
 const REPORT_URL = 'https://github.com/MehmetCiftciUniPD/bist-mercek/blob/main/reports/Temel%20analiz%20skor%20kart%C4%B1%20y%C3%B6ntemleri.md';
 const F_ITEMS = {
@@ -426,13 +450,13 @@ function valuationTable(sc) {
   if (has(v.fcfYield)) extra += `<tr><td>Serbest nakit akışı verimi</td><td>${show(v.fcfYield, pct100)}</td><td></td><td></td><td class="l"></td></tr>`;
   return `<div class="scroll"><table class="ledger"><thead><tr><th>Çarpan</th><th>Şirket</th><th>Sektör medyanı</th><th>Emsal</th><th class="l">Durum</th></tr></thead><tbody>${row('F/K', 'pe')}${row('PD/DD', 'pb')}${row('FD/FAVÖK', 'evEbitda')}${extra}</tbody></table></div>`;
 }
-function dupontBlock(d) {
+function dupontBlock(d, months) {
   if (!d) return '';
-  return `<h3>Özkaynak kârlılığının ayrışımı (DuPont)</h3><div class="snap"><div><span>Net kâr marjı</span><b>${pct100(d.margin)}</b></div><div><span>× Varlık devir hızı</span><b>${x2(d.turnover)}</b></div><div><span>× Özkaynak çarpanı</span><b>${x2(d.multiplier)}</b></div><div><span>= Özkaynak kârlılığı</span><b class="${d.roe < 0 ? 'neg' : ''}">${pct100(d.roe)}</b></div></div>`;
+  return `<h3>Özkaynak kârlılığının ayrışımı (DuPont${months === 9 ? ', yıllığa çevrilmiş' : ''})</h3><div class="snap"><div><span>Net kâr marjı</span><b>${pct100(d.margin)}</b></div><div><span>× Varlık devir hızı</span><b>${x2(d.turnover)}</b></div><div><span>× Özkaynak çarpanı</span><b>${x2(d.multiplier)}</b></div><div><span>= Özkaynak kârlılığı</span><b class="${d.roe < 0 ? 'neg' : ''}">${pct100(d.roe)}</b></div></div>`;
 }
 function scoreHtml(r) {
   const sc = r.sc;
-  const foot = `<p class="note">Skorlar ${esc(DATA.meta.priceDate.split('-').reverse().join('.'))} fiyatı ve 2025 yıl sonu tablolarıyla hesaplandı. Yöntem, kaynaklar ve doğrulanamayan noktalar: <a href="${REPORT_URL}" target="_blank" rel="noreferrer">yöntem raporu ↗</a>. Bir ölçüt, tüm girdileri varsa hesaplanır; yoksa boş bırakılır. Skorlar geçmiş mali tabloları özetler; yatırım tavsiyesi değildir.</p>`;
+  const foot = `<p class="note">Skorlar ${esc(DATA.meta.priceDate.split('-').reverse().join('.'))} fiyatı ve ${sc && sc.year ? (sc.months === 9 ? '2026 yılının ilk dokuz ayının (2026/9) tablolarıyla, bir önceki yılın aynı dönemine (2025/9) karşı' : '2025 yıl sonu tablolarıyla (bu şirketin 2026/9 veya 2025/9 tablosu yok)') : ''} hesaplandı.${sc && sc.months === 9 ? ' Dokuz aylık kâr ve nakit akışı, bilanço ya da piyasa değeriyle oranlanırken 12/9 ile yıllığa çevrildi; mevsimsellik bu çevirmeyi yanıltabilir.' : ''} Yöntem, kaynaklar ve doğrulanamayan noktalar: <a href="${REPORT_URL}" target="_blank" rel="noreferrer">yöntem raporu ↗</a>. Bir ölçüt, tüm girdileri varsa hesaplanır; yoksa boş bırakılır. Skorlar geçmiş mali tabloları özetler; yatırım tavsiyesi değildir.</p>`;
   if (!sc) return `<p class="note">Bu şirket için skor kartı hesaplanamadı: geçmiş mali tablo yok.</p>`;
   if (sc.reason) return `<p class="note">Skor kartı hesaplanamadı: ${esc(sc.reason)}.</p>`;
   let html = '';
@@ -448,25 +472,25 @@ function scoreHtml(r) {
       ${tile('Greenblatt sırası', m.rank ? `${m.rank} / ${m.of}` : '—', m.rank ? pill(m.rank <= m.of * 0.2 ? 'good' : '', m.rank <= m.of * 0.2 ? '▲ İlk %20' : `İlk %${Math.ceil(m.rank / m.of * 100)}`) : '', 'Kazanç verimi + sermaye getirisi')}
     </div>`;
     if (f) {
-      html += `<h3>Piotroski F-Skor: ${f.score} / ${f.n}</h3><div class="scroll"><table class="ledger"><thead><tr><th>Ölçüt</th><th>2025</th><th>2024</th><th class="l">Sonuç</th></tr></thead><tbody>${f.items.map(i => {
+      html += `<h3>Piotroski F-Skor: ${f.score} / ${f.n}</h3><div class="scroll"><table class="ledger"><thead><tr><th>Ölçüt</th><th>${esc(periodLabel(sc.year))}</th><th>${esc(periodLabel(sc.prev))}</th><th class="l">Sonuç</th></tr></thead><tbody>${f.items.map(i => {
         const [name, how, fmt] = F_ITEMS[i.k];
         const second = i.k === 'accrual' ? `<span class="dash">aktif kârlılığı ${has(i.b) ? fmt(i.b) : '—'}</span>` : has(i.b) ? show(i.b, fmt) : '';
         return `<tr><td class="wrap">${name}<br><small class="dash">${how}</small></td><td>${has(i.a) ? show(i.a, fmt) : DASH}</td><td>${second}</td><td class="l">${i.pass === null ? pill('', '— veri yok') : i.pass ? pill('good', '✓ 1 puan') : pill('bad', '✗ 0 puan')}</td></tr>`;
-      }).join('')}</tbody></table></div><p class="note">Piotroski (2000). Oranlar her yılın kendi raporundaki yıl sonu bakiyeleriyle hesaplandı; özgün makale dönem başı varlıkları kullanır. Sermaye artırımı ölçütü nakit akış tablosundaki bedelli artırım girişine bakar.</p>`;
+      }).join('')}</tbody></table></div><p class="note">Piotroski (2000). İki dönem aynı uzunluktadır; oranlar her dönemin kendi raporundaki dönem sonu bakiyeleriyle hesaplandı, özgün makale yıllık veri ve dönem başı varlıkları kullanır. Sermaye artırımı ölçütü nakit akış tablosundaki bedelli artırım girişine bakar.</p>`;
     }
     if (z) html += `<h3>Altman Z'': ${N2.format(z.z)}</h3><div class="snap"><div><span>İşletme sermayesi / varlık</span><b>${x2(z.x[0])}</b><br><small>× 6,56</small></div><div><span>Birikmiş kârlar / varlık</span><b>${x2(z.x[1])}</b><br><small>× 3,26</small></div><div><span>Esas faaliyet kârı / varlık</span><b>${x2(z.x[2])}</b><br><small>× 6,72</small></div><div><span>Özkaynak / toplam borç</span><b>${x2(z.x[3])}</b><br><small>× 1,05</small></div></div><p class="note">İmalat dışı ve gelişen piyasa şirketleri için defter değerli sürüm. Birikmiş kârlar, geçmiş yıl kârları, dönem kârı ve kârdan ayrılan yedeklerin toplamıdır. Katsayılar Türkiye verisiyle yeniden tahmin edilmemiştir; bölgeler mutlak bir iflas öngörüsü değildir.</p>`;
-    html += dupontBlock(sc.dupont);
+    html += dupontBlock(sc.dupont, sc.months);
     html += `<h3>Değerleme</h3>${valuationTable(sc)}`;
     if (has(m.yield) || has(m.roc)) html += `<div class="snap" style="margin-top:12px"><div><span>Kazanç verimi (FVÖK / firma değeri)</span><b>${has(m.yield) ? pct100(m.yield) : '—'}</b><br><small>sıra ${m.yieldRank ?? '—'} / ${m.of ?? '—'}</small></div><div><span>Sermaye getirisi (FVÖK / yatırılan sermaye)</span><b>${has(m.roc) ? pct100(m.roc) : '—'}</b><br><small>sıra ${m.rocRank ?? '—'} / ${m.of ?? '—'}</small></div><div><span>Brüt kârlılık (brüt kâr / varlık)</span><b>${has(sc.grossProfitability) ? pct100(sc.grossProfitability) : '—'}</b></div></div>`;
-    html += `<p class="note">Sektör medyanı, aynı sektördeki en az 5 şirketin pozitif çarpanlarından hesaplanır. Kazanç verimi ve serbest nakit akışı veriminde pay 2025 yıl sonu parasıyla, payda güncel piyasa değeriyledir; enflasyon nedeniyle verimler olduğundan düşük görünür, sıralama etkilenmez.</p>`;
+    html += `<p class="note">Sektör medyanı, aynı sektördeki en az 5 şirketin pozitif çarpanlarından hesaplanır. Kazanç verimi ve serbest nakit akışı veriminde pay son tablo döneminin, payda güncel piyasa değerinin parasıyladır.</p>`;
   } else if (sc.t === 'bank' || sc.t === 'financial') {
     const b = sc.bank || sc.fin || {};
-    html += `<div class="tiles">${tile('Özkaynak kârlılığı', has(b.roe) ? pct100(b.roe) : '—')}${tile('Aktif kârlılığı', has(b.roa) ? pct100(b.roa) : '—')}${tile('Özkaynak / aktif', has(sc.equityAssets) ? pct100(sc.equityAssets) : '—')}${sc.bank ? tile('Kredi / mevduat', has(b.loanDeposit) ? pct100(b.loanDeposit) : '—') : ''}</div>
+    html += `<div class="tiles">${tile('Özkaynak kârlılığı', has(b.roe) ? pct100(b.roe) : '—', '', sc.months === 9 ? 'Dokuz aylık kâr yıllığa çevrildi' : '')}${tile('Aktif kârlılığı', has(b.roa) ? pct100(b.roa) : '—', '', sc.months === 9 ? 'Dokuz aylık kâr yıllığa çevrildi' : '')}${tile('Özkaynak / aktif', has(sc.equityAssets) ? pct100(sc.equityAssets) : '—')}${sc.bank ? tile('Kredi / mevduat', has(b.loanDeposit) ? pct100(b.loanDeposit) : '—') : ''}</div>
       <h3>Değerleme</h3>${valuationTable(sc)}
       <p class="note">${sc.t === 'bank' ? 'Banka' : 'Finansal kuruluş'} şablonu. Piotroski, Altman, Greenblatt ve net borç/FAVÖK bu şirketlere uygulanmaz: borç ve mevduat bunların ham maddesidir, FAVÖK ve cari oran anlam taşımaz. Bankalar enflasyon muhasebesi uygulamadığı için oranları sanayi şirketleriyle aynı esasta değildir; karşılaştırma yalnızca kendi sektörü içinde yapılır.</p>`;
   } else {
     html += `<div class="tiles">${tile('Özkaynak / varlık', has(sc.equityAssets) ? pct100(sc.equityAssets) : '—')}${tile('Net borç / özkaynak', has(sc.netDebtEquity) ? N2.format(sc.netDebtEquity) + '×' : '—')}${tile('PD/DD', has(sc.val?.pb) ? N1.format(sc.val.pb) : '—')}</div>
-      ${dupontBlock(sc.dupont)}<h3>Değerleme</h3>${valuationTable(sc)}
+      ${dupontBlock(sc.dupont, sc.months)}<h3>Değerleme</h3>${valuationTable(sc)}
       <p class="note">Holding, GYO ve yatırım ortaklığı şablonu. Bu şirketlerde kâr, gayrimenkul ve iştirak değerlemelerinden ağır biçimde etkilenir; Piotroski, Altman ve Greenblatt yanıltıcı sonuç verdiği için hesaplanmaz. Uygulamada net aktif değer iskontosu ve PD/DD kullanılır; net aktif değer bu veri setinde yoktur.</p>`;
   }
   return html + foot;
