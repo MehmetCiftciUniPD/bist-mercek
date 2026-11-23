@@ -2,6 +2,22 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-23 · Claude Code · buybacks, benchmarks, watchlist
+
+- `research/buybacks.py` keeps share buyback disclosures ("Payların Geri
+  Alınmasına İlişkin Bildirim", plus buyback programmes named in summaries)
+  from KAP's public latest-disclosures feed in `data/buybacks.json`. The feed
+  holds about a day, so it runs with every 15-minute job; history starts on
+  2026-11-23. Companies missing from `kap-universe.json` (e.g. new listings
+  such as AYES) are skipped until the registry is refreshed. KAP's search API
+  was not used.
+- `research/price-history.py` also writes `data/benchmarks.json` (BIST 100,
+  USD/TRY, gold in USD, weekly). The site shows one-year returns in TL, dollars
+  and against BIST 100, a 3m/1y/3y/5y comparison table, and chart views in
+  dollars or relative to BIST 100.
+- The watchlist and price alarms live in the visitor's browser (localStorage);
+  alarms fire only while the page is open, checked on each delayed-price load.
+
 ## 2026-11-23 · Claude Code · delayed prices and Smart Money
 
 - TradingView's official embed widgets refuse BIST symbols ("only available on

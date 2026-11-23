@@ -53,17 +53,20 @@ jobs:
           else
             python research/ai-analyses.py --limit 48
           fi
+      - name: Geri alım bildirimlerini topla
+        continue-on-error: true
+        run: python research/buybacks.py
       - name: Gecikmeli fiyatları al
         continue-on-error: true
         run: python research/live.py
       - name: Değişiklikleri kaydet
-        if: github.event.schedule != '*/15 7-15 * * 1-5'
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Update prices, scorecard and analyses"
+            git commit -m "Update market data"
             git push origin HEAD:main
           fi
       - name: Siteyi yayınla

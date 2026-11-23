@@ -20,6 +20,29 @@ def load(name):
     return json.loads((DATA / name).read_text())
 
 
+def at_or_before(series, day):
+    """Close of the last bar on or before day, or None."""
+    best = None
+    for d, c in zip(series['d'], series['c']):
+        if d > day:
+            break
+        best = c
+    return best
+
+
+def performance(series, marks):
+    """One-year return in TL, in dollars and against BIST 100, from weekly closes."""
+    end, start = series['d'][-1], series['d'][-1] - 364
+    if series['d'][0] > start + 7:
+        return None
+    p0, p1 = at_or_before(series, start), series['c'][-1]
+    u0, u1 = at_or_before(marks['USDTRY'], start), at_or_before(marks['USDTRY'], end)
+    x0, x1 = at_or_before(marks['XU100'], start), at_or_before(marks['XU100'], end)
+    if not all((p0, u0, u1, x0, x1)):
+        return None
+    return {'tl': round(p1 / p0 - 1, 4), 'usd': round((p1 / u1) / (p0 / u0) - 1, 4), 'rel': round((p1 / p0) / (x1 / x0) - 1, 4)}
+
+
 def companies():
     # The dated snapshot belongs to the Mercek app; the public site prefers the refreshed one.
     latest = 'market-latest.json' if (DATA / 'market-latest.json').exists() else 'market-2026-11-09.json'
@@ -29,6 +52,13 @@ def companies():
     quotes = {q['code']: q for q in market['companies']}
     scorecard = load('scorecard.json') if (DATA / 'scorecard.json').exists() else {'companies': {}}
     smc = load('smc-summary.json')['companies'] if (DATA / 'smc-summary.json').exists() else {}
+    weekly = load('price-history.json')['companies'] if (DATA / 'price-history.json').exists() else {}
+    marks = load('benchmarks.json')['series'] if (DATA / 'benchmarks.json').exists() else None
+    buybacks = load('buybacks.json') if (DATA / 'buybacks.json').exists() else {'items': {}, 'since': None}
+    by_code = {}
+    for index, item in buybacks['items'].items():
+        for c in item['codes']:
+            by_code.setdefault(c, []).append({'k': item['kind'], 'd': item['date'], 's': item['summary'], 'u': item['url']})
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
     for issuer in uni['companies']:
@@ -57,13 +87,27 @@ def companies():
             row['sc'] = card
         if code in smc:
             row['smc'] = smc[code]
+        series = weekly.get(code)
+        if series:
+            last = series['d'][-1]
+            year = [c for d, c in zip(series['d'], series['c']) if d > last - 365]
+            if len(year) >= 40:
+                row['hi52'] = max(year)
+            if marks:
+                perf = performance(series, marks)
+                if perf:
+                    row['perf'] = perf
+        bb = sorted((x for c in codes for x in by_code.get(c, [])), key=lambda x: x['d'], reverse=True)
+        if bb:
+            row['bb'] = bb[:12]
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags
         rows.append(row)
     meta = {'priceDate': market['date'], 'priceFetchedAt': market.get('fetchedAt'), 'priceSource': market['source'], 'historySource': hist['source'],
             'collectedAt': hist['collectedAt'], 'note': hist['note'],
-            'risk': {k: risk.get(k) for k in ('asOf', 'topic', 'note', 'levels', 'sources')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
+            'risk': {k: risk.get(k) for k in ('asOf', 'topic', 'note', 'levels', 'sources')},
+            'buybackSince': buybacks.get('since'), 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}
 
 
@@ -92,6 +136,8 @@ def main():
             old.unlink()
         for path in (DATA / 'smc').glob('*.json'):
             (OUT / 'smc' / path.name).write_text(path.read_text())
+    if (DATA / 'benchmarks.json').exists():
+        (OUT / 'benchmarks.json').write_text((DATA / 'benchmarks.json').read_text())
     live = DATA / 'live.json'
     (OUT / 'live.json').write_text(live.read_text() if live.exists() else '{}')
     print(f"{len(data['companies'])} şirket · {len(prices)} fiyat serisi · {len(list((OUT / 'smc').glob('*.json')))} SMC · site/dist yazıldı")

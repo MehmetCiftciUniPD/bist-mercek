@@ -30,12 +30,14 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
 API = 'https://query1.finance.yahoo.com/v8/finance/chart/{}.IS?range=5y&interval=1wk'
+RAW = 'https://query1.finance.yahoo.com/v8/finance/chart/{}?range=5y&interval=1wk'
+BENCHMARKS = {'XU100': ('XU100.IS', 'TRY', 'BIST 100 endeksi'), 'USDTRY': ('USDTRY=X', 'TRY', 'Dolar/TL'), 'GOLD': ('GC=F', 'USD', 'Altın (ons, dolar)')}
 OUT, GAPS = DATA / 'price-history.json', DATA / 'price-history-gaps.json'
 TOLERANCE = 0.03
 
 
-def fetch(code):
-    request = Request(API.format(code), headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'})
+def fetch(code, url=API):
+    request = Request(url.format(code), headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'})
     for attempt in range(4):
         try:
             with urlopen(request, timeout=30) as response:
@@ -98,6 +100,23 @@ def series(code, reference, reference_day):
     return out, None
 
 
+def benchmark(symbol, currency, reference_day):
+    payload = fetch(symbol, RAW)
+    result = (((payload or {}).get('chart') or {}).get('result') or [None])[0]
+    if not result or (result.get('meta') or {}).get('currency') != currency:
+        return None
+    points, last = [], None
+    for stamp, close in zip(result.get('timestamp') or [], (result['indicators']['quote'][0].get('close') or [])):
+        day = stamp // 86400
+        if close is None or day > reference_day or (last is not None and day <= last):
+            continue
+        if close <= 0 or (points and not 0.5 < close / points[-1][1] < 2):
+            return None
+        points.append((day, round(close, 4)))
+        last = day
+    return {'d': [d for d, _ in points], 'c': [c for _, c in points]} if len(points) >= 100 else None
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--workers', type=int, default=4)
@@ -132,6 +151,16 @@ def main():
            'note': 'Haftalık kapanış, bölünmelere göre düzeltilmiş, nominal TL; temettüye göre düzeltilmemiştir. Tarihler 1970-01-01 gününden itibaren gün sayısıdır.',
            'companies': dict(sorted(kept.items()))}
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')) + '\n')
+    marks = {}
+    for name, (symbol, currency, label) in BENCHMARKS.items():
+        found = benchmark(symbol, currency, reference_day)
+        if found:
+            marks[name] = {'label': label, 'symbol': symbol, **found}
+    if len(marks) == len(BENCHMARKS):
+        (DATA / 'benchmarks.json').write_text(json.dumps({'source': 'https://finance.yahoo.com', 'interval': '1wk', 'series': marks},
+                                                         ensure_ascii=False, separators=(',', ':')) + '\n')
+    else:
+        print('Karşılaştırma serileri eksik geldi; eski dosya korundu.')
     GAPS.write_text(json.dumps(dict(sorted(gaps.items())), ensure_ascii=False, indent=1) + '\n')
 
 

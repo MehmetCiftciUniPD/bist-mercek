@@ -107,6 +107,20 @@ table { border-collapse: collapse; width: 100%; }
 .chart .zero { stroke: var(--muted); stroke-width: 1; }
 .chart .hit { fill: transparent; }
 .chart .hit:hover + .bar, .chart .bar.on { opacity: .75; }
+.star { background: none; border: 0; cursor: pointer; font-size: 16px; line-height: 1; padding: 0 6px 0 0; color: var(--muted); vertical-align: -1px; }
+.star[aria-pressed=true] { color: #d89b00; }
+.flag.bb { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin: 4px 0 8px; }
+.seg button { background: var(--surface); border: 0; padding: 5px 10px; cursor: pointer; font-size: 12.5px; color: var(--ink2); }
+.seg button[aria-pressed=true] { background: var(--accent); color: var(--accent-ink); }
+.alarm { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.alarm input, .alarm select { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+.alarm input { width: 110px; }
+.alarms { list-style: none; padding: 0; margin: 8px 0 0; }
+.alarms li { display: flex; gap: 8px; align-items: center; padding: 4px 0; }
+.alarms button, .alarm button.ghost { background: var(--sunk); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+.toast { position: fixed; z-index: 40; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 12px 16px; border-radius: 8px; max-width: min(520px, calc(100vw - 32px)); box-shadow: 0 6px 24px rgba(0,0,0,.25); }
+.toast button { margin-left: 12px; background: none; border: 1px solid currentColor; color: inherit; border-radius: 4px; padding: 2px 8px; cursor: pointer; }
 .up { color: var(--good); } .down { color: var(--bad); }
 .live small { display: block; color: var(--muted); font: 11px var(--mono); }
 .smc svg { display: block; width: 100%; height: auto; }
@@ -230,10 +244,70 @@ let DATA = null, ANALYSES = {}, LIVE_PX = null, rows = [], selected = null, aiAb
 const LIVE = typeof window.claude?.use === 'function';
 const state = { q: '', sector: '', screen: 'all', sort: 'mc', dir: -1, tab: 'file' };
 
+const store = {
+  get(k, fallback) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fallback; } catch { return fallback; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+let WATCHLIST = new Set(store.get('mercek.watch', []));
+let ALARMS = store.get('mercek.alarms', []);
+const watched = r => WATCHLIST.has(r.c);
+function toggleWatch(code) {
+  WATCHLIST.has(code) ? WATCHLIST.delete(code) : WATCHLIST.add(code);
+  store.set('mercek.watch', [...WATCHLIST]);
+  document.querySelectorAll(`.star[data-w="${code}"]`).forEach(b => b.setAttribute('aria-pressed', WATCHLIST.has(code)));
+  if (state.screen === 'watch') renderRegister();
+}
+const starBtn = code => `<button class="star" type="button" data-w="${esc(code)}" aria-pressed="${WATCHLIST.has(code)}" aria-label="İzleme listesine ekle veya çıkar" title="İzleme listesi">★</button>`;
+function drawdown(r) {
+  const p = livePrice(r)?.p ?? r.px;
+  return has(p) && has(r.hi52) && r.hi52 > 0 ? (p / r.hi52 - 1) * 100 : null;
+}
+const BB_DAYS = 90;
+const recentBuyback = r => (r.bb || []).some(x => Date.now() - new Date(x.d + ':00+03:00').getTime() < BB_DAYS * 864e5);
+function toast(text) {
+  document.querySelector('.toast')?.remove();
+  const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status');
+  t.textContent = text;
+  const b = document.createElement('button'); b.type = 'button'; b.textContent = 'Kapat'; b.onclick = () => t.remove();
+  t.append(b); document.body.append(t);
+}
+function checkAlarms() {
+  if (!LIVE_PX?.prices || !ALARMS.length) return;
+  const fired = [];
+  ALARMS = ALARMS.filter(a => {
+    const x = LIVE_PX.prices[a.c];
+    if (!x || x.t * 1000 <= a.created) return true;
+    const hit = a.dir === 'below' ? x.p <= a.p : x.p >= a.p;
+    if (hit) fired.push(`${a.c} ${N2.format(x.p)} TL: ${N2.format(a.p)} TL ${a.dir === 'below' ? 'altına indi' : 'üstüne çıktı'}`);
+    return !hit;
+  });
+  if (!fired.length) return;
+  store.set('mercek.alarms', ALARMS);
+  toast('Fiyat alarmı · ' + fired.join(' · '));
+  try { if ('Notification' in window && Notification.permission === 'granted') new Notification('Fiyat alarmı', { body: fired.join('\n') }); } catch {}
+  if (selected && state.tab === 'file') renderAlarmBox(selected);
+}
+function renderAlarmBox(r) {
+  const box = $('alarmBox'); if (!box) return;
+  const mine = ALARMS.filter(a => a.c === r.c);
+  box.innerHTML = `<h3>Fiyat alarmı</h3><form class="alarm" id="alarmForm"><label for="alarmPrice">Fiyat</label><input id="alarmPrice" type="number" step="0.01" min="0" inputmode="decimal" required placeholder="${has(livePrice(r)?.p ?? r.px) ? N2.format(livePrice(r)?.p ?? r.px) : ''}"><label for="alarmDir" class="dash">TL</label><select id="alarmDir"><option value="below">altına inerse</option><option value="above">üstüne çıkarsa</option></select><button class="primary" type="submit">Alarm kur</button></form>
+    ${mine.length ? `<ul class="alarms">${mine.map(a => `<li><span class="num">${N2.format(a.p)} TL</span> ${a.dir === 'below' ? 'altına inerse' : 'üstüne çıkarsa'} <button type="button" data-del="${a.id}">Sil</button></li>`).join('')}</ul>` : ''}
+    <p class="note">Alarm bu tarayıcıda saklanır ve sayfa açıkken çalışır; fiyatlar yaklaşık 15 dakika gecikmelidir. Sayfa kapalıyken bildirim gelmez.</p>`;
+}
+function buybackHtml(r) {
+  if (!r.bb?.length) return '';
+  const dd = drawdown(r), since = DATA.meta.buybackSince;
+  return `<div class="risk soft" style="border-color:var(--accent)"><b style="color:var(--accent)">Pay geri alımı</b>${has(dd) ? `<p style="margin:2px 0 6px">Fiyat, 52 haftalık en yüksek haftalık kapanışın (${N2.format(r.hi52)} TL) <b class="num" style="display:inline;color:inherit">%${N0.format(Math.abs(dd))}</b> ${dd < 0 ? 'altında' : 'üstünde'}.</p>` : ''}<ul>${r.bb.slice(0, 6).map(x => `<li><span class="num">${esc(new Date(x.d + ':00+03:00').toLocaleDateString('tr-TR'))}</span> · ${x.k === 'program' ? 'Geri alım programı: ' : ''}${esc(x.s)} <a href="${esc(x.u)}" target="_blank" rel="noreferrer">KAP ↗</a></li>`).join('')}</ul><small>Şirketin kendi payını piyasadan alması, yönetimin fiyatı düşük bulduğuna işaret edebilir; tek başına bir değerleme sinyali değildir. Kayıtlar ${since ? esc(since.split('-').reverse().join('.')) + ' tarihinden' : 'toplama başladığından'} bu yana KAP bildirimlerinden derleniyor.</small></div>`;
+}
+
 const WATCH = 'YAKIN İZLEME PAZARI';
 const isHigh = r => !!r.risk?.some(f => f.level !== 'tek') || !!r.seg?.includes(WATCH);
 const SCREENS = [
   ['all', 'Tümü', () => true],
+  ['watch', '★ İzleme listem', watched],
+  ['bb', 'Geri alım (90 gün)', recentBuyback],
+  ['bbdd', 'Geri alım + zirveden %30+ düşmüş', r => recentBuyback(r) && has(drawdown(r)) && drawdown(r) <= -30],
+  ['beat', '1 yılda BIST 100\'ü geçen', r => has(r.perf?.rel) && r.perf.rel > 0],
   ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
   ['netcash', 'Net nakitte', r => r.d.netCash === true],
   ['equity', 'Özkaynak oranı %50+', r => has(r.d.eqRatio) && r.d.eqRatio >= 50],
@@ -252,6 +326,8 @@ const COLS = [
   ['px', 'Fiyat', '', r => livePrice(r)?.p ?? r.px],
   ['chg', 'Günlük', 'hide-s', r => livePrice(r)?.chg ?? null],
   ['mc', 'Piyasa değeri', 'hide-s hide-m', r => r.mc],
+  ['dd', 'Zirveden', 'hide-s', r => drawdown(r)],
+  ['usd', '1 yıl ($)', 'hide-s hide-m', r => r.perf?.usd ?? null],
   ['smcT', 'Yapı', 'hide-s', r => r.smc ? r.smc.trend : null],
   ['pe', 'F/K', 'hide-s hide-m', r => r.pe],
   ['pb', 'PD/DD', 'hide-s hide-m', r => r.pb],
@@ -317,9 +393,9 @@ function renderRegister() {
   const head = COLS.map(([k, label, cls, get]) =>
     `<th class="${cls}" data-k="${k}"${get ? ' tabindex="0"' : ''}${state.sort === k ? ` aria-sort="${state.dir < 0 ? 'descending' : 'ascending'}"` : ''}>${label}${state.sort === k ? (state.dir < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('');
   const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
-    <td class="co"><b>${esc(r.c)}</b>${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
+    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son 90 günde pay geri alımı">geri alım</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
     <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
-    <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
+    <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${has(drawdown(r)) ? `<span class="num${drawdown(r) <= -30 ? ' neg' : ''}">%${N0.format(drawdown(r))}</span>` : DASH}</td><td class="hide-s hide-m">${has(r.perf?.usd) ? `<span class="num ${r.perf.usd >= 0 ? 'up' : 'down'}">%${N0.format(r.perf.usd * 100)}</span>` : DASH}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
     <td class="hide-s hide-m">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
     <td class="hide-s hide-m">${spark(r)}</td><td class="num hide-s hide-m">${r.d.last ? esc(r.d.last) : DASH}</td></tr>`).join('');
   $('register').innerHTML = list.length
@@ -383,14 +459,14 @@ function renderFile(r) {
   const lp = livePrice(r);
   const quote = [[lp ? 'Fiyat · 15 dk gecikmeli' : 'Fiyat · son kapanış', lp ? `${N2.format(lp.p)} TL <small class="${lp.chg >= 0 ? 'up' : 'down'}">${lp.chg >= 0 ? '▲' : '▼'} %${N2.format(Math.abs(lp.chg))} · ${esc(lp.time)}</small>` : has(r.px) ? N2.format(r.px) + ' TL' : null], ['Piyasa değeri', has(r.mc) ? money(r.mc) + ' TL' : null], ['F/K', has(r.pe) ? N1.format(r.pe) : null], ['PD/DD', has(r.pb) ? N1.format(r.pb) : null], ['Yılbaşından beri', has(r.ytd) ? pct(r.ytd) : null]]
     .map(([k, v]) => `<div><span>${k}</span><b>${v ?? '—'}</b></div>`).join('');
-  let html = `<div class="file-head"><div><h2>${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
+  let html = `<div class="file-head"><div><h2>${starBtn(r.c)}${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
     <div class="quote">${quote}</div><p class="note">${lp ? `Gecikmeli fiyat Yahoo Finance'ten alınır ve son resmî kapanışa (${N2.format(r.px)} TL) göre değişimi gösterir. ` : ''}Piyasa değeri ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
-  html += riskHtml(r);
+  html += riskHtml(r) + buybackHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button><button class="tab" type="button" role="tab" data-tab="smc">Smart money</button></div>`;
   html = '';
 
-  html += `<div id="priceBox"></div>`;
+  html += `<div id="priceBox"></div><div id="perfBox"></div><div id="alarmBox"></div>`;
   if (h) {
     const fin = h.g !== 'XI_29';
     const yearsHere = YEARS.filter(y => h.p.includes(y));
@@ -427,6 +503,7 @@ function renderFile(r) {
   showTab();
   loadPrice(r);
   loadSmc(r);
+  renderAlarmBox(r);
   if (ANALYSES[r.c] && $('aiOut')) renderMd($('aiOut'), ANALYSES[r.c].text);
   el.scrollTop = 0;
 }
@@ -455,6 +532,7 @@ function loadLive() {
     if (!d || !d.prices) return;
     const changed = !LIVE_PX || LIVE_PX.fetchedAt !== d.fetchedAt;
     LIVE_PX = d;
+    checkAlarms();
     if (changed && rows.length) { renderRegister(); renderLiveStamp(); if (selected) { const t = state.tab; renderFile(selected); state.tab = t; showTab(); } }
   }).catch(() => {});
 }
@@ -533,11 +611,50 @@ function smcChart(x, px) {
 
 // --- Price history ----------------------------------------------------------
 const priceCache = {};
+let BENCH = null, priceMode = 'tl';
+const benchGet = () => BENCH || (BENCH = fetch('benchmarks.json').then(x => x.ok ? x.json() : null).then(x => x?.series || null).catch(() => null));
+function lookup(series, day) {
+  let lo = 0, hi = series.d.length - 1, best = null;
+  while (lo <= hi) { const mid = (lo + hi) >> 1; if (series.d[mid] <= day + 3) { best = mid; lo = mid + 1; } else hi = mid - 1; }
+  return best === null || day - series.d[best] > 10 ? null : series.c[best];
+}
+function inMode(p, b, mode) {
+  if (mode === 'tl' || !b) return p;
+  const d = [], c = [];
+  const x0 = lookup(b.XU100, p.d[0]);
+  p.d.forEach((day, i) => {
+    let v = null;
+    if (mode === 'usd') { const u = lookup(b.USDTRY, day); v = u ? p.c[i] / u : null; }
+    else { const x = lookup(b.XU100, day); v = x && x0 ? (p.c[i] / p.c[0]) / (x / x0) * 100 : null; }
+    if (has(v)) { d.push(day); c.push(v); }
+  });
+  return d.length > 1 ? { d, c, cut: p.cut } : p;
+}
+function perfTable(p, b) {
+  if (!b) return '';
+  const end = p.d[p.d.length - 1], last = p.c[p.c.length - 1];
+  const at = (s, day) => lookup(s, day);
+  const gold = day => { const g = at(b.GOLD, day), u = at(b.USDTRY, day); return g && u ? g * u : null; };
+  const rowsP = [['3 ay', 91], ['1 yıl', 364], ['3 yıl', 1092], ['5 yıl', 1820]].map(([label, days]) => {
+    const day = end - days;
+    if (p.d[0] > day + 7) return `<tr><td>${label}</td><td colspan="4" class="l"><span class="dash">fiyat geçmişi yetmiyor</span></td></tr>`;
+    const p0 = lookup(p, day), u0 = at(b.USDTRY, day), u1 = at(b.USDTRY, end), x0 = at(b.XU100, day), x1 = at(b.XU100, end), g0 = gold(day), g1 = gold(end);
+    const f = v => has(v) ? `<span class="num ${v >= 0 ? 'up' : 'down'}">${v >= 0 ? '+' : ''}${N0.format(v * 100)}%</span>` : DASH;
+    const tl = p0 ? last / p0 - 1 : null;
+    return `<tr><td>${label}</td><td>${f(tl)}</td><td>${f(p0 && u0 && u1 ? (last / u1) / (p0 / u0) - 1 : null)}</td><td>${f(p0 && x0 && x1 ? (last / p0) / (x1 / x0) - 1 : null)}</td><td>${f(p0 && g0 && g1 ? (last / p0) / (g1 / g0) - 1 : null)}</td></tr>`;
+  }).join('');
+  return `<h3>Getiri karşılaştırması</h3><div class="scroll"><table class="ledger"><thead><tr><th>Dönem</th><th>TL</th><th>Dolar bazında</th><th>BIST 100'e göre</th><th>Altına göre</th></tr></thead><tbody>${rowsP}</tbody></table></div><p class="note">Haftalık kapanışlarla, son resmî kapanışa kadar; temettü dahil değil. "BIST 100'e göre" ve "Altına göre", hissenin o varlıktan ne kadar fazla ya da az kazandırdığını gösterir. Yüksek enflasyonda TL getirisi yanıltıcı olabilir; dolar ve altın karşılaştırması daha anlamlıdır. Kaynak: Yahoo Finance.</p>`;
+}
 function loadPrice(r) {
   const get = priceCache[r.c] || (priceCache[r.c] = fetch(`prices/${r.c}.json`).then(x => x.ok ? x.json() : null).catch(() => null));
-  get.then(p => { if (selected === r && p && p.d?.length > 1 && $('priceBox')) drawPrice(p); });
+  Promise.all([get, benchGet()]).then(([p, b]) => {
+    if (selected !== r || !p || !(p.d?.length > 1) || !$('priceBox')) return;
+    drawPrice(inMode(p, b, priceMode), b ? priceMode : 'tl', !!b);
+    if ($('perfBox')) $('perfBox').innerHTML = perfTable(p, b);
+    $('priceBox').querySelectorAll('.seg button').forEach(btn => btn.onclick = () => { priceMode = btn.dataset.m; loadPrice(r); });
+  });
 }
-function drawPrice(p) {
+function drawPrice(p, mode = 'tl', modes = false) {
   const box = $('priceBox'), W = 640, H = 200, L = 52, R = 10, T = 10, B = 22;
   const n = p.d.length, d0 = p.d[0], d1 = p.d[n - 1], max = Math.max(...p.c), min = Math.min(...p.c);
   const lo = min - (max - min) * 0.05 > 0 ? min - (max - min) * 0.05 : 0, hi = max + (max - min) * 0.05 || max * 1.05;
@@ -548,7 +665,9 @@ function drawPrice(p) {
   for (const v of [hi - (hi - lo) * 0.08, (hi + lo) / 2, lo + (hi - lo) * 0.08]) ticks += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"></line><text x="${L - 6}" y="${y(v) + 3.5}" text-anchor="end">${N1.format(v)}</text>`;
   for (let yr = date(d0).getUTCFullYear() + 1; yr <= date(d1).getUTCFullYear(); yr++) { const dd = Date.UTC(yr, 0, 1) / 864e5; if (dd > d0 && dd < d1) ticks += `<text x="${x(dd)}" y="${H - 6}" text-anchor="middle">${yr}</text>`; }
   const change = (p.c[n - 1] / p.c[0] - 1) * 100;
-  box.innerHTML = `<h3>Fiyat, son ${Math.max(1, Math.round((d1 - d0) / 365))} yıl</h3><div class="price"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Haftalık kapanış fiyatı grafiği">${ticks}<path class="area" d="M${pts[0]}L${pts.join('L')}L${x(d1)},${H - B}L${x(d0)},${H - B}Z"></path><path class="line" d="M${pts.join('L')}"></path><line class="cross" y1="${T}" y2="${H - B}" hidden></line><circle class="dot" r="4.5" hidden></circle></svg></div><p class="note">Haftalık kapanış, TL. Bölünmelere göre düzeltilmiş; temettü ve enflasyon düzeltmesi yok. İlk noktadan son kapanışa değişim <span class="num">%${(Math.abs(change) < 10 ? N1 : N0).format(change)}</span> (nominal). ${p.cut ? ` ${date(p.cut).toLocaleDateString('tr-TR')} öncesi gösterilmiyor: o hafta kaynakta düzeltilmemiş bir bölünme ya da bedelsiz artırım izi var.` : ''} Kaynak: Yahoo Finance; son fiyat İş Yatırım kapanışıyla karşılaştırılarak doğrulanır.</p>`;
+  const seg = modes ? `<div class="seg" role="group" aria-label="Grafik birimi">${[['tl', 'TL'], ['usd', 'Dolar'], ['rel', "BIST 100'e göre"]].map(([k, t]) => `<button type="button" data-m="${k}" aria-pressed="${mode === k}">${t}</button>`).join('')}</div>` : '';
+  const unit = mode === 'usd' ? 'Dolar cinsinden haftalık kapanış.' : mode === 'rel' ? "BIST 100'e göre, başlangıç = 100. 100'ün üstü endeksten iyi, altı kötü." : 'Haftalık kapanış, TL.';
+  box.innerHTML = `<h3>Fiyat, son ${Math.max(1, Math.round((d1 - d0) / 365))} yıl</h3>${seg}<div class="price"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Haftalık kapanış fiyatı grafiği">${ticks}<path class="area" d="M${pts[0]}L${pts.join('L')}L${x(d1)},${H - B}L${x(d0)},${H - B}Z"></path><path class="line" d="M${pts.join('L')}"></path><line class="cross" y1="${T}" y2="${H - B}" hidden></line><circle class="dot" r="4.5" hidden></circle></svg></div><p class="note">${unit} Bölünmelere göre düzeltilmiş; temettü ve enflasyon düzeltmesi yok. İlk noktadan son kapanışa değişim <span class="num">%${(Math.abs(change) < 10 ? N1 : N0).format(change)}</span>${mode === 'tl' ? ' (nominal)' : ''}. ${p.cut ? ` ${date(p.cut).toLocaleDateString('tr-TR')} öncesi gösterilmiyor: o hafta kaynakta düzeltilmemiş bir bölünme ya da bedelsiz artırım izi var.` : ''} Kaynak: Yahoo Finance; son fiyat İş Yatırım kapanışıyla karşılaştırılarak doğrulanır.</p>`;
   const wrap = box.querySelector('.price'), svg = wrap.querySelector('svg'), cross = svg.querySelector('.cross'), dot = svg.querySelector('.dot');
   let tipEl = null;
   const hide = () => { cross.setAttribute('hidden', ''); dot.setAttribute('hidden', ''); tipEl?.remove(); tipEl = null; };
@@ -745,7 +864,22 @@ $('register').addEventListener('click', e => {
   } else if (tr) select(rows.find(r => r.c === tr.dataset.c));
 });
 $('register').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { const t = e.target.closest('tr[data-c], th[data-k]'); if (t) { e.preventDefault(); t.click(); } } });
+document.addEventListener('click', e => {
+  const st = e.target.closest('.star');
+  if (st) { e.stopPropagation(); toggleWatch(st.dataset.w); }
+}, true);
+$('file').addEventListener('submit', e => {
+  if (e.target.id !== 'alarmForm' || !selected) return;
+  e.preventDefault();
+  const v = parseFloat(String($('alarmPrice').value).replace(',', '.'));
+  if (!(v > 0)) return;
+  ALARMS.push({ id: Date.now().toString(36), c: selected.c, p: v, dir: $('alarmDir').value, created: Date.now() });
+  store.set('mercek.alarms', ALARMS);
+  try { if ('Notification' in window && Notification.permission === 'default') Notification.requestPermission(); } catch {}
+  renderAlarmBox(selected);
+});
 $('file').addEventListener('click', e => {
+  if (e.target.dataset?.del) { ALARMS = ALARMS.filter(a => a.id !== e.target.dataset.del); store.set('mercek.alarms', ALARMS); renderAlarmBox(selected); return; }
   if (e.target.id === 'back') closeFile();
   if (e.target.id === 'aiBtn' && selected) analyze(selected);
   const tab = e.target.closest('.tab');

@@ -1,0 +1,60 @@
+{
+ "source": "https://kap.org.tr/tr/api/disclosure/list/light",
+ "since": "2026-11-23",
+ "items": {
+  "1700909": {
+   "codes": [
+    "GENTS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T08:56",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700909"
+  },
+  "1700924": {
+   "codes": [
+    "OZYSR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T09:17",
+   "summary": "20 Kasım 2026 Tarihli Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700924"
+  },
+  "1700926": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T09:26",
+   "summary": "20.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700926"
+  },
+  "1700927": {
+   "codes": [
+    "MNDRS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T09:27",
+   "summary": "20 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700927"
+  },
+  "1700930": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T09:39",
+   "summary": "20.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700930"
+  },
+  "1700939": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T09:52",
+   "summary": "Tasfiye Kapsamındaki Yatırım Fonlarından Şirketimiz Paylarının Borsa Dışında Geri Alınması Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700939"
+  }
+ }
+}
