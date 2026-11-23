@@ -262,7 +262,7 @@ function drawdown(r) {
   const p = livePrice(r)?.p ?? r.px;
   return has(p) && has(r.hi52) && r.hi52 > 0 ? (p / r.hi52 - 1) * 100 : null;
 }
-const BB_DAYS = 90;
+const BB_DAYS = 31;
 const recentBuyback = r => (r.bb || []).some(x => Date.now() - new Date(x.d + ':00+03:00').getTime() < BB_DAYS * 864e5);
 function toast(text) {
   document.querySelector('.toast')?.remove();
@@ -297,7 +297,7 @@ function renderAlarmBox(r) {
 function buybackHtml(r) {
   if (!r.bb?.length) return '';
   const dd = drawdown(r), since = DATA.meta.buybackSince;
-  return `<div class="risk soft" style="border-color:var(--accent)"><b style="color:var(--accent)">Pay geri alımı</b>${has(dd) ? `<p style="margin:2px 0 6px">Fiyat, 52 haftalık en yüksek haftalık kapanışın (${N2.format(r.hi52)} TL) <b class="num" style="display:inline;color:inherit">%${N0.format(Math.abs(dd))}</b> ${dd < 0 ? 'altında' : 'üstünde'}.</p>` : ''}<ul>${r.bb.slice(0, 6).map(x => `<li><span class="num">${esc(new Date(x.d + ':00+03:00').toLocaleDateString('tr-TR'))}</span> · ${x.k === 'program' ? 'Geri alım programı: ' : ''}${esc(x.s)} <a href="${esc(x.u)}" target="_blank" rel="noreferrer">KAP ↗</a></li>`).join('')}</ul><small>Şirketin kendi payını piyasadan alması, yönetimin fiyatı düşük bulduğuna işaret edebilir; tek başına bir değerleme sinyali değildir. Kayıtlar ${since ? esc(since.split('-').reverse().join('.')) + ' tarihinden' : 'toplama başladığından'} bu yana KAP bildirimlerinden derleniyor.</small></div>`;
+  return `<div class="risk soft" style="border-color:var(--accent)"><b style="color:var(--accent)">Pay geri alımı</b>${has(dd) ? `<p style="margin:2px 0 6px">Fiyat, 52 haftalık en yüksek haftalık kapanışın (${N2.format(r.hi52)} TL) <b class="num" style="display:inline;color:inherit">%${N0.format(Math.abs(dd))}</b> ${dd < 0 ? 'altında' : 'üstünde'}.</p>` : ''}${has(r.bbr) ? `<p style="margin:2px 0 6px">Son bildirime göre şirketin elindeki geri alınmış paylar sermayenin <b class="num" style="display:inline;color:inherit">%${N2.format(r.bbr)}</b>'i.</p>` : ''}<ul>${r.bb.slice(0, 6).map(x => `<li><span class="num">${esc(new Date(x.d + ':00+03:00').toLocaleDateString('tr-TR'))}</span> · ${x.k === 'program' ? 'Geri alım programı: ' : ''}${esc(x.s)}${has(x.r) ? ` <span class="num">(toplam %${N2.format(x.r)})</span>` : ''} <a href="${esc(x.u)}" target="_blank" rel="noreferrer">KAP ↗</a></li>`).join('')}</ul>${r.bbn > 6 ? `<small>Son bir yılda toplam ${r.bbn} bildirim; en yeni 6'sı gösteriliyor.</small>` : ''}<small>Şirketin kendi payını piyasadan alması, yönetimin fiyatı düşük bulduğuna işaret edebilir; tek başına bir değerleme sinyali değildir. Kayıtlar ${since ? esc(since.split('-').reverse().join('.')) + ' tarihinden' : 'toplama başladığından'} bu yana KAP bildirimlerinden derleniyor; sermaye oranı bildirim metninden okunur, metinde yoksa boş kalır.</small></div>`;
 }
 
 const WATCH = 'YAKIN İZLEME PAZARI';
@@ -305,7 +305,7 @@ const isHigh = r => !!r.risk?.some(f => f.level !== 'tek') || !!r.seg?.includes(
 const SCREENS = [
   ['all', 'Tümü', () => true],
   ['watch', '★ İzleme listem', watched],
-  ['bb', 'Geri alım (90 gün)', recentBuyback],
+  ['bb', 'Geri alım (son 1 ay)', recentBuyback],
   ['bbdd', 'Geri alım + zirveden %30+ düşmüş', r => recentBuyback(r) && has(drawdown(r)) && drawdown(r) <= -30],
   ['beat', '1 yılda BIST 100\'ü geçen', r => has(r.perf?.rel) && r.perf.rel > 0],
   ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
@@ -326,6 +326,7 @@ const COLS = [
   ['px', 'Fiyat', '', r => livePrice(r)?.p ?? r.px],
   ['chg', 'Günlük', 'hide-s', r => livePrice(r)?.chg ?? null],
   ['mc', 'Piyasa değeri', 'hide-s hide-m', r => r.mc],
+  ['bbr', 'Geri alım / sermaye', 'hide-s', r => recentBuyback(r) ? r.bbr ?? null : null],
   ['dd', 'Zirveden', 'hide-s', r => drawdown(r)],
   ['usd', '1 yıl ($)', 'hide-s hide-m', r => r.perf?.usd ?? null],
   ['smcT', 'Yapı', 'hide-s', r => r.smc ? r.smc.trend : null],
@@ -393,9 +394,9 @@ function renderRegister() {
   const head = COLS.map(([k, label, cls, get]) =>
     `<th class="${cls}" data-k="${k}"${get ? ' tabindex="0"' : ''}${state.sort === k ? ` aria-sort="${state.dir < 0 ? 'descending' : 'ascending'}"` : ''}>${label}${state.sort === k ? (state.dir < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('');
   const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
-    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son 90 günde pay geri alımı">geri alım</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
+    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son bir ayda pay geri alımı">geri alım</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
     <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
-    <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${has(drawdown(r)) ? `<span class="num${drawdown(r) <= -30 ? ' neg' : ''}">%${N0.format(drawdown(r))}</span>` : DASH}</td><td class="hide-s hide-m">${has(r.perf?.usd) ? `<span class="num ${r.perf.usd >= 0 ? 'up' : 'down'}">%${N0.format(r.perf.usd * 100)}</span>` : DASH}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
+    <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${recentBuyback(r) && has(r.bbr) ? `<span class="num">%${N2.format(r.bbr)}</span>` : recentBuyback(r) ? '<span class="dash">var</span>' : DASH}</td><td class="hide-s">${has(drawdown(r)) ? `<span class="num${drawdown(r) <= -30 ? ' neg' : ''}">%${N0.format(drawdown(r))}</span>` : DASH}</td><td class="hide-s hide-m">${has(r.perf?.usd) ? `<span class="num ${r.perf.usd >= 0 ? 'up' : 'down'}">%${N0.format(r.perf.usd * 100)}</span>` : DASH}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
     <td class="hide-s hide-m">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
     <td class="hide-s hide-m">${spark(r)}</td><td class="num hide-s hide-m">${r.d.last ? esc(r.d.last) : DASH}</td></tr>`).join('');
   $('register').innerHTML = list.length
@@ -903,6 +904,7 @@ $('sector').addEventListener('change', e => { state.sector = e.target.value; ren
 $('chips').addEventListener('click', e => {
   const b = e.target.closest('.chip'); if (!b) return;
   state.screen = b.dataset.k;
+  if (['bb', 'bbdd'].includes(state.screen)) { state.sort = 'bbr'; state.dir = -1; }
   document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c === b));
   renderRegister();
 });

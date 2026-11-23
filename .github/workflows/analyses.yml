@@ -55,7 +55,7 @@ jobs:
           fi
       - name: Geri alım bildirimlerini topla
         continue-on-error: true
-        run: python research/buybacks.py
+        run: python research/buybacks.py --days ${{ github.event.schedule == '*/15 7-15 * * 1-5' && 7 || 35 }}
       - name: Gecikmeli fiyatları al
         continue-on-error: true
         run: python research/live.py

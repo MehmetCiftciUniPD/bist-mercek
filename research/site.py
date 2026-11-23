@@ -58,7 +58,7 @@ def companies():
     by_code = {}
     for index, item in buybacks['items'].items():
         for c in item['codes']:
-            by_code.setdefault(c, []).append({'k': item['kind'], 'd': item['date'], 's': item['summary'], 'u': item['url']})
+            by_code.setdefault(c, []).append({'k': item['kind'], 'd': item['date'], 's': item['summary'], 'u': item['url'], 'r': item.get('ratio')})
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
     for issuer in uni['companies']:
@@ -100,6 +100,10 @@ def companies():
         bb = sorted((x for c in codes for x in by_code.get(c, [])), key=lambda x: x['d'], reverse=True)
         if bb:
             row['bb'] = bb[:12]
+            row['bbn'] = len(bb)
+            ratio = next((x['r'] for x in bb if x.get('r') is not None), None)
+            if ratio is not None:
+                row['bbr'] = ratio
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags

@@ -4,13 +4,15 @@ Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
 ## 2026-11-23 · Claude Code · buybacks, benchmarks, watchlist
 
-- `research/buybacks.py` keeps share buyback disclosures ("Payların Geri
-  Alınmasına İlişkin Bildirim", plus buyback programmes named in summaries)
-  from KAP's public latest-disclosures feed in `data/buybacks.json`. The feed
-  holds about a day, so it runs with every 15-minute job; history starts on
-  2026-11-23. Companies missing from `kap-universe.json` (e.g. new listings
-  such as AYES) are skipped until the registry is refreshed. KAP's search API
-  was not used.
+- `research/buybacks.py` keeps share buyback disclosures in
+  `data/buybacks.json`. With the owner's permission it uses KAP's disclosure
+  search (the endpoint behind KAP's own "Bildirim Sorgu" page; subject OID
+  4028328d6233239a01629b43e4694fae), 7 days back in the 15-minute job and 35
+  days otherwise; history starts 2026-10-23. For the three newest notices per
+  company it opens the public notice page and reads the cumulative share of
+  capital bought back from the text (95 of 117 companies; the rest have no
+  figure in the text and stay null). Companies missing from
+  `kap-universe.json` (e.g. new listings such as AYES) are skipped.
 - `research/price-history.py` also writes `data/benchmarks.json` (BIST 100,
   USD/TRY, gold in USD, weekly). The site shows one-year returns in TL, dollars
   and against BIST 100, a 3m/1y/3y/5y comparison table, and chart views in

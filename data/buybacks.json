@@ -1,7 +1,7594 @@
 {
- "source": "https://kap.org.tr/tr/api/disclosure/list/light",
- "since": "2026-11-23",
+ "source": "https://www.kap.org.tr/tr/api/disclosure/members/byCriteria",
+ "since": "2026-10-23",
  "items": {
+  "1686097": {
+   "codes": [
+    "AZTEK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T08:03",
+   "summary": "22.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686097"
+  },
+  "1686100": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T08:48",
+   "summary": "22.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686100"
+  },
+  "1686103": {
+   "codes": [
+    "TEZOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T08:50",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686103"
+  },
+  "1686112": {
+   "codes": [
+    "BLUME"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T08:55",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686112",
+   "ratio": 1.45
+  },
+  "1686115": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T08:57",
+   "summary": "22.10.2026 Tarihli Pay Alım İşlemleri hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686115"
+  },
+  "1686125": {
+   "codes": [
+    "KARTN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T09:00",
+   "summary": "22.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686125"
+  },
+  "1686128": {
+   "codes": [
+    "GENTS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T09:06",
+   "summary": "22 Ekim 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686128"
+  },
+  "1686470": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T12:55",
+   "summary": "Pay Geri Alım Programının Başlatılması Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686470"
+  },
+  "1686556": {
+   "codes": [
+    "ISVEA"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T14:33",
+   "summary": "Pay Geri Alım Programı Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686556",
+   "ratio": null
+  },
+  "1686833": {
+   "codes": [
+    "OYLUM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T17:11",
+   "summary": "Pay Geri Alım Programının Revize Edilmesi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686833"
+  },
+  "1686904": {
+   "codes": [
+    "OYLUM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:08",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686904",
+   "ratio": 5.2351
+  },
+  "1686908": {
+   "codes": [
+    "BNTAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:10",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686908",
+   "ratio": 0.14884
+  },
+  "1686909": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:10",
+   "summary": "Pay Geri Alım Programının Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686909"
+  },
+  "1686910": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:10",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686910"
+  },
+  "1686916": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:11",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686916"
+  },
+  "1686919": {
+   "codes": [
+    "PRKME"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:11",
+   "summary": "23 Ekim 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686919"
+  },
+  "1686925": {
+   "codes": [
+    "TCKRC"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:14",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686925"
+  },
+  "1686937": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:16",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686937"
+  },
+  "1686938": {
+   "codes": [
+    "KRDMA",
+    "KRDMB",
+    "KRDMD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:16",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686938",
+   "ratio": null
+  },
+  "1686940": {
+   "codes": [
+    "FADE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:17",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686940",
+   "ratio": null
+  },
+  "1686948": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:20",
+   "summary": "23.10.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686948"
+  },
+  "1686950": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:20",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686950"
+  },
+  "1686951": {
+   "codes": [
+    "ODAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:20",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686951",
+   "ratio": 1.429
+  },
+  "1686952": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:21",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686952"
+  },
+  "1686953": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:21",
+   "summary": "Pay Geri Alım10",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686953"
+  },
+  "1686955": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:22",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686955"
+  },
+  "1686960": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:24",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686960"
+  },
+  "1686962": {
+   "codes": [
+    "KRVGD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:26",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686962"
+  },
+  "1686964": {
+   "codes": [
+    "BMSCH"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:28",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686964",
+   "ratio": 0.27
+  },
+  "1686976": {
+   "codes": [
+    "KZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:32",
+   "summary": "23.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686976"
+  },
+  "1686979": {
+   "codes": [
+    "SAHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:33",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686979",
+   "ratio": 0.02809
+  },
+  "1686981": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:33",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686981"
+  },
+  "1686982": {
+   "codes": [
+    "KOCMT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:34",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686982"
+  },
+  "1686983": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:34",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686983"
+  },
+  "1686984": {
+   "codes": [
+    "KLRHO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:34",
+   "summary": "Pay geri Alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686984",
+   "ratio": 0.12953
+  },
+  "1686985": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:40",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686985"
+  },
+  "1686987": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:44",
+   "summary": "Pay Geri alım Programının Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686987"
+  },
+  "1686988": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:47",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686988"
+  },
+  "1686989": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:47",
+   "summary": "23.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686989"
+  },
+  "1686990": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:47",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686990"
+  },
+  "1686992": {
+   "codes": [
+    "GRSEL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:51",
+   "summary": "23.10.2026 tarihli pay alım işlemlerimiz.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686992"
+  },
+  "1686993": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:54",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686993"
+  },
+  "1686995": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:55",
+   "summary": "23.10.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686995"
+  },
+  "1686997": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:57",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686997"
+  },
+  "1686999": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T18:58",
+   "summary": "23.10.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1686999"
+  },
+  "1687006": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T19:03",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687006"
+  },
+  "1687007": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T19:15",
+   "summary": "Payların Geri Alınması Kapsamında Gerçekleşen İşlemler",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687007"
+  },
+  "1687008": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T19:16",
+   "summary": "23 Ekim 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687008"
+  },
+  "1687013": {
+   "codes": [
+    "ORGE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T19:33",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687013"
+  },
+  "1687014": {
+   "codes": [
+    "JANTS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T19:36",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687014",
+   "ratio": 0.20342
+  },
+  "1687015": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T19:58",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687015"
+  },
+  "1687016": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T20:08",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687016"
+  },
+  "1687017": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T20:12",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687017"
+  },
+  "1687018": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T20:13",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687018"
+  },
+  "1687021": {
+   "codes": [
+    "AZTEK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T20:29",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687021"
+  },
+  "1687022": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T20:42",
+   "summary": "23 Ekim 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687022"
+  },
+  "1687023": {
+   "codes": [
+    "KLGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T20:42",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687023",
+   "ratio": 0.66609
+  },
+  "1687024": {
+   "codes": [
+    "TCELL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T20:45",
+   "summary": "Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687024"
+  },
+  "1687031": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T21:08",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687031"
+  },
+  "1687034": {
+   "codes": [
+    "AKSGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-23T22:20",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687034",
+   "ratio": 0.8
+  },
+  "1687037": {
+   "codes": [
+    "MARBL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-24T09:05",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687037"
+  },
+  "1687052": {
+   "codes": [
+    "OZYSR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T05:52",
+   "summary": "23 Ekim 2026 Tarihli Pay Geri Alım İşlemlerine İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687052"
+  },
+  "1687055": {
+   "codes": [
+    "KARTN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T08:56",
+   "summary": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687055"
+  },
+  "1687057": {
+   "codes": [
+    "GENTS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T08:57",
+   "summary": "23 Ekim 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687057"
+  },
+  "1687071": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T09:15",
+   "summary": "23.10.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687071"
+  },
+  "1687235": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T12:10",
+   "summary": "Pay Geri Alım Programına İlişkin Bilgilendrme",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687235"
+  },
+  "1687527": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:11",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687527"
+  },
+  "1687536": {
+   "codes": [
+    "LMKDC"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:12",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687536"
+  },
+  "1687545": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:14",
+   "summary": "26.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687545"
+  },
+  "1687549": {
+   "codes": [
+    "KRDMA",
+    "KRDMB",
+    "KRDMD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:15",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687549",
+   "ratio": null
+  },
+  "1687562": {
+   "codes": [
+    "BNTAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:19",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687562",
+   "ratio": 0.15253
+  },
+  "1687565": {
+   "codes": [
+    "KRSTL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:20",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687565"
+  },
+  "1687569": {
+   "codes": [
+    "ALBTN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:21",
+   "summary": "26.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687569",
+   "ratio": 0.4512
+  },
+  "1687570": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:21",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687570"
+  },
+  "1687572": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:24",
+   "summary": "Pay Geri Alım11",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687572"
+  },
+  "1687577": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:26",
+   "summary": "26.10.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687577"
+  },
+  "1687578": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:28",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687578"
+  },
+  "1687580": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:28",
+   "summary": "26/10/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687580"
+  },
+  "1687584": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:31",
+   "summary": "26.10.2026 Tarihli Geri Alım İşlemi Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687584"
+  },
+  "1687585": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:32",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687585"
+  },
+  "1687586": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:32",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687586"
+  },
+  "1687590": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:32",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687590"
+  },
+  "1687593": {
+   "codes": [
+    "OFSYM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:34",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687593",
+   "ratio": 0.2201
+  },
+  "1687594": {
+   "codes": [
+    "KZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:38",
+   "summary": "26.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687594",
+   "ratio": 1.42
+  },
+  "1687604": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:41",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687604"
+  },
+  "1687605": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:42",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687605"
+  },
+  "1687611": {
+   "codes": [
+    "MARBL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:44",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687611",
+   "ratio": 0.02357
+  },
+  "1687614": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:45",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687614"
+  },
+  "1687617": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T18:50",
+   "summary": "26.10.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687617"
+  },
+  "1687632": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T19:13",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687632"
+  },
+  "1687637": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T19:15",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687637"
+  },
+  "1687641": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T19:20",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687641"
+  },
+  "1687661": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T19:57",
+   "summary": "26 Ekim 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687661"
+  },
+  "1687663": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T20:05",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687663"
+  },
+  "1687665": {
+   "codes": [
+    "OZYSR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T20:18",
+   "summary": "26 Ekim 2026 Tarihli Pay Geri Alım İşlemlerine İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687665"
+  },
+  "1687668": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T20:30",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687668"
+  },
+  "1687671": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T20:31",
+   "summary": "26.10.2026 tarihli geri alım işlemleri.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687671"
+  },
+  "1687677": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T20:50",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687677"
+  },
+  "1687691": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T21:35",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687691"
+  },
+  "1687703": {
+   "codes": [
+    "AAGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-26T22:09",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687703"
+  },
+  "1687719": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T00:31",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687719"
+  },
+  "1687720": {
+   "codes": [
+    "TEZOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T07:24",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687720"
+  },
+  "1687722": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T08:07",
+   "summary": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687722"
+  },
+  "1687757": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T09:50",
+   "summary": "26.10.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1687757"
+  },
+  "1688067": {
+   "codes": [
+    "HRKET"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T15:38",
+   "summary": "Pay Geri Alım Programının Başlatılması Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688067",
+   "ratio": null
+  },
+  "1688282": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:10",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688282"
+  },
+  "1688303": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:12",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688303"
+  },
+  "1688313": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:13",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688313"
+  },
+  "1688346": {
+   "codes": [
+    "HRKET"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:17",
+   "summary": "Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688346",
+   "ratio": 0.0248
+  },
+  "1688349": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:18",
+   "summary": "27.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688349"
+  },
+  "1688350": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:18",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688350"
+  },
+  "1688360": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:19",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688360"
+  },
+  "1688370": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:21",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688370"
+  },
+  "1688374": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:22",
+   "summary": "27.10.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688374"
+  },
+  "1688382": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:22",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688382"
+  },
+  "1688385": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:23",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688385"
+  },
+  "1688392": {
+   "codes": [
+    "KOCMT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:24",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688392"
+  },
+  "1688393": {
+   "codes": [
+    "TKNKA"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:24",
+   "summary": "Pay Geri Alım Programı Kapsamında Gerçekleştirilen İşlemler Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688393"
+  },
+  "1688397": {
+   "codes": [
+    "GENTS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:25",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688397",
+   "ratio": 0.4729
+  },
+  "1688417": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:30",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688417"
+  },
+  "1688419": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:30",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688419"
+  },
+  "1688428": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:32",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688428"
+  },
+  "1688435": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:34",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688435"
+  },
+  "1688438": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:34",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688438"
+  },
+  "1688444": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:35",
+   "summary": "27.10.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688444"
+  },
+  "1688445": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:35",
+   "summary": "27/10/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688445"
+  },
+  "1688446": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:35",
+   "summary": "Payların Geri Alınması Kapsamında Gerçekleşen İşlemler",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688446"
+  },
+  "1688455": {
+   "codes": [
+    "MARBL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:37",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688455",
+   "ratio": 0.03275
+  },
+  "1688459": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:38",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688459"
+  },
+  "1688474": {
+   "codes": [
+    "OFSYM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:56",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688474",
+   "ratio": 0.2358
+  },
+  "1688476": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T18:59",
+   "summary": "27.10.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688476"
+  },
+  "1688481": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T19:02",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688481"
+  },
+  "1688488": {
+   "codes": [
+    "KZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T19:08",
+   "summary": "27.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688488",
+   "ratio": 1.49
+  },
+  "1688499": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T19:17",
+   "summary": "27.10.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688499"
+  },
+  "1688504": {
+   "codes": [
+    "SAHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T19:19",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688504",
+   "ratio": 0.04
+  },
+  "1688525": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T19:38",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688525"
+  },
+  "1688527": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T19:45",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688527"
+  },
+  "1688534": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T19:51",
+   "summary": "27 Ekim 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688534"
+  },
+  "1688541": {
+   "codes": [
+    "TCELL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:04",
+   "summary": "Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688541"
+  },
+  "1688543": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:20",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688543"
+  },
+  "1688544": {
+   "codes": [
+    "AAGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:21",
+   "summary": "Pay Geri Alım Programının Revize Edilmesi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688544"
+  },
+  "1688545": {
+   "codes": [
+    "TATEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:21",
+   "summary": "Pay Geri Alım Programının Revize Edilmesi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688545"
+  },
+  "1688547": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:23",
+   "summary": "27 Ekim 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688547"
+  },
+  "1688562": {
+   "codes": [
+    "TATEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:40",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688562"
+  },
+  "1688564": {
+   "codes": [
+    "AAGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:47",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688564"
+  },
+  "1688567": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T20:50",
+   "summary": "27.10.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688567"
+  },
+  "1688589": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T21:40",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688589"
+  },
+  "1688590": {
+   "codes": [
+    "METRO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T21:40",
+   "summary": "27.10.2026 Tarihinde Gerçekleştirilen Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688590",
+   "ratio": 3.18
+  },
+  "1688600": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T22:01",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688600"
+  },
+  "1688606": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T22:27",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688606"
+  },
+  "1688607": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T22:39",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688607"
+  },
+  "1688609": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-27T23:00",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688609"
+  },
+  "1688618": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T08:10",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688618"
+  },
+  "1688619": {
+   "codes": [
+    "TEZOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T08:17",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688619",
+   "ratio": 0.5975
+  },
+  "1688622": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T08:42",
+   "summary": "27.10.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688622"
+  },
+  "1688649": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T09:17",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688649"
+  },
+  "1688650": {
+   "codes": [
+    "ZERGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T09:19",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688650",
+   "ratio": 0.37987
+  },
+  "1688667": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T09:45",
+   "summary": "21.09.2026 tarihli Pay Geri Alım Programı Sonlandırılması ve 28.10.2026 Tarihli Yeni Program Başlatılması,",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688667"
+  },
+  "1688914": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T12:35",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688914"
+  },
+  "1688929": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T12:55",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688929"
+  },
+  "1688933": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T12:57",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688933"
+  },
+  "1688934": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T12:59",
+   "summary": "28.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688934"
+  },
+  "1688935": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:00",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688935"
+  },
+  "1688937": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:00",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688937"
+  },
+  "1688940": {
+   "codes": [
+    "OYLUM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:00",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688940",
+   "ratio": 5.2939
+  },
+  "1688942": {
+   "codes": [
+    "OFSYM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:02",
+   "summary": "27.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688942",
+   "ratio": 0.2358
+  },
+  "1688943": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:02",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688943"
+  },
+  "1688947": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:04",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688947"
+  },
+  "1688951": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:06",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688951"
+  },
+  "1688957": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:12",
+   "summary": "Pay Geri Alım12",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1688957"
+  },
+  "1689002": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:31",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689002"
+  },
+  "1689012": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:33",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689012"
+  },
+  "1689016": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:38",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689016"
+  },
+  "1689022": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:42",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689022"
+  },
+  "1689038": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T13:52",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689038"
+  },
+  "1689065": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T14:12",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689065"
+  },
+  "1689076": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T14:24",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689076"
+  },
+  "1689081": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T14:33",
+   "summary": "28.10.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689081"
+  },
+  "1689087": {
+   "codes": [
+    "AAGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T14:41",
+   "summary": "Pay Geri Alım Programının Revize Edilmesi-Düzeltme",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689087"
+  },
+  "1689089": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T14:47",
+   "summary": "28.10.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689089"
+  },
+  "1689090": {
+   "codes": [
+    "TCELL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T14:51",
+   "summary": "Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689090",
+   "ratio": null
+  },
+  "1689094": {
+   "codes": [
+    "TATEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T14:58",
+   "summary": "Pay Geri Alım Programının Revize Edilmesi-Düzeltme",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689094"
+  },
+  "1689096": {
+   "codes": [
+    "SVGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T15:01",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689096"
+  },
+  "1689101": {
+   "codes": [
+    "TATEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T15:18",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689101",
+   "ratio": 1.78
+  },
+  "1689102": {
+   "codes": [
+    "KRVGD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T15:49",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689102"
+  },
+  "1689140": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T18:40",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689140"
+  },
+  "1689143": {
+   "codes": [
+    "AAGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T18:52",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689143",
+   "ratio": 1.72
+  },
+  "1689163": {
+   "codes": [
+    "KARTN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-28T20:59",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689163",
+   "ratio": 1.28
+  },
+  "1689166": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-29T00:31",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri-Düzeltme",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689166"
+  },
+  "1689168": {
+   "codes": [
+    "ORGE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-29T19:13",
+   "summary": "Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689168",
+   "ratio": 2.296
+  },
+  "1689192": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T09:16",
+   "summary": "28.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689192"
+  },
+  "1689848": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:08",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689848"
+  },
+  "1689893": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:13",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689893"
+  },
+  "1689899": {
+   "codes": [
+    "CVKMD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:13",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689899"
+  },
+  "1689903": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:13",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689903"
+  },
+  "1689921": {
+   "codes": [
+    "GIPTA"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:15",
+   "summary": "Payların Geri Alınması İşlemlerine İlişkin Bildirim hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689921"
+  },
+  "1689925": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:15",
+   "summary": "30.10.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689925"
+  },
+  "1689932": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:16",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689932"
+  },
+  "1689933": {
+   "codes": [
+    "TCKRC"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:16",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689933"
+  },
+  "1689956": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:17",
+   "summary": "Pay Geri Alım13",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689956"
+  },
+  "1689965": {
+   "codes": [
+    "HRKET"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:17",
+   "summary": "Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689965",
+   "ratio": 0.0713
+  },
+  "1689994": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:19",
+   "summary": "30.10.2026 Tarihli Geri Alım İşlemi Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1689994"
+  },
+  "1690020": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:22",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690020"
+  },
+  "1690023": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:23",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690023"
+  },
+  "1690027": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:24",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690027"
+  },
+  "1690028": {
+   "codes": [
+    "PRKME"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:24",
+   "summary": "30 Ekim 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690028",
+   "ratio": 1.2696
+  },
+  "1690057": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:30",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690057"
+  },
+  "1690059": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:30",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690059"
+  },
+  "1690062": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:31",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690062"
+  },
+  "1690063": {
+   "codes": [
+    "LKMNH"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:31",
+   "summary": "Hisse Geri Alımı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690063"
+  },
+  "1690082": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:36",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690082"
+  },
+  "1690089": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:39",
+   "summary": "30.10.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690089"
+  },
+  "1690094": {
+   "codes": [
+    "EUYO"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:41",
+   "summary": "Şirket Paylarının Geri Alımı hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690094",
+   "ratio": 1.92
+  },
+  "1690100": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:49",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690100"
+  },
+  "1690104": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:52",
+   "summary": "30.10.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690104"
+  },
+  "1690112": {
+   "codes": [
+    "AZTEK"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:55",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690112",
+   "ratio": 0.25615
+  },
+  "1690113": {
+   "codes": [
+    "KOCMT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T18:55",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690113"
+  },
+  "1690130": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:06",
+   "summary": "30.10.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690130"
+  },
+  "1690136": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:08",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690136"
+  },
+  "1690149": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:16",
+   "summary": "30/10/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690149"
+  },
+  "1690151": {
+   "codes": [
+    "ORGE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:18",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690151",
+   "ratio": 2.351
+  },
+  "1690156": {
+   "codes": [
+    "OYLUM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:20",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690156",
+   "ratio": 5.4117
+  },
+  "1690181": {
+   "codes": [
+    "KARTN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:39",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690181",
+   "ratio": 1.33
+  },
+  "1690182": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:41",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690182"
+  },
+  "1690183": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:42",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690183"
+  },
+  "1690196": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:49",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690196"
+  },
+  "1690201": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:53",
+   "summary": "30 Ekim 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690201"
+  },
+  "1690212": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T19:59",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690212"
+  },
+  "1690229": {
+   "codes": [
+    "KARTN"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T20:10",
+   "summary": "Pay Geri Alım Programının Tamamlanması Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690229",
+   "ratio": 1.33
+  },
+  "1690246": {
+   "codes": [
+    "AKSGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T20:34",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690246",
+   "ratio": 0.8861
+  },
+  "1690257": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T20:43",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690257"
+  },
+  "1690283": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T21:38",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690283"
+  },
+  "1690311": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-10-30T22:06",
+   "summary": "30 Ekim 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690311"
+  },
+  "1690363": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-10-31T09:33",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690363"
+  },
+  "1690364": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-10-31T12:14",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690364"
+  },
+  "1690365": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-10-31T12:49",
+   "summary": "30.10.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690365"
+  },
+  "1690374": {
+   "codes": [
+    "OZYSR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-01T17:14",
+   "summary": "30 Ekim 2026 Tarihli Pay Geri Alım İşlemlerine İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690374"
+  },
+  "1690376": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T08:12",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690376"
+  },
+  "1690395": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T09:20",
+   "summary": "30.10.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690395"
+  },
+  "1690400": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T09:23",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690400"
+  },
+  "1690416": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T09:51",
+   "summary": "30.10.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690416"
+  },
+  "1690971": {
+   "codes": [
+    "BLCYT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T17:01",
+   "summary": "02.11..2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1690971",
+   "ratio": 1.2588
+  },
+  "1691013": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T17:24",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691013"
+  },
+  "1691066": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T17:39",
+   "summary": "Şirket Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691066"
+  },
+  "1691116": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:10",
+   "summary": "02 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691116"
+  },
+  "1691117": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:10",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691117"
+  },
+  "1691118": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:11",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691118"
+  },
+  "1691120": {
+   "codes": [
+    "PRKME"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:12",
+   "summary": "2 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691120",
+   "ratio": 1.2897
+  },
+  "1691121": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:13",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691121"
+  },
+  "1691125": {
+   "codes": [
+    "TCKRC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:14",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691125",
+   "ratio": 0.3805
+  },
+  "1691128": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:14",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691128"
+  },
+  "1691139": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:16",
+   "summary": "02.11.2026 Pay geri alım bildirimi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691139"
+  },
+  "1691140": {
+   "codes": [
+    "BNTAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:17",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691140",
+   "ratio": 0.18974
+  },
+  "1691141": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:17",
+   "summary": "02.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691141"
+  },
+  "1691143": {
+   "codes": [
+    "ZERGY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:17",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691143",
+   "ratio": 0.41649
+  },
+  "1691149": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:18",
+   "summary": "Pay Geri Alım14",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691149"
+  },
+  "1691155": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:20",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691155"
+  },
+  "1691157": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:22",
+   "summary": "02.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691157"
+  },
+  "1691158": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:22",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691158"
+  },
+  "1691160": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:24",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691160"
+  },
+  "1691161": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:25",
+   "summary": "02.11.2026 Tarihli Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691161"
+  },
+  "1691164": {
+   "codes": [
+    "GIPTA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:28",
+   "summary": "Payların Geri Alınması İşlemlerine İlişkin Bildirim hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691164"
+  },
+  "1691165": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:30",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691165"
+  },
+  "1691166": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:30",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691166"
+  },
+  "1691168": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:31",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691168"
+  },
+  "1691169": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:32",
+   "summary": "02.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691169"
+  },
+  "1691170": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:32",
+   "summary": "02/11/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691170"
+  },
+  "1691174": {
+   "codes": [
+    "TKNKA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:35",
+   "summary": "Pay Geri Alım Programı Kapsamında Gerçekleştirilen İşlemler Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691174"
+  },
+  "1691176": {
+   "codes": [
+    "LKMNH"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:36",
+   "summary": "Hisse Geri Alımı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691176",
+   "ratio": 6.18
+  },
+  "1691177": {
+   "codes": [
+    "BORSK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:38",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691177"
+  },
+  "1691178": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:38",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691178"
+  },
+  "1691181": {
+   "codes": [
+    "TATEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:38",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691181",
+   "ratio": 1.79
+  },
+  "1691184": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:40",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691184"
+  },
+  "1691185": {
+   "codes": [
+    "FADE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:40",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691185",
+   "ratio": null
+  },
+  "1691187": {
+   "codes": [
+    "MARBL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:42",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691187",
+   "ratio": 0.05464
+  },
+  "1691188": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:47",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691188"
+  },
+  "1691189": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:47",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691189"
+  },
+  "1691192": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T18:51",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691192"
+  },
+  "1691199": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T19:05",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691199"
+  },
+  "1691200": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T19:05",
+   "summary": "02.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691200"
+  },
+  "1691205": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T19:22",
+   "summary": "02.11.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691205"
+  },
+  "1691206": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T19:32",
+   "summary": "02.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691206"
+  },
+  "1691207": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T19:33",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691207"
+  },
+  "1691208": {
+   "codes": [
+    "ORGE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T19:37",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691208",
+   "ratio": 2.488
+  },
+  "1691209": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T20:00",
+   "summary": "02 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691209"
+  },
+  "1691210": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T20:00",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691210"
+  },
+  "1691246": {
+   "codes": [
+    "SVGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T20:04",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691246"
+  },
+  "1691247": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T20:10",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691247"
+  },
+  "1691249": {
+   "codes": [
+    "AAGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T20:27",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691249",
+   "ratio": 1.76
+  },
+  "1691250": {
+   "codes": [
+    "LMKDC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T20:38",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691250"
+  },
+  "1691251": {
+   "codes": [
+    "AZTEK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T20:46",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691251",
+   "ratio": 0.27637
+  },
+  "1691252": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T21:10",
+   "summary": "2.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691252"
+  },
+  "1691254": {
+   "codes": [
+    "CVKMD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T21:32",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691254",
+   "ratio": 0.51798
+  },
+  "1691256": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T21:38",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691256"
+  },
+  "1691265": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-02T23:28",
+   "summary": "02.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691265"
+  },
+  "1691271": {
+   "codes": [
+    "TEZOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T07:27",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691271",
+   "ratio": 0.6114
+  },
+  "1691279": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T08:48",
+   "summary": "Şirket Paylarının Geri Alımı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691279"
+  },
+  "1691297": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T09:15",
+   "summary": "02.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691297"
+  },
+  "1691724": {
+   "codes": [
+    "BLCYT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T17:00",
+   "summary": "03.11..2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691724",
+   "ratio": 1.3586
+  },
+  "1691824": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:12",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691824"
+  },
+  "1691829": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:13",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691829"
+  },
+  "1691831": {
+   "codes": [
+    "GIPTA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:14",
+   "summary": "Payların Geri Alınması İşlemlerine İlişkin Bildirim hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691831",
+   "ratio": 0.3864
+  },
+  "1691834": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:15",
+   "summary": "Pay Geri Alım Programı Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691834"
+  },
+  "1691841": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:16",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691841"
+  },
+  "1691843": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:18",
+   "summary": "3.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691843",
+   "ratio": 2.0756
+  },
+  "1691845": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:20",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691845"
+  },
+  "1691848": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:21",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691848"
+  },
+  "1691849": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:23",
+   "summary": "Pay Geri Alım15",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691849"
+  },
+  "1691850": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:23",
+   "summary": "03 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691850"
+  },
+  "1691856": {
+   "codes": [
+    "LMKDC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:26",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691856",
+   "ratio": 0.596
+  },
+  "1691859": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:28",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691859"
+  },
+  "1691872": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:30",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691872"
+  },
+  "1691873": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:30",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691873"
+  },
+  "1691879": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:35",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691879"
+  },
+  "1691893": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:46",
+   "summary": "03.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691893"
+  },
+  "1691895": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:48",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691895"
+  },
+  "1691896": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T18:49",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691896"
+  },
+  "1691924": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:08",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691924"
+  },
+  "1691926": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:14",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691926"
+  },
+  "1691931": {
+   "codes": [
+    "GRSEL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:19",
+   "summary": "03.11.2026 tarihli pay geri alım işlemleri.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691931"
+  },
+  "1691935": {
+   "codes": [
+    "BOBET"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:31",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691935",
+   "ratio": 3.81954263
+  },
+  "1691936": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:31",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691936"
+  },
+  "1691937": {
+   "codes": [
+    "ENDAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:47",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691937"
+  },
+  "1691943": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:54",
+   "summary": "Pay Geri Alım Programı Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691943"
+  },
+  "1691944": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T19:58",
+   "summary": "03.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691944",
+   "ratio": 0.02107
+  },
+  "1691945": {
+   "codes": [
+    "TATEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T20:00",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691945",
+   "ratio": 1.8
+  },
+  "1691950": {
+   "codes": [
+    "AAGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T20:08",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691950",
+   "ratio": 1.77
+  },
+  "1691951": {
+   "codes": [
+    "SVGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T20:09",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691951",
+   "ratio": 1.41723
+  },
+  "1691959": {
+   "codes": [
+    "BASGZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T20:22",
+   "summary": "Pay Geri Alım Programı Başlatılması hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691959"
+  },
+  "1691963": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T20:51",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691963"
+  },
+  "1691966": {
+   "codes": [
+    "TCELL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T21:07",
+   "summary": "Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691966",
+   "ratio": null
+  },
+  "1691967": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T21:12",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691967"
+  },
+  "1691969": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T21:23",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691969"
+  },
+  "1691971": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T21:30",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691971"
+  },
+  "1691979": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T22:37",
+   "summary": "03.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691979"
+  },
+  "1691980": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-03T22:48",
+   "summary": "03.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1691980"
+  },
+  "1692007": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T09:13",
+   "summary": "03.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692007"
+  },
+  "1692008": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T09:15",
+   "summary": "03.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692008"
+  },
+  "1692009": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T09:26",
+   "summary": "Pay Geri Alım Programı Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692009"
+  },
+  "1692020": {
+   "codes": [
+    "TEZOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T09:49",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692020",
+   "ratio": 0.6125
+  },
+  "1692555": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:12",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692555"
+  },
+  "1692556": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:12",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692556"
+  },
+  "1692563": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:15",
+   "summary": "Pay Geri Alım16",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692563"
+  },
+  "1692571": {
+   "codes": [
+    "LMKDC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:17",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692571",
+   "ratio": 0.615
+  },
+  "1692592": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:19",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692592",
+   "ratio": null
+  },
+  "1692597": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:22",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692597"
+  },
+  "1692599": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:23",
+   "summary": "04.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692599"
+  },
+  "1692600": {
+   "codes": [
+    "ARSAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:24",
+   "summary": "04 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692600"
+  },
+  "1692601": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:24",
+   "summary": "04/11/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692601"
+  },
+  "1692602": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:25",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692602"
+  },
+  "1692655": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:33",
+   "summary": "04.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692655"
+  },
+  "1692656": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:33",
+   "summary": "04.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692656"
+  },
+  "1692689": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:39",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692689"
+  },
+  "1692717": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:43",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692717"
+  },
+  "1692723": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:44",
+   "summary": "04 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692723"
+  },
+  "1692737": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T18:51",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692737"
+  },
+  "1692746": {
+   "codes": [
+    "OTTO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T19:11",
+   "summary": "Şirketimiz 02.08.2026 Tarihinde Açıkladığı Geri Alım Programının Süresinin Dolması Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692746",
+   "ratio": null
+  },
+  "1692748": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T19:18",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692748"
+  },
+  "1692758": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T19:23",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692758"
+  },
+  "1692762": {
+   "codes": [
+    "TCELL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T19:30",
+   "summary": "Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692762",
+   "ratio": null
+  },
+  "1692780": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T19:42",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692780"
+  },
+  "1692813": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T20:05",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692813"
+  },
+  "1692814": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T20:10",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692814"
+  },
+  "1692826": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-04T20:50",
+   "summary": "4 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692826"
+  },
+  "1692861": {
+   "codes": [
+    "AZTEK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T07:53",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692861",
+   "ratio": 0.2992
+  },
+  "1692863": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T08:06",
+   "summary": "04.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1692863",
+   "ratio": 0.01123
+  },
+  "1693292": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:12",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693292"
+  },
+  "1693293": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:12",
+   "summary": "05 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693293"
+  },
+  "1693297": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:13",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693297",
+   "ratio": null
+  },
+  "1693303": {
+   "codes": [
+    "LMKDC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:14",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693303",
+   "ratio": 0.633
+  },
+  "1693330": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:18",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693330"
+  },
+  "1693337": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:18",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693337"
+  },
+  "1693347": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:22",
+   "summary": "Pay Geri Alım17",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693347"
+  },
+  "1693350": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:23",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693350"
+  },
+  "1693351": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:23",
+   "summary": "05.11.2026 Pay geri alım işlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693351"
+  },
+  "1693354": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:26",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693354"
+  },
+  "1693356": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:27",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693356"
+  },
+  "1693359": {
+   "codes": [
+    "KRSTL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:28",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693359",
+   "ratio": 1.7135
+  },
+  "1693361": {
+   "codes": [
+    "KOCMT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:28",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693361"
+  },
+  "1693367": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:30",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693367"
+  },
+  "1693368": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:30",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693368"
+  },
+  "1693369": {
+   "codes": [
+    "ARSAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:31",
+   "summary": "05 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693369"
+  },
+  "1693374": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:35",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693374"
+  },
+  "1693392": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:40",
+   "summary": "05.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693392"
+  },
+  "1693420": {
+   "codes": [
+    "ENDAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T18:57",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693420",
+   "ratio": 1.9053
+  },
+  "1693436": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T19:06",
+   "summary": "05.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693436"
+  },
+  "1693441": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T19:22",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693441"
+  },
+  "1693446": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T19:28",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693446"
+  },
+  "1693451": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T19:36",
+   "summary": "05.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693451"
+  },
+  "1693467": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T20:17",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693467"
+  },
+  "1693472": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T20:23",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693472"
+  },
+  "1693480": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T20:49",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693480"
+  },
+  "1693503": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-05T22:59",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693503"
+  },
+  "1693528": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T09:12",
+   "summary": "05.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693528"
+  },
+  "1693530": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T09:15",
+   "summary": "05.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693530"
+  },
+  "1693947": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T17:57",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1693947"
+  },
+  "1694023": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:08",
+   "summary": "04.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694023",
+   "ratio": 0.00201
+  },
+  "1694047": {
+   "codes": [
+    "ETYAT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:11",
+   "summary": "Şirket Paylarının Geri Alımı Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694047",
+   "ratio": 0.18
+  },
+  "1694062": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:12",
+   "summary": "06 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694062"
+  },
+  "1694105": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:13",
+   "summary": "06.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694105"
+  },
+  "1694219": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:21",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694219"
+  },
+  "1694225": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:21",
+   "summary": "Pay Geri Alım18",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694225"
+  },
+  "1694235": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:22",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694235"
+  },
+  "1694238": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:22",
+   "summary": "6.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694238",
+   "ratio": 2.0944
+  },
+  "1694244": {
+   "codes": [
+    "KRSTL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:23",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694244",
+   "ratio": 1.974
+  },
+  "1694254": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:25",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694254"
+  },
+  "1694258": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:25",
+   "summary": "06/11/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694258"
+  },
+  "1694268": {
+   "codes": [
+    "ARSAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:28",
+   "summary": "06 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694268"
+  },
+  "1694271": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:29",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694271"
+  },
+  "1694293": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:31",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694293"
+  },
+  "1694309": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:35",
+   "summary": "06.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694309"
+  },
+  "1694310": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:36",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694310"
+  },
+  "1694316": {
+   "codes": [
+    "PRKME"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:41",
+   "summary": "Azami Pay Geri Alım Fiyatının 2026 İlk 9 Aylık Finansal Sonuçlarına Göre Güncellenmesi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694316",
+   "ratio": null
+  },
+  "1694321": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:43",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694321",
+   "ratio": 2.6848
+  },
+  "1694325": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:47",
+   "summary": "06.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694325"
+  },
+  "1694335": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:51",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694335"
+  },
+  "1694358": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T18:59",
+   "summary": "06.11.2026 tarihhli Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694358"
+  },
+  "1694365": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:01",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694365"
+  },
+  "1694394": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:25",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694394"
+  },
+  "1694395": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:26",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694395"
+  },
+  "1694397": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:28",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694397"
+  },
+  "1694401": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:36",
+   "summary": "06 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694401"
+  },
+  "1694402": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:36",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694402"
+  },
+  "1694404": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:42",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694404"
+  },
+  "1694412": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T19:57",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694412"
+  },
+  "1694414": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T20:04",
+   "summary": "06.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694414"
+  },
+  "1694424": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T20:26",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694424"
+  },
+  "1694430": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T20:33",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694430"
+  },
+  "1694440": {
+   "codes": [
+    "OZYSR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T20:50",
+   "summary": "6 Kasım 2026 Tarihli Pay Geri Alım İşlemlerine İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694440",
+   "ratio": 0.5408
+  },
+  "1694464": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T21:14",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694464"
+  },
+  "1694474": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T21:51",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694474"
+  },
+  "1694481": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-06T22:18",
+   "summary": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694481"
+  },
+  "1694562": {
+   "codes": [
+    "CVKMD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-08T19:12",
+   "summary": "Pay Geri Alım Programının Tamamlanması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694562",
+   "ratio": null
+  },
+  "1694606": {
+   "codes": [
+    "ENDAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T09:07",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694606",
+   "ratio": 1.9076
+  },
+  "1694640": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T09:59",
+   "summary": "Şirket paylarının geri alımına ilişkin Yönetim Kurulu Kararı hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1694640"
+  },
+  "1695159": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T17:00",
+   "summary": "09.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695159"
+  },
+  "1695320": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:14",
+   "summary": "06.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695320"
+  },
+  "1695355": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:15",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695355"
+  },
+  "1695420": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:20",
+   "summary": "09 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695420"
+  },
+  "1695456": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:24",
+   "summary": "Payların geri alınmasına ilişkin bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695456"
+  },
+  "1695464": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:25",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695464"
+  },
+  "1695500": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:29",
+   "summary": "Pay Geri Alım19",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695500"
+  },
+  "1695503": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:30",
+   "summary": "9.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695503"
+  },
+  "1695505": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:30",
+   "summary": "9.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695505"
+  },
+  "1695511": {
+   "codes": [
+    "GLYHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:30",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695511"
+  },
+  "1695519": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:31",
+   "summary": "09.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695519",
+   "ratio": 0.6325
+  },
+  "1695532": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:32",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695532"
+  },
+  "1695537": {
+   "codes": [
+    "AKFGY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:33",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri ve Pay Geri Alım Programının Tamamlanması hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695537",
+   "ratio": 2.1026
+  },
+  "1695549": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:33",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695549"
+  },
+  "1695619": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:43",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695619"
+  },
+  "1695622": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:43",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695622"
+  },
+  "1695624": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:43",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695624"
+  },
+  "1695639": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:45",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695639"
+  },
+  "1695682": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:49",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695682"
+  },
+  "1695699": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T18:58",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695699",
+   "ratio": 2.7273
+  },
+  "1695707": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T19:02",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695707"
+  },
+  "1695730": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T19:07",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695730"
+  },
+  "1695764": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T19:17",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695764"
+  },
+  "1695872": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T19:53",
+   "summary": "09 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695872"
+  },
+  "1695877": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T19:59",
+   "summary": "9.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695877"
+  },
+  "1695908": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T20:31",
+   "summary": "09.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695908"
+  },
+  "1695937": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T20:44",
+   "summary": "09.11.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695937"
+  },
+  "1695990": {
+   "codes": [
+    "EGPRO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T21:17",
+   "summary": "Pay Geri Alım Programı Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1695990",
+   "ratio": null
+  },
+  "1696043": {
+   "codes": [
+    "OZYSR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T22:14",
+   "summary": "9 Kasım 2026 Tarihli Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696043",
+   "ratio": 0.5645
+  },
+  "1696052": {
+   "codes": [
+    "CVKMD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-09T22:25",
+   "summary": "Pay Geri Alım Programının Tamamlanması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696052",
+   "ratio": null
+  },
+  "1696183": {
+   "codes": [
+    "TURSG"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T06:37",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696183",
+   "ratio": 0.50325
+  },
+  "1696206": {
+   "codes": [
+    "ENDAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T09:19",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696206",
+   "ratio": 1.9111
+  },
+  "1696556": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T17:43",
+   "summary": "10.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696556"
+  },
+  "1696598": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:10",
+   "summary": "10.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696598"
+  },
+  "1696617": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:18",
+   "summary": "10 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696617"
+  },
+  "1696620": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:18",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696620"
+  },
+  "1696621": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:19",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696621"
+  },
+  "1696622": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:19",
+   "summary": "Pay Geri Alım20",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696622"
+  },
+  "1696626": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:21",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696626",
+   "ratio": 2.000684
+  },
+  "1696629": {
+   "codes": [
+    "KRVGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:22",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696629"
+  },
+  "1696630": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:22",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696630"
+  },
+  "1696631": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:25",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696631"
+  },
+  "1696632": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:25",
+   "summary": "10.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696632",
+   "ratio": 0.636
+  },
+  "1696633": {
+   "codes": [
+    "TKNKA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:26",
+   "summary": "Pay Geri Alım Programı Kapsamında Gerçekleştirilen İşlemler Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696633",
+   "ratio": 1.2222
+  },
+  "1696636": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:30",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696636"
+  },
+  "1696637": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:30",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696637"
+  },
+  "1696638": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:30",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696638"
+  },
+  "1696640": {
+   "codes": [
+    "GLYHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:31",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696640"
+  },
+  "1696641": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:31",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696641"
+  },
+  "1696642": {
+   "codes": [
+    "BORSK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:32",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696642"
+  },
+  "1696644": {
+   "codes": [
+    "ARSAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:35",
+   "summary": "10 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696644",
+   "ratio": 7.6
+  },
+  "1696645": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:38",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696645"
+  },
+  "1696652": {
+   "codes": [
+    "LKMNH"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:40",
+   "summary": "Hisse Geri Alımı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696652",
+   "ratio": 6.19
+  },
+  "1696692": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:52",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696692"
+  },
+  "1696707": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T18:57",
+   "summary": "10/11/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696707",
+   "ratio": null
+  },
+  "1696725": {
+   "codes": [
+    "NTHOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T19:05",
+   "summary": "Şirketimiz kendi paylarının geri alımı hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696725",
+   "ratio": null
+  },
+  "1696726": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T19:11",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696726"
+  },
+  "1696727": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T19:12",
+   "summary": "10 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696727"
+  },
+  "1696728": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T19:22",
+   "summary": "10.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696728"
+  },
+  "1696729": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T19:23",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696729"
+  },
+  "1696736": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T19:35",
+   "summary": "10.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696736"
+  },
+  "1696745": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T19:56",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696745"
+  },
+  "1696746": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T20:06",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696746"
+  },
+  "1696747": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T20:07",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696747"
+  },
+  "1696749": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T20:17",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696749"
+  },
+  "1696750": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T20:24",
+   "summary": "10 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696750"
+  },
+  "1696751": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T20:33",
+   "summary": "10.11.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696751"
+  },
+  "1696752": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T20:36",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696752"
+  },
+  "1696755": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T21:51",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696755"
+  },
+  "1696756": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T22:00",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696756",
+   "ratio": 1.7405
+  },
+  "1696758": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-10T22:26",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696758"
+  },
+  "1696781": {
+   "codes": [
+    "TCKRC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T07:59",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696781",
+   "ratio": 0.3847
+  },
+  "1696782": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T08:17",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696782",
+   "ratio": 0.0136
+  },
+  "1696784": {
+   "codes": [
+    "GENTS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T08:42",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696784",
+   "ratio": 0.5429
+  },
+  "1696949": {
+   "codes": [
+    "CANTE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T14:24",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696949",
+   "ratio": 0.35
+  },
+  "1696961": {
+   "codes": [
+    "BOBET"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T14:53",
+   "summary": "10.11.2026 Tarihli Pay Geri Alım işlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1696961",
+   "ratio": 6.29527816
+  },
+  "1697148": {
+   "codes": [
+    "ODAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T17:03",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697148",
+   "ratio": 1.643
+  },
+  "1697214": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T17:54",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697214"
+  },
+  "1697232": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:10",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697232",
+   "ratio": 0.45
+  },
+  "1697239": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:12",
+   "summary": "11.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697239"
+  },
+  "1697250": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:15",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697250"
+  },
+  "1697253": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:17",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697253"
+  },
+  "1697255": {
+   "codes": [
+    "TCKRC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:17",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697255",
+   "ratio": 0.4465
+  },
+  "1697256": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:17",
+   "summary": "11 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697256"
+  },
+  "1697263": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:19",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697263"
+  },
+  "1697267": {
+   "codes": [
+    "KOCMT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:19",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697267",
+   "ratio": 1.338
+  },
+  "1697270": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:19",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697270",
+   "ratio": 2.022304
+  },
+  "1697275": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:21",
+   "summary": "11 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697275"
+  },
+  "1697276": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:21",
+   "summary": "11.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697276"
+  },
+  "1697280": {
+   "codes": [
+    "KRSTL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:23",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697280",
+   "ratio": 2.4338
+  },
+  "1697294": {
+   "codes": [
+    "BASGZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:26",
+   "summary": "11.11.2026 Tarihli Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697294"
+  },
+  "1697299": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:26",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697299",
+   "ratio": 1.7708
+  },
+  "1697302": {
+   "codes": [
+    "ARSAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:27",
+   "summary": "11 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697302",
+   "ratio": 7.65
+  },
+  "1697304": {
+   "codes": [
+    "KRVGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:28",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697304"
+  },
+  "1697306": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:28",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697306"
+  },
+  "1697307": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:30",
+   "summary": "11/11/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697307",
+   "ratio": null
+  },
+  "1697308": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:30",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697308"
+  },
+  "1697309": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:30",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697309"
+  },
+  "1697312": {
+   "codes": [
+    "OSMEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:33",
+   "summary": "11.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697312",
+   "ratio": 0.6982
+  },
+  "1697314": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:35",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697314",
+   "ratio": 1.92636
+  },
+  "1697315": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:36",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697315"
+  },
+  "1697318": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:45",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697318"
+  },
+  "1697320": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T18:57",
+   "summary": "11.11.2026 Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697320"
+  },
+  "1697330": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:21",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697330"
+  },
+  "1697332": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:25",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697332"
+  },
+  "1697333": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:26",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697333"
+  },
+  "1697336": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:29",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697336"
+  },
+  "1697338": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:30",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697338"
+  },
+  "1697341": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:32",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697341"
+  },
+  "1697343": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:34",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697343"
+  },
+  "1697345": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:36",
+   "summary": "11.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697345"
+  },
+  "1697346": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:41",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697346",
+   "ratio": 1.8379
+  },
+  "1697347": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:41",
+   "summary": "11.11.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697347",
+   "ratio": 0.9317
+  },
+  "1697349": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T19:48",
+   "summary": "11.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697349"
+  },
+  "1697365": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T20:00",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697365"
+  },
+  "1697367": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T20:00",
+   "summary": "18.09.2026 Tarihli Mevcut Geri Alım Programına İlave Yapılması Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697367"
+  },
+  "1697373": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T20:12",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697373"
+  },
+  "1697374": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T20:12",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697374"
+  },
+  "1697375": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T20:15",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697375"
+  },
+  "1697395": {
+   "codes": [
+    "EGEGY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T20:54",
+   "summary": "Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697395",
+   "ratio": 3.90441
+  },
+  "1697398": {
+   "codes": [
+    "BORSK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T21:21",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697398"
+  },
+  "1697399": {
+   "codes": [
+    "SVGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T21:24",
+   "summary": "Payların Geri Alım Programı Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697399",
+   "ratio": null
+  },
+  "1697401": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-11T21:25",
+   "summary": "11 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697401"
+  },
+  "1697420": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T08:21",
+   "summary": "11.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697420"
+  },
+  "1697438": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T09:17",
+   "summary": "11.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697438"
+  },
+  "1697441": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T09:18",
+   "summary": "11.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697441"
+  },
+  "1697450": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T09:39",
+   "summary": "12.11.2026 Tarihli Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697450"
+  },
+  "1697619": {
+   "codes": [
+    "MNDRS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T15:39",
+   "summary": "Pay Geri Alımına İlişkin Yönetim Kurulu Kararı Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697619"
+  },
+  "1697633": {
+   "codes": [
+    "BASGZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T15:55",
+   "summary": "11.11.2026 tarihinde yapılan işlemler hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697633"
+  },
+  "1697735": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:12",
+   "summary": "12.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697735"
+  },
+  "1697750": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:19",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697750"
+  },
+  "1697753": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:20",
+   "summary": "Pay Geri Alım21",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697753"
+  },
+  "1697758": {
+   "codes": [
+    "SELEC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:21",
+   "summary": "Pay Geri Alım Programının Tamamlanması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697758",
+   "ratio": 0.80515
+  },
+  "1697760": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:26",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697760"
+  },
+  "1697763": {
+   "codes": [
+    "ARSAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:28",
+   "summary": "12 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697763",
+   "ratio": 7.71
+  },
+  "1697764": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:30",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697764"
+  },
+  "1697765": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:30",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697765"
+  },
+  "1697770": {
+   "codes": [
+    "LKMNH"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:42",
+   "summary": "Hisse Geri Alımı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697770",
+   "ratio": 6.2
+  },
+  "1697771": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T18:43",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697771"
+  },
+  "1697781": {
+   "codes": [
+    "GIPTA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:06",
+   "summary": "GÜNCELLEME - 28.09.2026 Tarihli Mevcut Geri Alım Programının Revize Edilmesi Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697781",
+   "ratio": null
+  },
+  "1697782": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:08",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697782"
+  },
+  "1697783": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:09",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697783"
+  },
+  "1697784": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:14",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697784"
+  },
+  "1697786": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:30",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697786"
+  },
+  "1697788": {
+   "codes": [
+    "GIPTA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:32",
+   "summary": "Payların Geri Alınması İşlemlerine İlişkin Bildirim hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697788",
+   "ratio": 2.6996
+  },
+  "1697790": {
+   "codes": [
+    "GRSEL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:32",
+   "summary": "12.11.2026 tarihli Hisse Geri Alımları",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697790"
+  },
+  "1697795": {
+   "codes": [
+    "ETILR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:35",
+   "summary": "12/11/2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697795",
+   "ratio": null
+  },
+  "1697806": {
+   "codes": [
+    "GENIL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T19:59",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697806",
+   "ratio": null
+  },
+  "1697807": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T20:08",
+   "summary": "12.11.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697807",
+   "ratio": 0.9411
+  },
+  "1697810": {
+   "codes": [
+    "TKNKA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T20:49",
+   "summary": "Pay Geri Alım Programı Kapsamında Borsa Dışı Pay Alımı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697810",
+   "ratio": 6.2688
+  },
+  "1697812": {
+   "codes": [
+    "HOROZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T21:23",
+   "summary": "Payların Geri Alınmasına İlişkin Yönetim Kurulu Kararı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697812",
+   "ratio": null
+  },
+  "1697814": {
+   "codes": [
+    "SVGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T21:46",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697814",
+   "ratio": null
+  },
+  "1697815": {
+   "codes": [
+    "HOROZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T22:19",
+   "summary": "12.11.2026 Tarihli Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697815",
+   "ratio": null
+  },
+  "1697824": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-12T23:42",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697824"
+  },
+  "1697829": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T08:42",
+   "summary": "12.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697829"
+  },
+  "1697835": {
+   "codes": [
+    "MERKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T08:51",
+   "summary": "Pay Geri Alım Programı Başlatılması Hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697835",
+   "ratio": null
+  },
+  "1697845": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T09:18",
+   "summary": "12.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697845"
+  },
+  "1697850": {
+   "codes": [
+    "LIDER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T09:30",
+   "summary": "Borsa Dışı Virman Yoluyla Yapılan Pay Geri Alımı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1697850",
+   "ratio": 5.9637
+  },
+  "1698118": {
+   "codes": [
+    "BASGZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:11",
+   "summary": "13.11.2026 Tarihinde Yapılan Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698118",
+   "ratio": null
+  },
+  "1698120": {
+   "codes": [
+    "MCARD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:13",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698120",
+   "ratio": 1.9459
+  },
+  "1698122": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:14",
+   "summary": "Pay Geri Alım22",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698122"
+  },
+  "1698123": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:16",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698123"
+  },
+  "1698130": {
+   "codes": [
+    "MASFN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:20",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698130",
+   "ratio": 2.029514
+  },
+  "1698141": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:28",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698141"
+  },
+  "1698143": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:29",
+   "summary": "13.11.2026 Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698143"
+  },
+  "1698147": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:30",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698147"
+  },
+  "1698150": {
+   "codes": [
+    "BORSK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:33",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698150",
+   "ratio": 0.98
+  },
+  "1698151": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:33",
+   "summary": "13.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698151"
+  },
+  "1698155": {
+   "codes": [
+    "KRVGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:37",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698155",
+   "ratio": 2.33
+  },
+  "1698156": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:39",
+   "summary": "13 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698156"
+  },
+  "1698157": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:40",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698157"
+  },
+  "1698160": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:41",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698160",
+   "ratio": 0.207
+  },
+  "1698161": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:42",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698161"
+  },
+  "1698162": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:43",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698162"
+  },
+  "1698164": {
+   "codes": [
+    "GLYHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:44",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698164",
+   "ratio": 2.0448
+  },
+  "1698165": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:44",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698165"
+  },
+  "1698166": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:45",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698166"
+  },
+  "1698167": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:46",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698167"
+  },
+  "1698169": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:48",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698169",
+   "ratio": null
+  },
+  "1698171": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:49",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698171"
+  },
+  "1698173": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T18:50",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698173"
+  },
+  "1698181": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T19:02",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698181"
+  },
+  "1698182": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T19:04",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698182"
+  },
+  "1698197": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T19:35",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698197"
+  },
+  "1698208": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T22:47",
+   "summary": "13 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698208"
+  },
+  "1698209": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-13T22:59",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698209"
+  },
+  "1698213": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-14T00:14",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698213"
+  },
+  "1698214": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-14T00:24",
+   "summary": "13.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698214"
+  },
+  "1698219": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-14T14:46",
+   "summary": "13.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698219"
+  },
+  "1698248": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T09:03",
+   "summary": "13.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698248"
+  },
+  "1698430": {
+   "codes": [
+    "SUNTK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T15:23",
+   "summary": "Pay Geri Alımına İlişkin Programın Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698430"
+  },
+  "1698595": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:12",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698595",
+   "ratio": null
+  },
+  "1698596": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:12",
+   "summary": "Payların Geri Alınmasına İlşikin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698596",
+   "ratio": null
+  },
+  "1698598": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:13",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698598",
+   "ratio": 0.0998
+  },
+  "1698605": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:14",
+   "summary": "16.11.2026 Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698605"
+  },
+  "1698615": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:17",
+   "summary": "Pay Geri Alım23",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698615"
+  },
+  "1698617": {
+   "codes": [
+    "PGSUS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:17",
+   "summary": "Pay Geri Alım Programının Başlatılması",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698617",
+   "ratio": null
+  },
+  "1698626": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:22",
+   "summary": "16.11.2026 Tarihli Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698626"
+  },
+  "1698627": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:25",
+   "summary": "16 Kasım 2026 tarühli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698627"
+  },
+  "1698631": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:27",
+   "summary": "16 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698631"
+  },
+  "1698633": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:30",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698633"
+  },
+  "1698635": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:30",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698635"
+  },
+  "1698645": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:40",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698645"
+  },
+  "1698647": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:43",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698647",
+   "ratio": 0.57
+  },
+  "1698648": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:43",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698648",
+   "ratio": null
+  },
+  "1698649": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T18:43",
+   "summary": "16.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698649"
+  },
+  "1698656": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:01",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698656"
+  },
+  "1698657": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:04",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698657"
+  },
+  "1698658": {
+   "codes": [
+    "MERKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:05",
+   "summary": "Pay Geri Alımı Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698658",
+   "ratio": 0.5
+  },
+  "1698659": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:08",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698659",
+   "ratio": null
+  },
+  "1698660": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:12",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698660"
+  },
+  "1698662": {
+   "codes": [
+    "GRSEL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:16",
+   "summary": "16.11.2026 tarihindeki hisse geri alım işlemleri.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698662",
+   "ratio": 0.17
+  },
+  "1698664": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:18",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698664"
+  },
+  "1698665": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:22",
+   "summary": "16.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698665"
+  },
+  "1698666": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:25",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698666"
+  },
+  "1698669": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T19:30",
+   "summary": "16 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698669"
+  },
+  "1698676": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T20:38",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698676"
+  },
+  "1698683": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-16T23:21",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698683",
+   "ratio": null
+  },
+  "1698686": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T08:28",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698686",
+   "ratio": 4.48868
+  },
+  "1698713": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T09:20",
+   "summary": "16.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698713"
+  },
+  "1698715": {
+   "codes": [
+    "MNDRS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T09:37",
+   "summary": "16 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1698715"
+  },
+  "1699187": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:09",
+   "summary": "17.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699187"
+  },
+  "1699188": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:10",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699188"
+  },
+  "1699196": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:12",
+   "summary": "17.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699196",
+   "ratio": 5.0611
+  },
+  "1699197": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:12",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699197",
+   "ratio": 0.463
+  },
+  "1699199": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:12",
+   "summary": "17.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699199",
+   "ratio": null
+  },
+  "1699200": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:12",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699200",
+   "ratio": 4.80667
+  },
+  "1699202": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:12",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699202",
+   "ratio": 0.1077
+  },
+  "1699203": {
+   "codes": [
+    "BASGZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:13",
+   "summary": "17.11.2026 Tarihinde Yapılan Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699203",
+   "ratio": null
+  },
+  "1699216": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:14",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699216",
+   "ratio": 2.39
+  },
+  "1699220": {
+   "codes": [
+    "TKNKA"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:15",
+   "summary": "Pay Geri Alım Programı Kapsamında Gerçekleştirilen İşlemler Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699220",
+   "ratio": 6.3888
+  },
+  "1699222": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:16",
+   "summary": "Pay Geri Alım24",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699222"
+  },
+  "1699230": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:19",
+   "summary": "17.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699230",
+   "ratio": 0.07682
+  },
+  "1699236": {
+   "codes": [
+    "KOCMT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:22",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699236",
+   "ratio": 1.356
+  },
+  "1699239": {
+   "codes": [
+    "TUKAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:26",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699239",
+   "ratio": null
+  },
+  "1699240": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:27",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699240",
+   "ratio": 1.0
+  },
+  "1699241": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:30",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699241"
+  },
+  "1699242": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:30",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699242",
+   "ratio": 4.7729
+  },
+  "1699245": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:31",
+   "summary": "17 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699245"
+  },
+  "1699252": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:33",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699252",
+   "ratio": 1.93835
+  },
+  "1699254": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:34",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699254"
+  },
+  "1699258": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:38",
+   "summary": "17 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699258",
+   "ratio": null
+  },
+  "1699263": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:51",
+   "summary": "17.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699263",
+   "ratio": 1.76443
+  },
+  "1699264": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:52",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699264"
+  },
+  "1699265": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T18:54",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699265"
+  },
+  "1699268": {
+   "codes": [
+    "QUICK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T19:06",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699268",
+   "ratio": 0.11
+  },
+  "1699270": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T19:06",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699270"
+  },
+  "1699271": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T19:11",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699271",
+   "ratio": 0.4913
+  },
+  "1699280": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T19:57",
+   "summary": "17 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699280"
+  },
+  "1699289": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T20:28",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699289"
+  },
+  "1699290": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T20:30",
+   "summary": "17.11.2026 Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699290"
+  },
+  "1699291": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T20:35",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699291"
+  },
+  "1699293": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T20:43",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699293"
+  },
+  "1699294": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T20:45",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699294"
+  },
+  "1699304": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T21:51",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699304",
+   "ratio": 0.2109
+  },
+  "1699308": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-17T23:46",
+   "summary": "17.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699308",
+   "ratio": null
+  },
+  "1699309": {
+   "codes": [
+    "EFOR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T08:34",
+   "summary": "Hisse Geri Alımına İlişkin Yönetim Kurulu Kararı",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699309",
+   "ratio": null
+  },
+  "1699325": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T09:20",
+   "summary": "17.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699325",
+   "ratio": 0.092
+  },
+  "1699333": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T09:25",
+   "summary": "17.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699333"
+  },
+  "1699337": {
+   "codes": [
+    "MNDRS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T09:49",
+   "summary": "17 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699337"
+  },
+  "1699973": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:12",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699973",
+   "ratio": 1.001
+  },
+  "1699974": {
+   "codes": [
+    "YYLGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:13",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699974",
+   "ratio": 0.471
+  },
+  "1699975": {
+   "codes": [
+    "SUWEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:14",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699975",
+   "ratio": 4.97613
+  },
+  "1699977": {
+   "codes": [
+    "KPEKS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:15",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699977",
+   "ratio": 2.25809
+  },
+  "1699979": {
+   "codes": [
+    "KOCMT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:16",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699979",
+   "ratio": 1.366
+  },
+  "1699980": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:16",
+   "summary": "18.11.2026 Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699980",
+   "ratio": 0.564
+  },
+  "1699984": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:23",
+   "summary": "18.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699984",
+   "ratio": 5.0794
+  },
+  "1699986": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:25",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699986",
+   "ratio": null
+  },
+  "1699987": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:27",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699987",
+   "ratio": 1.0
+  },
+  "1699989": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:28",
+   "summary": "18 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699989"
+  },
+  "1699993": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:30",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699993",
+   "ratio": 3.4667
+  },
+  "1699994": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:30",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699994",
+   "ratio": 4.7779
+  },
+  "1699996": {
+   "codes": [
+    "KTSKR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:31",
+   "summary": "18.11.2026 Tarihinde Yapılan Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699996",
+   "ratio": 0.00652
+  },
+  "1699997": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:32",
+   "summary": "Pay Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699997",
+   "ratio": 0.13046
+  },
+  "1699998": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:37",
+   "summary": "18 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699998",
+   "ratio": null
+  },
+  "1699999": {
+   "codes": [
+    "GRSEL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:39",
+   "summary": "18.11.2026 tarihindeki hisse geri alım işlemleri.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1699999",
+   "ratio": 0.18
+  },
+  "1700002": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:44",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700002",
+   "ratio": 0.58
+  },
+  "1700007": {
+   "codes": [
+    "BORSK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:46",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700007",
+   "ratio": 1.0
+  },
+  "1700012": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T18:50",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700012",
+   "ratio": 2.9
+  },
+  "1700017": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:03",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700017",
+   "ratio": 0.4115
+  },
+  "1700019": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:15",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700019",
+   "ratio": 0.55732
+  },
+  "1700020": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:16",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700020",
+   "ratio": null
+  },
+  "1700024": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:21",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700024",
+   "ratio": null
+  },
+  "1700044": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:25",
+   "summary": "18.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700044",
+   "ratio": 1.82416
+  },
+  "1700047": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:34",
+   "summary": "18.11.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700047",
+   "ratio": 0.9704
+  },
+  "1700048": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:34",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700048"
+  },
+  "1700050": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:42",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700050",
+   "ratio": 2.5
+  },
+  "1700051": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:48",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700051",
+   "ratio": 0.25151
+  },
+  "1700052": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:53",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700052",
+   "ratio": 0.37
+  },
+  "1700053": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T19:54",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700053",
+   "ratio": 1.2063
+  },
+  "1700077": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T20:42",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700077",
+   "ratio": 1.058
+  },
+  "1700078": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T20:47",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700078",
+   "ratio": null
+  },
+  "1700081": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T21:39",
+   "summary": "18 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700081",
+   "ratio": 3.48
+  },
+  "1700083": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T22:07",
+   "summary": "18.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700083",
+   "ratio": 1.39
+  },
+  "1700084": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T22:38",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700084",
+   "ratio": 0.2185
+  },
+  "1700085": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-18T23:44",
+   "summary": "Pay Geri Alım25",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700085",
+   "ratio": 3.9534
+  },
+  "1700092": {
+   "codes": [
+    "SUNTK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T08:37",
+   "summary": "18.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700092",
+   "ratio": 0.02
+  },
+  "1700098": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T08:41",
+   "summary": "18.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700098",
+   "ratio": 0.31
+  },
+  "1700111": {
+   "codes": [
+    "MNDRS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T09:14",
+   "summary": "18 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700111",
+   "ratio": 0.22836
+  },
+  "1700186": {
+   "codes": [
+    "MERKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T11:57",
+   "summary": "Pay Geri Alım Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700186",
+   "ratio": 0.51
+  },
+  "1700371": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:10",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700371",
+   "ratio": null
+  },
+  "1700380": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:12",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700380",
+   "ratio": 1.05566
+  },
+  "1700384": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:14",
+   "summary": "19.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700384",
+   "ratio": null
+  },
+  "1700393": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:20",
+   "summary": "Şirket Paylarının Geri Alınmasına İlişkin Bildirimin Revize Edilmesi Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700393",
+   "ratio": null
+  },
+  "1700394": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:22",
+   "summary": "19.11.2026 Tarihli Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700394",
+   "ratio": 0.6644
+  },
+  "1700401": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:30",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700401",
+   "ratio": 3.4679
+  },
+  "1700402": {
+   "codes": [
+    "GRTHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:30",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700402",
+   "ratio": 1.0
+  },
+  "1700403": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:30",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700403",
+   "ratio": 4.7796
+  },
+  "1700405": {
+   "codes": [
+    "EFOR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:32",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700405",
+   "ratio": 0.04784
+  },
+  "1700406": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:33",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700406",
+   "ratio": 0.44
+  },
+  "1700408": {
+   "codes": [
+    "GLYHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:37",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700408",
+   "ratio": 2.0679
+  },
+  "1700412": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:44",
+   "summary": "19 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700412",
+   "ratio": 3.49
+  },
+  "1700413": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:46",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700413",
+   "ratio": 3.35737
+  },
+  "1700414": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:48",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700414",
+   "ratio": null
+  },
+  "1700415": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:55",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700415",
+   "ratio": 0.4566
+  },
+  "1700417": {
+   "codes": [
+    "IZENR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T18:57",
+   "summary": "19.11.2026 Tarihli IZENR Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700417",
+   "ratio": 1.83439
+  },
+  "1700419": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T19:05",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700419",
+   "ratio": 2.94
+  },
+  "1700421": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T19:07",
+   "summary": "19 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700421",
+   "ratio": null
+  },
+  "1700423": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T19:08",
+   "summary": "19 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700423",
+   "ratio": null
+  },
+  "1700427": {
+   "codes": [
+    "KLSYN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T19:18",
+   "summary": "Koleksiyon Mobilya 19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700427",
+   "ratio": 0.04636
+  },
+  "1700428": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T19:24",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700428",
+   "ratio": 1.2644
+  },
+  "1700429": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T19:28",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700429",
+   "ratio": 0.2703
+  },
+  "1700436": {
+   "codes": [
+    "GRSEL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T20:07",
+   "summary": "19.11.2026 tarihindeki pay geri alım işlemleri.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700436",
+   "ratio": 0.19
+  },
+  "1700437": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T20:08",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700437",
+   "ratio": null
+  },
+  "1700441": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T20:37",
+   "summary": "19.11.2026 Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700441",
+   "ratio": 0.585
+  },
+  "1700442": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T21:02",
+   "summary": "Pay Geri Alım Programının Sonlandırılması Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700442",
+   "ratio": 0.845
+  },
+  "1700444": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T21:38",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700444",
+   "ratio": 1.071
+  },
+  "1700454": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T23:16",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700454",
+   "ratio": 0.58397
+  },
+  "1700460": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-19T23:25",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700460",
+   "ratio": null
+  },
+  "1700463": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T06:57",
+   "summary": "19.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700463",
+   "ratio": 1.43
+  },
+  "1700464": {
+   "codes": [
+    "SUNTK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T08:15",
+   "summary": "19.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700464",
+   "ratio": 0.03
+  },
+  "1700466": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T08:41",
+   "summary": "19.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700466",
+   "ratio": 0.36
+  },
+  "1700467": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T08:50",
+   "summary": "Pay Geri Alım26",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700467",
+   "ratio": 3.9667
+  },
+  "1700482": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T09:01",
+   "summary": "19.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700482",
+   "ratio": 0.094
+  },
+  "1700494": {
+   "codes": [
+    "MNDRS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T09:41",
+   "summary": "19 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700494",
+   "ratio": 0.28606
+  },
+  "1700588": {
+   "codes": [
+    "ATATP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T11:06",
+   "summary": "Yeni Pay Geri Alım Programı Başlatılması Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700588",
+   "ratio": null
+  },
+  "1700695": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T15:52",
+   "summary": "23.09.2026 Tarihli Pay Geri Alım Programının Revize Edilmesi Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700695",
+   "ratio": null
+  },
+  "1700771": {
+   "codes": [
+    "DOFRB"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T17:58",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700771",
+   "ratio": 0.24194
+  },
+  "1700780": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:10",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700780",
+   "ratio": 1.09934
+  },
+  "1700795": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:13",
+   "summary": "20.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700795",
+   "ratio": null
+  },
+  "1700804": {
+   "codes": [
+    "BASGZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:15",
+   "summary": "20.11.2026 Tarihinde Yapılan Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700804",
+   "ratio": null
+  },
+  "1700810": {
+   "codes": [
+    "GEDIK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:19",
+   "summary": "20.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700810",
+   "ratio": 5.1121
+  },
+  "1700815": {
+   "codes": [
+    "CITAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:22",
+   "summary": "20.11.2026 Tarihli Geri Alım İşlemi Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700815",
+   "ratio": 0.20929
+  },
+  "1700819": {
+   "codes": [
+    "LXGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:25",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700819",
+   "ratio": 1.8011
+  },
+  "1700821": {
+   "codes": [
+    "ADGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:26",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700821",
+   "ratio": null
+  },
+  "1700822": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:28",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700822",
+   "ratio": 1.3234
+  },
+  "1700824": {
+   "codes": [
+    "KTSKR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:28",
+   "summary": "20.11.2026 Tarihinde Yapılan Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700824",
+   "ratio": 0.02174
+  },
+  "1700825": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:29",
+   "summary": "Pay Geri Alım27",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700825",
+   "ratio": 4.1261
+  },
+  "1700826": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:30",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700826",
+   "ratio": 3.4734
+  },
+  "1700833": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:32",
+   "summary": "20 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700833",
+   "ratio": null
+  },
+  "1700836": {
+   "codes": [
+    "GLYHO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:35",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700836",
+   "ratio": 2.0756
+  },
+  "1700841": {
+   "codes": [
+    "UNLU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:40",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700841",
+   "ratio": 2.59
+  },
+  "1700842": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:41",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700842",
+   "ratio": 0.2882
+  },
+  "1700843": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:42",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700843",
+   "ratio": 0.126
+  },
+  "1700847": {
+   "codes": [
+    "BORSK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:47",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700847",
+   "ratio": 1.01
+  },
+  "1700849": {
+   "codes": [
+    "TURSG"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:48",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700849",
+   "ratio": 0.58725
+  },
+  "1700850": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:51",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700850",
+   "ratio": 3.36774
+  },
+  "1700853": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:56",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700853",
+   "ratio": 0.89
+  },
+  "1700855": {
+   "codes": [
+    "KRVGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T18:58",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700855",
+   "ratio": 2.33
+  },
+  "1700856": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T19:02",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700856",
+   "ratio": 0.4956
+  },
+  "1700858": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T19:03",
+   "summary": "20 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700858",
+   "ratio": 3.58
+  },
+  "1700860": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T19:10",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700860",
+   "ratio": 0.5
+  },
+  "1700861": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T19:14",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700861",
+   "ratio": null
+  },
+  "1700862": {
+   "codes": [
+    "KRVGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T19:16",
+   "summary": "Pay Geri Alım Programının Tamamlanması Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700862",
+   "ratio": 2.33
+  },
+  "1700865": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T19:20",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700865",
+   "ratio": 2.98
+  },
+  "1700866": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T19:20",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700866",
+   "ratio": null
+  },
+  "1700879": {
+   "codes": [
+    "NETCD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T20:10",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700879",
+   "ratio": 0.59346
+  },
+  "1700881": {
+   "codes": [
+    "SUNTK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T20:18",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700881",
+   "ratio": 0.04
+  },
+  "1700882": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T20:23",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700882",
+   "ratio": 0.02469
+  },
+  "1700886": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T21:00",
+   "summary": "20.11.2026 Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700886",
+   "ratio": 0.623
+  },
+  "1700890": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T21:29",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700890",
+   "ratio": null
+  },
+  "1700892": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T21:51",
+   "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700892",
+   "ratio": null
+  },
+  "1700894": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T22:15",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700894",
+   "ratio": 1.099
+  },
+  "1700896": {
+   "codes": [
+    "KZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-20T23:51",
+   "summary": "20.11.2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700896",
+   "ratio": 1.59
+  },
+  "1700898": {
+   "codes": [
+    "ATAKP"
+   ],
+   "kind": "islem",
+   "date": "2026-11-21T13:56",
+   "summary": "20.11.2026 tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700898",
+   "ratio": 1.46
+  },
   "1700909": {
    "codes": [
     "GENTS"
@@ -9,7 +7596,8 @@
    "kind": "islem",
    "date": "2026-11-23T08:56",
    "summary": "20.11.2026 Tarihli Pay Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1700909"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700909",
+   "ratio": 0.623
   },
   "1700924": {
    "codes": [
@@ -18,7 +7606,8 @@
    "kind": "islem",
    "date": "2026-11-23T09:17",
    "summary": "20 Kasım 2026 Tarihli Geri Alım İşlemi",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1700924"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700924",
+   "ratio": 0.6056
   },
   "1700926": {
    "codes": [
@@ -27,7 +7616,8 @@
    "kind": "islem",
    "date": "2026-11-23T09:26",
    "summary": "20.11.2026 Tarihli Hisse Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1700926"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700926",
+   "ratio": 0.095
   },
   "1700927": {
    "codes": [
@@ -36,7 +7626,8 @@
    "kind": "islem",
    "date": "2026-11-23T09:27",
    "summary": "20 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1700927"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700927",
+   "ratio": 0.34376
   },
   "1700930": {
    "codes": [
@@ -45,7 +7636,8 @@
    "kind": "islem",
    "date": "2026-11-23T09:39",
    "summary": "20.11.2026 Tarihli Pay Alım İşlemleri hk",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1700930"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700930",
+   "ratio": 0.39
   },
   "1700939": {
    "codes": [
@@ -54,7 +7646,8 @@
    "kind": "islem",
    "date": "2026-11-23T09:52",
    "summary": "Tasfiye Kapsamındaki Yatırım Fonlarından Şirketimiz Paylarının Borsa Dışında Geri Alınması Hk.",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1700939"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1700939",
+   "ratio": 3.977
   }
  }
 }
