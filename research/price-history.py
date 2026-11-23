@@ -5,8 +5,12 @@ is touched. Safeguards against bad series:
 
 - a series is kept only if its dates rise strictly, every close is positive
   and it has at least 20 points;
-- its latest closes must agree with the İş Yatırım price in the market
-  snapshot (within 8%), which catches wrong tickers and unadjusted splits;
+- bars after the market snapshot's date are dropped, and the last close must
+  agree with the İş Yatırım price in that snapshot (within 3%), which catches
+  wrong tickers and unadjusted splits;
+- a weekly move above x2.5 or below x0.4 usually means a split or bonus issue
+  Yahoo did not adjust for; the series is cut so that it starts after the last
+  such move, and the cut date is stored. Nothing is rescaled or estimated;
 - if fewer than 80% of the priced issuers pass, the previous file is kept.
 
 Closes are split-adjusted, in nominal TL, not adjusted for dividends.
@@ -27,7 +31,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
 API = 'https://query1.finance.yahoo.com/v8/finance/chart/{}.IS?range=5y&interval=1wk'
 OUT, GAPS = DATA / 'price-history.json', DATA / 'price-history-gaps.json'
-TOLERANCE = 0.08
+TOLERANCE = 0.03
 
 
 def fetch(code):
@@ -48,7 +52,7 @@ def fetch(code):
             time.sleep(2 * (attempt + 1))
 
 
-def series(code, reference):
+def series(code, reference, reference_day):
     """Return ({'d': day numbers, 'c': closes}, None) or (None, reason)."""
     try:
         payload = fetch(code)
@@ -67,18 +71,31 @@ def series(code, reference):
         if close is None:
             continue
         day = stamp // 86400
+        if day > reference_day:
+            # A bar after the reference close holds a session still in progress.
+            break
         if close <= 0 or (last_day is not None and day <= last_day):
             return None, 'Seri bozuk (tarih sırası veya sıfır/negatif fiyat)'
         points.append((day, round(close, 2 if close >= 10 else 4)))
         last_day = day
+    cut = None
+    for i in range(len(points) - 1, 0, -1):
+        move = points[i][1] / points[i - 1][1]
+        if move > 2.5 or move < 0.4:
+            cut = points[i][0]
+            points = points[i:]
+            break
     if len(points) < 20:
-        return None, 'Yeterli fiyat noktası yok'
+        return None, 'Yeterli fiyat noktası yok' + (' (düzeltilmemiş bölünme sonrası kısa seri)' if cut else '')
     if not reference:
         return None, 'Karşılaştırılacak İş Yatırım fiyatı yok'
-    gap = min(abs(close - reference) / reference for _, close in points[-2:])
+    gap = abs(points[-1][1] - reference) / reference
     if gap > TOLERANCE:
         return None, f'Son fiyat İş Yatırım ile tutmuyor (Yahoo {points[-1][1]}, İş Yatırım {reference})'
-    return {'d': [d for d, _ in points], 'c': [c for _, c in points]}, None
+    out = {'d': [d for d, _ in points], 'c': [c for _, c in points]}
+    if cut:
+        out['cut'] = cut
+    return out, None
 
 
 def main():
@@ -89,6 +106,7 @@ def main():
     latest = DATA / 'market-latest.json'
     market = json.loads((latest if latest.exists() else DATA / 'market-2026-11-09.json').read_text())
     prices = {c['code']: c.get('price') for c in market['companies']}
+    reference_day = (datetime.fromisoformat(market['date']).replace(tzinfo=timezone.utc).timestamp()) // 86400
     universe = json.loads((DATA / 'kap-universe.json').read_text())['companies']
     quotes = {c['code']: c for c in market['companies']}
     codes = [max(i['codes'], key=lambda c: quotes.get(c, {}).get('marketCap') or -1) for i in universe]
@@ -96,7 +114,7 @@ def main():
         codes = codes[:args.limit]
     kept, gaps = {}, {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(series, code, prices.get(code)): code for code in codes}
+        futures = {pool.submit(series, code, prices.get(code), reference_day): code for code in codes}
         for count, future in enumerate(as_completed(futures), start=1):
             code = futures[future]
             data, reason = future.result()

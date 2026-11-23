@@ -2,6 +2,20 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-23 · Claude Code · price history
+
+- `research/price-history.py` collects five years of weekly closes from Yahoo
+  Finance into `data/price-history.json` (589 issuers); the site shows them as
+  a chart in each company file, loaded per issuer from `prices/<code>.json`.
+- Safeguards: bars after the market snapshot date are dropped; the last close
+  must match `market-latest.json` within 3% (it matches exactly for all kept
+  series); a weekly move beyond x2.5 or x0.4 is treated as an unadjusted split
+  and the series starts after it (17 issuers, `cut` holds the date). Nothing is
+  rescaled. Rejected issuers and reasons are in `price-history-gaps.json`
+  (DUNYH and FLAP: Yahoo's price disagrees with İş Yatırım).
+- The workflow refreshes it on Saturdays. The daily price step was confirmed
+  working on GitHub (main has daily "Update prices" commits).
+
 ## 2026-11-11 · Claude Code · daily prices
 
 - `research/prices.py` refreshes prices and multiples for all issuers in one
