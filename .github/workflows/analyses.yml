@@ -9,6 +9,8 @@ on:
     - cron: '40 16 * * 1-5'
     # Saturdays: five-year weekly price history.
     - cron: '7 5 * * 6'
+    # Every 15 minutes during the Istanbul session (10:00-18:45): delayed prices only.
+    - cron: '*/15 7-15 * * 1-5'
   workflow_dispatch:
 
 permissions:
@@ -30,8 +32,13 @@ jobs:
         with:
           python-version: '3.12'
       - name: Fiyatları yenile
+        if: github.event.schedule != '*/15 7-15 * * 1-5'
         continue-on-error: true
         run: python research/prices.py && python research/scorecard.py
+      - name: Smart Money okumasını yenile
+        if: github.event.schedule == '40 16 * * 1-5' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: python research/smc.py
       - name: Fiyat geçmişini yenile
         if: github.event.schedule == '7 5 * * 6' || github.event_name == 'workflow_dispatch'
         continue-on-error: true
@@ -46,11 +53,15 @@ jobs:
           else
             python research/ai-analyses.py --limit 48
           fi
+      - name: Gecikmeli fiyatları al
+        continue-on-error: true
+        run: python research/live.py
       - name: Değişiklikleri kaydet
+        if: github.event.schedule != '*/15 7-15 * * 1-5'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Update prices, scorecard and analyses"
             git push origin HEAD:main

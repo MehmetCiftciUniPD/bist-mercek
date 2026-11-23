@@ -28,6 +28,7 @@ def companies():
                ('İş Yatırım şirket kartı', load('broker-summary-2026-09.json')))
     quotes = {q['code']: q for q in market['companies']}
     scorecard = load('scorecard.json') if (DATA / 'scorecard.json').exists() else {'companies': {}}
+    smc = load('smc-summary.json')['companies'] if (DATA / 'smc-summary.json').exists() else {}
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
     for issuer in uni['companies']:
@@ -54,6 +55,8 @@ def companies():
         card = next((scorecard['companies'][c] for c in codes if c in scorecard['companies']), None)
         if card:
             row['sc'] = card
+        if code in smc:
+            row['smc'] = smc[code]
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags
@@ -80,7 +83,18 @@ def main():
         old.unlink()
     for code, series in prices.items():
         (OUT / 'prices' / f'{code}.json').write_text(json.dumps(series, separators=(',', ':')))
-    print(f"{len(data['companies'])} şirket · {len(prices)} fiyat serisi · site/dist yazıldı")
+    # Daily Smart Money files and the (uncommitted) delayed prices.
+    # data/smc is not committed: when it is absent, publish-site.sh carries the
+    # files over from the previously published site.
+    if (DATA / 'smc').is_dir():
+        (OUT / 'smc').mkdir(exist_ok=True)
+        for old in (OUT / 'smc').glob('*.json'):
+            old.unlink()
+        for path in (DATA / 'smc').glob('*.json'):
+            (OUT / 'smc' / path.name).write_text(path.read_text())
+    live = DATA / 'live.json'
+    (OUT / 'live.json').write_text(live.read_text() if live.exists() else '{}')
+    print(f"{len(data['companies'])} şirket · {len(prices)} fiyat serisi · {len(list((OUT / 'smc').glob('*.json')))} SMC · site/dist yazıldı")
 
 
 if __name__ == '__main__':

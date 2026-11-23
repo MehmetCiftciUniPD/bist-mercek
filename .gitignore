@@ -54,3 +54,5 @@ research/financials.json
 # Python bytecode
 __pycache__/
 /site/dist/
+/data/live.json
+/data/smc/

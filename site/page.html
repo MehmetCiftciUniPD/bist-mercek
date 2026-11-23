@@ -107,6 +107,15 @@ table { border-collapse: collapse; width: 100%; }
 .chart .zero { stroke: var(--muted); stroke-width: 1; }
 .chart .hit { fill: transparent; }
 .chart .hit:hover + .bar, .chart .bar.on { opacity: .75; }
+.up { color: var(--good); } .down { color: var(--bad); }
+.live small { display: block; color: var(--muted); font: 11px var(--mono); }
+.smc svg { display: block; width: 100%; height: auto; }
+.smc text { font: 10.5px var(--mono); fill: var(--muted); }
+.smc .lab { font: 600 10px var(--body); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--ink2); margin-top: 6px; }
+.legend i { display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.read { margin: 10px 0 0; padding-left: 18px; max-width: 75ch; }
+.read li { margin: 4px 0; }
 .price { position: relative; }
 .price svg { display: block; width: 100%; height: auto; touch-action: none; }
 .price text { font: 10.5px var(--mono); fill: var(--muted); }
@@ -190,6 +199,7 @@ table { border-collapse: collapse; width: 100%; }
     <div class="register" id="register"><div class="empty">Kayıtlar yükleniyor…</div></div>
     <aside class="file" id="file" aria-live="polite"><p class="note">Dosyasını açmak için soldan bir şirket seçin.</p></aside>
   </div>
+  <p class="foot" id="liveStamp"></p>
   <p class="foot" id="foot"></p>
 </div>
 
@@ -216,7 +226,7 @@ const pct = v => '%' + N1.format(v);
 const YEARS = ['2020/12', '2021/12', '2022/12', '2023/12', '2024/12', '2025/12'];
 const periodLabel = p => p.endsWith('/12') ? p.slice(0, 4) : `${p} · ${p.split('/')[1]}A`;
 
-let DATA = null, ANALYSES = {}, rows = [], selected = null, aiAbort = null;
+let DATA = null, ANALYSES = {}, LIVE_PX = null, rows = [], selected = null, aiAbort = null;
 const LIVE = typeof window.claude?.use === 'function';
 const state = { q: '', sector: '', screen: 'all', sort: 'mc', dir: -1, tab: 'file' };
 
@@ -229,6 +239,8 @@ const SCREENS = [
   ['equity', 'Özkaynak oranı %50+', r => has(r.d.eqRatio) && r.d.eqRatio >= 50],
   ['loss', '2026/9 zararda', r => has(r.d.ni) && r.d.ni < 0],
   ['risk', 'Yüksek risk', isHigh],
+  ['smcUp', 'Yükseliş yapısı', r => r.smc?.trend === 1],
+  ['smcDisc', 'İndirim bölgesinde', r => r.smc?.zone === 'discount'],
   ['fhigh', 'F-Skor 7+', r => r.sc?.f?.n === 9 && r.sc.f.score >= 7],
   ['zsafe', 'Altman güvenli', r => r.sc?.z?.zone === 'safe'],
   ['warn', 'Veri uyarısı var', r => !!r.h?.w],
@@ -237,13 +249,16 @@ const SCREENS = [
 const COLS = [
   ['c', 'Şirket', 'l', r => r.c],
   ['s', 'Sektör', 'l hide-s hide-m', r => r.s || ''],
-  ['mc', 'Piyasa değeri', '', r => r.mc],
+  ['px', 'Fiyat', '', r => livePrice(r)?.p ?? r.px],
+  ['chg', 'Günlük', 'hide-s', r => livePrice(r)?.chg ?? null],
+  ['mc', 'Piyasa değeri', 'hide-s hide-m', r => r.mc],
+  ['smcT', 'Yapı', 'hide-s', r => r.smc ? r.smc.trend : null],
   ['pe', 'F/K', 'hide-s hide-m', r => r.pe],
   ['pb', 'PD/DD', 'hide-s hide-m', r => r.pb],
   ['f', 'F-Skor', 'hide-s', r => r.sc?.f?.n === 9 ? r.sc.f.score : null],
-  ['rev', '2026/9 hasılat', 'hide-s', r => r.d.rev],
+  ['rev', '2026/9 hasılat', 'hide-s hide-m', r => r.d.rev],
   ['ni', '2026/9 net kâr', '', r => r.d.ni],
-  ['spark', 'Net kâr 2020–25', '', null],
+  ['spark', 'Net kâr 2020–25', 'hide-s hide-m', null],
   ['last', 'Son dönem', 'hide-s hide-m', r => r.d.last || ''],
 ];
 
@@ -304,9 +319,9 @@ function renderRegister() {
   const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
     <td class="co"><b>${esc(r.c)}</b>${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
     <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
-    <td>${cell(r.mc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
-    <td class="hide-s">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
-    <td>${spark(r)}</td><td class="num hide-s hide-m">${r.d.last ? esc(r.d.last) : DASH}</td></tr>`).join('');
+    <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
+    <td class="hide-s hide-m">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
+    <td class="hide-s hide-m">${spark(r)}</td><td class="num hide-s hide-m">${r.d.last ? esc(r.d.last) : DASH}</td></tr>`).join('');
   $('register').innerHTML = list.length
     ? `<table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>`
     : '<div class="empty">Bu aramaya uyan şirket yok. Filtreleri gevşetin.</div>';
@@ -365,13 +380,14 @@ function renderFile(r) {
   const el = $('file');
   if (aiAbort) { aiAbort.abort(); aiAbort = null; }
   const h = r.h, m = DATA.meta;
-  const quote = [['Fiyat', has(r.px) ? N2.format(r.px) + ' TL' : null], ['Piyasa değeri', has(r.mc) ? money(r.mc) + ' TL' : null], ['F/K', has(r.pe) ? N1.format(r.pe) : null], ['PD/DD', has(r.pb) ? N1.format(r.pb) : null], ['Yılbaşından beri', has(r.ytd) ? pct(r.ytd) : null]]
+  const lp = livePrice(r);
+  const quote = [[lp ? 'Fiyat · 15 dk gecikmeli' : 'Fiyat · son kapanış', lp ? `${N2.format(lp.p)} TL <small class="${lp.chg >= 0 ? 'up' : 'down'}">${lp.chg >= 0 ? '▲' : '▼'} %${N2.format(Math.abs(lp.chg))} · ${esc(lp.time)}</small>` : has(r.px) ? N2.format(r.px) + ' TL' : null], ['Piyasa değeri', has(r.mc) ? money(r.mc) + ' TL' : null], ['F/K', has(r.pe) ? N1.format(r.pe) : null], ['PD/DD', has(r.pb) ? N1.format(r.pb) : null], ['Yılbaşından beri', has(r.ytd) ? pct(r.ytd) : null]]
     .map(([k, v]) => `<div><span>${k}</span><b>${v ?? '—'}</b></div>`).join('');
   let html = `<div class="file-head"><div><h2>${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
-    <div class="quote">${quote}</div><p class="note">Fiyat ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
+    <div class="quote">${quote}</div><p class="note">${lp ? `Gecikmeli fiyat Yahoo Finance'ten alınır ve son resmî kapanışa (${N2.format(r.px)} TL) göre değişimi gösterir. ` : ''}Piyasa değeri ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
   html += riskHtml(r);
-  const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button></div>`;
+  const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button><button class="tab" type="button" role="tab" data-tab="smc">Smart money</button></div>`;
   html = '';
 
   html += `<div id="priceBox"></div>`;
@@ -407,11 +423,112 @@ function renderFile(r) {
   } else {
     html += `<h3>2026/9 resmî özet</h3><p class="note">Bu şirketin 2026 dokuz aylık tablosu KAP özetinde henüz yok.</p>`;
   }
-  el.innerHTML = `${head}<div id="tabFile">${html}</div><div id="tabScore">${scoreHtml(r)}</div>`;
+  el.innerHTML = `${head}<div id="tabFile">${html}</div><div id="tabScore">${scoreHtml(r)}</div><div id="tabSmc"><p class="note">Yükleniyor…</p></div>`;
   showTab();
   loadPrice(r);
+  loadSmc(r);
   if (ANALYSES[r.c] && $('aiOut')) renderMd($('aiOut'), ANALYSES[r.c].text);
   el.scrollTop = 0;
+}
+
+// --- Delayed prices -----------------------------------------------------------
+function livePrice(r) {
+  const x = LIVE_PX?.prices?.[r.c];
+  if (!x || !has(r.px)) return null;
+  return { p: x.p, chg: (x.p / r.px - 1) * 100, time: new Date(x.t * 1000).toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }) };
+}
+function priceCell(r) {
+  const lp = livePrice(r);
+  if (lp) return `<span class="num">${N2.format(lp.p)}</span><small>${esc(lp.time)}</small>`;
+  return has(r.px) ? `<span class="num">${N2.format(r.px)}</span><small>kapanış</small>` : DASH;
+}
+function chgCell(r) {
+  const lp = livePrice(r);
+  return lp ? `<span class="num ${lp.chg >= 0 ? 'up' : 'down'}">${lp.chg >= 0 ? '+' : ''}${N2.format(lp.chg)}%</span>` : DASH;
+}
+function trendPill(x) {
+  if (!x || !x.trend) return DASH;
+  return x.trend === 1 ? pill('good', '▲ Yükseliş') : pill('bad', '▼ Düşüş');
+}
+function loadLive() {
+  fetch('live.json', { cache: 'no-store' }).then(x => x.ok ? x.json() : null).then(d => {
+    if (!d || !d.prices) return;
+    const changed = !LIVE_PX || LIVE_PX.fetchedAt !== d.fetchedAt;
+    LIVE_PX = d;
+    if (changed && rows.length) { renderRegister(); renderLiveStamp(); if (selected) { const t = state.tab; renderFile(selected); state.tab = t; showTab(); } }
+  }).catch(() => {});
+}
+function renderLiveStamp() {
+  const el = $('liveStamp');
+  if (!el || !LIVE_PX?.prices) return;
+  const ts = Math.max(...Object.values(LIVE_PX.prices).map(x => x.t));
+  el.textContent = `Fiyatlar yaklaşık 15 dakika gecikmeli · son işlem ${new Date(ts * 1000).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} · seans içinde yaklaşık 15 dakikada bir yenilenir`;
+}
+
+// --- Smart money ---------------------------------------------------------------
+const smcCache = {};
+const D = d => new Date(d * 864e5).toLocaleDateString('tr-TR');
+function loadSmc(r) {
+  const get = smcCache[r.c] || (smcCache[r.c] = fetch(`smc/${r.c}.json`).then(x => x.ok ? x.json() : null).catch(() => null));
+  get.then(x => { if (selected === r && $('tabSmc')) $('tabSmc').innerHTML = smcHtml(r, x); });
+}
+function smcHtml(r, x) {
+  if (!x) return `<p class="note">Bu şirket için günlük fiyat verisi doğrulanamadığından Smart Money okuması yapılmadı.</p>`;
+  const px = livePrice(r)?.p ?? x.last, fmt = v => N2.format(v);
+  const z = x.zones, rg = x.range, ev = x.events[x.events.length - 1];
+  const zoneName = { premium: 'Premium (pahalı yarı)', discount: 'İndirim (ucuz yarı)', eq: 'Denge bölgesi' };
+  const evName = e => `${e.k === 'CHoCH' ? 'Karakter değişimi (CHoCH)' : 'Yapı kırılımı (BOS)'} ${e.dir === 1 ? 'yukarı' : 'aşağı'}`;
+  const read = [];
+  read.push(`<b>Piyasa yapısı:</b> ${x.trend === 1 ? 'Yükseliş. Son kırılım yukarı yönde; yapı daha yüksek tepeler ve dipler üretiyor.' : x.trend === -1 ? 'Düşüş. Son kırılım aşağı yönde; yapı daha düşük tepeler ve dipler üretiyor.' : 'Belirsiz; bir yılda net bir kırılım yok.'}`);
+  if (ev) read.push(`<b>Son olay:</b> ${evName(ev)}, ${D(ev.d)}. ${fmt(ev.level)} TL seviyesi kapanışla geçildi.${ev.k === 'CHoCH' ? ' Karakter değişimi, önceki eğilimin bozulabileceğine dair ilk işarettir; tek başına dönüş teyidi sayılmaz.' : ''}`);
+  if (rg) read.push(`<b>Fiyat bölgesi:</b> ${zoneName[rg.zone]}. Son salınım aralığı ${fmt(rg.lo)}–${fmt(rg.hi)} TL, orta nokta ${fmt(rg.eq)} TL; fiyat aralığın %${N0.format(rg.pos * 100)} seviyesinde.`);
+  const zl = (arr, name) => arr.map(q => `${name} ${fmt(q.bot)}–${fmt(q.top)} TL (${D(q.d)}${q.tested ? ', test edildi' : ''})`).join('; ');
+  if (z.inside?.length) read.push(`<b>Fiyat şu an bir bölgenin içinde:</b> ${z.inside.map(q => `${fmt(q.bot)}–${fmt(q.top)} TL`).join('; ')}.`);
+  read.push(`<b>Aşağıdaki talep bölgeleri:</b> ${z.demand.length ? zl(z.demand, 'emir bloğu') : 'aktif boğa emir bloğu yok'}${z.fvgUp.length ? '; ' + zl(z.fvgUp, 'açık değer boşluğu') : ''}.`);
+  read.push(`<b>Yukarıdaki arz bölgeleri:</b> ${z.supply.length ? zl(z.supply, 'emir bloğu') : 'aktif ayı emir bloğu yok'}${z.fvgDown.length ? '; ' + zl(z.fvgDown, 'açık değer boşluğu') : ''}.`);
+  const liq = [...z.liqAbove.map(q => `${fmt(q.level)} TL üstünde eşit tepeler`), ...z.liqBelow.map(q => `${fmt(q.level)} TL altında eşit dipler`)];
+  read.push(`<b>Likidite:</b> ${liq.length ? liq.join('; ') + '. Bu seviyelerin ötesinde bekleyen emirler fiyatı çekebilir.' : 'süpürülmemiş eşit tepe ya da dip yok.'}`);
+  return `${smcChart(x, px)}<div class="legend"><span><i style="background:var(--good);opacity:.35"></i>Talep emir bloğu</span><span><i style="background:var(--bad);opacity:.35"></i>Arz emir bloğu</span><span><i style="background:var(--pos);opacity:.25"></i>Açık değer boşluğu</span><span><i style="background:none;border-top:2px dashed var(--muted);height:0"></i>Likidite / denge</span></div>
+    <h3>Okuma</h3><ul class="read">${read.map(t => `<li>${t}</li>`).join('')}</ul>
+    <h3>Son kırılımlar</h3><div class="scroll"><table class="ledger"><thead><tr><th class="l">Tarih</th><th class="l">Olay</th><th>Seviye</th></tr></thead><tbody>${x.events.slice().reverse().map(e => `<tr><td class="l">${D(e.d)}</td><td class="l">${e.k === 'CHoCH' ? pill(e.dir === 1 ? 'good' : 'bad', 'CHoCH ' + (e.dir === 1 ? '▲' : '▼')) : pill('', 'BOS ' + (e.dir === 1 ? '▲' : '▼'))}</td><td><span class="num">${fmt(e.level)}</span></td></tr>`).join('') || '<tr><td colspan="3">Kırılım yok</td></tr>'}</tbody></table></div>
+    <p class="note">Günlük mumlarla, son bir yıl. Salınım noktası her yanda 10 gün; tanımlar LuxAlgo'nun açık kaynak "Smart Money Concepts" uygulamasını izler: kapanışla geçilen son tepe ya da dip kırılım, kırılımdan önceki en uç mum emir bloğu, üç mumluk boşluk değer boşluğu sayılır. Bu, fiyat hareketinin mekanik bir okumasıdır; aynı kavramlar farklı ayarlarla farklı sonuç verir. Hacim ve emir defteri verisi kullanılmaz. Yatırım tavsiyesi değildir.</p>`;
+}
+function smcChart(x, px) {
+  const b = x.bars, n = b.d.length, W = 720, H = 300, L = 8, R = 62, T = 10, B = 22, cw = (W - L - R) / n;
+  const all = [...b.h, ...b.l];
+  const zs = [...x.zones.demand, ...x.zones.supply, ...x.zones.fvgUp, ...x.zones.fvgDown];
+  const levels = [...x.zones.liqAbove, ...x.zones.liqBelow].map(q => q.level);
+  let hi = Math.max(...all), lo = Math.min(...all);
+  for (const z of zs) { if (z.top < hi * 1.25) hi = Math.max(hi, z.top); if (z.bot > lo * 0.75) lo = Math.min(lo, z.bot); }
+  for (const v of levels) { if (v < hi * 1.25 && v > lo * 0.75) { hi = Math.max(hi, v); lo = Math.min(lo, v); } }
+  const pad = (hi - lo) * 0.04; hi += pad; lo -= pad;
+  const y = v => T + (hi - v) / (hi - lo) * (H - T - B), xi = i => L + (i + 0.5) * cw;
+  const idx = d => { let k = b.d.findIndex(v => v >= d); return k < 0 ? n - 1 : k; };
+  let g = '';
+  for (const v of [lo + (hi - lo) * 0.1, (hi + lo) / 2, hi - (hi - lo) * 0.1]) g += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"></line><text x="${W - R + 4}" y="${y(v) + 3.5}">${N1.format(v)}</text>`;
+  for (let k = Math.ceil(n / 12); k < n; k += Math.ceil(n / 6)) g += `<text x="${xi(k)}" y="${H - 6}" text-anchor="middle">${new Date(b.d[k] * 864e5).toLocaleDateString('tr-TR', { day: '2-digit', month: 'short' })}</text>`;
+  const rg = x.range;
+  if (rg) {
+    const top = Math.min(rg.hi, hi), bot = Math.max(rg.lo, lo);
+    g += `<rect x="${L}" width="${W - L - R}" y="${y(top)}" height="${Math.max(0, y(rg.eq) - y(top))}" fill="var(--bad)" opacity=".05"></rect><rect x="${L}" width="${W - L - R}" y="${y(rg.eq)}" height="${Math.max(0, y(bot) - y(rg.eq))}" fill="var(--good)" opacity=".05"></rect><line x1="${L}" x2="${W - R}" y1="${y(rg.eq)}" y2="${y(rg.eq)}" stroke="var(--muted)" stroke-dasharray="2 4"></line><text class="lab" x="${L + 4}" y="${y(top) + 11}">Premium</text><text class="lab" x="${L + 4}" y="${y(bot) - 4}">İndirim</text>`;
+  }
+  const box = (z, fill, op) => { const x0 = xi(Math.max(0, idx(z.d))) - cw / 2; return `<rect x="${Math.max(L, x0)}" width="${W - R - Math.max(L, x0)}" y="${y(z.top)}" height="${Math.max(1.5, y(z.bot) - y(z.top))}" fill="${fill}" opacity="${op}"></rect>`; };
+  for (const z of x.zones.fvgUp.concat(x.zones.fvgDown)) g += box(z, 'var(--pos)', .18);
+  for (const z of x.zones.demand) g += box(z, 'var(--good)', .28);
+  for (const z of x.zones.supply) g += box(z, 'var(--bad)', .28);
+  for (const q of [...x.zones.liqAbove, ...x.zones.liqBelow]) if (q.level <= hi && q.level >= lo) g += `<line x1="${xi(Math.max(0, idx(q.from)))}" x2="${W - R}" y1="${y(q.level)}" y2="${y(q.level)}" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 4"></line><text class="lab" x="${W - R - 4}" y="${y(q.level) + (q.dir === 1 ? -4 : 11)}" text-anchor="end">${q.dir === 1 ? 'Eşit tepeler' : 'Eşit dipler'}</text>`;
+  for (let i = 0; i < n; i++) {
+    const up = b.c[i] >= b.o[i], col = up ? 'var(--good)' : 'var(--bad)', yo = y(b.o[i]), yc = y(b.c[i]);
+    g += `<line x1="${xi(i)}" x2="${xi(i)}" y1="${y(b.h[i])}" y2="${y(b.l[i])}" stroke="${col}" stroke-width="1"></line><rect x="${xi(i) - cw * 0.35}" width="${cw * 0.7}" y="${Math.min(yo, yc)}" height="${Math.max(1, Math.abs(yc - yo))}" fill="${col}"></rect>`;
+  }
+  for (const e of x.events) {
+    const a = b.d.findIndex(v => v >= e.from), z = b.d.findIndex(v => v >= e.d);
+    if (z < 0 || e.level > hi || e.level < lo) continue;
+    const x0 = xi(Math.max(0, a)), x1 = xi(z), col = e.dir === 1 ? 'var(--good)' : 'var(--bad)';
+    g += `<line x1="${x0}" x2="${x1}" y1="${y(e.level)}" y2="${y(e.level)}" stroke="${col}" stroke-width="1.5"></line><text class="lab" x="${(x0 + x1) / 2}" y="${y(e.level) + (e.dir === 1 ? -4 : 11)}" text-anchor="middle" style="fill:${col}">${e.k}</text>`;
+  }
+  if (px <= hi && px >= lo) g += `<line x1="${L}" x2="${W - R}" y1="${y(px)}" y2="${y(px)}" stroke="var(--ink)" stroke-width="1" stroke-dasharray="1 3"></line><rect x="${W - R + 1}" y="${y(px) - 8}" width="${R - 2}" height="16" rx="3" fill="var(--ink)"></rect><text x="${W - R + 5}" y="${y(px) + 3.5}" style="fill:var(--bg)">${N2.format(px)}</text>`;
+  return `<div class="smc"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Günlük mum grafiği ve Smart Money bölgeleri">${g}</svg></div>`;
 }
 
 // --- Price history ----------------------------------------------------------
@@ -540,9 +657,9 @@ function scoreHtml(r) {
 }
 function showTab() {
   const score = state.tab === 'score';
-  const a = $('tabFile'), b = $('tabScore');
-  if (!a || !b) return;
-  a.hidden = score; b.hidden = !score;
+  const a = $('tabFile'), b = $('tabScore'), c = $('tabSmc');
+  if (!a || !b || !c) return;
+  a.hidden = state.tab !== 'file'; b.hidden = !score; c.hidden = state.tab !== 'smc';
   document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.tab === state.tab));
 }
 
@@ -673,6 +790,8 @@ Promise.all([fetch('data.json').then(r => { if (!r.ok) throw new Error(r.status)
   const m = data.meta;
   $('foot').textContent = `Kaynaklar: ihraççı listesi KAP (${m.universeDate}); 2026/9 özetleri KAP; geçmiş tablolar ve fiyatlar İş Yatırım (toplama ${new Date(m.collectedAt).toLocaleDateString('tr-TR')}). KAP ile İş Yatırım ayrıştığında şirket "uyarı" ile işaretlenir. Eksik veri boş bırakılır, tahmin edilmez. Bu sayfa bilgi amaçlıdır; yatırım tavsiyesi değildir.`;
   renderRegister();
+  loadLive();
+  setInterval(loadLive, 5 * 60 * 1000);
   if (location.hash.length > 1) fromHash();
   if (!selected) {   // open the largest company so the desk is never empty on wide screens
     const first = visible()[0];

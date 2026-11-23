@@ -2,6 +2,26 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-23 · Claude Code · delayed prices and Smart Money
+
+- TradingView's official embed widgets refuse BIST symbols ("only available on
+  TradingView"), and pulling its data into the site would breach its terms, so
+  delayed prices come from Yahoo Finance (about 15 minutes behind, the same
+  delay TradingView's free data has).
+- `research/live.py` writes `data/live.json` (not committed): every price must
+  be in TL and within ±11% of the last official close. The workflow fetches it
+  every 15 minutes during the session and publishes the site without a commit.
+  Market cap and multiples stay at the official close.
+- `research/smc.py` reads one year of daily bars and writes `data/smc/<code>.json`
+  (not committed; carried over from the published site between daily runs) and
+  `data/smc-summary.json`. Definitions follow LuxAlgo's open "Smart Money
+  Concepts": swing points (10 bars each side), BOS/CHoCH on closes, order
+  blocks, fair value gaps (>= 0.3 x ATR14), equal highs/lows, premium/discount.
+  Same safeguards as the price history (last close must match within 3%; daily
+  moves beyond ±25% cut the series). Runs after each close.
+- In November 2026, 551 of 601 issuers read as bearish structure; 583 had a
+  negative 60-day return, so this reflects the market, not a bug.
+
 ## 2026-11-23 · Claude Code · price history
 
 - `research/price-history.py` collects five years of weekly closes from Yahoo

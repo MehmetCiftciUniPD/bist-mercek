@@ -5,6 +5,12 @@ root="$(cd "$(dirname "$0")/.." && pwd)"
 python3 "$root/research/site.py"
 work="$(mktemp -d)"
 cp -a "$root/site/dist/." "$work/"
+# Smart Money files are rebuilt once a day; between rebuilds reuse the published ones.
+if [ ! -d "$root/data/smc" ]; then
+  if git -C "$root" fetch -q --depth 1 origin gh-pages 2>/dev/null; then
+    git -C "$root" archive FETCH_HEAD smc 2>/dev/null | tar -x -C "$work" || true
+  fi
+fi
 cd "$work"
 git init -q -b gh-pages
 git add -A
