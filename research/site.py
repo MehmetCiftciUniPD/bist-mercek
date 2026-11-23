@@ -62,8 +62,8 @@ def companies():
     transfers = load('fund-transfers.json')['items'] if (DATA / 'fund-transfers.json').exists() else {}
     ft_by_code = {}
     for index, item in transfers.items():
-        entry = {k: item.get(k) for k in ('kind', 'buyer', 'date', 'price', 'amount', 'shares', 'ratio', 'url', 'offExchange')}
-        entry['text'] = item.get('text', '')[:500]
+        entry = {k: item.get(k) for k in ('kind', 'buyer', 'date', 'price', 'amount', 'amountCalc', 'shares', 'ratio', 'url', 'offExchange')}
+        entry['text'] = item.get('text', '')[:900]
         ft_by_code.setdefault(item['codes'][0], []).append(entry)
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []

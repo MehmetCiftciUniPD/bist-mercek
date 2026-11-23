@@ -11,10 +11,11 @@ Newest entry first. Each agent adds an entry when it finishes a piece of work.
   the general material-event notices whose summary mentions funds, and keeps
   those whose text mentions an off-exchange trade or a liquidation.
   `kind` is `purchase` or `statement`; price, amount and share of capital are
-  read from the text and stay null when absent. `checked` lists notices
-  already opened. The KAP site menu contains "Tasfiye Olmuş Fonlar", so text
-  before "Gönderim Tarihi" is ignored. First run (since 2026-09-09): 15
-  purchases by 12 companies, 14 statements.
+  read from the text and stay null when absent; a missing amount is filled
+  with price x shares from the same notice and flagged `amountCalc`. `checked`
+  lists notices already opened. All general material-event notices are
+  opened (not only those whose summary names a fund), and TMSF sales count. The KAP site menu contains "Tasfiye Olmuş Fonlar", so text
+  before "Gönderim Tarihi" is ignored. Since 2026-09-09: 20 purchases by 17 companies, 79 statements.
 - Runs daily with `--days 7` in the workflow (not in the 15-minute job).
 - GitHub's scheduled runs start 45-60 minutes late in this repository and the
   15-minute schedule did not fire at all in its first hour; the owner plans to

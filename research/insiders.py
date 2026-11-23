@@ -11,8 +11,9 @@ Sources (KAP disclosure search, the endpoint behind KAP's "Bildirim Sorgu"):
   the off-exchange detail is only in the text;
 - "Payların Geri Alınmasına İlişkin Bildirim": every notice is opened too,
   because daily buyback notices sometimes report a fund purchase in the text;
-- "Özel Durum Açıklaması (Genel)": only notices whose summary mentions a fund,
-  liquidation or an off-exchange trade are opened.
+- "Özel Durum Açıklaması (Genel)": every notice is opened as well; many name
+  only "pay devri" or "hakim ortak" in the summary.
+- "Fon Kurucusu Tarafından Yapılan Pay Alım Satım Bildirimi": the fund side.
 
 A notice is kept when its Turkish explanation mentions an off-exchange trade
 or a liquidating fund. Amounts, prices and shares are read from the text with
@@ -37,9 +38,10 @@ NOTICE = 'https://www.kap.org.tr/tr/Bildirim/{}'
 HEADERS = {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json', 'Referer': 'https://www.kap.org.tr/tr/bildirim-sorgu'}
 ISTANBUL = timezone(timedelta(hours=3))
 INSIDER = '8aca490d50286f620150287614ae005c'      # Pay Alım Satım Bildirimi
+FOUNDER = '4028328ca0b8418601a16798b5613c29'      # Fon Kurucusu Tarafından Yapılan Pay Alım Satım Bildirimi
 BUYBACK = '4028328d6233239a01629b43e4694fae'      # Payların Geri Alınmasına İlişkin Bildirim
 SUMMARY = re.compile(r'tasfiye|borsa\s*dış|yatırım\s*fon|fon(?:lar)?(?:ın|ı)?(?:dan|ndan)\b|portföy', re.I)
-RELEVANT = re.compile(r'borsa\s*dışı|borsa\s*dışında|tasfiye', re.I)
+RELEVANT = re.compile(r'borsa\s*dışı|borsa\s+istanbul\s*\'?(?:da)?\s*dışında|tasfiye|virman|7596\s*sayılı|özel\s+işlem\s+bildirimi|özel\s+emir|toptan\s+satış|TMSF|tasarruf\s+mevduatı\s+sigorta\s+fonu', re.I)
 
 
 def subjects_named(name):
@@ -129,7 +131,7 @@ def number(text):
         return None
 
 
-PURCHASE = re.compile(r'virman|borsa\s*dışı\w*\s+(?:yoluyla|olarak|işlem)|borsa\s+İstanbul\s+dışında|geri\s+alın\w*|geri\s+alım\w*\s+gerçekleş|satın\s+alın\w*|devral\w*|özel\s+işlem\s+bildirimi', re.I)
+PURCHASE = re.compile(r'virman|borsa\s*dışı\w*\s+(?:yoluyla|olarak|işlem)|borsa\s+İstanbul\s+dışında|geri\s+alın\w*|geri\s+alım\w*\s+gerçekleş|satın\s+alın\w*|devral\w*|özel\s+işlem\s+bildirimi|(?:tarafımızdan|şirketimizce|şirketimiz\s+tarafından)[\s\S]{0,120}?(?:pay|hisse|lot)\w*[\s\S]{0,80}?alın\w*|(?:pay|hisse|lot)\w*[\s\S]{0,120}?(?:tarafımızdan|şirketimizce)[\s\S]{0,80}?alın\w*', re.I)
 
 
 def details(text):
@@ -145,12 +147,15 @@ def details(text):
             re.search(r'toplam\s+([0-9][0-9.]*(?:,[0-9]+)?)\s*TL\s*(?:bedel|tutar|karşılığ)', text, re.I) or \
             re.search(r'([0-9][0-9.]*(?:,[0-9]+)?)\s*TL\s*(?:bedelle|bedel karşılığında|tutarında)', text, re.I):
         out['amount'] = number(m.group(1))
-    if m := re.search(r'([0-9]{1,3}(?:\.[0-9]{3})+|[0-9]{4,})\s*(?:adet|lot)', text, re.I):
+    if m := re.search(r'([0-9]{1,3}(?:\.[0-9]{3})+(?:,[0-9]+)?|[0-9]{4,}(?:,[0-9]+)?)\s*(?:adet|lot)', text, re.I):
         out['shares'] = number(m.group(1))
-    if m := re.search(r'sermaye\w*[^%.]{0,60}%\s*([0-9]+(?:,[0-9]+)?)', text, re.I):
+    if m := re.search(r'sermaye\w*[^%]{0,60}?%\s*([0-9]+(?:,[0-9]+)?)', text, re.I):
         value = number(m.group(1))
         if value is not None and 0 < value <= 100:
             out['ratio'] = value
+    if 'amount' not in out and out.get('price') and out.get('shares'):
+        # Price x shares, both read from the same notice; marked as calculated.
+        out['amount'], out['amountCalc'] = round(out['price'] * out['shares'], 2), True
     out['buyer'] = 'company' if re.search(r'Şirketimiz tarafından geri alın|geri al(ın|ım)', text, re.I) else 'holder'
     out['side'] = 'sell' if re.search(r'sat(ış|ılmış|tı)\b', text, re.I) and not re.search(r'satın al|alın|alım', text, re.I) else 'buy'
     out['fund'] = bool(re.search(r'tasfiye|fon', text, re.I))
@@ -173,12 +178,16 @@ def main():
         args.cache.mkdir(parents=True, exist_ok=True)
         CACHE = args.cache
     known = {c for i in json.loads((DATA / 'kap-universe.json').read_text())['companies'] for c in i['codes']}
+    # Listed codes priced by İş Yatırım but missing from the KAP segment list (e.g. new listings).
+    latest = DATA / 'market-latest.json'
+    if latest.exists():
+        known |= {c['code'] for c in json.loads(latest.read_text())['companies']}
     old = json.loads(OUT.read_text()) if OUT.exists() else {'items': {}, 'checked': []}
     items, checked = old['items'], set(old.get('checked', []))
     general = subjects_named('Özel Durum Açıklaması (Genel)')
     candidates = {}
     for start, end in windows(args.days):
-        for subjects, filtered in (([INSIDER], False), ([BUYBACK], False), (general, True)):
+        for subjects, filtered in (([INSIDER], False), ([BUYBACK], False), ([FOUNDER], False), (general, False)):
             if not subjects:
                 continue
             for row in search(subjects, start, end):
@@ -204,7 +213,7 @@ def main():
         checked.add(index)
         if not RELEVANT.search(text):
             continue
-        items[index] = {**candidates[index], **details(text), 'text': text[:700], 'url': NOTICE.format(index)}
+        items[index] = {**candidates[index], **details(text), 'text': text[:1200], 'url': NOTICE.format(index)}
         kept += 1
     cutoff = (datetime.now(ISTANBUL) - timedelta(days=365)).strftime('%Y-%m-%d')
     items = {k: v for k, v in items.items() if v['date'] >= cutoff}
