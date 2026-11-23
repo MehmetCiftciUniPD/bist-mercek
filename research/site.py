@@ -59,6 +59,12 @@ def companies():
     for index, item in buybacks['items'].items():
         for c in item['codes']:
             by_code.setdefault(c, []).append({'k': item['kind'], 'd': item['date'], 's': item['summary'], 'u': item['url'], 'r': item.get('ratio')})
+    transfers = load('fund-transfers.json')['items'] if (DATA / 'fund-transfers.json').exists() else {}
+    ft_by_code = {}
+    for index, item in transfers.items():
+        entry = {k: item.get(k) for k in ('kind', 'buyer', 'date', 'price', 'amount', 'shares', 'ratio', 'url', 'offExchange')}
+        entry['text'] = item.get('text', '')[:500]
+        ft_by_code.setdefault(item['codes'][0], []).append(entry)
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
     for issuer in uni['companies']:
@@ -104,6 +110,9 @@ def companies():
             ratio = next((x['r'] for x in bb if x.get('r') is not None), None)
             if ratio is not None:
                 row['bbr'] = ratio
+        ft = sorted((x for c in codes for x in ft_by_code.get(c, [])), key=lambda x: x['date'], reverse=True)
+        if ft:
+            row['ft'] = ft[:8]
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags

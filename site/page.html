@@ -263,6 +263,20 @@ function drawdown(r) {
   return has(p) && has(r.hi52) && r.hi52 > 0 ? (p / r.hi52 - 1) * 100 : null;
 }
 const BB_DAYS = 31;
+const fundBuy = r => (r.ft || []).some(x => x.kind === 'purchase');
+function fundHtml(r) {
+  if (!r.ft?.length) return '';
+  const buys = r.ft.filter(x => x.kind === 'purchase'), notes = r.ft.filter(x => x.kind !== 'purchase');
+  const p = livePrice(r)?.p ?? r.px, money2 = v => has(v) ? (v >= 1e6 ? N1.format(v / 1e6) + ' mn TL' : N0.format(v) + ' TL') : null;
+  const line = x => {
+    const parts = [x.buyer === 'company' ? 'Şirket kendi payını aldı' : 'Ortak / yönetici alımı'];
+    if (has(x.price)) parts.push(`fiyat ${N2.format(x.price)} TL${has(p) ? ` (bugün ${N2.format(p)} TL, <span class="${p >= x.price ? 'up' : 'down'}">${p >= x.price ? '+' : ''}${N1.format((p / x.price - 1) * 100)}%</span>)` : ''}`);
+    if (has(x.amount)) parts.push(`tutar ${money2(x.amount)}`);
+    if (has(x.ratio)) parts.push(`sermayeye oran %${N2.format(x.ratio)}`);
+    return `<li><span class="num">${esc(new Date(x.date + ':00+03:00').toLocaleDateString('tr-TR'))}</span> · ${parts.join(' · ')} <a href="${esc(x.url)}" target="_blank" rel="noreferrer">KAP ↗</a><details><summary class="dash">Bildirim metni</summary><small style="display:block;margin-top:4px">${esc(x.text)}…</small></details></li>`;
+  };
+  return `${buys.length ? `<div class="risk soft" style="border-color:var(--good)"><b style="color:var(--good)">Fon tasfiyesinden borsa dışı alım</b><ul>${buys.map(line).join('')}</ul><small>SPK'nın Eylül 2026'da tasfiyeye aldığı fonların elindeki paylar, şirketin kendisi ya da hakim ortakları tarafından borsa dışında satın alınıyor. Fiyat, tutar ve oran bildirim metninden okunur; metinde yoksa yazılmaz.</small></div>` : ''}${notes.length ? `<div class="risk soft"><b>Fon tasfiyesiyle ilgili şirket açıklamaları</b><ul>${notes.map(x => `<li><span class="num">${esc(new Date(x.date + ':00+03:00').toLocaleDateString('tr-TR'))}</span> · ${esc(x.text.slice(0, 220))}… <a href="${esc(x.url)}" target="_blank" rel="noreferrer">KAP ↗</a></li>`).join('')}</ul></div>` : ''}`;
+}
 const recentBuyback = r => (r.bb || []).some(x => Date.now() - new Date(x.d + ':00+03:00').getTime() < BB_DAYS * 864e5);
 function toast(text) {
   document.querySelector('.toast')?.remove();
@@ -306,6 +320,7 @@ const SCREENS = [
   ['all', 'Tümü', () => true],
   ['watch', '★ İzleme listem', watched],
   ['bb', 'Geri alım (son 1 ay)', recentBuyback],
+  ['fund', 'Fondan borsa dışı alım', fundBuy],
   ['bbdd', 'Geri alım + zirveden %30+ düşmüş', r => recentBuyback(r) && has(drawdown(r)) && drawdown(r) <= -30],
   ['beat', '1 yılda BIST 100\'ü geçen', r => has(r.perf?.rel) && r.perf.rel > 0],
   ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
@@ -394,7 +409,7 @@ function renderRegister() {
   const head = COLS.map(([k, label, cls, get]) =>
     `<th class="${cls}" data-k="${k}"${get ? ' tabindex="0"' : ''}${state.sort === k ? ` aria-sort="${state.dir < 0 ? 'descending' : 'ascending'}"` : ''}>${label}${state.sort === k ? (state.dir < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('');
   const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
-    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son bir ayda pay geri alımı">geri alım</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
+    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son bir ayda pay geri alımı">geri alım</span>' : ''}${fundBuy(r) ? '<span class="flag bb" title="Fon tasfiyesinden borsa dışı alım">fondan alım</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
     <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
     <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${recentBuyback(r) && has(r.bbr) ? `<span class="num">%${N2.format(r.bbr)}</span>` : recentBuyback(r) ? '<span class="dash">var</span>' : DASH}</td><td class="hide-s">${has(drawdown(r)) ? `<span class="num${drawdown(r) <= -30 ? ' neg' : ''}">%${N0.format(drawdown(r))}</span>` : DASH}</td><td class="hide-s hide-m">${has(r.perf?.usd) ? `<span class="num ${r.perf.usd >= 0 ? 'up' : 'down'}">%${N0.format(r.perf.usd * 100)}</span>` : DASH}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
     <td class="hide-s hide-m">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
@@ -463,7 +478,7 @@ function renderFile(r) {
   let html = `<div class="file-head"><div><h2>${starBtn(r.c)}${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
     <div class="quote">${quote}</div><p class="note">${lp ? `Gecikmeli fiyat Yahoo Finance'ten alınır ve son resmî kapanışa (${N2.format(r.px)} TL) göre değişimi gösterir. ` : ''}Piyasa değeri ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
-  html += riskHtml(r) + buybackHtml(r);
+  html += riskHtml(r) + fundHtml(r) + buybackHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button><button class="tab" type="button" role="tab" data-tab="smc">Smart money</button></div>`;
   html = '';
 
