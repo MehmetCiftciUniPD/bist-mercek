@@ -7818,6 +7818,166 @@
    "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1701539",
    "ratio": 0.63
+  },
+  "1701542": {
+   "codes": [
+    "ENERY"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T18:46",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701542",
+   "ratio": 4.7832
+  },
+  "1701543": {
+   "codes": [
+    "AHGAZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T18:47",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701543",
+   "ratio": 3.5009
+  },
+  "1701545": {
+   "codes": [
+    "SANFM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T18:53",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701545",
+   "ratio": null
+  },
+  "1701546": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T18:54",
+   "summary": "23 Kasım 2026 Tarihinde Geri Alınan Paylar Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701546",
+   "ratio": null
+  },
+  "1701547": {
+   "codes": [
+    "KLSYN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T18:59",
+   "summary": "Koleksiyon Mobilya 23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701547",
+   "ratio": 0.06374
+  },
+  "1701548": {
+   "codes": [
+    "SANKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:00",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701548",
+   "ratio": 1.15601
+  },
+  "1701549": {
+   "codes": [
+    "MAVI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:00",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701549",
+   "ratio": 3.03
+  },
+  "1701551": {
+   "codes": [
+    "ULUUN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:03",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701551",
+   "ratio": null
+  },
+  "1701555": {
+   "codes": [
+    "BAHKM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:09",
+   "summary": "Geri Alım Programının Sonlandırılması Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701555",
+   "ratio": null
+  },
+  "1701556": {
+   "codes": [
+    "TUREX"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:10",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701556",
+   "ratio": 3.43672
+  },
+  "1701557": {
+   "codes": [
+    "GARAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:11",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701557",
+   "ratio": 0.5538
+  },
+  "1701558": {
+   "codes": [
+    "SOKE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:13",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701558",
+   "ratio": null
+  },
+  "1701561": {
+   "codes": [
+    "AKFIS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:15",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701561",
+   "ratio": 0.1443
+  },
+  "1701563": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:28",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701563",
+   "ratio": 1.3877
+  },
+  "1701564": {
+   "codes": [
+    "PCILT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:29",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701564",
+   "ratio": null
+  },
+  "1701565": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-23T19:32",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701565",
+   "ratio": 1.15
   }
  }
 }
