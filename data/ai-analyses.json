@@ -2448,6 +2448,22 @@
    "2026/9"
   ]
  },
+ "DIRIT": {
+  "text": "## Özet\nDIRİTEKS, 2022 yılında 199,1 mln TL hasılat ve 39,5 mln TL net kâr ile zirve yaptığı yapıdan, 2024'te 0,2 mln TL hasılata ve 63,3 mln TL zarara, 2025'te 4,8 mln TL hasılata ve 195,0 mln TL zarara gerileyen; 2026/9'da 37,1 mln TL (9A kümülatif) hasılat yakalayan ama yine 32,0 mln TL net zarar veren volatil bir seyir izliyor. 2026/9'da özkaynaklar -29,7 mln TL, özkaynak/varlık oranı -%112,9 olarak negatif bölgede; teknik iflas riski barındırıyor. Nakit neredeyse sıfır, cari oran 5,2/55,9 ile kritik. Piyasa değeri 155,5 mln TL (2026-11-20), F/K ve PD/DD hesaplanamıyor (eksik).\n\n## Büyüme\n2022 199,1 mln TL hasılat ile zirve; 2023 TMS 29 geçişiyle 28,0 mln TL'ye düştü (öncesiyle kıyaslanamaz). 2024 0,2 mln TL, 2025 4,8 mln TL. 2026/9 9 ayda 37,1 mln TL hasılat, 2025 yılına göre iyileşme gösterse de kâra yetmiyor. **Veri uyarısı:** 2025/9 varlıklar 170,5 mln TL, yatırım harcaması 190,0 mln TL iken 2025 YE varlıklar 43,3 mln TL, yatırım 0,0 mln TL; 9 ay - YE arası büyük yapısal kopma (muhtemel devir/çıkarma) var, büyüme trendi bu kopma yüzünden kırılgan.\n\n## Kârlılık\n2022 net marj %19,8. 2023 TMS 29 etkisiyle (para birimi kazancı) 75,7 mln TL kâr, marj %270,2 (sahte yüksek). 2024 esas faaliyet -10,9, net -63,3 mln TL. 2025 esas -163,3, net -195,0 mln TL. 2026/9 esas -25,6, net -32,0 mln TL; brüt kâr 3,0 mln TL pozitif ama faaliyet zararı devam ediyor.\n\n## Borç ve likidite\nNet finansal borç 2023 12,0 mln TL'den 2026/9 ~0,0'a inmiş. Ancak likidite felç: 2026/9 nakit 0,0, cari varlıklar 5,2 mln TL, cari yükümlülükler 55,9 mln TL. Özkaynaklar -29,7 mln TL, borçlanma kaynağı kalmamış, tedarikçi/vergi borçları ağır basıyor.\n\n## Nakit üretimi\n2023 işletme nakit akışı (İNA) 49,5 mln TL, serbest nakit akışı (SNA) 49,5 mln TL güçlü. 2024 İNA -0,2. 2025/9 İNA -175,9, yatırım 190,0, SNA 14,0 (anomali). 2025 YE İNA ~0, yatırım 0 (9A verisiyle çelişiyor). 2026/9 İNA 11,4, yatırım -11,5 (varlık satışı muhtemeli), SNA ~0. Nakit döngüsü operasyonlardan değil, bilanço küçültmelerinden besleniyor.\n\n## Riskler\n1) Negatif özkaynak (2026/6 -18,2, 2026/9 -29,7 mln TL) → devam ederse ticaret sicilinden silinme/iflas. 2) Cari likidite yok (cari oran ~0,09). 3) Hasılat 2024'te neredeyse sıfırlanmış, 2026'da toparlanma işaretleri zayıf kârlılıkla. 4) 2025 9A-YE arası 127 mln TL varlık kaybı ve 190 mln TL yatırım iadesi açıklanmamış; şeffaflık riski. 5) TMS 29 kırılımı (2023+) ile 2022 öncesi kıyaslama yanıltıcı.\n\n## Sırada neye bakmalı\n- 2025 9A-YE arası bilanço küçülmesinin (varlık 170→43 mln TL) nedeni (çeyrek raporlarda ayrıntı). 2026/9 37,1 mln TL hasılatın 4. çeyrekte sürdürülebilirliği ve brüt marj trendi. Negatif özkaynağın kapatılması planı (sermaye artırımı/borç özkaynağa çevrimi). Cari yükümlülüklerin (55,9 mln TL) yapısı ve vade profili. Nakit pozisyonun sıfır kalmasının operasyonel etkisi.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "generatedAt": "2026-11-23T03:21:37+00:00",
+  "periods": [
+   "2020/12",
+   "2021/12",
+   "2022/12",
+   "2023/12",
+   "2024/12",
+   "2025/9",
+   "2025/12",
+   "2026/6",
+   "2026/9"
+  ]
+ },
  "DITAS": {
   "text": "## Özet\n- DİTAŞ, 2022 sonrası hızlı büyüme yakalarken kârlılıkta yapısal sorun yaşıyor. bilançosunda özkaynaklar 1.167 mn TL’ye (önceki yıl 314 mn TL) fırlayarak net borç 731 mn TL’den 338 mn TL’ye düştü. Piyasa değeri 1.146 mn TL, PD/DD 0.9; F/K eksik. Operasyonel nakit akışı pozitife döndü ancak esas faaliyet kârı hâlâ derin zarar veriyor.\n\n## Büyüme\n- Hasılat 2.200 mn TL’den 2.561 mn TL’ye nominal %16 arttı; 2023 itibarıyla TMS 29 (enflasyon muhasebesi) uygulandığı için 2022 ve öncesi nominal verilerle doğrudan kıyaslanamaz. hasılat 1.985 mn TL, 2.034 mn TL’ye göre %2.4 geriledi; reel büyüme enflasyona göre zayıf kalıyor.\n\n## Kârlılık\n- Brüt kâr marjı %2.8’den %5.0’ye, %7.4’e (146.1/1.985) yükseldi; maliyet kontrolünde iyileşme var. Esas faaliyet kârı -384 mn TL, -419 mn TL, -192 mn TL (yıllık tahmini -256 mn TL) seviyesinde hâlâ büyük zarar. Net kâr -522 mn TL, -255 mn TL; finansman giderleri operasyonel kazancı aşıyor.\n\n## Borç ve likidite\n- Kısa vadeli finansal borç 1.021 mn TL’den 329 mn TL’ye düştü; uzun vadeli borç 38 mn TL. Net borç 338 mn TL seviyesine indi. Özkaynak/varlık oranı %32.7 (2024: %16.1). Cari oran (dönen varlıklar/kısa vadeli yükümlülükler) 1.128/2.114 = 0.53; likidite dar, kısa vadeli yükümlülükler dönen varlıkları aşıyor (veri uyarısı: cari oran kritik seviyede).\n\n## Nakit üretimi\n- İşletme nakit akışı -291 mn TL’den +879 mn TL’ye, +475 mn TL’ye döndü. Serbest nakit akışı 786 mn TL, 380 mn TL. Yatırım harcamaları 94 mn TL ile düşük seyrediyor; nakit üretimi borç ödemelerini ve sermaye artışını finanse etti.\n\n## Riskler\n- Esas faaliyet zararının süresizliği ve finansman maliyetlerinin net kârı tüketmesi.\n- Cari oranın 0.53 seviyesinde kalmasıyla kısa vadeli borç yenileme/ödenme riski.\n- bilançosunda varlıkların 2x’ine çıkması (1.953 → 3.972 mn TL) ve özkaynakların ~4 katlanması yapısal kırılma yarattı; geçmiş dönemlerle kıyaslama bozuldu (veri uyarısı: 2025 yapısal değişiklik).\n- TMS 29 geçişiyle 2023 öncesi veriler reel büyüme analizine elvermez.\n\n## Sırada neye bakmalı\n- Esas faaliyet kârının sıfır çizgisini test edip etmeyeceği (brüt kârın giderleri kapatması).\n- Çalışma sermayesi döngüsünün nakit akışına etkisi ve cari oran iyileştirme hızı.\n- Kısa vadeli borç stokunun (329 mn TL) vade yapısı ve yeniden finansman koşulları.\n- 2026 yıl sonu tam dönem net kâr/nakit akışı trendinin kalıcılığı.",
   "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -8090,6 +8106,21 @@
    "2025/12",
    "2026/6",
    "2026/9"
+  ]
+ },
+ "TERA": {
+  "text": "## Özet\n- TERA, 221,3 mln TL toplam varlıktan 251,8 mrd TL'ye büyüdü. Hasılat aynı aralıkta 582,4 mln TL'den 112,7 mrd TL'ye (6A kümülatif) fırladı.\n- 2023 yılı itibarıyla TMS 29 (enflasyon muhasebesi) uygulanıyor; ve öncesi nominal verilerle doğrudan kıyaslanamaz.\n- Özkaynaklar 92,3 mrd TL, özkaynak/varlık oranı %36,7. Piyasa verileri (fiyat, piyasa değeri, F/K, PD/DD) eksik.\n\n## Büyüme\n- Hasılat 6,3 mrd TL'den 8,1 mrd TL'ye %29 arttı (TMS 29 bazında reel büyüme sınırlı).\n- hasılat 487,5 mrd TL'ye sıçrayarak önceki yıla göre ~59 kat büyüdü; artışın büyük kısmı enflasyon muhasebesi etkisi ve/veya işlem hacmi patlamasından kaynaklı.\n- hasılat 112,7 mrd TL; 253,5 mrd TL seviyesindedir, tam yıl tahmini yapılamaz.\n- Net kâr 374,6 mln TL'den 43,9 mrd TL'ye, 46,2 mrd TL'ye ulaştı; 6A kârı zaten 2025 yıl toplamını aştı.\n\n## Kârlılık\n- Net kâr marjı %5,9'dan %9,0'a, %41,0'a çıktı.\n- Yüksek 6A marjı, esas faaliyet kârı marjı (~%20,6) ile uyuşmuyor; fark vergi öncesi kâr (39,6 mrd TL) ile esas faaliyet kârı (23,2 mrd TL) arasındaki ~16,4 mrd TL farktan (muhtemelen TMS 29 para kazancı/diğer gelirler) kaynaklanıyor; çekince: kârlılık kalitesi operasyonel olmayan unsurlardan besleniyor.\n- Brüt kâr marjı %22,4.\n\n## Borç ve likidite\n- Kısa vadeli finansal borç 5,1 mrd TL'den 20,1 mrd TL'ye, 22,4 mrd TL'ye çıktı.\n- Nakit 22,5 mrd TL; net borç hesaplanan -15,4 mln TL (nett nakit pozisyonu).\n- Kısa vadeli yükümlülükler 158,5 mrd TL (varlıkların %63'ü); müşteri bakiyeleri/ödenecekler yoğun.\n- Uzun vadeli yükümlülükler 896,4 mln TL'ye yükseldi (önceki yıllar <10 mln TL), çekince: yapısal değişiklik veya kira/uzun vadeli işlemler.\n\n## Nakit üretimi\n- İşletme nakit akışı çok volatil: +1,09 mrd TL, -4,5 mrd TL, +10,9 mrd TL, -4,7 mrd TL.\n- Serbest nakit akışı (FCF) de benzer dalgalanma gösteriyor; menkul kıymet şirketlerinde müşteri nakit döngüleri ve teminat hareketleri bu volatiliteyi yaratıyor.\n- Yatırım harcamaları (CapEx) 38,1 mln TL (pozitif, muhtemelen satış) ve düşük seviyede.\n\n## Riskler\n- TMS 29 geçişi ve hiperenflasyon muhasebesi; 2022 öncesi verilerle kıyaslanamazlık, para kazanç/kayıplarının kârı bozması.\n- İşletme nakit akışındaki yapısal volatilite; likidite yönetimi riski.\n- Kısa vadeli yükümlüklerin ağırlığı (%63 varlık) ve müşteri bakiyelerine bağımlılık.\n- 2026/6'da esas faaliyet kârının vergi öncesi kârın çok altında kalması; kârın sürdürülebilirliği operasyonel performansa değil, para kazancına bağlı.\n- Sektör, piyasa değeri, çarpan verileri eksik; değerleme yapılamıyor.\n\n## Sırada neye bakmalı\n- 2026/9 ve 2026 yıl sonu raporlarında esas faaliyet kârı trendi ve para kazancı ayrışımı.\n- İşletme nakit akışının normalleşip normalize edilmeyeceği.\n- Uzun vadeli yükümlülük artışının nedeni (kira standartı mı, yoksa finansman mı?).\n- Özkaynak artışının (92 mrd TL) sermaye artırımı mı yoksa kâr birikimi mi olduğunun notlarda doğrulanması.\n- Piyasa verilerinin (fiyat, F/K, PD/DD) takip edilmesi.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "generatedAt": "2026-11-23T03:22:44+00:00",
+  "periods": [
+   "2020/12",
+   "2021/12",
+   "2022/12",
+   "2023/12",
+   "2024/12",
+   "2025/9",
+   "2025/12",
+   "2026/6"
   ]
  },
  "TEZOL": {
