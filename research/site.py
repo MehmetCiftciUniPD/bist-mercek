@@ -4,6 +4,7 @@ site/page.html is the page body; this script wraps it in a document and writes
 data.json and analyses.json next to it. Nothing here needs a key or a server.
 """
 import json
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,7 +59,7 @@ def companies():
     by_code = {}
     for index, item in buybacks['items'].items():
         for c in item['codes']:
-            by_code.setdefault(c, []).append({'k': item['kind'], 'd': item['date'], 's': item['summary'], 'u': item['url'], 'r': item.get('ratio')})
+            by_code.setdefault(c, []).append({'k': item['kind'], 'd': item['date'], 's': item['summary'], 'u': item['url'], 'r': item.get('ratio'), 'cap': item.get('cap')})
     transfers = load('fund-transfers.json')['items'] if (DATA / 'fund-transfers.json').exists() else {}
     ft_by_code = {}
     for index, item in transfers.items():
@@ -67,6 +68,16 @@ def companies():
         ft_by_code.setdefault(item['codes'][0], []).append(entry)
         for target in item.get('targets', []):
             ft_by_code.setdefault(target, []).append({**entry, 'via': item['codes'][0]})
+    trades = load('insider-trades.json')['items'] if (DATA / 'insider-trades.json').exists() else {}
+    ins_by_code = {}
+    for index, item in trades.items():
+        for row in item['rows']:
+            entry = {'date': row['date'], 'buy': row['buy'], 'sell': row['sell'], 'endPct': row.get('endPct'),
+                     'who': item.get('who') or '', 'role': item.get('role') or '', 'price': item.get('price'),
+                     'url': item['url'], 'off': item.get('offExchange', False), 'text': (item.get('text') or '')[:300]}
+            for code in item.get('targets') or item['codes'][:1]:
+                ins_by_code.setdefault(code, []).append(entry)
+    summary = load('daily-summary.json') if (DATA / 'daily-summary.json').exists() else None
     holdings = load('fund-holdings.json') if (DATA / 'fund-holdings.json').exists() else {'companies': {}}
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
@@ -109,6 +120,19 @@ def companies():
         bb = sorted((x for c in codes for x in by_code.get(c, [])), key=lambda x: x['d'], reverse=True)
         if bb:
             row['bb'] = bb[:12]
+            # Ratios that never fall over time are cumulative holdings; otherwise they may be daily amounts.
+            ratios = [x['r'] for x in sorted(bb, key=lambda x: x['d']) if x.get('r') is not None]
+            row['bbCum'] = len(ratios) >= 2 and all(b >= a - 0.01 for a, b in zip(ratios, ratios[1:]))
+            cap = next((x['cap'] for x in bb if x.get('cap')), None)
+            if cap and q.get('price') and q.get('marketCap'):
+                shares = q['marketCap'] * 1e6 / q['price']
+                row['bbCapPct'] = round(cap / shares * 100, 3)
+            if series:
+                first = min(x['d'] for x in bb)[:10]
+                day = (datetime.fromisoformat(first) - datetime(1970, 1, 1)).days
+                price = at_or_before(series, day)
+                if price:
+                    row['bbFrom'] = {'d': first, 'p': price}
             row['bbn'] = len(bb)
             ratio = next((x['r'] for x in bb if x.get('r') is not None), None)
             if ratio is not None:
@@ -116,6 +140,14 @@ def companies():
         ft = sorted((x for c in codes for x in ft_by_code.get(c, [])), key=lambda x: x['date'], reverse=True)
         if ft:
             row['ft'] = ft[:8]
+        # The same trade is often filed by the insider and by the company; keep one.
+        unique = {}
+        for x in sorted((x for c in codes for x in ins_by_code.get(c, [])), key=lambda x: not x['who']):
+            unique.setdefault((x['date'], x['buy'], x['sell'], x.get('endPct')), x)
+        trades_here = sorted(unique.values(), key=lambda x: x['date'], reverse=True)
+        if trades_here:
+            row['ins'] = trades_here[:10]
+            row['insN'] = len(trades_here)
         held = next((holdings['companies'][c] for c in codes if c in holdings['companies']), None)
         if held:
             row['fh'] = {k: held.get(k) for k in ('capital', 'floatRatio', 'funds', 'lots', 'value', 'floatShareBefore')}
@@ -127,6 +159,7 @@ def companies():
             'collectedAt': hist['collectedAt'], 'note': hist['note'],
             'risk': {k: risk.get(k) for k in ('asOf', 'topic', 'note', 'levels', 'sources')},
             'buybackSince': buybacks.get('since'),
+            'summary': summary,
             'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}
 

@@ -121,6 +121,21 @@ table { border-collapse: collapse; width: 100%; }
 .alarms button, .alarm button.ghost { background: var(--sunk); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
 .toast { position: fixed; z-index: 40; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 12px 16px; border-radius: 8px; max-width: min(520px, calc(100vw - 32px)); box-shadow: 0 6px 24px rgba(0,0,0,.25); }
 .toast button { margin-left: 12px; background: none; border: 1px solid currentColor; color: inherit; border-radius: 4px; padding: 2px 8px; cursor: pointer; }
+.views { display: flex; flex-wrap: wrap; gap: 4px; margin: 14px 0 0; border-bottom: 1px solid var(--line); }
+.views button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 9px 14px; cursor: pointer; font: 600 15px var(--display); color: var(--ink2); }
+.views button[aria-selected=true] { color: var(--accent); border-bottom-color: var(--accent); }
+.view { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-top: 16px; }
+.view h2 { font: 700 22px var(--display); margin: 0 0 6px; }
+.view h3 { font: 600 17px var(--display); margin: 22px 0 8px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.card { border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; }
+.card h4 { margin: 0 0 6px; font: 600 14px var(--body); color: var(--ink2); }
+.codes { display: flex; flex-wrap: wrap; gap: 6px; }
+.codes button { background: var(--sunk); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; cursor: pointer; font: 500 12.5px var(--mono); color: var(--ink); }
+.ai-text p { margin: 6px 0; max-width: 75ch; }
+.cmp-add { background: var(--sunk); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px; }
+.cmp-add[aria-pressed=true] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
 .up { color: var(--good); } .down { color: var(--bad); }
 .live small { display: block; color: var(--muted); font: 11px var(--mono); }
 .smc svg { display: block; width: 100%; height: auto; }
@@ -201,7 +216,17 @@ table { border-collapse: collapse; width: 100%; }
     </div>
   </header>
   <div class="facts" id="facts"></div>
+  <nav class="views" role="tablist" aria-label="Bölümler">
+    <button type="button" role="tab" data-view="list" aria-selected="true">Hisseler</button>
+    <button type="button" role="tab" data-view="feed" aria-selected="false">Akış</button>
+    <button type="button" role="tab" data-view="sectors" aria-selected="false">Sektörler</button>
+    <button type="button" role="tab" data-view="compare" aria-selected="false">Karşılaştır <span class="num" id="cmpCount"></span></button>
+  </nav>
+  <section id="viewFeed" class="view" hidden></section>
+  <section id="viewSectors" class="view" hidden></section>
+  <section id="viewCompare" class="view" hidden></section>
 
+  <div id="viewList">
   <div class="controls">
     <input type="search" id="q" placeholder="Kod veya şirket adı ara" aria-label="Şirket ara">
     <select id="sector" aria-label="Sektör"></select>
@@ -212,6 +237,7 @@ table { border-collapse: collapse; width: 100%; }
   <div class="desk">
     <div class="register" id="register"><div class="empty">Kayıtlar yükleniyor…</div></div>
     <aside class="file" id="file" aria-live="polite"><p class="note">Dosyasını açmak için soldan bir şirket seçin.</p></aside>
+  </div>
   </div>
   <p class="foot" id="liveStamp"></p>
   <p class="foot" id="foot"></p>
@@ -242,7 +268,7 @@ const periodLabel = p => p.endsWith('/12') ? p.slice(0, 4) : `${p} · ${p.split(
 
 let DATA = null, ANALYSES = {}, LIVE_PX = null, rows = [], selected = null, aiAbort = null;
 const LIVE = typeof window.claude?.use === 'function';
-const state = { q: '', sector: '', screen: 'all', sort: 'mc', dir: -1, tab: 'file' };
+const state = { q: '', sector: '', screen: 'all', sort: 'mc', dir: -1, tab: 'file', view: 'list' };
 
 const store = {
   get(k, fallback) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fallback; } catch { return fallback; } },
@@ -325,7 +351,140 @@ function renderAlarmBox(r) {
 function buybackHtml(r) {
   if (!r.bb?.length) return '';
   const dd = drawdown(r), since = DATA.meta.buybackSince;
-  return `<div class="risk soft" style="border-color:var(--accent)"><b style="color:var(--accent)">Pay geri alımı</b>${has(dd) ? `<p style="margin:2px 0 6px">Fiyat, 52 haftalık en yüksek haftalık kapanışın (${N2.format(r.hi52)} TL) <b class="num" style="display:inline;color:inherit">%${N0.format(Math.abs(dd))}</b> ${dd < 0 ? 'altında' : 'üstünde'}.</p>` : ''}${has(r.bbr) ? `<p style="margin:2px 0 6px">Son bildirime göre şirketin elindeki geri alınmış paylar sermayenin <b class="num" style="display:inline;color:inherit">%${N2.format(r.bbr)}</b>'i.</p>` : ''}<ul>${r.bb.slice(0, 6).map(x => `<li><span class="num">${esc(new Date(x.d + ':00+03:00').toLocaleDateString('tr-TR'))}</span> · ${x.k === 'program' ? 'Geri alım programı: ' : ''}${esc(x.s)}${has(x.r) ? ` <span class="num">(toplam %${N2.format(x.r)})</span>` : ''} <a href="${esc(x.u)}" target="_blank" rel="noreferrer">KAP ↗</a></li>`).join('')}</ul>${r.bbn > 6 ? `<small>Son bir yılda toplam ${r.bbn} bildirim; en yeni 6'sı gösteriliyor.</small>` : ''}<small>Şirketin kendi payını piyasadan alması, yönetimin fiyatı düşük bulduğuna işaret edebilir; tek başına bir değerleme sinyali değildir. Kayıtlar ${since ? esc(since.split('-').reverse().join('.')) + ' tarihinden' : 'toplama başladığından'} bu yana KAP bildirimlerinden derleniyor; sermaye oranı bildirim metninden okunur, metinde yoksa boş kalır.</small></div>`;
+  return `<div class="risk soft" style="border-color:var(--accent)"><b style="color:var(--accent)">Pay geri alımı</b>${has(dd) ? `<p style="margin:2px 0 6px">Fiyat, 52 haftalık en yüksek haftalık kapanışın (${N2.format(r.hi52)} TL) <b class="num" style="display:inline;color:inherit">%${N0.format(Math.abs(dd))}</b> ${dd < 0 ? 'altında' : 'üstünde'}.</p>` : ''}${has(r.bbCapPct) ? `<p style="margin:2px 0 6px">Program üst sınırı: sermayenin yaklaşık %${N2.format(r.bbCapPct)} kadarı.${has(r.bbr) && r.bbCum ? ` Kullanılan kısım yaklaşık <b class="num" style="display:inline;color:inherit">%${N0.format(Math.min(100, r.bbr / r.bbCapPct * 100))}</b> (oran ve sınır farklı bildirimlerden okunur; kaba bir göstergedir).` : ''}</p>` : ''}${r.bbFrom && has(livePrice(r)?.p ?? r.px) ? `<p style="margin:2px 0 6px">İlk geri alım bildiriminin olduğu hafta (${esc(new Date(r.bbFrom.d).toLocaleDateString('tr-TR'))}) fiyat ${N2.format(r.bbFrom.p)} TL idi; bugün ${N2.format(livePrice(r)?.p ?? r.px)} TL (${pctCell(((livePrice(r)?.p ?? r.px) / r.bbFrom.p - 1) * 100)}).</p>` : ''}${has(r.bbr) ? (r.bbCum ? `<p style="margin:2px 0 6px">Son bildirime göre şirketin elindeki geri alınmış paylar sermayenin <b class="num" style="display:inline;color:inherit">%${N2.format(r.bbr)}</b> kadarı.</p>` : `<p style="margin:2px 0 6px">Son bildirimdeki sermaye oranı %${N2.format(r.bbr)}; bu şirketin bildirimlerinde oran günlük alımı gösteriyor olabilir.</p>`) : ''}<ul>${r.bb.slice(0, 6).map(x => `<li><span class="num">${esc(new Date(x.d + ':00+03:00').toLocaleDateString('tr-TR'))}</span> · ${x.k === 'program' ? 'Geri alım programı: ' : ''}${esc(x.s)}${has(x.r) ? ` <span class="num">(toplam %${N2.format(x.r)})</span>` : ''} <a href="${esc(x.u)}" target="_blank" rel="noreferrer">KAP ↗</a></li>`).join('')}</ul>${r.bbn > 6 ? `<small>Son bir yılda toplam ${r.bbn} bildirim; en yeni 6'sı gösteriliyor.</small>` : ''}<small>Şirketin kendi payını piyasadan alması, yönetimin fiyatı düşük bulduğuna işaret edebilir; tek başına bir değerleme sinyali değildir. Kayıtlar ${since ? esc(since.split('-').reverse().join('.')) + ' tarihinden' : 'toplama başladığından'} bu yana KAP bildirimlerinden derleniyor; sermaye oranı bildirim metninden okunur, metinde yoksa boş kalır.</small></div>`;
+}
+
+// --- Insider trades, comparison, views --------------------------------------------
+const daysAgo = n => new Date(Date.now() - n * 864e5).toISOString().slice(0, 10);
+function insiderNet(r, days = 30) {
+  const from = daysAgo(days);
+  return (r.ins || []).filter(x => x.date >= from).reduce((t, x) => t + (x.buy || 0) - (x.sell || 0), 0);
+}
+const insiderBuy = r => insiderNet(r) > 0;
+function insiderHtml(r) {
+  if (!r.ins?.length) return '';
+  const net = insiderNet(r), p = livePrice(r)?.p ?? r.px;
+  const line = x => {
+    const side = (x.buy || 0) > (x.sell || 0) ? `<span class="up">alış ${N0.format(x.buy)}</span>` : `<span class="down">satış ${N0.format(x.sell)}</span>`;
+    const who = [x.who, x.role].filter(Boolean).join(', ');
+    return `<li><span class="num">${esc(new Date(x.date).toLocaleDateString('tr-TR'))}</span> · ${who ? esc(who) + ' · ' : ''}${side} adet${has(x.price) ? ` · ${N2.format(x.price)} TL` : ''}${has(x.endPct) ? ` · payı %${N2.format(x.endPct)}` : ''}${x.off ? ' · borsa dışı' : ''} <a href="${esc(x.url)}" target="_blank" rel="noreferrer">KAP ↗</a>${!who && x.text ? `<details><summary class="dash">Bildirim metni</summary><small style="display:block">${esc(x.text)}…</small></details>` : ''}</li>`;
+  };
+  return `<div class="risk soft" style="border-color:${net > 0 ? 'var(--good)' : net < 0 ? 'var(--bad)' : 'var(--line)'}"><b style="color:${net > 0 ? 'var(--good)' : net < 0 ? 'var(--bad)' : 'var(--ink2)'}">Yönetici ve hakim ortak işlemleri</b><p style="margin:2px 0 6px">Son 30 günde net ${net > 0 ? `<b class="up">${N0.format(net)} adet alış</b>` : net < 0 ? `<b class="down">${N0.format(-net)} adet satış</b>` : 'işlem yok'}${net && has(p) ? ` (bugünkü fiyatla yaklaşık ${N1.format(Math.abs(net) * p / 1e6)} mn TL)` : ''}.</p><ul>${r.ins.slice(0, 8).map(line).join('')}</ul>${r.insN > 8 ? `<small>Toplam ${r.insN} işlem satırı; en yeni 8'i gösteriliyor.</small>` : ''}<small>KAP "Pay Alım Satım Bildirimi" kayıtlarından; adet nominal TL'dir. Bir şirketin başka bir şirketin paylarındaki işlemi, payı alınan şirkette gösterilir.</small></div>`;
+}
+let CMP = store.get('mercek.compare', []);
+function toggleCompare(code) {
+  CMP = CMP.includes(code) ? CMP.filter(c => c !== code) : [...CMP, code].slice(-3);
+  store.set('mercek.compare', CMP);
+  document.querySelectorAll(`.cmp-add[data-cmp]`).forEach(b => b.setAttribute('aria-pressed', CMP.includes(b.dataset.cmp)));
+  $('cmpCount').textContent = CMP.length ? `(${CMP.length})` : '';
+}
+const codeBtns = list => list.length ? `<div class="codes">${list.map(c => `<button type="button" data-open="${esc(c)}">${esc(c)}</button>`).join('')}</div>` : '<span class="dash">yok</span>';
+const pctCell = v => has(v) ? `<span class="num ${v >= 0 ? 'up' : 'down'}">${v >= 0 ? '+' : ''}${N1.format(v)}%</span>` : DASH;
+
+function renderFeed() {
+  const S = DATA.meta.summary, f = S?.facts;
+  let html = '<h2>Akış</h2>';
+  if (f) {
+    html += `<p class="note">${esc(new Date(f.date).toLocaleDateString('tr-TR'))} kapanışına göre. Son 7 günün olayları.</p>`;
+    if (S.text) { const box = document.createElement('div'); renderMd(box, S.text); html += `<div class="ai-text">${box.innerHTML}</div><p class="ai-foot">Yapay zekâ özeti · ${esc((S.model || '').replace(':free', ''))} · yalnızca aşağıdaki verilerden yazıldı; yatırım tavsiyesi değildir.</p>`; }
+    html += `<div class="cards">
+      <div class="card"><h4>Piyasa genişliği</h4><p class="num">${f.breadth.up} yükselen · ${f.breadth.down} düşen · ${f.breadth.flat} yatay</p><p class="note" style="margin:0">Ortanca günlük değişim %${N2.format(f.breadth.median)}</p></div>
+      <div class="card"><h4>En çok yükselenler</h4>${codeBtns(f.gainers.map(x => x.c))}</div>
+      <div class="card"><h4>En çok düşenler</h4>${codeBtns(f.losers.map(x => x.c))}</div>
+      <div class="card"><h4>Geri alım (7 gün)</h4><p class="num">${f.buybacks.companies} şirket · ${f.buybacks.notices} bildirim</p></div>
+      <div class="card"><h4>Fonlardan alım (7 gün)</h4>${codeBtns(f.fundPurchases)}</div>
+      <div class="card"><h4>Patron net alımı (7 gün)</h4>${codeBtns(f.insiderBuyers)}</div>
+      <div class="card"><h4>Patron net satışı (7 gün)</h4>${codeBtns(f.insiderSellers)}</div>
+      <div class="card"><h4>Yukarı CHoCH (7 gün)</h4>${codeBtns(f.choch.up)}</div>
+      <div class="card"><h4>Aşağı CHoCH (7 gün)</h4>${codeBtns(f.choch.down)}</div>
+    </div>`;
+  }
+  // Event list from the company data
+  const from = daysAgo(7), ev = [];
+  for (const r of rows) {
+    for (const x of r.bb || []) if (x.d.slice(0, 10) >= from) ev.push([x.d.slice(0, 10), r.c, pill('', 'Geri alım'), `${esc(x.s)}${has(x.r) ? ` · toplam %${N2.format(x.r)}` : ''}`, x.u]);
+    for (const x of r.ft || []) if (x.kind === 'purchase' && x.date.slice(0, 10) >= from) ev.push([x.date.slice(0, 10), r.c, pill('good', 'Fondan alım'), has(x.price) ? `${N2.format(x.price)} TL` : '', x.url]);
+    for (const x of r.ins || []) if (x.date >= from) ev.push([x.date, r.c, pill((x.buy || 0) >= (x.sell || 0) ? 'good' : 'bad', (x.buy || 0) >= (x.sell || 0) ? 'Patron alışı' : 'Patron satışı'), `${esc(x.who || '')} ${N0.format(Math.max(x.buy || 0, x.sell || 0))} adet`, x.url]);
+  }
+  ev.sort((a, b) => b[0].localeCompare(a[0]) || a[1].localeCompare(b[1]));
+  html += `<h3>Son 7 günün bildirimleri <span class="dash" style="font-size:13px">(${ev.length})</span></h3><div class="scroll"><table class="ledger"><thead><tr><th class="l">Tarih</th><th class="l">Hisse</th><th class="l">Olay</th><th class="l">Ayrıntı</th><th></th></tr></thead><tbody>${ev.slice(0, 300).map(e => `<tr><td class="l num">${esc(new Date(e[0]).toLocaleDateString('tr-TR'))}</td><td class="l"><button class="cmp-add" type="button" data-open="${esc(e[1])}">${esc(e[1])}</button></td><td class="l">${e[2]}</td><td class="l wrap">${e[3]}</td><td><a href="${esc(e[4])}" target="_blank" rel="noreferrer">KAP ↗</a></td></tr>`).join('')}</tbody></table></div>`;
+  // Performance after events
+  const perf = [];
+  for (const r of rows) {
+    const p = livePrice(r)?.p ?? r.px;
+    for (const x of r.ft || []) if (x.kind === 'purchase' && has(x.price) && has(p) && !x.via) perf.push(['Fondan alım', r.c, x.date.slice(0, 10), x.price, p]);
+    if (r.bbFrom && has(p) && recentBuyback(r)) perf.push(['Geri alım başlangıcı', r.c, r.bbFrom.d, r.bbFrom.p, p]);
+  }
+  const avg = kind => { const v = perf.filter(x => x[0] === kind).map(x => (x[4] / x[3] - 1) * 100); return v.length ? [v.length, v.reduce((a, b) => a + b, 0) / v.length, v.filter(y => y > 0).length] : null; };
+  const fa = avg('Fondan alım'), ba = avg('Geri alım başlangıcı');
+  html += `<h3>Olaydan bu yana fiyat</h3><div class="cards">${fa ? `<div class="card"><h4>Fondan alım yapanlar</h4><p class="num">${fa[0]} işlem · ortalama ${pctCell(fa[1])} · ${fa[2]} tanesinde fiyat alımın üstünde</p></div>` : ''}${ba ? `<div class="card"><h4>Geri alım yapanlar (son bir ay)</h4><p class="num">${ba[0]} şirket · ortalama ${pctCell(ba[1])} · ${ba[2]} tanesinde fiyat ilk geri alım haftasının üstünde</p></div>` : ''}</div>
+    <div class="scroll" style="margin-top:10px"><table class="ledger"><thead><tr><th class="l">Olay</th><th class="l">Hisse</th><th class="l">Tarih</th><th>O günkü fiyat</th><th>Son fiyat</th><th>Değişim</th></tr></thead><tbody>${perf.sort((a, b) => (b[4] / b[3]) - (a[4] / a[3])).map(x => `<tr><td class="l">${x[0]}</td><td class="l"><button class="cmp-add" type="button" data-open="${esc(x[1])}">${esc(x[1])}</button></td><td class="l num">${esc(new Date(x[2]).toLocaleDateString('tr-TR'))}</td><td class="num">${N2.format(x[3])}</td><td class="num">${N2.format(x[4])}</td><td>${pctCell((x[4] / x[3] - 1) * 100)}</td></tr>`).join('')}</tbody></table></div>
+    <p class="note">Fondan alımda alım fiyatı bildirimden, geri alımda başlangıç fiyatı ilk bildirimin olduğu haftanın kapanışıdır. Temettü ve enflasyon etkisi dahil değil; geçmiş fiyat hareketi gelecek için bir gösterge değildir.</p>`;
+  $('viewFeed').innerHTML = html;
+}
+
+function renderSectors() {
+  const groups = {};
+  for (const r of rows) if (r.s) (groups[r.s] ||= []).push(r);
+  const med = a => { const v = a.filter(has).sort((x, y) => x - y); return v.length ? (v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : null; };
+  const list = Object.entries(groups).map(([s, g]) => ({
+    s, n: g.length,
+    chg: med(g.map(r => livePrice(r)?.chg ?? null)),
+    usd: med(g.map(r => has(r.perf?.usd) ? r.perf.usd * 100 : null)),
+    pe: med(g.map(r => has(r.pe) && r.pe > 0 ? r.pe : null)),
+    pb: med(g.map(r => has(r.pb) && r.pb > 0 ? r.pb : null)),
+    upPct: g.filter(r => r.smc).length ? g.filter(r => r.smc?.trend === 1).length / g.filter(r => r.smc).length * 100 : null,
+    bb: g.filter(recentBuyback).length, ins: g.filter(insiderBuy).length, cand: g.filter(fundCandidate).length,
+    best: [...g].filter(r => livePrice(r)).sort((a, b) => livePrice(b).chg - livePrice(a).chg).slice(0, 3).map(r => r.c),
+  })).sort((a, b) => b.n - a.n);
+  const head = ['Sektör', 'Şirket', 'Günlük (ortanca)', '1 yıl $ (ortanca)', 'F/K', 'PD/DD', 'Yükseliş yapısı', 'Geri alım', 'Patron alımı', 'Aday', 'Günün en iyileri'];
+  $('viewSectors').innerHTML = `<h2>Sektörler</h2><p class="note">Ortanca değerler; çarpanlarda yalnızca pozitif değerler sayılır. Sektör adına tıklayınca liste o sektöre süzülür.</p>
+    <div class="scroll"><table class="ledger"><thead><tr>${head.map((h, i) => `<th${i === 0 || i === 10 ? ' class="l"' : ''}>${h}</th>`).join('')}</tr></thead><tbody>${list.map(x => `<tr><td class="l"><button class="cmp-add" type="button" data-sector="${esc(x.s)}">${esc(x.s)}</button></td><td class="num">${x.n}</td><td>${pctCell(x.chg)}</td><td>${pctCell(x.usd)}</td><td>${ratio(x.pe)}</td><td>${ratio(x.pb)}</td><td>${has(x.upPct) ? `<span class="num">%${N0.format(x.upPct)}</span>` : DASH}</td><td class="num">${x.bb || ''}</td><td class="num">${x.ins || ''}</td><td class="num">${x.cand || ''}</td><td class="l">${codeBtns(x.best)}</td></tr>`).join('')}</tbody></table></div>`;
+}
+
+const CMP_COLORS = ['var(--pos)', 'var(--neg)', '#7a5cd6'];
+function renderCompare() {
+  const list = CMP.map(c => rows.find(r => r.c === c)).filter(Boolean);
+  let html = `<h2>Karşılaştır</h2><form class="alarm" id="cmpForm"><label for="cmpInput">Hisse ekle</label><input id="cmpInput" list="cmpCodes" placeholder="Kod" autocomplete="off"><datalist id="cmpCodes">${rows.map(r => `<option value="${esc(r.c)}">`).join('')}</datalist><button class="primary" type="submit">Ekle</button><span class="note" style="margin:0">En fazla 3 hisse. Şirket dosyasındaki "Karşılaştır" düğmesiyle de eklenir.</span></form>`;
+  if (!list.length) { $('viewCompare').innerHTML = html + '<p class="note">Henüz hisse seçilmedi.</p>'; return; }
+  const v = r => r.sc?.val || {};
+  const metrics = [
+    ['Fiyat', r => livePrice(r)?.p ?? r.px, x => N2.format(x)], ['Günlük', r => livePrice(r)?.chg, x => pctCell(x)],
+    ['Piyasa değeri', r => r.mc, money], ['F/K', r => r.pe, x => N1.format(x)], ['PD/DD', r => r.pb, x => N1.format(x)],
+    ['1 yıl getiri (TL)', r => has(r.perf?.tl) ? r.perf.tl * 100 : null, x => pctCell(x)], ['1 yıl getiri ($)', r => has(r.perf?.usd) ? r.perf.usd * 100 : null, x => pctCell(x)],
+    ["1 yıl BIST 100'e göre", r => has(r.perf?.rel) ? r.perf.rel * 100 : null, x => pctCell(x)], ['Zirveden', r => drawdown(r), x => pctCell(x)],
+    ['2026/9 hasılat', r => r.d.rev, money], ['2026/9 net kâr', r => r.d.ni, money],
+    ['Piotroski F', r => r.sc?.f?.n === 9 ? r.sc.f.score : null, x => x + '/9'], ["Altman Z''", r => r.sc?.z?.z, x => N2.format(x)],
+    ['Net borç / FAVÖK', r => r.sc?.lev?.ratio, x => N2.format(x) + '×'], ['Özkaynak kârlılığı', r => r.sc?.dupont?.roe ?? r.sc?.bank?.roe ?? r.sc?.fin?.roe, x => pct100(x)],
+    ['SMC yapısı', r => r.smc?.trend || null, x => x === 1 ? '▲ Yükseliş' : '▼ Düşüş'], ['SMC bölgesi', r => r.smc?.zone || null, x => ({ premium: 'Premium', discount: 'İndirim', eq: 'Denge' })[x]],
+    ['Geri alım / sermaye', r => recentBuyback(r) ? r.bbr ?? null : null, x => '%' + N2.format(x)], ['Fonlardaki pay', r => r.fh?.capital, x => '%' + N1.format(x)],
+    ['Patron net (30 gün, adet)', r => r.ins ? insiderNet(r) : null, x => `<span class="${x >= 0 ? 'up' : 'down'}">${N0.format(x)}</span>`],
+  ];
+  html += `<div class="scroll" style="margin-top:12px"><table class="ledger"><thead><tr><th class="l">Ölçü</th>${list.map((r, i) => `<th><span class="legend-dot" style="background:${CMP_COLORS[i]}"></span>${esc(r.c)} <button class="cmp-add" type="button" data-cmp="${esc(r.c)}" aria-pressed="true" title="Çıkar">×</button></th>`).join('')}</tr></thead><tbody>${metrics.map(([label, get, fmt]) => `<tr><td class="l">${label}</td>${list.map(r => { const x = get(r); return `<td>${x !== null && x !== undefined && x !== '' && !(typeof x === 'number' && !isFinite(x)) ? `<span class="num">${fmt(x)}</span>` : DASH}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div><h3>Fiyat, son 5 yıl (başlangıç = 100)</h3><div id="cmpChart" class="price"><p class="note">Yükleniyor…</p></div>`;
+  $('viewCompare').innerHTML = html;
+  Promise.all(list.map(r => priceCache[r.c] || (priceCache[r.c] = fetch(`prices/${r.c}.json`).then(x => x.ok ? x.json() : null).catch(() => null)))).then(series => {
+    const ok = series.map((p, i) => [p, i]).filter(([p]) => p && p.d.length > 1);
+    if (!ok.length || !$('cmpChart')) return;
+    const start = Math.max(...ok.map(([p]) => p.d[0])), end = Math.min(...ok.map(([p]) => p.d[p.d.length - 1]));
+    const lines = ok.map(([p, i]) => { const pts = []; const base = lookup(p, start); p.d.forEach((d, k) => { if (d >= start && d <= end && base) pts.push([d, p.c[k] / base * 100]); }); return [pts, i]; });
+    const all = lines.flatMap(([pts]) => pts.map(x => x[1])), hi = Math.max(...all) * 1.05, lo = Math.min(...all) * 0.95;
+    const W = 720, H = 240, L = 46, R = 10, T = 10, B = 22, X = d => L + (d - start) / ((end - start) || 1) * (W - L - R), Y = v => T + (hi - v) / ((hi - lo) || 1) * (H - T - B);
+    let g = '';
+    for (const v of [lo + (hi - lo) * 0.1, (hi + lo) / 2, hi - (hi - lo) * 0.1]) g += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"></line><text x="${L - 6}" y="${Y(v) + 3.5}" text-anchor="end">${N0.format(v)}</text>`;
+    for (let yr = new Date(start * 864e5).getUTCFullYear() + 1; yr <= new Date(end * 864e5).getUTCFullYear(); yr++) { const dd = Date.UTC(yr, 0, 1) / 864e5; g += `<text x="${X(dd)}" y="${H - 6}" text-anchor="middle">${yr}</text>`; }
+    for (const [pts, i] of lines) g += `<path d="M${pts.map(([d, v]) => `${X(d).toFixed(1)},${Y(v).toFixed(1)}`).join('L')}" fill="none" stroke="${CMP_COLORS[i]}" stroke-width="2"></path>`;
+    $('cmpChart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Karşılaştırmalı fiyat grafiği">${g}</svg><p class="note">Haftalık kapanış, ortak başlangıç tarihinden itibaren 100'e endeksli; TL, temettü hariç.</p>`;
+  });
+}
+function showView(v) {
+  state.view = v;
+  document.querySelectorAll('.views button').forEach(b => b.setAttribute('aria-selected', b.dataset.view === v));
+  $('viewList').hidden = v !== 'list'; $('viewFeed').hidden = v !== 'feed'; $('viewSectors').hidden = v !== 'sectors'; $('viewCompare').hidden = v !== 'compare';
+  if (v === 'feed') renderFeed(); if (v === 'sectors') renderSectors(); if (v === 'compare') renderCompare();
+}
+function openCode(code) {
+  const r = rows.find(x => x.c === code); if (!r) return;
+  showView('list'); select(r);
 }
 
 const WATCH = 'YAKIN İZLEME PAZARI';
@@ -336,6 +495,7 @@ const SCREENS = [
   ['bb', 'Geri alım (son 1 ay)', recentBuyback],
   ['fund', 'Fondan borsa dışı alım', fundBuy],
   ['cand', 'Olası fon geri alımı adayı', fundCandidate],
+  ['ins', 'Patron net alımı (30 gün)', insiderBuy],
   ['bbdd', 'Geri alım + zirveden %30+ düşmüş', r => recentBuyback(r) && has(drawdown(r)) && drawdown(r) <= -30],
   ['beat', '1 yılda BIST 100\'ü geçen', r => has(r.perf?.rel) && r.perf.rel > 0],
   ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
@@ -425,7 +585,7 @@ function renderRegister() {
   const head = COLS.map(([k, label, cls, get]) =>
     `<th class="${cls}" data-k="${k}"${get ? ' tabindex="0"' : ''}${state.sort === k ? ` aria-sort="${state.dir < 0 ? 'descending' : 'ascending'}"` : ''}>${label}${state.sort === k ? (state.dir < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('');
   const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
-    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son bir ayda pay geri alımı">geri alım</span>' : ''}${fundBuy(r) ? '<span class="flag bb" title="Fon tasfiyesinden borsa dışı alım">fondan alım</span>' : ''}${fundCandidate(r) ? '<span class="flag" title="Tasfiyedeki fonlarda payı var, alım bildirimi yok">aday</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
+    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son bir ayda pay geri alımı">geri alım</span>' : ''}${fundBuy(r) ? '<span class="flag bb" title="Fon tasfiyesinden borsa dışı alım">fondan alım</span>' : ''}${fundCandidate(r) ? '<span class="flag" title="Tasfiyedeki fonlarda payı var, alım bildirimi yok">aday</span>' : ''}${insiderBuy(r) ? '<span class="flag bb" title="Son 30 günde yönetici/hakim ortak net alımı">patron alımı</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
     <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
     <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${recentBuyback(r) && has(r.bbr) ? `<span class="num">%${N2.format(r.bbr)}</span>` : recentBuyback(r) ? '<span class="dash">var</span>' : DASH}</td><td class="hide-s hide-m">${has(r.fh?.capital) ? `<span class="num">%${N1.format(r.fh.capital)}</span>` : DASH}</td><td class="hide-s">${has(drawdown(r)) ? `<span class="num${drawdown(r) <= -30 ? ' neg' : ''}">%${N0.format(drawdown(r))}</span>` : DASH}</td><td class="hide-s hide-m">${has(r.perf?.usd) ? `<span class="num ${r.perf.usd >= 0 ? 'up' : 'down'}">%${N0.format(r.perf.usd * 100)}</span>` : DASH}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
     <td class="hide-s hide-m">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
@@ -491,10 +651,10 @@ function renderFile(r) {
   const lp = livePrice(r);
   const quote = [[lp ? 'Fiyat · 15 dk gecikmeli' : 'Fiyat · son kapanış', lp ? `${N2.format(lp.p)} TL <small class="${lp.chg >= 0 ? 'up' : 'down'}">${lp.chg >= 0 ? '▲' : '▼'} %${N2.format(Math.abs(lp.chg))} · ${esc(lp.time)}</small>` : has(r.px) ? N2.format(r.px) + ' TL' : null], ['Piyasa değeri', has(r.mc) ? money(r.mc) + ' TL' : null], ['F/K', has(r.pe) ? N1.format(r.pe) : null], ['PD/DD', has(r.pb) ? N1.format(r.pb) : null], ['Yılbaşından beri', has(r.ytd) ? pct(r.ytd) : null]]
     .map(([k, v]) => `<div><span>${k}</span><b>${v ?? '—'}</b></div>`).join('');
-  let html = `<div class="file-head"><div><h2>${starBtn(r.c)}${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
+  let html = `<div class="file-head"><div><h2>${starBtn(r.c)}${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><button class="cmp-add" type="button" data-cmp="${esc(r.c)}" aria-pressed="${CMP.includes(r.c)}">Karşılaştır</button><button class="back" id="back" type="button">← Listeye dön</button></div></div>
     <div class="quote">${quote}</div><p class="note">${lp ? `Gecikmeli fiyat Yahoo Finance'ten alınır ve son resmî kapanışa (${N2.format(r.px)} TL) göre değişimi gösterir. ` : ''}Piyasa değeri ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
-  html += riskHtml(r) + fundHtml(r) + holdingHtml(r) + buybackHtml(r);
+  html += riskHtml(r) + fundHtml(r) + holdingHtml(r) + insiderHtml(r) + buybackHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button><button class="tab" type="button" role="tab" data-tab="smc">Smart money</button></div>`;
   html = '';
 
@@ -897,9 +1057,20 @@ $('register').addEventListener('click', e => {
 });
 $('register').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { const t = e.target.closest('tr[data-c], th[data-k]'); if (t) { e.preventDefault(); t.click(); } } });
 document.addEventListener('click', e => {
+  const vb = e.target.closest('.views button'); if (vb) { showView(vb.dataset.view); return; }
+  const op = e.target.closest('[data-open]'); if (op) { openCode(op.dataset.open); return; }
+  const cm = e.target.closest('[data-cmp]'); if (cm) { toggleCompare(cm.dataset.cmp); if (state.view === 'compare') renderCompare(); return; }
+  const sb = e.target.closest('[data-sector]'); if (sb) { state.sector = sb.dataset.sector; $('sector').value = state.sector; showView('list'); renderRegister(); return; }
   const st = e.target.closest('.star');
   if (st) { e.stopPropagation(); toggleWatch(st.dataset.w); }
 }, true);
+document.addEventListener('submit', e => {
+  if (e.target.id !== 'cmpForm') return;
+  e.preventDefault();
+  const code = String($('cmpInput').value || '').trim().toUpperCase();
+  if (rows.some(r => r.c === code) && !CMP.includes(code)) toggleCompare(code);
+  renderCompare();
+});
 $('file').addEventListener('submit', e => {
   if (e.target.id !== 'alarmForm' || !selected) return;
   e.preventDefault();
@@ -958,6 +1129,7 @@ Promise.all([fetch('data.json').then(r => { if (!r.ok) throw new Error(r.status)
   const m = data.meta;
   $('foot').textContent = `Kaynaklar: ihraççı listesi KAP (${m.universeDate}); 2026/9 özetleri KAP; geçmiş tablolar ve fiyatlar İş Yatırım (toplama ${new Date(m.collectedAt).toLocaleDateString('tr-TR')}). KAP ile İş Yatırım ayrıştığında şirket "uyarı" ile işaretlenir. Eksik veri boş bırakılır, tahmin edilmez. Bu sayfa bilgi amaçlıdır; yatırım tavsiyesi değildir.`;
   renderRegister();
+  $('cmpCount').textContent = CMP.length ? `(${CMP.length})` : '';
   loadLive();
   setInterval(loadLive, 5 * 60 * 1000);
   if (location.hash.length > 1) fromHash();

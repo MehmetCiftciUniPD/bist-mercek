@@ -33,7 +33,8 @@ SUBJECT_OID = '4028328d6233239a01629b43e4694fae'   # Payların Geri Alınmasına
 PROGRAM = re.compile(r'geri\s*al(ım|ınma)\s*program', re.I)
 ISTANBUL = timezone(timedelta(hours=3))
 HEADERS = {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json', 'Referer': 'https://www.kap.org.tr/tr/bildirim-sorgu'}
-PER_COMPANY = 3
+CAP = re.compile(r'(?:azami|en\s+fazla|üst\s+sınır\w*|maksimum)[^.]{0,80}?([0-9][0-9.]*(?:,[0-9]+)?)\s*(?:adet|TL\s+nominal|lot)', re.I)
+CACHE = None
 
 
 def search(start, end):
@@ -60,17 +61,23 @@ RATIO = [
 
 
 def ratio_of(index):
-    """Cumulative share of capital bought back, in percent, or None."""
-    request = Request(NOTICE.format(index), headers={'User-Agent': 'Mozilla/5.0'})
-    for attempt in range(3):
-        try:
-            with urlopen(request, timeout=30) as response:
-                raw = response.read().decode('utf-8', 'replace')
-            break
-        except OSError:
-            if attempt == 2:
-                return None, False
-            time.sleep(2 * (attempt + 1))
+    """(cumulative share of capital bought back %, programme ceiling in shares, read ok)."""
+    cached = CACHE / f'{index}.html' if CACHE else None
+    if cached and cached.exists():
+        raw = cached.read_text()
+    else:
+        request = Request(NOTICE.format(index), headers={'User-Agent': 'Mozilla/5.0'})
+        for attempt in range(3):
+            try:
+                with urlopen(request, timeout=30) as response:
+                    raw = response.read().decode('utf-8', 'replace')
+                break
+            except OSError:
+                if attempt == 2:
+                    return None, None, False
+                time.sleep(2 * (attempt + 1))
+        if cached:
+            cached.write_text(raw)
     text = raw.replace('\\u003c', '<').replace('\\u003e', '>').replace('\\"', '"')
     text = html.unescape(re.sub(r'<[^>]+>', ' ', text))
     text = ' '.join(text.split())
@@ -83,8 +90,10 @@ def ratio_of(index):
                 found.append(value)
         if found:
             break
+    cap = CAP.search(text[text.find('Gönderim Tarihi'):] if 'Gönderim Tarihi' in text else text)
+    cap_value = float(cap.group(1).replace('.', '').replace(',', '.')) if cap else None
     # The cumulative total is the largest share named in the notice.
-    return (max(found) if found else None), True
+    return (max(found) if found else None), cap_value, True
 
 
 def key(name):
@@ -96,7 +105,12 @@ def key(name):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--days', type=int, default=35)
+    parser.add_argument('--cache', type=Path, help='Keep downloaded notice pages here')
     args = parser.parse_args()
+    global CACHE
+    if args.cache:
+        args.cache.mkdir(parents=True, exist_ok=True)
+        CACHE = args.cache
     universe = json.loads((DATA / 'kap-universe.json').read_text())['companies']
     known = {c for i in universe for c in i['codes']}
     names = {key(c['name']): c['codes'] for c in universe}
@@ -131,19 +145,14 @@ def main():
     cutoff = (today - timedelta(days=365)).strftime('%Y-%m-%d')
     items = {k: v for k, v in items.items() if v['date'] >= cutoff}
 
-    # Read the share of capital from the newest notices of each company.
-    todo, per = [], {}
-    for index, item in sorted(items.items(), key=lambda kv: kv[1]['date'], reverse=True):
-        if item['kind'] != 'islem':
-            continue
-        code = item['codes'][0]
-        per[code] = per.get(code, 0) + 1
-        if per[code] <= PER_COMPANY and 'ratio' not in item:
-            todo.append(index)
+    # Every notice is opened once for the share of capital and the programme ceiling.
+    todo = [i for i, item in items.items() if item['kind'] == 'islem' and 'ratio' not in item]
     with ThreadPoolExecutor(max_workers=4) as pool:
-        for index, (value, ok) in zip(todo, pool.map(ratio_of, todo)):
+        for index, (value, cap, ok) in zip(todo, pool.map(ratio_of, todo)):
             if ok:
                 items[index]['ratio'] = value
+                if cap:
+                    items[index]['cap'] = cap
     OUT.write_text(json.dumps({'source': SEARCH, 'since': min(v['date'] for v in items.values())[:10] if items else None,
                                'items': dict(sorted(items.items()))}, ensure_ascii=False, indent=1) + '\n')
     parsed = sum(1 for i in todo if items[i].get('ratio') is not None)

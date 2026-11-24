@@ -57,6 +57,12 @@ jobs:
         if: github.event.schedule != '*/15 7-15 * * 1-5'
         continue-on-error: true
         run: python research/fund-holdings.py
+      - name: Yönetici ve hakim ortak işlemlerini topla
+        if: github.event.schedule != '*/15 7-15 * * 1-5'
+        continue-on-error: true
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null || true
+          python research/insider-trades.py --days 7
       - name: Fondan borsa dışı alımları topla
         if: github.event.schedule != '*/15 7-15 * * 1-5'
         continue-on-error: true
@@ -64,6 +70,12 @@ jobs:
       - name: Geri alım bildirimlerini topla
         continue-on-error: true
         run: python research/buybacks.py --days ${{ github.event.schedule == '*/15 7-15 * * 1-5' && 7 || 35 }}
+      - name: Günlük özeti yaz
+        if: github.event.schedule == '40 16 * * 1-5' || github.event.schedule == '23 2 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python research/daily-summary.py
       - name: Gecikmeli fiyatları al
         continue-on-error: true
         run: python research/live.py
@@ -72,7 +84,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Update market data"
             git push origin HEAD:main

@@ -2,6 +2,27 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-24 · Claude Code · insiders, feed, sectors, compare, daily summary
+
+- `research/insider-trades.py` writes `data/insider-trades.json` from every
+  "Pay Alım Satım Bildirimi": company-filed notices (table read from the page)
+  and insiders' own MKK notices (filed as "KAMUYU AYDINLATMA PLATFORMU"; the
+  details are in a PDF attachment downloaded from KAP's file endpoint and read
+  with `pdftotext`, installed in the workflow). Fund managers' notices are left
+  out. A parent's trades in another listed company go to that company
+  (`targets`). The site removes trades reported twice (insider + company).
+- `buybacks.py` now opens every buyback notice once and also reads the
+  programme ceiling ("azami ... adet"); the site shows usage only where a
+  company's ratios rise over time (cumulative), otherwise it warns that the
+  ratio may be daily.
+- `research/daily-summary.py` writes `data/daily-summary.json`: breadth, top
+  movers, buybacks, fund purchases, insider net buyers/sellers, CHoCH events,
+  plus a free-model comment when OPENROUTER_API_KEY is set.
+- Site: new views "Akış" (summary, 7-day events, price since fund purchases and
+  buyback starts), "Sektörler" (medians per sector) and "Karşılaştır" (up to 3
+  issuers, metrics table and rebased price chart; stored in the visitor's
+  browser). New filter "Patron net alımı (30 gün)".
+
 ## 2026-11-24 · Claude Code · fund holdings and buyback candidates
 
 - `research/fund-holdings.py` reads Fonoloji's public "SPK tasfiye" page into

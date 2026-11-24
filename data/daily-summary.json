@@ -1,0 +1,92 @@
+{
+ "generatedAt": "2026-11-24T17:28+03:00",
+ "facts": {
+  "date": "2026-11-23",
+  "breadth": {
+   "up": 156,
+   "down": 450,
+   "flat": 23,
+   "median": -1.38
+  },
+  "gainers": [
+   {
+    "c": "IHLGM",
+    "r": 10.0
+   },
+   {
+    "c": "DOGUB",
+    "r": 9.99
+   },
+   {
+    "c": "MCARD",
+    "r": 9.98
+   },
+   {
+    "c": "MAGEN",
+    "r": 9.96
+   },
+   {
+    "c": "CRFSA",
+    "r": 9.96
+   }
+  ],
+  "losers": [
+   {
+    "c": "OZRDN",
+    "r": -10.0
+   },
+   {
+    "c": "TKNKA",
+    "r": -10.0
+   },
+   {
+    "c": "GRTHO",
+    "r": -9.99
+   },
+   {
+    "c": "KGYO",
+    "r": -9.99
+   },
+   {
+    "c": "LYDYE",
+    "r": -9.99
+   }
+  ],
+  "buybacks": {
+   "notices": 206,
+   "companies": 73
+  },
+  "fundPurchases": [
+   "MCARD"
+  ],
+  "insiderBuyers": [
+   "EFOR",
+   "IZMDC",
+   "MHRGY",
+   "BALSU",
+   "ENKAI",
+   "KOCMT",
+   "KRPLS",
+   "ENTRA"
+  ],
+  "insiderSellers": [
+   "MAGEN",
+   "LYDHO",
+   "TRMET"
+  ],
+  "choch": {
+   "up": [
+    "CGCAM",
+    "GUNDG",
+    "LIDER"
+   ],
+   "down": [
+    "AYGAZ",
+    "GMTAS",
+    "INDES"
+   ]
+  }
+ },
+ "text": null,
+ "model": null
+}
