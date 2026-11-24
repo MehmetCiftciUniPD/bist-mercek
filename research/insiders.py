@@ -25,6 +25,7 @@ import html
 import json
 import re
 import time
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -134,8 +135,13 @@ def number(text):
 PURCHASE = re.compile(r'virman|borsa\s*dışı\w*\s+(?:yoluyla|olarak|işlem)|borsa\s+İstanbul\s+dışında|geri\s+alın\w*|geri\s+alım\w*\s+gerçekleş|satın\s+alın\w*|devral\w*|özel\s+işlem\s+bildirimi|(?:tarafımızdan|şirketimizce|şirketimiz\s+tarafından)[\s\S]{0,120}?(?:pay|hisse|lot)\w*[\s\S]{0,80}?alın\w*|(?:pay|hisse|lot)\w*[\s\S]{0,120}?(?:tarafımızdan|şirketimizce)[\s\S]{0,80}?alın\w*', re.I)
 
 
+FUNDISH = re.compile(r'\bfon|tasfiye|TMSF|tasarruf\s+mevduatı|7596', re.I)
+TENDER = re.compile(r'zorunlu\s+pay\s+alım\s+teklif', re.I)
+
+
 def details(text):
-    out = {'kind': 'purchase' if PURCHASE.search(text) else 'statement'}
+    purchase = PURCHASE.search(text) and FUNDISH.search(text) and not TENDER.search(text)
+    out = {'kind': 'purchase' if purchase else 'statement'}
     if m := re.search(r'pay\s+başına\s+([0-9][0-9.]*(?:,[0-9]+)?)\s*TL', text, re.I):
         out['price'] = number(m.group(1))
     if 'price' in out:
@@ -149,6 +155,9 @@ def details(text):
         out['amount'] = number(m.group(1))
     if m := re.search(r'([0-9]{1,3}(?:\.[0-9]{3})+(?:,[0-9]+)?|[0-9]{4,}(?:,[0-9]+)?)\s*(?:adet|lot)', text, re.I):
         out['shares'] = number(m.group(1))
+    elif m := re.search(r'([0-9]{1,3}(?:\.[0-9]{3})+(?:,[0-9]+)?)\s*TL\s*nominal|nominal\s+(?:değeri\s+)?([0-9]{1,3}(?:\.[0-9]{3})+(?:,[0-9]+)?)\s*TL', text, re.I):
+        # Nominal value in TL; BIST shares have a 1 TL nominal value.
+        out['shares'] = number(m.group(1) or m.group(2))
     if m := re.search(r'sermaye\w*[^%]{0,60}?%\s*([0-9]+(?:,[0-9]+)?)', text, re.I):
         value = number(m.group(1))
         if value is not None and 0 < value <= 100:
@@ -161,6 +170,14 @@ def details(text):
     out['fund'] = bool(re.search(r'tasfiye|fon', text, re.I))
     out['offExchange'] = bool(re.search(r'borsa\s*dışı', text, re.I))
     return out
+
+
+def fold(name):
+    name = unicodedata.normalize('NFKD', name.replace('İ', 'I').replace('ı', 'i').upper())
+    return re.sub(r'[^A-Z0-9]', '', ''.join(ch for ch in name if not unicodedata.combining(ch)))
+
+
+NAMES = {}
 
 
 def stamp(text):
@@ -177,7 +194,10 @@ def main():
     if args.cache:
         args.cache.mkdir(parents=True, exist_ok=True)
         CACHE = args.cache
-    known = {c for i in json.loads((DATA / 'kap-universe.json').read_text())['companies'] for c in i['codes']}
+    universe = json.loads((DATA / 'kap-universe.json').read_text())['companies']
+    known = {c for i in universe for c in i['codes']}
+    for issuer in universe:
+        NAMES[re.sub(r'AS$', '', fold(issuer['name']))] = issuer['codes']
     # Listed codes priced by İş Yatırım but missing from the KAP segment list (e.g. new listings).
     latest = DATA / 'market-latest.json'
     if latest.exists():
@@ -211,9 +231,18 @@ def main():
         if text is None:
             continue
         checked.add(index)
-        if not RELEVANT.search(text):
+        if not RELEVANT.search(text) or not FUNDISH.search(text):
             continue
-        items[index] = {**candidates[index], **details(text), 'text': text[:1200], 'url': NOTICE.format(index)}
+        item = {**candidates[index], **details(text), 'text': text[:1200], 'url': NOTICE.format(index)}
+        # A notice filed by a parent about another listed company's shares.
+        # Only a company whose shares ("... paylarında / paylarının") the notice is about.
+        folded = fold(text)
+        others = sorted({c for key, codes in NAMES.items() if len(key) > 12
+                         and re.search(re.escape(key) + r'(?:AS)?.{0,25}?PAY(?:LAR)?(?:IN|I)', folded)
+                         for c in codes} - set(item['codes']))
+        if others:
+            item['targets'] = others
+        items[index] = item
         kept += 1
     cutoff = (datetime.now(ISTANBUL) - timedelta(days=365)).strftime('%Y-%m-%d')
     items = {k: v for k, v in items.items() if v['date'] >= cutoff}

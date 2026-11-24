@@ -62,9 +62,12 @@ def companies():
     transfers = load('fund-transfers.json')['items'] if (DATA / 'fund-transfers.json').exists() else {}
     ft_by_code = {}
     for index, item in transfers.items():
-        entry = {k: item.get(k) for k in ('kind', 'buyer', 'date', 'price', 'amount', 'amountCalc', 'shares', 'ratio', 'url', 'offExchange')}
+        entry = {k: item.get(k) for k in ('kind', 'buyer', 'date', 'price', 'amount', 'amountCalc', 'shares', 'ratio', 'url', 'offExchange', 'targets')}
         entry['text'] = item.get('text', '')[:900]
         ft_by_code.setdefault(item['codes'][0], []).append(entry)
+        for target in item.get('targets', []):
+            ft_by_code.setdefault(target, []).append({**entry, 'via': item['codes'][0]})
+    holdings = load('fund-holdings.json') if (DATA / 'fund-holdings.json').exists() else {'companies': {}}
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
     for issuer in uni['companies']:
@@ -113,6 +116,9 @@ def companies():
         ft = sorted((x for c in codes for x in ft_by_code.get(c, [])), key=lambda x: x['date'], reverse=True)
         if ft:
             row['ft'] = ft[:8]
+        held = next((holdings['companies'][c] for c in codes if c in holdings['companies']), None)
+        if held:
+            row['fh'] = {k: held.get(k) for k in ('capital', 'floatRatio', 'funds', 'lots', 'value', 'floatShareBefore')}
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags
@@ -120,7 +126,8 @@ def companies():
     meta = {'priceDate': market['date'], 'priceFetchedAt': market.get('fetchedAt'), 'priceSource': market['source'], 'historySource': hist['source'],
             'collectedAt': hist['collectedAt'], 'note': hist['note'],
             'risk': {k: risk.get(k) for k in ('asOf', 'topic', 'note', 'levels', 'sources')},
-            'buybackSince': buybacks.get('since'), 'universeDate': uni['date'], 'universeSource': uni['source']}
+            'buybackSince': buybacks.get('since'),
+            'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}
 
 

@@ -264,12 +264,25 @@ function drawdown(r) {
 }
 const BB_DAYS = 31;
 const fundBuy = r => (r.ft || []).some(x => x.kind === 'purchase');
+const inProsecutorList = r => (r.risk || []).some(f => f.level === 'savcilik' || f.level === 'tek');
+// Possible buyers of liquidating-fund shares: a sizeable stake still with the funds and no purchase notice yet.
+const fundCandidate = r => !fundBuy(r) && ((has(r.fh?.capital) && (r.fh.capital >= 2 || r.fh.floatRatio >= 20)) || (!r.fh && inProsecutorList(r)));
+function holdingHtml(r) {
+  const f = r.fh, meta = DATA.meta.holdings || {};
+  if (!f && !fundCandidate(r)) return '';
+  const bought = fundBuy(r), active = recentBuyback(r);
+  let body = '';
+  if (f) body += `<p style="margin:2px 0 6px">Tasfiyedeki <b>${f.funds}</b> fonun portföyünde yaklaşık <b class="num" style="display:inline;color:inherit">${N0.format(f.lots)}</b> lot vardı: sermayenin <b class="num" style="display:inline;color:inherit">%${N2.format(f.capital)}</b>'i, fiili dolaşımdaki payların <b class="num" style="display:inline;color:inherit">%${N0.format(f.floatRatio)}</b>'i kadar.</p>`;
+  else body += `<p style="margin:2px 0 6px">Fon soruşturmasında savcılığın incelediği paylar arasında geçiyor; fonlardaki pay oranı herkese açık kaynakta yok.</p>`;
+  body += `<p style="margin:2px 0 6px">${bought ? 'Şirket ya da ortağı bu paylardan bir kısmını fonlardan aldı (yukarıda).' : 'Fonlardan alım bildirimi henüz yok.'}${active ? ' Son bir ayda borsada geri alım da yapıyor.' : ''}</p>`;
+  return `<div class="risk soft" style="border-color:var(--warn-line)"><b style="color:var(--warn-ink)">${bought ? 'Tasfiyedeki fonlardaki paylar' : 'Olası fon geri alımı adayı'}</b>${body}<small>SPK, tasfiyedeki fonlardaki payların son kapanış fiyatından şirketlere satılabileceğini açıkladı. Oranlar fonların ${esc(meta.reports || 'Ağustos–Ekim 2026')} portföy raporlarına dayanan tahminlerdir; sonradan yapılan satışları yansıtmayabilir. Kaynak: <a href="${esc(meta.source || 'https://fonoloji.com/spk-tasfiye')}" target="_blank" rel="noreferrer">Fonoloji ↗</a>${meta.sourceUpdated ? ` (${esc(meta.sourceUpdated)})` : ''}. Geri alım yapılacağı anlamına gelmez.</small></div>`;
+}
 function fundHtml(r) {
   if (!r.ft?.length) return '';
   const buys = r.ft.filter(x => x.kind === 'purchase'), notes = r.ft.filter(x => x.kind !== 'purchase');
   const p = livePrice(r)?.p ?? r.px, money2 = v => has(v) ? (v >= 1e6 ? N1.format(v / 1e6) + ' mn TL' : N0.format(v) + ' TL') : null;
   const line = x => {
-    const parts = [x.buyer === 'company' ? 'Şirket kendi payını aldı' : 'Ortak / yönetici alımı'];
+    const parts = [x.via ? `${esc(x.via)} bu şirketin paylarını aldı` : x.targets?.length ? `Bu şirket ${esc(x.targets.join(', '))} paylarını aldı` : x.buyer === 'company' ? 'Şirket kendi payını aldı' : 'Ortak / yönetici alımı'];
     if (has(x.price)) parts.push(`fiyat ${N2.format(x.price)} TL${has(p) ? ` (bugün ${N2.format(p)} TL, <span class="${p >= x.price ? 'up' : 'down'}">${p >= x.price ? '+' : ''}${N1.format((p / x.price - 1) * 100)}%</span>)` : ''}`);
     if (has(x.shares)) parts.push(`${N0.format(x.shares)} adet`);
     if (has(x.amount)) parts.push(`tutar ${money2(x.amount)}${x.amountCalc ? ' (fiyat × adet)' : ''}`);
@@ -322,6 +335,7 @@ const SCREENS = [
   ['watch', '★ İzleme listem', watched],
   ['bb', 'Geri alım (son 1 ay)', recentBuyback],
   ['fund', 'Fondan borsa dışı alım', fundBuy],
+  ['cand', 'Olası fon geri alımı adayı', fundCandidate],
   ['bbdd', 'Geri alım + zirveden %30+ düşmüş', r => recentBuyback(r) && has(drawdown(r)) && drawdown(r) <= -30],
   ['beat', '1 yılda BIST 100\'ü geçen', r => has(r.perf?.rel) && r.perf.rel > 0],
   ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
@@ -343,6 +357,7 @@ const COLS = [
   ['chg', 'Günlük', 'hide-s', r => livePrice(r)?.chg ?? null],
   ['mc', 'Piyasa değeri', 'hide-s hide-m', r => r.mc],
   ['bbr', 'Geri alım / sermaye', 'hide-s', r => recentBuyback(r) ? r.bbr ?? null : null],
+  ['fhc', 'Fonlardaki pay', 'hide-s hide-m', r => r.fh ? r.fh.capital : null],
   ['dd', 'Zirveden', 'hide-s', r => drawdown(r)],
   ['usd', '1 yıl ($)', 'hide-s hide-m', r => r.perf?.usd ?? null],
   ['smcT', 'Yapı', 'hide-s', r => r.smc ? r.smc.trend : null],
@@ -410,9 +425,9 @@ function renderRegister() {
   const head = COLS.map(([k, label, cls, get]) =>
     `<th class="${cls}" data-k="${k}"${get ? ' tabindex="0"' : ''}${state.sort === k ? ` aria-sort="${state.dir < 0 ? 'descending' : 'ascending'}"` : ''}>${label}${state.sort === k ? (state.dir < 0 ? ' ↓' : ' ↑') : ''}</th>`).join('');
   const body = list.map(r => `<tr data-c="${esc(r.c)}" tabindex="0" aria-selected="${selected === r}">
-    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son bir ayda pay geri alımı">geri alım</span>' : ''}${fundBuy(r) ? '<span class="flag bb" title="Fon tasfiyesinden borsa dışı alım">fondan alım</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
+    <td class="co">${starBtn(r.c)}<b>${esc(r.c)}</b>${recentBuyback(r) ? '<span class="flag bb" title="Son bir ayda pay geri alımı">geri alım</span>' : ''}${fundBuy(r) ? '<span class="flag bb" title="Fon tasfiyesinden borsa dışı alım">fondan alım</span>' : ''}${fundCandidate(r) ? '<span class="flag" title="Tasfiyedeki fonlarda payı var, alım bildirimi yok">aday</span>' : ''}${isHigh(r) ? '<span class="flag bad" title="Yüksek risk işareti">risk</span>' : ''}${r.h?.w ? '<span class="flag" title="Veri uyarısı">uyarı</span>' : ''}<span>${esc(r.sn || r.n)}</span></td>
     <td class="l sec hide-s hide-m">${esc(r.s || '')}</td>
-    <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${recentBuyback(r) && has(r.bbr) ? `<span class="num">%${N2.format(r.bbr)}</span>` : recentBuyback(r) ? '<span class="dash">var</span>' : DASH}</td><td class="hide-s">${has(drawdown(r)) ? `<span class="num${drawdown(r) <= -30 ? ' neg' : ''}">%${N0.format(drawdown(r))}</span>` : DASH}</td><td class="hide-s hide-m">${has(r.perf?.usd) ? `<span class="num ${r.perf.usd >= 0 ? 'up' : 'down'}">%${N0.format(r.perf.usd * 100)}</span>` : DASH}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
+    <td class="live">${priceCell(r)}</td><td class="hide-s">${chgCell(r)}</td><td class="hide-s hide-m">${cell(r.mc)}</td><td class="hide-s">${recentBuyback(r) && has(r.bbr) ? `<span class="num">%${N2.format(r.bbr)}</span>` : recentBuyback(r) ? '<span class="dash">var</span>' : DASH}</td><td class="hide-s hide-m">${has(r.fh?.capital) ? `<span class="num">%${N1.format(r.fh.capital)}</span>` : DASH}</td><td class="hide-s">${has(drawdown(r)) ? `<span class="num${drawdown(r) <= -30 ? ' neg' : ''}">%${N0.format(drawdown(r))}</span>` : DASH}</td><td class="hide-s hide-m">${has(r.perf?.usd) ? `<span class="num ${r.perf.usd >= 0 ? 'up' : 'down'}">%${N0.format(r.perf.usd * 100)}</span>` : DASH}</td><td class="hide-s">${trendPill(r.smc)}</td><td class="hide-s hide-m">${ratio(r.pe)}</td><td class="hide-s hide-m">${ratio(r.pb)}</td><td class="hide-s">${r.sc?.f?.n === 9 ? `<span class="num">${r.sc.f.score}/9</span>` : DASH}</td>
     <td class="hide-s hide-m">${cell(r.d.rev)}</td><td>${cell(r.d.ni)}</td>
     <td class="hide-s hide-m">${spark(r)}</td><td class="num hide-s hide-m">${r.d.last ? esc(r.d.last) : DASH}</td></tr>`).join('');
   $('register').innerHTML = list.length
@@ -479,7 +494,7 @@ function renderFile(r) {
   let html = `<div class="file-head"><div><h2>${starBtn(r.c)}${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><button class="back" id="back" type="button">← Listeye dön</button></div>
     <div class="quote">${quote}</div><p class="note">${lp ? `Gecikmeli fiyat Yahoo Finance'ten alınır ve son resmî kapanışa (${N2.format(r.px)} TL) göre değişimi gösterir. ` : ''}Piyasa değeri ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
-  html += riskHtml(r) + fundHtml(r) + buybackHtml(r);
+  html += riskHtml(r) + fundHtml(r) + holdingHtml(r) + buybackHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button><button class="tab" type="button" role="tab" data-tab="smc">Smart money</button></div>`;
   html = '';
 
@@ -921,6 +936,7 @@ $('chips').addEventListener('click', e => {
   const b = e.target.closest('.chip'); if (!b) return;
   state.screen = b.dataset.k;
   if (['bb', 'bbdd'].includes(state.screen)) { state.sort = 'bbr'; state.dir = -1; }
+  if (['cand', 'fund'].includes(state.screen)) { state.sort = 'fhc'; state.dir = -1; }
   document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c === b));
   renderRegister();
 });

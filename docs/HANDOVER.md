@@ -2,6 +2,22 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-24 · Claude Code · fund holdings and buyback candidates
+
+- `research/fund-holdings.py` reads Fonoloji's public "SPK tasfiye" page into
+  `data/fund-holdings.json`: for the ~40 largest positions, the liquidating
+  funds' estimated lots, share of capital and size against the free float
+  (from the funds' Aug-Oct 2026 reports). Fonoloji's /api/ is disallowed in
+  its robots.txt and is not used; smaller positions are not on the page.
+- The site marks "Olası fon geri alımı adayı" when a company has no purchase
+  notice yet and either the funds held >= 2% of capital or >= 20% of the free
+  float, or it is on the prosecutor's press lists without a Fonoloji figure.
+- `insiders.py` now keeps only notices with a fund link, treats tender-offer
+  notices as statements, and records `targets` when a parent buys another
+  listed company's shares (IZMDC -> IZENR, TRALT -> TRENJ). Web research on
+  2026-11-24 found no fund purchase beyond those on KAP; Endeks24's roundup of
+  the eight 12 November purchases matches ours.
+
 ## 2026-11-23 · Claude Code · off-exchange purchases from liquidating funds
 
 - `research/insiders.py` writes `data/fund-transfers.json`: notices where the
