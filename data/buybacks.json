@@ -10084,6 +10084,26 @@
    "summary": "Pay Geri Alım Programının Sonlandırılması",
    "url": "https://www.kap.org.tr/tr/Bildirim/1701819",
    "ratio": 5.9637
+  },
+  "1701914": {
+   "codes": [
+    "MSGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T15:55",
+   "summary": "Pay Geri Alım Programının Sonlandırılması Hakkında",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701914",
+   "ratio": null
+  },
+  "1701948": {
+   "codes": [
+    "BLCYT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T16:30",
+   "summary": "24.11..2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701948",
+   "ratio": 1.4534
   }
  }
 }
