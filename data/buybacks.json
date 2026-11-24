@@ -10054,6 +10054,26 @@
    "summary": "Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1701593",
    "ratio": 1.116
+  },
+  "1701619": {
+   "codes": [
+    "AZTEK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T07:55",
+   "summary": "23.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701619",
+   "ratio": 0.44106
+  },
+  "1701622": {
+   "codes": [
+    "ARDYZ"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T08:48",
+   "summary": "23.11.2026 Tarihli Hisse Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1701622",
+   "ratio": 0.098
   }
  }
 }
