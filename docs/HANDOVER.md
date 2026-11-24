@@ -2,6 +2,29 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-24 · Claude Code · SPK bulletins, KAP events, screener, PWA
+
+- `research/spk-bulletins.py` reads the 2026 SPK bulletin PDFs (pdftotext),
+  the section "SUÇ DUYURUSU, İDARİ PARA CEZASI…", and records per share code:
+  action type, number of persons (never names), ban length. Output
+  `data/spk-actions.json`; bulletins already read are skipped. Workflow: Saturday
+  and nightly runs.
+- `research/market-events.py` collects from KAP search: share circuit breakers,
+  SPK measure decisions, capital increases (bonus % read from text), dividends
+  (gross per share from the form table; 0 → `nakit yok`), financial reports,
+  first trading days and IPO results, and fund managers' 3% notices. Output
+  `data/market-events.json`, events kept 400 days. `--reparse` re-reads stored
+  capital and dividend notices; `--cache DIR` keeps pages.
+- `research/price-history.py` now adjusts earlier prices for KAP bonus issues
+  when the observed move matches 1/(1+pct/100) within 12% (field `adj`); other
+  unexplained jumps still cut the series.
+- Site: SPK/circuit-breaker risk box, "Şirket olayları" box, feed cards for
+  these events, chips spk/cb/div/bonus/f3/ipo. Chips now combine (AND) and can
+  be saved (`mercek.screens` in localStorage). PWA: `site/static/` manifest,
+  icons and a network-first `sw.js`.
+- Limits: IPO lock-up dates are not in KAP's structured data; most dividend
+  notices are zero-cash decisions; only one bonus adjustment matched so far.
+
 ## 2026-11-24 · Claude Code · insiders, feed, sectors, compare, daily summary
 
 - `research/insider-trades.py` writes `data/insider-trades.json` from every

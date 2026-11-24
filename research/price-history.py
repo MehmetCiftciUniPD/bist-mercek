@@ -54,7 +54,7 @@ def fetch(code, url=API):
             time.sleep(2 * (attempt + 1))
 
 
-def series(code, reference, reference_day):
+def series(code, reference, reference_day, bonuses=()):
     """Return ({'d': day numbers, 'c': closes}, None) or (None, reason)."""
     try:
         payload = fetch(code)
@@ -80,6 +80,18 @@ def series(code, reference, reference_day):
             return None, 'Seri bozuk (tarih sırası veya sıfır/negatif fiyat)'
         points.append((day, round(close, 2 if close >= 10 else 4)))
         last_day = day
+    # Bonus issues announced on KAP: when the price drop in the weeks around the
+    # issue matches the announced ratio, earlier prices are divided accordingly.
+    adjusted = []
+    for event_day, pct, url in bonuses:
+        factor = 1 / (1 + pct / 100)
+        near = [i for i in range(1, len(points)) if -21 <= points[i][0] - event_day <= 56]
+        if not near:
+            continue
+        best = min(near, key=lambda i: abs(points[i][1] / points[i - 1][1] / factor - 1))
+        if abs(points[best][1] / points[best - 1][1] / factor - 1) < 0.12:
+            points = [(d, round(c * factor, 4)) for d, c in points[:best]] + points[best:]
+            adjusted.append({'day': points[best][0], 'factor': round(factor, 6), 'url': url})
     cut = None
     for i in range(len(points) - 1, 0, -1):
         move = points[i][1] / points[i - 1][1]
@@ -97,6 +109,8 @@ def series(code, reference, reference_day):
     out = {'d': [d for d, _ in points], 'c': [c for _, c in points]}
     if cut:
         out['cut'] = cut
+    if adjusted:
+        out['adj'] = adjusted
     return out, None
 
 
@@ -126,6 +140,14 @@ def main():
     market = json.loads((latest if latest.exists() else DATA / 'market-2026-11-09.json').read_text())
     prices = {c['code']: c.get('price') for c in market['companies']}
     reference_day = (datetime.fromisoformat(market['date']).replace(tzinfo=timezone.utc).timestamp()) // 86400
+    bonuses = {}
+    events_file = DATA / 'market-events.json'
+    if events_file.exists():
+        for event in json.loads(events_file.read_text())['events'].values():
+            if event.get('kind') == 'capital' and event.get('type') == 'bedelsiz' and event.get('bonusPct') and 1 <= event['bonusPct'] <= 5000:
+                day = int(datetime.fromisoformat(event['date'][:10]).replace(tzinfo=timezone.utc).timestamp() // 86400)
+                for c in event['codes']:
+                    bonuses.setdefault(c, set()).add((day, event['bonusPct'], event['url']))
     universe = json.loads((DATA / 'kap-universe.json').read_text())['companies']
     quotes = {c['code']: c for c in market['companies']}
     codes = [max(i['codes'], key=lambda c: quotes.get(c, {}).get('marketCap') or -1) for i in universe]
@@ -133,7 +155,7 @@ def main():
         codes = codes[:args.limit]
     kept, gaps = {}, {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(series, code, prices.get(code), reference_day): code for code in codes}
+        futures = {pool.submit(series, code, prices.get(code), reference_day, sorted(bonuses.get(code, ()))): code for code in codes}
         for count, future in enumerate(as_completed(futures), start=1):
             code = futures[future]
             data, reason = future.result()

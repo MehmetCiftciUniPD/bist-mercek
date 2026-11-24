@@ -13,6 +13,9 @@ OUT = ROOT / 'site' / 'dist'
 SNAP = ['assets', 'currentAssets', 'noncurrentAssets', 'currentLiabilities', 'noncurrentLiabilities', 'equity', 'parentEquity',
         'deposits', 'revenue', 'operating', 'pretax', 'netIncome', 'groupNetIncome', 'netInterest', 'netFees']
 HEAD = ('<!doctype html><html lang="tr"><head><meta charset="utf-8">'
+        '<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0b5c6e">'
+        '<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png">'
+        '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Bilanço">'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
         '<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style></head><body>')
 
@@ -79,6 +82,16 @@ def companies():
                 ins_by_code.setdefault(code, []).append(entry)
     summary = load('daily-summary.json') if (DATA / 'daily-summary.json').exists() else None
     holdings = load('fund-holdings.json') if (DATA / 'fund-holdings.json').exists() else {'companies': {}}
+    events = load('market-events.json')['events'] if (DATA / 'market-events.json').exists() else {}
+    ev_by_code = {}
+    for index, item in events.items():
+        for code in item.get('codes', []):
+            ev_by_code.setdefault(code, []).append(item)
+    spk = load('spk-actions.json') if (DATA / 'spk-actions.json').exists() else {'actions': []}
+    spk_by_code = {}
+    for a in spk['actions']:
+        spk_by_code.setdefault(a['code'], []).append({k: a.get(k) for k in ('bulletin', 'date', 'type', 'persons', 'ban', 'text', 'url')})
+    latest_day = max((v.get('date') or '') for v in events.values())[:10] if events else ''
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     rows = []
     for issuer in uni['companies']:
@@ -151,6 +164,30 @@ def companies():
         held = next((holdings['companies'][c] for c in codes if c in holdings['companies']), None)
         if held:
             row['fh'] = {k: held.get(k) for k in ('capital', 'floatRatio', 'funds', 'lots', 'value', 'floatShareBefore')}
+        evs = [x for c in codes for x in ev_by_code.get(c, [])]
+        if evs and latest_day:
+            from datetime import timedelta
+            d30 = (datetime.fromisoformat(latest_day) - timedelta(days=30)).strftime('%Y-%m-%d')
+            cb = sorted(x['date'][:10] for x in evs if x['kind'] == 'cb')
+            if cb:
+                row['cb'] = {'n30': sum(1 for d in cb if d >= d30), 'n': len(cb), 'last': cb[-1]}
+            pick = lambda kind, n, keys: [{k: x.get(k) for k in keys} for x in sorted((x for x in evs if x['kind'] == kind), key=lambda x: x['date'], reverse=True)[:n]]
+            for kind, keys in (('capital', ('date', 'type', 'bonusPct', 'rightsPct', 'summary', 'url')),
+                               ('dividends', ('date', 'decision', 'grossPerShare', 'grossPct', 'summary', 'url')),
+                               ('spk', ('date', 'summary', 'url')), ('funds3', ('date', 'holder', 'pct', 'url'))):
+                got = pick(kind, 5, keys)
+                if got:
+                    row['ev_' + kind] = got
+            reports = sorted((x for x in evs if x['kind'] == 'reports'), key=lambda x: x['date'], reverse=True)
+            if reports:
+                row['rep'] = {'date': reports[0]['date'][:10], 'year': reports[0].get('year'), 'period': reports[0].get('period'),
+                              'rule': reports[0].get('rule'), 'url': reports[0]['url'], 'recent': [x['date'][:10] for x in reports[:3]]}
+            ipo = [x for x in evs if x['kind'] == 'ipoResult']
+            if ipo:
+                first = min((x['date'][:10] for x in evs if x['kind'] == 'ipo'), default=ipo[0]['date'][:10])
+                row['ipo'] = {'date': first, 'price': ipo[0].get('price'), 'url': ipo[0]['url']}
+        if spk_by_code.get(code) or any(spk_by_code.get(c) for c in codes):
+            row['spk'] = sorted((x for c in codes for x in spk_by_code.get(c, [])), key=lambda x: x['date'] or '', reverse=True)[:8]
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags
@@ -160,6 +197,7 @@ def companies():
             'risk': {k: risk.get(k) for k in ('asOf', 'topic', 'note', 'levels', 'sources')},
             'buybackSince': buybacks.get('since'),
             'summary': summary,
+            'eventsDay': latest_day,
             'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}
 
@@ -189,6 +227,8 @@ def main():
             old.unlink()
         for path in (DATA / 'smc').glob('*.json'):
             (OUT / 'smc' / path.name).write_text(path.read_text())
+    for path in (ROOT / 'site' / 'static').glob('*'):
+        (OUT / path.name).write_bytes(path.read_bytes())
     if (DATA / 'benchmarks.json').exists():
         (OUT / 'benchmarks.json').write_text((DATA / 'benchmarks.json').read_text())
     live = DATA / 'live.json'
