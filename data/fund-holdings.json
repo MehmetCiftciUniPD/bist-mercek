@@ -1,8 +1,8 @@
 {
  "source": "https://fonoloji.com/spk-tasfiye",
- "sourceUpdated": "24 Kasım 2026 17:00",
+ "sourceUpdated": "24 Kasım 2026 20:23",
  "reports": "Ağu 2026 – 4 Eki 2026",
- "fetchedAt": "2026-11-24T17:02+03:00",
+ "fetchedAt": "2026-11-24T20:30+03:00",
  "note": "Fonların portföy raporlarına dayanan tahmini lotlar. 'capital' şirket sermayesindeki pay (%), 'floatRatio' fonların lotunun fiili dolaşımdaki paylara oranı (%, 100'ü geçebilir).",
  "companies": {
   "TEHOL": {
@@ -59,7 +59,7 @@
    "funds": 2,
    "capital": 10.4,
    "floatRatio": 31.0,
-   "value": 425200000
+   "value": 419000000
   },
   "SVGYO": {
    "name": "Savur Gayrimenkul Yatırım Ortaklığı A.Ş.",
@@ -107,7 +107,7 @@
    "funds": 4,
    "capital": 7.1,
    "floatRatio": 88.0,
-   "value": 1350000000,
+   "value": 1330000000,
    "floatShareBefore": 8.6
   },
   "BIGEN": {
@@ -140,7 +140,7 @@
    "funds": 4,
    "capital": 2.1,
    "floatRatio": 5.6,
-   "value": 439400000
+   "value": 439900000
   },
   "SARAE": {
    "name": "Şa-Ra Enerji İnşaat Ticaret ve Sanayi A.Ş.",
@@ -148,7 +148,7 @@
    "funds": 2,
    "capital": 1.7,
    "floatRatio": 10.0,
-   "value": 266400000
+   "value": 265400000
   },
   "SISE": {
    "name": "Türkiye Şişe ve Cam Fabrikaları A.Ş.",
@@ -181,7 +181,7 @@
    "funds": 10,
    "capital": 0.88,
    "floatRatio": 1.8,
-   "value": 575600000
+   "value": 579000000
   },
   "THYAO": {
    "name": "Türk Hava Yolları A.o.",
@@ -189,7 +189,7 @@
    "funds": 11,
    "capital": 0.75,
    "floatRatio": 1.5,
-   "value": 3280000000
+   "value": 3310000000
   },
   "EREGL": {
    "name": "Ereğli Demir ve Çelik Fabrikaları T.a.ş.",
@@ -213,7 +213,7 @@
    "funds": 11,
    "capital": 0.63,
    "floatRatio": 1.2,
-   "value": 1020000000
+   "value": 1010000000
   },
   "PGSUS": {
    "name": "Pegasus Hava Taşımacılığı A.Ş.",
@@ -221,7 +221,7 @@
    "funds": 6,
    "capital": 0.48,
    "floatRatio": 1.0,
-   "value": 370000000
+   "value": 372600000
   },
   "ISCTR": {
    "name": "Türkiye İş Bankası A.Ş.",
@@ -237,7 +237,7 @@
    "funds": 7,
    "capital": 0.35,
    "floatRatio": 1.0,
-   "value": 697600000
+   "value": 699600000
   },
   "AKSEN": {
    "name": "Aksa Enerji Üretim A.Ş.",
@@ -245,7 +245,7 @@
    "funds": 5,
    "capital": 0.34,
    "floatRatio": 1.8,
-   "value": 259300000
+   "value": 258400000
   },
   "TUPRS": {
    "name": "Tüpraş-Türkiye Petrol Rafinerileri A.Ş.",
@@ -253,7 +253,7 @@
    "funds": 10,
    "capital": 0.3,
    "floatRatio": 0.6,
-   "value": 1830000000
+   "value": 1840000000
   },
   "TRALT": {
    "name": "Türk Altın İşletmeleri A.Ş.",
@@ -261,7 +261,7 @@
    "funds": 5,
    "capital": 0.29,
    "floatRatio": 1.2,
-   "value": 323200000
+   "value": 323500000
   },
   "GUBRF": {
    "name": "Gübre Fabrikaları T.a.ş.",
@@ -269,7 +269,7 @@
    "funds": 7,
    "capital": 0.27,
    "floatRatio": 1.4,
-   "value": 245900000
+   "value": 247200000
   },
   "TOASO": {
    "name": "Tofaş Türk Otomobil Fabrikası A.Ş.",
@@ -277,7 +277,7 @@
    "funds": 4,
    "capital": 0.26,
    "floatRatio": 1.1,
-   "value": 320600000
+   "value": 320300000
   },
   "KCHOL": {
    "name": "Koç Holding A.Ş.",
@@ -293,7 +293,7 @@
    "funds": 7,
    "capital": 0.22,
    "floatRatio": 0.3,
-   "value": 979800000
+   "value": 981800000
   },
   "FROTO": {
    "name": "Ford Otomotiv Sanayi A.Ş.",
@@ -301,7 +301,7 @@
    "funds": 5,
    "capital": 0.17,
    "floatRatio": 1.0,
-   "value": 410200000
+   "value": 411700000
   },
   "ASELS": {
    "name": "Aselsan Elektronik Sanayi ve Ticaret A.Ş.",
@@ -309,7 +309,7 @@
    "funds": 10,
    "capital": 0.15,
    "floatRatio": 0.6,
-   "value": 2210000000
+   "value": 2220000000
   },
   "GARAN": {
    "name": "Türkiye Garanti Bankası A.Ş.",
@@ -317,7 +317,7 @@
    "funds": 7,
    "capital": 0.15,
    "floatRatio": 1.1,
-   "value": 880600000
+   "value": 883100000
   },
   "VAKBN": {
    "name": "Türkiye Vakıflar Bankası T.a.o.",

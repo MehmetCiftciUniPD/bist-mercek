@@ -11055,6 +11055,56 @@
    "summary": "24.11.2026 Tarihli Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1702108",
    "ratio": 0.60878
+  },
+  "1702109": {
+   "codes": [
+    "TURSG"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T19:36",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702109",
+   "ratio": 0.9405
+  },
+  "1702110": {
+   "codes": [
+    "EKDMR"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T19:41",
+   "summary": "24.11.2026 tarihli geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702110",
+   "ratio": 0.9721
+  },
+  "1702115": {
+   "codes": [
+    "GUBRF"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T20:10",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702115",
+   "ratio": 1.4431
+  },
+  "1702116": {
+   "codes": [
+    "CATES"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T20:18",
+   "summary": "24.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702116",
+   "ratio": 0.64
+  },
+  "1702117": {
+   "codes": [
+    "SUNTK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-24T20:25",
+   "summary": "24.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702117",
+   "ratio": 0.041
   }
  }
 }

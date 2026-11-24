@@ -1,60 +1,60 @@
 {
- "generatedAt": "2026-11-24T17:28+03:00",
+ "generatedAt": "2026-11-24T20:31+03:00",
  "facts": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "breadth": {
-   "up": 156,
-   "down": 450,
-   "flat": 23,
-   "median": -1.38
+   "up": 137,
+   "down": 470,
+   "flat": 22,
+   "median": -1.56
   },
   "gainers": [
    {
-    "c": "IHLGM",
+    "c": "EFOR",
     "r": 10.0
    },
    {
-    "c": "DOGUB",
+    "c": "LYDHO",
     "r": 9.99
    },
    {
-    "c": "MCARD",
+    "c": "BFREN",
+    "r": 9.99
+   },
+   {
+    "c": "SELEC",
     "r": 9.98
    },
    {
-    "c": "MAGEN",
-    "r": 9.96
-   },
-   {
-    "c": "CRFSA",
-    "r": 9.96
+    "c": "DOGUB",
+    "r": 9.98
    }
   ],
   "losers": [
    {
-    "c": "OZRDN",
+    "c": "BIGEN",
     "r": -10.0
    },
    {
-    "c": "TKNKA",
+    "c": "LIDER",
     "r": -10.0
    },
    {
-    "c": "GRTHO",
+    "c": "TRHOL",
+    "r": -10.0
+   },
+   {
+    "c": "ALKLC",
     "r": -9.99
    },
    {
-    "c": "KGYO",
-    "r": -9.99
-   },
-   {
-    "c": "LYDYE",
+    "c": "ARMGD",
     "r": -9.99
    }
   ],
   "buybacks": {
-   "notices": 206,
-   "companies": 73
+   "notices": 195,
+   "companies": 72
   },
   "fundPurchases": [
    "MCARD"
@@ -62,12 +62,12 @@
   "insiderBuyers": [
    "EFOR",
    "IZMDC",
-   "MHRGY",
    "BALSU",
+   "AKSA",
    "ENKAI",
    "KOCMT",
    "KRPLS",
-   "ENTRA"
+   "MHRGY"
   ],
   "insiderSellers": [
    "MAGEN",
@@ -76,17 +76,15 @@
   ],
   "choch": {
    "up": [
-    "CGCAM",
-    "GUNDG",
-    "LIDER"
+    "CGCAM"
    ],
    "down": [
     "AYGAZ",
     "GMTAS",
-    "INDES"
+    "HUNER"
    ]
   }
  },
- "text": null,
- "model": null
+ "text": "**Piyasa Genel Görünümü**  \nBorsa İstanbul’da 24 Kasım 2026 oturumu satış baskısıyla geçti. Genişlik verilerine göre 137 hisse yükselirken 470 hisse düştü, 22 hisse ise değişmez kaldı. Medyan getiri -1,56% seviyesinde gerçekleşerek geniş tabanlı bir gerilemeyi işaret etti.\n\n**Öne Çıkan Hareketler**  \nYükselenler listesinde EFOR (%10,00), LYDHO (%9,99), BFREN (%9,99), SELEC (%9,98) ve DOGUB (%9,98) yer aldı. Düşenler tarafında BIGEN, LIDER ve TRHOL %10,00 ile alt limitte; ALKLC (%9,99) ve ARMGD (%9,99) izledi.\n\n**Şirket İçi İşlemler ve Geri Alımlar**  \nGeri alma ilan sayısı 195, bunu yapan şirket sayısı 72 olarak bildirildi. Tasfiyedeki fonlardan MCARD alım aldı. Yönetici/hakim ortak alımları EFOR, IZMDC, BALSU, AKSA, ENKAI, KOCMT, KRPLS ve MHRGY hisselerinde gerçekleşirken; MAGEN, LYDHO ve TRMET hisselerinde satış yapıldı.\n\n**Yapı Değişimi (CHoCH) Sinyalleri**  \nTeknik yapı değişimi sinyalleri incelendiğinde; CGCAM hissesinde yukarı yönlü, AYGAZ, GMTAS ve HUNER hisselerinde ise aşağı yönlü CHoCH formasyonu tespit edildi.",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }
