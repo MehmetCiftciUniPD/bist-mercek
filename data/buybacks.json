@@ -11515,6 +11515,24 @@
    "summary": "Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1702741",
    "ratio": 0.5083
+  },
+  "1702745": {
+   "codes": [
+    "DAGI"
+   ],
+   "kind": "islem",
+   "date": "2026-11-25T19:45",
+   "summary": "25 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702745"
+  },
+  "1702783": {
+   "codes": [
+    "OZGYO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-25T20:16",
+   "summary": "25.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702783"
   }
  }
 }

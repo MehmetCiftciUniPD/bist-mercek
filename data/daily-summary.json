@@ -1,60 +1,60 @@
 {
- "generatedAt": "2026-11-25T06:24+03:00",
+ "generatedAt": "2026-11-25T20:33+03:00",
  "facts": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "breadth": {
-   "up": 137,
-   "down": 470,
-   "flat": 22,
-   "median": -1.56
+   "up": 73,
+   "down": 547,
+   "flat": 9,
+   "median": -3.05
   },
   "gainers": [
    {
-    "c": "EFOR",
+    "c": "OZRDN",
     "r": 10.0
    },
    {
-    "c": "LYDHO",
+    "c": "TGSAS",
     "r": 9.99
    },
    {
-    "c": "BFREN",
+    "c": "GEREL",
     "r": 9.99
    },
    {
-    "c": "SELEC",
+    "c": "TMPOL",
     "r": 9.98
    },
    {
-    "c": "DOGUB",
-    "r": 9.98
+    "c": "VANGD",
+    "r": 9.97
    }
   ],
   "losers": [
    {
-    "c": "BIGEN",
+    "c": "DUNYH",
     "r": -10.0
    },
    {
-    "c": "LIDER",
+    "c": "GUNDG",
     "r": -10.0
    },
    {
-    "c": "TRHOL",
+    "c": "IHAAS",
     "r": -10.0
    },
    {
-    "c": "ALKLC",
-    "r": -9.99
+    "c": "TKNKA",
+    "r": -10.0
    },
    {
-    "c": "ARMGD",
+    "c": "ENDAE",
     "r": -9.99
    }
   ],
   "buybacks": {
-   "notices": 202,
-   "companies": 73
+   "notices": 198,
+   "companies": 74
   },
   "fundPurchases": [
    "MCARD"
@@ -64,27 +64,30 @@
    "IZMDC",
    "BALSU",
    "AKSA",
+   "KRSTL",
+   "BIOEN",
    "ENKAI",
-   "KOCMT",
-   "KRPLS",
    "MHRGY"
   ],
   "insiderSellers": [
    "MAGEN",
-   "LYDHO",
-   "TRMET"
+   "LIDER",
+   "LYDHO"
   ],
   "choch": {
    "up": [
-    "CGCAM"
+    "CGCAM",
+    "FRIGO"
    ],
    "down": [
     "AYGAZ",
-    "GMTAS",
-    "HUNER"
+    "ENJSA",
+    "HUNER",
+    "LKMNH",
+    "RYGYO"
    ]
   }
  },
- "text": "**Piyasa Geneli:** 24 Kasım 2026 oturumunda Borsa İstanbul’a satış baskısı hâkim oldu. Genişlik verilerine göre 470 hisse düştü, 137’si yükseldi, 22’si ise değişmez kaldı. Medyan getiri -1,56% seviyesinde gerçekleşerek geniş tabanlı bir gerilemeyi işaret etti.\n\n**Öne Çıkan Hareketler:** Yükselenler listesinde EFOR (%10,00), LYDHO, BFREN, SELEC ve DOGUB (%9,98-9,99) yer aldı. Düşenler tarafında BIGEN, LIDER, TRHOL (%10,00) ile ALKLC ve ARMGD (%9,99) en büyük kayıpları kaydetti.\n\n**Şirket İçi İşlemler ve Alımlar:** Geri alım kararı veren şirket sayısı 73, ilan sayısı 202 olarak yüksek seyretti. Tasfiyedeki fonlardan MCARD alım gerçekleşti. Yönetici/hakim ortak alımları EFOR, IZMDC, BALSU, AKSA, ENKAI, KOCMT, KRPLS ve MHRGY’de görüldü; satışlar ise MAGEN, LYDHO ve TRMET’te yoğunlaştı.\n\n**Teknik Sinyaller (CHoCH):** Yapı değişimi (CHoCH) sinyalleri CGCAM’da yukarı yönlü; AYGAZ, GMTAS ve HUNER’da aşağı yönlü tetiklendi.",
+ "text": "**Piyasa Geneli:** 25 Kasım 2026 tarihinde Borsa İstanbul’a baskılı bir seyir hâkim oldu. 547 hisse düşerken yükselen sayısı 73’e, değişmeyenin 9’a gerçekleşti. Medyan getiri -3,05% ile geniş bir zayıflama sinyali verdi. Düşenler listesinde DUNYH, GUNDG, IHAAS, TKNKA ve ENDAE %10 hâlleriyle tavan yaptırarak öne çıktı.\n\n**Öne Çıkanlar ve Geri Alımlar:** Yükselenler arasında OZRDN %10, TGSAS, GEREL, TMPOL ve VANGD %9,99-%9,97 aralığında kazanç sağladı. Şirket geri alımlarında yoğunluk gözlendi; 74 şirket toplam 198 bildirimde bulundu. Tasfiyedeki fonlardan MCARD hissesine yönelik alım gerçekleşti.\n\n**İçeriden İşlemler ve Yapı Değişimi:** Yönetici/hakim ortak alımları EFOR, IZMDC, BALSU, AKSA, KRSTL, BIOEN, ENKAI ve MHRGY hisselerinde yoğunlaştı. Satış tarafında ise MAGEN, LIDER ve LYDHO yer aldı. CHoCH (Yapı Değişimi) sinyalleri CGCAM ve FRIGO’da yukarı, AYGAZ, ENJSA, HUNER, LKMNH ve RYGYO’da aşağı yönlü kırılmaları işaret ediyor.",
  "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }

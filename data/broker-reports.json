@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-25T17:24+03:00",
+ "fetchedAt": "2026-11-25T20:32+03:00",
  "sources": {
   "isy": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/takip-listesi.aspx",
   "model": "https://www.isyatirim.com.tr/tr-tr/analiz/Sayfalar/is-yatirimin-onerileri.aspx",
@@ -9,9 +9,9 @@
   "AEFES": {
    "rec": "AL",
    "target": 31.26,
-   "upside": 101.0,
+   "upside": 114.0,
    "date": "2026-04-24",
-   "close": 15.52,
+   "close": 14.62,
    "w1": {
     "rec": "AL",
     "target": 31.26
@@ -28,9 +28,9 @@
   "AKCNS": {
    "rec": "AL",
    "target": 302.03,
-   "upside": 77.0,
+   "upside": 82.0,
    "date": "2026-09-14",
-   "close": 170.6,
+   "close": 165.6,
    "w1": {
     "rec": "AL",
     "target": 302.03
@@ -47,9 +47,9 @@
   "AKSEN": {
    "rec": "AL",
    "target": 117.5,
-   "upside": 91.0,
+   "upside": 102.0,
    "date": "2026-04-13",
-   "close": 61.45,
+   "close": 58.2,
    "w1": {
     "rec": "AL",
     "target": 117.5
@@ -66,9 +66,9 @@
   "ARCLK": {
    "rec": "TUT",
    "target": 108.44,
-   "upside": 77.0,
+   "upside": 81.0,
    "date": "2026-10-27",
-   "close": 61.35,
+   "close": 60.0,
    "w1": {
     "rec": "TUT",
     "target": 108.44
@@ -85,9 +85,9 @@
   "ASELS": {
    "rec": "AL",
    "target": 534.57,
-   "upside": 66.0,
+   "upside": 70.0,
    "date": "2026-10-28",
-   "close": 322.5,
+   "close": 313.75,
    "w1": {
     "rec": "AL",
     "target": 534.57
@@ -104,9 +104,9 @@
   "AYGAZ": {
    "rec": "AL",
    "target": 450.0,
-   "upside": 86.0,
+   "upside": 87.0,
    "date": "2026-11-09",
-   "close": 241.8,
+   "close": 241.0,
    "w1": {
     "rec": "AL",
     "target": 450.0
@@ -123,9 +123,9 @@
   "BIMAS": {
    "rec": "AL",
    "target": 492.38,
-   "upside": 34.0,
+   "upside": 37.0,
    "date": "2026-04-24",
-   "close": 368.0,
+   "close": 359.75,
    "w1": {
     "rec": "AL",
     "target": 492.38
@@ -144,7 +144,7 @@
    "target": null,
    "upside": null,
    "date": "2025-10-31",
-   "close": 13.99,
+   "close": 13.19,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -163,7 +163,7 @@
    "target": null,
    "upside": null,
    "date": "2003-12-31",
-   "close": 1.15,
+   "close": 1.12,
    "w1": {
     "rec": "Ö.Y.",
     "target": null
@@ -180,9 +180,9 @@
   "BRSAN": {
    "rec": "AL",
    "target": 952.0,
-   "upside": 48.0,
+   "upside": 49.0,
    "date": "2026-11-23",
-   "close": 645.0,
+   "close": 637.0,
    "w1": {
     "rec": "Ö.Y.",
     "target": null
@@ -200,9 +200,9 @@
   "CCOLA": {
    "rec": "AL",
    "target": 120.0,
-   "upside": 55.0,
+   "upside": 63.0,
    "date": "2026-08-11",
-   "close": 77.3,
+   "close": 73.6,
    "w1": {
     "rec": "AL",
     "target": 120.0
@@ -219,9 +219,9 @@
   "CIMSA": {
    "rec": "AL",
    "target": 80.28,
-   "upside": 111.0,
+   "upside": 116.0,
    "date": "2026-04-24",
-   "close": 38.04,
+   "close": 37.16,
    "w1": {
     "rec": "AL",
     "target": 80.28
@@ -238,9 +238,9 @@
   "DOAS": {
    "rec": "TUT",
    "target": 205.1,
-   "upside": 82.0,
+   "upside": 85.0,
    "date": "2026-04-24",
-   "close": 112.7,
+   "close": 110.6,
    "w1": {
     "rec": "TUT",
     "target": 205.1
@@ -257,9 +257,9 @@
   "ENKAI": {
    "rec": "AL",
    "target": 120.0,
-   "upside": 58.0,
+   "upside": 59.0,
    "date": "2026-11-09",
-   "close": 76.0,
+   "close": 75.55,
    "w1": {
     "rec": "AL",
     "target": 120.0
@@ -276,9 +276,9 @@
   "EREGL": {
    "rec": "TUT",
    "target": 45.0,
-   "upside": 51.0,
+   "upside": 57.0,
    "date": "2026-08-07",
-   "close": 29.84,
+   "close": 28.68,
    "w1": {
     "rec": "TUT",
     "target": 45.0
@@ -295,9 +295,9 @@
   "FROTO": {
    "rec": "AL",
    "target": 152.5,
-   "upside": 118.0,
+   "upside": 128.0,
    "date": "2026-04-24",
-   "close": 69.9,
+   "close": 66.9,
    "w1": {
     "rec": "AL",
     "target": 152.5
@@ -314,9 +314,9 @@
   "KRDMD": {
    "rec": "AL",
    "target": 48.0,
-   "upside": 34.0,
+   "upside": 40.0,
    "date": "2026-04-24",
-   "close": 35.84,
+   "close": 34.3,
    "w1": {
     "rec": "AL",
     "target": 48.0
@@ -333,9 +333,9 @@
   "LOGO": {
    "rec": "AL",
    "target": 227.56,
-   "upside": 106.0,
+   "upside": 103.0,
    "date": "2025-10-30",
-   "close": 110.3,
+   "close": 112.3,
    "w1": {
     "rec": "AL",
     "target": 227.56
@@ -352,9 +352,9 @@
   "MGROS": {
    "rec": "AL",
    "target": 1050.7,
-   "upside": 154.0,
+   "upside": 162.0,
    "date": "2026-04-24",
-   "close": 414.25,
+   "close": 400.75,
    "w1": {
     "rec": "AL",
     "target": 1050.7
@@ -371,9 +371,9 @@
   "PETKM": {
    "rec": "SAT",
    "target": 18.0,
-   "upside": 21.0,
+   "upside": 22.0,
    "date": "2025-01-16",
-   "close": 14.9,
+   "close": 14.77,
    "w1": {
     "rec": "SAT",
     "target": 18.0
@@ -390,9 +390,9 @@
   "PGSUS": {
    "rec": "AL",
    "target": 232.0,
-   "upside": 50.0,
+   "upside": 54.0,
    "date": "2026-11-16",
-   "close": 154.2,
+   "close": 151.0,
    "w1": {
     "rec": "AL",
     "target": 232.0
@@ -412,7 +412,7 @@
    "target": null,
    "upside": null,
    "date": "2026-11-10",
-   "close": 100.3,
+   "close": 93.0,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -429,9 +429,9 @@
   "TAVHL": {
    "rec": "AL",
    "target": 403.09,
-   "upside": 40.0,
+   "upside": 44.0,
    "date": "2026-04-24",
-   "close": 288.0,
+   "close": 280.5,
    "w1": {
     "rec": "AL",
     "target": 403.09
@@ -448,9 +448,9 @@
   "TCELL": {
    "rec": "AL",
    "target": 167.64,
-   "upside": 86.0,
+   "upside": 93.0,
    "date": "2026-04-24",
-   "close": 90.15,
+   "close": 86.95,
    "w1": {
     "rec": "AL",
     "target": 167.64
@@ -467,9 +467,9 @@
   "THYAO": {
    "rec": "AL",
    "target": 490.0,
-   "upside": 53.0,
+   "upside": 57.0,
    "date": "2026-11-04",
-   "close": 320.5,
+   "close": 311.5,
    "w1": {
     "rec": "AL",
     "target": 490.0
@@ -488,7 +488,7 @@
    "target": null,
    "upside": null,
    "date": "2025-04-14",
-   "close": 186.7,
+   "close": 183.7,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -507,7 +507,7 @@
    "target": null,
    "upside": null,
    "date": "2026-10-27",
-   "close": 10.36,
+   "close": 10.1,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -524,9 +524,9 @@
   "TTKOM": {
    "rec": "AL",
    "target": 88.75,
-   "upside": 92.0,
+   "upside": 99.0,
    "date": "2026-04-24",
-   "close": 46.3,
+   "close": 44.66,
    "w1": {
     "rec": "AL",
     "target": 88.75
@@ -543,9 +543,9 @@
   "TTRAK": {
    "rec": "TUT",
    "target": 639.99,
-   "upside": 95.0,
+   "upside": 96.0,
    "date": "2026-04-24",
-   "close": 328.0,
+   "close": 326.0,
    "w1": {
     "rec": "TUT",
     "target": 639.99
@@ -562,9 +562,9 @@
   "ULKER": {
    "rec": "AL",
    "target": 160.7,
-   "upside": 151.0,
+   "upside": 159.0,
    "date": "2026-11-09",
-   "close": 64.05,
+   "close": 61.95,
    "w1": {
     "rec": "AL",
     "target": 160.7
@@ -583,7 +583,7 @@
    "target": null,
    "upside": null,
    "date": "2026-03-02",
-   "close": 3.31,
+   "close": 3.25,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -602,7 +602,7 @@
    "target": null,
    "upside": null,
    "date": "2025-10-30",
-   "close": 12.02,
+   "close": 12.01,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -619,9 +619,9 @@
   "YATAS": {
    "rec": "AL",
    "target": 48.39,
-   "upside": 157.0,
+   "upside": 167.0,
    "date": "2025-01-16",
-   "close": 18.8,
+   "close": 18.15,
    "w1": {
     "rec": "AL",
     "target": 48.39
@@ -638,9 +638,9 @@
   "MAVI": {
    "rec": "AL",
    "target": 67.09,
-   "upside": 108.0,
+   "upside": 112.0,
    "date": "2026-09-17",
-   "close": 32.3,
+   "close": 31.7,
    "w1": {
     "rec": "AL",
     "target": 67.09
@@ -657,9 +657,9 @@
   "ENJSA": {
    "rec": "AL",
    "target": 173.54,
-   "upside": 61.0,
+   "upside": 66.0,
    "date": "2026-05-05",
-   "close": 107.7,
+   "close": 104.8,
    "w1": {
     "rec": "AL",
     "target": 173.54
@@ -676,9 +676,9 @@
   "MPARK": {
    "rec": "AL",
    "target": 700.24,
-   "upside": 63.0,
+   "upside": 68.0,
    "date": "2026-05-07",
-   "close": 429.0,
+   "close": 417.5,
    "w1": {
     "rec": "AL",
     "target": 700.24
@@ -695,9 +695,9 @@
   "SOKM": {
    "rec": "AL",
    "target": 98.19,
-   "upside": 144.0,
+   "upside": 145.0,
    "date": "2026-04-24",
-   "close": 40.26,
+   "close": 40.12,
    "w1": {
     "rec": "AL",
     "target": 98.19
@@ -714,9 +714,9 @@
   "OYAKC": {
    "rec": "AL",
    "target": 35.26,
-   "upside": 93.0,
+   "upside": 99.0,
    "date": "2026-11-04",
-   "close": 18.31,
+   "close": 17.7,
    "w1": {
     "rec": "AL",
     "target": 35.26
@@ -733,9 +733,9 @@
   "GWIND": {
    "rec": "AL",
    "target": 39.0,
-   "upside": 117.0,
+   "upside": 128.0,
    "date": "2026-04-13",
-   "close": 18.0,
+   "close": 17.11,
    "w1": {
     "rec": "AL",
     "target": 39.0
@@ -752,9 +752,9 @@
   "AYDEM": {
    "rec": "AL",
    "target": 40.3,
-   "upside": 87.0,
+   "upside": 107.0,
    "date": "2026-04-13",
-   "close": 21.56,
+   "close": 19.48,
    "w1": {
     "rec": "AL",
     "target": 40.3
@@ -771,9 +771,9 @@
   "HTTBT": {
    "rec": "AL",
    "target": 60.22,
-   "upside": 105.0,
+   "upside": 108.0,
    "date": "2026-04-22",
-   "close": 29.4,
+   "close": 29.0,
    "w1": {
     "rec": "AL",
     "target": 60.22
@@ -790,9 +790,9 @@
   "GRSEL": {
    "rec": "AL",
    "target": 399.33,
-   "upside": 65.0,
+   "upside": 71.0,
    "date": "2026-11-24",
-   "close": 242.0,
+   "close": 233.0,
    "w1": {
     "rec": null,
     "target": null
@@ -810,9 +810,9 @@
   "KCAER": {
    "rec": "AL",
    "target": 18.83,
-   "upside": 87.0,
+   "upside": 93.0,
    "date": "2026-05-08",
-   "close": 10.07,
+   "close": 9.78,
    "w1": {
     "rec": "AL",
     "target": 18.83
@@ -829,9 +829,9 @@
   "ASTOR": {
    "rec": "AL",
    "target": 297.24,
-   "upside": 99.0,
+   "upside": 95.0,
    "date": "2026-11-10",
-   "close": 149.7,
+   "close": 152.4,
    "w1": {
     "rec": "AL",
     "target": 297.24
@@ -848,9 +848,9 @@
   "AKFYE": {
    "rec": "AL",
    "target": 4.53,
-   "upside": 68.0,
+   "upside": 77.0,
    "date": "2026-11-06",
-   "close": 2.7,
+   "close": 2.56,
    "w1": {
     "rec": "AL",
     "target": 4.53
@@ -869,7 +869,7 @@
    "target": null,
    "upside": null,
    "date": "2026-03-12",
-   "close": 11.28,
+   "close": 10.92,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -886,9 +886,9 @@
   "ATAKP": {
    "rec": "TUT",
    "target": 68.35,
-   "upside": 99.0,
+   "upside": 106.0,
    "date": "2026-03-13",
-   "close": 34.38,
+   "close": 33.1,
    "w1": {
     "rec": "TUT",
     "target": 68.35
@@ -905,9 +905,9 @@
   "TABGD": {
    "rec": "AL",
    "target": 411.41,
-   "upside": 140.0,
+   "upside": 148.0,
    "date": "2026-04-24",
-   "close": 171.7,
+   "close": 165.6,
    "w1": {
     "rec": "AL",
     "target": 411.41
@@ -924,9 +924,9 @@
   "MOGAN": {
    "rec": "AL",
    "target": 16.6,
-   "upside": 109.0,
+   "upside": 111.0,
    "date": "2026-11-09",
-   "close": 7.95,
+   "close": 7.88,
    "w1": {
     "rec": "AL",
     "target": 16.6
@@ -943,9 +943,9 @@
   "ENTRA": {
    "rec": "AL",
    "target": 7.27,
-   "upside": 62.0,
+   "upside": 63.0,
    "date": "2026-02-19",
-   "close": 4.5,
+   "close": 4.46,
    "w1": {
     "rec": "AL",
     "target": 7.27
@@ -962,9 +962,9 @@
   "KOTON": {
    "rec": "AL",
    "target": 26.62,
-   "upside": 244.0,
+   "upside": 253.0,
    "date": "2026-04-24",
-   "close": 7.73,
+   "close": 7.54,
    "w1": {
     "rec": "AL",
     "target": 26.62
@@ -981,9 +981,9 @@
   "LILAK": {
    "rec": "AL",
    "target": 51.5,
-   "upside": 187.0,
+   "upside": 194.0,
    "date": "2026-04-24",
-   "close": 17.95,
+   "close": 17.5,
    "w1": {
     "rec": "AL",
     "target": 51.5
@@ -1000,9 +1000,9 @@
   "TOASO": {
    "rec": "AL",
    "target": 442.45,
-   "upside": 78.0,
+   "upside": 90.0,
    "date": "2026-04-24",
-   "close": 248.4,
+   "close": 232.8,
    "w1": {
     "rec": "AL",
     "target": 442.45
@@ -1019,9 +1019,9 @@
   "TUPRS": {
    "rec": "AL",
    "target": 477.0,
-   "upside": 49.0,
+   "upside": 50.0,
    "date": "2026-11-09",
-   "close": 320.0,
+   "close": 318.0,
    "w1": {
     "rec": "AL",
     "target": 477.0
@@ -1040,7 +1040,7 @@
    "target": null,
    "upside": null,
    "date": "2026-10-06",
-   "close": 6.27,
+   "close": 6.2,
    "w1": {
     "rec": "G.G.",
     "target": null
@@ -1057,9 +1057,9 @@
   "TRALT": {
    "rec": "AL",
    "target": 56.0,
-   "upside": 63.0,
+   "upside": 74.0,
    "date": "2026-11-10",
-   "close": 34.32,
+   "close": 32.1,
    "w1": {
     "rec": "AL",
     "target": 56.0
@@ -1077,92 +1077,92 @@
  "model": {
   "AKSEN": {
    "since": "2026-10-02",
-   "close": 61.45,
+   "close": 58.2,
    "target": 117.5,
-   "upside": 91.0,
-   "retTl": -17.18,
-   "retUsd": -19.75,
-   "retRel": -7.33,
+   "upside": 102.0,
+   "retTl": -21.56,
+   "retUsd": -24.02,
+   "retRel": -9.68,
    "weight": 10.0
   },
   "ASELS": {
    "since": "2025-01-16",
-   "close": 322.5,
+   "close": 313.75,
    "target": 534.57,
-   "upside": 66.0,
-   "retTl": 302.91,
-   "retUsd": 182.21,
-   "retRel": 262.52,
+   "upside": 70.0,
+   "retTl": 291.98,
+   "retUsd": 174.47,
+   "retRel": 262.95,
    "weight": 12.0
   },
   "ASTOR": {
    "since": "2025-10-20",
-   "close": 149.7,
+   "close": 152.4,
    "target": 297.24,
-   "upside": 99.0,
-   "retTl": 55.14,
-   "retUsd": 28.56,
-   "retRel": 48.33,
+   "upside": 95.0,
+   "retTl": 57.94,
+   "retUsd": 30.83,
+   "retRel": 55.4,
    "weight": 6.0
   },
   "ENJSA": {
    "since": "2026-03-12",
-   "close": 107.7,
+   "close": 104.8,
    "target": 173.54,
-   "upside": 61.0,
-   "retTl": -5.57,
-   "retUsd": -17.73,
-   "retRel": 14.41,
+   "upside": 66.0,
+   "retTl": -8.11,
+   "retUsd": -19.97,
+   "retRel": 14.57,
    "weight": 10.0
   },
   "GARAN": {
    "since": "2024-07-08",
-   "close": 143.3,
+   "close": 137.9,
    "target": 195.0,
-   "upside": 36.0,
-   "retTl": 24.88,
-   "retUsd": -19.34,
-   "retRel": 23.72,
+   "upside": 41.0,
+   "retTl": 20.18,
+   "retUsd": -22.41,
+   "retRel": 22.53,
    "weight": 20.0
   },
   "MPARK": {
    "since": "2025-12-23",
-   "close": 429.0,
+   "close": 417.5,
    "target": 700.24,
-   "upside": 63.0,
-   "retTl": 17.05,
-   "retUsd": -0.99,
-   "retRel": 20.52,
+   "upside": 68.0,
+   "retTl": 13.92,
+   "retUsd": -3.67,
+   "retRel": 20.7,
    "weight": 9.0
   },
   "SOKM": {
    "since": "2026-07-22",
-   "close": 40.26,
+   "close": 40.12,
    "target": 98.19,
-   "upside": 144.0,
-   "retTl": -28.3,
-   "retUsd": -33.13,
-   "retRel": -7.55,
+   "upside": 145.0,
+   "retTl": -28.55,
+   "retUsd": -33.39,
+   "retRel": -5.19,
    "weight": 11.0
   },
   "THYAO": {
    "since": "2026-07-03",
-   "close": 320.5,
+   "close": 311.5,
    "target": 490.0,
-   "upside": 53.0,
-   "retTl": -4.04,
-   "retUsd": -11.45,
-   "retRel": 26.16,
+   "upside": 57.0,
+   "retTl": -6.74,
+   "retUsd": -13.97,
+   "retRel": 26.19,
    "weight": 13.0
   },
   "TUPRS": {
    "since": "2026-04-09",
-   "close": 320.0,
+   "close": 318.0,
    "target": 477.0,
-   "upside": 49.0,
-   "retTl": 27.74,
-   "retUsd": 12.5,
-   "retRel": 59.46,
+   "upside": 50.0,
+   "retTl": 26.94,
+   "retUsd": 11.77,
+   "retRel": 63.08,
    "weight": 9.0
   }
  },
@@ -1177,7 +1177,7 @@
    "median": 29.0,
    "low": 21.0,
    "high": 31.6,
-   "price": 14.76
+   "price": 14.62
   },
   "AGESA": {
    "strongBuy": 1,
@@ -1189,7 +1189,7 @@
    "median": 366.0,
    "low": 330.0,
    "high": 397.5,
-   "price": 205.0
+   "price": 203.9
   },
   "AGHOL": {
    "strongBuy": 0,
@@ -1201,7 +1201,7 @@
    "median": 50.8,
    "low": 44.0,
    "high": 53.0,
-   "price": 23.68
+   "price": 23.54
   },
   "AKBNK": {
    "strongBuy": 3,
@@ -1213,7 +1213,7 @@
    "median": 89.89,
    "low": 77.0,
    "high": 116.6,
-   "price": 61.05
+   "price": 60.65
   },
   "AKCNS": {
    "strongBuy": 0,
@@ -1225,7 +1225,7 @@
    "median": 290.0,
    "low": 216.0,
    "high": 313.23,
-   "price": 166.1
+   "price": 165.6
   },
   "AKFYE": {
    "strongBuy": 0,
@@ -1237,7 +1237,7 @@
    "median": 4.535,
    "low": 4.535,
    "high": 4.535,
-   "price": 2.61
+   "price": 2.56
   },
   "AKSA": {
    "strongBuy": 0,
@@ -1249,7 +1249,7 @@
    "median": 15.5,
    "low": 12.66,
    "high": 18.5,
-   "price": 11.02
+   "price": 11.12
   },
   "AKSEN": {
    "strongBuy": 0,
@@ -1261,7 +1261,7 @@
    "median": 117.9,
    "low": 109.0,
    "high": 136.60538,
-   "price": 59.05
+   "price": 58.2
   },
   "AKSGY": {
    "strongBuy": 0,
@@ -1273,7 +1273,7 @@
    "median": 13.765,
    "low": 13.5,
    "high": 14.03,
-   "price": 8.35
+   "price": 8.27
   },
   "ALARK": {
    "strongBuy": 0,
@@ -1285,7 +1285,7 @@
    "median": 179.845,
    "low": 153.0,
    "high": 192.97,
-   "price": 100.1
+   "price": 99.3
   },
   "ALBRK": {
    "strongBuy": 0,
@@ -1297,7 +1297,7 @@
    "median": 11.84,
    "low": 11.74,
    "high": 11.94,
-   "price": 7.93
+   "price": 7.88
   },
   "ANHYT": {
    "strongBuy": 0,
@@ -1321,7 +1321,7 @@
    "median": 43.5,
    "low": 37.9,
    "high": 49.88,
-   "price": 21.14
+   "price": 21.06
   },
   "ARCLK": {
    "strongBuy": 0,
@@ -1333,7 +1333,7 @@
    "median": 130.0,
    "low": 82.0,
    "high": 208.0,
-   "price": 60.35
+   "price": 60.0
   },
   "ARMGD": {
    "strongBuy": 0,
@@ -1357,7 +1357,7 @@
    "median": 455.6,
    "low": 341.0,
    "high": 625.0,
-   "price": 317.0
+   "price": 313.75
   },
   "ASTOR": {
    "strongBuy": 0,
@@ -1369,7 +1369,7 @@
    "median": 367.28,
    "low": 272.0,
    "high": 431.0,
-   "price": 150.8
+   "price": 152.4
   },
   "ATAKP": {
    "strongBuy": 0,
@@ -1381,7 +1381,7 @@
    "median": 69.05,
    "low": 69.05,
    "high": 69.05,
-   "price": 32.88
+   "price": 33.1
   },
   "AVPGY": {
    "strongBuy": 0,
@@ -1393,7 +1393,7 @@
    "median": 103.8,
    "low": 97.5,
    "high": 110.1,
-   "price": 43.9
+   "price": 44.0
   },
   "AYDEM": {
    "strongBuy": 0,
@@ -1405,7 +1405,7 @@
    "median": 40.3,
    "low": 40.3,
    "high": 40.3,
-   "price": 19.83
+   "price": 19.48
   },
   "AYGAZ": {
    "strongBuy": 0,
@@ -1417,7 +1417,7 @@
    "median": 370.0,
    "low": 315.79962,
    "high": 385.0,
-   "price": 241.5
+   "price": 241.0
   },
   "BALSU": {
    "strongBuy": 0,
@@ -1429,7 +1429,7 @@
    "median": 27.14,
    "low": 27.14,
    "high": 27.14,
-   "price": 6.23
+   "price": 6.2
   },
   "BIMAS": {
    "strongBuy": 3,
@@ -1441,7 +1441,7 @@
    "median": 520.0,
    "low": 463.0,
    "high": 620.0,
-   "price": 362.5
+   "price": 359.75
   },
   "BIZIM": {
    "strongBuy": 0,
@@ -1453,7 +1453,7 @@
    "median": 37.0,
    "low": 36.0,
    "high": 38.0,
-   "price": 13.34
+   "price": 13.19
   },
   "BRISA": {
    "strongBuy": 0,
@@ -1465,7 +1465,7 @@
    "median": 109.9,
    "low": 105.0,
    "high": 110.5,
-   "price": 68.85
+   "price": 70.0
   },
   "BRSAN": {
    "strongBuy": 0,
@@ -1477,7 +1477,7 @@
    "median": 952.0,
    "low": 952.0,
    "high": 952.0,
-   "price": 640.0
+   "price": 637.0
   },
   "CCOLA": {
    "strongBuy": 2,
@@ -1489,7 +1489,7 @@
    "median": 118.0,
    "low": 93.0,
    "high": 126.0,
-   "price": 73.9
+   "price": 73.6
   },
   "CIMSA": {
    "strongBuy": 0,
@@ -1501,7 +1501,7 @@
    "median": 70.55,
    "low": 66.2,
    "high": 82.93,
-   "price": 37.2
+   "price": 37.16
   },
   "CWENE": {
    "strongBuy": 0,
@@ -1513,7 +1513,7 @@
    "median": 60.0,
    "low": 60.0,
    "high": 60.0,
-   "price": 17.9
+   "price": 17.8
   },
   "DOAS": {
    "strongBuy": 0,
@@ -1525,7 +1525,7 @@
    "median": 231.5,
    "low": 152.0,
    "high": 320.0,
-   "price": 111.9
+   "price": 110.6
   },
   "DOHOL": {
    "strongBuy": 1,
@@ -1537,7 +1537,7 @@
    "median": 33.17,
    "low": 30.2,
    "high": 35.56,
-   "price": 14.98
+   "price": 14.89
   },
   "EKGYO": {
    "strongBuy": 0,
@@ -1549,7 +1549,7 @@
    "median": 32.84,
    "low": 32.8,
    "high": 33.15,
-   "price": 16.37
+   "price": 16.3
   },
   "ENJSA": {
    "strongBuy": 0,
@@ -1561,7 +1561,7 @@
    "median": 143.76884,
    "low": 120.0,
    "high": 202.4,
-   "price": 106.3
+   "price": 104.8
   },
   "ENKAI": {
    "strongBuy": 0,
@@ -1569,11 +1569,11 @@
    "hold": 5,
    "sell": 0,
    "strongSell": 0,
-   "mean": 116.85332,
-   "median": 113.48353,
-   "low": 97.85072,
-   "high": 142.95023,
-   "price": 76.1
+   "mean": 116.85049,
+   "median": 113.480774,
+   "low": 97.84835,
+   "high": 142.94676,
+   "price": 75.55
   },
   "ENTRA": {
    "strongBuy": 0,
@@ -1585,7 +1585,7 @@
    "median": 7.96,
    "low": 7.96,
    "high": 7.96,
-   "price": 4.45
+   "price": 4.46
   },
   "EREGL": {
    "strongBuy": 1,
@@ -1597,7 +1597,7 @@
    "median": 42.24,
    "low": 23.0,
    "high": 59.2,
-   "price": 28.82
+   "price": 28.68
   },
   "FROTO": {
    "strongBuy": 3,
@@ -1609,7 +1609,7 @@
    "median": 121.0,
    "low": 83.61944,
    "high": 208.0,
-   "price": 67.25
+   "price": 66.9
   },
   "GARAN": {
    "strongBuy": 4,
@@ -1621,7 +1621,7 @@
    "median": 184.5,
    "low": 143.0,
    "high": 211.3,
-   "price": 138.4
+   "price": 137.9
   },
   "GOKNR": {
    "strongBuy": 0,
@@ -1633,7 +1633,7 @@
    "median": 36.11,
    "low": 36.11,
    "high": 36.11,
-   "price": 11.05
+   "price": 10.92
   },
   "GWIND": {
    "strongBuy": 0,
@@ -1645,7 +1645,7 @@
    "median": 36.2,
    "low": 31.69,
    "high": 39.0,
-   "price": 17.49
+   "price": 17.11
   },
   "HALKB": {
    "strongBuy": 0,
@@ -1657,7 +1657,7 @@
    "median": 43.65,
    "low": 22.7,
    "high": 54.3184,
-   "price": 37.16
+   "price": 37.14
   },
   "HEKTS": {
    "strongBuy": 0,
@@ -1669,7 +1669,7 @@
    "median": 4.3,
    "low": 4.3,
    "high": 4.3,
-   "price": 1.44
+   "price": 1.43
   },
   "HTTBT": {
    "strongBuy": 0,
@@ -1677,11 +1677,11 @@
    "hold": 1,
    "sell": 0,
    "strongSell": 0,
-   "mean": 62.92076,
-   "median": 61.670624,
-   "low": 59.187584,
-   "high": 67.903564,
-   "price": 28.96
+   "mean": 62.920387,
+   "median": 61.670258,
+   "low": 59.18723,
+   "high": 67.90316,
+   "price": 29.0
   },
   "ISCTR": {
    "strongBuy": 1,
@@ -1693,7 +1693,7 @@
    "median": 18.15,
    "low": 15.0,
    "high": 23.19,
-   "price": 11.85
+   "price": 11.82
   },
   "ISGYO": {
    "strongBuy": 0,
@@ -1705,7 +1705,7 @@
    "median": 27.2,
    "low": 27.2,
    "high": 27.2,
-   "price": 17.76
+   "price": 17.88
   },
   "ISMEN": {
    "strongBuy": 0,
@@ -1717,7 +1717,7 @@
    "median": 62.85,
    "low": 54.3,
    "high": 71.4,
-   "price": 25.06
+   "price": 24.94
   },
   "KCAER": {
    "strongBuy": 0,
@@ -1729,7 +1729,7 @@
    "median": 19.35,
    "low": 19.0,
    "high": 19.7,
-   "price": 9.91
+   "price": 9.78
   },
   "KCHOL": {
    "strongBuy": 1,
@@ -1741,7 +1741,7 @@
    "median": 324.0,
    "low": 290.0,
    "high": 358.479,
-   "price": 182.8
+   "price": 182.6
   },
   "KOTON": {
    "strongBuy": 0,
@@ -1761,11 +1761,11 @@
    "hold": 4,
    "sell": 0,
    "strongSell": 0,
-   "mean": 51.710323,
-   "median": 51.55831,
-   "low": 44.79366,
-   "high": 61.565945,
-   "price": 34.58
+   "mean": 51.711693,
+   "median": 51.55968,
+   "low": 44.794846,
+   "high": 61.567577,
+   "price": 34.3
   },
   "LILAK": {
    "strongBuy": 0,
@@ -1777,7 +1777,7 @@
    "median": 53.02,
    "low": 53.02,
    "high": 53.02,
-   "price": 17.7
+   "price": 17.5
   },
   "LOGO": {
    "strongBuy": 0,
@@ -1789,7 +1789,7 @@
    "median": 232.0,
    "low": 211.41,
    "high": 245.32,
-   "price": 114.3
+   "price": 112.3
   },
   "MAVI": {
    "strongBuy": 1,
@@ -1801,7 +1801,7 @@
    "median": 63.35,
    "low": 60.0,
    "high": 67.09,
-   "price": 31.88
+   "price": 31.7
   },
   "MGROS": {
    "strongBuy": 3,
@@ -1813,7 +1813,7 @@
    "median": 910.0,
    "low": 700.0,
    "high": 1061.74,
-   "price": 402.75
+   "price": 400.75
   },
   "MOGAN": {
    "strongBuy": 0,
@@ -1825,7 +1825,7 @@
    "median": 16.6,
    "low": 16.6,
    "high": 16.6,
-   "price": 7.87
+   "price": 7.88
   },
   "MPARK": {
    "strongBuy": 1,
@@ -1837,7 +1837,7 @@
    "median": 640.0,
    "low": 500.0,
    "high": 723.0,
-   "price": 418.5
+   "price": 417.5
   },
   "OTKAR": {
    "strongBuy": 0,
@@ -1849,7 +1849,7 @@
    "median": 450.0,
    "low": 380.0,
    "high": 573.0,
-   "price": 301.0
+   "price": 302.0
   },
   "OYAKC": {
    "strongBuy": 0,
@@ -1861,7 +1861,7 @@
    "median": 34.2,
    "low": 31.6,
    "high": 38.92,
-   "price": 17.75
+   "price": 17.7
   },
   "PETKM": {
    "strongBuy": 0,
@@ -1873,7 +1873,7 @@
    "median": 18.91,
    "low": 16.0,
    "high": 26.13,
-   "price": 14.88
+   "price": 14.77
   },
   "PGSUS": {
    "strongBuy": 1,
@@ -1885,7 +1885,7 @@
    "median": 240.0,
    "low": 181.58443,
    "high": 290.0,
-   "price": 151.9
+   "price": 151.0
   },
   "RGYAS": {
    "strongBuy": 0,
@@ -1897,7 +1897,7 @@
    "median": 287.89,
    "low": 265.0,
    "high": 323.0,
-   "price": 150.2
+   "price": 149.3
   },
   "RYGYO": {
    "strongBuy": 0,
@@ -1909,7 +1909,7 @@
    "median": null,
    "low": null,
    "high": null,
-   "price": 43.24
+   "price": 42.82
   },
   "SAHOL": {
    "strongBuy": 0,
@@ -1921,7 +1921,7 @@
    "median": 165.78,
    "low": 138.2,
    "high": 181.0,
-   "price": 74.55
+   "price": 74.1
   },
   "SELEC": {
    "strongBuy": 0,
@@ -1933,7 +1933,7 @@
    "median": 150.9,
    "low": 131.58,
    "high": 190.0,
-   "price": 94.35
+   "price": 93.0
   },
   "SISE": {
    "strongBuy": 1,
@@ -1945,7 +1945,7 @@
    "median": 56.95,
    "low": 42.08797,
    "high": 68.0,
-   "price": 30.38
+   "price": 30.22
   },
   "SOKM": {
    "strongBuy": 0,
@@ -1957,7 +1957,7 @@
    "median": 85.0,
    "low": 72.0,
    "high": 110.0,
-   "price": 40.28
+   "price": 40.12
   },
   "TABGD": {
    "strongBuy": 1,
@@ -1969,7 +1969,7 @@
    "median": 361.5,
    "low": 340.0,
    "high": 416.41,
-   "price": 164.7
+   "price": 165.6
   },
   "TAVHL": {
    "strongBuy": 2,
@@ -1977,11 +1977,11 @@
    "hold": 0,
    "sell": 0,
    "strongSell": 0,
-   "mean": 427.78976,
-   "median": 428.18298,
-   "low": 371.22134,
-   "high": 504.11337,
-   "price": 280.25
+   "mean": 429.27405,
+   "median": 429.6686,
+   "low": 372.50934,
+   "high": 505.86246,
+   "price": 280.5
   },
   "TCELL": {
    "strongBuy": 1,
@@ -1993,7 +1993,7 @@
    "median": 160.0,
    "low": 134.0,
    "high": 167.7,
-   "price": 87.55
+   "price": 86.95
   },
   "THYAO": {
    "strongBuy": 3,
@@ -2005,7 +2005,7 @@
    "median": 462.0,
    "low": 315.0,
    "high": 580.0,
-   "price": 315.75
+   "price": 311.5
   },
   "TKFEN": {
    "strongBuy": 0,
@@ -2017,7 +2017,7 @@
    "median": 130.7,
    "low": 101.4,
    "high": 160.0,
-   "price": 184.7
+   "price": 183.7
   },
   "TKNSA": {
    "strongBuy": 0,
@@ -2029,7 +2029,7 @@
    "median": 55.59,
    "low": 36.78,
    "high": 74.4,
-   "price": 10.12
+   "price": 10.1
   },
   "TOASO": {
    "strongBuy": 2,
@@ -2041,7 +2041,7 @@
    "median": 408.0,
    "low": 327.6,
    "high": 496.7,
-   "price": 234.8
+   "price": 232.8
   },
   "TRALT": {
    "strongBuy": 0,
@@ -2053,7 +2053,7 @@
    "median": 70.0,
    "low": 53.0,
    "high": 71.4,
-   "price": 32.52
+   "price": 32.1
   },
   "TRENJ": {
    "strongBuy": 0,
@@ -2065,7 +2065,7 @@
    "median": 218.7,
    "low": 218.7,
    "high": 218.7,
-   "price": 64.6
+   "price": 64.05
   },
   "TRGYO": {
    "strongBuy": 1,
@@ -2077,7 +2077,7 @@
    "median": 125.5,
    "low": 113.3,
    "high": 156.97,
-   "price": 81.45
+   "price": 81.3
   },
   "TRMET": {
    "strongBuy": 0,
@@ -2089,7 +2089,7 @@
    "median": 247.6,
    "low": 213.0,
    "high": 282.2,
-   "price": 96.3
+   "price": 95.3
   },
   "TSKB": {
    "strongBuy": 0,
@@ -2101,7 +2101,7 @@
    "median": 19.6458,
    "low": 16.8,
    "high": 20.0,
-   "price": 9.26
+   "price": 9.21
   },
   "TTKOM": {
    "strongBuy": 2,
@@ -2113,7 +2113,7 @@
    "median": 85.0,
    "low": 50.0,
    "high": 97.9,
-   "price": 44.86
+   "price": 44.66
   },
   "TTRAK": {
    "strongBuy": 0,
@@ -2125,7 +2125,7 @@
    "median": 570.0,
    "low": 460.0,
    "high": 640.5,
-   "price": 326.75
+   "price": 326.0
   },
   "TUPRS": {
    "strongBuy": 1,
@@ -2137,7 +2137,7 @@
    "median": 379.3,
    "low": 278.0,
    "high": 501.0,
-   "price": 318.25
+   "price": 318.0
   },
   "TURSG": {
    "strongBuy": 1,
@@ -2149,7 +2149,7 @@
    "median": 9.85,
    "low": 6.55,
    "high": 11.215,
-   "price": 2.82
+   "price": 2.79
   },
   "ULKER": {
    "strongBuy": 0,
@@ -2161,7 +2161,7 @@
    "median": 156.45,
    "low": 114.6,
    "high": 215.0,
-   "price": 62.4
+   "price": 61.95
   },
   "VAKBN": {
    "strongBuy": 0,
@@ -2173,7 +2173,7 @@
    "median": 41.8,
    "low": 31.6,
    "high": 47.27979,
-   "price": 31.16
+   "price": 31.0
   },
   "VESBE": {
    "strongBuy": 0,
@@ -2185,7 +2185,7 @@
    "median": 8.0,
    "low": 8.0,
    "high": 8.0,
-   "price": 3.28
+   "price": 3.25
   },
   "VESTL": {
    "strongBuy": 0,
@@ -2197,7 +2197,7 @@
    "median": 35.6,
    "low": 31.5,
    "high": 39.7,
-   "price": 12.04
+   "price": 12.01
   },
   "YATAS": {
    "strongBuy": 0,
@@ -2209,7 +2209,7 @@
    "median": 52.5,
    "low": 48.39,
    "high": 65.0,
-   "price": 18.23
+   "price": 18.15
   },
   "YKBNK": {
    "strongBuy": 0,
@@ -2221,7 +2221,7 @@
    "median": 48.0,
    "low": 27.1,
    "high": 55.6,
-   "price": 34.02
+   "price": 34.04
   }
  },
  "changes": []
