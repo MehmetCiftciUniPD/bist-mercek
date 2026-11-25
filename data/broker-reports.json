@@ -1,0 +1,2228 @@
+{
+ "fetchedAt": "2026-11-25T17:24+03:00",
+ "sources": {
+  "isy": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/takip-listesi.aspx",
+  "model": "https://www.isyatirim.com.tr/tr-tr/analiz/Sayfalar/is-yatirimin-onerileri.aspx",
+  "consensus": "Yahoo Finance (yfinance)"
+ },
+ "isy": {
+  "AEFES": {
+   "rec": "AL",
+   "target": 31.26,
+   "upside": 101.0,
+   "date": "2026-04-24",
+   "close": 15.52,
+   "w1": {
+    "rec": "AL",
+    "target": 31.26
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 31.26
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 31.26
+   }
+  },
+  "AKCNS": {
+   "rec": "AL",
+   "target": 302.03,
+   "upside": 77.0,
+   "date": "2026-09-14",
+   "close": 170.6,
+   "w1": {
+    "rec": "AL",
+    "target": 302.03
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 302.03
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 258.68
+   }
+  },
+  "AKSEN": {
+   "rec": "AL",
+   "target": 117.5,
+   "upside": 91.0,
+   "date": "2026-04-13",
+   "close": 61.45,
+   "w1": {
+    "rec": "AL",
+    "target": 117.5
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 117.5
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 117.5
+   }
+  },
+  "ARCLK": {
+   "rec": "TUT",
+   "target": 108.44,
+   "upside": 77.0,
+   "date": "2026-10-27",
+   "close": 61.35,
+   "w1": {
+    "rec": "TUT",
+    "target": 108.44
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 129.82
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 129.82
+   }
+  },
+  "ASELS": {
+   "rec": "AL",
+   "target": 534.57,
+   "upside": 66.0,
+   "date": "2026-10-28",
+   "close": 322.5,
+   "w1": {
+    "rec": "AL",
+    "target": 534.57
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 450.0
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 450.0
+   }
+  },
+  "AYGAZ": {
+   "rec": "AL",
+   "target": 450.0,
+   "upside": 86.0,
+   "date": "2026-11-09",
+   "close": 241.8,
+   "w1": {
+    "rec": "AL",
+    "target": 450.0
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 385.0
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 385.0
+   }
+  },
+  "BIMAS": {
+   "rec": "AL",
+   "target": 492.38,
+   "upside": 34.0,
+   "date": "2026-04-24",
+   "close": 368.0,
+   "w1": {
+    "rec": "AL",
+    "target": 492.38
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 492.38
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 492.38
+   }
+  },
+  "BIZIM": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2025-10-31",
+   "close": 13.99,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m3": {
+    "rec": "G.G.",
+    "target": null
+   }
+  },
+  "BJKAS": {
+   "rec": "Ö.Y.",
+   "target": null,
+   "upside": null,
+   "date": "2003-12-31",
+   "close": 1.15,
+   "w1": {
+    "rec": "Ö.Y.",
+    "target": null
+   },
+   "m1": {
+    "rec": "Ö.Y.",
+    "target": null
+   },
+   "m3": {
+    "rec": "Ö.Y.",
+    "target": null
+   }
+  },
+  "BRSAN": {
+   "rec": "AL",
+   "target": 952.0,
+   "upside": 48.0,
+   "date": "2026-11-23",
+   "close": 645.0,
+   "w1": {
+    "rec": "Ö.Y.",
+    "target": null
+   },
+   "m1": {
+    "rec": "Ö.Y.",
+    "target": null
+   },
+   "m3": {
+    "rec": "Ö.Y.",
+    "target": null
+   },
+   "note": "ABD'deki yerel üretici konumu, LNG ihracat kapasitesindeki artış, veri merkezleri ve elektrifikasyon kaynaklı elektrik talebi ile yaşlanan hatların yenilenmesi \"Altyapı ve Proje\" iş kolunda büyük çaplı hat borusu talebini desteklerken; \"Enerji\" iş kolunda toparlanan OCTG gösterge fiyatları, petrol fiyatları ve ABD Ticaret Bakanlığı’nın ön anti-damping oranları güçlü bir fiyatlama ortamına işaret etmektedir. Uzun vadeli mevcut sözleşmeler ve sipariş anında sabitlenen hammadde maliyetleri ABD tesislerinde tam kapasite çalışmayı destekleyerek yüksek gelir ve marj görünürlüğü sağlarken; Türkiye iç pazarının sınırlı payı ve dolar bazlı fonksiyonel para birimi Şirket'i yurt içi kur ve talep dalgal"
+  },
+  "CCOLA": {
+   "rec": "AL",
+   "target": 120.0,
+   "upside": 55.0,
+   "date": "2026-08-11",
+   "close": 77.3,
+   "w1": {
+    "rec": "AL",
+    "target": 120.0
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 120.0
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 120.0
+   }
+  },
+  "CIMSA": {
+   "rec": "AL",
+   "target": 80.28,
+   "upside": 111.0,
+   "date": "2026-04-24",
+   "close": 38.04,
+   "w1": {
+    "rec": "AL",
+    "target": 80.28
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 80.28
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 80.28
+   }
+  },
+  "DOAS": {
+   "rec": "TUT",
+   "target": 205.1,
+   "upside": 82.0,
+   "date": "2026-04-24",
+   "close": 112.7,
+   "w1": {
+    "rec": "TUT",
+    "target": 205.1
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 205.1
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 205.1
+   }
+  },
+  "ENKAI": {
+   "rec": "AL",
+   "target": 120.0,
+   "upside": 58.0,
+   "date": "2026-11-09",
+   "close": 76.0,
+   "w1": {
+    "rec": "AL",
+    "target": 120.0
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 127.0
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 127.0
+   }
+  },
+  "EREGL": {
+   "rec": "TUT",
+   "target": 45.0,
+   "upside": 51.0,
+   "date": "2026-08-07",
+   "close": 29.84,
+   "w1": {
+    "rec": "TUT",
+    "target": 45.0
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 45.0
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 45.0
+   }
+  },
+  "FROTO": {
+   "rec": "AL",
+   "target": 152.5,
+   "upside": 118.0,
+   "date": "2026-04-24",
+   "close": 69.9,
+   "w1": {
+    "rec": "AL",
+    "target": 152.5
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 152.5
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 152.5
+   }
+  },
+  "KRDMD": {
+   "rec": "AL",
+   "target": 48.0,
+   "upside": 34.0,
+   "date": "2026-04-24",
+   "close": 35.84,
+   "w1": {
+    "rec": "AL",
+    "target": 48.0
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 48.0
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 48.0
+   }
+  },
+  "LOGO": {
+   "rec": "AL",
+   "target": 227.56,
+   "upside": 106.0,
+   "date": "2025-10-30",
+   "close": 110.3,
+   "w1": {
+    "rec": "AL",
+    "target": 227.56
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 227.56
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 227.56
+   }
+  },
+  "MGROS": {
+   "rec": "AL",
+   "target": 1050.7,
+   "upside": 154.0,
+   "date": "2026-04-24",
+   "close": 414.25,
+   "w1": {
+    "rec": "AL",
+    "target": 1050.7
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 1050.7
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 1050.7
+   }
+  },
+  "PETKM": {
+   "rec": "SAT",
+   "target": 18.0,
+   "upside": 21.0,
+   "date": "2025-01-16",
+   "close": 14.9,
+   "w1": {
+    "rec": "SAT",
+    "target": 18.0
+   },
+   "m1": {
+    "rec": "SAT",
+    "target": 18.0
+   },
+   "m3": {
+    "rec": "SAT",
+    "target": 18.0
+   }
+  },
+  "PGSUS": {
+   "rec": "AL",
+   "target": 232.0,
+   "upside": 50.0,
+   "date": "2026-11-16",
+   "close": 154.2,
+   "w1": {
+    "rec": "AL",
+    "target": 232.0
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 190.0
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 190.0
+   },
+   "note": "Güçlü filo büyümesi, yeni jenerasyon uçakların filodaki yükselen payı sayesinde artan yakıt verimliliği, rekabetçi maliyet yapısı, döviz bazlı gelirlerin yüksek payı, rakiplerine kıyasla yüksek karlılık, İstanbul’un benzersiz konumu ve Türkiye’nin turizm potansiyeli Pegasus Hava Yolları’nın ana yatırım dinamiklerini oluşturmaktadır. Katalist Smartwings konsolidasyonu hariç, 2026 yılı ortalama 90 $ ve 2027 yılı ortalama 85 $ Brent petrol fiyatı varsayımımızla, Pegasus Hava Yolları’nın net satış gelirlerinin 2026 yılında %8 artarak 3,69 milyar €’ya ulaşacağını öngörüyoruz. 2027 yılında ise %5'lik kapasite büyümesi ve yaklaşık %3'lük RASK artışı varsayımlarıyla gelirlerin %8 artarak 3,98 milyar"
+  },
+  "SELEC": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2026-11-10",
+   "close": 100.3,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 131.58
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 131.58
+   }
+  },
+  "TAVHL": {
+   "rec": "AL",
+   "target": 403.09,
+   "upside": 40.0,
+   "date": "2026-04-24",
+   "close": 288.0,
+   "w1": {
+    "rec": "AL",
+    "target": 403.09
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 403.09
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 403.09
+   }
+  },
+  "TCELL": {
+   "rec": "AL",
+   "target": 167.64,
+   "upside": 86.0,
+   "date": "2026-04-24",
+   "close": 90.15,
+   "w1": {
+    "rec": "AL",
+    "target": 167.64
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 167.64
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 167.64
+   }
+  },
+  "THYAO": {
+   "rec": "AL",
+   "target": 490.0,
+   "upside": 53.0,
+   "date": "2026-11-04",
+   "close": 320.5,
+   "w1": {
+    "rec": "AL",
+    "target": 490.0
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 455.0
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 455.0
+   }
+  },
+  "TKFEN": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2025-04-14",
+   "close": 186.7,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m3": {
+    "rec": "G.G.",
+    "target": null
+   }
+  },
+  "TKNSA": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2026-10-27",
+   "close": 10.36,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 36.78
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 36.78
+   }
+  },
+  "TTKOM": {
+   "rec": "AL",
+   "target": 88.75,
+   "upside": 92.0,
+   "date": "2026-04-24",
+   "close": 46.3,
+   "w1": {
+    "rec": "AL",
+    "target": 88.75
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 88.75
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 88.75
+   }
+  },
+  "TTRAK": {
+   "rec": "TUT",
+   "target": 639.99,
+   "upside": 95.0,
+   "date": "2026-04-24",
+   "close": 328.0,
+   "w1": {
+    "rec": "TUT",
+    "target": 639.99
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 639.99
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 639.99
+   }
+  },
+  "ULKER": {
+   "rec": "AL",
+   "target": 160.7,
+   "upside": 151.0,
+   "date": "2026-11-09",
+   "close": 64.05,
+   "w1": {
+    "rec": "AL",
+    "target": 160.7
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 209.26
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 209.26
+   }
+  },
+  "VESBE": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2026-03-02",
+   "close": 3.31,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m3": {
+    "rec": "G.G.",
+    "target": null
+   }
+  },
+  "VESTL": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2025-10-30",
+   "close": 12.02,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m3": {
+    "rec": "G.G.",
+    "target": null
+   }
+  },
+  "YATAS": {
+   "rec": "AL",
+   "target": 48.39,
+   "upside": 157.0,
+   "date": "2025-01-16",
+   "close": 18.8,
+   "w1": {
+    "rec": "AL",
+    "target": 48.39
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 48.39
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 48.39
+   }
+  },
+  "MAVI": {
+   "rec": "AL",
+   "target": 67.09,
+   "upside": 108.0,
+   "date": "2026-09-17",
+   "close": 32.3,
+   "w1": {
+    "rec": "AL",
+    "target": 67.09
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 67.09
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 65.76
+   }
+  },
+  "ENJSA": {
+   "rec": "AL",
+   "target": 173.54,
+   "upside": 61.0,
+   "date": "2026-05-05",
+   "close": 107.7,
+   "w1": {
+    "rec": "AL",
+    "target": 173.54
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 173.54
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 173.54
+   }
+  },
+  "MPARK": {
+   "rec": "AL",
+   "target": 700.24,
+   "upside": 63.0,
+   "date": "2026-05-07",
+   "close": 429.0,
+   "w1": {
+    "rec": "AL",
+    "target": 700.24
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 700.24
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 700.24
+   }
+  },
+  "SOKM": {
+   "rec": "AL",
+   "target": 98.19,
+   "upside": 144.0,
+   "date": "2026-04-24",
+   "close": 40.26,
+   "w1": {
+    "rec": "AL",
+    "target": 98.19
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 98.19
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 98.19
+   }
+  },
+  "OYAKC": {
+   "rec": "AL",
+   "target": 35.26,
+   "upside": 93.0,
+   "date": "2026-11-04",
+   "close": 18.31,
+   "w1": {
+    "rec": "AL",
+    "target": 35.26
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 38.92
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 38.92
+   }
+  },
+  "GWIND": {
+   "rec": "AL",
+   "target": 39.0,
+   "upside": 117.0,
+   "date": "2026-04-13",
+   "close": 18.0,
+   "w1": {
+    "rec": "AL",
+    "target": 39.0
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 39.0
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 39.0
+   }
+  },
+  "AYDEM": {
+   "rec": "AL",
+   "target": 40.3,
+   "upside": 87.0,
+   "date": "2026-04-13",
+   "close": 21.56,
+   "w1": {
+    "rec": "AL",
+    "target": 40.3
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 40.3
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 40.3
+   }
+  },
+  "HTTBT": {
+   "rec": "AL",
+   "target": 60.22,
+   "upside": 105.0,
+   "date": "2026-04-22",
+   "close": 29.4,
+   "w1": {
+    "rec": "AL",
+    "target": 60.22
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 60.22
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 60.22
+   }
+  },
+  "GRSEL": {
+   "rec": "AL",
+   "target": 399.33,
+   "upside": 65.0,
+   "date": "2026-11-24",
+   "close": 242.0,
+   "w1": {
+    "rec": null,
+    "target": null
+   },
+   "m1": {
+    "rec": null,
+    "target": null
+   },
+   "m3": {
+    "rec": null,
+    "target": null
+   },
+   "note": "Gürsel Taşımacılık'ın uzun vadeli sözleşmelere dayalı öngörülebilir gelir yapısı, yüksek kârlılığı, güçlü nakit üretimi ve yurt içi ile yurt dışındaki büyüme fırsatları temel yatırım temasını oluşturmaktadır. Gelirlerinin tamamına yakını çok yıllı sözleşmelerden sağlanırken, en büyük 50 müşteriyle ortalama 13 yıllık iş ilişkisi ve %98 müşteri koruma oranı gelir görünürlüğünü desteklemektedir. Akaryakıt maliyetlerindeki değişimlerin sözleşme fiyatlarına yansıtılabilmesi ve tedarikçi araçlara kıyasla yaklaşık 26 puan daha yüksek brüt kâr marjı sağlayan özmal araçların payının artmasıyla FAVÖK marjının 2031'e kadar %32,5'ten %34,8'e yükselmesi ve FAVÖK'ün 2026–2031 döneminde yıllık ortalama %26"
+  },
+  "KCAER": {
+   "rec": "AL",
+   "target": 18.83,
+   "upside": 87.0,
+   "date": "2026-05-08",
+   "close": 10.07,
+   "w1": {
+    "rec": "AL",
+    "target": 18.83
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 18.83
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 18.83
+   }
+  },
+  "ASTOR": {
+   "rec": "AL",
+   "target": 297.24,
+   "upside": 99.0,
+   "date": "2026-11-10",
+   "close": 149.7,
+   "w1": {
+    "rec": "AL",
+    "target": 297.24
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 365.09
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 365.09
+   }
+  },
+  "AKFYE": {
+   "rec": "AL",
+   "target": 4.53,
+   "upside": 68.0,
+   "date": "2026-11-06",
+   "close": 2.7,
+   "w1": {
+    "rec": "AL",
+    "target": 4.53
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 4.53
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 27.21
+   }
+  },
+  "GOKNR": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2026-03-12",
+   "close": 11.28,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m3": {
+    "rec": "G.G.",
+    "target": null
+   }
+  },
+  "ATAKP": {
+   "rec": "TUT",
+   "target": 68.35,
+   "upside": 99.0,
+   "date": "2026-03-13",
+   "close": 34.38,
+   "w1": {
+    "rec": "TUT",
+    "target": 68.35
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 68.35
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 68.35
+   }
+  },
+  "TABGD": {
+   "rec": "AL",
+   "target": 411.41,
+   "upside": 140.0,
+   "date": "2026-04-24",
+   "close": 171.7,
+   "w1": {
+    "rec": "AL",
+    "target": 411.41
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 411.41
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 411.41
+   }
+  },
+  "MOGAN": {
+   "rec": "AL",
+   "target": 16.6,
+   "upside": 109.0,
+   "date": "2026-11-09",
+   "close": 7.95,
+   "w1": {
+    "rec": "AL",
+    "target": 16.6
+   },
+   "m1": {
+    "rec": "SAT",
+    "target": 16.6
+   },
+   "m3": {
+    "rec": "SAT",
+    "target": 16.6
+   }
+  },
+  "ENTRA": {
+   "rec": "AL",
+   "target": 7.27,
+   "upside": 62.0,
+   "date": "2026-02-19",
+   "close": 4.5,
+   "w1": {
+    "rec": "AL",
+    "target": 7.27
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 7.27
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 7.27
+   }
+  },
+  "KOTON": {
+   "rec": "AL",
+   "target": 26.62,
+   "upside": 244.0,
+   "date": "2026-04-24",
+   "close": 7.73,
+   "w1": {
+    "rec": "AL",
+    "target": 26.62
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 26.62
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 26.62
+   }
+  },
+  "LILAK": {
+   "rec": "AL",
+   "target": 51.5,
+   "upside": 187.0,
+   "date": "2026-04-24",
+   "close": 17.95,
+   "w1": {
+    "rec": "AL",
+    "target": 51.5
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 51.5
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 51.5
+   }
+  },
+  "TOASO": {
+   "rec": "AL",
+   "target": 442.45,
+   "upside": 78.0,
+   "date": "2026-04-24",
+   "close": 248.4,
+   "w1": {
+    "rec": "AL",
+    "target": 442.45
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 442.45
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 442.45
+   }
+  },
+  "TUPRS": {
+   "rec": "AL",
+   "target": 477.0,
+   "upside": 49.0,
+   "date": "2026-11-09",
+   "close": 320.0,
+   "w1": {
+    "rec": "AL",
+    "target": 477.0
+   },
+   "m1": {
+    "rec": "AL",
+    "target": 365.25
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 365.25
+   }
+  },
+  "BALSU": {
+   "rec": "G.G.",
+   "target": null,
+   "upside": null,
+   "date": "2026-10-06",
+   "close": 6.27,
+   "w1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m1": {
+    "rec": "G.G.",
+    "target": null
+   },
+   "m3": {
+    "rec": "AL",
+    "target": 22.4
+   }
+  },
+  "TRALT": {
+   "rec": "AL",
+   "target": 56.0,
+   "upside": 63.0,
+   "date": "2026-11-10",
+   "close": 34.32,
+   "w1": {
+    "rec": "AL",
+    "target": 56.0
+   },
+   "m1": {
+    "rec": "TUT",
+    "target": 56.5
+   },
+   "m3": {
+    "rec": "TUT",
+    "target": 56.5
+   }
+  }
+ },
+ "model": {
+  "AKSEN": {
+   "since": "2026-10-02",
+   "close": 61.45,
+   "target": 117.5,
+   "upside": 91.0,
+   "retTl": -17.18,
+   "retUsd": -19.75,
+   "retRel": -7.33,
+   "weight": 10.0
+  },
+  "ASELS": {
+   "since": "2025-01-16",
+   "close": 322.5,
+   "target": 534.57,
+   "upside": 66.0,
+   "retTl": 302.91,
+   "retUsd": 182.21,
+   "retRel": 262.52,
+   "weight": 12.0
+  },
+  "ASTOR": {
+   "since": "2025-10-20",
+   "close": 149.7,
+   "target": 297.24,
+   "upside": 99.0,
+   "retTl": 55.14,
+   "retUsd": 28.56,
+   "retRel": 48.33,
+   "weight": 6.0
+  },
+  "ENJSA": {
+   "since": "2026-03-12",
+   "close": 107.7,
+   "target": 173.54,
+   "upside": 61.0,
+   "retTl": -5.57,
+   "retUsd": -17.73,
+   "retRel": 14.41,
+   "weight": 10.0
+  },
+  "GARAN": {
+   "since": "2024-07-08",
+   "close": 143.3,
+   "target": 195.0,
+   "upside": 36.0,
+   "retTl": 24.88,
+   "retUsd": -19.34,
+   "retRel": 23.72,
+   "weight": 20.0
+  },
+  "MPARK": {
+   "since": "2025-12-23",
+   "close": 429.0,
+   "target": 700.24,
+   "upside": 63.0,
+   "retTl": 17.05,
+   "retUsd": -0.99,
+   "retRel": 20.52,
+   "weight": 9.0
+  },
+  "SOKM": {
+   "since": "2026-07-22",
+   "close": 40.26,
+   "target": 98.19,
+   "upside": 144.0,
+   "retTl": -28.3,
+   "retUsd": -33.13,
+   "retRel": -7.55,
+   "weight": 11.0
+  },
+  "THYAO": {
+   "since": "2026-07-03",
+   "close": 320.5,
+   "target": 490.0,
+   "upside": 53.0,
+   "retTl": -4.04,
+   "retUsd": -11.45,
+   "retRel": 26.16,
+   "weight": 13.0
+  },
+  "TUPRS": {
+   "since": "2026-04-09",
+   "close": 320.0,
+   "target": 477.0,
+   "upside": 49.0,
+   "retTl": 27.74,
+   "retUsd": 12.5,
+   "retRel": 59.46,
+   "weight": 9.0
+  }
+ },
+ "consensus": {
+  "AEFES": {
+   "strongBuy": 1,
+   "buy": 5,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 27.75714,
+   "median": 29.0,
+   "low": 21.0,
+   "high": 31.6,
+   "price": 14.76
+  },
+  "AGESA": {
+   "strongBuy": 1,
+   "buy": 4,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 364.006,
+   "median": 366.0,
+   "low": 330.0,
+   "high": 397.5,
+   "price": 205.0
+  },
+  "AGHOL": {
+   "strongBuy": 0,
+   "buy": 6,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 49.348,
+   "median": 50.8,
+   "low": 44.0,
+   "high": 53.0,
+   "price": 23.68
+  },
+  "AKBNK": {
+   "strongBuy": 3,
+   "buy": 9,
+   "hold": 4,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 91.51,
+   "median": 89.89,
+   "low": 77.0,
+   "high": 116.6,
+   "price": 61.05
+  },
+  "AKCNS": {
+   "strongBuy": 0,
+   "buy": 4,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 279.13168,
+   "median": 290.0,
+   "low": 216.0,
+   "high": 313.23,
+   "price": 166.1
+  },
+  "AKFYE": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 4.535,
+   "median": 4.535,
+   "low": 4.535,
+   "high": 4.535,
+   "price": 2.61
+  },
+  "AKSA": {
+   "strongBuy": 0,
+   "buy": 3,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 15.55333,
+   "median": 15.5,
+   "low": 12.66,
+   "high": 18.5,
+   "price": 11.02
+  },
+  "AKSEN": {
+   "strongBuy": 0,
+   "buy": 4,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 118.61756,
+   "median": 117.9,
+   "low": 109.0,
+   "high": 136.60538,
+   "price": 59.05
+  },
+  "AKSGY": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 13.765,
+   "median": 13.765,
+   "low": 13.5,
+   "high": 14.03,
+   "price": 8.35
+  },
+  "ALARK": {
+   "strongBuy": 0,
+   "buy": 4,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 176.415,
+   "median": 179.845,
+   "low": 153.0,
+   "high": 192.97,
+   "price": 100.1
+  },
+  "ALBRK": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 11.84,
+   "median": 11.84,
+   "low": 11.74,
+   "high": 11.94,
+   "price": 7.93
+  },
+  "ANHYT": {
+   "strongBuy": 0,
+   "buy": 3,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 171.45,
+   "median": 170.86,
+   "low": 146.6,
+   "high": 197.48,
+   "price": 83.15
+  },
+  "ANSGR": {
+   "strongBuy": 1,
+   "buy": 5,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 43.996,
+   "median": 43.5,
+   "low": 37.9,
+   "high": 49.88,
+   "price": 21.14
+  },
+  "ARCLK": {
+   "strongBuy": 0,
+   "buy": 5,
+   "hold": 8,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 133.17833,
+   "median": 130.0,
+   "low": 82.0,
+   "high": 208.0,
+   "price": 60.35
+  },
+  "ARMGD": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 109.6,
+   "median": 109.6,
+   "low": 109.6,
+   "high": 109.6,
+   "price": 79.45
+  },
+  "ASELS": {
+   "strongBuy": 0,
+   "buy": 7,
+   "hold": 4,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 468.6182,
+   "median": 455.6,
+   "low": 341.0,
+   "high": 625.0,
+   "price": 317.0
+  },
+  "ASTOR": {
+   "strongBuy": 0,
+   "buy": 5,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 371.836,
+   "median": 367.28,
+   "low": 272.0,
+   "high": 431.0,
+   "price": 150.8
+  },
+  "ATAKP": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 69.05,
+   "median": 69.05,
+   "low": 69.05,
+   "high": 69.05,
+   "price": 32.88
+  },
+  "AVPGY": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 103.8,
+   "median": 103.8,
+   "low": 97.5,
+   "high": 110.1,
+   "price": 43.9
+  },
+  "AYDEM": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 40.3,
+   "median": 40.3,
+   "low": 40.3,
+   "high": 40.3,
+   "price": 19.83
+  },
+  "AYGAZ": {
+   "strongBuy": 0,
+   "buy": 3,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 362.78394,
+   "median": 370.0,
+   "low": 315.79962,
+   "high": 385.0,
+   "price": 241.5
+  },
+  "BALSU": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 27.14,
+   "median": 27.14,
+   "low": 27.14,
+   "high": 27.14,
+   "price": 6.23
+  },
+  "BIMAS": {
+   "strongBuy": 3,
+   "buy": 11,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 537.14075,
+   "median": 520.0,
+   "low": 463.0,
+   "high": 620.0,
+   "price": 362.5
+  },
+  "BIZIM": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 37.0,
+   "median": 37.0,
+   "low": 36.0,
+   "high": 38.0,
+   "price": 13.34
+  },
+  "BRISA": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 108.46667,
+   "median": 109.9,
+   "low": 105.0,
+   "high": 110.5,
+   "price": 68.85
+  },
+  "BRSAN": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 952.0,
+   "median": 952.0,
+   "low": 952.0,
+   "high": 952.0,
+   "price": 640.0
+  },
+  "CCOLA": {
+   "strongBuy": 2,
+   "buy": 10,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 112.13846,
+   "median": 118.0,
+   "low": 93.0,
+   "high": 126.0,
+   "price": 73.9
+  },
+  "CIMSA": {
+   "strongBuy": 0,
+   "buy": 5,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 73.392,
+   "median": 70.55,
+   "low": 66.2,
+   "high": 82.93,
+   "price": 37.2
+  },
+  "CWENE": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 60.0,
+   "median": 60.0,
+   "low": 60.0,
+   "high": 60.0,
+   "price": 17.9
+  },
+  "DOAS": {
+   "strongBuy": 0,
+   "buy": 3,
+   "hold": 5,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 233.5,
+   "median": 231.5,
+   "low": 152.0,
+   "high": 320.0,
+   "price": 111.9
+  },
+  "DOHOL": {
+   "strongBuy": 1,
+   "buy": 3,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 33.025,
+   "median": 33.17,
+   "low": 30.2,
+   "high": 35.56,
+   "price": 14.98
+  },
+  "EKGYO": {
+   "strongBuy": 0,
+   "buy": 4,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 32.93,
+   "median": 32.84,
+   "low": 32.8,
+   "high": 33.15,
+   "price": 16.37
+  },
+  "ENJSA": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 3,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 155.09377,
+   "median": 143.76884,
+   "low": 120.0,
+   "high": 202.4,
+   "price": 106.3
+  },
+  "ENKAI": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 5,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 116.85332,
+   "median": 113.48353,
+   "low": 97.85072,
+   "high": 142.95023,
+   "price": 76.1
+  },
+  "ENTRA": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 7.96,
+   "median": 7.96,
+   "low": 7.96,
+   "high": 7.96,
+   "price": 4.45
+  },
+  "EREGL": {
+   "strongBuy": 1,
+   "buy": 4,
+   "hold": 5,
+   "sell": 2,
+   "strongSell": 0,
+   "mean": 42.55818,
+   "median": 42.24,
+   "low": 23.0,
+   "high": 59.2,
+   "price": 28.82
+  },
+  "FROTO": {
+   "strongBuy": 3,
+   "buy": 6,
+   "hold": 4,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 130.27074,
+   "median": 121.0,
+   "low": 83.61944,
+   "high": 208.0,
+   "price": 67.25
+  },
+  "GARAN": {
+   "strongBuy": 4,
+   "buy": 10,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 181.08733,
+   "median": 184.5,
+   "low": 143.0,
+   "high": 211.3,
+   "price": 138.4
+  },
+  "GOKNR": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 36.11,
+   "median": 36.11,
+   "low": 36.11,
+   "high": 36.11,
+   "price": 11.05
+  },
+  "GWIND": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 35.63,
+   "median": 36.2,
+   "low": 31.69,
+   "high": 39.0,
+   "price": 17.49
+  },
+  "HALKB": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 6,
+   "sell": 0,
+   "strongSell": 1,
+   "mean": 42.7864,
+   "median": 43.65,
+   "low": 22.7,
+   "high": 54.3184,
+   "price": 37.16
+  },
+  "HEKTS": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 4.3,
+   "median": 4.3,
+   "low": 4.3,
+   "high": 4.3,
+   "price": 1.44
+  },
+  "HTTBT": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 62.92076,
+   "median": 61.670624,
+   "low": 59.187584,
+   "high": 67.903564,
+   "price": 28.96
+  },
+  "ISCTR": {
+   "strongBuy": 1,
+   "buy": 9,
+   "hold": 4,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 18.35933,
+   "median": 18.15,
+   "low": 15.0,
+   "high": 23.19,
+   "price": 11.85
+  },
+  "ISGYO": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 27.2,
+   "median": 27.2,
+   "low": 27.2,
+   "high": 27.2,
+   "price": 17.76
+  },
+  "ISMEN": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 62.85,
+   "median": 62.85,
+   "low": 54.3,
+   "high": 71.4,
+   "price": 25.06
+  },
+  "KCAER": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 19.35,
+   "median": 19.35,
+   "low": 19.0,
+   "high": 19.7,
+   "price": 9.91
+  },
+  "KCHOL": {
+   "strongBuy": 1,
+   "buy": 7,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 320.83487,
+   "median": 324.0,
+   "low": 290.0,
+   "high": 358.479,
+   "price": 182.8
+  },
+  "KOTON": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 26.62,
+   "median": 26.62,
+   "low": 26.62,
+   "high": 26.62,
+   "price": 7.54
+  },
+  "KRDMD": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 4,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 51.710323,
+   "median": 51.55831,
+   "low": 44.79366,
+   "high": 61.565945,
+   "price": 34.58
+  },
+  "LILAK": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 53.02,
+   "median": 53.02,
+   "low": 53.02,
+   "high": 53.02,
+   "price": 17.7
+  },
+  "LOGO": {
+   "strongBuy": 0,
+   "buy": 4,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 230.1825,
+   "median": 232.0,
+   "low": 211.41,
+   "high": 245.32,
+   "price": 114.3
+  },
+  "MAVI": {
+   "strongBuy": 1,
+   "buy": 7,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 63.1275,
+   "median": 63.35,
+   "low": 60.0,
+   "high": 67.09,
+   "price": 31.88
+  },
+  "MGROS": {
+   "strongBuy": 3,
+   "buy": 11,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 906.16766,
+   "median": 910.0,
+   "low": 700.0,
+   "high": 1061.74,
+   "price": 402.75
+  },
+  "MOGAN": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 16.6,
+   "median": 16.6,
+   "low": 16.6,
+   "high": 16.6,
+   "price": 7.87
+  },
+  "MPARK": {
+   "strongBuy": 1,
+   "buy": 5,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 615.8443,
+   "median": 640.0,
+   "low": 500.0,
+   "high": 723.0,
+   "price": 418.5
+  },
+  "OTKAR": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 3,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 467.66666,
+   "median": 450.0,
+   "low": 380.0,
+   "high": 573.0,
+   "price": 301.0
+  },
+  "OYAKC": {
+   "strongBuy": 0,
+   "buy": 4,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 34.73,
+   "median": 34.2,
+   "low": 31.6,
+   "high": 38.92,
+   "price": 17.75
+  },
+  "PETKM": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 5,
+   "sell": 3,
+   "strongSell": 0,
+   "mean": 19.71,
+   "median": 18.91,
+   "low": 16.0,
+   "high": 26.13,
+   "price": 14.88
+  },
+  "PGSUS": {
+   "strongBuy": 1,
+   "buy": 7,
+   "hold": 3,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 232.24844,
+   "median": 240.0,
+   "low": 181.58443,
+   "high": 290.0,
+   "price": 151.9
+  },
+  "RGYAS": {
+   "strongBuy": 0,
+   "buy": 4,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 290.945,
+   "median": 287.89,
+   "low": 265.0,
+   "high": 323.0,
+   "price": 150.2
+  },
+  "RYGYO": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": null,
+   "median": null,
+   "low": null,
+   "high": null,
+   "price": 43.24
+  },
+  "SAHOL": {
+   "strongBuy": 0,
+   "buy": 8,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 160.41571,
+   "median": 165.78,
+   "low": 138.2,
+   "high": 181.0,
+   "price": 74.55
+  },
+  "SELEC": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 3,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 157.49333,
+   "median": 150.9,
+   "low": 131.58,
+   "high": 190.0,
+   "price": 94.35
+  },
+  "SISE": {
+   "strongBuy": 1,
+   "buy": 3,
+   "hold": 5,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 54.92475,
+   "median": 56.95,
+   "low": 42.08797,
+   "high": 68.0,
+   "price": 30.38
+  },
+  "SOKM": {
+   "strongBuy": 0,
+   "buy": 7,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 87.91,
+   "median": 85.0,
+   "low": 72.0,
+   "high": 110.0,
+   "price": 40.28
+  },
+  "TABGD": {
+   "strongBuy": 1,
+   "buy": 5,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 367.535,
+   "median": 361.5,
+   "low": 340.0,
+   "high": 416.41,
+   "price": 164.7
+  },
+  "TAVHL": {
+   "strongBuy": 2,
+   "buy": 10,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 427.78976,
+   "median": 428.18298,
+   "low": 371.22134,
+   "high": 504.11337,
+   "price": 280.25
+  },
+  "TCELL": {
+   "strongBuy": 1,
+   "buy": 9,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 155.94333,
+   "median": 160.0,
+   "low": 134.0,
+   "high": 167.7,
+   "price": 87.55
+  },
+  "THYAO": {
+   "strongBuy": 3,
+   "buy": 9,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 456.81403,
+   "median": 462.0,
+   "low": 315.0,
+   "high": 580.0,
+   "price": 315.75
+  },
+  "TKFEN": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 130.7,
+   "median": 130.7,
+   "low": 101.4,
+   "high": 160.0,
+   "price": 184.7
+  },
+  "TKNSA": {
+   "strongBuy": 0,
+   "buy": 2,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 55.59,
+   "median": 55.59,
+   "low": 36.78,
+   "high": 74.4,
+   "price": 10.12
+  },
+  "TOASO": {
+   "strongBuy": 2,
+   "buy": 7,
+   "hold": 3,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 409.97726,
+   "median": 408.0,
+   "low": 327.6,
+   "high": 496.7,
+   "price": 234.8
+  },
+  "TRALT": {
+   "strongBuy": 0,
+   "buy": 3,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 64.8,
+   "median": 70.0,
+   "low": 53.0,
+   "high": 71.4,
+   "price": 32.52
+  },
+  "TRENJ": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 218.7,
+   "median": 218.7,
+   "low": 218.7,
+   "high": 218.7,
+   "price": 64.6
+  },
+  "TRGYO": {
+   "strongBuy": 1,
+   "buy": 2,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 131.92332,
+   "median": 125.5,
+   "low": 113.3,
+   "high": 156.97,
+   "price": 81.45
+  },
+  "TRMET": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 247.6,
+   "median": 247.6,
+   "low": 213.0,
+   "high": 282.2,
+   "price": 96.3
+  },
+  "TSKB": {
+   "strongBuy": 0,
+   "buy": 6,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 18.98916,
+   "median": 19.6458,
+   "low": 16.8,
+   "high": 20.0,
+   "price": 9.26
+  },
+  "TTKOM": {
+   "strongBuy": 2,
+   "buy": 7,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 1,
+   "mean": 80.17727,
+   "median": 85.0,
+   "low": 50.0,
+   "high": 97.9,
+   "price": 44.86
+  },
+  "TTRAK": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 8,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 569.4986,
+   "median": 570.0,
+   "low": 460.0,
+   "high": 640.5,
+   "price": 326.75
+  },
+  "TUPRS": {
+   "strongBuy": 1,
+   "buy": 7,
+   "hold": 6,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 379.20358,
+   "median": 379.3,
+   "low": 278.0,
+   "high": 501.0,
+   "price": 318.25
+  },
+  "TURSG": {
+   "strongBuy": 1,
+   "buy": 6,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 9.01286,
+   "median": 9.85,
+   "low": 6.55,
+   "high": 11.215,
+   "price": 2.82
+  },
+  "ULKER": {
+   "strongBuy": 0,
+   "buy": 6,
+   "hold": 2,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 157.0375,
+   "median": 156.45,
+   "low": 114.6,
+   "high": 215.0,
+   "price": 62.4
+  },
+  "VAKBN": {
+   "strongBuy": 0,
+   "buy": 6,
+   "hold": 3,
+   "sell": 0,
+   "strongSell": 1,
+   "mean": 40.52664,
+   "median": 41.8,
+   "low": 31.6,
+   "high": 47.27979,
+   "price": 31.16
+  },
+  "VESBE": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 8.0,
+   "median": 8.0,
+   "low": 8.0,
+   "high": 8.0,
+   "price": 3.28
+  },
+  "VESTL": {
+   "strongBuy": 0,
+   "buy": 0,
+   "hold": 1,
+   "sell": 0,
+   "strongSell": 1,
+   "mean": 35.6,
+   "median": 35.6,
+   "low": 31.5,
+   "high": 39.7,
+   "price": 12.04
+  },
+  "YATAS": {
+   "strongBuy": 0,
+   "buy": 3,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 55.29667,
+   "median": 52.5,
+   "low": 48.39,
+   "high": 65.0,
+   "price": 18.23
+  },
+  "YKBNK": {
+   "strongBuy": 0,
+   "buy": 7,
+   "hold": 9,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 46.45286,
+   "median": 48.0,
+   "low": 27.1,
+   "high": 55.6,
+   "price": 34.02
+  }
+ },
+ "changes": []
+}

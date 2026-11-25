@@ -124,6 +124,8 @@ table { border-collapse: collapse; width: 100%; }
 .views { display: flex; flex-wrap: wrap; gap: 4px; margin: 14px 0 0; border-bottom: 1px solid var(--line); }
 .views button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 9px 14px; cursor: pointer; font: 600 15px var(--display); color: var(--ink2); }
 .views button[aria-selected=true] { color: var(--accent); border-bottom-color: var(--accent); }
+ul.plain { list-style: none; margin: 4px 0 0; padding: 0; font-size: 14px; } ul.plain li { margin: 2px 0; }
+.views { overflow-x: auto; white-space: nowrap; }
 .view { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-top: 16px; }
 .view h2 { font: 700 22px var(--display); margin: 0 0 6px; }
 .view h3 { font: 600 17px var(--display); margin: 22px 0 8px; }
@@ -221,10 +223,12 @@ table { border-collapse: collapse; width: 100%; }
     <button type="button" role="tab" data-view="feed" aria-selected="false">Akış</button>
     <button type="button" role="tab" data-view="sectors" aria-selected="false">Sektörler</button>
     <button type="button" role="tab" data-view="compare" aria-selected="false">Karşılaştır <span class="num" id="cmpCount"></span></button>
+    <button type="button" role="tab" data-view="weekly" aria-selected="false">Haftalık · Kurum raporları</button>
   </nav>
   <section id="viewFeed" class="view" hidden></section>
   <section id="viewSectors" class="view" hidden></section>
   <section id="viewCompare" class="view" hidden></section>
+  <section id="viewWeekly" class="view" hidden></section>
 
   <div id="viewList">
   <div class="controls">
@@ -378,7 +382,8 @@ function toggleCompare(code) {
   document.querySelectorAll(`.cmp-add[data-cmp]`).forEach(b => b.setAttribute('aria-pressed', CMP.includes(b.dataset.cmp)));
   $('cmpCount').textContent = CMP.length ? `(${CMP.length})` : '';
 }
-const codeBtns = list => list.length ? `<div class="codes">${list.map(c => `<button type="button" data-open="${esc(c)}">${esc(c)}</button>`).join('')}</div>` : '<span class="dash">yok</span>';
+const codeBtnsAll = list => list.length ? `<div class="codes">${list.map(c => `<button type="button" data-open="${esc(c)}">${esc(c)}</button>`).join('')}</div>` : '<span class="dash">yok</span>';
+const codeBtns = codeBtnsAll;
 const pctCell = v => has(v) ? `<span class="num ${v >= 0 ? 'up' : 'down'}">${v >= 0 ? '+' : ''}${N1.format(v)}%</span>` : DASH;
 
 function renderFeed() {
@@ -480,10 +485,96 @@ function renderCompare() {
     $('cmpChart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Karşılaştırmalı fiyat grafiği">${g}</svg><p class="note">Haftalık kapanış, ortak başlangıç tarihinden itibaren 100'e endeksli; TL, temettü hariç.</p>`;
   });
 }
+// --- Weekly report and brokerage research -------------------------------------
+const REC_CLS = { 'AL': 'good', 'TUT': '', 'SAT': 'bad' };
+const recPill = x => x ? pill(REC_CLS[x] ?? '', esc(({ 'G.G.': 'Gözden geçiriliyor', 'Ö.Y.': 'Öneri yok' })[x] || x)) : DASH;
+const nowPx = r => livePrice(r)?.p ?? r.px;
+const upside = (r, target) => has(target) && has(nowPx(r)) && nowPx(r) > 0 ? (target / nowPx(r) - 1) * 100 : null;
+// Yahoo targets above 3× the price are usually not adjusted for a bonus issue.
+const consUp = r => { const u = upside(r, r.br?.cons?.mean); return has(u) && u > 200 ? null : u; };
+const consCell = r => { const u = upside(r, r.br?.cons?.mean); return has(u) && u > 200 ? '<span class="dash" title="Bedelsiz sermaye artırımı sonrası düzeltilmemiş olabilir">şüpheli</span>' : pctCell(u); };
+const consN = c => c ? c.strongBuy + c.buy + c.hold + c.sell + c.strongSell : 0;
+const consLabel = c => { const n = consN(c); if (!n) return DASH; const buy = c.strongBuy + c.buy, sell = c.sell + c.strongSell; return `<span class="num"><span class="up">${buy} al</span> · ${c.hold} tut · <span class="down">${sell} sat</span></span>`; };
+function brokerChange(r) {
+  const x = r.br?.isy; if (!x) return null;
+  const prev = x.w1;
+  if (prev && (prev.rec !== x.rec || (prev.target || 0) !== (x.target || 0))) return prev;
+  if (x.date && x.date >= daysAgo(7)) return prev || {};
+  return null;
+}
+function brokerHtml(r) {
+  const b = r.br; if (!b) return '';
+  const parts = [];
+  if (b.isy) {
+    const x = b.isy, u = upside(r, x.target);
+    const hist = [['1 hafta önce', x.w1], ['1 ay önce', x.m1], ['3 ay önce', x.m3]].filter(([, v]) => v && v.rec).map(([l, v]) => `${l}: ${esc(v.rec)}${has(v.target) ? ' ' + N2.format(v.target) + ' TL' : ''}`).join(' · ');
+    parts.push(`<li><b>İş Yatırım:</b> ${recPill(x.rec)}${has(x.target) ? ` hedef <span class="num">${N2.format(x.target)} TL</span>` : ''}${has(u) ? ` · bugünkü fiyata göre ${pctCell(u)}` : ''}${x.date ? ` · ${esc(new Date(x.date).toLocaleDateString('tr-TR'))}` : ''}${hist ? `<br><small>${hist}</small>` : ''}${x.note ? `<br><small>${esc(x.note.slice(0, 420))}…</small>` : ''}</li>`);
+  }
+  if (b.model) parts.push(`<li><b>İş Yatırım model portföyü:</b> ağırlık %${N0.format(b.model.weight)}${b.model.since ? `, ${esc(new Date(b.model.since).toLocaleDateString('tr-TR'))} tarihinden beri` : ''} ${pctCell(b.model.retTl)} (TL), ${pctCell(b.model.retRel)} (BIST'e göre)</li>`);
+  if (b.cons && consN(b.cons)) {
+    const c = b.cons, u = upside(r, c.mean);
+    parts.push(`<li><b>Analist konsensüsü (${consN(c)} kurum):</b> ${consLabel(c)}${has(c.mean) ? ` · ortalama hedef <span class="num">${N2.format(c.mean)} TL</span> (aralık ${N2.format(c.low)}–${N2.format(c.high)})` : ''}${has(u) ? ` · ${u > 200 ? 'hedef fiyatın 3 katından fazla; bedelsiz sonrası düzeltilmemiş olabilir' : pctCell(u)}` : ''}</li>`);
+  }
+  if (!parts.length) return '';
+  return `<div class="risk soft" style="border-color:#7a5cd6"><b style="color:#7a5cd6">Aracı kurum görüşleri</b><ul>${parts.join('')}</ul><small>İş Yatırım'ın yayımladığı tavsiye listesi ve Yahoo Finance'in topladığı kurum tahminleri. Hedef fiyatlar kurumların görüşüdür; yatırım tavsiyesi değildir ve sık değişir.</small></div>`;
+}
+let weeklySort = 'cons';
+function renderWeekly() {
+  const codeBtns = (list, n = 24) => list.length > n ? codeBtnsAll(list.slice(0, n)) + `<p class="note" style="margin:4px 0 0">+${list.length - n} hisse daha (toplam ${list.length})</p>` : codeBtnsAll(list);
+  const by = (k, n, desc = true) => rows.filter(r => has(r[k])).sort((a, b) => desc ? b[k] - a[k] : a[k] - b[k]).slice(0, n);
+  const wk = rows.filter(r => has(r.wk));
+  const med = a => { const v = a.filter(has).sort((x, y) => x - y); return v.length ? v[Math.floor(v.length / 2)] : null; };
+  const from = daysAgo(7);
+  let html = `<h2>Haftalık rapor</h2><p class="note">Son 7 gün. Fiyatlar ${esc(new Date(DATA.meta.priceDate).toLocaleDateString('tr-TR'))} kapanışına göre haftalık değişimdir; olaylar KAP bildirimlerinden.</p>
+  <h3>Haftanın piyasası</h3><div class="cards" id="wkBench"><div class="card"><h4>Endeks, dolar, altın</h4><p class="note" style="margin:0">Yükleniyor…</p></div>
+    <div class="card"><h4>Genişlik</h4><p class="num">${wk.filter(r => r.wk > 0).length} yükselen · ${wk.filter(r => r.wk < 0).length} düşen</p><p class="note" style="margin:0">Ortanca haftalık değişim ${pctCell(med(wk.map(r => r.wk)))}</p></div>
+    <div class="card"><h4>Haftanın en çok yükselenleri</h4>${codeBtns(by('wk', 10).map(r => r.c))}</div>
+    <div class="card"><h4>Haftanın en çok düşenleri</h4>${codeBtns(by('wk', 10, false).map(r => r.c))}</div>`;
+  const sec = {}; for (const r of wk) if (r.s) (sec[r.s] ||= []).push(r.wk);
+  const secs = Object.entries(sec).filter(([, v]) => v.length >= 4).map(([s, v]) => [s, med(v)]).sort((a, b) => b[1] - a[1]);
+  html += `<div class="card"><h4>En iyi sektörler</h4><ul class="plain">${secs.slice(0, 5).map(([s, v]) => `<li>${esc(s)} ${pctCell(v)}</li>`).join('')}</ul></div><div class="card"><h4>En zayıf sektörler</h4><ul class="plain">${secs.slice(-5).reverse().map(([s, v]) => `<li>${esc(s)} ${pctCell(v)}</li>`).join('')}</ul></div></div>`;
+  const pick = f => rows.filter(f).map(r => r.c);
+  const netWeek = r => (r.ins || []).filter(x => x.date >= from).reduce((a, x) => a + (x.buy || 0) - (x.sell || 0), 0);
+  html += `<h3>Haftanın akışı</h3><div class="cards">
+    <div class="card"><h4>Geri alım yapanlar</h4>${codeBtns(pick(r => (r.bb || []).some(x => x.d.slice(0, 10) >= from)))}</div>
+    <div class="card"><h4>Fondan borsa dışı alım</h4>${codeBtns(pick(r => (r.ft || []).some(x => x.kind === 'purchase' && x.date.slice(0, 10) >= from)))}</div>
+    <div class="card"><h4>Patron net alımı</h4>${codeBtns(rows.filter(r => netWeek(r) > 0).sort((a, b) => netWeek(b) - netWeek(a)).map(r => r.c))}</div>
+    <div class="card"><h4>Patron net satışı</h4>${codeBtns(rows.filter(r => netWeek(r) < 0).sort((a, b) => netWeek(a) - netWeek(b)).map(r => r.c))}</div>
+    <div class="card"><h4>Fonların %3'ü aştığı hisseler</h4>${codeBtns(pick(r => (r.ev_funds3 || []).some(x => x.date.slice(0, 10) >= from)))}</div>
+    <div class="card"><h4>Devre kesici</h4>${codeBtns(pick(r => r.cb?.last >= from))}</div>
+    <div class="card"><h4>SPK yaptırımı ve tedbir</h4>${codeBtns(pick(r => (r.spk || []).some(a => (a.date || '') >= from) || (r.ev_spk || []).some(x => x.date.slice(0, 10) >= from)))}</div>
+    <div class="card"><h4>Temettü ve bedelsiz kararları</h4>${codeBtns(pick(r => [...(r.ev_dividends || []).filter(x => x.decision === 'dağıtım'), ...(r.ev_capital || []).filter(x => x.type === 'bedelsiz')].some(x => x.date.slice(0, 10) >= from)))}</div>
+    <div class="card"><h4>Yeni finansal rapor</h4>${codeBtns(pick(r => r.rep?.recent?.some(d => d >= from)).slice(0, 40))}</div>
+  </div>`;
+  // Brokerage research
+  const B = DATA.meta.broker || {};
+  const changed = rows.filter(brokerChange);
+  html += `<h3>Aracı kurum raporları</h3><p class="note">İş Yatırım tavsiye listesi ve model portföyü (${esc((B.fetchedAt || '').slice(0, 10).split('-').reverse().join('.'))}), Yahoo Finance analist konsensüsü. Potansiyel bugünkü fiyata göre yeniden hesaplanır. Yatırım tavsiyesi değildir.</p>`;
+  html += `<h4 style="margin:14px 0 6px">Bu hafta yeni ya da değişen tavsiyeler <span class="dash">(${changed.length})</span></h4>`;
+  html += changed.length ? `<div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th class="l">Kurum</th><th class="l">Önceki</th><th class="l">Yeni</th><th>Hedef değişimi</th><th>Potansiyel</th><th class="l">Tarih</th></tr></thead><tbody>${changed.map(r => { const x = r.br.isy, p = brokerChange(r); return `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="l">İş Yatırım</td><td class="l">${p.rec ? recPill(p.rec) + (has(p.target) ? ` <span class="num">${N2.format(p.target)}</span>` : '') : '<span class="dash">kapsam yeni</span>'}</td><td class="l">${recPill(x.rec)}${has(x.target) ? ` <span class="num">${N2.format(x.target)}</span>` : ''}</td><td>${has(p.target) && has(x.target) && p.target ? pctCell((x.target / p.target - 1) * 100) : DASH}</td><td>${pctCell(upside(r, x.target))}</td><td class="l num">${x.date ? esc(new Date(x.date).toLocaleDateString('tr-TR')) : ''}</td></tr>`; }).join('')}</tbody></table></div>` : '<p class="note">Bu hafta değişiklik yok.</p>';
+  for (const c of (B.changes || []).filter(c => c.seen >= from && !changed.some(r => r.c === c.code))) html += `<p class="note">${esc(c.code)}: ${esc(c.from.rec || '')} ${has(c.from.target) ? N2.format(c.from.target) : ''} → ${esc(c.to.rec || '')} ${has(c.to.target) ? N2.format(c.to.target) : ''} (${esc(c.source)})</p>`;
+  const model = rows.filter(r => r.br?.model).sort((a, b) => b.br.model.weight - a.br.model.weight);
+  if (model.length) html += `<h4 style="margin:18px 0 6px">İş Yatırım model portföyü</h4><div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th>Ağırlık</th><th class="l">Giriş</th><th>Hedef</th><th>Potansiyel</th><th>Girişten beri (TL)</th><th>($)</th><th>(BIST'e göre)</th></tr></thead><tbody>${model.map(r => { const m = r.br.model; return `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="num">%${N0.format(m.weight)}</td><td class="l num">${m.since ? esc(new Date(m.since).toLocaleDateString('tr-TR')) : ''}</td><td class="num">${has(m.target) ? N2.format(m.target) : ''}</td><td>${pctCell(upside(r, m.target))}</td><td>${pctCell(m.retTl)}</td><td>${pctCell(m.retUsd)}</td><td>${pctCell(m.retRel)}</td></tr>`; }).join('')}</tbody></table></div>`;
+  const cov = rows.filter(r => r.br?.isy || consN(r.br?.cons));
+  const key = { cons: consUp, isy: r => upside(r, r.br.isy?.target), n: r => consN(r.br.cons), wk: r => r.wk }[weeklySort];
+  cov.sort((a, b) => (key(b) ?? -1e9) - (key(a) ?? -1e9));
+  html += `<h4 style="margin:18px 0 6px">Hedef fiyatlar <span class="dash">(${cov.length} hisse)</span></h4><form class="alarm"><label for="wkSort">Sırala</label><select id="wkSort">${[['cons', 'Konsensüs potansiyeli'], ['isy', 'İş Yatırım potansiyeli'], ['n', 'Kurum sayısı'], ['wk', 'Haftalık değişim']].map(([k, l]) => `<option value="${k}"${k === weeklySort ? ' selected' : ''}>${l}</option>`).join('')}</select></form>
+  <div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th>Fiyat</th><th>Hafta</th><th class="l">İş Yatırım</th><th>Hedef</th><th>Pot.</th><th class="l">Konsensüs</th><th>Ort. hedef</th><th>Pot.</th></tr></thead><tbody>${cov.map(r => { const x = r.br.isy, c = r.br.cons; return `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="num">${has(nowPx(r)) ? N2.format(nowPx(r)) : ''}</td><td>${pctCell(r.wk)}</td><td class="l">${x ? recPill(x.rec) : DASH}</td><td class="num">${has(x?.target) ? N2.format(x.target) : ''}</td><td>${x ? pctCell(upside(r, x.target)) : DASH}</td><td class="l">${consLabel(c)}</td><td class="num">${has(c?.mean) ? N2.format(c.mean) : ''}</td><td>${c ? consCell(r) : DASH}</td></tr>`; }).join('')}</tbody></table></div>
+  <p class="note">Konsensüs: Yahoo Finance'in derlediği kurum tavsiyeleri (güçlü al + al / tut / sat + güçlü sat) ve ortalama hedef fiyat. Kurum adları bu kaynakta yer almaz; fiyatın 3 katını aşan ortalama hedefler bedelsiz sonrası düzeltilmemiş olabileceği için "şüpheli" yazılır ve sıralamaya girmez. Kaynaklar: <a href="${esc(B.sources?.isy || '#')}" target="_blank" rel="noreferrer">İş Yatırım ↗</a>, <a href="https://finance.yahoo.com" target="_blank" rel="noreferrer">Yahoo Finance ↗</a>.</p>`;
+  $('viewWeekly').innerHTML = html;
+  $('wkSort')?.addEventListener('change', e => { weeklySort = e.target.value; renderWeekly(); });
+  benchGet().then(S => {
+    const box = $('wkBench')?.firstElementChild; if (!box) return;
+    if (!S) { box.innerHTML = '<h4>Endeks, dolar, altın</h4><p class="note" style="margin:0">Veri yok.</p>'; return; }
+    const ch = s => s && s.c.length > 1 ? (s.c[s.c.length - 1] / s.c[s.c.length - 2] - 1) * 100 : null;
+    box.innerHTML = `<h4>Endeks, dolar, altın</h4><ul class="plain"><li>BIST 100 ${pctCell(ch(S.XU100))}</li><li>Dolar/TL ${pctCell(ch(S.USDTRY))}</li><li>Altın ($) ${pctCell(ch(S.GOLD))}</li></ul><p class="note" style="margin:0">Son iki haftalık kapanış arası.</p>`;
+  });
+}
 function showView(v) {
   state.view = v;
   document.querySelectorAll('.views button').forEach(b => b.setAttribute('aria-selected', b.dataset.view === v));
-  $('viewList').hidden = v !== 'list'; $('viewFeed').hidden = v !== 'feed'; $('viewSectors').hidden = v !== 'sectors'; $('viewCompare').hidden = v !== 'compare';
+  $('viewList').hidden = v !== 'list'; $('viewFeed').hidden = v !== 'feed'; $('viewSectors').hidden = v !== 'sectors'; $('viewCompare').hidden = v !== 'compare'; $('viewWeekly').hidden = v !== 'weekly';
+  if (v === 'weekly') renderWeekly();
   if (v === 'feed') renderFeed(); if (v === 'sectors') renderSectors(); if (v === 'compare') renderCompare();
 }
 function openCode(code) {
@@ -705,7 +796,7 @@ function renderFile(r) {
   let html = `<div class="file-head"><div><h2>${starBtn(r.c)}${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><button class="cmp-add" type="button" data-cmp="${esc(r.c)}" aria-pressed="${CMP.includes(r.c)}">Karşılaştır</button><button class="back" id="back" type="button">← Listeye dön</button></div></div>
     <div class="quote">${quote}</div><p class="note">${lp ? `Gecikmeli fiyat Yahoo Finance'ten alınır ve son resmî kapanışa (${N2.format(r.px)} TL) göre değişimi gösterir. ` : ''}Piyasa değeri ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
-  html += riskHtml(r) + spkHtml(r) + fundHtml(r) + holdingHtml(r) + insiderHtml(r) + buybackHtml(r) + eventsHtml(r);
+  html += riskHtml(r) + spkHtml(r) + fundHtml(r) + holdingHtml(r) + insiderHtml(r) + buybackHtml(r) + brokerHtml(r) + eventsHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button><button class="tab" type="button" role="tab" data-tab="smc">Smart money</button></div>`;
   html = '';
 

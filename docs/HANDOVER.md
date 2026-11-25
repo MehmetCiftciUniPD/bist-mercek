@@ -2,6 +2,21 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-25 · Claude Code · weekly report and brokerage research
+
+- `research/broker-reports.py` → `data/broker-reports.json`: İş Yatırım's
+  covered list (recommendation, target, date, and the same 1 week / 1 month /
+  3 months earlier from the 14-column table, groups in that order), its model
+  portfolio, and Yahoo analyst consensus via yfinance (covered codes plus the
+  150 largest). `--notes` reads analyst theses for recommendations newer than
+  14 days. Revisions between runs go to `changes`. Workflow: after close and nightly.
+- Site: "Haftalık · Kurum raporları" view (weekly market, sector medians,
+  week's KAP flow, new/changed recommendations, model portfolio, sortable
+  target table) and an "Aracı kurum görüşleri" box in the stock file.
+  Yahoo mean targets above 3× price are shown as "şüpheli" (likely not
+  adjusted for bonus issues) and excluded from sorting.
+- Weekly returns come from İş Yatırım's `weekReturn` (row `wk`).
+
 ## 2026-11-24 · Claude Code · SPK bulletins, KAP events, screener, PWA
 
 - `research/spk-bulletins.py` reads the 2026 SPK bulletin PDFs (pdftotext),

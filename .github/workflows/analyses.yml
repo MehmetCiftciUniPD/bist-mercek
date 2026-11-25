@@ -77,6 +77,12 @@ jobs:
         run: |
           sudo apt-get install -y -qq poppler-utils >/dev/null || true
           python research/spk-bulletins.py
+      - name: Aracı kurum raporlarını topla
+        if: github.event.schedule == '40 16 * * 1-5' || github.event.schedule == '23 2 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: |
+          pip install -q yfinance || true
+          python research/broker-reports.py --notes
       - name: Geri alım bildirimlerini topla
         continue-on-error: true
         run: python research/buybacks.py --days ${{ github.event.schedule == '*/15 7-15 * * 1-5' && 7 || 35 }}
@@ -94,7 +100,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json data/broker-reports.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Update market data"
             git push origin HEAD:main

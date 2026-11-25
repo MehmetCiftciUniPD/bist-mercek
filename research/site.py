@@ -93,6 +93,7 @@ def companies():
         spk_by_code.setdefault(a['code'], []).append({k: a.get(k) for k in ('bulletin', 'date', 'type', 'persons', 'ban', 'text', 'url')})
     latest_day = max((v.get('date') or '') for v in events.values())[:10] if events else ''
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
+    brokers = load('broker-reports.json') if (DATA / 'broker-reports.json').exists() else {}
     rows = []
     for issuer in uni['companies']:
         codes = issuer['codes']
@@ -100,7 +101,7 @@ def companies():
         q = quotes.get(code, {})
         row = {'c': code, 'n': issuer['name'], 'sn': q.get('name'), 's': q.get('sector'), 'seg': issuer['segments'],
                'kap': issuer['kapProfile'], 'px': q.get('price'), 'mc': q.get('marketCap'), 'pe': q.get('pe'),
-               'pb': q.get('pb'), 'ytd': q.get('ytdReturn')}
+               'pb': q.get('pb'), 'ytd': q.get('ytdReturn'), 'wk': q.get('weekReturn'), 'mo': q.get('monthReturn')}
         if len(codes) > 1:
             row['alt'] = [c for c in codes if c != code]
         for label, src in sources:
@@ -188,6 +189,11 @@ def companies():
                 row['ipo'] = {'date': first, 'price': ipo[0].get('price'), 'url': ipo[0]['url']}
         if spk_by_code.get(code) or any(spk_by_code.get(c) for c in codes):
             row['spk'] = sorted((x for c in codes for x in spk_by_code.get(c, [])), key=lambda x: x['date'] or '', reverse=True)[:8]
+        br = {k: v for k, v in (('isy', next((brokers.get('isy', {})[c] for c in codes if c in brokers.get('isy', {})), None)),
+                                ('model', next((brokers.get('model', {})[c] for c in codes if c in brokers.get('model', {})), None)),
+                                ('cons', next((brokers.get('consensus', {})[c] for c in codes if c in brokers.get('consensus', {})), None))) if v}
+        if br:
+            row['br'] = br
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags
@@ -198,6 +204,7 @@ def companies():
             'buybackSince': buybacks.get('since'),
             'summary': summary,
             'eventsDay': latest_day,
+            'broker': {k: brokers.get(k) for k in ('fetchedAt', 'sources', 'changes')} if brokers else None,
             'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}
 
