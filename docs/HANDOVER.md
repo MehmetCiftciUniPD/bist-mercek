@@ -2,6 +2,24 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-25 · Claude Code · all brokers' targets and trade ideas
+
+- `research/broker-calls.py` → `data/broker-calls.json`, from public news
+  pages only (robots.txt allows them): CNBC-e's weekly target gallery
+  (g40478; per share every broker's target and recommendation, and brokers'
+  old → new target tables) and Paratic articles relaying brokers' technical
+  lists (entry/reference, targets, stop, supports). Articles are found in
+  Paratic's news sitemap, RSS and the two newest post sitemaps by address;
+  `--url` adds one by hand. Broker names come from the heading before each
+  table and are normalised in `canon()`.
+- Foreks' forecast backend (web-forecast.foreks.com) holds the same data in a
+  structured form, but it is a private API: the session's permission check
+  refused calling it. Do not use it without the owner's explicit permission.
+- Site: weekly view adds "Haftalık trade önerileri (stoplu)", support/resistance
+  lists, all brokers' targets per share and target revisions; the stock box
+  lists every broker's target and the short-term ideas. "Durum" compares the
+  current price with the levels only (no intraday check).
+
 ## 2026-11-25 · Claude Code · weekly report and brokerage research
 
 - `research/broker-reports.py` → `data/broker-reports.json`: İş Yatırım's

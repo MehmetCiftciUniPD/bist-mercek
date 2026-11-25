@@ -94,6 +94,15 @@ def companies():
     latest_day = max((v.get('date') or '') for v in events.values())[:10] if events else ''
     risk = load('risk-flags.json') if (DATA / 'risk-flags.json').exists() else {'flags': {}}
     brokers = load('broker-reports.json') if (DATA / 'broker-reports.json').exists() else {}
+    calls = load('broker-calls.json') if (DATA / 'broker-calls.json').exists() else {'targets': {}, 'ideas': {}}
+    tg_day = max(calls['targets'], default=None)
+    tg_by_code = {}
+    for t in (calls['targets'][tg_day]['rows'] if tg_day else []):
+        tg_by_code.setdefault(t['code'], []).append({'b': t['broker'], 't': t.get('target'), 'r': (t.get('rec') or '').rstrip('*') or None, 'p': t.get('prev')})
+    idea_by_code = {}
+    for url, art in calls['ideas'].items():
+        for x in art['rows']:
+            idea_by_code.setdefault(x['code'], []).append({'b': x['broker'], 'd': art['date'], 'e': x['entry'], 's': x['stop'], 't': x['targets'], 'sp': x['supports'], 'u': url})
     rows = []
     for issuer in uni['companies']:
         codes = issuer['codes']
@@ -194,6 +203,12 @@ def companies():
                                 ('cons', next((brokers.get('consensus', {})[c] for c in codes if c in brokers.get('consensus', {})), None))) if v}
         if br:
             row['br'] = br
+        tg = next((tg_by_code[c] for c in codes if c in tg_by_code), None)
+        if tg:
+            row['tg'] = tg
+        ti = sorted((x for c in codes for x in idea_by_code.get(c, [])), key=lambda x: x['d'] or '', reverse=True)
+        if ti:
+            row['ti'] = ti[:8]
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags
@@ -205,6 +220,7 @@ def companies():
             'summary': summary,
             'eventsDay': latest_day,
             'broker': {k: brokers.get(k) for k in ('fetchedAt', 'sources', 'changes')} if brokers else None,
+            'calls': {'targetsDate': tg_day, 'targetsUrl': calls['targets'][tg_day]['url'] if tg_day else None, 'fetchedAt': calls.get('fetchedAt')},
             'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}
 

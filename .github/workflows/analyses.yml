@@ -83,6 +83,7 @@ jobs:
         run: |
           pip install -q yfinance || true
           python research/broker-reports.py --notes
+          python research/broker-calls.py
       - name: Geri alım bildirimlerini topla
         continue-on-error: true
         run: python research/buybacks.py --days ${{ github.event.schedule == '*/15 7-15 * * 1-5' && 7 || 35 }}
@@ -100,7 +101,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json data/broker-reports.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json data/broker-reports.json data/broker-calls.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Update market data"
             git push origin HEAD:main

@@ -1,0 +1,3040 @@
+{
+ "fetchedAt": "2026-11-25T18:56+03:00",
+ "sources": {
+  "targets": "https://www.cnbce.com/borsa/borsada-hedef-fiyat-g40478",
+  "ideas": "https://paratic.com"
+ },
+ "targets": {
+  "2026-11-10": {
+   "url": "https://www.cnbce.com/borsa/borsada-100-hisseye-403-hedef-fiyat-iste-borsa-istanbulda-en-potansiyelli-hisseler-g40478",
+   "rows": [
+    {
+     "code": "TABGD",
+     "broker": "Deniz Yatırım",
+     "target": 375.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TABGD",
+     "broker": "Ak Yatırım",
+     "target": 361.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TABGD",
+     "broker": "İş Yatırım",
+     "target": 411.41,
+     "rec": "Al"
+    },
+    {
+     "code": "TABGD",
+     "broker": "Gedik Yatırım",
+     "target": 405.6,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TABGD",
+     "broker": "OYAK Yatırım",
+     "target": 363.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TABGD",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 375.0,
+     "rec": "Al"
+    },
+    {
+     "code": "LILAK",
+     "broker": "İnfo Yatırım",
+     "target": 36.5,
+     "rec": "Belirtilmemiş"
+    },
+    {
+     "code": "LILAK",
+     "broker": "İş Yatırım",
+     "target": 51.5,
+     "rec": "Al"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Deniz Yatırım",
+     "target": 564.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Halk Yatırım",
+     "target": 450.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Ak Yatırım",
+     "target": 560.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "İş Yatırım",
+     "target": 639.99,
+     "rec": "Tut"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Gedik Yatırım",
+     "target": 640.5,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Vakıf Yatırım",
+     "target": 530.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Ahlatcı Yatırım",
+     "target": 548.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "OYAK Yatırım",
+     "target": 510.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Tacirler Yatırım",
+     "target": 530.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "AGESA",
+     "broker": "İş Yatırım",
+     "target": 397.5,
+     "rec": "Al"
+    },
+    {
+     "code": "AGESA",
+     "broker": "Deniz Yatırım",
+     "target": 366.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AGESA",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 300.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 130.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Deniz Yatırım",
+     "target": 122.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "İş Yatırım",
+     "target": 108.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Gedik Yatırım",
+     "target": 135.9,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Ak Yatırım",
+     "target": 90.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 154.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Vakıf Yatırım",
+     "target": 160.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Şeker Yatırım",
+     "target": 111.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "OYAK Yatırım",
+     "target": 125.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "BRISA",
+     "broker": "Gedik Yatırım",
+     "target": 110.5,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "BRISA",
+     "broker": "Deniz Yatırım",
+     "target": 109.9,
+     "rec": "Tut"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Şeker Yatırım",
+     "target": 70.55,
+     "rec": "Al"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Deniz Yatırım",
+     "target": 66.2,
+     "rec": "Al"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Halk Yatırım",
+     "target": 68.1,
+     "rec": "Al"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 64.3,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Gedik Yatırım",
+     "target": 82.92,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Vakıf Yatırım",
+     "target": 74.5,
+     "rec": "Al"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "İş Yatırım",
+     "target": 80.28,
+     "rec": "Al"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Ahlatcı Yatırım",
+     "target": 65.5,
+     "rec": "Al"
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Ziraat Yatırım",
+     "target": 73.3,
+     "rec": "Al"
+    },
+    {
+     "code": "ANHYT",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 140.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ANHYT",
+     "broker": "Deniz Yatırım",
+     "target": 176.5,
+     "rec": "Al"
+    },
+    {
+     "code": "ANHYT",
+     "broker": "Ak Yatırım",
+     "target": 175.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ANHYT",
+     "broker": "İş Yatırım",
+     "target": 197.48,
+     "rec": "Al"
+    },
+    {
+     "code": "EREGL",
+     "broker": "Ak Yatırım",
+     "target": 45.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Şeker Yatırım",
+     "target": 495.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Phillip Capital",
+     "target": 565.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Ak Yatırım",
+     "target": 542.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 560.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ASELS",
+     "broker": "İş Yatırım",
+     "target": 535.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Global Menkul",
+     "target": 536.7,
+     "rec": "Al"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Deniz Yatırım",
+     "target": 341.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Vakıf Yatırım",
+     "target": 580.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Ahlatcı Yatırım",
+     "target": 446.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "ASELS",
+     "broker": "İnfo Yatırım",
+     "target": 510.0,
+     "rec": "Açıklanmadı"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Gedik Yatırım",
+     "target": 587.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Halk Yatırım",
+     "target": 551.8,
+     "rec": "Al"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 400.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "ASELS",
+     "broker": "OYAK Yatırım",
+     "target": 430.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Tacirler Yatırım",
+     "target": 480.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Ziraat Yatırım",
+     "target": 495.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 96.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Şeker Yatırım",
+     "target": 92.13,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 88.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Deniz Yatırım",
+     "target": 88.8,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Phillip Capital",
+     "target": 93.7,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Ahlatcı Yatırım",
+     "target": 114.2,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Halk Yatırım",
+     "target": 89.7,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "İş Yatırım",
+     "target": 93.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Vakıf Yatırım",
+     "target": 97.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ANSGR",
+     "broker": "Deniz Yatırım",
+     "target": 48.7,
+     "rec": "Al"
+    },
+    {
+     "code": "ANSGR",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 53.4,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ANSGR",
+     "broker": "Ak Yatırım",
+     "target": 42.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ANSGR",
+     "broker": "İş Yatırım",
+     "target": 49.88,
+     "rec": "Al"
+    },
+    {
+     "code": "AKCNS",
+     "broker": "Şeker Yatırım",
+     "target": 295.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AKCNS",
+     "broker": "Halk Yatırım",
+     "target": 308.5,
+     "rec": "Al"
+    },
+    {
+     "code": "AKCNS",
+     "broker": "İş Yatırım",
+     "target": 302.03,
+     "rec": "Al"
+    },
+    {
+     "code": "AKCNS",
+     "broker": "Vakıf Yatırım",
+     "target": 274.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ISGYO",
+     "broker": "Vakıf Yatırım",
+     "target": 28.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "ISGYO",
+     "broker": "İş Yatırım",
+     "target": 35.62,
+     "rec": "Al"
+    },
+    {
+     "code": "ISGYO",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 22.4,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "KORDS",
+     "broker": "Gedik Yatırım",
+     "target": 4.75,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "KORDS",
+     "broker": "Deniz Yatırım",
+     "target": 4.81,
+     "rec": "Tut"
+    },
+    {
+     "code": "MPARK",
+     "broker": "Ak Yatırım",
+     "target": 710.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "GARAN",
+     "broker": "Şeker Yatırım",
+     "target": 169.2,
+     "rec": "Al"
+    },
+    {
+     "code": "GARAN",
+     "broker": "Phillip Capital",
+     "target": 190.4,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "GARAN",
+     "broker": "Deniz Yatırım",
+     "target": 211.3,
+     "rec": "Al"
+    },
+    {
+     "code": "GARAN",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 165.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "GARAN",
+     "broker": "İş Yatırım",
+     "target": 195.0,
+     "rec": "Al"
+    },
+    {
+     "code": "GARAN",
+     "broker": "Halk Yatırım",
+     "target": 187.17,
+     "rec": "Al"
+    },
+    {
+     "code": "GARAN",
+     "broker": "Ziraat Yatırım",
+     "target": 205.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TSKB",
+     "broker": "Şeker Yatırım",
+     "target": 19.84,
+     "rec": "Al"
+    },
+    {
+     "code": "TSKB",
+     "broker": "Deniz Yatırım",
+     "target": 18.66,
+     "rec": "Al"
+    },
+    {
+     "code": "TSKB",
+     "broker": "İş Yatırım",
+     "target": 20.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TSKB",
+     "broker": "Halk Yatırım",
+     "target": 17.17,
+     "rec": "Al"
+    },
+    {
+     "code": "TSKB",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 15.0,
+     "rec": "Al"
+    },
+    {
+     "code": "VESBE",
+     "broker": "Deniz Yatırım",
+     "target": 5.5,
+     "rec": "Tut"
+    },
+    {
+     "code": "DOAS",
+     "broker": "Ata Yatırım",
+     "target": 152.0,
+     "prev": 208.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Ata Yatırım",
+     "target": 83.62,
+     "prev": 101.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "TOASO",
+     "broker": "Ata Yatırım",
+     "target": 375.0,
+     "prev": 440.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TTRAK",
+     "broker": "Ata Yatırım",
+     "target": 459.0,
+     "prev": 520.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "THYAO",
+     "broker": "Ata Yatırım",
+     "target": 474.4,
+     "prev": 538.02,
+     "rec": "Al"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Ata Yatırım",
+     "target": 181.58,
+     "prev": 200.76,
+     "rec": "Al"
+    },
+    {
+     "code": "TAVHL",
+     "broker": "Ata Yatırım",
+     "target": 372.12,
+     "prev": 341.03,
+     "rec": "Al"
+    },
+    {
+     "code": "AYGAZ",
+     "broker": "Ata Yatırım",
+     "target": 315.8,
+     "prev": 316.4,
+     "rec": "Tut"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Ata Yatırım",
+     "target": 447.0,
+     "prev": 385.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ENJSA",
+     "broker": "Ata Yatırım",
+     "target": 143.77,
+     "prev": 142.96,
+     "rec": "Tut"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "Ata Yatırım",
+     "target": 136.61,
+     "prev": 124.14,
+     "rec": "Tut"
+    },
+    {
+     "code": "PETKM",
+     "broker": "Ata Yatırım",
+     "target": 20.03,
+     "prev": 19.42,
+     "rec": "Sat"
+    },
+    {
+     "code": "AKSA",
+     "broker": "Ata Yatırım",
+     "target": 12.66,
+     "prev": 15.8,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Ata Yatırım",
+     "target": 160.0,
+     "prev": 160.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Ata Yatırım",
+     "target": 96.0,
+     "prev": 96.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ULKER",
+     "broker": "Ata Yatırım",
+     "target": 180.0,
+     "prev": 220.0,
+     "rec": "Al"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "Ata Yatırım",
+     "target": 107.0,
+     "prev": 120.0,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Ata Yatırım",
+     "target": 520.0,
+     "prev": 500.0,
+     "rec": "Al"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Ata Yatırım",
+     "target": 890.0,
+     "prev": 890.0,
+     "rec": "Al"
+    },
+    {
+     "code": "SOKM",
+     "broker": "Ata Yatırım",
+     "target": 110.0,
+     "prev": 110.0,
+     "rec": "Al"
+    },
+    {
+     "code": "BIZIM",
+     "broker": "Ata Yatırım",
+     "target": 38.0,
+     "prev": 38.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "ARCLK",
+     "broker": "Ata Yatırım",
+     "target": 135.0,
+     "prev": 155.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "SISE",
+     "broker": "Ata Yatırım",
+     "target": 42.09,
+     "prev": 54.57,
+     "rec": "Tut"
+    },
+    {
+     "code": "ASELS",
+     "broker": "Ata Yatırım",
+     "target": 517.2,
+     "prev": 398.6,
+     "rec": "Al"
+    },
+    {
+     "code": "EREGL",
+     "broker": "Ata Yatırım",
+     "target": 45.0,
+     "prev": 45.98,
+     "rec": "Tut"
+    },
+    {
+     "code": "ALARK",
+     "broker": "Ata Yatırım",
+     "target": 192.97,
+     "prev": 197.01,
+     "rec": "Al"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "Ata Yatırım",
+     "target": 165.78,
+     "prev": 172.3,
+     "rec": "Al"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "Ata Yatırım",
+     "target": 358.48,
+     "prev": 332.6,
+     "rec": "Al"
+    },
+    {
+     "code": "AKBNK",
+     "broker": "Ata Yatırım",
+     "target": 89.89,
+     "prev": 90.87,
+     "rec": "Al"
+    },
+    {
+     "code": "GARAN",
+     "broker": "Ata Yatırım",
+     "target": 198.77,
+     "prev": 198.77,
+     "rec": "Al"
+    },
+    {
+     "code": "HALKB",
+     "broker": "Ata Yatırım",
+     "target": 54.32,
+     "prev": 54.6,
+     "rec": "Tut"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Ata Yatırım",
+     "target": 22.89,
+     "prev": 23.36,
+     "rec": "Al"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Ata Yatırım",
+     "target": 47.28,
+     "prev": 47.99,
+     "rec": "Al"
+    },
+    {
+     "code": "TSKB",
+     "broker": "Ata Yatırım",
+     "target": 19.65,
+     "prev": 20.32,
+     "rec": "Al"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "Ata Yatırım",
+     "target": 46.74,
+     "prev": 47.91,
+     "rec": "Tut"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "Tacirler Yatırım",
+     "target": 183.0,
+     "rec": "Al"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "İş Yatırım",
+     "target": 181.0,
+     "rec": "Al"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "Vakıf Yatırım",
+     "target": 159.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 143.8,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "Deniz Yatırım",
+     "target": 139.5,
+     "rec": "Al"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "Gedik Yatırım",
+     "target": 138.2,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SAHOL",
+     "broker": "GCM Yatırım",
+     "target": 132.0,
+     "rec": "—"
+    },
+    {
+     "code": "AEFES",
+     "broker": "İş Yatırım",
+     "target": 31.26,
+     "rec": "Al"
+    },
+    {
+     "code": "AEFES",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 30.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AEFES",
+     "broker": "Deniz Yatırım",
+     "target": 28.83,
+     "rec": "Al"
+    },
+    {
+     "code": "AEFES",
+     "broker": "Tacirler Yatırım",
+     "target": 27.6,
+     "rec": "Al"
+    },
+    {
+     "code": "AEFES",
+     "broker": "Gedik Yatırım",
+     "target": 27.2,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "AEFES",
+     "broker": "Ak Yatırım",
+     "target": 26.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "OTKAR",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 780.0,
+     "rec": "Al"
+    },
+    {
+     "code": "OTKAR",
+     "broker": "Gedik Yatırım",
+     "target": 519.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "OTKAR",
+     "broker": "Vakıf Yatırım",
+     "target": 454.0,
+     "rec": "Al"
+    },
+    {
+     "code": "OTKAR",
+     "broker": "Deniz Yatırım",
+     "target": 450.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "OTKAR",
+     "broker": "Halk Yatırım",
+     "target": 387.5,
+     "rec": "Tut"
+    },
+    {
+     "code": "KRDMD",
+     "broker": "Gedik Yatırım",
+     "target": 60.83,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "KRDMD",
+     "broker": "İş Yatırım",
+     "target": 60.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KRDMD",
+     "broker": "Deniz Yatırım",
+     "target": 60.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KRDMD",
+     "broker": "Vakıf Yatırım",
+     "target": 58.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KRDMD",
+     "broker": "Ak Yatırım",
+     "target": 52.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "KRDMD",
+     "broker": "Şeker Yatırım",
+     "target": 45.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 92.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Gedik Yatırım",
+     "target": 91.3,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Şeker Yatırım",
+     "target": 90.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Halk Yatırım",
+     "target": 88.9,
+     "rec": "Al"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "İş Yatırım",
+     "target": 88.75,
+     "rec": "Al"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 88.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Ahlatcı Yatırım",
+     "target": 87.9,
+     "rec": "Al"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Ak Yatırım",
+     "target": 81.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "GCM Yatırım",
+     "target": 78.5,
+     "rec": "Al"
+    },
+    {
+     "code": "TTKOM",
+     "broker": "Deniz Yatırım",
+     "target": 71.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TURSG",
+     "broker": "İş Yatırım",
+     "target": 11.21,
+     "rec": "Al"
+    },
+    {
+     "code": "TURSG",
+     "broker": "Ak Yatırım",
+     "target": 6.7,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TURSG",
+     "broker": "Şeker Yatırım",
+     "target": 6.55,
+     "rec": "Al"
+    },
+    {
+     "code": "TURSG",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 4.7,
+     "rec": "Tut"
+    },
+    {
+     "code": "OYAKC",
+     "broker": "İnfo Yatırım",
+     "target": 35.8,
+     "rec": "—"
+    },
+    {
+     "code": "OYAKC",
+     "broker": "İş Yatırım",
+     "target": 35.26,
+     "rec": "Al"
+    },
+    {
+     "code": "OYAKC",
+     "broker": "OYAK Yatırım",
+     "target": 34.2,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "OYAKC",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 33.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "OYAKC",
+     "broker": "Şeker Yatırım",
+     "target": 31.6,
+     "rec": "Al"
+    },
+    {
+     "code": "OYAKC",
+     "broker": "GCM Yatırım",
+     "target": 22.08,
+     "rec": "—"
+    },
+    {
+     "code": "THYAO",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 490.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "THYAO",
+     "broker": "Gedik Yatırım",
+     "target": 483.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "THYAO",
+     "broker": "Deniz Yatırım",
+     "target": 461.0,
+     "rec": "Al"
+    },
+    {
+     "code": "THYAO",
+     "broker": "Şeker Yatırım",
+     "target": 445.0,
+     "rec": "Al"
+    },
+    {
+     "code": "THYAO",
+     "broker": "Ahlatcı Yatırım",
+     "target": 425.96,
+     "rec": "Al"
+    },
+    {
+     "code": "THYAO",
+     "broker": "İnfo Yatırım",
+     "target": 373.25,
+     "rec": "—"
+    },
+    {
+     "code": "THYAO",
+     "broker": "Ak Yatırım",
+     "target": 330.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "Gedik Yatırım",
+     "target": 130.2,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "Ak Yatırım",
+     "target": 129.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 125.0,
+     "rec": "Al"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "OYAK Yatırım",
+     "target": 123.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "Şeker Yatırım",
+     "target": 122.0,
+     "rec": "Al"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "Deniz Yatırım",
+     "target": 121.8,
+     "rec": "Al"
+    },
+    {
+     "code": "CCOLA",
+     "broker": "İş Yatırım",
+     "target": 120.0,
+     "rec": "Al"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "Deniz Yatırım",
+     "target": 54.3,
+     "rec": "Al"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 51.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "Şeker Yatırım",
+     "target": 50.17,
+     "rec": "Al"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "Vakıf Yatırım",
+     "target": 48.4,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "İş Yatırım",
+     "target": 48.0,
+     "rec": "Al"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "Ak Yatırım",
+     "target": 47.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "YKBNK",
+     "broker": "Halk Yatırım",
+     "target": 46.93,
+     "rec": "Al"
+    },
+    {
+     "code": "KCAER",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 21.4,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "KCAER",
+     "broker": "Gedik Yatırım",
+     "target": 19.7,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "KCAER",
+     "broker": "İş Yatırım",
+     "target": 18.83,
+     "rec": "Al"
+    },
+    {
+     "code": "GWIND",
+     "broker": "İş Yatırım",
+     "target": 39.0,
+     "rec": "Al"
+    },
+    {
+     "code": "GWIND",
+     "broker": "Global Menkul",
+     "target": 38.0,
+     "rec": "—"
+    },
+    {
+     "code": "GWIND",
+     "broker": "Deniz Yatırım",
+     "target": 36.2,
+     "rec": "Al"
+    },
+    {
+     "code": "GWIND",
+     "broker": "Gedik Yatırım",
+     "target": 31.69,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ENJSA",
+     "broker": "Gedik Yatırım",
+     "target": 202.4,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ENJSA",
+     "broker": "İş Yatırım",
+     "target": 174.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AKSA",
+     "broker": "Gedik Yatırım",
+     "target": 18.5,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "AKSA",
+     "broker": "Deniz Yatırım",
+     "target": 15.5,
+     "rec": "Al"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Ak Yatırım",
+     "target": 170.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Gedik Yatırım",
+     "target": 166.4,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "FROTO",
+     "broker": "İş Yatırım",
+     "target": 152.5,
+     "rec": "Al"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 140.0,
+     "rec": "Al"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Şeker Yatırım",
+     "target": 130.0,
+     "rec": "Al"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Halk Yatırım",
+     "target": 126.0,
+     "rec": "Al"
+    },
+    {
+     "code": "FROTO",
+     "broker": "İnfo Yatırım",
+     "target": 124.5,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Vakıf Yatırım",
+     "target": 124.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Tacirler Yatırım",
+     "target": 122.0,
+     "rec": "Al"
+    },
+    {
+     "code": "FROTO",
+     "broker": "OYAK Yatırım",
+     "target": 120.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "FROTO",
+     "broker": "Deniz Yatırım",
+     "target": 106.0,
+     "rec": ""
+    },
+    {
+     "code": "SISE",
+     "broker": "Gedik Yatırım",
+     "target": 68.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SISE",
+     "broker": "Vakıf Yatırım",
+     "target": 64.7,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SISE",
+     "broker": "Deniz Yatırım",
+     "target": 59.41,
+     "rec": "Tut"
+    },
+    {
+     "code": "SISE",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 57.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "SISE",
+     "broker": "Halk Yatırım",
+     "target": 56.4,
+     "rec": "Al"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Phillip Capital",
+     "target": 21.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Şeker Yatırım",
+     "target": 20.81,
+     "rec": "Al"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Halk Yatırım",
+     "target": 19.15,
+     "rec": "Al"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Deniz Yatırım",
+     "target": 18.8,
+     "rec": "Al"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Vakıf Yatırım",
+     "target": 18.8,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 17.5,
+     "rec": "Al"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 17.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ISCTR",
+     "broker": "Ak Yatırım",
+     "target": 17.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "TOASO",
+     "broker": "Ak Yatırım",
+     "target": 530.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TOASO",
+     "broker": "Gedik Yatırım",
+     "target": 496.7,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "TOASO",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 494.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TOASO",
+     "broker": "İş Yatırım",
+     "target": 442.45,
+     "rec": "Al"
+    },
+    {
+     "code": "TOASO",
+     "broker": "Şeker Yatırım",
+     "target": 435.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TOASO",
+     "broker": "OYAK Yatırım",
+     "target": 415.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TOASO",
+     "broker": "Vakıf Yatırım",
+     "target": 406.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TOASO",
+     "broker": "Deniz Yatırım",
+     "target": 400.0,
+     "rec": "Al"
+    },
+    {
+     "code": "DOHOL",
+     "broker": "Gedik Yatırım",
+     "target": 35.56,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "DOHOL",
+     "broker": "OYAK Yatırım",
+     "target": 34.74,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "DOHOL",
+     "broker": "Tacirler Yatırım",
+     "target": 34.4,
+     "rec": "Al"
+    },
+    {
+     "code": "DOHOL",
+     "broker": "GCM Yatırım",
+     "target": 34.3,
+     "rec": "—"
+    },
+    {
+     "code": "DOHOL",
+     "broker": "İş Yatırım",
+     "target": 33.27,
+     "rec": "Al"
+    },
+    {
+     "code": "DOHOL",
+     "broker": "Deniz Yatırım",
+     "target": 31.9,
+     "rec": "Al"
+    },
+    {
+     "code": "MGROS",
+     "broker": "İş Yatırım",
+     "target": 1057.19,
+     "rec": "Al"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Gedik Yatırım",
+     "target": 1004.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Tacirler Yatırım",
+     "target": 979.0,
+     "rec": "Al"
+    },
+    {
+     "code": "MGROS",
+     "broker": "İnfo Yatırım",
+     "target": 963.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 950.0,
+     "rec": "Al"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Deniz Yatırım",
+     "target": 946.44,
+     "rec": "Al"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Vakıf Yatırım",
+     "target": 911.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Şeker Yatırım",
+     "target": 910.0,
+     "rec": "Al"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Ak Yatırım",
+     "target": 901.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "MGROS",
+     "broker": "Halk Yatırım",
+     "target": 890.4,
+     "rec": "Al"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Şeker Yatırım",
+     "target": 43.04,
+     "rec": "Al"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 45.5,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Phillip Capital",
+     "target": 48.7,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Deniz Yatırım",
+     "target": 41.8,
+     "rec": "Al"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 40.5,
+     "rec": "Al"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "İş Yatırım",
+     "target": 45.0,
+     "rec": "Al"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Ak Yatırım",
+     "target": 39.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "VAKBN",
+     "broker": "Ziraat Yatırım",
+     "target": 54.2,
+     "rec": "Al"
+    },
+    {
+     "code": "SOKM",
+     "broker": "Ak Yatırım",
+     "target": 90.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SOKM",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 90.0,
+     "rec": "Al"
+    },
+    {
+     "code": "SOKM",
+     "broker": "Deniz Yatırım",
+     "target": 74.0,
+     "rec": "Al"
+    },
+    {
+     "code": "SOKM",
+     "broker": "İş Yatırım",
+     "target": 98.19,
+     "rec": "Al"
+    },
+    {
+     "code": "SOKM",
+     "broker": "Gedik Yatırım",
+     "target": 97.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SOKM",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 80.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "SOKM",
+     "broker": "Halk Yatırım",
+     "target": 88.4,
+     "rec": "Al"
+    },
+    {
+     "code": "KLKIM",
+     "broker": "Deniz Yatırım",
+     "target": 54.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KLKIM",
+     "broker": "Gedik Yatırım",
+     "target": 35.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "KLKIM",
+     "broker": "Ak Yatırım",
+     "target": 59.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ALBRK",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 10.5,
+     "rec": "Tut"
+    },
+    {
+     "code": "ALBRK",
+     "broker": "Deniz Yatırım",
+     "target": 11.94,
+     "rec": "Al"
+    },
+    {
+     "code": "ALBRK",
+     "broker": "Ak Yatırım",
+     "target": 13.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "KOTON",
+     "broker": "Tacirler Yatırım",
+     "target": 21.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KOTON",
+     "broker": "Kuveyt Türk Yatırım",
+     "target": 16.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KOTON",
+     "broker": "Ak Yatırım",
+     "target": 23.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "AKFYE",
+     "broker": "İş Yatırım",
+     "target": 4.53,
+     "rec": "Al"
+    },
+    {
+     "code": "AYDEM",
+     "broker": "İş Yatırım",
+     "target": 40.3,
+     "rec": "Al"
+    },
+    {
+     "code": "MEDTR",
+     "broker": "Ak Yatırım",
+     "target": 40.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "RGYAS",
+     "broker": "Ak Yatırım",
+     "target": 414.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "RGYAS",
+     "broker": "Gedik Yatırım",
+     "target": 323.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "MPARK",
+     "broker": "Gedik Yatırım",
+     "target": 723.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "PETKM",
+     "broker": "Şeker Yatırım",
+     "target": 18.91,
+     "rec": "Tut"
+    },
+    {
+     "code": "BRSAN",
+     "broker": "Global Menkul",
+     "target": 888.0,
+     "rec": "Al"
+    },
+    {
+     "code": "BRSAN",
+     "broker": "Ak Yatırım",
+     "target": 938.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "VESTL",
+     "broker": "Deniz Yatırım",
+     "target": 20.0,
+     "rec": "Sat"
+    },
+    {
+     "code": "ENTRA",
+     "broker": "İş Yatırım",
+     "target": 7.27,
+     "rec": "Al"
+    },
+    {
+     "code": "ENTRA",
+     "broker": "Global Menkul",
+     "target": 7.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "AYGAZ",
+     "broker": "Deniz Yatırım",
+     "target": 412.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AYGAZ",
+     "broker": "İş Yatırım",
+     "target": 450.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AYGAZ",
+     "broker": "Gedik Yatırım",
+     "target": 375.12,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "AYGAZ",
+     "broker": "Ak Yatırım",
+     "target": 358.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Tacirler Yatırım",
+     "target": 481.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Deniz Yatırım",
+     "target": 494.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Kuveyt Türk Yatırım",
+     "target": 458.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Gedik Yatırım",
+     "target": 501.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "İş Yatırım",
+     "target": 477.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Şeker Yatırım",
+     "target": 395.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Vakıf Yatırım",
+     "target": 510.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "Ak Yatırım",
+     "target": 480.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TUPRS",
+     "broker": "QNB Invest",
+     "target": 480.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "HALKB",
+     "broker": "Deniz Yatırım",
+     "target": 41.3,
+     "rec": "Al"
+    },
+    {
+     "code": "HALKB",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 45.59,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "HALKB",
+     "broker": "İş Yatırım",
+     "target": 46.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "HALKB",
+     "broker": "Vakıf Yatırım",
+     "target": 52.3,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "HALKB",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 47.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "HALKB",
+     "broker": "Ziraat Yatırım",
+     "target": 52.1,
+     "rec": "Al"
+    },
+    {
+     "code": "AGHOL",
+     "broker": "Deniz Yatırım",
+     "target": 50.9,
+     "rec": "Al"
+    },
+    {
+     "code": "AGHOL",
+     "broker": "Şeker Yatırım",
+     "target": 48.04,
+     "rec": "Al"
+    },
+    {
+     "code": "AGHOL",
+     "broker": "Gedik Yatırım",
+     "target": 50.8,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "AGHOL",
+     "broker": "İş Yatırım",
+     "target": 52.3,
+     "rec": "Al"
+    },
+    {
+     "code": "AGHOL",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 55.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ULKER",
+     "broker": "Deniz Yatırım",
+     "target": 156.9,
+     "rec": "Tut*"
+    },
+    {
+     "code": "ULKER",
+     "broker": "İş Yatırım",
+     "target": 161.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ULKER",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 150.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ULKER",
+     "broker": "Ak Yatırım",
+     "target": 148.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ULKER",
+     "broker": "Gedik Yatırım",
+     "target": 150.8,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "EKGYO",
+     "broker": "Şeker Yatırım",
+     "target": 32.84,
+     "rec": "Al"
+    },
+    {
+     "code": "EKGYO",
+     "broker": "Kuveyt Türk Yatırım",
+     "target": 31.0,
+     "rec": "Al"
+    },
+    {
+     "code": "EKGYO",
+     "broker": "İş Yatırım",
+     "target": 33.15,
+     "rec": "Al"
+    },
+    {
+     "code": "EKGYO",
+     "broker": "Deniz Yatırım",
+     "target": 32.8,
+     "rec": "Al"
+    },
+    {
+     "code": "EKGYO",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 41.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "EKGYO",
+     "broker": "Vakıf Yatırım",
+     "target": 29.5,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "EKGYO",
+     "broker": "GCM Yatırım",
+     "target": 33.03,
+     "rec": "—"
+    },
+    {
+     "code": "ENKAI",
+     "broker": "Deniz Yatırım",
+     "target": 129.0,
+     "rec": "Al*"
+    },
+    {
+     "code": "ENKAI",
+     "broker": "İş Yatırım",
+     "target": 120.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ENKAI",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 110.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ENKAI",
+     "broker": "Ziraat Yatırım",
+     "target": 127.2,
+     "rec": "Al"
+    },
+    {
+     "code": "ENKAI",
+     "broker": "Gedik Yatırım",
+     "target": 121.55,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ENKAI",
+     "broker": "Ak Yatırım",
+     "target": 123.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ISMEN",
+     "broker": "Deniz Yatırım",
+     "target": 54.3,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Deniz Yatırım",
+     "target": 162.2,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "GCM Yatırım",
+     "target": 183.7,
+     "rec": "—"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 159.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Şeker Yatırım",
+     "target": 150.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Ahlatcı Yatırım",
+     "target": 156.81,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "İş Yatırım",
+     "target": 167.64,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Vakıf Yatırım",
+     "target": 174.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Halk Yatırım",
+     "target": 162.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 148.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Gedik Yatırım",
+     "target": 164.95,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TCELL",
+     "broker": "Ak Yatırım",
+     "target": 161.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TRMET",
+     "broker": "Gedik Yatırım",
+     "target": 168.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "ORGE",
+     "broker": "Gedik Yatırım",
+     "target": 39.78,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "İş Yatırım",
+     "target": 492.38,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Ziraat Yatırım",
+     "target": 557.5,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Deniz Yatırım",
+     "target": 495.45,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Gedik Yatırım",
+     "target": 530.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 508.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Şeker Yatırım",
+     "target": 496.0,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Tacirler Yatırım",
+     "target": 463.5,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Kuveyt Türk Yatırım",
+     "target": 558.0,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 540.0,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "İnfo Yatırım",
+     "target": 533.5,
+     "rec": "—"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Halk Yatırım",
+     "target": 565.9,
+     "rec": "Al"
+    },
+    {
+     "code": "BIMAS",
+     "broker": "Vakıf Yatırım",
+     "target": 427.0,
+     "rec": "Endeks üstü getiri*"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "Şeker Yatırım",
+     "target": 110.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "Deniz Yatırım",
+     "target": 109.0,
+     "rec": "Al"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "Vakıf Yatırım",
+     "target": 112.8,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "Gedik Yatırım",
+     "target": 118.3,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "İş Yatırım",
+     "target": 117.5,
+     "rec": "Al"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "Global Menkul",
+     "target": 140.9,
+     "rec": "Al"
+    },
+    {
+     "code": "AKSEN",
+     "broker": "Yapı Kredi Yatırım",
+     "target": 98.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "Tacirler Yatırım",
+     "target": 364.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "Deniz Yatırım",
+     "target": 336.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "Vakıf Yatırım",
+     "target": 319.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 295.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "Ak Yatırım",
+     "target": 347.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "İş Yatırım",
+     "target": 340.0,
+     "rec": "Al"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "GCM Yatırım",
+     "target": 320.0,
+     "rec": "—"
+    },
+    {
+     "code": "KCHOL",
+     "broker": "Gedik Yatırım",
+     "target": 335.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ALARK",
+     "broker": "İş Yatırım",
+     "target": 189.69,
+     "rec": "Al"
+    },
+    {
+     "code": "ALARK",
+     "broker": "Deniz Yatırım",
+     "target": 170.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ALARK",
+     "broker": "Tacirler Yatırım",
+     "target": 170.0,
+     "rec": "Al"
+    },
+    {
+     "code": "DOAS",
+     "broker": "Phillip Capital",
+     "target": 202.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "DOAS",
+     "broker": "Deniz Yatırım",
+     "target": 255.0,
+     "rec": "Tut"
+    },
+    {
+     "code": "DOAS",
+     "broker": "Gedik Yatırım",
+     "target": 257.9,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "DOAS",
+     "broker": "Şeker Yatırım",
+     "target": 240.0,
+     "rec": "Al"
+    },
+    {
+     "code": "DOAS",
+     "broker": "Ak Yatırım",
+     "target": 305.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "TRALT",
+     "broker": "İş Yatırım",
+     "target": 56.0,
+     "rec": "Al"
+    },
+    {
+     "code": "TRALT",
+     "broker": "Gedik Yatırım",
+     "target": 60.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "TRALT",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 58.0,
+     "rec": "Endekse paralel getiri"
+    },
+    {
+     "code": "TRALT",
+     "broker": "Halk Yatırım",
+     "target": 68.26,
+     "rec": "Al"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "İş Yatırım",
+     "target": 190.0,
+     "rec": "Al"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Ahlatcı Yatırım",
+     "target": 278.6,
+     "rec": "Al"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "GCM Yatırım",
+     "target": 254.3,
+     "rec": "Al*"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "İnfo Yatırım",
+     "target": 195.0,
+     "rec": "—"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Gedik Yatırım",
+     "target": 245.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Garanti BBVA Yatırım",
+     "target": 266.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Ak Yatırım",
+     "target": 215.0,
+     "rec": "Nötr"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Şeker Yatırım",
+     "target": 271.9,
+     "rec": "Al"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Deniz Yatırım",
+     "target": 305.5,
+     "rec": "Al"
+    },
+    {
+     "code": "PGSUS",
+     "broker": "Vakıf Yatırım",
+     "target": 220.0,
+     "rec": "Endeks üstü getiri"
+    },
+    {
+     "code": "ASTOR",
+     "broker": "İş Yatırım",
+     "target": 297.24,
+     "rec": "Al"
+    },
+    {
+     "code": "ASTOR",
+     "broker": "Global Menkul",
+     "target": 388.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ASTOR",
+     "broker": "Tacirler Yatırım",
+     "target": 340.0,
+     "rec": "Al"
+    },
+    {
+     "code": "ASTOR",
+     "broker": "Gedik Yatırım",
+     "target": 461.3,
+     "rec": "Endeks üstü getiri"
+    }
+   ]
+  }
+ },
+ "ideas": {
+  "https://paratic.com/3-araci-kurumdan-14-hisse-icin-teknik-seviyeler-destek-ve-direncler-aciklandi/": {
+   "date": "2026-11-13",
+   "rows": [
+    {
+     "code": "THYAO",
+     "broker": "ICBC Yatırım",
+     "entry": 319.0,
+     "stop": null,
+     "targets": [
+      325.75
+     ],
+     "supports": [
+      314.75
+     ]
+    },
+    {
+     "code": "AYGAZ",
+     "broker": "ICBC Yatırım",
+     "entry": 280.25,
+     "stop": null,
+     "targets": [
+      282.75
+     ],
+     "supports": [
+      267.26
+     ]
+    },
+    {
+     "code": "TCKRC",
+     "broker": "ICBC Yatırım",
+     "entry": 125.5,
+     "stop": null,
+     "targets": [
+      129.0
+     ],
+     "supports": [
+      122.06
+     ]
+    },
+    {
+     "code": "ALARK",
+     "broker": "ICBC Yatırım",
+     "entry": 106.7,
+     "stop": null,
+     "targets": [
+      109.5
+     ],
+     "supports": [
+      103.4
+     ]
+    },
+    {
+     "code": "MAVI",
+     "broker": "ICBC Yatırım",
+     "entry": 35.52,
+     "stop": null,
+     "targets": [
+      35.94
+     ],
+     "supports": [
+      34.86
+     ]
+    },
+    {
+     "code": "SASA",
+     "broker": "ICBC Yatırım",
+     "entry": 1.6,
+     "stop": null,
+     "targets": [
+      1.64
+     ],
+     "supports": [
+      1.56
+     ]
+    },
+    {
+     "code": "AHGAZ",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 46.2,
+     "stop": null,
+     "targets": [
+      46.79,
+      47.37
+     ],
+     "supports": [
+      45.11,
+      44.01
+     ]
+    },
+    {
+     "code": "AKCNS",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 193.5,
+     "stop": null,
+     "targets": [
+      196.57,
+      199.63
+     ],
+     "supports": [
+      191.67,
+      189.83
+     ]
+    },
+    {
+     "code": "GUBRF",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 280.5,
+     "stop": null,
+     "targets": [
+      286.75,
+      293.0
+     ],
+     "supports": [
+      276.5,
+      272.5
+     ]
+    },
+    {
+     "code": "ISDMR",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 51.45,
+     "stop": null,
+     "targets": [
+      52.23,
+      53.02
+     ],
+     "supports": [
+      50.83,
+      50.22
+     ]
+    },
+    {
+     "code": "KARSN",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 7.55,
+     "stop": null,
+     "targets": [
+      7.75,
+      7.94
+     ],
+     "supports": [
+      7.35,
+      7.14
+     ]
+    },
+    {
+     "code": "MAVI",
+     "broker": "Anadolu Yatırım",
+     "entry": 35.24,
+     "stop": 34.56,
+     "targets": [
+      36.06,
+      36.74
+     ],
+     "supports": []
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Anadolu Yatırım",
+     "entry": 42.0,
+     "stop": 41.18,
+     "targets": [
+      42.98,
+      43.78
+     ],
+     "supports": []
+    },
+    {
+     "code": "KRDMD",
+     "broker": "Anadolu Yatırım",
+     "entry": 38.56,
+     "stop": 37.8,
+     "targets": [
+      39.46,
+      40.2
+     ],
+     "supports": []
+    },
+    {
+     "code": "TOASO",
+     "broker": "Anadolu Yatırım",
+     "entry": 236.1,
+     "stop": 231.5,
+     "targets": [
+      241.6,
+      246.1
+     ],
+     "supports": []
+    }
+   ]
+  },
+  "https://paratic.com/altinda-3944-dolar-uyarisi-fxempire-kritik-seviyeleri-siraladi/": {
+   "date": "2026-11-12",
+   "rows": []
+  },
+  "https://paratic.com/asels-froto-tuprs-ve-7-hisse-icin-destek-ve-direnc-seviyeleri/": {
+   "date": "2026-11-19",
+   "rows": [
+    {
+     "code": "ASELS",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 343.75,
+     "stop": null,
+     "targets": [
+      349.0,
+      354.25
+     ],
+     "supports": [
+      340.0,
+      336.25
+     ]
+    },
+    {
+     "code": "ATAKP",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 38.68,
+     "stop": null,
+     "targets": [
+      39.61,
+      40.55
+     ],
+     "supports": [
+      37.89,
+      37.11
+     ]
+    },
+    {
+     "code": "BUCIM",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 4.0,
+     "stop": null,
+     "targets": [
+      4.07,
+      4.15
+     ],
+     "supports": [
+      3.95,
+      3.91
+     ]
+    },
+    {
+     "code": "CIMSA",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 39.8,
+     "stop": null,
+     "targets": [
+      40.96,
+      42.12
+     ],
+     "supports": [
+      39.2,
+      38.6
+     ]
+    },
+    {
+     "code": "KBORU",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 10.87,
+     "stop": null,
+     "targets": [
+      11.21,
+      11.54
+     ],
+     "supports": [
+      10.57,
+      10.26
+     ]
+    },
+    {
+     "code": "ASELS",
+     "broker": "Anadolu Yatırım",
+     "entry": 340.25,
+     "stop": 333.5,
+     "targets": [
+      348.25,
+      354.75
+     ],
+     "supports": []
+    },
+    {
+     "code": "FROTO",
+     "broker": "Anadolu Yatırım",
+     "entry": 71.85,
+     "stop": 70.45,
+     "targets": [
+      73.55,
+      74.9
+     ],
+     "supports": []
+    },
+    {
+     "code": "FROTO",
+     "broker": "ICBC Yatırım",
+     "entry": 72.6,
+     "stop": null,
+     "targets": [
+      74.05
+     ],
+     "supports": [
+      71.75
+     ]
+    },
+    {
+     "code": "TUPRS",
+     "broker": "ICBC Yatırım",
+     "entry": 345.75,
+     "stop": null,
+     "targets": [
+      349.0
+     ],
+     "supports": [
+      343.25
+     ]
+    }
+   ]
+  },
+  "https://paratic.com/asels-mavi-ve-enjsa-dahil-21-hissede-haftalik-hedef-ve-stop-loss-seviyeleri/": {
+   "date": "2026-11-16",
+   "rows": [
+    {
+     "code": "FROTO",
+     "broker": "A1 Capital",
+     "entry": 73.75,
+     "stop": 72.28,
+     "targets": [
+      75.23,
+      77.44
+     ],
+     "supports": []
+    },
+    {
+     "code": "GUBRF",
+     "broker": "A1 Capital",
+     "entry": 284.5,
+     "stop": 278.81,
+     "targets": [
+      290.19,
+      298.73
+     ],
+     "supports": []
+    },
+    {
+     "code": "ISDMR",
+     "broker": "A1 Capital",
+     "entry": 52.1,
+     "stop": 51.06,
+     "targets": [
+      53.14,
+      54.71
+     ],
+     "supports": []
+    },
+    {
+     "code": "LMKDC",
+     "broker": "A1 Capital",
+     "entry": 22.34,
+     "stop": 21.89,
+     "targets": [
+      22.79,
+      23.46
+     ],
+     "supports": []
+    },
+    {
+     "code": "MAVI",
+     "broker": "A1 Capital",
+     "entry": 36.16,
+     "stop": 35.44,
+     "targets": [
+      36.88,
+      37.97
+     ],
+     "supports": []
+    },
+    {
+     "code": "TABGD",
+     "broker": "A1 Capital",
+     "entry": 195.5,
+     "stop": 191.59,
+     "targets": [
+      199.41,
+      205.28
+     ],
+     "supports": []
+    },
+    {
+     "code": "TUPRS",
+     "broker": "A1 Capital",
+     "entry": 359.0,
+     "stop": 351.82,
+     "targets": [
+      366.18,
+      376.95
+     ],
+     "supports": []
+    },
+    {
+     "code": "AKSEN",
+     "broker": "A1 Capital",
+     "entry": 71.95,
+     "stop": 70.51,
+     "targets": [
+      73.39,
+      75.55
+     ],
+     "supports": []
+    },
+    {
+     "code": "ASELS",
+     "broker": "A1 Capital",
+     "entry": 345.5,
+     "stop": 338.59,
+     "targets": [
+      352.41,
+      362.78
+     ],
+     "supports": []
+    },
+    {
+     "code": "BIMAS",
+     "broker": "A1 Capital",
+     "entry": 395.5,
+     "stop": 387.59,
+     "targets": [
+      403.41,
+      415.28
+     ],
+     "supports": []
+    },
+    {
+     "code": "ENERY",
+     "broker": "A1 Capital",
+     "entry": 14.6,
+     "stop": 14.31,
+     "targets": [
+      14.89,
+      15.33
+     ],
+     "supports": []
+    },
+    {
+     "code": "ENJSA",
+     "broker": "A1 Capital",
+     "entry": 122.3,
+     "stop": 119.85,
+     "targets": [
+      124.75,
+      128.42
+     ],
+     "supports": []
+    },
+    {
+     "code": "ENKAI",
+     "broker": "A1 Capital",
+     "entry": 83.4,
+     "stop": 81.73,
+     "targets": [
+      85.07,
+      87.57
+     ],
+     "supports": []
+    },
+    {
+     "code": "EUREN",
+     "broker": "A1 Capital",
+     "entry": 2.51,
+     "stop": 2.46,
+     "targets": [
+      2.56,
+      2.64
+     ],
+     "supports": []
+    },
+    {
+     "code": "SISE",
+     "broker": "İkon Menkul",
+     "entry": 35.86,
+     "stop": 35.2,
+     "targets": [
+      36.7,
+      37.6
+     ],
+     "supports": []
+    },
+    {
+     "code": "CIMSA",
+     "broker": "İkon Menkul",
+     "entry": 42.32,
+     "stop": 42.1,
+     "targets": [
+      43.3,
+      44.4
+     ],
+     "supports": []
+    },
+    {
+     "code": "ENJSA",
+     "broker": "İkon Menkul",
+     "entry": 122.3,
+     "stop": 119.0,
+     "targets": [
+      125.8,
+      129.0
+     ],
+     "supports": []
+    },
+    {
+     "code": "AKSA",
+     "broker": "İkon Menkul",
+     "entry": 11.05,
+     "stop": 10.8,
+     "targets": [
+      11.4,
+      11.75
+     ],
+     "supports": []
+    },
+    {
+     "code": "ASELS",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 345.5,
+     "stop": 317.75,
+     "targets": [
+      357.5,
+      362.75,
+      373.0
+     ],
+     "supports": []
+    },
+    {
+     "code": "KARSN",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 7.66,
+     "stop": 7.05,
+     "targets": [
+      7.93,
+      8.04,
+      8.27
+     ],
+     "supports": []
+    },
+    {
+     "code": "KRDMD",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 38.9,
+     "stop": 35.76,
+     "targets": [
+      40.26,
+      40.84,
+      42.0
+     ],
+     "supports": []
+    },
+    {
+     "code": "MAVI",
+     "broker": "Kuveyt Türk Yatırım",
+     "entry": 36.16,
+     "stop": 33.26,
+     "targets": [
+      37.42,
+      37.98,
+      39.04
+     ],
+     "supports": []
+    }
+   ]
+  },
+  "https://paratic.com/borsada-hangi-seviyeler-izlenecek-kurumlar-kritik-destek-ve-direncleri-acikladi/": {
+   "date": "2026-11-06",
+   "rows": []
+  },
+  "https://paratic.com/euro-dolara-karsi-guclendi-ing-kritik-seviyeleri-acikladi/": {
+   "date": "2026-11-04",
+   "rows": []
+  },
+  "https://paratic.com/ons-altinda-yon-arayisi-suruyor-qnb-invest-destek-ve-direncleri-acikladi/": {
+   "date": "2026-10-30",
+   "rows": []
+  },
+  "https://paratic.com/qnb-investin-haftanin-yildizlari-listesinde-tuprs-one-cikti/": {
+   "date": "2026-11-09",
+   "rows": []
+  }
+ }
+}

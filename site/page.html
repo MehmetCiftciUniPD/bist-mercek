@@ -502,8 +502,42 @@ function brokerChange(r) {
   if (x.date && x.date >= daysAgo(7)) return prev || {};
   return null;
 }
+// --- All brokers' targets and short-term trade ideas ---------------------------
+const recKind = r => !r ? null : /^al|üstü/i.test(r) ? 'al' : /sat|altı/i.test(r) ? 'sat' : /tut|nötr|paralel/i.test(r) ? 'tut' : null;
+const recShort = r => ({ al: pill('good', 'AL'), tut: pill('', 'TUT'), sat: pill('bad', 'SAT') })[recKind(r)] || (r ? esc(r) : DASH);
+const median = a => { const v = a.filter(has).sort((x, y) => x - y); return v.length ? (v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : null; };
+function tgSummary(r) {
+  const list = (r.tg || []).filter(x => has(x.t) && x.t > 0);
+  if (!list.length) return null;
+  const t = list.map(x => x.t), m = median(t);
+  return { n: list.length, al: list.filter(x => recKind(x.r) === 'al').length, tut: list.filter(x => recKind(x.r) === 'tut').length, sat: list.filter(x => recKind(x.r) === 'sat').length,
+    med: m, lo: Math.min(...t), hi: Math.max(...t), up: upside(r, m), rev: list.filter(x => has(x.p) && x.p !== x.t) };
+}
+// Where the price stands now against a trade idea's levels.
+function ideaStatus(r, x) {
+  const p = nowPx(r); if (!has(p)) return DASH;
+  const t = (x.t || []).filter(has), stop = has(x.s) ? x.s : null;
+  if (stop !== null && p <= stop) return pill('bad', 'stop altında');
+  const hit = t.filter(v => p >= v).length;
+  if (hit) return pill('good', hit === t.length ? 'tüm hedefler üstünde' : `${hit}. hedef üstünde`);
+  if (!stop && (x.sp || []).length && p < Math.min(...x.sp)) return pill('bad', 'desteğin altında');
+  return pill('', 'aralıkta');
+}
+const lv = v => has(v) ? N2.format(v) : '';
+function ideaRow(r, x, withCode) {
+  const p = nowPx(r);
+  return `<tr>${withCode ? `<td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td>` : ''}<td class="l num">${x.d ? esc(new Date(x.d).toLocaleDateString('tr-TR')) : ''}</td><td class="l">${esc(x.b || '—')}</td><td class="num">${lv(x.e)}</td><td class="num">${(x.t || []).map(lv).join(' / ')}</td><td class="num">${has(x.s) ? lv(x.s) : (x.sp || []).length ? `<span class="dash">destek</span> ${x.sp.map(lv).join(' / ')}` : ''}</td><td class="num">${lv(p)}</td><td class="l">${ideaStatus(r, x)}</td><td><a href="${esc(x.u)}" target="_blank" rel="noreferrer">↗</a></td></tr>`;
+}
+const IDEA_HEAD = withCode => `<thead><tr>${withCode ? '<th class="l">Hisse</th>' : ''}<th class="l">Tarih</th><th class="l">Kurum</th><th>Referans</th><th>Hedef / direnç</th><th>Stop</th><th>Şimdi</th><th class="l">Durum</th><th></th></tr></thead>`;
+function callsHtml(r) {
+  let out = '';
+  const s = tgSummary(r);
+  if (s) out += `<p style="margin:6px 0 4px"><b>Tüm kurumların hedefleri (${s.n} kurum):</b> <span class="num"><span class="up">${s.al} AL</span> · ${s.tut} TUT · <span class="down">${s.sat} SAT</span></span> · ortanca hedef <span class="num">${N2.format(s.med)} TL</span> (${N2.format(s.lo)}–${N2.format(s.hi)}) ${pctCell(s.up)}</p><div class="scroll"><table class="ledger"><thead><tr><th class="l">Kurum</th><th class="l">Tavsiye</th><th>Hedef</th><th>Önceki hedef</th><th>Potansiyel</th></tr></thead><tbody>${[...r.tg].sort((a, b) => (b.t || 0) - (a.t || 0)).map(x => `<tr><td class="l">${esc(x.b)}</td><td class="l">${recShort(x.r)}${recKind(x.r) && !/^(al|tut|sat)$/i.test(x.r || '') ? ` <small>${esc(x.r)}</small>` : ''}</td><td class="num">${lv(x.t)}</td><td class="num">${has(x.p) && x.p !== x.t ? `${lv(x.p)} ${pctCell((x.t / x.p - 1) * 100)}` : ''}</td><td>${pctCell(upside(r, x.t))}</td></tr>`).join('')}</tbody></table></div>`;
+  if (r.ti?.length) out += `<p style="margin:10px 0 4px"><b>Kısa vadeli teknik öneriler</b></p><div class="scroll"><table class="ledger">${IDEA_HEAD(false)}<tbody>${r.ti.map(x => ideaRow(r, x, false)).join('')}</tbody></table></div>`;
+  return out;
+}
 function brokerHtml(r) {
-  const b = r.br; if (!b) return '';
+  const b = r.br || {}; if (!r.br && !r.tg && !r.ti) return '';
   const parts = [];
   if (b.isy) {
     const x = b.isy, u = upside(r, x.target);
@@ -515,8 +549,10 @@ function brokerHtml(r) {
     const c = b.cons, u = upside(r, c.mean);
     parts.push(`<li><b>Analist konsensüsü (${consN(c)} kurum):</b> ${consLabel(c)}${has(c.mean) ? ` · ortalama hedef <span class="num">${N2.format(c.mean)} TL</span> (aralık ${N2.format(c.low)}–${N2.format(c.high)})` : ''}${has(u) ? ` · ${u > 200 ? 'hedef fiyatın 3 katından fazla; bedelsiz sonrası düzeltilmemiş olabilir' : pctCell(u)}` : ''}</li>`);
   }
-  if (!parts.length) return '';
-  return `<div class="risk soft" style="border-color:#7a5cd6"><b style="color:#7a5cd6">Aracı kurum görüşleri</b><ul>${parts.join('')}</ul><small>İş Yatırım'ın yayımladığı tavsiye listesi ve Yahoo Finance'in topladığı kurum tahminleri. Hedef fiyatlar kurumların görüşüdür; yatırım tavsiyesi değildir ve sık değişir.</small></div>`;
+  const extra = callsHtml(r);
+  if (!parts.length && !extra) return '';
+  const C = DATA.meta.calls || {};
+  return `<div class="risk soft" style="border-color:#7a5cd6"><b style="color:#7a5cd6">Aracı kurum görüşleri</b>${parts.length ? `<ul>${parts.join('')}</ul>` : ''}${extra}<small>Kaynaklar: İş Yatırım tavsiye listesi, Yahoo Finance konsensüsü, kurumların hedef fiyatları için CNBC-e'nin haftalık derlemesi${C.targetsDate ? ` (${esc(new Date(C.targetsDate).toLocaleDateString('tr-TR'))})` : ''}, teknik öneriler için kurum bültenlerini aktaran Paratic haberleri. "Durum" bugünkü fiyata göredir; gün içinde stop ya da hedefe değip dönmüş olabilir. Hedef ve stop seviyeleri kurumların görüşüdür; yatırım tavsiyesi değildir.</small></div>`;
 }
 let weeklySort = 'cons';
 function renderWeekly() {
@@ -553,6 +589,19 @@ function renderWeekly() {
   html += `<h4 style="margin:14px 0 6px">Bu hafta yeni ya da değişen tavsiyeler <span class="dash">(${changed.length})</span></h4>`;
   html += changed.length ? `<div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th class="l">Kurum</th><th class="l">Önceki</th><th class="l">Yeni</th><th>Hedef değişimi</th><th>Potansiyel</th><th class="l">Tarih</th></tr></thead><tbody>${changed.map(r => { const x = r.br.isy, p = brokerChange(r); return `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="l">İş Yatırım</td><td class="l">${p.rec ? recPill(p.rec) + (has(p.target) ? ` <span class="num">${N2.format(p.target)}</span>` : '') : '<span class="dash">kapsam yeni</span>'}</td><td class="l">${recPill(x.rec)}${has(x.target) ? ` <span class="num">${N2.format(x.target)}</span>` : ''}</td><td>${has(p.target) && has(x.target) && p.target ? pctCell((x.target / p.target - 1) * 100) : DASH}</td><td>${pctCell(upside(r, x.target))}</td><td class="l num">${x.date ? esc(new Date(x.date).toLocaleDateString('tr-TR')) : ''}</td></tr>`; }).join('')}</tbody></table></div>` : '<p class="note">Bu hafta değişiklik yok.</p>';
   for (const c of (B.changes || []).filter(c => c.seen >= from && !changed.some(r => r.c === c.code))) html += `<p class="note">${esc(c.code)}: ${esc(c.from.rec || '')} ${has(c.from.target) ? N2.format(c.from.target) : ''} → ${esc(c.to.rec || '')} ${has(c.to.target) ? N2.format(c.to.target) : ''} (${esc(c.source)})</p>`;
+  const C = DATA.meta.calls || {};
+  const ideas = rows.flatMap(r => (r.ti || []).filter(x => (x.d || '') >= daysAgo(10)).map(x => [r, x])).sort((a, b) => (b[1].d || '').localeCompare(a[1].d || '') || a[0].c.localeCompare(b[0].c));
+  const stopped = ideas.filter(([r, x]) => has(x.s));
+  html += `<h4 style="margin:18px 0 6px">Haftalık trade önerileri (stoplu) <span class="dash">(${stopped.length})</span></h4>`;
+  html += stopped.length ? `<div class="scroll"><table class="ledger">${IDEA_HEAD(true)}<tbody>${stopped.map(([r, x]) => ideaRow(r, x, true)).join('')}</tbody></table></div>` : '<p class="note">Son 10 günde stoplu öneri bulunamadı.</p>';
+  const levels = ideas.filter(([r, x]) => !has(x.s));
+  if (levels.length) html += `<details style="margin-top:8px"><summary>Destek ve direnç seviyeleri verilen hisseler (${levels.length})</summary><div class="scroll"><table class="ledger">${IDEA_HEAD(true)}<tbody>${levels.map(([r, x]) => ideaRow(r, x, true)).join('')}</tbody></table></div></details>`;
+  html += `<p class="note">Kurumların haftalık ve günlük teknik listeleri, Paratic'in aktardığı bültenlerden. "Durum" bugünkü fiyata göredir; gün içinde stop ya da hedefe değip dönmüş olabilir.</p>`;
+  const tgRows = rows.filter(r => tgSummary(r)).map(r => [r, tgSummary(r)]);
+  const revs = tgRows.flatMap(([r, s]) => s.rev.map(x => [r, x]));
+  html += `<h4 style="margin:18px 0 6px">Tüm aracı kurumların hedef fiyatları <span class="dash">(${tgRows.length} hisse, ${tgRows.reduce((a, [, s]) => a + s.n, 0)} hedef)</span></h4><p class="note">CNBC-e'nin haftalık derlemesi${C.targetsDate ? `, ${esc(new Date(C.targetsDate).toLocaleDateString('tr-TR'))}` : ''}. "Endeks üstü getiri" AL, "endekse paralel" ve "nötr" TUT sayılır. <a href="${esc(C.targetsUrl || '#')}" target="_blank" rel="noreferrer">Derleme ↗</a></p>
+  <div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th>Fiyat</th><th>Kurum</th><th class="l">AL / TUT / SAT</th><th>Ortanca hedef</th><th>Aralık</th><th>Potansiyel</th></tr></thead><tbody>${tgRows.sort((a, b) => (b[1].up ?? -1e9) - (a[1].up ?? -1e9)).map(([r, s]) => `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="num">${lv(nowPx(r))}</td><td class="num">${s.n}</td><td class="l num"><span class="up">${s.al}</span> / ${s.tut} / <span class="down">${s.sat}</span></td><td class="num">${N2.format(s.med)}</td><td class="num">${N2.format(s.lo)}–${N2.format(s.hi)}</td><td>${pctCell(s.up)}</td></tr>`).join('')}</tbody></table></div>`;
+  if (revs.length) html += `<h4 style="margin:18px 0 6px">Hedef fiyat revizyonları <span class="dash">(${revs.length})</span></h4><div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th class="l">Kurum</th><th>Eski</th><th>Yeni</th><th>Değişim</th><th class="l">Tavsiye</th></tr></thead><tbody>${revs.sort((a, b) => (b[1].t / b[1].p) - (a[1].t / a[1].p)).map(([r, x]) => `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="l">${esc(x.b)}</td><td class="num">${lv(x.p)}</td><td class="num">${lv(x.t)}</td><td>${pctCell((x.t / x.p - 1) * 100)}</td><td class="l">${recShort(x.r)}</td></tr>`).join('')}</tbody></table></div>`;
   const model = rows.filter(r => r.br?.model).sort((a, b) => b.br.model.weight - a.br.model.weight);
   if (model.length) html += `<h4 style="margin:18px 0 6px">İş Yatırım model portföyü</h4><div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th>Ağırlık</th><th class="l">Giriş</th><th>Hedef</th><th>Potansiyel</th><th>Girişten beri (TL)</th><th>($)</th><th>(BIST'e göre)</th></tr></thead><tbody>${model.map(r => { const m = r.br.model; return `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="num">%${N0.format(m.weight)}</td><td class="l num">${m.since ? esc(new Date(m.since).toLocaleDateString('tr-TR')) : ''}</td><td class="num">${has(m.target) ? N2.format(m.target) : ''}</td><td>${pctCell(upside(r, m.target))}</td><td>${pctCell(m.retTl)}</td><td>${pctCell(m.retUsd)}</td><td>${pctCell(m.retRel)}</td></tr>`; }).join('')}</tbody></table></div>`;
   const cov = rows.filter(r => r.br?.isy || consN(r.br?.cons));
