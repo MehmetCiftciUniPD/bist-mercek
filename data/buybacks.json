@@ -11215,6 +11215,16 @@
    "summary": "Günlük Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1702240",
    "ratio": 0.9455
+  },
+  "1702561": {
+   "codes": [
+    "BLCYT"
+   ],
+   "kind": "islem",
+   "date": "2026-11-25T17:10",
+   "summary": "25.11..2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702561",
+   "ratio": 1.4721
   }
  }
 }
