@@ -4,7 +4,7 @@ site/page.html is the page body; this script wraps it in a document and writes
 data.json and analyses.json next to it. Nothing here needs a key or a server.
 """
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -102,7 +102,30 @@ def companies():
     idea_by_code = {}
     for url, art in calls['ideas'].items():
         for x in art['rows']:
-            idea_by_code.setdefault(x['code'], []).append({'b': x['broker'], 'd': art['date'], 'e': x['entry'], 's': x['stop'], 't': x['targets'], 'sp': x['supports'], 'u': url})
+            idea_by_code.setdefault(x['code'], []).append({'b': x['broker'], 'd': art['date'], 'e': x['entry'], 's': x['stop'], 't': x['targets'], 'sp': x['supports'], 'u': url, 'via': 'Paratic'})
+    foreks = load('foreks-reports.json') if (DATA / 'foreks-reports.json').exists() else {'items': {}, 'ideas': {}}
+    for rep in foreks['ideas'].values():
+        for x in rep['rows']:
+            idea = {'b': rep['broker'], 'd': x.get('since') or rep['date'], 'e': x['entry'], 's': x['stop'], 't': x['targets'], 'sp': x['supports'],
+                    'u': rep['url'], 'via': 'Foreks'}
+            for k_in, k_out in (('status', 'st'), ('result', 'res'), ('exit', 'x'), ('exitDate', 'xd'), ('horizon', 'h')):
+                if x.get(k_in) is not None:
+                    idea[k_out] = x[k_in]
+            idea_by_code.setdefault(x['code'], []).append(idea)
+    # The same idea is repeated in daily reports: keep the newest copy (latest status).
+    for code, lst in idea_by_code.items():
+        seen = {}
+        for x in sorted(lst, key=lambda x: (x['d'] or '', x.get('st') == 'kapalı')):
+            seen[((x['b'] or '').lower(), x['d'], x['e'], x['s'])] = x
+        idea_by_code[code] = list(seen.values())
+    reports_by_code = {}
+    for doc in foreks['items'].values():
+        for c in doc.get('codes', []):
+            reports_by_code.setdefault(c, []).append({'t': doc['title'], 'b': doc['broker'], 'd': doc['date'], 'u': doc['url']})
+    week_ago = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+    report_feed = sorted(({'t': d['title'], 'b': d['broker'], 'd': d['date'], 'u': d['url'], 'c': d.get('codes', [])}
+                          for d in foreks['items'].values() if d['title'].upper().startswith('ANAL') and (d.get('date') or '') >= week_ago),
+                         key=lambda x: x['d'] or '', reverse=True)
     rows = []
     for issuer in uni['companies']:
         codes = issuer['codes']
@@ -176,7 +199,6 @@ def companies():
             row['fh'] = {k: held.get(k) for k in ('capital', 'floatRatio', 'funds', 'lots', 'value', 'floatShareBefore')}
         evs = [x for c in codes for x in ev_by_code.get(c, [])]
         if evs and latest_day:
-            from datetime import timedelta
             d30 = (datetime.fromisoformat(latest_day) - timedelta(days=30)).strftime('%Y-%m-%d')
             cb = sorted(x['date'][:10] for x in evs if x['kind'] == 'cb')
             if cb:
@@ -208,7 +230,10 @@ def companies():
             row['tg'] = tg
         ti = sorted((x for c in codes for x in idea_by_code.get(c, [])), key=lambda x: x['d'] or '', reverse=True)
         if ti:
-            row['ti'] = ti[:8]
+            row['ti'] = ti[:10]
+        rp = sorted((x for c in codes for x in reports_by_code.get(c, [])), key=lambda x: x['d'] or '', reverse=True)
+        if rp:
+            row['rp'] = rp[:8]
         flags = [f for c in codes for f in risk['flags'].get(c, [])]
         if flags:
             row['risk'] = flags
@@ -220,6 +245,7 @@ def companies():
             'summary': summary,
             'eventsDay': latest_day,
             'broker': {k: brokers.get(k) for k in ('fetchedAt', 'sources', 'changes')} if brokers else None,
+            'reports': report_feed,
             'calls': {'targetsDate': tg_day, 'targetsUrl': calls['targets'][tg_day]['url'] if tg_day else None, 'fetchedAt': calls.get('fetchedAt')},
             'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}

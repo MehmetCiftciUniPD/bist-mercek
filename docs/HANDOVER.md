@@ -2,6 +2,27 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-25 · Claude Code · Foreks brokerage reports
+
+- The owner allowed using Foreks. Its forecast backend
+  (web-forecast.foreks.com) answers 401 without a login, so it is still not
+  used; deriving a token from the site's code would bypass access control.
+- `research/foreks-reports.py` → `data/foreks-reports.json` reads only public,
+  crawl-allowed files: `sitemap-post.xml` (~2 days of "ANALİZ- … (Kurum)"
+  items) and `llms-analysis.txt`, then `news-content.foreks.com/<id>` for each
+  item and its "Rapor İndir" file (news-files.foreks.com, the broker's site,
+  or an S3 link used exactly as given). PDFs go through pdftotext:
+  `tracked_ideas()` reads ledgers like İş Yatırım's "Kısa/Orta Vadeli İşlem
+  Önerileri" (entry, target, stop, open/closed, result), `table_ideas()` reads
+  tables whose header names a stop column (two-row headers split evenly), and
+  `note_idea()` single-share notes ("Hedef fiyat: …", "Zarar-kes: …"). Pure
+  pivot support/resistance tables are ignored. Share codes in titles come from
+  tickers and unique issuer-name prefixes (`name_keys`, `COMMON` stoplist).
+- Site: ideas merge with Paratic's (deduplicated per broker/code/date/entry;
+  `via` names the source), closed ledger ideas show the broker's own result,
+  the weekly view lists the 7-day report feed with broker and share filters,
+  and the stock box links reports naming the share.
+
 ## 2026-11-25 · Claude Code · all brokers' targets and trade ideas
 
 - `research/broker-calls.py` → `data/broker-calls.json`, from public news
