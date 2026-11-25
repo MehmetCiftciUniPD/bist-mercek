@@ -11175,6 +11175,46 @@
    "summary": "Payların Geri Alınmasına İlişkin Bildirim",
    "url": "https://www.kap.org.tr/tr/Bildirim/1702133",
    "ratio": null
+  },
+  "1702135": {
+   "codes": [
+    "AZTEK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-25T08:14",
+   "summary": "24.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702135",
+   "ratio": 0.62767
+  },
+  "1702145": {
+   "codes": [
+    "MEYSU"
+   ],
+   "kind": "islem",
+   "date": "2026-11-25T08:55",
+   "summary": "24.11.2026 Tarihli Pay Alım İşlemleri hk",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702145",
+   "ratio": 0.43
+  },
+  "1702147": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-25T08:57",
+   "summary": "24.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702147",
+   "ratio": 0.01829
+  },
+  "1702240": {
+   "codes": [
+    "TURSG"
+   ],
+   "kind": "islem",
+   "date": "2026-11-25T10:45",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1702240",
+   "ratio": 0.9455
   }
  }
 }
