@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T20:31+03:00",
+ "generatedAt": "2026-11-25T06:24+03:00",
  "facts": {
   "date": "2026-11-24",
   "breadth": {
@@ -53,8 +53,8 @@
    }
   ],
   "buybacks": {
-   "notices": 195,
-   "companies": 72
+   "notices": 202,
+   "companies": 73
   },
   "fundPurchases": [
    "MCARD"
@@ -85,6 +85,6 @@
    ]
   }
  },
- "text": "**Piyasa Genel Görünümü**  \nBorsa İstanbul’da 24 Kasım 2026 oturumu satış baskısıyla geçti. Genişlik verilerine göre 137 hisse yükselirken 470 hisse düştü, 22 hisse ise değişmez kaldı. Medyan getiri -1,56% seviyesinde gerçekleşerek geniş tabanlı bir gerilemeyi işaret etti.\n\n**Öne Çıkan Hareketler**  \nYükselenler listesinde EFOR (%10,00), LYDHO (%9,99), BFREN (%9,99), SELEC (%9,98) ve DOGUB (%9,98) yer aldı. Düşenler tarafında BIGEN, LIDER ve TRHOL %10,00 ile alt limitte; ALKLC (%9,99) ve ARMGD (%9,99) izledi.\n\n**Şirket İçi İşlemler ve Geri Alımlar**  \nGeri alma ilan sayısı 195, bunu yapan şirket sayısı 72 olarak bildirildi. Tasfiyedeki fonlardan MCARD alım aldı. Yönetici/hakim ortak alımları EFOR, IZMDC, BALSU, AKSA, ENKAI, KOCMT, KRPLS ve MHRGY hisselerinde gerçekleşirken; MAGEN, LYDHO ve TRMET hisselerinde satış yapıldı.\n\n**Yapı Değişimi (CHoCH) Sinyalleri**  \nTeknik yapı değişimi sinyalleri incelendiğinde; CGCAM hissesinde yukarı yönlü, AYGAZ, GMTAS ve HUNER hisselerinde ise aşağı yönlü CHoCH formasyonu tespit edildi.",
+ "text": "**Piyasa Geneli:** 24 Kasım 2026 oturumunda Borsa İstanbul’a satış baskısı hâkim oldu. Genişlik verilerine göre 470 hisse düştü, 137’si yükseldi, 22’si ise değişmez kaldı. Medyan getiri -1,56% seviyesinde gerçekleşerek geniş tabanlı bir gerilemeyi işaret etti.\n\n**Öne Çıkan Hareketler:** Yükselenler listesinde EFOR (%10,00), LYDHO, BFREN, SELEC ve DOGUB (%9,98-9,99) yer aldı. Düşenler tarafında BIGEN, LIDER, TRHOL (%10,00) ile ALKLC ve ARMGD (%9,99) en büyük kayıpları kaydetti.\n\n**Şirket İçi İşlemler ve Alımlar:** Geri alım kararı veren şirket sayısı 73, ilan sayısı 202 olarak yüksek seyretti. Tasfiyedeki fonlardan MCARD alım gerçekleşti. Yönetici/hakim ortak alımları EFOR, IZMDC, BALSU, AKSA, ENKAI, KOCMT, KRPLS ve MHRGY’de görüldü; satışlar ise MAGEN, LYDHO ve TRMET’te yoğunlaştı.\n\n**Teknik Sinyaller (CHoCH):** Yapı değişimi (CHoCH) sinyalleri CGCAM’da yukarı yönlü; AYGAZ, GMTAS ve HUNER’da aşağı yönlü tetiklendi.",
  "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }

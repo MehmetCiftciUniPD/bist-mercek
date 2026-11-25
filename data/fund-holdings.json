@@ -1,8 +1,8 @@
 {
  "source": "https://fonoloji.com/spk-tasfiye",
- "sourceUpdated": "24 Kasım 2026 20:23",
+ "sourceUpdated": "25 Kasım 2026 06:22",
  "reports": "Ağu 2026 – 4 Eki 2026",
- "fetchedAt": "2026-11-24T20:30+03:00",
+ "fetchedAt": "2026-11-25T06:22+03:00",
  "note": "Fonların portföy raporlarına dayanan tahmini lotlar. 'capital' şirket sermayesindeki pay (%), 'floatRatio' fonların lotunun fiili dolaşımdaki paylara oranı (%, 100'ü geçebilir).",
  "companies": {
   "TEHOL": {
@@ -107,8 +107,7 @@
    "funds": 4,
    "capital": 7.1,
    "floatRatio": 88.0,
-   "value": 1330000000,
-   "floatShareBefore": 8.6
+   "value": 1330000000
   },
   "BIGEN": {
    "name": "Birleşim Grup Enerji Yatırımları A.Ş.",
@@ -164,8 +163,7 @@
    "funds": 1,
    "capital": 1.2,
    "floatRatio": 4.2,
-   "value": 259000000,
-   "floatShareBefore": 29.2
+   "value": 259000000
   },
   "YKBNK": {
    "name": "Yapı ve Kredi Bankası A.Ş.",
