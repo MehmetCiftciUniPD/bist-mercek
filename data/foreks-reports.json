@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-26T16:36+03:00",
+ "fetchedAt": "2026-11-26T20:36+03:00",
  "source": "https://www.foreks.com/analizler/",
  "items": {
   "6aed89c195131d72027d8394": {
@@ -967,6 +967,78 @@
    "url": "https://www.foreks.com/haber/detay/6b0834a695131d72027e49eb/FRKS/tr/analiz-gunluk-yurt-disi-hisse-haberleri-meksa-yatirim-26-11-26/",
    "codes": [],
    "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/DB3PR10MB6833E70035FF8F0DEA17EA39E8422%40DB3PR10MB6833.EURPRD10.PROD.OUTLOOK.COM/26.11.2026.pdf"
+  },
+  "6b083a644b18523914469afa": {
+   "title": "ANALİZ- Haftalık Parasal Büyüklükler Raporu (Gedik Yatırım)",
+   "broker": "Gedik Yatırım",
+   "date": "2026-11-26T16:55",
+   "url": "https://www.foreks.com/haber/detay/6b083a644b18523914469afa/FRKS/tr/analiz-haftalik-parasal-buyuklukler-raporu-gedik-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/b4a70b2ad6f34b9bb5233f660475d9d5_GedikYatirimParasalBuyukluklerRaporu26112026d267ab1e.pdf"
+  },
+  "6b083e4f4b18523914469b0d": {
+   "title": "ANALİZ- Günlük Altın Analizi (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T17:12",
+   "url": "https://www.foreks.com/haber/detay/6b083e4f4b18523914469b0d/FRKS/tr/analiz-gunluk-altin-analizi-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b083faaa1097b6178f42ba9": {
+   "title": "ANALİZ- Yurt Dışı Akşam Teknik Bülteni (IKON Menkul)",
+   "broker": "İkon Menkul",
+   "date": "2026-11-26T17:18",
+   "url": "https://www.foreks.com/haber/detay/6b083faaa1097b6178f42ba9/FRKS/tr/analiz-yurt-disi-aksam-teknik-bulteni-ikon-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.ikonmenkul.com.tr/storage/documents/research/yurt-disi-aksam-teknik-analiz-bulteni-26112026.pdf"
+  },
+  "6b0840d74b18523914469b29": {
+   "title": "ANALİZ- Forex Endeks Bülteni (İntegral Yatırım)",
+   "broker": "İntegral Yatırım",
+   "date": "2026-11-26T17:23",
+   "url": "https://www.foreks.com/haber/detay/6b0840d74b18523914469b29/FRKS/tr/analiz-forex-endeks-bulteni-integral-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/DB9PR05MB1023096C19DD34CAE391A5DFE90422%40DB9PR05MB10230.eurprd05.prod.outlook.com/Forex_Endeks_bulten_26112026.pdf"
+  },
+  "6b0848294b18523914469b53": {
+   "title": "ANALİZ-Yıldız Holding Analist Toplantısında Öne Çıkanlar (Gedik Yatırım)",
+   "broker": "Gedik Yatırım",
+   "date": "2026-11-26T17:54",
+   "url": "https://www.foreks.com/haber/detay/6b0848294b18523914469b53/FRKS/tr/analiz-yildiz-holding-analist-toplantisinda-one-cikanlar-gedik-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/b093c61c470741b194cfd8c57507db02_yildiz-holding-analist-toplantisi-one-cikanlar.pdf"
+  },
+  "6b0849d94b18523914469b60": {
+   "title": "ANALİZ- Yurt Dışı Akşam Bülteni (IKON Menkul)",
+   "broker": "İkon Menkul",
+   "date": "2026-11-26T18:01",
+   "url": "https://www.foreks.com/haber/detay/6b0849d94b18523914469b60/FRKS/tr/analiz-yurt-disi-aksam-bulteni-ikon-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.ikonmenkul.com.tr/storage/documents/research/yurt-disi-aksam-bulteni-26112026.pdf"
+  },
+  "6b08504195131d72027e4ae2": {
+   "title": "ANALİZ- Günlük Basın Bülteni (TÜRİB)",
+   "broker": "TÜRİB",
+   "date": "2026-11-26T18:29",
+   "url": "https://www.foreks.com/haber/detay/6b08504195131d72027e4ae2/FRKS/tr/analiz-gunluk-basin-bulteni-turib-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/1cf52f03f2db490cb66ab542b6e6de40_TURISGunlukBasinBulteni.xlsx"
+  },
+  "6b0850df4b18523914469bcf": {
+   "title": "ANALİZ- İş Varant Raporu (İş Yatırım)",
+   "broker": "İş Yatırım",
+   "date": "2026-11-26T18:31",
+   "url": "https://www.foreks.com/haber/detay/6b0850df4b18523914469bcf/FRKS/tr/analiz-is-varant-raporu-is-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/a4c67d30f1024487b6699bde3201d733_26.11.2026-Varant-Raporu.pdf"
+  },
+  "6b08510195131d72027e4aec": {
+   "title": "ANALİZ- Açığa Satış Raporu (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T18:32",
+   "url": "https://www.foreks.com/haber/detay/6b08510195131d72027e4aec/FRKS/tr/analiz-aciga-satis-raporu-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179570700187.1031714.13393972434748144850%40ahlatciyatirim.com.tr/Aciga%2520Satis%2520Raporu%2520-%252026.11.2026.pdf"
   }
  },
  "ideas": {

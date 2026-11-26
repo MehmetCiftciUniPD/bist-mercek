@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-26T06:23+03:00",
+ "generatedAt": "2026-11-26T20:36+03:00",
  "facts": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "breadth": {
-   "up": 73,
-   "down": 547,
-   "flat": 9,
-   "median": -3.05
+   "up": 430,
+   "down": 161,
+   "flat": 38,
+   "median": 1.0
   },
   "gainers": [
    {
@@ -14,46 +14,46 @@
     "r": 10.0
    },
    {
-    "c": "TGSAS",
+    "c": "FZLGY",
+    "r": 10.0
+   },
+   {
+    "c": "CITAS",
+    "r": 10.0
+   },
+   {
+    "c": "IZFAS",
     "r": 9.99
    },
    {
-    "c": "GEREL",
-    "r": 9.99
-   },
-   {
-    "c": "TMPOL",
+    "c": "KLSER",
     "r": 9.98
-   },
-   {
-    "c": "VANGD",
-    "r": 9.97
    }
   ],
   "losers": [
    {
-    "c": "DUNYH",
+    "c": "DOGUB",
     "r": -10.0
    },
    {
     "c": "GUNDG",
-    "r": -10.0
-   },
-   {
-    "c": "IHAAS",
-    "r": -10.0
-   },
-   {
-    "c": "TKNKA",
-    "r": -10.0
-   },
-   {
-    "c": "ENDAE",
     "r": -9.99
+   },
+   {
+    "c": "LYDHO",
+    "r": -9.98
+   },
+   {
+    "c": "SKYLP",
+    "r": -9.98
+   },
+   {
+    "c": "IDGYO",
+    "r": -9.97
    }
   ],
   "buybacks": {
-   "notices": 204,
+   "notices": 197,
    "companies": 75
   },
   "fundPurchases": [
@@ -62,32 +62,33 @@
   "insiderBuyers": [
    "EFOR",
    "IZMDC",
-   "BALSU",
    "AKSA",
    "KRSTL",
+   "BALSU",
    "BIOEN",
-   "ENKAI",
-   "MHRGY"
+   "MHRGY",
+   "ENKAI"
   ],
   "insiderSellers": [
    "MAGEN",
-   "LIDER",
-   "LYDHO"
+   "LIDER"
   ],
   "choch": {
    "up": [
-    "CGCAM",
-    "FRIGO"
+    "FRIGO",
+    "KATMR"
    ],
    "down": [
     "AYGAZ",
+    "DEVA",
     "ENJSA",
     "HUNER",
+    "LIDER",
     "LKMNH",
     "RYGYO"
    ]
   }
  },
- "text": "**Piyasa Genel Görünümü**  \nBorsa İstanbul’da 25 Kasım 2026 oturumu geniş çaplı bir satış baskısıyla sonuçlandı. Genişlik verilerine göre 547 hisse düştü, yükselen sayısı 73’e, değişmeyenin 9’a geriledi. Medyan getiri -%3,05 seviyesinde gerçekleşerek piyasadaki olumsuz duyarlılığı yansıttı.\n\n**Öne Çıkan Hareketler**  \nYükselenler listesinde OZRDN (%10,00), TGSAS, GEREL, TMPOL ve VANGD (%9,97) üst sıralarda yer aldı. Düşenler tarafında ise DUNYH, GUNDG, IHAAS, TKNKA (%10,00) ve ENDAE (%9,99) en fazla değer kaybetti.\n\n**Şirket İçi İşlemler ve Geri Alımlar**  \nGeri alma ilan sayısı 204, bunu yapan şirket sayısı 75 olarak bildirildi. Tasfiyedeki fonlardan MCARD alım yaparken; yönetici/hakim ortak alımları EFOR, IZMDC, BALSU, AKSA, KRSTL, BIOEN, ENKAI ve MHRGY hisselerinde görüldü. MAGEN, LIDER ve LYDHO’da ise satış gerçekleşti.\n\n**Yapı Değişimi (CHoCH) Sinyalleri**  \nYukarı yönlü yapı kırılımı (CHoCH Up) CGCAM ve FRIGO’da; aşağı yönlü kırılım (CHoCH Down) ise AYGAZ, ENJSA, HUNER, LKMNH ve RYGYO hisselerinde tespit edildi.",
+ "text": "**Piyasa Geneli ve Genişlik**  \nBorsa İstanbul’da 26 Kasım 2026 oturumu genişlik verilerine göre olumlu bir seyir izledi. 430 hisse yükselirken 161’i düştü, 38 hisse ise değişmez kaldı. Medyan getiri %1,0 seviyesinde gerçekleşerek geniş tabanlı bir yükselişin işaret etti.\n\n**Öne Çıkan Hareketler ve Geri Alımlar**  \nEn çok kazananlarda OZRDN, FZLGY ve CITAS %10 tavan yaparken, IZFAS ve KLSER de %9,99 ve %9,98 ile takip etti. Düşenler listesinde DOGUB ve GUNDG %10 taban çekti. Şirket geri alımları yoğunluk kazandırdı; 75 şirketten 197 bildirim yayınlandı. Tasfiyedeki fonlardan MCARD hissesine yönelik alım gerçekleşti.\n\n**İçeriden İşlemler ve Yapı Değişimi (CHoCH) Sinyalleri**  \nYönetici/hakim ortak alımları EFOR, IZMDC, AKSA, KRSTL, BALSU, BIOEN, MHRGY ve ENKAI hisselerinde yoğunlaştı. Satış tarafında ise MAGEN ve LIDER yer aldı. Teknik yapı değişimi (CHoCH) sinyalleri FRIGO ve KATMR’da yukarı, AYGAZ, DEVA, ENJSA, HUNER, LIDER, LKMNH ve RYGYO’da aşağı yönlü kırılmaları gösterdi.",
  "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }

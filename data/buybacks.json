@@ -11805,6 +11805,51 @@
    "summary": "Günlük Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1703089",
    "ratio": 1.0789
+  },
+  "1703090": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T19:47",
+   "summary": "26 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703090"
+  },
+  "1703091": {
+   "codes": [
+    "DOFER"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T19:49",
+   "summary": "Payların Geri Alınması İşlemi hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703091"
+  },
+  "1703095": {
+   "codes": [
+    "LMKDC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T19:55",
+   "summary": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703095"
+  },
+  "1703096": {
+   "codes": [
+    "METEN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T19:55",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703096"
+  },
+  "1703097": {
+   "codes": [
+    "MERKO"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T19:59",
+   "summary": "Pay Geri Alımı Hk.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703097"
   }
  }
 }

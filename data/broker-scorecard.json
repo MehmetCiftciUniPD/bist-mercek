@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T16:41+03:00",
+ "generatedAt": "2026-11-26T20:36+03:00",
  "source": "Yahoo Finance günlük fiyatlar",
  "brokers": {
   "İş Yatırım": {
@@ -27,12 +27,12 @@
   "Şeker Yatırım": {
    "n": 12,
    "hedef": 4,
-   "stop": 6,
+   "stop": 7,
    "süre": 1,
-   "açık": 1,
+   "açık": 0,
    "belirsiz": 0,
-   "hit": 36.4,
-   "avg": -0.44,
+   "hit": 33.3,
+   "avg": -0.61,
    "avgDays": 1.8
   },
   "Anadolu Yatırım": {
@@ -936,7 +936,7 @@
    "via": "Foreks",
    "outcome": "açık",
    "days": 2,
-   "result": -1.01
+   "result": -1.72
   },
   "İş Yatırım|THYAO|2026-11-25|321.0": {
    "broker": "İş Yatırım",
@@ -1045,9 +1045,10 @@
    "horizon": "kısa",
    "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
    "via": "Foreks",
-   "outcome": "açık",
+   "outcome": "stop",
    "days": 2,
-   "result": -0.15
+   "result": -2.52,
+   "end": "2026-11-26"
   },
   "Şeker Yatırım|ENJSA|2026-11-26|104.8": {
    "broker": "Şeker Yatırım",
@@ -1094,7 +1095,7 @@
    "via": "Foreks",
    "outcome": "açık",
    "days": 1,
-   "result": 1.89
+   "result": 1.42
   },
   "Yapı Kredi Yatırım|TUPRS|2026-11-26|318.0": {
    "broker": "Yapı Kredi Yatırım",

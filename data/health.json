@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-26T19:32+03:00",
+ "checkedAt": "2026-11-26T20:37+03:00",
  "checks": [
   {
    "name": "prices",
@@ -8,8 +8,8 @@
    "maxAge": 4,
    "min": 400,
    "ok": true,
-   "latest": "2026-11-25",
-   "age": 1,
+   "latest": "2026-11-26",
+   "age": 0,
    "n": 629,
    "problem": null
   },
@@ -32,9 +32,9 @@
    "maxAge": 4,
    "min": 400,
    "ok": true,
-   "latest": "2026-11-25",
-   "age": 1,
-   "n": 600,
+   "latest": "2026-11-26",
+   "age": 0,
+   "n": 598,
    "problem": null
   },
   {
@@ -44,8 +44,8 @@
    "maxAge": 4,
    "min": 400,
    "ok": true,
-   "latest": "2026-11-25",
-   "age": 1,
+   "latest": "2026-11-26",
+   "age": 0,
    "n": 593,
    "problem": null
   },
@@ -56,9 +56,9 @@
    "maxAge": 5,
    "min": 50,
    "ok": true,
-   "latest": "2026-11-26T19:25",
+   "latest": "2026-11-26T19:59",
    "age": 0,
-   "n": 1177,
+   "n": 1182,
    "problem": null
   },
   {
@@ -68,9 +68,9 @@
    "maxAge": 5,
    "min": 50,
    "ok": true,
-   "latest": "2026-11-25T19:14",
-   "age": 1,
-   "n": 821,
+   "latest": "2026-11-26T19:19",
+   "age": 0,
+   "n": 840,
    "problem": null
   },
   {
@@ -92,7 +92,7 @@
    "maxAge": 4,
    "min": 10,
    "ok": true,
-   "latest": "2026-11-26T06:20+03:00",
+   "latest": "2026-11-26T20:33+03:00",
    "age": 0,
    "n": 40,
    "problem": null
@@ -128,7 +128,7 @@
    "maxAge": 3,
    "min": 40,
    "ok": true,
-   "latest": "2026-11-26T06:22+03:00",
+   "latest": "2026-11-26T20:35+03:00",
    "age": 0,
    "n": 56,
    "problem": null
@@ -140,7 +140,7 @@
    "maxAge": 3,
    "min": 100,
    "ok": true,
-   "latest": "2026-11-26T06:22+03:00",
+   "latest": "2026-11-26T20:35+03:00",
    "age": 0,
    "n": 401,
    "problem": null
@@ -164,9 +164,9 @@
    "maxAge": 4,
    "min": 20,
    "ok": true,
-   "latest": "2026-11-26T16:31",
+   "latest": "2026-11-26T18:32",
    "age": 0,
-   "n": 119,
+   "n": 128,
    "problem": null
   },
   {
@@ -212,7 +212,7 @@
    "maxAge": 3,
    "min": 1,
    "ok": true,
-   "latest": "2026-11-26T16:41+03:00",
+   "latest": "2026-11-26T20:36+03:00",
    "age": 0,
    "n": 65,
    "problem": null
@@ -224,7 +224,7 @@
    "maxAge": 3,
    "min": 1,
    "ok": true,
-   "latest": "2026-11-26T06:23+03:00",
+   "latest": "2026-11-26T20:36+03:00",
    "age": 0,
    "n": 1,
    "problem": null
