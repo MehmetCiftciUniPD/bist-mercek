@@ -9,6 +9,8 @@ on:
     - cron: '40 16 * * 1-5'
     # Saturdays: five-year weekly price history.
     - cron: '7 5 * * 6'
+    # Weekdays around noon Istanbul: brokers' morning reports (runs start 45-60 min late).
+    - cron: '37 8 * * 1-5'
     # Every 15 minutes during the Istanbul session (10:00-18:45): delayed prices only.
     - cron: '*/15 7-15 * * 1-5'
   workflow_dispatch:
@@ -78,9 +80,12 @@ jobs:
           sudo apt-get install -y -qq poppler-utils >/dev/null || true
           python research/spk-bulletins.py
       - name: Aracı kurum raporlarını topla
-        if: github.event.schedule == '40 16 * * 1-5' || github.event.schedule == '23 2 * * *' || github.event_name == 'workflow_dispatch'
+        if: github.event.schedule != '7 5 * * 6'
         continue-on-error: true
         run: |
+          # Live-price runs collect broker reports only once, in the 12:00 Istanbul hour,
+          # in case GitHub dropped the queued noon run in favour of a newer one.
+          if [ "${{ github.event.schedule }}" = '*/15 7-15 * * 1-5' ] && [ "$(date -u +%H)" != '09' ]; then exit 0; fi
           sudo apt-get install -y -qq poppler-utils >/dev/null || true
           pip install -q yfinance || true
           python research/broker-reports.py --notes

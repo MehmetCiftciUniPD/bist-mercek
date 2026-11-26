@@ -18,6 +18,8 @@ Newest entry first. Each agent adds an entry when it finishes a piece of work.
   `note_idea()` single-share notes ("Hedef fiyat: …", "Zarar-kes: …"). Pure
   pivot support/resistance tables are ignored. Share codes in titles come from
   tickers and unique issuer-name prefixes (`name_keys`, `COMMON` stoplist).
+- Schedule: the broker step runs after the close, nightly and around noon
+  (cron '37 8 * * 1-5', plus one live-price run in the 09 UTC hour as a fallback).
 - Site: ideas merge with Paratic's (deduplicated per broker/code/date/entry;
   `via` names the source), closed ledger ideas show the broker's own result,
   the weekly view lists the 7-day report feed with broker and share filters,
