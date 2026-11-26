@@ -1,7 +1,25 @@
 {
- "fetchedAt": "2026-11-25T20:33+03:00",
+ "fetchedAt": "2026-11-26T06:22+03:00",
  "source": "https://www.foreks.com/analizler/",
  "items": {
+  "6aed732b95131d72027d826f": {
+   "title": "ANALİZ- Günlük Hazine Bülteni (Gedik Yatırım)",
+   "broker": "Gedik Yatırım",
+   "date": "2026-11-06T09:26",
+   "url": "https://www.foreks.com/haber/detay/6aed732b95131d72027d826f/FRKS/tr/analiz-gunluk-hazine-bulteni-gedik-yatirim-06-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-06/fe1e40ebea2e4a9c85b6d447ae88c81d_06112026.pdf"
+  },
+  "6aed89c195131d72027d8394": {
+   "title": "ANALİZ- Oyak Çimento Konferansta Öne Çıkanlar (Gedik Yatırım)",
+   "broker": "Gedik Yatırım",
+   "date": "2026-11-06T11:03",
+   "url": "https://www.foreks.com/haber/detay/6aed89c195131d72027d8394/FRKS/tr/analiz-oyak-cimento-konferansta-one-cikanlar-gedik-yatirim-06-11-26/",
+   "codes": [
+    "OYAKC"
+   ],
+   "file": "https://news-files.foreks.com/attachment/2026-11-06/6bf6e03c092d44adb427742d626b6406_oyakc-3c26-konferans-one-cikanlar.pdf"
+  },
   "6aed922a0427c75a2892f2db": {
    "title": "ANALİZ- Kocaer Çelik Konferansta Öne Çıkanlar (Gedik Yatırım)",
    "broker": "Gedik Yatırım",

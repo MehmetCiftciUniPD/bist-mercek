@@ -1,8 +1,8 @@
 {
  "source": "https://fonoloji.com/spk-tasfiye",
- "sourceUpdated": "25 Kasım 2026 20:11",
+ "sourceUpdated": "26 Kasım 2026 05:07",
  "reports": "Ağu 2026 – 4 Eki 2026",
- "fetchedAt": "2026-11-25T20:29+03:00",
+ "fetchedAt": "2026-11-26T06:20+03:00",
  "note": "Fonların portföy raporlarına dayanan tahmini lotlar. 'capital' şirket sermayesindeki pay (%), 'floatRatio' fonların lotunun fiili dolaşımdaki paylara oranı (%, 100'ü geçebilir).",
  "companies": {
   "TEHOL": {
@@ -11,8 +11,7 @@
    "funds": 3,
    "capital": 45.8,
    "floatRatio": 93.0,
-   "value": 1950000000,
-   "floatShareBefore": 50.2
+   "value": 1950000000
   },
   "PEKGY": {
    "name": "Peker Gayrimenkul Yatırım Ortaklığı A.Ş.",
@@ -20,8 +19,7 @@
    "funds": 4,
    "capital": 33.5,
    "floatRatio": 68.0,
-   "value": 3300000000,
-   "floatShareBefore": 50.4
+   "value": 3300000000
   },
   "ANELE": {
    "name": "Anel Elektrik Proje Taahhüt ve Ticaret A.Ş.",
@@ -37,8 +35,7 @@
    "funds": 4,
    "capital": 25.3,
    "floatRatio": 94.0,
-   "value": 631200000,
-   "floatShareBefore": 29.9
+   "value": 631200000
   },
   "OZATD": {
    "name": "Özata Denizcilik Sanayi ve Ticaret A.Ş.",
@@ -166,8 +163,7 @@
    "funds": 1,
    "capital": 1.2,
    "floatRatio": 4.4,
-   "value": 284800000,
-   "floatShareBefore": 27.8
+   "value": 284800000
   },
   "YKBNK": {
    "name": "Yapı ve Kredi Bankası A.Ş.",

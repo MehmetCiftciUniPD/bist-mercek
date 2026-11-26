@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-25T20:32+03:00",
+ "fetchedAt": "2026-11-26T06:22+03:00",
  "sources": {
   "isy": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/takip-listesi.aspx",
   "model": "https://www.isyatirim.com.tr/tr-tr/analiz/Sayfalar/is-yatirimin-onerileri.aspx",
@@ -75,7 +75,7 @@
    },
    "m1": {
     "rec": "TUT",
-    "target": 129.82
+    "target": 108.44
    },
    "m3": {
     "rec": "TUT",
@@ -294,21 +294,21 @@
   },
   "FROTO": {
    "rec": "AL",
-   "target": 152.5,
-   "upside": 128.0,
+   "target": 149.43,
+   "upside": 123.0,
    "date": "2026-04-24",
    "close": 66.9,
    "w1": {
     "rec": "AL",
-    "target": 152.5
+    "target": 149.43
    },
    "m1": {
     "rec": "AL",
-    "target": 152.5
+    "target": 149.43
    },
    "m3": {
     "rec": "AL",
-    "target": 152.5
+    "target": 149.43
    }
   },
   "KRDMD": {
@@ -513,8 +513,8 @@
     "target": null
    },
    "m1": {
-    "rec": "AL",
-    "target": 36.78
+    "rec": "G.G.",
+    "target": null
    },
    "m3": {
     "rec": "AL",
@@ -1103,7 +1103,17 @@
    "retTl": 57.94,
    "retUsd": 30.83,
    "retRel": 55.4,
-   "weight": 6.0
+   "weight": 8.0
+  },
+  "BRSAN": {
+   "since": "2026-11-26",
+   "close": 637.0,
+   "target": 952.0,
+   "upside": 49.0,
+   "retTl": null,
+   "retUsd": null,
+   "retRel": null,
+   "weight": 11.0
   },
   "ENJSA": {
    "since": "2026-03-12",
@@ -1113,7 +1123,7 @@
    "retTl": -8.11,
    "retUsd": -19.97,
    "retRel": 14.57,
-   "weight": 10.0
+   "weight": 8.0
   },
   "GARAN": {
    "since": "2024-07-08",
@@ -1123,7 +1133,7 @@
    "retTl": 20.18,
    "retUsd": -22.41,
    "retRel": 22.53,
-   "weight": 20.0
+   "weight": 16.0
   },
   "MPARK": {
    "since": "2025-12-23",
@@ -1133,7 +1143,7 @@
    "retTl": 13.92,
    "retUsd": -3.67,
    "retRel": 20.7,
-   "weight": 9.0
+   "weight": 8.0
   },
   "SOKM": {
    "since": "2026-07-22",
@@ -1143,7 +1153,7 @@
    "retTl": -28.55,
    "retUsd": -33.39,
    "retRel": -5.19,
-   "weight": 11.0
+   "weight": 7.0
   },
   "THYAO": {
    "since": "2026-07-03",
@@ -1163,7 +1173,7 @@
    "retTl": 26.94,
    "retUsd": 11.77,
    "retRel": 63.08,
-   "weight": 9.0
+   "weight": 7.0
   }
  },
  "consensus": {
@@ -1204,15 +1214,15 @@
    "price": 23.54
   },
   "AKBNK": {
-   "strongBuy": 3,
+   "strongBuy": 2,
    "buy": 9,
    "hold": 4,
    "sell": 0,
    "strongSell": 0,
-   "mean": 91.51,
-   "median": 89.89,
+   "mean": 89.71786,
+   "median": 89.445,
    "low": 77.0,
-   "high": 116.6,
+   "high": 103.6,
    "price": 60.65
   },
   "AKCNS": {
@@ -1281,9 +1291,9 @@
    "hold": 0,
    "sell": 0,
    "strongSell": 0,
-   "mean": 176.415,
-   "median": 179.845,
-   "low": 153.0,
+   "mean": 181.665,
+   "median": 181.845,
+   "low": 170.0,
    "high": 192.97,
    "price": 99.3
   },
@@ -1569,10 +1579,10 @@
    "hold": 5,
    "sell": 0,
    "strongSell": 0,
-   "mean": 116.85049,
-   "median": 113.480774,
-   "low": 97.84835,
-   "high": 142.94676,
+   "mean": 116.85516,
+   "median": 113.48532,
+   "low": 97.852264,
+   "high": 142.95248,
    "price": 75.55
   },
   "ENTRA": {
@@ -1617,9 +1627,9 @@
    "hold": 2,
    "sell": 0,
    "strongSell": 0,
-   "mean": 181.08733,
+   "mean": 182.954,
    "median": 184.5,
-   "low": 143.0,
+   "low": 155.0,
    "high": 211.3,
    "price": 137.9
   },
@@ -1634,6 +1644,18 @@
    "low": 36.11,
    "high": 36.11,
    "price": 10.92
+  },
+  "GRSEL": {
+   "strongBuy": 0,
+   "buy": 1,
+   "hold": 0,
+   "sell": 0,
+   "strongSell": 0,
+   "mean": 399.33,
+   "median": 399.33,
+   "low": 399.33,
+   "high": 399.33,
+   "price": 233.0
   },
   "GWIND": {
    "strongBuy": 0,
@@ -1677,10 +1699,10 @@
    "hold": 1,
    "sell": 0,
    "strongSell": 0,
-   "mean": 62.920387,
-   "median": 61.670258,
-   "low": 59.18723,
-   "high": 67.90316,
+   "mean": 62.91588,
+   "median": 61.66584,
+   "low": 59.18299,
+   "high": 67.89829,
    "price": 29.0
   },
   "ISCTR": {
@@ -1689,7 +1711,7 @@
    "hold": 4,
    "sell": 0,
    "strongSell": 0,
-   "mean": 18.35933,
+   "mean": 18.23076,
    "median": 18.15,
    "low": 15.0,
    "high": 23.19,
@@ -1737,9 +1759,9 @@
    "hold": 0,
    "sell": 0,
    "strongSell": 0,
-   "mean": 320.83487,
+   "mean": 321.58487,
    "median": 324.0,
-   "low": 290.0,
+   "low": 291.2,
    "high": 358.479,
    "price": 182.6
   },
@@ -1761,10 +1783,10 @@
    "hold": 4,
    "sell": 0,
    "strongSell": 0,
-   "mean": 51.711693,
-   "median": 51.55968,
-   "low": 44.794846,
-   "high": 61.567577,
+   "mean": 51.713425,
+   "median": 51.561405,
+   "low": 44.796345,
+   "high": 61.569637,
    "price": 34.3
   },
   "LILAK": {
@@ -1977,10 +1999,10 @@
    "hold": 0,
    "sell": 0,
    "strongSell": 0,
-   "mean": 429.27405,
-   "median": 429.6686,
-   "low": 372.50934,
-   "high": 505.86246,
+   "mean": 429.3909,
+   "median": 429.78558,
+   "low": 372.61075,
+   "high": 506.00015,
    "price": 280.5
   },
   "TCELL": {
@@ -2214,15 +2236,30 @@
   "YKBNK": {
    "strongBuy": 0,
    "buy": 7,
-   "hold": 9,
+   "hold": 8,
    "sell": 0,
    "strongSell": 0,
-   "mean": 46.45286,
-   "median": 48.0,
+   "mean": 46.33521,
+   "median": 47.37145,
    "low": 27.1,
    "high": 55.6,
    "price": 34.04
   }
  },
- "changes": []
+ "changes": [
+  {
+   "seen": "2026-11-26",
+   "code": "FROTO",
+   "from": {
+    "rec": "AL",
+    "target": 152.5
+   },
+   "to": {
+    "rec": "AL",
+    "target": 149.43
+   },
+   "date": "2026-04-24",
+   "source": "İş Yatırım"
+  }
+ ]
 }

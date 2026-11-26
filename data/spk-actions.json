@@ -83,7 +83,8 @@
   "2026-81": "2026-11-16",
   "2026-82": "2026-11-19",
   "2026-83": "2026-11-20",
-  "2026-84": "2026-11-23"
+  "2026-84": "2026-11-23",
+  "2026-85": "2026-11-25"
  },
  "actions": [
   {
@@ -1155,6 +1156,96 @@
    "ban": "6 ay süreyle",
    "text": "Euro Kapital Yatırım Ortaklığı AŞ (EUKYO) pay piyasasında gerçekleştirilen işlemlerde 6362 sayılı Sermaye Piyasası Kanunu’nun (SPKn) 107/1 veya 104 üncü maddelerinde sayılan fiillerin işlendiğine dair makul şüphe bulunması nedeniyle, 6362 sayılı SPKn’nun 1 inci maddesi çerçevesinde yatırımcıların hak ve yararlarının korunmasını teminen, 6362 sayılı SPKn’nun 128/1- (a) maddesine dayanarak yapay piy",
    "url": "https://spk.gov.tr/data/6b0473e08f95db1db01008e7/2026-84.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "KUYAS",
+   "type": "suç duyurusu",
+   "persons": 38,
+   "ban": null,
+   "text": "a) Kuyaş Yatırım AŞ (KUYAS) hakkında yapılan inceleme sonucunda, aşağıdaki tabloda yer alan suç duyurularının yapılmasına karar verilmiştir. (Bknz. 3. Diğer Yaptırım, Tedbir ve İşlem Yasakları)",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "SMRVA",
+   "type": "suç duyurusu",
+   "persons": 41,
+   "ban": null,
+   "text": "b) Sümer Varlık Yönetim AŞ (SMRVA) hakkında yapılan inceleme sonucunda, aşağıdaki tabloda yer alan suç duyurularının yapılmasına karar verilmiştir. (Bknz. 3. Diğer Yaptırım, Tedbir ve İşlem Yasakları)",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "SVGYO",
+   "type": "suç duyurusu",
+   "persons": 38,
+   "ban": null,
+   "text": "c) Savur Gayrimenkul Yatırım Ortaklığı AŞ (SVGYO) hakkında yapılan inceleme sonucunda, aşağıdaki tabloda yer alan suç duyurularının yapılmasına karar verilmiştir. (Bknz. 3. Diğer Yaptırım, Tedbir ve İşlem Yasakları)",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "KUYAS",
+   "type": "suç duyurusu",
+   "persons": 43,
+   "ban": null,
+   "text": "a) Kuyaş Yatırım AŞ (KUYAS) pay piyasasında gerçekleştirilen işlemlerde sorumluluğu bulunan aşağıdaki tabloda yer verilen kişiler hakkında, 6362 sayılı SPKn’nun 101 inci maddesinin birinci fıkrası ve Kurulumuzun V-101.1 sayılı Bilgi Suistimali ve Piyasa Dolandırıcılığı İncelemelerinde Uygulanacak Tedbirler Tebliği’nin 5/2 ve 6/2 maddeleri uyarınca Borsa ve teşkilatlanmış diğer piyasalarda 2 yıl iş",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "SMRVA",
+   "type": "suç duyurusu",
+   "persons": 46,
+   "ban": null,
+   "text": "b) Sümer Varlık Yönetim AŞ (SMRVA) pay piyasasında gerçekleştirilen işlemlerde sorumluluğu bulunan aşağıdaki tabloda yer verilen kişiler hakkında, Tera Yatırım Bankası AŞ ve Tera Portföy Yönetimi AŞ’nin kendi nam ve hesabına SMRVA pay piyasasıyla sınırlı olmak üzere, 6362 sayılı SPKn’nun 101 inci maddesinin birinci fıkrası ve Kurulumuzun V-101.1 sayılı Bilgi Suistimali ve Piyasa Dolandırıcılığı İn",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "SVGYO",
+   "type": "suç duyurusu",
+   "persons": 37,
+   "ban": null,
+   "text": "c) Savur Gayrimenkul Yatırım Ortaklığı AŞ (SVGYO) pay piyasasında gerçekleştirilen işlemlerde sorumluluğu bulunan aşağıdaki tabloda yer verilen kişiler hakkında, Pardus Portföy Yönetimi AŞ, Tera Portföy Yönetimi AŞ ve Tera Yatırım Bankası AŞ’nin kendi nam ve hesabına SVGYO pay piyasasıyla sınırlı olmak üzere, 6362 sayılı SPKn’nun 101 inci maddesinin birinci fıkrası ve Kurulumuzun V-101.1 sayılı Bi",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "KUYAS",
+   "type": "suç duyurusu",
+   "persons": 35,
+   "ban": null,
+   "text": "a) Kuyaş Yatırım AŞ (KUYAS) pay piyasasında gerçekleştirilen işlemler nedeniyle hakkında suç duyurusunda bulunulmasına karar verilen aşağıdaki tabloda bilgilerine yer verilen şahısların, V-101.1 sayılı Bilgi Suistimali ve Piyasa Dolandırıcılığı İncelemelerinde Uygulanacak Tedbirler Tebliği’nin 17/1 maddesi uyarınca sahip oldukları tüm lisansların işlem yapma yasağı süresi boyunca iptal edilmesine ",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "SMRVA",
+   "type": "suç duyurusu",
+   "persons": 42,
+   "ban": null,
+   "text": "b) Sümer Varlık Yönetim AŞ (SMRVA) pay piyasasında gerçekleştirilen işlemler nedeniyle hakkında suç duyurusunda bulunulmasına karar verilen aşağıdaki tabloda bilgilerine yer verilen şahısların, V-101.1 sayılı Bilgi Suistimali ve Piyasa Dolandırıcılığı İncelemelerinde Uygulanacak Tedbirler Tebliği’nin 17/1 maddesi uyarınca sahip oldukları tüm lisansların işlem yapma yasağı süresi boyunca iptal edil",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
+  },
+  {
+   "bulletin": "2026-85",
+   "date": "2026-11-25",
+   "code": "SVGYO",
+   "type": "suç duyurusu",
+   "persons": 18,
+   "ban": null,
+   "text": "c) Savur Gayrimenkul Yatırım Ortaklığı AŞ (SVGYO) pay piyasasında gerçekleştirilen işlemler nedeniyle hakkında suç duyurusunda bulunulmasına karar verilen aşağıdaki tabloda bilgilerine yer verilen şahısların, V-101.1 sayılı Bilgi Suistimali ve Piyasa Dolandırıcılığı İncelemelerinde Uygulanacak Tedbirler Tebliği’nin 17/1 maddesi uyarınca sahip oldukları tüm lisansların işlem yapma yasağı süresi boy",
+   "url": "https://spk.gov.tr/data/6b074a0b8f95db1270c37ee7/2026-85.pdf"
   }
  ]
 }
