@@ -11645,6 +11645,46 @@
    "summary": "25 Kasım 2026 Tarihli Pay Geri Alım İşlemleri Hk.",
    "url": "https://www.kap.org.tr/tr/Bildirim/1702850",
    "ratio": 0.38704
+  },
+  "1703050": {
+   "codes": [
+    "TABGD"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T18:11",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703050",
+   "ratio": 0.2606
+  },
+  "1703051": {
+   "codes": [
+    "MERCN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T18:12",
+   "summary": "26.11.2026 Pay Geri Alım İşlemi",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703051",
+   "ratio": null
+  },
+  "1703052": {
+   "codes": [
+    "BNTAS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T18:12",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703052",
+   "ratio": 0.32287
+  },
+  "1703054": {
+   "codes": [
+    "EUREN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-26T18:14",
+   "summary": "26.11.2026 Pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703054",
+   "ratio": 0.806
   }
  }
 }
