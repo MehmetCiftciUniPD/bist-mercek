@@ -2,6 +2,26 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-26 · Claude Code · institutional custody (OCR) and weekly foreign flows
+
+- The owner asked about a Telegram "free depth" bot for takas data. Not used:
+  a bot can only be queried from a user account (would need the owner's
+  Telegram session in CI), and its data source is unknown and very likely
+  redistributed licensed exchange data. Do not wire it in.
+- `research/takas.py` → `data/takas.json`: QNB Invest "Kurumsal Takas
+  Değişimleri" (Foreks, images only). Tesseract OCR with 7 preprocessing
+  settings; a value is kept only if the period total agrees between the summary
+  table and the period block, foreign + funds = total (±0.15 mn TL), and the
+  minus-sign evidence across all cells (or the daily ARTAN/AZALAN section)
+  settles the sign. Only listed codes count as rows (headings shifted rows once).
+  Tested against hand-read values for 25 and 26 Nov 2026: 120/160 values
+  accepted, 0 wrong. The first image is the prose summary and is not used.
+- `research/foreign-flows.py` → `data/foreign-flows.json`: weekly TCMB foreign
+  flows from Şeker Yatırım (layout text; its font drops the letter "i") and
+  Bizim Menkul (reading-order text). Figures given by both must agree.
+- Workflow installs tesseract-ocr; both run in the broker step. Health checks
+  added for both files.
+
 ## 2026-11-26 · Claude Code · health check, broker scorecard, foreign ratios
 
 - `research/health.py` → `data/health.json`: newest timestamp and record count

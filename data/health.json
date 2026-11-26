@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-26T16:41+03:00",
+ "checkedAt": "2026-11-26T17:55+03:00",
  "checks": [
   {
    "name": "prices",
@@ -179,6 +179,30 @@
    "latest": "2026-11-25",
    "age": 1,
    "n": 257,
+   "problem": null
+  },
+  {
+   "name": "takas",
+   "label": "Kurumsal takas değişimi (QNB, OCR)",
+   "file": "takas.json",
+   "maxAge": 4,
+   "min": 5,
+   "ok": true,
+   "latest": "2026-11-26",
+   "age": 0,
+   "n": 20,
+   "problem": null
+  },
+  {
+   "name": "flows",
+   "label": "Haftalık yabancı akımları (TCMB, Şeker/Bizim)",
+   "file": "foreign-flows.json",
+   "maxAge": 14,
+   "min": 1,
+   "ok": true,
+   "latest": "2026-11-20",
+   "age": 6,
+   "n": 1,
    "problem": null
   },
   {

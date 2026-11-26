@@ -155,6 +155,9 @@ def companies():
                 out['w'] = round(x['hist'][0] - x['hist'][5], 2)
         return out
 
+    takas = load('takas.json') if (DATA / 'takas.json').exists() else {'days': {}}
+    tk_day = max(takas['days'], default=None)
+    flows = load('foreign-flows.json') if (DATA / 'foreign-flows.json').exists() else {'weeks': {}}
     reports_by_code = {}
     for doc in foreks['items'].values():
         for c in doc.get('codes', []):
@@ -271,6 +274,9 @@ def companies():
         fr = next((foreign_row(c) for c in codes if foreign_row(c)), None)
         if fr:
             row['fr'] = fr
+        tk = next((takas['days'][d]['rows'][c] for d in sorted(takas['days'], reverse=True)[:5] for c in codes if c in takas['days'][d]['rows']), None)
+        if tk:
+            row['tk'] = {**tk, 'date': next(d for d in sorted(takas['days'], reverse=True) if any(c in takas['days'][d]['rows'] for c in codes))}
         rp = sorted((x for c in codes for x in reports_by_code.get(c, [])), key=lambda x: x['d'] or '', reverse=True)
         if rp:
             row['rp'] = rp[:8]
@@ -290,6 +296,9 @@ def companies():
             'foreign': {'date': foreign.get('date'), 'movers': {k: v for k, v in foreign.get('movers', {}).items() if k != 'streaks'},
                         'streakUp': len(foreign.get('movers', {}).get('streaks', {}).get('up', [])),
                         'streakDown': len(foreign.get('movers', {}).get('streaks', {}).get('down', []))},
+            'takas': {'date': tk_day, 'url': takas['days'][tk_day]['url'] if tk_day else None,
+                      'rows': takas['days'][tk_day]['rows'] if tk_day else {}},
+            'flows': [{'week': w, **v['values']} for w, v in sorted(flows['weeks'].items())[-12:]],
             'health': load('health.json') if (DATA / 'health.json').exists() else None,
             'calls': {'targetsDate': tg_day, 'targetsUrl': calls['targets'][tg_day]['url'] if tg_day else None, 'fetchedAt': calls.get('fetchedAt')},
             'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}

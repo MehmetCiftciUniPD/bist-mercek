@@ -540,11 +540,19 @@ function callsHtml(r) {
   if (r.ti?.length) out += `<p style="margin:10px 0 4px"><b>Kısa vadeli teknik öneriler</b></p><div class="scroll"><table class="ledger">${IDEA_HEAD(false)}<tbody>${r.ti.map(x => ideaRow(r, x, false)).join('')}</tbody></table></div>`;
   return out;
 }
+const mnTL = v => has(v) ? `<span class="num ${v >= 0 ? 'up' : 'down'}">${v >= 0 ? '+' : ''}${N1.format(v)} mn TL</span>` : DASH;
+function takasHtml(r) {
+  const k = r.tk; if (!k) return '';
+  const lab = { d: 'Günlük', w5: '5 gün', w10: '10 gün', w20: '20 gün' };
+  const rowsH = ['d', 'w5', 'w10', 'w20'].filter(p => k[p]).map(p => `<tr><td class="l">${lab[p]}</td><td>${mnTL(k[p].t)}${has(k[p].tp) ? ` <small>(${k[p].tp >= 0 ? '+' : ''}${N2.format(k[p].tp)} puan)</small>` : ''}</td><td>${mnTL(k[p].y)}</td><td>${mnTL(k[p].f)}</td></tr>`).join('');
+  return `<p style="margin:8px 0 4px"><b>Kurumsal takas değişimi</b> <small>(${esc(new Date(k.date).toLocaleDateString('tr-TR'))})</small></p><div class="scroll"><table class="ledger"><thead><tr><th class="l">Dönem</th><th>Toplam kurumsal</th><th>Yabancı</th><th>Fonlar</th></tr></thead><tbody>${rowsH}</tbody></table></div>`;
+}
 function foreignHtml(r) {
-  const f = r.fr; if (!f) return '';
+  const f = r.fr; if (!f && !r.tk) return '';
+  if (!f) return `<div class="risk soft"><b>Yabancı ve kurumsal takas</b>${takasHtml(r)}<small>QNB Invest'in Kurumsal Takas Değişimleri raporundan (Foreks'te görsel olarak yayımlanıyor). Görseller OCR ile okunur; yalnızca kendi içindeki sağlamalardan (yabancı + fon = toplam, iki tablodaki toplamın eşitliği) geçen değerler gösterilir, geçmeyenler boş kalır.</small></div>`;
   const pts = v => has(v) ? `<span class="num ${v >= 0 ? 'up' : 'down'}">${v >= 0 ? '+' : ''}${N2.format(v)} puan</span>` : DASH;
   const F = DATA.meta.foreign || {};
-  return `<div class="risk soft"><b>Yabancı payı</b><p style="margin:2px 0 6px">Sermayedeki yabancı payı <b class="num" style="display:inline;color:inherit">%${N2.format(f.now)}</b> · günlük ${pts(f.d1)} · haftalık ${pts(f.w)}${f.streak ? ` · <b>${Math.abs(f.streak)}${Math.abs(f.streak) >= 10 ? '+' : ''} gündür sürekli ${f.streak > 0 ? 'artıyor' : 'azalıyor'}</b>` : ''}</p><small>İş Yatırım'ın Günlük Yabancı Oranları Tablosu (${F.date ? esc(new Date(F.date).toLocaleDateString('tr-TR')) : ''}, Foreks üzerinden). Tablo yabancı payı yaklaşık %4'ün üstündeki payları içerir.</small></div>`;
+  return `<div class="risk soft"><b>Yabancı payı${r.tk ? ' ve kurumsal takas' : ''}</b><p style="margin:2px 0 6px">Sermayedeki yabancı payı <b class="num" style="display:inline;color:inherit">%${N2.format(f.now)}</b> · günlük ${pts(f.d1)} · haftalık ${pts(f.w)}${f.streak ? ` · <b>${Math.abs(f.streak)}${Math.abs(f.streak) >= 10 ? '+' : ''} gündür sürekli ${f.streak > 0 ? 'artıyor' : 'azalıyor'}</b>` : ''}</p>${takasHtml(r)}<small>İş Yatırım'ın Günlük Yabancı Oranları Tablosu (${F.date ? esc(new Date(F.date).toLocaleDateString('tr-TR')) : ''}, Foreks üzerinden). Tablo yabancı payı yaklaşık %4'ün üstündeki payları içerir.${r.tk ? ` Kurumsal takas: QNB Invest'in Foreks'te görsel olarak yayımlanan raporu, OCR ile okunur; yalnızca sağlamalardan (yabancı + fon = toplam, iki tablodaki toplamın eşitliği) geçen değerler gösterilir.` : ''}</small></div>`;
 }
 function brokerHtml(r) {
   const b = r.br || {}; if (!r.br && !r.tg && !r.ti && !r.rp) return '';
@@ -576,6 +584,9 @@ function renderWeekly() {
     <div class="card"><h4>Genişlik</h4><p class="num">${wk.filter(r => r.wk > 0).length} yükselen · ${wk.filter(r => r.wk < 0).length} düşen</p><p class="note" style="margin:0">Ortanca haftalık değişim ${pctCell(med(wk.map(r => r.wk)))}</p></div>
     <div class="card"><h4>Haftanın en çok yükselenleri</h4>${codeBtns(by('wk', 10).map(r => r.c))}</div>
     <div class="card"><h4>Haftanın en çok düşenleri</h4>${codeBtns(by('wk', 10, false).map(r => r.c))}</div>`;
+  const FL = DATA.meta.flows || [];
+  if (FL.length) { const w = FL[FL.length - 1]; const usd = v => has(v) ? `<span class="num ${v >= 0 ? 'up' : 'down'}">${v >= 0 ? '+' : ''}${N1.format(v)} mn $</span>` : DASH;
+    html += `<div class="card"><h4>Yabancılar (TCMB, ${esc(new Date(w.week).toLocaleDateString('tr-TR'))} haftası)</h4><ul class="plain"><li>Hisse ${usd(w.shares)}</li><li>Devlet tahvili ${usd(w.bonds)}</li>${has(w.corporate) ? `<li>Özel sektör tahvili ${usd(w.corporate)}</li>` : ''}<li>Yıl başından beri hisse ${usd(w.sharesYtd)}</li>${has(w.foreignShare) ? `<li>BIST'te yabancı payı %${N2.format(w.foreignShare)}</li>` : ''}</ul><p class="note" style="margin:0">Fiyat ve kur etkisinden arındırılmış; Şeker Yatırım ve Bizim Menkul raporları.</p></div>`; }
   const sec = {}; for (const r of wk) if (r.s) (sec[r.s] ||= []).push(r.wk);
   const secs = Object.entries(sec).filter(([, v]) => v.length >= 4).map(([s, v]) => [s, med(v)]).sort((a, b) => b[1] - a[1]);
   html += `<div class="card"><h4>En iyi sektörler</h4><ul class="plain">${secs.slice(0, 5).map(([s, v]) => `<li>${esc(s)} ${pctCell(v)}</li>`).join('')}</ul></div><div class="card"><h4>En zayıf sektörler</h4><ul class="plain">${secs.slice(-5).reverse().map(([s, v]) => `<li>${esc(s)} ${pctCell(v)}</li>`).join('')}</ul></div></div>`;
@@ -602,6 +613,9 @@ function renderWeekly() {
   const K = DATA.meta.karne?.brokers || {};
   const kl = Object.entries(K).filter(([, b]) => b.n);
   if (kl.length) html += `<h4 style="margin:18px 0 6px">Kurum karnesi <span class="dash">(stoplu öneriler, ${kl.reduce((a, [, b]) => a + b.n, 0)} öneri)</span></h4><div class="scroll"><table class="ledger"><thead><tr><th class="l">Kurum</th><th>Öneri</th><th>Hedef</th><th>Stop</th><th>Süre doldu</th><th>Belirsiz</th><th>Açık</th><th>İsabet</th><th>Ort. sonuç</th><th>Ort. gün</th></tr></thead><tbody>${kl.sort((a, b) => (b[1].hit ?? -1) - (a[1].hit ?? -1) || b[1].n - a[1].n).map(([k, b]) => `<tr><td class="l">${esc(k)}</td><td class="num">${b.n}</td><td class="num up">${b.hedef}</td><td class="num down">${b.stop}</td><td class="num">${b['süre']}</td><td class="num">${b.belirsiz || ''}</td><td class="num">${b['açık']}</td><td class="num">${has(b.hit) ? '%' + N0.format(b.hit) : ''}</td><td>${pctCell(b.avg)}</td><td class="num">${has(b.avgDays) ? N1.format(b.avgDays) : ''}</td></tr>`).join('')}</tbody></table></div><p class="note">Her öneri yayımlandığı günden itibaren günlük en yüksek ve en düşük fiyatlarla izlenir: önce hedefe mi stopa mı değdiği (kısa vade 10, orta vade 30 işlem günü). Aynı gün ikisine de değenler "belirsiz" sayılır ve isabete katılmaz. Kurumun kendi raporu öneriyi kapattıysa (İş Yatırım, Şeker Yatırım) o kayıt kullanılır. Sonuç referans fiyata göre, komisyonsuz. Örneklem küçükken sonuçlar yanıltıcı olabilir.</p>`;
+  const TK = DATA.meta.takas || {};
+  const tkRows = Object.entries(TK.rows || {}).filter(([, v]) => v.d).sort((a, b) => b[1].d.t - a[1].d.t);
+  if (tkRows.length) html += `<h4 style="margin:18px 0 6px">Kurumsal takas değişimi <span class="dash">(${esc(new Date(TK.date).toLocaleDateString('tr-TR'))}, BIST-100'de en çok değişen ${tkRows.length} hisse)</span></h4><div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th>Günlük</th><th>Yabancı</th><th>Fonlar</th><th>5 gün</th><th>10 gün</th><th>20 gün</th></tr></thead><tbody>${tkRows.map(([c, v]) => `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(c)}">${esc(c)}</button></td><td>${mnTL(v.d.t)}</td><td>${mnTL(v.d.y)}</td><td>${mnTL(v.d.f)}</td><td>${v.w5 ? mnTL(v.w5.t) : DASH}</td><td>${v.w10 ? mnTL(v.w10.t) : DASH}</td><td>${v.w20 ? mnTL(v.w20.t) : DASH}</td></tr>`).join('')}</tbody></table></div><p class="note">QNB Invest'in Kurumsal Takas Değişimleri raporu; kurumsal yatırımcıların (yabancılar ve fonlar dahil) takastaki pay değişimi, milyon TL. Rapor Foreks'te görsel olarak yayımlandığı için OCR ile okunur; yalnızca sağlamalardan geçen değerler gösterilir, boş hücreler doğrulanamamıştır. <a href="${esc(TK.url || '#')}" target="_blank" rel="noreferrer">Rapor ↗</a></p>`;
   const FM = DATA.meta.foreign?.movers || {};
   if (FM.week) html += `<h4 style="margin:18px 0 6px">Yabancı payı <span class="dash">(${esc(new Date(DATA.meta.foreign.date).toLocaleDateString('tr-TR'))})</span></h4><div class="cards">
     <div class="card"><h4>Haftada en çok artan</h4><ul class="plain">${FM.week.up.slice(0, 8).map(x => `<li><button class="cmp-add" type="button" data-open="${esc(x.c)}">${esc(x.c)}</button> %${N2.format(x.prev)} → %${N2.format(x.now)}</li>`).join('')}</ul></div>
@@ -713,6 +727,7 @@ const SCREENS = [
   ['bonus', 'Bedelsiz kararı', bonusDecision],
   ['f3', 'Kurumsal fon %3+', funds3],
   ['ipo', 'Son 1 yılın halka arzları', ipoRecent],
+  ['tk', 'Kurumsal takas girişi (gün)', r => (r.tk?.d?.t ?? 0) > 0],
   ['fr', 'Yabancı payı artıyor (hafta)', r => (r.fr?.w ?? 0) >= 0.5 || (r.fr?.streak ?? 0) >= 5],
   ['bbdd', 'Geri alım + zirveden %30+ düşmüş', r => recentBuyback(r) && has(drawdown(r)) && drawdown(r) <= -30],
   ['beat', '1 yılda BIST 100\'ü geçen', r => has(r.perf?.rel) && r.perf.rel > 0],

@@ -1,0 +1,42 @@
+{
+ "source": "TCMB haftalık menkul kıymet istatistikleri; Şeker Yatırım ve Bizim Menkul raporları (Foreks)",
+ "weeks": {
+  "2026-11-20": {
+   "sources": {
+    "Şeker Yatırım": {
+     "url": "https://www.foreks.com/haber/detay/6b081fad95131d72027e4986/FRKS/tr/analiz-yabanci-menkul-kiymet-stoku-verileri-ve-bist-yabanci-payi-seker-yatirim-26-11-26/",
+     "stockShares": 31735.0,
+     "stockBonds": 15279.0,
+     "shares": -48.0,
+     "bonds": -463.0,
+     "sharesExact": -48.4,
+     "sharesYtd": 1709.0,
+     "foreignShare": 38.38
+    },
+    "Bizim Menkul": {
+     "url": "https://www.foreks.com/haber/detay/6b0825704b18523914469a65/FRKS/tr/analiz-yabancilarin-hisse-dibs-islemleri-bizim-menkul-26-11-26/",
+     "sharesExact": -48.4,
+     "bonds": -463.1,
+     "corporate": -130.1,
+     "sharesYtd": 1708.1,
+     "foreignShareFloat": 38.3
+    }
+   },
+   "values": {
+    "stockShares": 31735.0,
+    "stockBonds": 15279.0,
+    "shares": -48.4,
+    "bonds": -463.1,
+    "sharesYtd": 1708.1,
+    "foreignShare": 38.38,
+    "corporate": -130.1,
+    "foreignShareFloat": 38.3
+   },
+   "conflicts": null
+  }
+ },
+ "read": [
+  "6b081fad95131d72027e4986",
+  "6b0825704b18523914469a65"
+ ]
+}

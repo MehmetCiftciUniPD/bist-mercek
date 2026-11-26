@@ -44,6 +44,8 @@ CHECKS = [
     ('cnbce', 'CNBC-e haftalık hedef derlemesi', 'broker-calls.json', lambda d: (max(d['targets'], default=None), 1 if d['targets'] else 0), 21, 1),
     ('foreks', 'Kurum raporları (Foreks)', 'foreks-reports.json', lambda d: (newest(v.get('date') for v in d['items'].values()), len(d['items'])), 4, 20),
     ('foreign', 'Yabancı payı (İş Yatırım)', 'foreign-ratios.json', lambda d: (d.get('date'), len(d['days'].get(d.get('date'), {}))), 5, 100),
+    ('takas', 'Kurumsal takas değişimi (QNB, OCR)', 'takas.json', lambda d: (max(d['days'], default=None), len(d['days'][max(d['days'])]['rows']) if d['days'] else 0), 4, 5),
+    ('flows', 'Haftalık yabancı akımları (TCMB, Şeker/Bizim)', 'foreign-flows.json', lambda d: (max(d['weeks'], default=None), len(d['weeks'])), 14, 1),
     ('karne', 'Kurum karnesi', 'broker-scorecard.json', lambda d: (d.get('generatedAt'), len(d['ideas'])), 3, 1),
     ('summary', 'Günlük özet', 'daily-summary.json', lambda d: (d.get('generatedAt'), 1 if d.get('facts') else 0), 3, 1),
 ]

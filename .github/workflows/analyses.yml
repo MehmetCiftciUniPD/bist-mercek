@@ -87,12 +87,14 @@ jobs:
           # Live-price runs collect broker reports only once, in the 12:00 Istanbul hour,
           # in case GitHub dropped the queued noon run in favour of a newer one.
           if [ "${{ github.event.schedule }}" = '*/15 7-15 * * 1-5' ] && [ "$(date -u +%H)" != '09' ]; then exit 0; fi
-          sudo apt-get install -y -qq poppler-utils >/dev/null || true
-          pip install -q yfinance || true
+          sudo apt-get install -y -qq poppler-utils tesseract-ocr >/dev/null || true
+          pip install -q yfinance pillow || true
           python research/broker-reports.py --notes
           python research/broker-calls.py
           python research/foreks-reports.py
           python research/foreign-ratios.py
+          python research/foreign-flows.py
+          python research/takas.py
           python research/broker-scorecard.py
       - name: Geri alım bildirimlerini topla
         continue-on-error: true
@@ -116,7 +118,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json data/broker-reports.json data/broker-calls.json data/foreks-reports.json data/foreign-ratios.json data/broker-scorecard.json data/health.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json data/broker-reports.json data/broker-calls.json data/foreks-reports.json data/foreign-ratios.json data/broker-scorecard.json data/health.json data/takas.json data/foreign-flows.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Update market data"
             git push origin HEAD:main
