@@ -514,7 +514,9 @@ function tgSummary(r) {
     med: m, lo: Math.min(...t), hi: Math.max(...t), up: upside(r, m), rev: list.filter(x => has(x.p) && x.p !== x.t) };
 }
 // Where the price stands now against a trade idea's levels.
+const OUTCOME = { hedef: ['good', 'hedefe ulaştı'], stop: ['bad', 'stop oldu'], süre: ['', 'süre doldu'], belirsiz: ['', 'aynı gün hedef ve stop'] };
 function ideaStatus(r, x) {
+  if (x.o && OUTCOME[x.o] && x.st !== 'kapalı') return `${pill(OUTCOME[x.o][0], OUTCOME[x.o][1])} ${has(x.or) ? pctCell(x.or) : ''}${x.oe ? `<small> ${esc(new Date(x.oe).toLocaleDateString('tr-TR'))}</small>` : ''}`;
   if (x.st === 'kapalı') return `${pill(has(x.res) && x.res >= 0 ? 'good' : 'bad', 'kapandı')} ${has(x.res) ? pctCell(x.res) : ''}<small>${x.xd ? ' ' + esc(new Date(x.xd).toLocaleDateString('tr-TR')) : ''} · kurumun kaydı</small>`;
   const p = nowPx(r); if (!has(p)) return DASH;
   const t = (x.t || []).filter(has), stop = has(x.s) ? x.s : null;
@@ -537,6 +539,12 @@ function callsHtml(r) {
   if (r.rp?.length) out += `<p style="margin:10px 0 4px"><b>Bu hisse hakkındaki kurum raporları</b></p><ul>${r.rp.map(x => `<li><span class="num">${x.d ? esc(new Date(x.d.slice(0, 10)).toLocaleDateString('tr-TR')) : ''}</span> · ${esc(x.t.replace(/^ANALİZ-\s*/, ''))} <a href="${esc(x.u)}" target="_blank" rel="noreferrer">Foreks ↗</a></li>`).join('')}</ul>`;
   if (r.ti?.length) out += `<p style="margin:10px 0 4px"><b>Kısa vadeli teknik öneriler</b></p><div class="scroll"><table class="ledger">${IDEA_HEAD(false)}<tbody>${r.ti.map(x => ideaRow(r, x, false)).join('')}</tbody></table></div>`;
   return out;
+}
+function foreignHtml(r) {
+  const f = r.fr; if (!f) return '';
+  const pts = v => has(v) ? `<span class="num ${v >= 0 ? 'up' : 'down'}">${v >= 0 ? '+' : ''}${N2.format(v)} puan</span>` : DASH;
+  const F = DATA.meta.foreign || {};
+  return `<div class="risk soft"><b>Yabancı payı</b><p style="margin:2px 0 6px">Sermayedeki yabancı payı <b class="num" style="display:inline;color:inherit">%${N2.format(f.now)}</b> · günlük ${pts(f.d1)} · haftalık ${pts(f.w)}${f.streak ? ` · <b>${Math.abs(f.streak)}${Math.abs(f.streak) >= 10 ? '+' : ''} gündür sürekli ${f.streak > 0 ? 'artıyor' : 'azalıyor'}</b>` : ''}</p><small>İş Yatırım'ın Günlük Yabancı Oranları Tablosu (${F.date ? esc(new Date(F.date).toLocaleDateString('tr-TR')) : ''}, Foreks üzerinden). Tablo yabancı payı yaklaşık %4'ün üstündeki payları içerir.</small></div>`;
 }
 function brokerHtml(r) {
   const b = r.br || {}; if (!r.br && !r.tg && !r.ti && !r.rp) return '';
@@ -591,6 +599,15 @@ function renderWeekly() {
   html += `<h4 style="margin:14px 0 6px">Bu hafta yeni ya da değişen tavsiyeler <span class="dash">(${changed.length})</span></h4>`;
   html += changed.length ? `<div class="scroll"><table class="ledger"><thead><tr><th class="l">Hisse</th><th class="l">Kurum</th><th class="l">Önceki</th><th class="l">Yeni</th><th>Hedef değişimi</th><th>Potansiyel</th><th class="l">Tarih</th></tr></thead><tbody>${changed.map(r => { const x = r.br.isy, p = brokerChange(r); return `<tr><td class="l"><button class="cmp-add" type="button" data-open="${esc(r.c)}">${esc(r.c)}</button></td><td class="l">İş Yatırım</td><td class="l">${p.rec ? recPill(p.rec) + (has(p.target) ? ` <span class="num">${N2.format(p.target)}</span>` : '') : '<span class="dash">kapsam yeni</span>'}</td><td class="l">${recPill(x.rec)}${has(x.target) ? ` <span class="num">${N2.format(x.target)}</span>` : ''}</td><td>${has(p.target) && has(x.target) && p.target ? pctCell((x.target / p.target - 1) * 100) : DASH}</td><td>${pctCell(upside(r, x.target))}</td><td class="l num">${x.date ? esc(new Date(x.date).toLocaleDateString('tr-TR')) : ''}</td></tr>`; }).join('')}</tbody></table></div>` : '<p class="note">Bu hafta değişiklik yok.</p>';
   for (const c of (B.changes || []).filter(c => c.seen >= from && !changed.some(r => r.c === c.code))) html += `<p class="note">${esc(c.code)}: ${esc(c.from.rec || '')} ${has(c.from.target) ? N2.format(c.from.target) : ''} → ${esc(c.to.rec || '')} ${has(c.to.target) ? N2.format(c.to.target) : ''} (${esc(c.source)})</p>`;
+  const K = DATA.meta.karne?.brokers || {};
+  const kl = Object.entries(K).filter(([, b]) => b.n);
+  if (kl.length) html += `<h4 style="margin:18px 0 6px">Kurum karnesi <span class="dash">(stoplu öneriler, ${kl.reduce((a, [, b]) => a + b.n, 0)} öneri)</span></h4><div class="scroll"><table class="ledger"><thead><tr><th class="l">Kurum</th><th>Öneri</th><th>Hedef</th><th>Stop</th><th>Süre doldu</th><th>Belirsiz</th><th>Açık</th><th>İsabet</th><th>Ort. sonuç</th><th>Ort. gün</th></tr></thead><tbody>${kl.sort((a, b) => (b[1].hit ?? -1) - (a[1].hit ?? -1) || b[1].n - a[1].n).map(([k, b]) => `<tr><td class="l">${esc(k)}</td><td class="num">${b.n}</td><td class="num up">${b.hedef}</td><td class="num down">${b.stop}</td><td class="num">${b['süre']}</td><td class="num">${b.belirsiz || ''}</td><td class="num">${b['açık']}</td><td class="num">${has(b.hit) ? '%' + N0.format(b.hit) : ''}</td><td>${pctCell(b.avg)}</td><td class="num">${has(b.avgDays) ? N1.format(b.avgDays) : ''}</td></tr>`).join('')}</tbody></table></div><p class="note">Her öneri yayımlandığı günden itibaren günlük en yüksek ve en düşük fiyatlarla izlenir: önce hedefe mi stopa mı değdiği (kısa vade 10, orta vade 30 işlem günü). Aynı gün ikisine de değenler "belirsiz" sayılır ve isabete katılmaz. Kurumun kendi raporu öneriyi kapattıysa (İş Yatırım, Şeker Yatırım) o kayıt kullanılır. Sonuç referans fiyata göre, komisyonsuz. Örneklem küçükken sonuçlar yanıltıcı olabilir.</p>`;
+  const FM = DATA.meta.foreign?.movers || {};
+  if (FM.week) html += `<h4 style="margin:18px 0 6px">Yabancı payı <span class="dash">(${esc(new Date(DATA.meta.foreign.date).toLocaleDateString('tr-TR'))})</span></h4><div class="cards">
+    <div class="card"><h4>Haftada en çok artan</h4><ul class="plain">${FM.week.up.slice(0, 8).map(x => `<li><button class="cmp-add" type="button" data-open="${esc(x.c)}">${esc(x.c)}</button> %${N2.format(x.prev)} → %${N2.format(x.now)}</li>`).join('')}</ul></div>
+    <div class="card"><h4>Haftada en çok azalan</h4><ul class="plain">${FM.week.down.slice(0, 8).map(x => `<li><button class="cmp-add" type="button" data-open="${esc(x.c)}">${esc(x.c)}</button> %${N2.format(x.prev)} → %${N2.format(x.now)}</li>`).join('')}</ul></div>
+    <div class="card"><h4>10 gündür sürekli artan</h4>${codeBtns(rows.filter(r => (r.fr?.streak ?? 0) >= 10).map(r => r.c))}</div>
+    <div class="card"><h4>10 gündür sürekli azalan</h4>${codeBtns(rows.filter(r => (r.fr?.streak ?? 0) <= -10).map(r => r.c))}</div></div><p class="note">İş Yatırım'ın Günlük Yabancı Oranları Tablosu, Foreks üzerinden. Değişim yüzde puan.</p>`;
   const C = DATA.meta.calls || {};
   const ideas = rows.flatMap(r => (r.ti || []).filter(x => (x.d || '') >= daysAgo(10) || x.st === 'açık').map(x => [r, x])).sort((a, b) => (b[1].d || '').localeCompare(a[1].d || '') || a[0].c.localeCompare(b[0].c));
   const stopped = ideas.filter(([r, x]) => has(x.s));
@@ -696,6 +713,7 @@ const SCREENS = [
   ['bonus', 'Bedelsiz kararı', bonusDecision],
   ['f3', 'Kurumsal fon %3+', funds3],
   ['ipo', 'Son 1 yılın halka arzları', ipoRecent],
+  ['fr', 'Yabancı payı artıyor (hafta)', r => (r.fr?.w ?? 0) >= 0.5 || (r.fr?.streak ?? 0) >= 5],
   ['bbdd', 'Geri alım + zirveden %30+ düşmüş', r => recentBuyback(r) && has(drawdown(r)) && drawdown(r) <= -30],
   ['beat', '1 yılda BIST 100\'ü geçen', r => has(r.perf?.rel) && r.perf.rel > 0],
   ['streak', '5 yıl üst üste kârlı', r => r.d.streak],
@@ -855,7 +873,7 @@ function renderFile(r) {
   let html = `<div class="file-head"><div><h2>${starBtn(r.c)}${esc(r.c)}</h2><p>${esc(r.n)}</p><p class="note">${esc([r.s, ...(r.seg || []), r.alt ? 'diğer kodlar: ' + r.alt.join(', ') : ''].filter(Boolean).join(' · '))}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><button class="cmp-add" type="button" data-cmp="${esc(r.c)}" aria-pressed="${CMP.includes(r.c)}">Karşılaştır</button><button class="back" id="back" type="button">← Listeye dön</button></div></div>
     <div class="quote">${quote}</div><p class="note">${lp ? `Gecikmeli fiyat Yahoo Finance'ten alınır ve son resmî kapanışa (${N2.format(r.px)} TL) göre değişimi gösterir. ` : ''}Piyasa değeri ve çarpanlar ${esc(m.priceDate.split('-').reverse().join('.'))} kapanışı${m.priceFetchedAt ? ` (${new Date(m.priceFetchedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Istanbul' })} itibarıyla alındı; her iş günü kapanıştan sonra yenilenir)` : ''}. <a href="${esc(r.kap)}" target="_blank" rel="noreferrer">KAP şirket sayfası ↗</a></p>`;
   if (h?.w) html += `<div class="warn"><b>Veri uyarısı</b>${h.w.map(esc).join('<br>')}</div>`;
-  html += riskHtml(r) + spkHtml(r) + fundHtml(r) + holdingHtml(r) + insiderHtml(r) + buybackHtml(r) + brokerHtml(r) + eventsHtml(r);
+  html += riskHtml(r) + spkHtml(r) + fundHtml(r) + holdingHtml(r) + insiderHtml(r) + buybackHtml(r) + foreignHtml(r) + brokerHtml(r) + eventsHtml(r);
   const head = html + `<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" data-tab="file">Mali tablolar</button><button class="tab" type="button" role="tab" data-tab="score">Temel analiz skor kartı</button><button class="tab" type="button" role="tab" data-tab="smc">Smart money</button></div>`;
   html = '';
 
@@ -1340,6 +1358,11 @@ Promise.all([fetch('data.json').then(r => { if (!r.ok) throw new Error(r.status)
   $('chips').innerHTML = SCREENS.map(([k, label]) => `<button class="chip" type="button" data-k="${k}" aria-pressed="${k === 'all'}">${label}</button>`).join('');
   renderSaved();
   const m = data.meta;
+  const H = m.health;
+  if (H) {
+    const bad = H.checks.filter(c => !c.ok);
+    $('liveStamp').insertAdjacentHTML('beforebegin', `<details class="foot" id="health"><summary>Veri durumu: ${bad.length ? `<b style="color:var(--bad)">${bad.length} kaynak gecikmede</b>` : `${H.checks.length} kaynağın hepsi güncel`} · kontrol ${esc(new Date(H.checkedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short' }))}</summary><ul class="plain">${H.checks.map(c => `<li>${c.ok ? '✓' : '⚠'} ${esc(c.label)}${c.latest ? ` · son veri ${esc(new Date(c.latest.slice(0, 10)).toLocaleDateString('tr-TR'))}` : ''}${has(c.n) ? ` · ${N0.format(c.n)} kayıt` : ''}${c.problem ? ` · <b style="color:var(--bad)">${esc(c.problem)}</b>` : ''}</li>`).join('')}</ul></details>`);
+  }
   $('foot').textContent = `Kaynaklar: ihraççı listesi KAP (${m.universeDate}); 2026/9 özetleri KAP; geçmiş tablolar ve fiyatlar İş Yatırım (toplama ${new Date(m.collectedAt).toLocaleDateString('tr-TR')}). KAP ile İş Yatırım ayrıştığında şirket "uyarı" ile işaretlenir. Eksik veri boş bırakılır, tahmin edilmez. Bu sayfa bilgi amaçlıdır; yatırım tavsiyesi değildir.`;
   renderRegister();
   $('cmpCount').textContent = CMP.length ? `(${CMP.length})` : '';

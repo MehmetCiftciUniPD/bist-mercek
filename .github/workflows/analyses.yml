@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: analyses
@@ -91,6 +92,8 @@ jobs:
           python research/broker-reports.py --notes
           python research/broker-calls.py
           python research/foreks-reports.py
+          python research/foreign-ratios.py
+          python research/broker-scorecard.py
       - name: Geri alım bildirimlerini topla
         continue-on-error: true
         run: python research/buybacks.py --days ${{ github.event.schedule == '*/15 7-15 * * 1-5' && 7 || 35 }}
@@ -103,12 +106,17 @@ jobs:
       - name: Gecikmeli fiyatları al
         continue-on-error: true
         run: python research/live.py
+      - name: Veri sağlığını denetle
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python research/health.py --issue
       - name: Değişiklikleri kaydet
         continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json data/broker-reports.json data/broker-calls.json data/foreks-reports.json 2>/dev/null || true
+          git add data/ai-analyses.json data/market-latest.json data/scorecard.json data/price-history.json data/price-history-gaps.json data/smc-summary.json data/benchmarks.json data/buybacks.json data/fund-transfers.json data/fund-holdings.json data/insider-trades.json data/daily-summary.json data/market-events.json data/spk-actions.json data/broker-reports.json data/broker-calls.json data/foreks-reports.json data/foreign-ratios.json data/broker-scorecard.json data/health.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Update market data"
             git push origin HEAD:main

@@ -1,15 +1,7 @@
 {
- "fetchedAt": "2026-11-26T06:22+03:00",
+ "fetchedAt": "2026-11-26T16:36+03:00",
  "source": "https://www.foreks.com/analizler/",
  "items": {
-  "6aed732b95131d72027d826f": {
-   "title": "ANALİZ- Günlük Hazine Bülteni (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-06T09:26",
-   "url": "https://www.foreks.com/haber/detay/6aed732b95131d72027d826f/FRKS/tr/analiz-gunluk-hazine-bulteni-gedik-yatirim-06-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-06/fe1e40ebea2e4a9c85b6d447ae88c81d_06112026.pdf"
-  },
   "6aed89c195131d72027d8394": {
    "title": "ANALİZ- Oyak Çimento Konferansta Öne Çıkanlar (Gedik Yatırım)",
    "broker": "Gedik Yatırım",
@@ -62,46 +54,6 @@
    "codes": [],
    "file": "https://news-files.foreks.com/attachment/2026-11-20/10d6cc1668c945298c0f1675a90f35fa_20112026.pdf"
   },
-  "6b050eb34b18523914467e36": {
-   "title": "ANALİZ- Foreks Bülteni (Destek Yatırım)",
-   "broker": "Destek Yatırım",
-   "date": "2026-11-24T07:12",
-   "url": "https://www.foreks.com/haber/detay/6b050eb34b18523914467e36/FRKS/tr/analiz-foreks-bulteni-destek-yatirim-24-11-26/",
-   "codes": [],
-   "file": "https://www.destekyatirim.com/storage/vtYgpskElz4EuzBjH61IvnRbTZ8qWPOT5xG1XNhz.pdf"
-  },
-  "6b052ca8b384684682378904": {
-   "title": "ANALİZ- Forex Bülteni (QNB Invest)",
-   "broker": "QNB Invest",
-   "date": "2026-11-24T09:20",
-   "url": "https://www.foreks.com/haber/detay/6b052ca8b384684682378904/FRKS/tr/analiz-forex-bulteni-qnb-invest-24-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b052d7cb38468468237890f": {
-   "title": "ANALİZ- Forex Bülteni (InvestAZ Yatırım)",
-   "broker": "InvestAZ Yatırım",
-   "date": "2026-11-24T09:23",
-   "url": "https://www.foreks.com/haber/detay/6b052d7cb38468468237890f/FRKS/tr/analiz-forex-bulteni-investaz-yatirim-24-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/16f1608385d843639b9f56d3616153a0%40investaz.com.tr/FX%2520B%25C3%25BClten%2520-%252024.11.2026.pdf"
-  },
-  "6b0530984b18523914467f18": {
-   "title": "ANALİZ- Forex Bülteni (İnfo Yatırım)",
-   "broker": "İnfo Yatırım",
-   "date": "2026-11-24T09:37",
-   "url": "https://www.foreks.com/haber/detay/6b0530984b18523914467f18/FRKS/tr/analiz-forex-bulteni-info-yatirim-24-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b0530ba4b18523914467f1b": {
-   "title": "ANALİZ- Forex Bülteni (Anadolu Yatırım)",
-   "broker": "Anadolu Yatırım",
-   "date": "2026-11-24T09:37",
-   "url": "https://www.foreks.com/haber/detay/6b0530ba4b18523914467f1b/FRKS/tr/analiz-forex-bulteni-anadolu-yatirim-24-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/10432f6802a942d3823b8924272ef654%40anadoluyatirim.com.tr/FX%2520B%25C3%25BClteni%252024112026.pdf"
-  },
   "6b05332895131d72027e2e25": {
    "title": "ANALİZ- Günlük Hazine Bülteni (Gedik Yatırım)",
    "broker": "Gedik Yatırım",
@@ -109,56 +61,6 @@
    "url": "https://www.foreks.com/haber/detay/6b05332895131d72027e2e25/FRKS/tr/analiz-gunluk-hazine-bulteni-gedik-yatirim-24-11-26/",
    "codes": [],
    "file": "https://news-files.foreks.com/attachment/2026-11-24/92cf19505b0a4c8887c950bb031dfc62_24112026.pdf"
-  },
-  "6b0536c495131d72027e2e62": {
-   "title": "ANALİZ- Günlük Forex Bülteni (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-24T10:03",
-   "url": "https://www.foreks.com/haber/detay/6b0536c495131d72027e2e62/FRKS/tr/analiz-gunluk-forex-bulteni-gedik-yatirim-24-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-24/fdb76747a2c94f21beaa064e8a076b5f_FXBulten241120267fe47759.pdf"
-  },
-  "6b0544b94b1852391446802f": {
-   "title": "ANALİZ- Petkim Etilen ve Nafta Marjları (Kuveyt Türk)",
-   "broker": "Kuveyt Türk Yatırım",
-   "date": "2026-11-24T11:03",
-   "url": "https://www.foreks.com/haber/detay/6b0544b94b1852391446802f/FRKS/tr/analiz-petkim-etilen-ve-nafta-marjlari-kuveyt-turk-24-11-26/",
-   "codes": [
-    "PETKM"
-   ],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/1da7ec3b4d5b4c78b1c10342a0b91457%40kuveytturkyatirim.com.tr/24%2520Kas%25C4%25B1m%2520Petkim%2520Marjlar.pdf"
-  },
-  "6b054ef94b185239144680bd": {
-   "title": "ANALİZ- Günlük FX Teknik Analiz Raporu (İş Yatırım)",
-   "broker": "İş Yatırım",
-   "date": "2026-11-24T11:46",
-   "url": "https://www.foreks.com/haber/detay/6b054ef94b185239144680bd/FRKS/tr/analiz-gunluk-fx-teknik-analiz-raporu-is-yatirim-24-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-24/af37e4442dba4fc5a11c0887e5094043_Gunluk-FX-Teknik-Analiz-Raporu-24.11.2026.pdf"
-  },
-  "6b05544e4b18523914468101": {
-   "title": "ANALİZ- Günlük Altın Bülteni (Gold Para)",
-   "broker": "Gold Para",
-   "date": "2026-11-24T12:09",
-   "url": "https://www.foreks.com/haber/detay/6b05544e4b18523914468101/FRKS/tr/analiz-gunluk-altin-bulteni-gold-para-24-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-24/9f2df27115c04ae8a5b1fa28b79ce9ed_GNLKALTIN6007.pdf"
-  },
-  "6b0566e095131d72027e3087": {
-   "title": "ANALİZ- Demir-Çelik Haftalık Bülten (Kuveyt Türk)",
-   "broker": "Kuveyt Türk Yatırım",
-   "date": "2026-11-24T13:28",
-   "url": "https://www.foreks.com/haber/detay/6b0566e095131d72027e3087/FRKS/tr/analiz-demir-celik-haftalik-bulten-kuveyt-turk-24-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/3f5387f1ccc74bc4825c17f45391196a%40kuveytturkyatirim.com.tr/Demir%2520%25C3%2587elik%2520Haftal%25C4%25B1k%2520B%25C3%25BClten.pdf"
-  },
-  "6b0592d24b1852391446839d": {
-   "title": "ANALİZ- Yünsa Ziyaret Notu (Ak Yatırım)",
-   "broker": "Ak Yatırım",
-   "date": "2026-11-24T16:36",
-   "url": "https://www.foreks.com/haber/detay/6b0592d24b1852391446839d/FRKS/tr/analiz-yunsa-ziyaret-notu-ak-yatirim-24-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-24/048abd5d0052410daed2d00d93542080_YUNSAZiyaretNotu.pdf"
   },
   "6b05971eb384684682378da9": {
    "title": "ANALİZ- Forex Endeks Bülteni (İntegral Yatırım)",
@@ -192,158 +94,6 @@
    "codes": [],
    "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179558383574.949493.15314490187858539818%40ahlatciyatirim.com.tr/Forex%2520Bulteni%2520-%252025.11.2026.pdf"
   },
-  "6b0675084b18523914468bd4": {
-   "title": "ANALİZ- BIST30 Teknik Bülten (Allbatross Yatırım)",
-   "broker": "Allbatross Yatırım",
-   "date": "2026-11-25T08:41",
-   "url": "https://www.foreks.com/haber/detay/6b0675084b18523914468bd4/FRKS/tr/analiz-bist30-teknik-bulten-allbatross-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/04ad63755f8a495c8c089f91de6b94ab%40allbatrossyatirim.com/25%2520Kas%25C4%25B1m%25202026%2520Teknik%2520B%25C3%25BClten.pdf"
-  },
-  "6b06758095131d72027e3aad": {
-   "title": "ANALİZ- Günlük Piyasa Bülteni (İktisatbank)",
-   "broker": "İktisatbank",
-   "date": "2026-11-25T08:43",
-   "url": "https://www.foreks.com/haber/detay/6b06758095131d72027e3aad/FRKS/tr/analiz-gunluk-piyasa-bulteni-iktisatbank-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b0675c895131d72027e3aae": {
-   "title": "ANALİZ- Günlük Bülten (Kuveyt Türk)",
-   "broker": "Kuveyt Türk Yatırım",
-   "date": "2026-11-25T08:44",
-   "url": "https://www.foreks.com/haber/detay/6b0675c895131d72027e3aae/FRKS/tr/analiz-gunluk-bulten-kuveyt-turk-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/cf8ca64d7c50437e8b6313f33ffc1a70%40kuveytturkyatirim.com.tr/Gunluk%2520Bulten_25112026.pdf"
-  },
-  "6b0677814b18523914468be5": {
-   "title": "ANALİZ- Günlük Bülten (Başkent Menkul Değerler)",
-   "broker": "Başkent Menkul Değerler",
-   "date": "2026-11-25T08:52",
-   "url": "https://www.foreks.com/haber/detay/6b0677814b18523914468be5/FRKS/tr/analiz-gunluk-bulten-baskent-menkul-degerler-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b0677e495131d72027e3ac2": {
-   "title": "ANALİZ- Teknik Strateji Bülteni (Vakıf Yatırım)",
-   "broker": "Vakıf Yatırım",
-   "date": "2026-11-25T08:53",
-   "url": "https://www.foreks.com/haber/detay/6b0677e495131d72027e3ac2/FRKS/tr/analiz-teknik-strateji-bulteni-vakif-yatirim-25-11-26/",
-   "codes": [],
-   "file": "http://vkyanaliz.com/Files/docs/teknik-strateji-bulteni-1795585802.pdf"
-  },
-  "6b06780a4b18523914468bec": {
-   "title": "ANALİZ- Yurt İçi Piyasalar Günlük Bülten (Burgan Yatırım)",
-   "broker": "Burgan Yatırım",
-   "date": "2026-11-25T08:54",
-   "url": "https://www.foreks.com/haber/detay/6b06780a4b18523914468bec/FRKS/tr/analiz-yurt-ici-piyasalar-gunluk-bulten-burgan-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/7d23b2a3e10c4cd8b1f8801d0f7da198%40burganyatirim.com.tr/Yurt%2520%25C4%25B0%25C3%25A7i%2520Piyasalar%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252025%2520Kas%25C4%25B1m%25202026.pdf"
-  },
-  "6b0679004b18523914468bf6": {
-   "title": "ANALİZ- Günlük Bülten (Şeker Yatırım)",
-   "broker": "Şeker Yatırım",
-   "date": "2026-11-25T08:58",
-   "url": "https://www.foreks.com/haber/detay/6b0679004b18523914468bf6/FRKS/tr/analiz-gunluk-bulten-seker-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/b5b3da4faf994b148790ba69042a5876%40sekeryatirim.com.tr/gunluk-bulten-25.11.2026.pdf"
-  },
-  "6b06797c4b18523914468bfc": {
-   "title": "ANALİZ- VİOP Bülten (Şeker Yatırım)",
-   "broker": "Şeker Yatırım",
-   "date": "2026-11-25T09:00",
-   "url": "https://www.foreks.com/haber/detay/6b06797c4b18523914468bfc/FRKS/tr/analiz-viop-bulten-seker-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/5fe8338bf5d84025bbfb28279ffdab21%40sekeryatirim.com.tr/viop-25.11.2026.pdf"
-  },
-  "6b0679934b18523914468bff": {
-   "title": "ANALİZ- Günlük Yabancı Oranları Tablosu (İş Yatırım)",
-   "broker": "İş Yatırım",
-   "date": "2026-11-25T09:00",
-   "url": "https://www.foreks.com/haber/detay/6b0679934b18523914468bff/FRKS/tr/analiz-gunluk-yabanci-oranlari-tablosu-is-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/e82cc665f465436b8a736856d3f2081d_YabanciOranRapor20261125.pdf"
-  },
-  "6b0679cc4b18523914468c02": {
-   "title": "ANALİZ- Günlük Açığa Satış Bilgileri (İş Yatırım)",
-   "broker": "İş Yatırım",
-   "date": "2026-11-25T09:01",
-   "url": "https://www.foreks.com/haber/detay/6b0679cc4b18523914468c02/FRKS/tr/analiz-gunluk-aciga-satis-bilgileri-is-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/8a4797b1bc964597a0a966ef688815e9_AcigaSatisRaporu25112026.pdf"
-  },
-  "6b067aa8be0e554ba40e27e3": {
-   "title": "ANALİZ- Günlük Strateji Bülteni (Vakıf Yatırım)",
-   "broker": "Vakıf Yatırım",
-   "date": "2026-11-25T09:05",
-   "url": "https://www.foreks.com/haber/detay/6b067aa8be0e554ba40e27e3/FRKS/tr/analiz-gunluk-strateji-bulteni-vakif-yatirim-25-11-26/",
-   "codes": [],
-   "file": "http://vkyanaliz.com/Files/docs/gunluk-strateji-bulteni-1795586482.pdf"
-  },
-  "6b067ad2be0e554ba40e27e4": {
-   "title": "ANALİZ- Günlük Bülten (ICBC Yatırım)",
-   "broker": "ICBC Yatırım",
-   "date": "2026-11-25T09:06",
-   "url": "https://www.foreks.com/haber/detay/6b067ad2be0e554ba40e27e4/FRKS/tr/analiz-gunluk-bulten-icbc-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/OF2267B7AB.74EDEE07-ON43258EBA.00211915-43258EBA.0021348F%40tekstilbank.com.tr/GB%252025112026.pdf"
-  },
-  "6b067b004b18523914468c08": {
-   "title": "ANALİZ- Günlük Bülten (IKON Menkul)",
-   "broker": "İkon Menkul",
-   "date": "2026-11-25T09:06",
-   "url": "https://www.foreks.com/haber/detay/6b067b004b18523914468c08/FRKS/tr/analiz-gunluk-bulten-ikon-menkul-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/dee8fccfae3d439cacf41fda9d70b610_gunluk-bulten-25112026.pdf"
-  },
-  "6b067b13be0e554ba40e27e7": {
-   "title": "ANALİZ- Teknik Bülten (Şeker Yatırım)",
-   "broker": "Şeker Yatırım",
-   "date": "2026-11-25T09:07",
-   "url": "https://www.foreks.com/haber/detay/6b067b13be0e554ba40e27e7/FRKS/tr/analiz-teknik-bulten-seker-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/55edd84557f746888c305eed550b14af%40sekeryatirim.com.tr/tb-25.11.2026.pdf"
-  },
-  "6b067b59be0e554ba40e27e8": {
-   "title": "ANALİZ- Hisse Önerileri ve Günlük Bülten (PhillipCapital)",
-   "broker": "Phillip Capital",
-   "date": "2026-11-25T09:08",
-   "url": "https://www.foreks.com/haber/detay/6b067b59be0e554ba40e27e8/FRKS/tr/analiz-hisse-onerileri-ve-gunluk-bulten-phillipcapital-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/e1f908837b8445b1b8462724e7072d3b%40phillip.com.tr/PhillipCapital%2520Hisse%2520%25C3%2596nerileri%2520ve%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252025.11.2026.pdf"
-  },
-  "6b067bb9be0e554ba40e27f0": {
-   "title": "ANALİZ- BIST Seansı Öncesi Küresel Sektör Performansları (QNB Invest)",
-   "broker": "QNB Invest",
-   "date": "2026-11-25T09:10",
-   "url": "https://www.foreks.com/haber/detay/6b067bb9be0e554ba40e27f0/FRKS/tr/analiz-bist-seansi-oncesi-kuresel-sektor-performanslari-qnb-invest-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b067bdd95131d72027e3af3": {
-   "title": "ANALİZ- Günlük Bülten (Ziraat Yatırım)",
-   "broker": "Ziraat Yatırım",
-   "date": "2026-11-25T09:10",
-   "url": "https://www.foreks.com/haber/detay/6b067bdd95131d72027e3af3/FRKS/tr/analiz-gunluk-bulten-ziraat-yatirim-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b067c1395131d72027e3af4": {
-   "title": "ANALİZ- Günlük Bülten (Akbank)",
-   "broker": "Akbank",
-   "date": "2026-11-25T09:11",
-   "url": "https://www.foreks.com/haber/detay/6b067c1395131d72027e3af4/FRKS/tr/analiz-gunluk-bulten-akbank-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/a6b570aa3e6e43c283ed73431db68ed3%40akbank.com/20261125_Gunluk_Bulten--.pdf"
-  },
-  "6b067cab95131d72027e3af6": {
-   "title": "ANALİZ- Kurumsal Takas Değişimleri (QNB Invest)",
-   "broker": "QNB Invest",
-   "date": "2026-11-25T09:14",
-   "url": "https://www.foreks.com/haber/detay/6b067cab95131d72027e3af6/FRKS/tr/analiz-kurumsal-takas-degisimleri-qnb-invest-25-11-26/",
-   "codes": [],
-   "file": null
-  },
   "6b067ccb95131d72027e3af9": {
    "title": "ANALİZ- FX Bülten (InvestAZ Yatırım)",
    "broker": "InvestAZ Yatırım",
@@ -351,304 +101,6 @@
    "url": "https://www.foreks.com/haber/detay/6b067ccb95131d72027e3af9/FRKS/tr/analiz-fx-bulten-investaz-yatirim-25-11-26/",
    "codes": [],
    "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/5c33583f443a4d0f9a531ed8976120b6%40investaz.com.tr/FX%2520B%25C3%25BClten%2520-%252025.11.2026.pdf"
-  },
-  "6b067cfebe0e554ba40e27f9": {
-   "title": "ANALİZ- VİOP Bülten (InvestAZ Yatırım)",
-   "broker": "InvestAZ Yatırım",
-   "date": "2026-11-25T09:15",
-   "url": "https://www.foreks.com/haber/detay/6b067cfebe0e554ba40e27f9/FRKS/tr/analiz-viop-bulten-investaz-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/a0af3bf04486481daf91bdf3c30b110a_VOPBlten-25.11.2026.pdf"
-  },
-  "6b067d9bbe0e554ba40e27fc": {
-   "title": "ANALİZ- Teknik Analiz Bülteni (Anadolu Yatırım)",
-   "broker": "Anadolu Yatırım",
-   "date": "2026-11-25T09:18",
-   "url": "https://www.foreks.com/haber/detay/6b067d9bbe0e554ba40e27fc/FRKS/tr/analiz-teknik-analiz-bulteni-anadolu-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/1178860c580040ec9d622b41ee0f19e2%40anadoluyatirim.com.tr/Teknik%2520B%25C3%25BClten%252025112026.pdf"
-  },
-  "6b067e354b18523914468c1a": {
-   "title": "ANALİZ- Uluslararası Piyasalar Bülteni (QNB Invest)",
-   "broker": "QNB Invest",
-   "date": "2026-11-25T09:20",
-   "url": "https://www.foreks.com/haber/detay/6b067e354b18523914468c1a/FRKS/tr/analiz-uluslararasi-piyasalar-bulteni-qnb-invest-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b067e5d4b18523914468c1c": {
-   "title": "ANALİZ- Piyasalara Analitik Bakış (Bizim Menkul)",
-   "broker": "Bizim Menkul",
-   "date": "2026-11-25T09:21",
-   "url": "https://www.foreks.com/haber/detay/6b067e5d4b18523914468c1c/FRKS/tr/analiz-piyasalara-analitik-bakis-bizim-menkul-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/ffb2a5425f634602a0d03312bae69b34_PiyasalaraAnalitikBak25.11.2026.pdf"
-  },
-  "6b067e8e4b18523914468c1e": {
-   "title": "ANALİZ- Günlük Bülten (Kuzey Menkul Değerler)",
-   "broker": "Kuzey Menkul Değerler",
-   "date": "2026-11-25T09:22",
-   "url": "https://www.foreks.com/haber/detay/6b067e8e4b18523914468c1e/FRKS/tr/analiz-gunluk-bulten-kuzey-menkul-degerler-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/d5fadf9ccf8d420aa308db1c198a3ba1_25112026gunlukbulten.pdf"
-  },
-  "6b067edfbe0e554ba40e280b": {
-   "title": "ANALİZ- Uluslararası Piyasalar Günlük Bülten (Burgan Yatırım)",
-   "broker": "Burgan Yatırım",
-   "date": "2026-11-25T09:23",
-   "url": "https://www.foreks.com/haber/detay/6b067edfbe0e554ba40e280b/FRKS/tr/analiz-uluslararasi-piyasalar-gunluk-bulten-burgan-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/cb3bd4189d83467d8054ecaab003373b_UluslararasPiyasalarGnlkBlten-25Kasm2026..pdf"
-  },
-  "6b067f23be0e554ba40e280c": {
-   "title": "ANALİZ- Günlük Bülten (Global Menkul)",
-   "broker": "Global Menkul",
-   "date": "2026-11-25T09:24",
-   "url": "https://www.foreks.com/haber/detay/6b067f23be0e554ba40e280c/FRKS/tr/analiz-gunluk-bulten-global-menkul-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/08a50605be41472ca679ad7c0db5c6d5_ede49a2135be4356b246a2a3e6314c9d.pdf"
-  },
-  "6b067f54be0e554ba40e280f": {
-   "title": "ANALİZ- KAP Bülteni (Anadolu Yatırım)",
-   "broker": "Anadolu Yatırım",
-   "date": "2026-11-25T09:25",
-   "url": "https://www.foreks.com/haber/detay/6b067f54be0e554ba40e280f/FRKS/tr/analiz-kap-bulteni-anadolu-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/38e83c40c6a946b8a6c383e5c08a2a14_KAPBulteni23112026.pdf"
-  },
-  "6b067fb8be0e554ba40e2810": {
-   "title": "ANALİZ- VİOP Teknik Bülten (Ata Yatırım)",
-   "broker": "Ata Yatırım",
-   "date": "2026-11-25T09:27",
-   "url": "https://www.foreks.com/haber/detay/6b067fb8be0e554ba40e2810/FRKS/tr/analiz-viop-teknik-bulten-ata-yatirim-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b068043be0e554ba40e281a": {
-   "title": "ANALİZ- Dünya Borsaları (QNB Invest)",
-   "broker": "QNB Invest",
-   "date": "2026-11-25T09:29",
-   "url": "https://www.foreks.com/haber/detay/6b068043be0e554ba40e281a/FRKS/tr/analiz-dunya-borsalari-qnb-invest-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b0680a595131d72027e3b14": {
-   "title": "ANALİZ- BIST Günlük Bülten (İntegral Yatırım)",
-   "broker": "İntegral Yatırım",
-   "date": "2026-11-25T09:31",
-   "url": "https://www.foreks.com/haber/detay/6b0680a595131d72027e3b14/FRKS/tr/analiz-bist-gunluk-bulten-integral-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/c877f729e3c44105acea80704577fa5a_integralyatirimgunlukbulten23112026.pdf"
-  },
-  "6b06816d95131d72027e3b1b": {
-   "title": "ANALİZ- Fx Bülten (Şeker Yatırım)",
-   "broker": "Şeker Yatırım",
-   "date": "2026-11-25T09:34",
-   "url": "https://www.foreks.com/haber/detay/6b06816d95131d72027e3b1b/FRKS/tr/analiz-fx-bulten-seker-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/72be4cb860db474bb25db5872b607fab%40sekeryatirim.com.tr/sekerfxgb261125.pdf"
-  },
-  "6b0681c14b18523914468c41": {
-   "title": "ANALİZ- Teknik Analiz/Hisse Senedi Önerisi - ULKER \"AL\" (Yapı Kredi Yatırım)",
-   "broker": "Yapı Kredi Yatırım",
-   "date": "2026-11-25T09:35",
-   "url": "https://www.foreks.com/haber/detay/6b0681c14b18523914468c41/FRKS/tr/analiz-teknik-analiz-hisse-senedi-onerisi-ulker-al-yapi-kredi-yatirim-25-11-26/",
-   "codes": [
-    "ULKER"
-   ],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/8971128888254146a5839eadc908259d_bd8adddc-53c9-46d8-ba38-336541be7b7a.pdf"
-  },
-  "6b0681dabe0e554ba40e2828": {
-   "title": "ANALİZ- Gündem Bülteni (TSKB)",
-   "broker": "TSKB",
-   "date": "2026-11-25T09:36",
-   "url": "https://www.foreks.com/haber/detay/6b0681dabe0e554ba40e2828/FRKS/tr/analiz-gundem-bulteni-tskb-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b06823e95131d72027e3b22": {
-   "title": "ANALİZ- Günlük Hisse Senedi Piyasası Görünümü (Ak Yatırım)",
-   "broker": "Ak Yatırım",
-   "date": "2026-11-25T09:37",
-   "url": "https://www.foreks.com/haber/detay/6b06823e95131d72027e3b22/FRKS/tr/analiz-gunluk-hisse-senedi-piyasasi-gorunumu-ak-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/790edba7852947e290ea7dee428b5a9d%40akbank.com/20261125_Hisse%2520G%25C3%25B6r%25C3%25BCn%25C3%25BCm%25C3%25BC.pdf"
-  },
-  "6b06824895131d72027e3b23": {
-   "title": "ANALİZ- Günlük Strateji Bülteni (Anadolu Yatırım)",
-   "broker": "Anadolu Yatırım",
-   "date": "2026-11-25T09:38",
-   "url": "https://www.foreks.com/haber/detay/6b06824895131d72027e3b23/FRKS/tr/analiz-gunluk-strateji-bulteni-anadolu-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/568e6137076d41fdb45c284f182cae01%40anadoluyatirim.com.tr/G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252025112026.pdf"
-  },
-  "6b068264be0e554ba40e282c": {
-   "title": "ANALİZ- Forex Bülteni (İnfo Yatırım)",
-   "broker": "İnfo Yatırım",
-   "date": "2026-11-25T09:38",
-   "url": "https://www.foreks.com/haber/detay/6b068264be0e554ba40e282c/FRKS/tr/analiz-forex-bulteni-info-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/6879dbff73d4480dba4394e361635a65_1a5f56c6-5dcf-4b06-ae98-c6ce0f1e3433.pdf"
-  },
-  "6b06827195131d72027e3b24": {
-   "title": "ANALİZ- BIST Günlük Bülten (İntegral Yatırım)",
-   "broker": "İntegral Yatırım",
-   "date": "2026-11-25T09:38",
-   "url": "https://www.foreks.com/haber/detay/6b06827195131d72027e3b24/FRKS/tr/analiz-bist-gunluk-bulten-integral-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/DB9PR05MB1023036C5C27668F809BDEC1090432%40DB9PR05MB10230.eurprd05.prod.outlook.com/integralyatirimgunlukbulten_25112026.pdf"
-  },
-  "6b0682944b18523914468c45": {
-   "title": "ANALİZ- Günlük Bülten (Yapı Kredi Yatırım)",
-   "broker": "Yapı Kredi Yatırım",
-   "date": "2026-11-25T09:39",
-   "url": "https://www.foreks.com/haber/detay/6b0682944b18523914468c45/FRKS/tr/analiz-gunluk-bulten-yapi-kredi-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/83d9b07ca50144b7bff6abf44731587a_63ff9818-47e9-4057-93ee-55f4c6862b661.pdf"
-  },
-  "6b06829c95131d72027e3b25": {
-   "title": "ANALİZ- Günlük Bülten (Fibayatırım)",
-   "broker": "Fiba Yatırım",
-   "date": "2026-11-25T09:39",
-   "url": "https://www.foreks.com/haber/detay/6b06829c95131d72027e3b25/FRKS/tr/analiz-gunluk-bulten-fibayatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/db13415f3d2f46358320c5b2b273bc9c%40fibayatirim.com.tr/Fiba%2520Yat%25C4%25B1r%25C4%25B1m-%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%2520-%252025.11.2026.pdf"
-  },
-  "6b068349be0e554ba40e2832": {
-   "title": "ANALİZ- Günlük Bülten (Tacirler Yatırım)",
-   "broker": "Tacirler Yatırım",
-   "date": "2026-11-25T09:42",
-   "url": "https://www.foreks.com/haber/detay/6b068349be0e554ba40e2832/FRKS/tr/analiz-gunluk-bulten-tacirler-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/30402df40a8c463d8470e079b103ce05_tacirler-gunluk-bulten-25-kasim-.pdf"
-  },
-  "6b06834ebe0e554ba40e2833": {
-   "title": "ANALİZ- BIST Teknik Takip Bülteni (Deniz Yatırım)",
-   "broker": "Deniz Yatırım",
-   "date": "2026-11-25T09:42",
-   "url": "https://www.foreks.com/haber/detay/6b06834ebe0e554ba40e2833/FRKS/tr/analiz-bist-teknik-takip-bulteni-deniz-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://www.denizyatirim.com/Uploads/Deniz_Yat_r_m_Strateji_ve_Ara_t_rma_BIST_Teknik_Takip_B_lteni_25.11.2026_15661.pdf"
-  },
-  "6b0683734b18523914468c4b": {
-   "title": "ANALİZ- Günlük Bülten (Deniz Yatırım)",
-   "broker": "Deniz Yatırım",
-   "date": "2026-11-25T09:42",
-   "url": "https://www.foreks.com/haber/detay/6b0683734b18523914468c4b/FRKS/tr/analiz-gunluk-bulten-deniz-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://www.denizyatirim.com/Uploads/Gunluk_Bulten_-_25.11.2026_15662.pdf"
-  },
-  "6b06849195131d72027e3b36": {
-   "title": "ANALİZ- Günlük Hazine Bülteni (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T09:47",
-   "url": "https://www.foreks.com/haber/detay/6b06849195131d72027e3b36/FRKS/tr/analiz-gunluk-hazine-bulteni-gedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/43fda8bda2764486bc40750997c95969_25112026.pdf"
-  },
-  "6b0684c34b18523914468c4f": {
-   "title": "ANALİZ- FX Fikirleri (Tacirler Yatırım)",
-   "broker": "Tacirler Yatırım",
-   "date": "2026-11-25T09:48",
-   "url": "https://www.foreks.com/haber/detay/6b0684c34b18523914468c4f/FRKS/tr/analiz-fx-fikirleri-tacirler-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/54329f4006b74d4299592f7f90a2fdf2_tacirler-fx-fikirleri-25-kasim.pdf"
-  },
-  "6b0684e6be0e554ba40e283b": {
-   "title": "ANALİZ-Devlet iç Borçlanma Senetleri Bülteni(Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T09:49",
-   "url": "https://www.foreks.com/haber/detay/6b0684e6be0e554ba40e283b/FRKS/tr/analiz-devlet-ic-borclanma-senetleri-bultenigedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/56bcd78afc4d404085b41f15e5022488_DIBSBulten25112026192df31b.pdf"
-  },
-  "6b06850fbe0e554ba40e283d": {
-   "title": "ANALİZ- Özel Sektör Borçlanma Araçları Fiyat Bülteni (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T09:49",
-   "url": "https://www.foreks.com/haber/detay/6b06850fbe0e554ba40e283d/FRKS/tr/analiz-ozel-sektor-borclanma-araclari-fiyat-bulteni-gedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/0999976ec88d4579969389864f913c6e_OSTBulten-2511202639282b4f.pdf"
-  },
-  "6b0685304b18523914468c51": {
-   "title": "ANALİZ- Eurobond Fiyat Bülteni (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T09:50",
-   "url": "https://www.foreks.com/haber/detay/6b0685304b18523914468c51/FRKS/tr/analiz-eurobond-fiyat-bulteni-gedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/6bcd88e84cac42fb87852c904de7a908_EurobondBulten25112675877b04.pdf"
-  },
-  "6b06856495131d72027e3b38": {
-   "title": "ANALİZ- Günlük Bülten (Fiba Yatırım)",
-   "broker": "Fiba Yatırım",
-   "date": "2026-11-25T09:51",
-   "url": "https://www.foreks.com/haber/detay/6b06856495131d72027e3b38/FRKS/tr/analiz-gunluk-bulten-fiba-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/2e9b9040963c415c98374c6f01731455_FibaYatrm-GnlkBlten-25.11.2026.pdf"
-  },
-  "6b0685bd95131d72027e3b3a": {
-   "title": "ANALİZ- Teknik Görünüm Raporu (İş Yatırım)",
-   "broker": "İş Yatırım",
-   "date": "2026-11-25T09:52",
-   "url": "https://www.foreks.com/haber/detay/6b0685bd95131d72027e3b3a/FRKS/tr/analiz-teknik-gorunum-raporu-is-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/0292693c62bb4b9e82f450989b46235a_Teknik-Gorunum25112026-1.pdf"
-  },
-  "6b06860abe0e554ba40e284a": {
-   "title": "ANALİZ- Sermaye Artırımları/Azaltımları ve Temettü Ödemeleri İş Yatırım)",
-   "broker": null,
-   "date": "2026-11-25T09:54",
-   "url": "https://www.foreks.com/haber/detay/6b06860abe0e554ba40e284a/FRKS/tr/analiz-sermaye-artirimlari-azaltimlari-ve-temettu-odemeleri-is-yatirim-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b06867495131d72027e3b45": {
-   "title": "ANALİZ- Teknik Destek Direnç Tablosu (OYAK Yatırım)",
-   "broker": "OYAK Yatırım",
-   "date": "2026-11-25T09:55",
-   "url": "https://www.foreks.com/haber/detay/6b06867495131d72027e3b45/FRKS/tr/analiz-teknik-destek-direnc-tablosu-oyak-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/f7e68f6d64f6454eb185a556667bdf73_teknikdestekdirentablosu20261125.pdf"
-  },
-  "6b06868e4b18523914468c5e": {
-   "title": "ANALİZ- Teknik Bülten (OYAK Yatırım)",
-   "broker": "OYAK Yatırım",
-   "date": "2026-11-25T09:56",
-   "url": "https://www.foreks.com/haber/detay/6b06868e4b18523914468c5e/FRKS/tr/analiz-teknik-bulten-oyak-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/01835255a6e74df7924d93a5c3c9e9f4_teknikbulten20261125.pdf"
-  },
-  "6b06869c4b18523914468c5f": {
-   "title": "ANALİZ- Hazine Bülteni (OYAK Yatırım)",
-   "broker": "OYAK Yatırım",
-   "date": "2026-11-25T09:56",
-   "url": "https://www.foreks.com/haber/detay/6b06869c4b18523914468c5f/FRKS/tr/analiz-hazine-bulteni-oyak-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/e577fe3360474194907823646060e4a2_hazine-bulteni--251126.pdf"
-  },
-  "6b0686b8be0e554ba40e2850": {
-   "title": "ANALİZ- Günlük Bülten (OYAK Yatırım)",
-   "broker": "OYAK Yatırım",
-   "date": "2026-11-25T09:56",
-   "url": "https://www.foreks.com/haber/detay/6b0686b8be0e554ba40e2850/FRKS/tr/analiz-gunluk-bulten-oyak-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/3a2896b7a0334fc98114742c34702b7d_gunlukbulten20261125.pdf"
-  },
-  "6b0687534b18523914468c62": {
-   "title": "ANALİZ- Günlük Bülten (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T09:59",
-   "url": "https://www.foreks.com/haber/detay/6b0687534b18523914468c62/FRKS/tr/analiz-gunluk-bulten-gedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/97fd338a9a0e4556bec3eee59a111e39_GunlukBulten251120263ea4ff4f.pdf"
-  },
-  "6b0687a6be0e554ba40e2862": {
-   "title": "ANALİZ- Günlük Öneri, Destek Direnç Tablosu ve Yabancı Takas Raporu (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T10:00",
-   "url": "https://www.foreks.com/haber/detay/6b0687a6be0e554ba40e2862/FRKS/tr/analiz-gunluk-oneri-destek-direnc-tablosu-ve-yabanci-takas-raporu-gedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/045f50f884f94a4d863395391d2bd347_BIST100DestekDirencOneri251120267170b47c.pdf"
   },
   "6b0687c695131d72027e3b58": {
    "title": "ANALİZ- Forex Bülteni (İntegral Yatırım)",
@@ -666,54 +118,6 @@
    "codes": [],
    "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/ea0ba2ea3e934a248c4eaa0993186962%40anadoluyatirim.com.tr/FX%2520B%25C3%25BClteni%252025112026.pdf"
   },
-  "6b0688934b18523914468c81": {
-   "title": "ANALİZ- BIST-100 ve Yıldız Pazar Teknik Göstergeleri (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T10:04",
-   "url": "https://www.foreks.com/haber/detay/6b0688934b18523914468c81/FRKS/tr/analiz-bist-100-ve-yildiz-pazar-teknik-gostergeleri-gedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/bfd6b5fca0754589b1c29722edabaf4e_GedikBIST100YildizPazarTeknikGostergeler2510c530da5.pdf"
-  },
-  "6b068aed95131d72027e3b8e": {
-   "title": "ANALİZ- FX Bülteni (Ziraat Yatırım)",
-   "broker": "Ziraat Yatırım",
-   "date": "2026-11-25T10:14",
-   "url": "https://www.foreks.com/haber/detay/6b068aed95131d72027e3b8e/FRKS/tr/analiz-fx-bulteni-ziraat-yatirim-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b068b43be0e554ba40e288f": {
-   "title": "ANALİZ- Uluslararası Piyasalar Bülteni (İnfo Yatırım)",
-   "broker": "İnfo Yatırım",
-   "date": "2026-11-25T10:16",
-   "url": "https://www.foreks.com/haber/detay/6b068b43be0e554ba40e288f/FRKS/tr/analiz-uluslararasi-piyasalar-bulteni-info-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/9bbcee14970f4ed88c348bfb0d5eae86_7c86505c-58bd-4b6d-9704-6af88adad9c4.pdf"
-  },
-  "6b068b56be0e554ba40e2890": {
-   "title": "ANALİZ- Günlük FX Bülteni (İnfo Yatırım)",
-   "broker": "İnfo Yatırım",
-   "date": "2026-11-25T10:16",
-   "url": "https://www.foreks.com/haber/detay/6b068b56be0e554ba40e2890/FRKS/tr/analiz-gunluk-fx-bulteni-info-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/2bd79463688546f6bfed47f8dae94110%40infoyatirim.com.tr/ForexBulten%252025.11.2026.pdf"
-  },
-  "6b068b73be0e554ba40e2891": {
-   "title": "ANALİZ- Piyasa Günlüğü (İş Bankası)",
-   "broker": "İş Bankası",
-   "date": "2026-11-25T10:17",
-   "url": "https://www.foreks.com/haber/detay/6b068b73be0e554ba40e2891/FRKS/tr/analiz-piyasa-gunlugu-is-bankasi-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/c6d8c42feee2414dbec0823a4b1a9846_25-kasim-2026..pdf"
-  },
-  "6b068c2995131d72027e3ba6": {
-   "title": "ANALİZ- Uluslararası Piyasalar Bülteni (Deniz Yatırım)",
-   "broker": "Deniz Yatırım",
-   "date": "2026-11-25T10:20",
-   "url": "https://www.foreks.com/haber/detay/6b068c2995131d72027e3ba6/FRKS/tr/analiz-uluslararasi-piyasalar-bulteni-deniz-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://www.denizyatirim.com/Uploads/25_Kas_m_2026_Uluslararas__Piyasalar_B_lteni_15664.pdf"
-  },
   "6b068d864b18523914468cb4": {
    "title": "ANALİZ- Günlük Forex Bülteni (Gedik Yatırım)",
    "broker": "Gedik Yatırım",
@@ -721,14 +125,6 @@
    "url": "https://www.foreks.com/haber/detay/6b068d864b18523914468cb4/FRKS/tr/analiz-gunluk-forex-bulteni-gedik-yatirim-25-11-26/",
    "codes": [],
    "file": "https://news-files.foreks.com/attachment/2026-11-25/b99378af68644581a80d3b3f55066a17_FXBulten2511202636aa2133.pdf"
-  },
-  "6b068dac95131d72027e3bbb": {
-   "title": "ANALİZ- Piyasa Günlüğü (İş Bankası)",
-   "broker": "İş Bankası",
-   "date": "2026-11-25T10:26",
-   "url": "https://www.foreks.com/haber/detay/6b068dac95131d72027e3bbb/FRKS/tr/analiz-piyasa-gunlugu-is-bankasi-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/24414bb784554055aaa1b3de26330d62_25-kasim-2026..pdf"
   },
   "6b068e79be0e554ba40e28ae": {
    "title": "ANALİZ- Forex Bülteni (QNB Invest)",
@@ -738,14 +134,6 @@
    "codes": [],
    "file": null
   },
-  "6b068ea3be0e554ba40e28b2": {
-   "title": "ANALİZ- Günlük Döviz Bülteni (Gold Para)",
-   "broker": "Gold Para",
-   "date": "2026-11-25T10:30",
-   "url": "https://www.foreks.com/haber/detay/6b068ea3be0e554ba40e28b2/FRKS/tr/analiz-gunluk-doviz-bulteni-gold-para-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/90fea94045f54bacb0e17826f9d7f790_GNLKDVZ6008.pdf"
-  },
   "6b068ebbbe0e554ba40e28b4": {
    "title": "ANALİZ- Günlük Altın Bülteni (Gold Para)",
    "broker": "Gold Para",
@@ -753,30 +141,6 @@
    "url": "https://www.foreks.com/haber/detay/6b068ebbbe0e554ba40e28b4/FRKS/tr/analiz-gunluk-altin-bulteni-gold-para-25-11-26/",
    "codes": [],
    "file": "https://news-files.foreks.com/attachment/2026-11-25/683418d93fa7419ca3fc61f7028f1516_GNLKALTIN6008.pdf"
-  },
-  "6b069314be0e554ba40e28da": {
-   "title": "ANALİZ- Günlük Bülten (NCM Investment)",
-   "broker": "NCM Investment",
-   "date": "2026-11-25T10:49",
-   "url": "https://www.foreks.com/haber/detay/6b069314be0e554ba40e28da/FRKS/tr/analiz-gunluk-bulten-ncm-investment-25-11-26/",
-   "codes": [],
-   "file": "https://bulten.ncminvest.com.tr/uploads/files/gunluk-bulten2026-11-25.pdf"
-  },
-  "6b0693bdbe0e554ba40e28de": {
-   "title": "ANALİZ- Hisse Senedi Bülteni (NCM Investment)",
-   "broker": "NCM Investment",
-   "date": "2026-11-25T10:52",
-   "url": "https://www.foreks.com/haber/detay/6b0693bdbe0e554ba40e28de/FRKS/tr/analiz-hisse-senedi-bulteni-ncm-investment-25-11-26/",
-   "codes": [],
-   "file": "https://bulten.ncminvest.com.tr/uploads/files/hisse-senedi-bulteni2026-11-25.pdf"
-  },
-  "6b06a80395131d72027e3c87": {
-   "title": "ANALİZ- Havacılık Sektör Raporu (Kuveyt Türk)",
-   "broker": "Kuveyt Türk Yatırım",
-   "date": "2026-11-25T12:18",
-   "url": "https://www.foreks.com/haber/detay/6b06a80395131d72027e3c87/FRKS/tr/analiz-havacilik-sektor-raporu-kuveyt-turk-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/cb930dde7ee246e1a03c3e1be7cac112%40kuveytturkyatirim.com.tr/Havac%25C4%25B1l%25C4%25B1k%2520Sekt%25C3%25B6r%2520Raporu%2520-%2520Ekim.pdf"
   },
   "6b06a8274b18523914468db0": {
    "title": "ANALİZ- Brent Petrol Görünümü (İntegral Yatırım)",
@@ -786,181 +150,823 @@
    "codes": [],
    "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/PA3PR05MB11654AF9F8F81270F4EA485BC9B432%40PA3PR05MB11654.eurprd05.prod.outlook.com/2027_Brent_Petrol_Gorunumu.pdf"
   },
-  "6b06c3eebe0e554ba40e2a7d": {
+  "6b07b40c95131d72027e46e0": {
+   "title": "ANALİZ- Foreks Bülteni (Destek Yatırım)",
+   "broker": "Destek Yatırım",
+   "date": "2026-11-26T07:22",
+   "url": "https://www.foreks.com/haber/detay/6b07b40c95131d72027e46e0/FRKS/tr/analiz-foreks-bulteni-destek-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/b5587793235b4daabea2d3ab6b28da83_GYQG8dWFTihdtGYa3tW1WWfRl5DWtkXMase5m1ch.pdf"
+  },
+  "6b07b5fc95131d72027e46e9": {
+   "title": "ANALİZ- Temettülerin Endekse Puansal Bazda Etkisi (İnfo Yatırım)",
+   "broker": "İnfo Yatırım",
+   "date": "2026-11-26T07:30",
+   "url": "https://www.foreks.com/haber/detay/6b07b5fc95131d72027e46e9/FRKS/tr/analiz-temettulerin-endekse-puansal-bazda-etkisi-info-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07bbc495131d72027e4715": {
+   "title": "ANALİZ- Teknik Bülten (Ziraat Yatırım)",
+   "broker": "Ziraat Yatırım",
+   "date": "2026-11-26T07:55",
+   "url": "https://www.foreks.com/haber/detay/6b07bbc495131d72027e4715/FRKS/tr/analiz-teknik-bulten-ziraat-yatirim-26-11-26/",
+   "codes": [],
+   "file": "http://lb.ziraatyatirim.com.tr/eu/c/tq/687AE0E6BE4741B9B49EEB2C4B1880E1/3bb38cd86f850307952fef5905f202cf/?i=25da073187616bcdd725c15e9e172549275e10d9b00797c271fb9a056589d15de2b890363b3622cda3c3c06b8f65f5afeb65b547c7e5f8a489b097e357d9a1fa0b391fba25475cc8cef0041a9aad5d4c13cda32728e25f378ac070b57e615758"
+  },
+  "6b07bfd895131d72027e4720": {
+   "title": "ANALİZ- Yurt Dışı Sabah Teknik Analiz Bülteni (IKON Menkul)",
+   "broker": "İkon Menkul",
+   "date": "2026-11-26T08:12",
+   "url": "https://www.foreks.com/haber/detay/6b07bfd895131d72027e4720/FRKS/tr/analiz-yurt-disi-sabah-teknik-analiz-bulteni-ikon-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.ikonmenkul.com.tr/storage/documents/research/ydstb-26112026.pdf"
+  },
+  "6b07bfe695131d72027e4722": {
+   "title": "ANALİZ- Günlük Piyasa Panoramasi (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T08:13",
+   "url": "https://www.foreks.com/haber/detay/6b07bfe695131d72027e4722/FRKS/tr/analiz-gunluk-piyasa-panoramasi-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179566959286.979292.374636201933180924%40ahlatciyatirim.com.tr/Gunluk%2520Piyasa%2520Panoramasi%252026.11.2026.pdf"
+  },
+  "6b07c00695131d72027e4723": {
+   "title": "ANALİZ- BIST Pay Geri Alımları (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T08:13",
+   "url": "https://www.foreks.com/haber/detay/6b07c00695131d72027e4723/FRKS/tr/analiz-bist-pay-geri-alimlari-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179566925753.979293.17001301626582326562%40ahlatciyatirim.com.tr/BIST%2520Pay%2520Geri%2520Alimlari%2520-%252026.11.2026.pdf"
+  },
+  "6b07c1cd4b18523914469829": {
+   "title": "ANALİZ- Forex Bülteni (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T08:21",
+   "url": "https://www.foreks.com/haber/detay/6b07c1cd4b18523914469829/FRKS/tr/analiz-forex-bulteni-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179567010048.979295.883709577844024936%40ahlatciyatirim.com.tr/Forex%2520Bulteni%2520-%252026.11.2026.pdf"
+  },
+  "6b07c1ec95131d72027e472c": {
+   "title": "ANALİZ- Yurt Dışı Sabah Bülteni (IKON Menkul)",
+   "broker": "İkon Menkul",
+   "date": "2026-11-26T08:21",
+   "url": "https://www.foreks.com/haber/detay/6b07c1ec95131d72027e472c/FRKS/tr/analiz-yurt-disi-sabah-bulteni-ikon-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.ikonmenkul.com.tr/storage/documents/research/ydsb-26112026.pdf"
+  },
+  "6b07c20c4b1852391446982a": {
+   "title": "ANALİZ- Forex Bülteni (İnfo Yatırım)",
+   "broker": "İnfo Yatırım",
+   "date": "2026-11-26T08:22",
+   "url": "https://www.foreks.com/haber/detay/6b07c20c4b1852391446982a/FRKS/tr/analiz-forex-bulteni-info-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07c23f4b1852391446982b": {
+   "title": "ANALİZ- Teknik Bülten (Kuveyt Türk)",
+   "broker": "Kuveyt Türk Yatırım",
+   "date": "2026-11-26T08:23",
+   "url": "https://www.foreks.com/haber/detay/6b07c23f4b1852391446982b/FRKS/tr/analiz-teknik-bulten-kuveyt-turk-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/5c255388bc05454e9c847e8ad2005633_teknik-buelten26112026.pdf"
+  },
+  "6b07c2c595131d72027e472f": {
+   "title": "ANALİZ- Teknik Bülten (Burgan Yatırım)",
+   "broker": "Burgan Yatırım",
+   "date": "2026-11-26T08:25",
+   "url": "https://www.foreks.com/haber/detay/6b07c2c595131d72027e472f/FRKS/tr/analiz-teknik-bulten-burgan-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/da1d7fab57a542e4b725478eda1241f7%40burganyatirim.com.tr/Teknik%2520B%25C3%25BClten%252026.11.2026.pdf"
+  },
+  "6b07c2dd4b1852391446982e": {
+   "title": "ANALİZ- Uluslararası Piyasalar Bülteni (İnfo Yatırım)",
+   "broker": "İnfo Yatırım",
+   "date": "2026-11-26T08:25",
+   "url": "https://www.foreks.com/haber/detay/6b07c2dd4b1852391446982e/FRKS/tr/analiz-uluslararasi-piyasalar-bulteni-info-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07c3504b18523914469831": {
+   "title": "ANALİZ- Günlük Piyasa Panoraması (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T08:27",
+   "url": "https://www.foreks.com/haber/detay/6b07c3504b18523914469831/FRKS/tr/analiz-gunluk-piyasa-panoramasi-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/a610341424974f4fb6660a4949ef75a4_GunlukPiyasaPanoramasi26.11.2026.pdf"
+  },
+  "6b07c54195131d72027e473e": {
+   "title": "ANALİZ- Piyasalarda Bugün (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T08:36",
+   "url": "https://www.foreks.com/haber/detay/6b07c54195131d72027e473e/FRKS/tr/analiz-piyasalarda-bugun-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179567107204.979293.16000172809694485042%40ahlatciyatirim.com.tr/Piyasalarda%2520Bugun%2520-%252026.11.2026.pdf"
+  },
+  "6b07c62295131d72027e473f": {
+   "title": "ANALİZ- Piyasalarda Bugün (QNB Invest)",
+   "broker": "QNB Invest",
+   "date": "2026-11-26T08:39",
+   "url": "https://www.foreks.com/haber/detay/6b07c62295131d72027e473f/FRKS/tr/analiz-piyasalarda-bugun-qnb-invest-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07c7f74b18523914469843": {
+   "title": "ANALİZ- Günlük Bülten (A1 Capital)",
+   "broker": "A1 Capital",
+   "date": "2026-11-26T08:47",
+   "url": "https://www.foreks.com/haber/detay/6b07c7f74b18523914469843/FRKS/tr/analiz-gunluk-bulten-a1-capital-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/aa0502947b1a49daa42b41451630f000_26KASIMGNLKBLTEN.PDF"
+  },
+  "6b07c80e95131d72027e4743": {
+   "title": "ANALİZ- Teknik Bülten (Allbatross Yatırım)",
+   "broker": "Allbatross Yatırım",
+   "date": "2026-11-26T08:47",
+   "url": "https://www.foreks.com/haber/detay/6b07c80e95131d72027e4743/FRKS/tr/analiz-teknik-bulten-allbatross-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/01f871562cde48329bade85526f888f9%40allbatrossyatirim.com/26%2520Kas%25C4%25B1m%2520Teknik%2520B%25C3%25BClten.pdf"
+  },
+  "6b07c81a4b18523914469845": {
+   "title": "ANALİZ- Günlük Bülten (Allbatross Yatırım)",
+   "broker": "Allbatross Yatırım",
+   "date": "2026-11-26T08:48",
+   "url": "https://www.foreks.com/haber/detay/6b07c81a4b18523914469845/FRKS/tr/analiz-gunluk-bulten-allbatross-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/d0bb9e042c924231b7425c98d805af0f%40allbatrossyatirim.com/26%2520Kas%25C4%25B1m%25202026%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten.pdf"
+  },
+  "6b07c92995131d72027e4745": {
+   "title": "ANALİZ- Günlük Piyasa Bülteni (İktisatbank)",
+   "broker": "İktisatbank",
+   "date": "2026-11-26T08:52",
+   "url": "https://www.foreks.com/haber/detay/6b07c92995131d72027e4745/FRKS/tr/analiz-gunluk-piyasa-bulteni-iktisatbank-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07c93f95131d72027e4746": {
+   "title": "ANALİZ- Günlük Bülten (Başkent Menkul Değerler)",
+   "broker": "Başkent Menkul Değerler",
+   "date": "2026-11-26T08:53",
+   "url": "https://www.foreks.com/haber/detay/6b07c93f95131d72027e4746/FRKS/tr/analiz-gunluk-bulten-baskent-menkul-degerler-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07c9cc4b1852391446984a": {
+   "title": "ANALİZ- VİOP Bülteni (Gedik Yatırım)",
+   "broker": "Gedik Yatırım",
+   "date": "2026-11-26T08:55",
+   "url": "https://www.foreks.com/haber/detay/6b07c9cc4b1852391446984a/FRKS/tr/analiz-viop-bulteni-gedik-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/d37fe12e08fe4b838523b22a4a6703ba_VIOPBulten26112026c99d6ec3.pdf"
+  },
+  "6b07c9db4b1852391446984b": {
+   "title": "ANALİZ- Günlük Bülten (Ziraat Yatırım)",
+   "broker": "Ziraat Yatırım",
+   "date": "2026-11-26T08:55",
+   "url": "https://www.foreks.com/haber/detay/6b07c9db4b1852391446984b/FRKS/tr/analiz-gunluk-bulten-ziraat-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/2c7cfc2501f542fe8aef81f47b076e65_SS-26-11-2026.pdf"
+  },
+  "6b07ca364b1852391446984d": {
+   "title": "ANALİZ- Teknik Görünüm Raporu (İş Yatırım)",
+   "broker": "İş Yatırım",
+   "date": "2026-11-26T08:57",
+   "url": "https://www.foreks.com/haber/detay/6b07ca364b1852391446984d/FRKS/tr/analiz-teknik-gorunum-raporu-is-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/8716134fcc79432895c8e295580c910d_Teknik-Gorunum26112026.pdf"
+  },
+  "6b07ca8d4b18523914469850": {
+   "title": "ANALİZ- Günlük Bülten (ICBC Yatırım)",
+   "broker": "ICBC Yatırım",
+   "date": "2026-11-26T08:58",
+   "url": "https://www.foreks.com/haber/detay/6b07ca8d4b18523914469850/FRKS/tr/analiz-gunluk-bulten-icbc-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/OF48A56F47.419E1B68-ON43258EBB.002035D6-43258EBB.00206914%40tekstilbank.com.tr/GB%252026112026.pdf"
+  },
+  "6b07cc6ca1097b6178f428a9": {
+   "title": "ANALİZ- Ekonomi Güncesi (Albaraka Türk)",
+   "broker": "Albaraka Türk",
+   "date": "2026-11-26T09:06",
+   "url": "https://www.foreks.com/haber/detay/6b07cc6ca1097b6178f428a9/FRKS/tr/analiz-ekonomi-guncesi-albaraka-turk-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/5e7e55e440234b2ea7db2b9974631a89_pdf0EkonomiGncesi-26Kasm2026.pdf"
+  },
+  "6b07cd1c95131d72027e475d": {
+   "title": "ANALİZ- Forex Bülteni (QNB Invest)",
+   "broker": "QNB Invest",
+   "date": "2026-11-26T09:09",
+   "url": "https://www.foreks.com/haber/detay/6b07cd1c95131d72027e475d/FRKS/tr/analiz-forex-bulteni-qnb-invest-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07cd4a95131d72027e475f": {
+   "title": "ANALİZ- Günlük Bülten (Akbank)",
+   "broker": "Akbank",
+   "date": "2026-11-26T09:10",
+   "url": "https://www.foreks.com/haber/detay/6b07cd4a95131d72027e475f/FRKS/tr/analiz-gunluk-bulten-akbank-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/1cac2d1ce5464f10912d26cf1c02e07f%40akbank.com/20261126_Gunluk_Bulten--.pdf"
+  },
+  "6b07cd894b18523914469866": {
+   "title": "ANALİZ- Teknik Bülten (Şeker Yatırım)",
+   "broker": "Şeker Yatırım",
+   "date": "2026-11-26T09:11",
+   "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/email-rapor/2026-11-26/b5ac2e2ab77d-tb-26.11.2026.pdf"
+  },
+  "6b07cd9495131d72027e4762": {
+   "title": "ANALİZ- Teknik Strateji Bülten (Vakıf Yatırım)",
+   "broker": "Vakıf Yatırım",
+   "date": "2026-11-26T09:11",
+   "url": "https://www.foreks.com/haber/detay/6b07cd9495131d72027e4762/FRKS/tr/analiz-teknik-strateji-bulten-vakif-yatirim-26-11-26/",
+   "codes": [],
+   "file": "http://vkyanaliz.com/Files/docs/teknik-strateji-bulteni-1795673251.pdf"
+  },
+  "6b07cda995131d72027e4764": {
+   "title": "ANALİZ- VİOP Bülten (Şeker Yatırım)",
+   "broker": "Şeker Yatırım",
+   "date": "2026-11-26T09:11",
+   "url": "https://www.foreks.com/haber/detay/6b07cda995131d72027e4764/FRKS/tr/analiz-viop-bulten-seker-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/924670e1e3494ca48c8c41f4274c2da2%40sekeryatirim.com.tr/viop-26.11.2026.pdf"
+  },
+  "6b07cdb595131d72027e4765": {
+   "title": "ANALİZ- BIST Seansı Öncesi Küresel Sektör Performansları (QNB Invest)",
+   "broker": "QNB Invest",
+   "date": "2026-11-26T09:12",
+   "url": "https://www.foreks.com/haber/detay/6b07cdb595131d72027e4765/FRKS/tr/analiz-bist-seansi-oncesi-kuresel-sektor-performanslari-qnb-invest-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07cde0a1097b6178f428b5": {
+   "title": "ANALİZ- Günlük Bülten (Şeker Yatırım)",
+   "broker": "Şeker Yatırım",
+   "date": "2026-11-26T09:12",
+   "url": "https://www.foreks.com/haber/detay/6b07cde0a1097b6178f428b5/FRKS/tr/analiz-gunluk-bulten-seker-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/e679cba8b9f342e9b1bf1ac2c84d7eac%40sekeryatirim.com.tr/gunluk-bulten-26.11.2026.pdf"
+  },
+  "6b07ce45a1097b6178f428ba": {
+   "title": "ANALİZ- Hisse Önerileri ve Günlük Bülten (PhillipCapital)",
+   "broker": "Phillip Capital",
+   "date": "2026-11-26T09:14",
+   "url": "https://www.foreks.com/haber/detay/6b07ce45a1097b6178f428ba/FRKS/tr/analiz-hisse-onerileri-ve-gunluk-bulten-phillipcapital-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/74e1b7f895ea4052ac0140d8d5bcf269%40phillip.com.tr/PhillipCapital%2520Hisse%2520%25C3%2596nerileri%2520ve%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252026.11.2026.pdf"
+  },
+  "6b07d0154b1852391446986e": {
+   "title": "ANALİZ- Teknik Analiz/Hisse Senedi Önerisi - TUPRS \"AL\" (Yapı Kredi Yatırım)",
+   "broker": "Yapı Kredi Yatırım",
+   "date": "2026-11-26T09:22",
+   "url": "https://www.foreks.com/haber/detay/6b07d0154b1852391446986e/FRKS/tr/analiz-teknik-analiz-hisse-senedi-onerisi-tuprs-al-yapi-kredi-yatirim-26-11-26/",
+   "codes": [
+    "TUPRS"
+   ],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/2fff2d4e39744cd09fb5aa0894a57757_1957461a-cec0-44d5-be84-a5fef8367529.pdf"
+  },
+  "6b07d03e4b1852391446986f": {
+   "title": "ANALİZ- Günlük Bülten (Global Menkul)",
+   "broker": "Global Menkul",
+   "date": "2026-11-26T09:22",
+   "url": "https://www.foreks.com/haber/detay/6b07d03e4b1852391446986f/FRKS/tr/analiz-gunluk-bulten-global-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.global.com.tr/docs/research/ae9017980f52430c8ffdbae732eb8b02.pdf"
+  },
+  "6b07d05d95131d72027e4774": {
+   "title": "ANALİZ- Günlük Bülten (IKON Menkul)",
+   "broker": "İkon Menkul",
+   "date": "2026-11-26T09:23",
+   "url": "https://www.foreks.com/haber/detay/6b07d05d95131d72027e4774/FRKS/tr/analiz-gunluk-bulten-ikon-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.ikonmenkul.com.tr/storage/documents/research/gunluk-bulten-26112026.pdf"
+  },
+  "6b07d07095131d72027e4775": {
+   "title": "ANALİZ- BIST Günlük Bülten (İntegral Yatırım)",
+   "broker": "İntegral Yatırım",
+   "date": "2026-11-26T09:23",
+   "url": "https://www.foreks.com/haber/detay/6b07d07095131d72027e4775/FRKS/tr/analiz-bist-gunluk-bulten-integral-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/GVXPR05MB110482EFD4277EF16ACC480CE95422%40GVXPR05MB11048.eurprd05.prod.outlook.com/integralyatirimgunlukbulten_26112026.pdf"
+  },
+  "6b07d07d4b18523914469870": {
+   "title": "ANALİZ- Teknik Bülteni (İnfo Yatırım)",
+   "broker": "İnfo Yatırım",
+   "date": "2026-11-26T09:23",
+   "url": "https://www.foreks.com/haber/detay/6b07d07d4b18523914469870/FRKS/tr/analiz-teknik-bulteni-info-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07d090a1097b6178f428c6": {
+   "title": "ANALİZ- VİOP Bülten (InvestAZ Yatırım)",
+   "broker": "InvestAZ Yatırım",
+   "date": "2026-11-26T09:24",
+   "url": "https://www.foreks.com/haber/detay/6b07d090a1097b6178f428c6/FRKS/tr/analiz-viop-bulten-investaz-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/9ab899157e914343a2f6e5ff3d359fe3%40investaz.com.tr/V%25C4%25B0OP%2520B%25C3%25BClten%2520-%252026.11.2026.pdf"
+  },
+  "6b07d0a695131d72027e4776": {
+   "title": "ANALİZ- Forex Bülteni (InvestAZ Yatırım)",
+   "broker": "InvestAZ Yatırım",
+   "date": "2026-11-26T09:24",
+   "url": "https://www.foreks.com/haber/detay/6b07d0a695131d72027e4776/FRKS/tr/analiz-forex-bulteni-investaz-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/0d1ae6026b954db8b75d0b55f5e97dce%40investaz.com.tr/FX%2520B%25C3%25BClten%2520-%252026.11.2026.pdf"
+  },
+  "6b07d12aa1097b6178f428ce": {
+   "title": "ANALİZ- Kurumsal Takas Değişimleri (QNB Invest)",
+   "broker": "QNB Invest",
+   "date": "2026-11-26T09:26",
+   "url": "https://www.foreks.com/haber/detay/6b07d12aa1097b6178f428ce/FRKS/tr/analiz-kurumsal-takas-degisimleri-qnb-invest-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07d158a1097b6178f428d0": {
+   "title": "ANALİZ- Forex Bülteni (İntegral Yatırım)",
+   "broker": "İntegral Yatırım",
+   "date": "2026-11-26T09:27",
+   "url": "https://www.foreks.com/haber/detay/6b07d158a1097b6178f428d0/FRKS/tr/analiz-forex-bulteni-integral-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/AS8PR05MB79123667253035EA36C9F98798422%40AS8PR05MB7912.eurprd05.prod.outlook.com/Forexbulten_26112026.pdf"
+  },
+  "6b07d19495131d72027e477b": {
+   "title": "ANALİZ- Uluslararası Piyasalar Günlük Bülten (Burgan Yatırım)",
+   "broker": "Burgan Yatırım",
+   "date": "2026-11-26T09:28",
+   "url": "https://www.foreks.com/haber/detay/6b07d19495131d72027e477b/FRKS/tr/analiz-uluslararasi-piyasalar-gunluk-bulten-burgan-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/6ca17f12149945ae896910b82caf94b3%40burganyatirim.com.tr/Uluslararas%25C4%25B1%2520Piyasalar%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%2520-%252026%2520Kas%25C4%25B1m%25202026.pdf"
+  },
+  "6b07d1de95131d72027e477c": {
+   "title": "ANALİZ- Günlük Bülten (Yapı Kredi Bankası)",
+   "broker": "Yapı Kredi Bankası",
+   "date": "2026-11-26T09:29",
+   "url": "https://www.foreks.com/haber/detay/6b07d1de95131d72027e477c/FRKS/tr/analiz-gunluk-bulten-yapi-kredi-bankasi-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/b07eab7662ec43659386629ef1fd3434_YatrmnGnlkRotas20261126.pdf"
+  },
+  "6b07d2564b18523914469873": {
+   "title": "ANALİZ- Yurt İçi Piyasalar Günlük Bülten (Burgan Yatırım)",
+   "broker": "Burgan Yatırım",
+   "date": "2026-11-26T09:31",
+   "url": "https://www.foreks.com/haber/detay/6b07d2564b18523914469873/FRKS/tr/analiz-yurt-ici-piyasalar-gunluk-bulten-burgan-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/e4ecdb6cddeb4341a40604ab0c95341b%40burganyatirim.com.tr/Yurt%2520%25C4%25B0%25C3%25A7i%2520Piyasalar%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252026.11.2026.pdf"
+  },
+  "6b07d2a0a1097b6178f428d8": {
+   "title": "ANALİZ- Günlük Bülten (Fiba Yatırım)",
+   "broker": "Fiba Yatırım",
+   "date": "2026-11-26T09:33",
+   "url": "https://www.foreks.com/haber/detay/6b07d2a0a1097b6178f428d8/FRKS/tr/analiz-gunluk-bulten-fiba-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/3571f451397049dcb01c4ee64bad36cf%40fibayatirim.com.tr/Fiba%2520Yat%25C4%25B1r%25C4%25B1m-%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%2520-%252026.11.2026.pdf"
+  },
+  "6b07d2c0a1097b6178f428d9": {
+   "title": "ANALİZ- Teknik Analiz Bülteni (Anadolu Yatırım)",
+   "broker": "Anadolu Yatırım",
+   "date": "2026-11-26T09:33",
+   "url": "https://www.foreks.com/haber/detay/6b07d2c0a1097b6178f428d9/FRKS/tr/analiz-teknik-analiz-bulteni-anadolu-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/dcd04bdd53ba4d819a68a557c10df484%40anadoluyatirim.com.tr/Teknik%2520B%25C3%25BClten%252026112026.pdf"
+  },
+  "6b07d2dca1097b6178f428db": {
+   "title": "ANALİZ- KAP Bülteni (Anadolu Yatırım)",
+   "broker": "Anadolu Yatırım",
+   "date": "2026-11-26T09:34",
+   "url": "https://www.foreks.com/haber/detay/6b07d2dca1097b6178f428db/FRKS/tr/analiz-kap-bulteni-anadolu-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/94c49cd73a7a4e0a92abe141c4d8de35%40anadoluyatirim.com.tr/KAP%2520Bulteni%252026112026.pdf"
+  },
+  "6b07d2fb95131d72027e4781": {
+   "title": "ANALİZ- Forex Bülten (Şeker Yatırım)",
+   "broker": "Şeker Yatırım",
+   "date": "2026-11-26T09:34",
+   "url": "https://www.foreks.com/haber/detay/6b07d2fb95131d72027e4781/FRKS/tr/analiz-forex-bulten-seker-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/e797f7af7d75469db50f7c695956eced%40sekeryatirim.com.tr/sekerfxgb261126.pdf"
+  },
+  "6b07d39f95131d72027e4783": {
+   "title": "ANALİZ- Hisse Senedi Bülten (NCM Investment)",
+   "broker": "NCM Investment",
+   "date": "2026-11-26T09:37",
+   "url": "https://www.foreks.com/haber/detay/6b07d39f95131d72027e4783/FRKS/tr/analiz-hisse-senedi-bulten-ncm-investment-26-11-26/",
+   "codes": [],
+   "file": "https://bulten.ncminvest.com.tr/uploads/files/hisse-senedi-bulteni2026-11-26.pdf"
+  },
+  "6b07d3a34b1852391446987a": {
+   "title": "ANALİZ- Günlük Bülten (NCM Investment)",
+   "broker": "NCM Investment",
+   "date": "2026-11-26T09:37",
+   "url": "https://www.foreks.com/haber/detay/6b07d3a34b1852391446987a/FRKS/tr/analiz-gunluk-bulten-ncm-investment-26-11-26/",
+   "codes": [],
+   "file": "https://bulten.ncminvest.com.tr/uploads/files/gunluk-bulten2026-11-26.pdf"
+  },
+  "6b07d3a9a1097b6178f428de": {
+   "title": "ANALİZ- FX Bülten (Şeker Yatırım)",
+   "broker": "Şeker Yatırım",
+   "date": "2026-11-26T09:37",
+   "url": "https://www.foreks.com/haber/detay/6b07d3a9a1097b6178f428de/FRKS/tr/analiz-fx-bulten-seker-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/email-rapor/2026-11-26/f1228bab05b8-sekerfxgb261126.pdf"
+  },
+  "6b07d3b14b1852391446987b": {
+   "title": "ANALİZ- Günlük Strateji Bülteni (Anadolu Yatırım)",
+   "broker": "Anadolu Yatırım",
+   "date": "2026-11-26T09:37",
+   "url": "https://www.foreks.com/haber/detay/6b07d3b14b1852391446987b/FRKS/tr/analiz-gunluk-strateji-bulteni-anadolu-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/75502ac0e7904a1f931111a37c97bd05%40anadoluyatirim.com.tr/G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252026112026.pdf"
+  },
+  "6b07d3e44b1852391446987c": {
+   "title": "ANALİZ- Günlük Bülten (Tacirler Yatırım)",
+   "broker": "Tacirler Yatırım",
+   "date": "2026-11-26T09:38",
+   "url": "https://www.foreks.com/haber/detay/6b07d3e44b1852391446987c/FRKS/tr/analiz-gunluk-bulten-tacirler-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/99312da7300541a586b03fb031f523d5_tacirler-gunluk-bulten-26-kasim-.pdf"
+  },
+  "6b07d3f395131d72027e4785": {
+   "title": "ANALİZ- Günlük Hazine Bülteni (Gedik Yatırım)",
+   "broker": "Gedik Yatırım",
+   "date": "2026-11-26T09:38",
+   "url": "https://www.foreks.com/haber/detay/6b07d3f395131d72027e4785/FRKS/tr/analiz-gunluk-hazine-bulteni-gedik-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/341e1469dfb747eebd84b412a70870cc_26112026.pdf"
+  },
+  "6b07d53095131d72027e4789": {
+   "title": "ANALİZ- Günlük Hisse Senedi Piyasası Görünümü (Ak Yatırım)",
+   "broker": "Ak Yatırım",
+   "date": "2026-11-26T09:44",
+   "url": "https://www.foreks.com/haber/detay/6b07d53095131d72027e4789/FRKS/tr/analiz-gunluk-hisse-senedi-piyasasi-gorunumu-ak-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/2e827a25cb8b41c59984cb3ef7a40046%40akbank.com/20261126_Hisse%2520G%25C3%25B6r%25C3%25BCn%25C3%25BCm%25C3%25BC.pdf"
+  },
+  "6b07d55595131d72027e478c": {
+   "title": "ANALİZ- Teknik Analiz Bülten (Piramit Menkul)",
+   "broker": "Piramit Menkul",
+   "date": "2026-11-26T09:44",
+   "url": "https://www.foreks.com/haber/detay/6b07d55595131d72027e478c/FRKS/tr/analiz-teknik-analiz-bulten-piramit-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.piramitmenkul.com.tr/Arastirma/ArastirmaRaporDosya/52598"
+  },
+  "6b07d56f95131d72027e478d": {
+   "title": "ANALİZ- Günlük Strateji Bülteni (Piramit Menkul)",
+   "broker": "Piramit Menkul",
+   "date": "2026-11-26T09:45",
+   "url": "https://www.foreks.com/haber/detay/6b07d56f95131d72027e478d/FRKS/tr/analiz-gunluk-strateji-bulteni-piramit-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/014501dd7d71%2402d01270%2408703750%24%40piramitmenkul.com.tr/G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252026.11.2026.pdf"
+  },
+  "6b07d57d4b18523914469883": {
+   "title": "ANALİZ- Gündem Bülteni (TSKB)",
+   "broker": "TSKB",
+   "date": "2026-11-26T09:45",
+   "url": "https://www.foreks.com/haber/detay/6b07d57d4b18523914469883/FRKS/tr/analiz-gundem-bulteni-tskb-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07d5ae95131d72027e4791": {
+   "title": "ANALİZ- Piyasalara Analitik Bakış (Bizim Menkul)",
+   "broker": "Bizim Menkul",
+   "date": "2026-11-26T09:46",
+   "url": "https://www.foreks.com/haber/detay/6b07d5ae95131d72027e4791/FRKS/tr/analiz-piyasalara-analitik-bakis-bizim-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.bmd.com.tr/application/files/6217/9567/5162/Piyasalara_Analitik_Bakis_26.11.2026.pdf"
+  },
+  "6b07d5d595131d72027e4792": {
+   "title": "ANALİZ- Teknik Analiz Bülteni (Piramit Menkul)",
+   "broker": "Piramit Menkul",
+   "date": "2026-11-26T09:46",
+   "url": "https://www.foreks.com/haber/detay/6b07d5d595131d72027e4792/FRKS/tr/analiz-teknik-analiz-bulteni-piramit-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/015601dd7d71%2422bfe240%24683fa6c0%24%40piramitmenkul.com.tr/Teknik%2520B%25C3%25BClten%252026.11.2026.pdf"
+  },
+  "6b07d607a1097b6178f428e3": {
+   "title": "ANALİZ- Forex Bülteni (Anadolu Yatırım)",
+   "broker": "Anadolu Yatırım",
+   "date": "2026-11-26T09:47",
+   "url": "https://www.foreks.com/haber/detay/6b07d607a1097b6178f428e3/FRKS/tr/analiz-forex-bulteni-anadolu-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/c4bada9be76c4a9da917d3eac2d7e804%40anadoluyatirim.com.tr/FX%2520B%25C3%25BClteni%252026112026.pdf"
+  },
+  "6b07d6254b18523914469889": {
+   "title": "ANALİZ- Uluslararası Piyasalar Bülteni (Deniz Yatırım)",
+   "broker": "Deniz Yatırım",
+   "date": "2026-11-26T09:48",
+   "url": "https://www.foreks.com/haber/detay/6b07d6254b18523914469889/FRKS/tr/analiz-uluslararasi-piyasalar-bulteni-deniz-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://www.denizyatirim.com/Uploads/26_Kas_m_2026_Uluslararas__Piyasalar_B_lteni_15671.pdf"
+  },
+  "6b07d66995131d72027e4796": {
+   "title": "ANALİZ- BIST Teknik Takip Bülteni (Deniz Yatırım)",
+   "broker": "Deniz Yatırım",
+   "date": "2026-11-26T09:49",
+   "url": "https://www.foreks.com/haber/detay/6b07d66995131d72027e4796/FRKS/tr/analiz-bist-teknik-takip-bulteni-deniz-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/1aa62411606c4def88920a3c0b9c3121_DenizYatrmStratejiveAratrmaBISTTeknikTakipBlteni26.11.202615672.pdf"
+  },
+  "6b07d69fa1097b6178f428e7": {
+   "title": "ANALİZ- Günlük Bülten (Ata Yatırım)",
+   "broker": "Ata Yatırım",
+   "date": "2026-11-26T09:50",
+   "url": "https://www.foreks.com/haber/detay/6b07d69fa1097b6178f428e7/FRKS/tr/analiz-gunluk-bulten-ata-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07d6b995131d72027e4799": {
+   "title": "ANALİZ- Günlük Bülten (Deniz Yatırım)",
+   "broker": "Deniz Yatırım",
+   "date": "2026-11-26T09:50",
+   "url": "https://www.foreks.com/haber/detay/6b07d6b995131d72027e4799/FRKS/tr/analiz-gunluk-bulten-deniz-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://www.denizyatirim.com/Uploads/Gunluk_Bulten_-_26.11.2026_15673.pdf"
+  },
+  "6b07d6c1a1097b6178f428e8": {
+   "title": "ANALİZ- Günlük Bülten (OYAK Yatırım)",
+   "broker": "OYAK Yatırım",
+   "date": "2026-11-26T09:50",
+   "url": "https://www.foreks.com/haber/detay/6b07d6c1a1097b6178f428e8/FRKS/tr/analiz-gunluk-bulten-oyak-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/d500540461094d77ae4001020bccaebd_gunlukbulten20261126.pdf"
+  },
+  "6b07d6ce4b18523914469890": {
+   "title": "ANALİZ- Hazine Bülteni (OYAK Yatırım)",
+   "broker": "OYAK Yatırım",
+   "date": "2026-11-26T09:50",
+   "url": "https://www.foreks.com/haber/detay/6b07d6ce4b18523914469890/FRKS/tr/analiz-hazine-bulteni-oyak-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/8bc71794aa284268a7b77a9fa9ea574f_hazine-bulteni--261126.pdf"
+  },
+  "6b07d6dfa1097b6178f428eb": {
+   "title": "ANALİZ- Teknik Bülten (OYAK Yatırım)",
+   "broker": "OYAK Yatırım",
+   "date": "2026-11-26T09:51",
+   "url": "https://www.foreks.com/haber/detay/6b07d6dfa1097b6178f428eb/FRKS/tr/analiz-teknik-bulten-oyak-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/ee4c09cdd51a4c37a859209a94517e52_teknikbulten20261126.pdf"
+  },
+  "6b07d6eb4b18523914469891": {
+   "title": "ANALİZ- Teknik Destek Direnç Tablosu (OYAK Yatırım)",
+   "broker": "OYAK Yatırım",
+   "date": "2026-11-26T09:51",
+   "url": "https://www.foreks.com/haber/detay/6b07d6eb4b18523914469891/FRKS/tr/analiz-teknik-destek-direnc-tablosu-oyak-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/95cffcadd58d4e1db76480070744600d_teknikdestekdirentablosu20261126.pdf"
+  },
+  "6b07d74d4b18523914469894": {
+   "title": "ANALİZ- BIST İş Anlaşmaları (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T09:53",
+   "url": "https://www.foreks.com/haber/detay/6b07d74d4b18523914469894/FRKS/tr/analiz-bist-is-anlasmalari-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179567581665.979293.12119950519969970332%40ahlatciyatirim.com.tr/BIST%2520Is%2520Anlasmalari%2520-%252026.11.2026.pdf"
+  },
+  "6b07d7654b18523914469896": {
+   "title": "ANALİZ- Günlük Bülten (Yapı Kredi Yatırım)",
+   "broker": "Yapı Kredi Yatırım",
+   "date": "2026-11-26T09:53",
+   "url": "https://www.foreks.com/haber/detay/6b07d7654b18523914469896/FRKS/tr/analiz-gunluk-bulten-yapi-kredi-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/c2b33f7be9a045fd88d7404e9519aa3d_98647440-996c-4815-976e-f21033d8192c.pdf"
+  },
+  "6b07da1aa1097b6178f4291a": {
+   "title": "ANALİZ- Günlük Rapor (VakıfBank)",
+   "broker": "VakıfBank",
+   "date": "2026-11-26T10:04",
+   "url": "https://www.foreks.com/haber/detay/6b07da1aa1097b6178f4291a/FRKS/tr/analiz-gunluk-rapor-vakifbank-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/535d6884d66844efbd2d7535db5502ce_gunluk-rapor-26112026.pdf"
+  },
+  "6b07db3d95131d72027e47ce": {
+   "title": "ANALİZ- Günlük Forex Bülteni (Gedik Yatırım)",
+   "broker": "Gedik Yatırım",
+   "date": "2026-11-26T10:09",
+   "url": "https://www.foreks.com/haber/detay/6b07db3d95131d72027e47ce/FRKS/tr/analiz-gunluk-forex-bulteni-gedik-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/891ff001f6634cb19e568b7054d0c5cd_FXBulten261120268165f35c.pdf"
+  },
+  "6b07db8f95131d72027e47d2": {
+   "title": "ANALİZ- Piyasa Günlüğü (İş Bankası)",
+   "broker": "İş Bankası",
+   "date": "2026-11-26T10:11",
+   "url": "https://www.foreks.com/haber/detay/6b07db8f95131d72027e47d2/FRKS/tr/analiz-piyasa-gunlugu-is-bankasi-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/4e9a8c827e76497b86f9b59e09b26f49_26-kasim-2026..pdf"
+  },
+  "6b07e15095131d72027e480e": {
+   "title": "ANALİZ- FX Bülteni (Ziraat Yatırım)",
+   "broker": "Ziraat Yatırım",
+   "date": "2026-11-26T10:35",
+   "url": "https://www.foreks.com/haber/detay/6b07e15095131d72027e480e/FRKS/tr/analiz-fx-bulteni-ziraat-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b07e1bba1097b6178f42963": {
+   "title": "ANALİZ- Günlük FX Teknik Analiz Raporu (İş Yatırım)",
+   "broker": "İş Yatırım",
+   "date": "2026-11-26T10:37",
+   "url": "https://www.foreks.com/haber/detay/6b07e1bba1097b6178f42963/FRKS/tr/analiz-gunluk-fx-teknik-analiz-raporu-is-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/ab75d1509a5945288c42444c23060904_Gunluk-FX-Teknik-Analiz-Raporu-26.11.2026.pdf"
+  },
+  "6b07e4cea1097b6178f42974": {
+   "title": "ANALİZ-Avrupakent GYO Analist Toplantı Notları (İş Yatırım)",
+   "broker": "İş Yatırım",
+   "date": "2026-11-26T10:50",
+   "url": "https://www.foreks.com/haber/detay/6b07e4cea1097b6178f42974/FRKS/tr/analiz-avrupakent-gyo-analist-toplanti-notlari-is-yatirim-26-11-26/",
+   "codes": [
+    "AVPGY"
+   ],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/e926154d85e1469f9c4e289a0c2168b5_AVPGYAnalist-Toplantisi-Notlari261126-1.pdf"
+  },
+  "6b07e585a1097b6178f42977": {
+   "title": "ANALİZ- ELÜS Günlük Bülten (İş Yatırım)",
+   "broker": "İş Yatırım",
+   "date": "2026-11-26T10:53",
+   "url": "https://www.foreks.com/haber/detay/6b07e585a1097b6178f42977/FRKS/tr/analiz-elus-gunluk-bulten-is-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/fd9e03a02b9347f9b231905f1a3f2702_ELUS-Gunluk-Bulten-26.11.2026-1.pdf"
+  },
+  "6b07e8774b18523914469929": {
+   "title": "ANALİZ- Enerya Enerji 3.Çeyrek 2026 Mali ve Genel Görünüm Değerlendirmesi (A1 Capital)",
+   "broker": "A1 Capital",
+   "date": "2026-11-26T11:06",
+   "url": "https://www.foreks.com/haber/detay/6b07e8774b18523914469929/FRKS/tr/analiz-enerya-enerji-3ceyrek-2026-mali-ve-genel-gorunum-degerlendirmesi-a1-capital-26-11-26/",
+   "codes": [
+    "ENERY"
+   ],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/VI0P192MB28897CD1D931B6E15F985AA6C0422%40VI0P192MB2889.EURP192.PROD.OUTLOOK.COM/ENERY%25203%25C3%258726%2520Mali%2520ve%2520Genel%2520G%25C3%25B6r%25C3%25BCn%25C3%25BCm.pdf"
+  },
+  "6b07e89195131d72027e4849": {
    "title": "ANALİZ- Günlük Küresel Piyasalar Raporu (Deniz Yatırım)",
    "broker": "Deniz Yatırım",
-   "date": "2026-11-25T14:18",
-   "url": "https://www.foreks.com/haber/detay/6b06c3eebe0e554ba40e2a7d/FRKS/tr/analiz-gunluk-kuresel-piyasalar-raporu-deniz-yatirim-25-11-26/",
+   "date": "2026-11-26T11:06",
+   "url": "https://www.foreks.com/haber/detay/6b07e89195131d72027e4849/FRKS/tr/analiz-gunluk-kuresel-piyasalar-raporu-deniz-yatirim-26-11-26/",
    "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/0b05844764be4f2ba5b0f14d29838abc_25Kasm2026GnlkKreselPiyasalarRaporu15669.pdf"
+   "file": "https://www.denizyatirim.com/Uploads/26_Kas_m_2026_G_nl_k_K_resel_Piyasalar_Raporu_15676.pdf"
   },
-  "6b06c4c095131d72027e3d79": {
-   "title": "ANALİZ- Uluslararası Piyasalar Günlük Bülten (Gedik Yatırım)",
+  "6b07f12f95131d72027e4889": {
+   "title": "ANALİZ- AVPGY 3. Çeyrek Analist Toplantısı Notları (PhillipCapital)",
+   "broker": "Phillip Capital",
+   "date": "2026-11-26T11:43",
+   "url": "https://www.foreks.com/haber/detay/6b07f12f95131d72027e4889/FRKS/tr/analiz-avpgy-3-ceyrek-analist-toplantisi-notlari-phillipcapital-26-11-26/",
+   "codes": [
+    "AVPGY"
+   ],
+   "file": null
+  },
+  "6b07f49f4b18523914469970": {
+   "title": "ANALİZ- Günlük Döviz Bülteni (Gold Para)",
+   "broker": "Gold Para",
+   "date": "2026-11-26T11:58",
+   "url": "https://www.foreks.com/haber/detay/6b07f49f4b18523914469970/FRKS/tr/analiz-gunluk-doviz-bulteni-gold-para-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/b73177846c314aa8bb2f54a281902961_GNLKDVZ6009.pdf"
+  },
+  "6b07f4c84b18523914469971": {
+   "title": "ANALİZ- Günlük Altın Bülteni (Gold Para)",
+   "broker": "Gold Para",
+   "date": "2026-11-26T11:58",
+   "url": "https://www.foreks.com/haber/detay/6b07f4c84b18523914469971/FRKS/tr/analiz-gunluk-altin-bulteni-gold-para-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/b12820ff9dcf4473b836047b7bc6dacb_GNLKALTIN6009.pdf"
+  },
+  "6b08180ba1097b6178f42aa9": {
+   "title": "ANALİZ- Haftalık BDDK Bankacılık Verileri Raporu (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T14:29",
+   "url": "https://www.foreks.com/haber/detay/6b08180ba1097b6178f42aa9/FRKS/tr/analiz-haftalik-bddk-bankacilik-verileri-raporu-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179569200734.1024216.14200327372745716187%40ahlatciyatirim.com.tr/Haftalik%2520BDDK%2520Bankacilik%2520Verileri%2520Raporu%252026.11.26.pdf"
+  },
+  "6b0819fe4b18523914469a3a": {
+   "title": "ANALİZ-Hitit Bilgisayar Konferans'ında Öne Çıkanlar (Gedik Yatırım)",
    "broker": "Gedik Yatırım",
-   "date": "2026-11-25T14:21",
-   "url": "https://www.foreks.com/haber/detay/6b06c4c095131d72027e3d79/FRKS/tr/analiz-uluslararasi-piyasalar-gunluk-bulten-gedik-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/cb0cd98782424f5eb6a379882e1bd15e_UluslararasiPiyasalarGunlukBulten25112026c284222f.pdf"
+   "date": "2026-11-26T14:37",
+   "url": "https://www.foreks.com/haber/detay/6b0819fe4b18523914469a3a/FRKS/tr/analiz-hitit-bilgisayar-konferans-inda-one-cikanlar-gedik-yatirim-26-11-26/",
+   "codes": [
+    "HTTBT"
+   ],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/21b236e692d242a48106b27d698f54ad_HTTBT3C26KonferansOneCikanlar4d9d8a98.pdf"
   },
-  "6b06cead95131d72027e3de8": {
+  "6b081a6ea1097b6178f42ac2": {
+   "title": "ANALİZ- Haftalık Menkul Kıymet İstatistikleri (Anadolu Yatırım)",
+   "broker": "Anadolu Yatırım",
+   "date": "2026-11-26T14:39",
+   "url": "https://www.foreks.com/haber/detay/6b081a6ea1097b6178f42ac2/FRKS/tr/analiz-haftalik-menkul-kiymet-istatistikleri-anadolu-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/3ecdfd43c5ea4b2e82d4fe0c19c194b1_MenkulKiymetIstatistikleri26112026.pdf"
+  },
+  "6b081d86a1097b6178f42ace": {
+   "title": "ANALİZ- Haftalık Kart Harcamaları Raporu (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T14:52",
+   "url": "https://www.foreks.com/haber/detay/6b081d86a1097b6178f42ace/FRKS/tr/analiz-haftalik-kart-harcamalari-raporu-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179569381213.1024220.18399419936241681969%40ahlatciyatirim.com.tr/Haftalik%2520Kart%2520Harcamalari%2520Raporu%2520-%252026.11.2026.pdf"
+  },
+  "6b081daba1097b6178f42acf": {
+   "title": "ANALİZ- Haftalık Menkul Kıymet İstatistikleri Raporu (Allbatross Yatırım)",
+   "broker": "Allbatross Yatırım",
+   "date": "2026-11-26T14:53",
+   "url": "https://www.foreks.com/haber/detay/6b081daba1097b6178f42acf/FRKS/tr/analiz-haftalik-menkul-kiymet-istatistikleri-raporu-allbatross-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/bedff8bcc22b4b63a472f66e43eb12d4%40allbatrossyatirim.com/26.11.2026%2520Haftal%25C4%25B1k%2520Menkul%2520K%25C4%25B1ymet%2520%25C4%25B0statistikleri%2520Raporu.pdf"
+  },
+  "6b081e4095131d72027e4980": {
+   "title": "ANALİZ- Haftalık Döviz, Rezerv ve Menkul Kıymet İstatistikleri (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T14:55",
+   "url": "https://www.foreks.com/haber/detay/6b081e4095131d72027e4980/FRKS/tr/analiz-haftalik-doviz-rezerv-ve-menkul-kiymet-istatistikleri-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179569380956.1024217.12818904816819952585%40ahlatciyatirim.com.tr/TCMB%2520Doviz%2520Rezerv%2520ve%2520Menkul%2520Kiymet%2520Istatistikleri%2520-%252026.11.2026.pdf"
+  },
+  "6b081f8f4b18523914469a50": {
+   "title": "ANALİZ- Haftalık Kart Harcamaları Raporu (Ahlatcı Yatırım)",
+   "broker": "Ahlatcı Yatırım",
+   "date": "2026-11-26T15:01",
+   "url": "https://www.foreks.com/haber/detay/6b081f8f4b18523914469a50/FRKS/tr/analiz-haftalik-kart-harcamalari-raporu-ahlatci-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/90b60a5441154f208c46660cb3063fa9_HaftalikKartHarcamalariRaporu-26.11.2026.pdf"
+  },
+  "6b081fad95131d72027e4986": {
+   "title": "ANALİZ- Yabancı Menkul Kıymet Stoku Verileri ve BIST Yabancı Payı (Şeker Yatırım)",
+   "broker": "Şeker Yatırım",
+   "date": "2026-11-26T15:01",
+   "url": "https://www.foreks.com/haber/detay/6b081fad95131d72027e4986/FRKS/tr/analiz-yabanci-menkul-kiymet-stoku-verileri-ve-bist-yabanci-payi-seker-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/email-rapor/2026-11-26/d01c2d0517f4-yabanc-pay-26-11-2026.pdf"
+  },
+  "6b08200895131d72027e4988": {
    "title": "ANALİZ- Gün İçi Endeks Değerlendirme ve Teknik Analiz Raporu (Ahlatcı Yatırım)",
    "broker": "Ahlatcı Yatırım",
-   "date": "2026-11-25T15:03",
-   "url": "https://www.foreks.com/haber/detay/6b06cead95131d72027e3de8/FRKS/tr/analiz-gun-ici-endeks-degerlendirme-ve-teknik-analiz-raporu-ahlatci-yatirim-25-11-26/",
+   "date": "2026-11-26T15:03",
+   "url": "https://www.foreks.com/haber/detay/6b08200895131d72027e4988/FRKS/tr/analiz-gun-ici-endeks-degerlendirme-ve-teknik-analiz-raporu-ahlatci-yatirim-26-11-26/",
    "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179560788257.979293.10876210450481808007%40ahlatciyatirim.com.tr/Gun%2520Ici%2520Endeks%2520Degerlendirme%2520Raporu%2520-%252025.11.2026.pdf"
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/179569444612.1024217.572255533909941882%40ahlatciyatirim.com.tr/Gun%2520Ici%2520Endeks%2520Degerlendirme%2520Raporu%2520-%252026.11.2026.pdf"
   },
-  "6b06cfd7be0e554ba40e2af6": {
-   "title": "ANALİZ- BMD Model Portföy (Bizim Menkul)",
-   "broker": "Bizim Menkul",
-   "date": "2026-11-25T15:08",
-   "url": "https://www.foreks.com/haber/detay/6b06cfd7be0e554ba40e2af6/FRKS/tr/analiz-bmd-model-portfoy-bizim-menkul-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/04473e03caef4e3ebd555d2c0d282c78%40bmd.com.tr/BMD%2520Model%2520Portf%25C3%25B6y%252025.11.2026.pdf"
-  },
-  "6b06dc5395131d72027e3e64": {
-   "title": "ANALİZ- Forex Bülteni (NCM Investment)",
-   "broker": "NCM Investment",
-   "date": "2026-11-25T16:02",
-   "url": "https://www.foreks.com/haber/detay/6b06dc5395131d72027e3e64/FRKS/tr/analiz-forex-bulteni-ncm-investment-25-11-26/",
-   "codes": [],
-   "file": "https://bulten.ncminvest.com.tr/uploads/files/forex-bulten2026-11-25.pdf"
-  },
-  "6b06dd244b18523914468fa2": {
-   "title": "ANALİZ- Global Piyasalar Bülteni (NCM Investment)",
-   "broker": "NCM Investment",
-   "date": "2026-11-25T16:05",
-   "url": "https://www.foreks.com/haber/detay/6b06dd244b18523914468fa2/FRKS/tr/analiz-global-piyasalar-bulteni-ncm-investment-25-11-26/",
-   "codes": [],
-   "file": "https://bulten.ncminvest.com.tr/uploads/files/global2026-11-25.pdf"
-  },
-  "6b06dd28be0e554ba40e2b95": {
-   "title": "ANALİZ- Tarım Emtia Bülteni (İntegral Yatırım)",
-   "broker": "İntegral Yatırım",
-   "date": "2026-11-25T16:05",
-   "url": "https://www.foreks.com/haber/detay/6b06dd28be0e554ba40e2b95/FRKS/tr/analiz-tarim-emtia-bulteni-integral-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/DB9PR05MB110374EC61903B1A20E86A1E195432%40DB9PR05MB11037.eurprd05.prod.outlook.com/Tarim_Emtia_Bulteni_25112026.pdf"
-  },
-  "6b06e02095131d72027e3e81": {
-   "title": "ANALİZ- Yurt Dışı Günlük Bülten (PhillipCapital)",
-   "broker": "Phillip Capital",
-   "date": "2026-11-25T16:18",
-   "url": "https://www.foreks.com/haber/detay/6b06e02095131d72027e3e81/FRKS/tr/analiz-yurt-disi-gunluk-bulten-phillipcapital-25-11-26/",
-   "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/3b101a7467e045208bb5d883a4a305f1%40phillip.com.tr/PhillipCapital%2520Yurt%2520D%25C4%25B1%25C5%259F%25C4%25B1%2520G%25C3%25BCnl%25C3%25BCk%2520B%25C3%25BClten%252025.11.26.pdf"
-  },
-  "6b06e24f4b18523914468fc8": {
-   "title": "ANALİZ-Avrupakent GYO 3.Çeyrek 2026 Toplantı Notları (A1 Capital)",
-   "broker": "A1 Capital",
-   "date": "2026-11-25T16:27",
-   "url": "https://www.foreks.com/haber/detay/6b06e24f4b18523914468fc8/FRKS/tr/analiz-avrupakent-gyo-3ceyrek-2026-toplanti-notlari-a1-capital-25-11-26/",
-   "codes": [
-    "AVPGY"
-   ],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/7360ab8ef30b492d9451131a2f2133de_AVPGY-Toplanti-Notlari.pdf"
-  },
-  "6b06e66495131d72027e3f1c": {
-   "title": "ANALİZ- Açılış Öncesi Küresel Piyasalar Bülteni (İnfo Yatırım)",
-   "broker": "İnfo Yatırım",
-   "date": "2026-11-25T16:45",
-   "url": "https://www.foreks.com/haber/detay/6b06e66495131d72027e3f1c/FRKS/tr/analiz-acilis-oncesi-kuresel-piyasalar-bulteni-info-yatirim-25-11-26/",
+  "6b08206595131d72027e4989": {
+   "title": "ANALİZ- Haftalık Menkul Kıymet İstatistikleri (Ziraat Yatırım)",
+   "broker": "Ziraat Yatırım",
+   "date": "2026-11-26T15:04",
+   "url": "https://www.foreks.com/haber/detay/6b08206595131d72027e4989/FRKS/tr/analiz-haftalik-menkul-kiymet-istatistikleri-ziraat-yatirim-26-11-26/",
    "codes": [],
    "file": null
   },
-  "6b06e97695131d72027e3f38": {
+  "6b08233aa1097b6178f42ae4": {
+   "title": "ANALİZ- Yurt İçi Yerleşiklerin Yabancı Para Mevduatları & TCMB Rezervleri (Ziraat Yatırım)",
+   "broker": "Ziraat Yatırım",
+   "date": "2026-11-26T15:16",
+   "url": "https://www.foreks.com/haber/detay/6b08233aa1097b6178f42ae4/FRKS/tr/analiz-yurt-ici-yerlesiklerin-yabanci-para-mevduatlari-tcmb-rezervleri-ziraat-yatirim-26-11-26/",
+   "codes": [],
+   "file": null
+  },
+  "6b0824a44b18523914469a63": {
+   "title": "ANALİZ- Haftalık Menkul Kıymet İstatistikleri (İntegral Yatırım)",
+   "broker": "İntegral Yatırım",
+   "date": "2026-11-26T15:23",
+   "url": "https://www.foreks.com/haber/detay/6b0824a44b18523914469a63/FRKS/tr/analiz-haftalik-menkul-kiymet-istatistikleri-integral-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/AS8PR05MB7912E12DF9781F1D4FB886D098422%40AS8PR05MB7912.eurprd05.prod.outlook.com/Menkul_K%25C4%25B1ymet_%25C4%25B0statistikleri_26112026.pdf"
+  },
+  "6b0825704b18523914469a65": {
+   "title": "ANALİZ- Yabancıların Hisse & DİBS İşlemleri (Bizim Menkul)",
+   "broker": "Bizim Menkul",
+   "date": "2026-11-26T15:26",
+   "url": "https://www.foreks.com/haber/detay/6b0825704b18523914469a65/FRKS/tr/analiz-yabancilarin-hisse-dibs-islemleri-bizim-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://www.bmd.com.tr/application/files/1617/9569/5495/Yabancilarin_Hisse_ve_DIBS_Islemleri_26.11.2026.pdf"
+  },
+  "6b082b0e4b18523914469a89": {
+   "title": "ANALİZ- Yurt İçi Yerleşiklerin Döviz Mevduat Hareketleri (Bizim Menkul)",
+   "broker": "Bizim Menkul",
+   "date": "2026-11-26T15:50",
+   "url": "https://www.foreks.com/haber/detay/6b082b0e4b18523914469a89/FRKS/tr/analiz-yurt-ici-yerlesiklerin-doviz-mevduat-hareketleri-bizim-menkul-26-11-26/",
+   "codes": [],
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/0507f89cbfb341bfbff40cbb0d88dc70%40bmd.com.tr/Yurt%2520%25C4%25B0%25C3%25A7i%2520Yerle%25C5%259Fiklerin%2520D%25C3%25B6viz%2520Mevduat%2520Hareketleri%252026.11.2026.pdf"
+  },
+  "6b082b2595131d72027e49b5": {
+   "title": "ANALİZ- Haftalık TCMB Verileri (Tacirler Yatırım)",
+   "broker": "Tacirler Yatırım",
+   "date": "2026-11-26T15:50",
+   "url": "https://www.foreks.com/haber/detay/6b082b2595131d72027e49b5/FRKS/tr/analiz-haftalik-tcmb-verileri-tacirler-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/734effda2a0a48f498df9efb54061db3_tacirler-ekonomi-notu-haftalik-yab.-portfoy-hareket.-13-20-kasim-.pdf"
+  },
+  "6b082ded4b18523914469a95": {
+   "title": "ANALİZ- Yapay Zeka Yatırımlarının Finansmanı ve Kredi Piyasaları (Ziraat Yatırım)",
+   "broker": "Ziraat Yatırım",
+   "date": "2026-11-26T16:02",
+   "url": "https://www.foreks.com/haber/detay/6b082ded4b18523914469a95/FRKS/tr/analiz-yapay-zeka-yatirimlarinin-finansmani-ve-kredi-piyasalari-ziraat-yatirim-26-11-26/",
+   "codes": [],
+   "file": "https://news-files.foreks.com/attachment/2026-11-26/40908ae87a3646c0847fe36852bcb29a_YapayZekaYatrmlar6.pdf"
+  },
+  "6b0834a695131d72027e49eb": {
    "title": "ANALİZ- Günlük Yurt Dışı Hisse Haberleri (Meksa Yatırım)",
    "broker": "Meksa Yatırım",
-   "date": "2026-11-25T16:58",
-   "url": "https://www.foreks.com/haber/detay/6b06e97695131d72027e3f38/FRKS/tr/analiz-gunluk-yurt-disi-hisse-haberleri-meksa-yatirim-25-11-26/",
+   "date": "2026-11-26T16:31",
+   "url": "https://www.foreks.com/haber/detay/6b0834a695131d72027e49eb/FRKS/tr/analiz-gunluk-yurt-disi-hisse-haberleri-meksa-yatirim-26-11-26/",
    "codes": [],
-   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/PAWPR10MB68290BFE22E7E278B4CCBAFBE8432%40PAWPR10MB6829.EURPRD10.PROD.OUTLOOK.COM/25.11.2026.pdf"
-  },
-  "6b06e9efbe0e554ba40e2c6c": {
-   "title": "ANALİZ-Avrupakent GYO Analist Toplantı Notları (Ziraat Yatırım)",
-   "broker": "Ziraat Yatırım",
-   "date": "2026-11-25T17:00",
-   "url": "https://www.foreks.com/haber/detay/6b06e9efbe0e554ba40e2c6c/FRKS/tr/analiz-avrupakent-gyo-analist-toplanti-notlari-ziraat-yatirim-25-11-26/",
-   "codes": [
-    "AVPGY"
-   ],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/a7ec5172351243a58ddc2bfe71a5414f_avpgy-analist-toplants-notlar-25112026.pdf"
-  },
-  "6b06eb9b4b18523914469098": {
-   "title": "ANALİZ-Avrupakent GYO Analist Toplantı Notları (Şeker Yatırım)",
-   "broker": "Şeker Yatırım",
-   "date": "2026-11-25T17:07",
-   "url": "https://www.foreks.com/haber/detay/6b06eb9b4b18523914469098/FRKS/tr/analiz-avrupakent-gyo-analist-toplanti-notlari-seker-yatirim-25-11-26/",
-   "codes": [
-    "AVPGY"
-   ],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/24ff8e241bcd49c3baac3399ac5320eb_avrupakent-gyo-analist-toplanti-notlari-25112026.pdf"
-  },
-  "6b06ebac4b18523914469099": {
-   "title": "ANALİZ- Yurt Dışı Günlük Bülten (Global Menkul)",
-   "broker": "Global Menkul",
-   "date": "2026-11-25T17:07",
-   "url": "https://www.foreks.com/haber/detay/6b06ebac4b18523914469099/FRKS/tr/analiz-yurt-disi-gunluk-bulten-global-menkul-25-11-26/",
-   "codes": [],
-   "file": "https://www.global.com.tr/docs/research/81e168de869941cda53a37c3bfebfe2f.pdf"
-  },
-  "6b06ebc8be0e554ba40e2c87": {
-   "title": "ANALİZ- Günlük Altın Analizi (Ahlatcı Yatırım)",
-   "broker": "Ahlatcı Yatırım",
-   "date": "2026-11-25T17:08",
-   "url": "https://www.foreks.com/haber/detay/6b06ebc8be0e554ba40e2c87/FRKS/tr/analiz-gunluk-altin-analizi-ahlatci-yatirim-25-11-26/",
-   "codes": [],
-   "file": null
-  },
-  "6b06ef57be0e554ba40e2cc1": {
-   "title": "ANALİZ- Yurt Dışı Akşam Teknik Bülteni (IKON Menkul)",
-   "broker": "İkon Menkul",
-   "date": "2026-11-25T17:23",
-   "url": "https://www.foreks.com/haber/detay/6b06ef57be0e554ba40e2cc1/FRKS/tr/analiz-yurt-disi-aksam-teknik-bulteni-ikon-menkul-25-11-26/",
-   "codes": [],
-   "file": "https://www.ikonmenkul.com.tr/storage/documents/research/yurt-disi-aksam-teknik-analiz-bulteni-25112026.pdf"
-  },
-  "6b06f01e95131d72027e3fa2": {
-   "title": "ANALİZ-Avrupakent GYO Konferans'ında Öne Çıkanlar (Gedik Yatırım)",
-   "broker": "Gedik Yatırım",
-   "date": "2026-11-25T17:26",
-   "url": "https://www.foreks.com/haber/detay/6b06f01e95131d72027e3fa2/FRKS/tr/analiz-avrupakent-gyo-konferans-inda-one-cikanlar-gedik-yatirim-25-11-26/",
-   "codes": [
-    "AVPGY"
-   ],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/e1ccdbbc476f4a788af138cdfa448c9e_AVPGY3C26KonferansOneCikanlar54d3e585.pdf"
-  },
-  "6b06fb1595131d72027e4088": {
-   "title": "ANALİZ- Yurt Dışı Akşam Bülteni (IKON Menkul)",
-   "broker": "İkon Menkul",
-   "date": "2026-11-25T18:13",
-   "url": "https://www.foreks.com/haber/detay/6b06fb1595131d72027e4088/FRKS/tr/analiz-yurt-disi-aksam-bulteni-ikon-menkul-25-11-26/",
-   "codes": [],
-   "file": "https://www.ikonmenkul.com.tr/storage/documents/research/yurt-disi-aksam-bulteni-25112026.pdf"
-  },
-  "6b06fd394b1852391446921a": {
-   "title": "ANALİZ- Günlük Basın Bülteni (TÜRİB)",
-   "broker": "TÜRİB",
-   "date": "2026-11-25T18:22",
-   "url": "https://www.foreks.com/haber/detay/6b06fd394b1852391446921a/FRKS/tr/analiz-gunluk-basin-bulteni-turib-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/f4e8b82808d64490822ff47eeb115436_TURISGunlukBasinBulteni.xlsx"
-  },
-  "6b06fecc4b18523914469225": {
-   "title": "ANALİZ- İş Varant Raporu (İş Yatırım)",
-   "broker": "İş Yatırım",
-   "date": "2026-11-25T18:29",
-   "url": "https://www.foreks.com/haber/detay/6b06fecc4b18523914469225/FRKS/tr/analiz-is-varant-raporu-is-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/f74f98304ae943418dffc6a03119ebc3_25.11.2026-Varant-Raporu.pdf"
-  },
-  "6b06ff7695131d72027e410a": {
-   "title": "ANALİZ- Açığa Satış Raporu (Ahlatcı Yatırım)",
-   "broker": "Ahlatcı Yatırım",
-   "date": "2026-11-25T18:32",
-   "url": "https://www.foreks.com/haber/detay/6b06ff7695131d72027e410a/FRKS/tr/analiz-aciga-satis-raporu-ahlatci-yatirim-25-11-26/",
-   "codes": [],
-   "file": "https://news-files.foreks.com/attachment/2026-11-25/c9e168d90dc6451c8d8fc0e57bb97138_AcigaSatisRaporu-25.11.2026.pdf"
+   "file": "https://mona-forinvest-news-inbound-mails.s3.us-east-1.amazonaws.com/attachments/DB3PR10MB6833E70035FF8F0DEA17EA39E8422%40DB3PR10MB6833.EURPRD10.PROD.OUTLOOK.COM/26.11.2026.pdf"
   }
  },
  "ideas": {
@@ -1238,6 +1244,446 @@
      "exit": 3.05,
      "exitDate": "2026-09-15",
      "result": 22.5
+    }
+   ]
+  },
+  "6b07ca364b1852391446984d": {
+   "date": "2026-11-26",
+   "broker": "İş Yatırım",
+   "title": "ANALİZ- Teknik Görünüm Raporu (İş Yatırım)",
+   "url": "https://www.foreks.com/haber/detay/6b07ca364b1852391446984d/FRKS/tr/analiz-teknik-gorunum-raporu-is-yatirim-26-11-26/",
+   "rows": [
+    {
+     "code": "THYAO",
+     "since": "2026-11-25",
+     "entry": 321.0,
+     "targets": [
+      327.0
+     ],
+     "stop": 318.0,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 318.0,
+     "exitDate": "2026-11-25",
+     "result": -0.9
+    },
+    {
+     "code": "ASELS",
+     "since": "2026-11-25",
+     "entry": 323.75,
+     "targets": [
+      329.75
+     ],
+     "stop": 320.75,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 320.75,
+     "exitDate": "2026-11-25",
+     "result": -0.9
+    },
+    {
+     "code": "PGSUS",
+     "since": "2026-11-25",
+     "entry": 154.3,
+     "targets": [
+      157.2
+     ],
+     "stop": 152.9,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 156.8,
+     "exitDate": "2026-11-25",
+     "result": 1.6
+    },
+    {
+     "code": "GARAN",
+     "since": "2026-11-25",
+     "entry": 144.1,
+     "targets": [
+      146.8
+     ],
+     "stop": 142.8,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 142.8,
+     "exitDate": "2026-11-25",
+     "result": -0.9
+    },
+    {
+     "code": "THYAO",
+     "since": "2026-11-24",
+     "entry": 323.5,
+     "targets": [
+      329.5
+     ],
+     "stop": 320.5,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 320.5,
+     "exitDate": "2026-11-24",
+     "result": -0.9
+    },
+    {
+     "code": "ASTOR",
+     "since": "2026-11-24",
+     "entry": 146.3,
+     "targets": [
+      149.0
+     ],
+     "stop": 144.2,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 149.0,
+     "exitDate": "2026-11-24",
+     "result": 1.8
+    },
+    {
+     "code": "ASTOR",
+     "since": "2026-11-24",
+     "entry": 147.2,
+     "targets": [
+      150.0
+     ],
+     "stop": 145.8,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 145.8,
+     "exitDate": "2026-11-24",
+     "result": -1.0
+    },
+    {
+     "code": "TOASO",
+     "since": "2026-11-24",
+     "entry": 253.25,
+     "targets": [
+      258.0
+     ],
+     "stop": 251.0,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 251.0,
+     "exitDate": "2026-11-24",
+     "result": -0.9
+    },
+    {
+     "code": "GRSEL",
+     "since": "2026-11-24",
+     "entry": 247.6,
+     "targets": [
+      252.75
+     ],
+     "stop": 244.0,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "kısa",
+     "exit": 244.0,
+     "exitDate": "2026-11-24",
+     "result": -1.5
+    },
+    {
+     "code": "EUPWR",
+     "since": "2026-09-18",
+     "entry": 53.1,
+     "targets": [
+      61.1
+     ],
+     "stop": 50.5,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "orta",
+     "exit": 67.0,
+     "exitDate": "2026-09-23",
+     "result": 26.2
+    },
+    {
+     "code": "EUPWR",
+     "since": "2026-09-07",
+     "entry": 71.2,
+     "targets": [
+      82.1
+     ],
+     "stop": 67.8,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "orta",
+     "exit": 67.8,
+     "exitDate": "2026-09-09",
+     "result": -4.8
+    },
+    {
+     "code": "TAVHL",
+     "since": "2026-07-16",
+     "entry": 262.0,
+     "targets": [
+      301.5
+     ],
+     "stop": 246.5,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "orta",
+     "exit": 293.0,
+     "exitDate": "2026-11-06",
+     "result": 11.8
+    },
+    {
+     "code": "SASA",
+     "since": "2026-07-13",
+     "entry": 2.49,
+     "targets": [
+      2.88
+     ],
+     "stop": 2.38,
+     "supports": [],
+     "status": "kapalı",
+     "horizon": "orta",
+     "exit": 3.05,
+     "exitDate": "2026-09-15",
+     "result": 22.5
+    }
+   ]
+  },
+  "6b07cd894b18523914469866": {
+   "date": "2026-11-26",
+   "broker": "Şeker Yatırım",
+   "title": "ANALİZ- Teknik Bülten (Şeker Yatırım)",
+   "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
+   "rows": [
+    {
+     "code": "ENJSA",
+     "since": "2026-11-26",
+     "entry": 104.8,
+     "side": "AL",
+     "targets": [
+      107.5
+     ],
+     "stop": 102.1,
+     "supports": [],
+     "status": "açık"
+    },
+    {
+     "code": "SOKM",
+     "since": "2026-11-26",
+     "entry": 40.12,
+     "side": "AL",
+     "targets": [
+      41.14
+     ],
+     "stop": 39.1,
+     "supports": [],
+     "status": "açık"
+    },
+    {
+     "code": "OYAKC",
+     "since": "2026-11-25",
+     "entry": 18.31,
+     "side": "AL",
+     "targets": [
+      18.77
+     ],
+     "stop": 17.85,
+     "supports": [],
+     "status": "kapalı",
+     "exit": 17.85,
+     "result": -2.5
+    },
+    {
+     "code": "PETKM",
+     "since": "2026-11-25",
+     "entry": 14.9,
+     "side": "AL",
+     "targets": [
+      15.28
+     ],
+     "stop": 14.52,
+     "supports": [],
+     "status": "açık"
+    },
+    {
+     "code": "TTRAK",
+     "since": "2026-11-25",
+     "entry": 328.0,
+     "side": "AL",
+     "targets": [
+      336.25
+     ],
+     "stop": 319.75,
+     "supports": [],
+     "status": "açık"
+    },
+    {
+     "code": "BRSAN",
+     "since": "2026-11-24",
+     "entry": 642.0,
+     "side": "AL",
+     "targets": [
+      658.5
+     ],
+     "stop": 625.5,
+     "supports": [],
+     "status": "açık"
+    },
+    {
+     "code": "GARAN",
+     "since": "2026-11-24",
+     "entry": 145.7,
+     "side": "AL",
+     "targets": [
+      149.4
+     ],
+     "stop": 142.0,
+     "supports": [],
+     "status": "kapalı",
+     "exit": 142.0,
+     "result": -2.5
+    },
+    {
+     "code": "TAVHL",
+     "since": "2026-11-24",
+     "entry": 288.0,
+     "side": "AL",
+     "targets": [
+      295.25
+     ],
+     "stop": 280.75,
+     "supports": [],
+     "status": "kapalı",
+     "exit": 280.75,
+     "result": -2.5
+    },
+    {
+     "code": "AKSA",
+     "since": "2026-11-23",
+     "entry": 10.65,
+     "side": "AL",
+     "targets": [
+      10.92
+     ],
+     "stop": 10.38,
+     "supports": [],
+     "status": "kapalı",
+     "exit": 10.92,
+     "result": 2.5
+    },
+    {
+     "code": "ALARK",
+     "since": "2026-11-23",
+     "entry": 102.7,
+     "side": "AL",
+     "targets": [
+      105.3
+     ],
+     "stop": 100.1,
+     "supports": [],
+     "status": "kapalı",
+     "exit": 100.1,
+     "result": -2.5
+    },
+    {
+     "code": "EGGUB",
+     "since": "2026-11-23",
+     "entry": 91.0,
+     "side": "AL",
+     "targets": [
+      93.3
+     ],
+     "stop": 88.7,
+     "supports": [],
+     "status": "kapalı",
+     "exit": 91.0,
+     "result": 0.0
+    },
+    {
+     "code": "TRALT",
+     "since": "2026-11-23",
+     "entry": 35.3,
+     "side": "AL",
+     "targets": [
+      36.2
+     ],
+     "stop": 34.4,
+     "supports": [],
+     "status": "kapalı",
+     "exit": 34.4,
+     "result": -2.5
+    }
+   ]
+  },
+  "6b07ce45a1097b6178f428ba": {
+   "date": "2026-11-26",
+   "broker": "Phillip Capital",
+   "title": "ANALİZ- Hisse Önerileri ve Günlük Bülten (PhillipCapital)",
+   "url": "https://www.foreks.com/haber/detay/6b07ce45a1097b6178f428ba/FRKS/tr/analiz-hisse-onerileri-ve-gunluk-bulten-phillipcapital-26-11-26/",
+   "rows": [
+    {
+     "code": "SAHOL",
+     "entry": 74.1,
+     "stop": 72.75,
+     "targets": [
+      76.8
+     ],
+     "supports": []
+    }
+   ]
+  },
+  "6b07d0154b1852391446986e": {
+   "date": "2026-11-26",
+   "broker": "Yapı Kredi Yatırım",
+   "title": "ANALİZ- Teknik Analiz/Hisse Senedi Önerisi - TUPRS \"AL\" (Yapı Kredi Yatırım)",
+   "url": "https://www.foreks.com/haber/detay/6b07d0154b1852391446986e/FRKS/tr/analiz-teknik-analiz-hisse-senedi-onerisi-tuprs-al-yapi-kredi-yatirim-26-11-26/",
+   "rows": [
+    {
+     "code": "TUPRS",
+     "entry": 318.0,
+     "stop": 310.0,
+     "targets": [
+      327.0,
+      334.0,
+      336.0
+     ],
+     "supports": []
+    }
+   ]
+  },
+  "6b07d2c0a1097b6178f428d9": {
+   "date": "2026-11-26",
+   "broker": "Anadolu Yatırım",
+   "title": "ANALİZ- Teknik Analiz Bülteni (Anadolu Yatırım)",
+   "url": "https://www.foreks.com/haber/detay/6b07d2c0a1097b6178f428d9/FRKS/tr/analiz-teknik-analiz-bulteni-anadolu-yatirim-26-11-26/",
+   "rows": [
+    {
+     "code": "BRSAN",
+     "entry": 640.0,
+     "stop": 627.5,
+     "targets": [
+      655.0,
+      667.0
+     ],
+     "supports": []
+    }
+   ]
+  },
+  "6b07c23f4b1852391446982b": {
+   "date": "2026-11-26",
+   "broker": "Kuveyt Türk Yatırım",
+   "title": "ANALİZ- Teknik Bülten (Kuveyt Türk)",
+   "url": "https://www.foreks.com/haber/detay/6b07c23f4b1852391446982b/FRKS/tr/analiz-teknik-bulten-kuveyt-turk-26-11-26/",
+   "rows": [
+    {
+     "code": "CWENE",
+     "entry": 17.8,
+     "stop": 17.35,
+     "targets": [
+      18.33
+     ],
+     "supports": []
     }
    ]
   }

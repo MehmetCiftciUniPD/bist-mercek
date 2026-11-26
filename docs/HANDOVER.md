@@ -2,6 +2,29 @@
 
 Newest entry first. Each agent adds an entry when it finishes a piece of work.
 
+## 2026-11-26 · Claude Code · health check, broker scorecard, foreign ratios
+
+- `research/health.py` → `data/health.json`: newest timestamp and record count
+  of every data file against a limit (`CHECKS`). In the workflow it runs before
+  the commit with `--issue`: opens/updates the GitHub issue "Veri sağlığı
+  uyarısı" when a source is late or empty and closes it when all recover
+  (workflow has `issues: write`). The site footer shows the same table.
+- `research/broker-scorecard.py` → `data/broker-scorecard.json`: every idea
+  with entry, target and stop (Paratic + Foreks) is kept for a year and judged
+  on Yahoo daily high/low from its publication day: hedef / stop / belirsiz
+  (both touched the same day, excluded from the hit rate) / süre (10 or 30
+  trading days) / açık. A broker's own closing record (İş Yatırım ledger,
+  Şeker list) overrides. Daily repeats of a running list count once.
+- `research/foreign-ratios.py` → `data/foreign-ratios.json`: İş Yatırım's
+  "Günlük Yabancı Oranları Tablosu" (via Foreks): current ratio of ~250 shares,
+  day/week/month/YTD movers and 10-day rising/falling streaks with history.
+  One snapshot per day, 120 days.
+- `foreks-reports.py` gained `dated_ideas()` (Şeker: date, AL/SAT, target,
+  stop, status) and `block_ideas()` (Kuveyt Türk: "(CODE)" then Kapanış /
+  Hedef Fiyat / Zarar Durdur). Vakıf's server is unreachable from here.
+- Site: "Yabancı payı" box and filter, "Kurum karnesi" and foreign movers in
+  the weekly view, idea rows show the judged outcome, footer "Veri durumu".
+
 ## 2026-11-25 · Claude Code · Foreks brokerage reports
 
 - The owner allowed using Foreks. Its forecast backend

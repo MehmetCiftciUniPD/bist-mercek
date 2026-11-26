@@ -118,6 +118,43 @@ def companies():
         for x in sorted(lst, key=lambda x: (x['d'] or '', x.get('st') == 'kapalı')):
             seen[((x['b'] or '').lower(), x['d'], x['e'], x['s'])] = x
         idea_by_code[code] = list(seen.values())
+    karne = load('broker-scorecard.json') if (DATA / 'broker-scorecard.json').exists() else {'ideas': {}, 'brokers': {}}
+    judged = {(x['broker'], x['code'], x['date'], x['entry']): x for x in karne['ideas'].values()}
+    for code, lst in idea_by_code.items():
+        for x in lst:
+            j = judged.get((x['b'], code, x['d'], x['e']))
+            if j and j.get('outcome') not in (None, 'açık', 'geçersiz'):
+                x['o'] = j['outcome']
+                if j.get('result') is not None:
+                    x['or'] = j['result']
+                if j.get('end'):
+                    x['oe'] = j['end']
+    foreign = load('foreign-ratios.json') if (DATA / 'foreign-ratios.json').exists() else {'days': {}, 'movers': {}}
+    fdays = sorted(foreign['days'])
+    streak_of = {x['c']: (d, x) for d in ('up', 'down') for x in foreign.get('movers', {}).get('streaks', {}).get(d, [])}
+    week_of = {x['c']: x for side in ('up', 'down') for x in foreign.get('movers', {}).get('week', {}).get(side, [])}
+
+    def foreign_row(code):
+        if not fdays or code not in foreign['days'][fdays[-1]]:
+            return None
+        now = foreign['days'][fdays[-1]][code]
+        out = {'now': now}
+        back = [d for d in fdays if d <= (datetime.fromisoformat(fdays[-1]) - timedelta(days=7)).strftime('%Y-%m-%d')]
+        if len(fdays) > 1 and code in foreign['days'][fdays[-2]]:
+            out['d1'] = round(now - foreign['days'][fdays[-2]][code], 2)
+        if back and code in foreign['days'][back[-1]]:
+            out['w'] = round(now - foreign['days'][back[-1]][code], 2)
+        elif code in week_of:
+            out['w'] = week_of[code]['chg']
+        if code in streak_of:
+            direction, x = streak_of[code]
+            out['streak'] = x['days'] * (1 if direction == 'up' else -1)
+            if 'd1' not in out and len(x['hist']) > 1:
+                out['d1'] = round(x['hist'][0] - x['hist'][1], 2)
+            if 'w' not in out and len(x['hist']) > 5:
+                out['w'] = round(x['hist'][0] - x['hist'][5], 2)
+        return out
+
     reports_by_code = {}
     for doc in foreks['items'].values():
         for c in doc.get('codes', []):
@@ -231,6 +268,9 @@ def companies():
         ti = sorted((x for c in codes for x in idea_by_code.get(c, [])), key=lambda x: x['d'] or '', reverse=True)
         if ti:
             row['ti'] = ti[:10]
+        fr = next((foreign_row(c) for c in codes if foreign_row(c)), None)
+        if fr:
+            row['fr'] = fr
         rp = sorted((x for c in codes for x in reports_by_code.get(c, [])), key=lambda x: x['d'] or '', reverse=True)
         if rp:
             row['rp'] = rp[:8]
@@ -246,6 +286,11 @@ def companies():
             'eventsDay': latest_day,
             'broker': {k: brokers.get(k) for k in ('fetchedAt', 'sources', 'changes')} if brokers else None,
             'reports': report_feed,
+            'karne': {'brokers': karne.get('brokers', {}), 'generatedAt': karne.get('generatedAt')},
+            'foreign': {'date': foreign.get('date'), 'movers': {k: v for k, v in foreign.get('movers', {}).items() if k != 'streaks'},
+                        'streakUp': len(foreign.get('movers', {}).get('streaks', {}).get('up', [])),
+                        'streakDown': len(foreign.get('movers', {}).get('streaks', {}).get('down', []))},
+            'health': load('health.json') if (DATA / 'health.json').exists() else None,
             'calls': {'targetsDate': tg_day, 'targetsUrl': calls['targets'][tg_day]['url'] if tg_day else None, 'fetchedAt': calls.get('fetchedAt')},
             'holdings': {k: holdings.get(k) for k in ('source', 'sourceUpdated', 'reports', 'note')}, 'universeDate': uni['date'], 'universeSource': uni['source']}
     return {'meta': meta, 'companies': rows}

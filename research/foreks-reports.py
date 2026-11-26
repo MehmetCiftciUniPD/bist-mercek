@@ -54,6 +54,8 @@ def get(url, binary=False):
 
 def num(text):
     t = text.strip()
+    if ',' not in t and t.count('.') > 1:
+        return float(t.replace('.', ''))
     if ',' in t:
         return float(t.replace('.', '').replace(',', '.'))
     if t.count('.') == 1 and len(t.split('.')[1]) == 3 and float(t.replace('.', '')) >= 1000:
@@ -145,6 +147,48 @@ def tracked_ideas(text, known):
             if m[8]:
                 idea.update(exit=num(m[8]), exitDate=f'{m[11]}-{m[10]}-{m[9]}', result=num(m[12].replace('-', '')) * (-1 if m[12].startswith('-') else 1))
             out.append(idea)
+    return out
+
+
+DATED = re.compile(rf'\b([A-Z][A-Z0-9]{{2,5}})\s+(\d{{2}})\.(\d{{2}})\.(\d{{4}})\s+({NUM})\s+(AL|SAT)\s+({NUM})\s+({NUM})\s+({NUM})(?:\s+([A-ZÇĞİÖŞÜ]{{2,8}}))?\s*$')
+
+
+def dated_ideas(text, known):
+    """Lists like Şeker Yatırım's: code, idea date, close before, AL/SAT,
+    target, stop, last close and status (İZLE = still open)."""
+    out = []
+    for line in text.splitlines():
+        m = DATED.search(line)
+        if m and m[1] in known:
+            idea = {'code': m[1], 'since': f'{m[4]}-{m[3]}-{m[2]}', 'entry': num(m[5]), 'side': m[6], 'targets': [num(m[7])],
+                    'stop': num(m[8]), 'supports': [], 'status': 'açık' if not m[10] or m[10] == 'İZLE' else 'kapalı'}
+            if idea['status'] == 'kapalı':
+                # The list gives the last close, not the exit: a closed idea left at its target or stop.
+                last, target, stop = num(m[9]), idea['targets'][0], idea['stop']
+                up = m[6] == 'AL'
+                idea['exit'] = target if (last >= target if up else last <= target) else stop if (last <= stop if up else last >= stop) else last
+                idea['result'] = round((idea['exit'] / idea['entry'] - 1) * 100 * (1 if m[6] == 'AL' else -1), 1)
+            out.append(idea)
+    return out
+
+
+def block_ideas(text, known):
+    """Notes per share: a '(CODE)' heading, then 'Kapanış', 'Hedef Fiyat' and
+    'Zarar Durdur' each followed by a number within the next lines."""
+    out, code, seen = [], None, {}
+    for line in text.splitlines():
+        if m := re.search(r'\(([A-Z][A-Z0-9]{2,5})\)', line):
+            if m[1] in known:
+                code, seen = m[1], {}
+            continue
+        if not code:
+            continue
+        for label, value in re.findall(rf'(Kapanış|Son Fiyat|Hedef Fiyat|Hedef|Zarar Durdur|Zarar Kes|Stop[- ]?Loss|Stop)\s+({NUM})\b', line, re.I):
+            key = 'stop' if re.match(r'zarar|stop', label, re.I) else 'target' if label.lower().startswith('hedef') else 'entry'
+            seen.setdefault(key, num(value))
+        if 'stop' in seen and 'target' in seen:
+            out.append({'code': code, 'entry': seen.get('entry'), 'stop': seen['stop'], 'targets': [seen['target']], 'supports': []})
+            code, seen = None, {}
     return out
 
 
@@ -244,7 +288,7 @@ def main():
         codes = title_codes(title, known, keys)
         items[doc_id] = {'title': title, 'broker': broker, 'date': date, 'url': f'https://www.foreks.com/haber/detay/{doc_id}/FRKS/tr/{slug}/',
                          'codes': codes, 'file': link}
-        if not (link and pdftotext and IDEAS.search(title)) or files >= args.max_files or 'amazonaws.com' in link and '%25' not in link:
+        if not (link and pdftotext and IDEAS.search(title)) or files >= args.max_files:
             continue
         pdf = CACHE / f'{doc_id}.pdf'
         try:
@@ -254,7 +298,8 @@ def main():
             text = subprocess.run([pdftotext, '-layout', str(pdf), '-'], capture_output=True, text=True, timeout=60).stdout
         except (OSError, subprocess.SubprocessError):
             continue
-        found_ideas = tracked_ideas(text, known) + table_ideas(text, known) or note_idea(text, title, known)
+        found_ideas = (tracked_ideas(text, known) + dated_ideas(text, known) or table_ideas(text, known) or block_ideas(text, known)
+                       or note_idea(text, title, known))
         if found_ideas:
             ideas[doc_id] = {'date': (date or '')[:10] or None, 'broker': canon(broker), 'title': title, 'url': items[doc_id]['url'], 'rows': found_ideas}
             print(f'{title[:80]} · {len(found_ideas)} öneri')
