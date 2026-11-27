@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-26T20:35+03:00",
+ "fetchedAt": "2026-11-27T06:26+03:00",
  "sources": {
   "isy": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/takip-listesi.aspx",
   "model": "https://www.isyatirim.com.tr/tr-tr/analiz/Sayfalar/is-yatirimin-onerileri.aspx",
@@ -94,7 +94,7 @@
    },
    "m1": {
     "rec": "AL",
-    "target": 450.0
+    "target": 534.57
    },
    "m3": {
     "rec": "AL",
@@ -294,21 +294,21 @@
   },
   "FROTO": {
    "rec": "AL",
-   "target": 149.43,
-   "upside": 127.0,
+   "target": 146.36,
+   "upside": 122.0,
    "date": "2026-04-24",
    "close": 65.8,
    "w1": {
     "rec": "AL",
-    "target": 149.43
+    "target": 146.36
    },
    "m1": {
     "rec": "AL",
-    "target": 149.43
+    "target": 146.36
    },
    "m3": {
     "rec": "AL",
-    "target": 149.43
+    "target": 146.36
    }
   },
   "KRDMD": {
@@ -1579,10 +1579,10 @@
    "hold": 5,
    "sell": 0,
    "strongSell": 0,
-   "mean": 116.85032,
-   "median": 113.48061,
-   "low": 97.848206,
-   "high": 142.94656,
+   "mean": 117.06893,
+   "median": 113.692924,
+   "low": 98.03127,
+   "high": 143.214,
    "price": 76.55
   },
   "ENTRA": {
@@ -1699,10 +1699,10 @@
    "hold": 1,
    "sell": 0,
    "strongSell": 0,
-   "mean": 62.920387,
-   "median": 61.670258,
-   "low": 59.18723,
-   "high": 67.90316,
+   "mean": 63.04592,
+   "median": 61.793297,
+   "low": 59.305317,
+   "high": 68.038635,
    "price": 28.78
   },
   "ISCTR": {
@@ -1783,10 +1783,10 @@
    "hold": 4,
    "sell": 0,
    "strongSell": 0,
-   "mean": 51.710976,
-   "median": 51.558964,
-   "low": 44.794224,
-   "high": 61.566723,
+   "mean": 51.782513,
+   "median": 51.63029,
+   "low": 44.856194,
+   "high": 61.651894,
    "price": 35.3
   },
   "LILAK": {
@@ -1999,10 +1999,10 @@
    "hold": 0,
    "sell": 0,
    "strongSell": 0,
-   "mean": 429.65405,
-   "median": 430.04898,
-   "low": 372.8391,
-   "high": 506.31027,
+   "mean": 429.74155,
+   "median": 430.13654,
+   "low": 372.915,
+   "high": 506.41336,
    "price": 281.0
   },
   "TCELL": {
@@ -2257,6 +2257,20 @@
    "to": {
     "rec": "AL",
     "target": 149.43
+   },
+   "date": "2026-04-24",
+   "source": "İş Yatırım"
+  },
+  {
+   "seen": "2026-11-27",
+   "code": "FROTO",
+   "from": {
+    "rec": "AL",
+    "target": 149.43
+   },
+   "to": {
+    "rec": "AL",
+    "target": 146.36
    },
    "date": "2026-04-24",
    "source": "İş Yatırım"

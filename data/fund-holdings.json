@@ -1,8 +1,8 @@
 {
  "source": "https://fonoloji.com/spk-tasfiye",
- "sourceUpdated": "26 Kasım 2026 20:26",
+ "sourceUpdated": "27 Kasım 2026 05:59",
  "reports": "Ağu 2026 – 4 Eki 2026",
- "fetchedAt": "2026-11-26T20:33+03:00",
+ "fetchedAt": "2026-11-27T06:24+03:00",
  "note": "Fonların portföy raporlarına dayanan tahmini lotlar. 'capital' şirket sermayesindeki pay (%), 'floatRatio' fonların lotunun fiili dolaşımdaki paylara oranı (%, 100'ü geçebilir).",
  "companies": {
   "TEHOL": {

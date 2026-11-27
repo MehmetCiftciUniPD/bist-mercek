@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T20:36+03:00",
+ "generatedAt": "2026-11-27T06:26+03:00",
  "source": "Yahoo Finance günlük fiyatlar",
  "brokers": {
   "İş Yatırım": {
@@ -935,8 +935,8 @@
    "url": "https://www.foreks.com/haber/detay/6b0681c14b18523914468c41/FRKS/tr/analiz-teknik-analiz-hisse-senedi-onerisi-ulker-al-yapi-kredi-yatirim-25-11-26/",
    "via": "Foreks",
    "outcome": "açık",
-   "days": 2,
-   "result": -1.72
+   "days": 1,
+   "result": -3.28
   },
   "İş Yatırım|THYAO|2026-11-25|321.0": {
    "broker": "İş Yatırım",
@@ -1094,7 +1094,7 @@
    "url": "https://www.foreks.com/haber/detay/6b07ce45a1097b6178f428ba/FRKS/tr/analiz-hisse-onerileri-ve-gunluk-bulten-phillipcapital-26-11-26/",
    "via": "Foreks",
    "outcome": "açık",
-   "days": 1,
+   "days": 0,
    "result": 1.42
   },
   "Yapı Kredi Yatırım|TUPRS|2026-11-26|318.0": {

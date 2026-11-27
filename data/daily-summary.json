@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T20:36+03:00",
+ "generatedAt": "2026-11-27T06:26+03:00",
  "facts": {
   "date": "2026-11-26",
   "breadth": {
@@ -53,7 +53,7 @@
    }
   ],
   "buybacks": {
-   "notices": 197,
+   "notices": 198,
    "companies": 75
   },
   "fundPurchases": [
@@ -89,6 +89,6 @@
    ]
   }
  },
- "text": "**Piyasa Geneli ve Genişlik**  \nBorsa İstanbul’da 26 Kasım 2026 oturumu genişlik verilerine göre olumlu bir seyir izledi. 430 hisse yükselirken 161’i düştü, 38 hisse ise değişmez kaldı. Medyan getiri %1,0 seviyesinde gerçekleşerek geniş tabanlı bir yükselişin işaret etti.\n\n**Öne Çıkan Hareketler ve Geri Alımlar**  \nEn çok kazananlarda OZRDN, FZLGY ve CITAS %10 tavan yaparken, IZFAS ve KLSER de %9,99 ve %9,98 ile takip etti. Düşenler listesinde DOGUB ve GUNDG %10 taban çekti. Şirket geri alımları yoğunluk kazandırdı; 75 şirketten 197 bildirim yayınlandı. Tasfiyedeki fonlardan MCARD hissesine yönelik alım gerçekleşti.\n\n**İçeriden İşlemler ve Yapı Değişimi (CHoCH) Sinyalleri**  \nYönetici/hakim ortak alımları EFOR, IZMDC, AKSA, KRSTL, BALSU, BIOEN, MHRGY ve ENKAI hisselerinde yoğunlaştı. Satış tarafında ise MAGEN ve LIDER yer aldı. Teknik yapı değişimi (CHoCH) sinyalleri FRIGO ve KATMR’da yukarı, AYGAZ, DEVA, ENJSA, HUNER, LIDER, LKMNH ve RYGYO’da aşağı yönlü kırılmaları gösterdi.",
+ "text": "**Piyasa Genel Görünümü**  \nBorsa İstanbul’da 26 Kasım 2026 oturumu genişliği olumlu seyretti; 430 hisse yükselirken 161’i düştü, 38’i ise değişmedi. Medyan getiri %1,0 seviyesinde gerçekleşerek geniş tabanlı bir iyileşme sinyali verdi.\n\n**Öne Çıkan Hareketler**  \nYükselenler listesinde OZRDN, FZLGY ve CITAS %10,00 tavan yaparak öne çıktı; IZFAS %9,99 ve KLSER %9,98 ile takip etti. Düşenler tarafında DOGUB %10,00 taban çekerken GUNDG, LYDHO, SKYLP ve IDGYO yaklaşık %10 kayıp verdi.\n\n**Şirket İçi İşlemler ve Geri Alımlar**  \nGeri alma ilan sayısı 198, bunu yapan şirket sayısı 75 olarak yüksek seviyede kaldı. Tasfiyedeki fonlardan MCARD hissesine alım geldi. Yönetici/hakim ortak alımları EFOR, IZMDC, AKSA, KRSTL, BALSU, BIOEN, MHRGY ve ENKAI’da gerçekleşirken; MAGEN ve LIDER’da satış baskısı görüldü.\n\n**Yapı Değişimi (CHoCH) Sinyalleri**  \nYukarı yönlü yapı kırılımı (CHoCH Up) FRIGO ve KATMR’da tespit edildi. Aşağı yönlü kırılım (CHoCH Down) ise AYGAZ, DEVA, ENJSA, HUNER, LIDER, LKMNH ve RYGYO hisselerinde oluştu.",
  "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }
