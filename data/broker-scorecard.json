@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T06:26+03:00",
+ "generatedAt": "2026-11-27T12:49+03:00",
  "source": "Yahoo Finance günlük fiyatlar",
  "brokers": {
   "İş Yatırım": {
@@ -25,26 +25,26 @@
    "avgDays": 1.5
   },
   "Şeker Yatırım": {
-   "n": 12,
-   "hedef": 4,
-   "stop": 7,
-   "süre": 1,
-   "açık": 0,
+   "n": 14,
+   "hedef": 2,
+   "stop": 4,
+   "süre": 6,
+   "açık": 2,
    "belirsiz": 0,
-   "hit": 33.3,
-   "avg": -0.61,
+   "hit": 16.7,
+   "avg": -0.57,
    "avgDays": 1.8
   },
   "Anadolu Yatırım": {
-   "n": 9,
-   "hedef": 3,
-   "stop": 6,
+   "n": 12,
+   "hedef": 5,
+   "stop": 7,
    "süre": 0,
    "açık": 0,
    "belirsiz": 0,
-   "hit": 33.3,
-   "avg": -0.52,
-   "avgDays": 1.9
+   "hit": 41.7,
+   "avg": -0.16,
+   "avgDays": 1.7
   },
   "Kuveyt Türk Yatırım": {
    "n": 5,
@@ -68,6 +68,17 @@
    "avg": -1.83,
    "avgDays": 1.8
   },
+  "Yapı Kredi Yatırım": {
+   "n": 4,
+   "hedef": 1,
+   "stop": 0,
+   "süre": 0,
+   "açık": 3,
+   "belirsiz": 0,
+   "hit": 100.0,
+   "avg": 2.83,
+   "avgDays": 1.0
+  },
   "Phillip Capital": {
    "n": 2,
    "hedef": 0,
@@ -77,17 +88,6 @@
    "belirsiz": 0,
    "hit": 0.0,
    "avg": -1.73,
-   "avgDays": 1.0
-  },
-  "Yapı Kredi Yatırım": {
-   "n": 2,
-   "hedef": 1,
-   "stop": 0,
-   "süre": 0,
-   "açık": 1,
-   "belirsiz": 0,
-   "hit": 100.0,
-   "avg": 2.83,
    "avgDays": 1.0
   }
  },
@@ -678,8 +678,8 @@
    "horizon": "kısa",
    "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
    "via": "Foreks",
-   "outcome": "stop",
-   "result": -2.5,
+   "outcome": "süre",
+   "result": -0.2,
    "end": null,
    "by": "kurum"
   },
@@ -822,10 +822,11 @@
    "horizon": "kısa",
    "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
    "via": "Foreks",
-   "outcome": "hedef",
+   "outcome": "süre",
    "days": 3,
-   "end": "2026-11-26",
-   "result": 2.57
+   "end": null,
+   "result": -0.2,
+   "by": "kurum"
   },
   "Şeker Yatırım|GARAN|2026-11-24|145.7": {
    "broker": "Şeker Yatırım",
@@ -854,8 +855,8 @@
    "horizon": "kısa",
    "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
    "via": "Foreks",
-   "outcome": "stop",
-   "result": -2.5,
+   "outcome": "süre",
+   "result": -2.4,
    "end": null,
    "by": "kurum"
   },
@@ -935,8 +936,8 @@
    "url": "https://www.foreks.com/haber/detay/6b0681c14b18523914468c41/FRKS/tr/analiz-teknik-analiz-hisse-senedi-onerisi-ulker-al-yapi-kredi-yatirim-25-11-26/",
    "via": "Foreks",
    "outcome": "açık",
-   "days": 1,
-   "result": -3.28
+   "days": 3,
+   "result": -0.47
   },
   "İş Yatırım|THYAO|2026-11-25|321.0": {
    "broker": "İş Yatırım",
@@ -1013,8 +1014,8 @@
    "horizon": "kısa",
    "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
    "via": "Foreks",
-   "outcome": "stop",
-   "result": -2.5,
+   "outcome": "süre",
+   "result": -0.2,
    "end": null,
    "by": "kurum"
   },
@@ -1031,8 +1032,9 @@
    "via": "Foreks",
    "outcome": "hedef",
    "days": 2,
-   "end": "2026-11-26",
-   "result": 2.55
+   "end": null,
+   "result": 2.6,
+   "by": "kurum"
   },
   "Şeker Yatırım|TTRAK|2026-11-25|328.0": {
    "broker": "Şeker Yatırım",
@@ -1061,10 +1063,11 @@
    "horizon": "kısa",
    "url": "https://www.foreks.com/haber/detay/6b07cd894b18523914469866/FRKS/tr/analiz-teknik-bulten-seker-yatirim-26-11-26/",
    "via": "Foreks",
-   "outcome": "hedef",
+   "outcome": "süre",
    "days": 1,
-   "end": "2026-11-26",
-   "result": 2.58
+   "end": null,
+   "result": 1.1,
+   "by": "kurum"
   },
   "Şeker Yatırım|SOKM|2026-11-26|40.12": {
    "broker": "Şeker Yatırım",
@@ -1079,8 +1082,9 @@
    "via": "Foreks",
    "outcome": "stop",
    "days": 1,
-   "end": "2026-11-26",
-   "result": -2.54
+   "end": null,
+   "result": -2.5,
+   "by": "kurum"
   },
   "Phillip Capital|SAHOL|2026-11-26|74.1": {
    "broker": "Phillip Capital",
@@ -1094,8 +1098,8 @@
    "url": "https://www.foreks.com/haber/detay/6b07ce45a1097b6178f428ba/FRKS/tr/analiz-hisse-onerileri-ve-gunluk-bulten-phillipcapital-26-11-26/",
    "via": "Foreks",
    "outcome": "açık",
-   "days": 0,
-   "result": 1.42
+   "days": 2,
+   "result": 1.89
   },
   "Yapı Kredi Yatırım|TUPRS|2026-11-26|318.0": {
    "broker": "Yapı Kredi Yatırım",
@@ -1128,6 +1132,114 @@
    "days": 1,
    "end": "2026-11-26",
    "result": 2.98
+  },
+  "Şeker Yatırım|CIMSA|2026-11-27|38.12": {
+   "broker": "Şeker Yatırım",
+   "code": "CIMSA",
+   "date": "2026-11-27",
+   "entry": 38.12,
+   "target": 39.08,
+   "stop": 37.16,
+   "side": "AL",
+   "horizon": "kısa",
+   "url": "https://www.foreks.com/haber/detay/6b091eff95131d72027e4ea9/FRKS/tr/analiz-teknik-bulten-seker-yatirim-27-11-26/",
+   "via": "Foreks",
+   "outcome": "açık",
+   "days": 1,
+   "result": 1.31
+  },
+  "Şeker Yatırım|ENKAI|2026-11-27|76.55": {
+   "broker": "Şeker Yatırım",
+   "code": "ENKAI",
+   "date": "2026-11-27",
+   "entry": 76.55,
+   "target": 78.5,
+   "stop": 74.6,
+   "side": "AL",
+   "horizon": "kısa",
+   "url": "https://www.foreks.com/haber/detay/6b091eff95131d72027e4ea9/FRKS/tr/analiz-teknik-bulten-seker-yatirim-27-11-26/",
+   "via": "Foreks",
+   "outcome": "açık",
+   "days": 1,
+   "result": 1.63
+  },
+  "Yapı Kredi Yatırım|KRDMD|2026-11-27|35.3": {
+   "broker": "Yapı Kredi Yatırım",
+   "code": "KRDMD",
+   "date": "2026-11-27",
+   "entry": 35.3,
+   "target": 37.0,
+   "stop": 33.8,
+   "side": "AL",
+   "horizon": "kısa",
+   "url": "https://www.foreks.com/haber/detay/6b092184c573616b1a67b43c/FRKS/tr/analiz-teknik-analiz-hisse-senedi-onerisi-krdmd-al-yapi-kredi-yatirim-27-11-26/",
+   "via": "Foreks",
+   "outcome": "açık",
+   "days": 1,
+   "result": 2.55
+  },
+  "Yapı Kredi Yatırım|AEFES|2026-11-27|15.04": {
+   "broker": "Yapı Kredi Yatırım",
+   "code": "AEFES",
+   "date": "2026-11-27",
+   "entry": 15.04,
+   "target": 15.5,
+   "stop": 14.4,
+   "side": "AL",
+   "horizon": "kısa",
+   "url": "https://www.foreks.com/haber/detay/6b0921bfc573616b1a67b443/FRKS/tr/analiz-teknik-analiz-hisse-senedi-onerisi-aefes-al-yapi-kredi-yatirim-27-11-26/",
+   "via": "Foreks",
+   "outcome": "açık",
+   "days": 1,
+   "result": 1.4
+  },
+  "Anadolu Yatırım|ALARK|2026-11-27|101.7": {
+   "broker": "Anadolu Yatırım",
+   "code": "ALARK",
+   "date": "2026-11-27",
+   "entry": 101.7,
+   "target": 104.1,
+   "stop": 99.7,
+   "side": "AL",
+   "horizon": "kısa",
+   "url": "https://www.foreks.com/haber/detay/6b0924cdc573616b1a67b457/FRKS/tr/analiz-teknik-analiz-bulteni-anadolu-yatirim-27-11-26/",
+   "via": "Foreks",
+   "outcome": "hedef",
+   "days": 1,
+   "end": "2026-11-27",
+   "result": 2.36
+  },
+  "Anadolu Yatırım|CWENE|2026-11-27|18.45": {
+   "broker": "Anadolu Yatırım",
+   "code": "CWENE",
+   "date": "2026-11-27",
+   "entry": 18.45,
+   "target": 18.88,
+   "stop": 18.09,
+   "side": "AL",
+   "horizon": "kısa",
+   "url": "https://www.foreks.com/haber/detay/6b0924cdc573616b1a67b457/FRKS/tr/analiz-teknik-analiz-bulteni-anadolu-yatirim-27-11-26/",
+   "via": "Foreks",
+   "outcome": "stop",
+   "days": 1,
+   "end": "2026-11-27",
+   "result": -1.95
+  },
+  "Anadolu Yatırım|PETKM|2026-11-27|15.3": {
+   "broker": "Anadolu Yatırım",
+   "code": "PETKM",
+   "date": "2026-11-27",
+   "entry": 15.3,
+   "target": 15.66,
+   "stop": 15.0,
+   "side": "AL",
+   "horizon": "kısa",
+   "url": "https://www.foreks.com/haber/detay/6b0924cdc573616b1a67b457/FRKS/tr/analiz-teknik-analiz-bulteni-anadolu-yatirim-27-11-26/",
+   "via": "Foreks",
+   "outcome": "hedef",
+   "days": 1,
+   "end": "2026-11-27",
+   "result": 2.35
   }
  }
 }
