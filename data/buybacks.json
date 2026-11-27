@@ -11923,7 +11923,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:07",
    "summary": "Pay Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703378"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703378",
+   "ratio": 0.2721
   },
   "1703381": {
    "codes": [
@@ -11932,7 +11933,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:11",
    "summary": "Payların Geri Alınmasına İlişkin Bildirim",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703381"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703381",
+   "ratio": 0.34354
   },
   "1703382": {
    "codes": [
@@ -11941,7 +11943,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:12",
    "summary": "27.11.2026 Tarihli Pay Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703382"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703382",
+   "ratio": 2.71
   },
   "1703401": {
    "codes": [
@@ -11950,7 +11953,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:20",
    "summary": "Pay Geri Alım30",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703401"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703401",
+   "ratio": 4.6597
   },
   "1703402": {
    "codes": [
@@ -11959,7 +11963,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:20",
    "summary": "27.11.2026 Tarihli Pay Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703402"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703402",
+   "ratio": 1.3397
   },
   "1703406": {
    "codes": [
@@ -11968,7 +11973,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:22",
    "summary": "27.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703406"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703406",
+   "ratio": 2.9229
   },
   "1703407": {
    "codes": [
@@ -11977,7 +11983,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:22",
    "summary": "27.11.2026 Tarihli Pay Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703407"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703407",
+   "ratio": 0.666
   },
   "1703410": {
    "codes": [
@@ -11986,7 +11993,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:24",
    "summary": "27 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703410"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703410",
+   "ratio": 7.85
   },
   "1703411": {
    "codes": [
@@ -11995,7 +12003,8 @@
    "kind": "islem",
    "date": "2026-11-27T18:25",
    "summary": "27.11.2026 Tarihli Pay Geri Alım İşlemleri",
-   "url": "https://www.kap.org.tr/tr/Bildirim/1703411"
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703411",
+   "ratio": null
   },
   "1703412": {
    "codes": [
@@ -12116,6 +12125,16 @@
    "summary": "Pay Geri Alım Programının Sonlandırılması",
    "url": "https://www.kap.org.tr/tr/Bildirim/1703447",
    "ratio": 0.047
+  },
+  "1703462": {
+   "codes": [
+    "PGSUS"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T21:10",
+   "summary": "Günlük Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703462",
+   "ratio": 0.072
   }
  }
 }
