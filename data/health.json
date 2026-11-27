@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-27T12:49+03:00",
+ "checkedAt": "2026-11-27T20:37+03:00",
  "checks": [
   {
    "name": "prices",
@@ -8,8 +8,8 @@
    "maxAge": 4,
    "min": 400,
    "ok": true,
-   "latest": "2026-11-26",
-   "age": 1,
+   "latest": "2026-11-27",
+   "age": 0,
    "n": 629,
    "problem": null
   },
@@ -32,9 +32,9 @@
    "maxAge": 4,
    "min": 400,
    "ok": true,
-   "latest": "2026-11-26",
-   "age": 1,
-   "n": 598,
+   "latest": "2026-11-27",
+   "age": 0,
+   "n": 597,
    "problem": null
   },
   {
@@ -44,8 +44,8 @@
    "maxAge": 4,
    "min": 400,
    "ok": true,
-   "latest": "2026-11-26",
-   "age": 1,
+   "latest": "2026-11-27",
+   "age": 0,
    "n": 593,
    "problem": null
   },
@@ -56,9 +56,9 @@
    "maxAge": 5,
    "min": 50,
    "ok": true,
-   "latest": "2026-11-27T09:16",
+   "latest": "2026-11-27T19:30",
    "age": 0,
-   "n": 1188,
+   "n": 1209,
    "problem": null
   },
   {
@@ -68,9 +68,9 @@
    "maxAge": 5,
    "min": 50,
    "ok": true,
-   "latest": "2026-11-27T09:11",
+   "latest": "2026-11-27T18:47",
    "age": 0,
-   "n": 852,
+   "n": 859,
    "problem": null
   },
   {
@@ -80,9 +80,9 @@
    "maxAge": 30,
    "min": 1,
    "ok": true,
-   "latest": "2026-11-25T19:07",
-   "age": 2,
-   "n": 93,
+   "latest": "2026-11-27T18:17",
+   "age": 0,
+   "n": 95,
    "problem": null
   },
   {
@@ -92,7 +92,7 @@
    "maxAge": 4,
    "min": 10,
    "ok": true,
-   "latest": "2026-11-27T12:44+03:00",
+   "latest": "2026-11-27T20:34+03:00",
    "age": 0,
    "n": 40,
    "problem": null
@@ -104,9 +104,9 @@
    "maxAge": 4,
    "min": 100,
    "ok": true,
-   "latest": "2026-11-27T12:43",
+   "latest": "2026-11-27T20:01",
    "age": 0,
-   "n": 11651,
+   "n": 11666,
    "problem": null
   },
   {
@@ -224,7 +224,7 @@
    "maxAge": 3,
    "min": 1,
    "ok": true,
-   "latest": "2026-11-27T06:26+03:00",
+   "latest": "2026-11-27T20:37+03:00",
    "age": 0,
    "n": 1,
    "problem": null
