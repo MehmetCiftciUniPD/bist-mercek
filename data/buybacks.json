@@ -11865,6 +11865,56 @@
    "summary": "Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1703100",
    "ratio": 1.182
+  },
+  "1703102": {
+   "codes": [
+    "SUNTK"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T07:49",
+   "summary": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703102",
+   "ratio": 0.07
+  },
+  "1703105": {
+   "codes": [
+    "BETAE"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T08:05",
+   "summary": "26.11.2026 Tarihli Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703105",
+   "ratio": 0.04938
+  },
+  "1703108": {
+   "codes": [
+    "RNPOL"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T08:46",
+   "summary": "Pay Geri Alım29",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703108",
+   "ratio": 4.5108
+  },
+  "1703109": {
+   "codes": [
+    "TCKRC"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T08:47",
+   "summary": "Payların Geri Alınmasına İlişkin Bildirim",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703109",
+   "ratio": 0.4732
+  },
+  "1703135": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T09:16",
+   "summary": "26.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703135",
+   "ratio": 0.03658
   }
  }
 }

@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-27T06:27+03:00",
+ "checkedAt": "2026-11-27T11:24+03:00",
  "checks": [
   {
    "name": "prices",
@@ -56,9 +56,9 @@
    "maxAge": 5,
    "min": 50,
    "ok": true,
-   "latest": "2026-11-26T22:02",
-   "age": 1,
-   "n": 1183,
+   "latest": "2026-11-27T09:16",
+   "age": 0,
+   "n": 1188,
    "problem": null
   },
   {
