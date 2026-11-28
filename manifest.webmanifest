@@ -1,0 +1,16 @@
+{
+  "name": "Bilanço Masası",
+  "short_name": "Bilanço",
+  "description": "Borsa İstanbul şirketleri: mali tablolar, skor kartı, geri alımlar, fon ve patron işlemleri.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1f4f6",
+  "theme_color": "#0b5c6e",
+  "lang": "tr",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
