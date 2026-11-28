@@ -12135,6 +12135,36 @@
    "summary": "Günlük Pay Geri Alım İşlemleri",
    "url": "https://www.kap.org.tr/tr/Bildirim/1703462",
    "ratio": 0.072
+  },
+  "1703463": {
+   "codes": [
+    "EKIM"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T21:23",
+   "summary": "27 Kasım 2026 tarihli pay geri alım işlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703463",
+   "ratio": 3.71
+  },
+  "1703464": {
+   "codes": [
+    "KLYPV"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T22:27",
+   "summary": "Pay Geri Alım İşlemleri",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703464",
+   "ratio": 1.2
+  },
+  "1703469": {
+   "codes": [
+    "AKHAN"
+   ],
+   "kind": "islem",
+   "date": "2026-11-27T23:11",
+   "summary": "27.11.2026 Tarihinde Gerçekleştirilen Pay Geri Alım İşlemleri Hakkında.",
+   "url": "https://www.kap.org.tr/tr/Bildirim/1703469",
+   "ratio": 0.04811
   }
  }
 }

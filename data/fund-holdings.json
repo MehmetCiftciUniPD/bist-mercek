@@ -1,8 +1,8 @@
 {
  "source": "https://fonoloji.com/spk-tasfiye",
- "sourceUpdated": "27 Kasım 2026 20:21",
+ "sourceUpdated": "28 Kasım 2026 08:29",
  "reports": "Ağu 2026 – 4 Eki 2026",
- "fetchedAt": "2026-11-27T20:34+03:00",
+ "fetchedAt": "2026-11-28T09:02+03:00",
  "note": "Fonların portföy raporlarına dayanan tahmini lotlar. 'capital' şirket sermayesindeki pay (%), 'floatRatio' fonların lotunun fiili dolaşımdaki paylara oranı (%, 100'ü geçebilir).",
  "companies": {
   "TEHOL": {
@@ -11,8 +11,7 @@
    "funds": 3,
    "capital": 45.8,
    "floatRatio": 94.0,
-   "value": 2230000000,
-   "floatShareBefore": 49.2
+   "value": 2230000000
   },
   "PEKGY": {
    "name": "Peker Gayrimenkul Yatırım Ortaklığı A.Ş.",
@@ -51,8 +50,9 @@
    "lots": 81800000,
    "funds": 1,
    "capital": 15.0,
-   "floatRatio": 52.0,
-   "value": 809600000
+   "floatRatio": 51.0,
+   "value": 809600000,
+   "floatShareBefore": 28.7
   },
   "ISKPL": {
    "name": "Işık Plastik Sanayi ve Dış Ticaret Pazarlama A.Ş.",
@@ -100,15 +100,14 @@
    "funds": 3,
    "capital": 7.3,
    "floatRatio": 21.0,
-   "value": 1060000000,
-   "floatShareBefore": 36.4
+   "value": 1060000000
   },
   "CITAS": {
    "name": "Çitlekçi Mağazacılık Gıda A.Ş.",
    "lots": 12900000,
    "funds": 4,
    "capital": 7.1,
-   "floatRatio": 91.0,
+   "floatRatio": 92.0,
    "value": 1380000000
   },
   "BIGEN": {
@@ -117,8 +116,7 @@
    "funds": 4,
    "capital": 7.0,
    "floatRatio": 33.0,
-   "value": 566400000,
-   "floatShareBefore": 23.4
+   "value": 566400000
   },
   "KARCL": {
    "name": "Kardemir Çelik Sanayi A.Ş.",
@@ -230,8 +228,7 @@
    "funds": 9,
    "capital": 0.36,
    "floatRatio": 1.2,
-   "value": 1060000000,
-   "floatShareBefore": 30.4
+   "value": 1060000000
   },
   "TCELL": {
    "name": "Turkcell İletişim Hizmetleri A.Ş.",
