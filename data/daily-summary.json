@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T20:37+03:00",
+ "generatedAt": "2026-11-28T13:41+03:00",
  "facts": {
   "date": "2026-11-27",
   "breadth": {
@@ -53,7 +53,7 @@
    }
   ],
   "buybacks": {
-   "notices": 179,
+   "notices": 183,
    "companies": 72
   },
   "fundPurchases": [
@@ -92,6 +92,6 @@
    ]
   }
  },
- "text": "**Piyasa Geneli ve Genişlik**  \nBorsa İstanbul’da 27 Kasım 2026 oturumu genişlik verilerine göre olumlu bir seyir izledi. 405 hisse yükselirken 183’ü düştü, 41 hisse ise değişmedi. Medyan getiri %0,93 ile piyasanın geniş bir tabanla değer kazandığını gösterdi.\n\n**Öne Çıkan Hareketler ve Geri Alımlar**  \nGünün en çok yükselenlerinde KGYO, ESCAR, BULGS, A1CAP ve BIGEN %10 tavan yaparak yer aldı. Düşenler listesinde SOHOE, TRHOL, DSTKF, GUNDG ve OZATD %10 taban çekti. Şirket geri alımlında 72 şirketin 179 bildirimiyle işlem hacmi yoğunlaştı. Tasfiyedeki fonlardan MCARD hissesine alım geldi.\n\n**İçeriden İşlemler ve Yapı Değişimi (CHoCH) Sinyalleri**  \nYönetici/hakim ortak alımları EFOR, AKSA, IZMDC, KRSTL, MHRGY, BALSU, BIOEN ve RUZYE hisselerinde yoğunlaştı. Satış tarafında HEDEF, MAGEN ve LIDER öne çıktı. Teknik yapı değişimi (CHoCH) sinyalleri BAHKM, CWENE, FRIGO, KATMR’da yukarı; DEVA, ENJSA, HUNER, LIDER, LKMNH, RYGYO ve YKBNK’da aşağı yönlü gözlendi.",
+ "text": "**Piyasa Genişliği ve Yön**  \n27 Kasım 2026 oturumunda Borsa İstanbul’a genişlik verileri olumlu ayrıştı; 405 hisse yükselirken 183’ü düştü, 41 hisse ise düz seyretti. Medyan getiri %0,93 ile piyasanın geniş bir tabanla yükseldiğini gösterdi.\n\n**Öne Çıkan Hareketler**  \nYükselenler listesinde KGYO, ESCAR, BULGS, A1CAP ve BIGEN %10 tavan yaparak öne çıktı. Düşenler tarafında SOHOE, TRHOL, DSTKF, GUNDG ve OZATD %10 taban çekerek günü kapattı.\n\n**Şirket İçi İşlemler ve Geri Alımlar**  \nŞirketler kendi hisselerini geri alma konusunda aktif; 72 şirket toplam 183 bildirimde bulundu. Tasfiyedeki fonlardan MCARD hissesine alım geldi. Yönetici ve hakim ortak alımları EFOR, AKSA, IZMDC, KRSTL, MHRGY, BALSU, BIOEN ve RUZYE’de gerçekleşirken; HEDEF, MAGEN ve LIDER’de satış baskısı görüldü.\n\n**Yapı Değişimi (CHoCH) Sinyalleri**  \nTeknik yapı kırılımı yukarı yönlü BAHKM, CWENE, FRIGO ve KATMR’da; aşağı yönlü ise DEVA, ENJSA, HUNER, LIDER, LKMNH, RYGYO ve YKBNK’da tespit edildi.",
  "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
 }

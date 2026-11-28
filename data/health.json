@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-28T09:04+03:00",
+ "checkedAt": "2026-11-28T13:41+03:00",
  "checks": [
   {
    "name": "prices",
@@ -92,7 +92,7 @@
    "maxAge": 4,
    "min": 10,
    "ok": true,
-   "latest": "2026-11-28T09:02+03:00",
+   "latest": "2026-11-28T13:39+03:00",
    "age": 0,
    "n": 40,
    "problem": null
@@ -128,8 +128,8 @@
    "maxAge": 3,
    "min": 40,
    "ok": true,
-   "latest": "2026-11-27T12:46+03:00",
-   "age": 1,
+   "latest": "2026-11-28T13:40+03:00",
+   "age": 0,
    "n": 56,
    "problem": null
   },
@@ -140,8 +140,8 @@
    "maxAge": 3,
    "min": 100,
    "ok": true,
-   "latest": "2026-11-27T12:46+03:00",
-   "age": 1,
+   "latest": "2026-11-28T13:40+03:00",
+   "age": 0,
    "n": 401,
    "problem": null
   },
@@ -224,8 +224,8 @@
    "maxAge": 3,
    "min": 1,
    "ok": true,
-   "latest": "2026-11-27T20:37+03:00",
-   "age": 1,
+   "latest": "2026-11-28T13:41+03:00",
+   "age": 0,
    "n": 1,
    "problem": null
   }
